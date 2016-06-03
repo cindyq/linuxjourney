@@ -6,7 +6,7 @@ Ok, now that we've got all that boring stuff out of the way, let's talk about ac
 
 To see what kernel version you have on your system, use the following command:
 
-<pre>$ ls uname -r
+<pre>$ uname -r
 3.19.0-43-generic</pre>
 
 The uname command prints system information, the -r command will print out all of the kernel release version.
