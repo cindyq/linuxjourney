@@ -20,7 +20,7 @@ The default delimiter for paste is TAB, so now there is one line with TABs separ
 
 Let's change this delimiter (-d) to something a little more readable: 
 
-<pre>$ paste -d ',' -s sample2.txt</pre>
+<pre>$ paste -d ' ' -s sample2.txt</pre>
 
 Now everything should be on one line delimited by spaces.
 

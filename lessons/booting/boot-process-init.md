@@ -12,7 +12,7 @@ This is the traditional init system. It sequentially starts and stops processes,
 
 <b>Upstart</b>
 
-This is the init you'll find on Ubuntu installations. Upstart uses the idea of jobs and events and works by starting jobs that performs certain actions in response to events. 
+This is the init you'll find on older Ubuntu installations. Upstart uses the idea of jobs and events and works by starting jobs that performs certain actions in response to events. 
 
 <b>Systemd</b>
 

@@ -2,9 +2,9 @@
 
 ## Lesson Content
 
-We're gonna learn a couple of useful commands that you can use to process text. Before we get started, let's create a file that we'll be working with. Do an exact copy and paste, there is a TAB between lazy and dog that you can't see.
+We're gonna learn a couple of useful commands that you can use to process text. Before we get started, let's create a file that we'll be working with. Copy and paste the following command, once you do that add a TAB in between lazy and dog (hold down Ctrl-v + TAB).
 
-<pre>$ echo The quick brown; fox jumps over the lazy	dog > sample.txt</pre>
+<pre>$ echo 'The quick brown; fox jumps over the lazy  dog' > sample.txt</pre>
 
 First command we'll be learning about is the cut command. It extracts portions of text from a file. 
 
@@ -14,7 +14,7 @@ To extract contents by a list of characters:
 
 This outputs the 5th character in each line of the file. In this case it is "q", note that the space also counts as a character. 
 
-To extract the contents by a field, we'll need to do a little modification, add a TAB to the text: 
+To extract the contents by a field, we'll need to do a little modification: 
 
 <pre>$ cut -f 2 sample.txt</pre>
 

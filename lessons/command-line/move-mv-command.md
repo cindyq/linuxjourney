@@ -10,7 +10,7 @@ You can rename files like this:
 
 Or you can actually move a file to a different directory: 
 
-<pre>$ mv file2 to /home/pete/Documents</pre>
+<pre>$ mv file2 /home/pete/Documents</pre>
 
 And move more than one file:
 

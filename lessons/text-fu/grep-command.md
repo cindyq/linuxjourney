@@ -20,9 +20,9 @@ To get even more flexible with grep you can combine it with other commands with 
 
 As you can see grep is pretty versatile. You can even use regular expressions in your pattern: 
 
-<pre>$ ls | grep *.txt /somedir </pre>
+<pre>$ ls /somedir | grep '.txt$'</pre>
 
-Should return all files ending with .txt in somedir. 
+Should return all files ending with .txt in somedir.
 
 ## Exercise
 

@@ -5,7 +5,7 @@
 <b>Let's look at how a packet travels within it's local network</b>
 
 <ol>
-<li>First the local machine will compare the destination IP address to see if it's in the same subnet by look at it's subnet mask.</li>
+<li>First the local machine will compare the destination IP address to see if it's in the same subnet by looking at its subnet mask.</li>
 <li>When packets are sent they need to have a source MAC address, destination MAC address, source IP address and destination IP address, at this point we do not know the destination MAC address.</li>
 <li>To get to the destination host, we use ARP to broadcast a request on the local network to find the MAC address of the destination host.</li>
 <li>Now the packet can be successfully sent!</li>

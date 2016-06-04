@@ -16,7 +16,7 @@ Fedora is great if you want a Red Hat based operating system without the price t
 
 ## Exercise
 
-If you're interested in having Fedora as your operating system, head over to the installation section and give it a try: <a href=’https://getfedora.org/’>https://getfedora.org/</a>
+If you're interested in having Fedora as your operating system, head over to the installation section and give it a try: <a href='https://getfedora.org/'>https://getfedora.org/</a>
 
 ## Quiz Questions
 

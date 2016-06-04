@@ -9,7 +9,7 @@ C-up arrow : move up one paragraph
 C-down arrow: move down one paragraph
 C-left arrow: move one word left
 C-right arrow: move one word right
-M- : move to the end of the buffer
+M-> : move to the end of the buffer
 </pre>
 
 With text navigation, your regular text buttons work as they should, home, end, page up, page down and the arrow keys, etc.
@@ -33,4 +33,4 @@ How do you move to the end of the buffer?
 
 ## Quiz Answer
 
-M-
+M->

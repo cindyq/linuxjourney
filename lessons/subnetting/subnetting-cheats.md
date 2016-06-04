@@ -48,7 +48,7 @@ Let's walk through converting the first octet to binary and you'll understand ho
 
 For binary to decimal conversion you add up the numbers that have a 1, so:
 
-124 + 64 + 0 + 0 + 0 + 0 + 0 + 0 = 192!
+128 + 64 + 0 + 0 + 0 + 0 + 0 + 0 = 192!
 
 ## Exercise
 
@@ -60,4 +60,4 @@ What is the binary conversion of 123?
 
 ## Quiz Answer
 
-01111011
+1111011
