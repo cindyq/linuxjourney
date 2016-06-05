@@ -16,9 +16,29 @@ $ sudo route add -net 192.168.2.1/23 gw 10.11.12.3
 $ sudo route del -net 192.168.2.1/23 
 </pre>
 
+You can also perform these changes with the <b>ip</b> command:
+
+<b>To add a route</b>
+<pre>
+$ ip route add 192.168.2.1/23 via 10.11.12.3
+</pre>
+
+<b>To delete a route</b>
+<pre>
+$ ip route delete 192.168.2.1/23 via 10.11.12.3
+or
+$ ip route delete 192.168.2.1/23
+</pre>
+
+
+
 ## Exercise
 
-No exercises for this lesson.
+There are no exercises for this lesson but you can read more information on commands discussed here in the man pages
+
+<pre>$ man route</pre>
+
+<pre>$ man ip-route</pre>
 
 ## Quiz Question
 

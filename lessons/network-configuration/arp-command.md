@@ -20,13 +20,20 @@ The ARP cache is actually empty when a machine boots up, it gets populated as pa
 <li>The source host adds the IP to MAC address mapping to the ARP cache and then proceeds with sending the packet</li>
 </ol>
 
+You can also view your arp cache via the ip command:
+
+<pre>
+$ ip neighbour show
+</pre>
+
+
 ## Exercise
 
 Observe what happens to your ARP cache when you reboot your machine and then do something on the network.
 
 ## Quiz Question
 
-What command is use to view your ARP cache?
+What command can you use to view your ARP cache?
 
 ## Quiz Answer
 
