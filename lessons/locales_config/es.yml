@@ -48,7 +48,7 @@ es:
       quiz: "Examen"
   forms:
     buttons:
-      check_answer: "Checar respuesta"
+      check_answer: "Revisar respuesta"
       continue: "Continuar"
       return: "Volver al Menú Principal"
       home: "página de inicio"
