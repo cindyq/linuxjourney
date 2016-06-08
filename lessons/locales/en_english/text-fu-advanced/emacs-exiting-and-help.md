@@ -14,7 +14,7 @@ If you have any open buffers, it will ask you to save it before closing out of e
 
 <b>Undo</b>
 
-<pre>C-_</pre>
+<pre>C-x u</pre>
 
 As you can see Emacs has more moving parts, so the learning curve is a little steeper. In exchange though, you get a very powerful text editor. 
 

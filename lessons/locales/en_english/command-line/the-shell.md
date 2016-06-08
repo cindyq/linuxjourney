@@ -10,7 +10,7 @@ Let’s jump right in! Depending on the distribution your shell prompt might cha
 <pre>username@hostname:current_directory
 pete@icebox:/home/pete $</pre>
 
-Notice the $ at the end of the prompt? That means that the command is ran as a normal user, you don't add the prompt symbol when you type the command, just know that it's there. There are symbols for different permission levels and different shells, but the most common one you'll see is the $ sign.
+Notice the $ at the end of the prompt? Different shells will have different prompts, in our case the $ is for a normal user using Bash, Bourne or Korn shell, you don't add the prompt symbol when you type the command, just know that it's there.
 
 Let’s start with a simple command, echo. The echo command just prints out the text arguments to the display.
 

@@ -3,7 +3,7 @@
 ## Lesson Content
 
 <b>Overview</b>
-One of the most popular Linux distributions for personal machines is Ubuntu. Ubuntu also releases it’s own desktop environment manager Unity by default. 
+One of the most popular Linux distributions for personal machines is Ubuntu. Ubuntu also releases its own desktop environment manager Unity by default. 
 
 <b>Package Management</b>
 Ubuntu is a Debian-based operating system developed by Canonical. So it uses a core Debian package management system.
