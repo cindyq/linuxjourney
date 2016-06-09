@@ -4,7 +4,7 @@
 
 Again this lesson and the next are purely information to let you see what's under the hood, feel free to circle back to this once you've worked with processes a bit more.
 
-When a new process is created, an existing process basically clones itself using something called the fork system call (system calls will be discussed very far into the future). The fork system call creates a mostly identical child process, this child process takes on a new process ID (PID) and the original process becomes it's parent process and has something called a parent process ID <b>PPID</b>. Afterwards, the child process can either continue to use the same program it's parent was using before or more often use the execve system call to launch up a new program. This system call destroys the memory management that the kernel put into place for that process and sets up new ones for the new program. 
+When a new process is created, an existing process basically clones itself using something called the fork system call (system calls will be discussed very far into the future). The fork system call creates a mostly identical child process, this child process takes on a new process ID (PID) and the original process becomes its parent process and has something called a parent process ID <b>PPID</b>. Afterwards, the child process can either continue to use the same program it's parent was using before or more often use the execve system call to launch up a new program. This system call destroys the memory management that the kernel put into place for that process and sets up new ones for the new program. 
 
 We can see this in action:
 
