@@ -30,7 +30,7 @@ total 12
 93403 lrwxrwxrwx 1 pete pete 6 Jan 21 21:39 myfilelink -> myfile
 </pre>
 
-You can see that I've made a symbolic link named myfilelink that points to myfile. Symbolic links are denoted by ->. Notice how I got a new inode number though, symlinks are just files that point to filenames. When you modify a symlink, the file also gets modified. Inode numbers are unique to filesystems, you can't have two of the same inode number in a single filesystem, meaning you can't reference a file in a different filesystem by it's inode number. However, if you use symlinks they do not use inode numbers, they use filenames, so they can be referenced across different filesystems. 
+You can see that I've made a symbolic link named myfilelink that points to myfile. Symbolic links are denoted by ->. Notice how I got a new inode number though, symlinks are just files that point to filenames. When you modify a symlink, the file also gets modified. Inode numbers are unique to filesystems, you can't have two of the same inode number in a single filesystem, meaning you can't reference a file in a different filesystem by its inode number. However, if you use symlinks they do not use inode numbers, they use filenames, so they can be referenced across different filesystems. 
 
 <b>Hardlinks</b>
 

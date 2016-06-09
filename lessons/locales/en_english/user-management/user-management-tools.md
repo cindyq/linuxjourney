@@ -18,7 +18,7 @@ To remove a user, you can use the userdel command.
 
 <pre>$ sudo userdel bob</pre>
 
-This basically does it's best to undo the file changes by useradd.
+This basically does its best to undo the file changes by useradd.
 
 <b>Changing Passwords</b>
 

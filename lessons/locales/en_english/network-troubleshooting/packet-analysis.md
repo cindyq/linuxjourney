@@ -2,7 +2,7 @@
 
 ## Lesson Content
 
-Packet analysis can be in a course of it's own, they have books written just on packet analysis, however we will just learn the basics today. There are two extremely populate packet analyzer, Wireshark and tcpdump. These tools scan your network interfaces, capture the packet activity happening, parse and output the information for us to see. It allows us to get into the nitty gritty of network analysis and get into the low level stuff. We'll be using tcpdump since it has a simpler interface, however if you were to pick up packet analysis for your toolbelt, I would recommend looking into Wireshark.
+Packet analysis can be in a course of its own, they have books written just on packet analysis, however we will just learn the basics today. There are two extremely populate packet analyzer, Wireshark and tcpdump. These tools scan your network interfaces, capture the packet activity happening, parse and output the information for us to see. It allows us to get into the nitty gritty of network analysis and get into the low level stuff. We'll be using tcpdump since it has a simpler interface, however if you were to pick up packet analysis for your toolbelt, I would recommend looking into Wireshark.
 
 <b>Install tcpdump</b>
 
