@@ -28,13 +28,13 @@ fr:
       es: "Espanol"
   home:
     tagline: 
-      title: "Si vous souhaitez voir cette page dans votre langue, aidez -nous à traduire s'il vous plaît."
+      title: "Si vous souhaitez voir cette page dans votre langue, aidez-nous à la traduire s'il vous plaît."
     subscribe:
       title: "Souscrire"
       body: "Recevoir des mises à jour sur les nouveaux cours et leçons!"
     about:
       title: "À propos de nous"
-      body: "Les connaissances acquises ici aujourd'hui a été alimenté par la communauté open-source."
+      body: "Les connaissances acquises ici aujourd'hui ont été alimentées par la communauté open-source."
       url_name: "Contribuer et collaborer"
       url: "https://github.com/cindyq/linuxjourney"
     contact:
