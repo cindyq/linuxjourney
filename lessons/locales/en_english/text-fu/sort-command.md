@@ -42,7 +42,7 @@ dog
 
 ## Exercise
 
-The real power of sort comes with it's ability to be combined with other commands, try the following command and see what happens?
+The real power of sort comes with its ability to be combined with other commands, try the following command and see what happens?
 
 <pre>$ ls /etc | sort -rn</pre>
 
