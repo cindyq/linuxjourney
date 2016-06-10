@@ -2,9 +2,9 @@
 
 ## Lesson Content
 
-Salut débutant! Alors tu as décidé de plonger dans le magnifique monde de Linux? Bien, accroche toi, parceque ça va être une longue et pénible route. Je m'appèlle Penguin Pete et je suis ici pour te servir de guide dans ce voyage. Commençons par le debut avec un peu terminologies sur Linux. 
+Salut débutant! Alors tu as décidé de plonger dans le magnifique monde de Linux? Bien, accroche toi, parceque ça va être une longue et pénible route. Je m'appèlle Penguin Pete et je suis ici pour te servir de guide dans ce voyage. Commençons par le debut avec un peu de terminologies sur Linux. 
 
-Pour comprendre comment Linux est devenu, retournons au départ en 1969 où Ken Thompson et Dennis Ritchie de Bell Laboratories ont développés le Système d'Eploitation UNIX. Il a été plus tard reécrit en C pour le rendre plus portable et le plus utilisé dans le monde.
+Pour comprendre comment Linux est né, retournons au départ en 1969 où Ken Thompson et Dennis Ritchie de Bell Laboratories ont développés le système d'exploitation UNIX. Il a été plus tard reécrit en C pour le rendre plus portable et le plus utilisé dans le monde.
 
 Environ une décénie plus tard, Richard Stallman commence à travailler sur le projet GNU (GNU is not UNIX), le noyau GNU s'appelait Hurd, mais n'a malheureusement jamais été fini. Le GNU General Public Licence (GPL), un logiciel libre, a résulté de cette expérience.
 
