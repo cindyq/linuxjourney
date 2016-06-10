@@ -23,9 +23,7 @@ es:
   menu:
     languages:
       lang: "Idioma"
-      en: "Inglés"
-      fr: "Francés"
-      es: "Español"
+      flag: "flags/Spain.png"
   home:
     tagline: 
       title: "Si usted quisiera ver esto en su idioma local. Por favor ayúdenos a traducir."
@@ -48,7 +46,7 @@ es:
       quiz: "Examen"
   forms:
     buttons:
-      check_answer: "Checar respuesta"
+      check_answer: "Revisar respuesta"
       continue: "Continuar"
       return: "Volver al Menú Principal"
       home: "página de inicio"
