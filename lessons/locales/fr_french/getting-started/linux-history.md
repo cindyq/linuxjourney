@@ -16,7 +16,7 @@ Puis en 1991, un jeune étudiant au nom de Linus Torvalds commença le développ
 
 ## Exercise
 
-Additional reading:
+Lecture supplémentaire:
 <li><a href='https://www.gnu.org/home.en.html'>GNU</a></li>
 <li><a href='https://en.wikipedia.org/wiki/Ken_Thompson'>Ken Thompson</a></li>
 <li><a href='https://stallman.org/'>Richard Stallman</a></li>
