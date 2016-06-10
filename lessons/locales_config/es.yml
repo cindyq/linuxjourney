@@ -25,32 +25,31 @@ es:
       lang: "Idioma"
       flag: "flags/Spain.png"
   home:
-    tagline: 
-      title: "Si usted quisiera ver esto en su idioma local. Por favor ayúdenos a traducir."
+    tagline:
+      title: "Si quieres ver esto en tu idioma local. Por favor ayúdanos a traducir."
     subscribe:
       title: "Suscribir"
-      body: "Obtener actualizaciones sobre nuevos cursos y lecciones!"
+      body: "¡Obtener actualizaciones sobre nuevos cursos y lecciones!"
     about:
       title: "Sobre nosotros"
-      body: "El conocimiento adquirido aquí hoy fue impulsado por la comunidad de código abierto."
+      body: "El conocimiento adquirido aquí fue impulsado por la comunidad de código abierto."
       url_name: "Contribuir y colaborar"
       url: "https://github.com/cindyq/linuxjourney"
     contact:
       title: "Contáctenos"
-      body: "Ver un error? Cualquier queja? Sólo quiero enviar una nota?"
+      body: "¿Ves un error? ¿Alguna queja? ¿Quieres enviar sólo una nota?"
       url_name: "Haznos saber"
       url: "contact@linuxjourney.com"
   courses:
     titles:
-      exercises: "Ceremonias"
+      exercises: "Ejercicios"
       quiz: "Examen"
   forms:
     buttons:
       check_answer: "Revisar respuesta"
       continue: "Continuar"
       return: "Volver al Menú Principal"
-      home: "página de inicio"
+      home: "Página de inicio"
     messages:
       answer_correct: "¡Respuesta correcta!"
-      answer_incorrect: "No del todo, inténtelo de nuevo"
-      
+      answer_incorrect: "No es correcto, inténtalo de nuevo"

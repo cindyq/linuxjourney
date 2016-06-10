@@ -10,7 +10,7 @@ What you should see is:
 
 <pre>ls: cannot access /fake/directory: No such file or directory</pre>
 
-Now you're probably thinking, shouldn't that message have been sent to the file? There is actually another I/O stream in play here called standard error (stderr). By default, stderr sends its output to the screen as well, it's a completely different stream than stdout. So you'll need to redirect it's output a different way. 
+Now you're probably thinking, shouldn't that message have been sent to the file? There is actually another I/O stream in play here called standard error (stderr). By default, stderr sends its output to the screen as well, it's a completely different stream than stdout. So you'll need to redirect its output a different way. 
 
 Unfortunately the redirector is not as nice as using <b>&lt;</b> or <b>&gt;</b> but it's pretty close. We will have to use file descriptors. A file descriptor is a non-negative number that is used to access a file or stream. We will go in depth about this later, but for now know that the file descriptor for stdin, stdout and stderr is 0, 1, and 2 respectively. 
 

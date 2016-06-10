@@ -26,7 +26,7 @@ It can get pretty tiring navigating with absolute and relative paths all the tim
 
 <ul>
 <li>. (current directory). This is the directory you are currently in. </li>
-<li>.. (previous directory). Takes you to the directory above where you are you.</li>
+<li>.. (previous directory). Takes you to the directory above your current.</li>
 <li>~ (home directory). This directory defaults to your “home directory”. Such as /home/pete.</li>
 <li>- (previous directory). This will take you to the previous directory you were just at.</li>
 </ul>
