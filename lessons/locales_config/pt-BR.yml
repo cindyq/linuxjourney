@@ -23,10 +23,7 @@ pt-BR:
   menu:
     languages:
       lang: "Idioma"
-      en: "Inglês"
-      fr: "Francês"
-      es: "Espanhol"
-      pt-BR: "Português (Brasil)"
+      flag: "flags/Brazil.png"
   home:
     tagline: 
       title: "Se você quiser ver isto em seu idioma local. Por favor, ajude-nos a traduzir."
