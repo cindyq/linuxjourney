@@ -12,7 +12,7 @@ Now that you've done your editing it's time to actually save and quit out of vim
 <li>ZZ - equivalent of :wq, but one character faster</li>
 
 <li>u - undo your last action</li>
-<li>Ctrl-r - redo our last action</li>
+<li>Ctrl-r - redo your last action</li>
 </ul>
 
 You may not think ZZ is necessary, but you'll eventually see that your fingers may tend to lean towards this rather than :wq.
