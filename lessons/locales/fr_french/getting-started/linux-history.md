@@ -2,17 +2,17 @@
 
 ## Lesson Content
 
-Hey rookie! So you decided to dive into this wonderful world known as Linux? Well you better strap in, because it’s gonna be a long and hard road. My name is Penguin Pete and I’m here to guide you through this journey. Let’s get started with a little bit of backstory about Linux. 
+Salut débutant! Alors tu as décidé de plonger dans le magnifique monde de Linux? Bien, accroche toi, parceque ça va être une longue et pénible route. Je m'appèlle Penguin Pete et je suis ici pour te servir de guide dans ce voyage. Commençons par le debut avec un peu terminologies sur Linux. 
 
-To learn about how Linux came to be, let’s go back to the beginning to 1969 where Ken Thompson and Dennis Ritchie of Bell Laboratories developed the UNIX operating system. It was later rewritten in C to make it more portable and eventually became a widely used operating system. 
+Pour comprendre comment Linux est devenu, retournons au départ en 1969 où Ken Thompson et Dennis Ritchie de Bell Laboratories ont développés le Système d'Eploitation UNIX. Il a été plus tard reécrit en C pour le rendre plus portable et le plus utilisé dans le monde.
 
-A decade or so later, Richard Stallman started working on the GNU (GNU is Not UNIX) project, the GNU kernel called Hurd, which unfortunately never came to completion. The GNU General Public License (GPL), a free software license, was also created as a result of this.
+Environ une décénie plus tard, Richard Stallman commence à travailler sur le projet GNU (GNU is not UNIX), le noyau GNU s'appelait Hurd, mais n'a malheureusement jamais été fini. Le GNU General Public Licence (GPL), un logiciel libre, a résulté de cette expérience.
 
-The kernel is the most important piece in the operating system. It allows the hardware to talk to the software. It also does a whole lot of other things, but we’ll dig into that in a different course. For now, just know that the kernel controls pretty much everything that happens on your system. 
+Le kernel (noyau) est la pièce la plus importante dans un système d'exploitation. Il permet la communication entre le matériel et le logiciel. Il fait aussi plein d'autres choses, mais nous nous appuyerons dessus dans un autre cours. Pour l'instant, retenez juste que le kernel controlle plutôt tout ce qui se passe dans votre OS.
 
-During this time other efforts such as BSD, MINIX, etc were developed to be UNIX like-systems. However, one thing that all these UNIX like-systems had in common was the lack of a unified kernel. 
+Dans la même période, d'autres systèmes comme BSD, MINIX, etc ont été développés devant être semblables à UNIX. Cependant, la seule chose commune à ces systèmes était le manque ou l'absence d'un noyau unifié. 
 
-Then in 1991, a young fellow named Linus Torvalds started developing what we now know today as the Linux kernel.
+Puis en 1991, un jeune étudiant au nom de Linus Torvalds commença le développement de ce qu'on connait aujourd'hui, le noyau Linux.
 
 ## Exercise
 
@@ -24,7 +24,7 @@ Additional reading:
 
 ## Quiz Question
 
-Who developed the Linux kernel? 
+Qui a développé le noyau Linux? 
 
 ## Quiz Answer
 
