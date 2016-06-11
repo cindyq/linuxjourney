@@ -2,26 +2,50 @@
 
 ## Lesson Content
 
-The join command allows you to join multiple files together by the position of their lines: 
+The join command allows you to join multiple files together by a common field: 
 
 Let's say I had two files that I wanted to join together:
 <pre>file1.txt
-John
-Jane
-Mary
+1 John
+2 Jane
+3 Mary
 
 file2.txt
-Doe
-Doe
-Sue
+1 Doe
+2 Doe
+3 Sue
 
 $ join file1.txt file2.txt
-John Doe
-Jane Doe
-Mary Sue
+1 John Doe
+2 Jane Doe
+3 Mary Sue
 </pre>
 
-See how it joined together my files? Pretty neat. You can also split a file up into different files with the split command: 
+See how it joined together my files? They are joined together by the first field by default and the fields have to be identical, if they are not you can sort them, so in this case the files are joined via 1, 2, 3. 
+
+How would we join the following files? 
+
+<pre>file1.txt
+John 1
+Jane 2
+Mary 3
+
+file2.txt
+1 Doe
+2 Doe
+3 Sue
+</pre>
+
+To join this file you need to specify which fields you are joining, in this case we want field 2 on file1.txt and field 1 on file2.txt, so the command would look like this:
+
+<pre>
+$ join -1 2 -2 1 file1.txt file2.txt
+1 John Doe
+2 Jane Doe
+3 Mary Sue
+</pre>
+
+-1 refers to file1.txt and -2 refers to file2.txt. Pretty neat. You can also split a file up into different files with the split command: 
 
 <pre>$ split somefile</pre>
 

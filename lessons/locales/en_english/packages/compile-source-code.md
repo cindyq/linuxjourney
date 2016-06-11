@@ -36,7 +36,7 @@ If you want to uninstall the package, use:
 
 <pre>$ sudo make uninstall</pre>
 
-Be weary when using make install, you may not realize how much is actually going on in the background. If you decide to remove this package, you may not actually remove everything because you didn't realize what was added to your system. Instead forget everything about make install that I just explained to you and use the <b>checkinstall</b> command. This command will make a .deb file for you that you can easily install and uninstall. 
+Be wary when using make install, you may not realize how much is actually going on in the background. If you decide to remove this package, you may not actually remove everything because you didn't realize what was added to your system. Instead forget everything about make install that I just explained to you and use the <b>checkinstall</b> command. This command will make a .deb file for you that you can easily install and uninstall. 
 
 <pre>$ sudo checkinstall</pre> 
 

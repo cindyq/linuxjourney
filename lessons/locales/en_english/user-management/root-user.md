@@ -2,7 +2,7 @@
 
 ## Lesson Content
 
-We've looked at one way to get superuser access using the sudo command. You can also run commands as the superuser with the su command. This command will "switch users" and open a root shell if no username is specified. You can use this command to switch to any user as long as you know the password. 
+We've looked at one way to get superuser access using the sudo command. You can also run commands as the superuser with the su command. This command will "substitute users" and open a root shell if no username is specified. You can use this command to substitute to any user as long as you know the password. 
 
 <pre>$ su</pre>
 
