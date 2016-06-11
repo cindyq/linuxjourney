@@ -2,21 +2,21 @@
 
 ## Lesson Content
 
-We’re gonna need some directories to store all these files we’ve been working on. The mkdir command (Make Directory) is useful for that, it will create a directory if it doesn’t already exist. You can even make multiple directories at the same time.
+Нам потребуются несколько каталогов для того, чтобы хранить те файлы, над которыми мы работем. Для этого нам пригодится команда mkdir (make directory / создать каталог), которая создаст новую директорию, если она еще не существует. Вы можете создавать несколько директорий в одно и то же время.
 
 <pre>$ mkdir books paintings</pre>
 
-You can also create subdirectories at the same time with the -p (parent flag).
+Вы также можете создавать подкаталоги с флагом -p (parent / родитель).
 
 <pre>$ mkdir -p books/hemmingway/favorites</pre>
 
 ## Exercise
 
-Make a couple of directories and move some files into that directory.
+Создайте несколько директорий и переместите туда несколько файлов.
 
 ## Quiz Question
 
-What command is use to make a directory?
+Какой командой можно создать директорию?
 
 ## Quiz Answer
 

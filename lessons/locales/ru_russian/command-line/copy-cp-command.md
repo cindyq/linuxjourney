@@ -2,41 +2,41 @@
 
 ## Lesson Content
 
-Let’s start making some copies of these files. Much like copy and pasting files in other operating systems, the shell gives us an even simpler way of doing that. 
+Давайте начнем создавать копии файлов. Во многом похоже на копирование и вставку файлов в других операционных системах, оболчка дает нам более простой способ сделать это.
 
 <pre>$ cp mycoolfile /home/pete/Documents/cooldocs</pre>
 
-mycoolfile is the file you want to copy and /home/pete/Documents/cooldocs is where you are copying the file to.
+mycoolfile - это файл, который вы хотите скопирова и /home/pete/Documents/cooldocs - это то, куда вы хотите скопировать файл.
 
-You can copy multiple files and directories as well as use wildcards. A wildcard is a character that can be substituted for a pattern based selection, giving you more flexibility with searches. You can use wildcards in every command for more flexibility.
+Вы можете копировать несколько файлов и директорий используя wildcard (подстановочный знак). Wildcard - символ, который может быть заменен на выбранный шаблон, давая большую гибкость при поиске. Вы можете использовать подстановочные знаки в любой команде для большей гибкости.
 
 <ul>
-<li>* the wildcard of wildcards, it's used to represent all single characters or any string.</li>
-<li>? used to represent one character</li>
-<li>[] used to represent any character within the brackets</li>
+<li>* wildcard всех wildcard'ов, используется для обозначения любых символов или строк</li>
+<li>? используется для обозначения одного символа</li>
+<li>[] используется для обозначения любого символа в скобках</li>
 </ul>
 
 <pre>$ cp *.jpg /home/pete/Pictures</pre>
 
-This will copy all files with the .jpg extension in your current directory to the Pictures directory.
+Это скопирует все файлы с расширением .jpg в текущей директории в каталог Pictures.
 
-A useful command is to use the -r flag, this will recursively copy the files and directories within a directory. 
+Полезно дополнить команду флагом -r (recursively/рекурсивно), которая рекурсиво скопирует файлы и директории внутри каталога.
 
-Try to do a cp on a directory that contains a couple of files to your Documents directory. Didn’t work did it? Well that’s because you’ll need to copy over the files and directories inside as well with -r command.
+Попробуйте выполнить cp на директории, которая содержит несколько файлов в вашу директорию Documents. Не сработало? Это потому что необходимо также скопировать файлы и каталоги с флагом -r.
 
 <pre>$ cp -r Pumpkin/ /home/pete/Documents</pre>
 
-One thing to note, if you copy a file over to a directory that has the same filename, the file will be overwritten with whatever you are copying over. This is no bueno if you have a file that you don’t want to get accidentally overwritten. You can use the -i flag (interactive) to prompt you before overwriting a file. 
+Заметьте одну вещь, если вы копируете файл в директорию, которая содержит файл с таким же именем, то этот файл будет перезаписан на то, что вы копируете. Это плохо, если у вас есть файл, который вы не хотите случайно перезаписать. Вы можете использовать флаг -i (interactive/интерактивно), чтобы получить запрос на перезапись файла.
 
 <pre>$ cp -i mycoolfile /home/pete/Pictures</pre>
 
 ## Exercise
 
-Copy over a couple of files, be careful not to overwrite anything important.
+Скопируйте несколько файлов, будьте осторожны, не перезапишите что-нибудь важное.
 
 ## Quiz Question
 
-What flag do you need to specify to copy over a directory?
+Какой флаг вам нужен, чтобы скопировать всю директорию?
 
 ## Quiz Answer
 

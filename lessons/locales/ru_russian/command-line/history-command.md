@@ -2,31 +2,31 @@
 
 ## Lesson Content
 
-In your shell, there is a history of the commands that you previously entered, you can actually look through these commands. This is quite useful when you want to find and run a command you used previously without actually typing it again.
+В оболочке присуствует история команд, которые вы вводили ранее, вы можете их просмотреть. Довольно полезно бывает найти и выполнить команду, которую вы вводили ранее, не печатая ее снова.
 
 <pre>$ history</pre>
 
-Want to run the same command you did before, just hit the up arrow. 
+Хотите запусть команду, которую запускали до этого момент, просто нажмите стрелку вверх.
 
-Want to run the previous command without typing it again? Use !!. If you typed cat file1 and want to run it again, you can actually just go !! and it will run the last command you ran. 
+Хотите запустить команду, введенную ранее, без ее набора? Используйте !!. Если вы ввели cat file1 и хотите запустить ее еще раз, вы можете просто набрать !!, это выполнит последнюю команду, которую вы запускали.
 
-Another history shortcut is ctrl-R, this is the reverse search command, if you hit ctrl-R and you start typing parts of the command you want it will show you matches and you can just navigate through them by hitting the ctrl-R key again. Once you found the command you want to use again, just hit the Enter key.
+Другой способ пробежаться по истории - ctrl + R, это команда обратного (Reverse) поиска, если вы нажмете ctrl + R и начнете печатать часть команды, которую вы хотите, команда покажет вам совпадения, по которым вы можете перемещаться нажав ctrl + R снова. Найдя нужную команду, нажмите Enter.
 
-Our terminal is getting a little cluttered no? Let’s do a little cleanup, use the clear command to clear up your display.
+В нашем терминале образовался беспорядок, не так ли? Давайте его немного почистим, используйте команду clear (очистить) для очистки экрана.
 
 <pre>$ clear</pre>
 
-There that looks better doesn’t it? 
+Так лучше, не правда ли?
 
-While we are talking about useful things, one of the most useful features in any command-line environment is tab completion. If you start typing the beginning of a command, file, directory, etc and hit the Tab key, it will autocomplete based on what it finds in the directory you are searching as long as you don’t have any other files that start with those letters. For example if you were trying to run the command chrome, you can type chr and press Tab and it will autocomplete chrome.
+Пока мы говорим об этих полезных вещах, одна из наиболее полезных функций в любой командной среде - автозавершение по tab. Если вы начнете печатать начало команды, файла, директории и т.д. и нажмете клавишу Tab, она автоматически завершит ввод, основываясь на том, что было найдено в директории, если не найдено других названий, начинающихся на те же буквы. Например, если вы хотите ввести команду chrome, вы можете ввести chr и нажать Tab, которая дополнит слово до chrome.
 
 ## Exercise
 
-Navigate through your previous command history with the Up and Down keys. Play around with ctrl-R reverse search. 
+Поперемещайтесь по истории ваших команд используя клавиши Вверх и Вних. Поиграйтесь с обратным поиском на ctrl + R.
 
 ## Quiz Question
 
-What is the command to clear the terminal? 
+Какая команда очищает терминал? 
 
 ## Quiz Answer
 
