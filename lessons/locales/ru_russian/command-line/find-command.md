@@ -2,29 +2,29 @@
 
 ## Lesson Content
 
-With all these files we have on the system it can get a little hectic trying to find a specific one. Well there’s a command we can use for that, find! 
+Со всеми теми файлами, которые есть у вас в системе, вам нужно подсуетиться, чтобы найти какой-то один. Для этого мы можем использовать команду find (найти)!
 
 <pre>$ find /home -name puppies.jpg</pre>
 
-With find you’ll have to specify the directory you’ll be searching it, what you’re searching for, in this case we are trying to find a file by the name of puppies.jpg. 
+Для find вам нужно задать директорию, в которой вы будете искать, и что вы хотите найти, в этом случае мы пытались найти файл по имени puppies.jpg.
 
-You can specify what type of file you are trying to find. 
+Вы можете указать тип файла, который вы пытетесь найти.
 
 <pre>$ find /home -type d -name MyFolder</pre>
 
-You can see that I set the type of file I’m trying to find as (d) for directory and I’m still searching by the name of MyFolder. 
+Как видите, я указал тип файла, который я ищу как директорию (d) и имя MyFolder.
 
-One cool thing to note is that find doesn’t stop at the directory you are searching, it will look inside any subdirectories that directory may have as well.
+Есть одна крутая вещь, find не останавливается на поиске только внутри данной директории, а продолжает искать то, что вы ищете внутри подкаталогов, которые могут быть в директории.
 
 ## Exercise
 
 <ol>
-<li>Find a file from the root directory that has the word net in it.</li>
+<li>Найдите файл из корневой директории, у которого в названии есть слово net.</li>
 </ol>
 
 ## Quiz Question
 
-What option should I specify for find if I want to search by name?
+Какую опцию нужно указать, если я хочу искать по имени?
 
 ## Quiz Answer
 

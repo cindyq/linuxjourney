@@ -2,21 +2,21 @@
 
 ## Lesson Content
 
-Gee I wish some of these programs had a manual so we can see some more information about them. Well luckily they do! Aptly named man pages, you can see the manuals for a command with the man command. 
+Надеюсь, что у этих программ есть руководство, чтобы мы могли узнать больше информации о них. К счастью оно есть и носит название справочных страниц (man pages)! Вы можете просмотреть руководство для команд с помощью man.
 
 <pre>$ man ls</pre>
 
-Man pages are manuals that are by default built into most Linux operating systems. They provide documentation about commands and other aspects of the system. 
+Справочные страницы (man pages) - справочники, которые встроены в большинство операционных систем Linux. Они предоставляют документацию о командах и других аспектах системы.
 
-Try it out on a few commands to get more information about them.
+Попробуйте выполнить man на нескольких командах, чтобы получить больше информации о них.
 
 ## Exercise
 
-Run the man command on the ls command.
+Запустите команду man на команде ls.
 
 ## Quiz Question
 
-How do you see the manuals for a command?
+Как посмотреть руководство по команде?
 
 ## Quiz Answer
 

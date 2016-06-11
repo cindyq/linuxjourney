@@ -2,25 +2,25 @@
 
 ## Lesson Content
 
-Well, you sure did a good job getting through the basics. We’ve only scratched the surface, now that you’ve learned to crawl, in the next set of courses, I’m gonna teach how to walk. 
+Вы проделали хорошую работу, пройдя через эти основы. Но мы затронули только вершину айсберга, теперь, после того как вы научились ползать, вы должны научиться ходить.
 
-For now, you can pat yourself on the back and take a break. To exit from the shell, you can use the exit command
+Сейчас вы можете похлопать себя по спине и отдохнуть. Для выхода из консоли вы можете использовать команду exit (выход):
 
 <pre>$ exit</pre>
 
-Or the logout command:
+Или команду logout (выход из системы):
 
 <pre>$ logout</pre>
 
-Or if you are working out of a terminal GUI, you can just close the terminal, see you in the next course!
+Или, если вы работали с терминалом с GUI, вы можете просто закрыть консоль, увидимся в следующем курсе!
 
 ## Exercise
 
-Exit out of the shell and see what happens. Make sure you don't need to do anymore work in that shell.
+Выполните exit и посмотрите, что произойдет. Убедитесь, что вы терминал вам больше не потребуется.
 
 ## Quiz Question
 
-How can you exit from the shell?
+Как выйти из консоли?
 
 ## Quiz Answer
 

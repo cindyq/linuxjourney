@@ -2,41 +2,43 @@
 
 ## Lesson Content
 
-Now I think we have too many files, let’s remove some files. To remove files you can use the rm command. The rm (remove) command is used to delete files and directories. 
+Думаю, что сейчас у нас появилось множество файлов, давайте удалим несколько. Для того, чтобы удалить файлы вы можете использовать команду rm. Команда rm (remove / удалить) используется для удаления файлов и директорий.
 
 <pre>$ rm file1</pre>
 
-Take caution when using rm, there is no magical trash can that you can fish out removed files. Once they are gone, they are gone for good, so be careful. 
+Будьте осторожны при использовании rm, т.к. не существует волшебной корзины, из которой вы сможете достать удаленные файлы. Однажды исчезнув, они исчезнут навсегда, так что будьте осторожны.
 
-Fortunately there are some safety measures put into place, so the average joe can’t just remove a bunch of important files. Write-protected files will prompt you for confirmation before deleting them. If a directory is write-protected it will also not be easily removed. 
+К счастью, существуют меры безопасности, так что очередной Вася не сможет удалить кучу важных файлов. Защищенные от записи файлы спросят ваше подтверждение перед тем, как удалить их. Если директория также защищена от записи, то ее тоже будет не легко удалить.
 
-Now if you don’t care about any of that, you can absolutely remove a bunch of files. 
+Но если вам все равно, вы все таки можете удалить множество важных файлов.
 
 <pre>$ rm -f file1</pre>
 
--f or force option tells rm to remove all files, whether they are write protected or not, without prompting the user (as long as you have the appropriate permissions).
+Флаг -f или force (насильно) прикажет rm удалить все файлы не зависимо от того, защищены они от записи или нет, без уведомления пользователя (до тех пор, пока у вас есть соответствующие права).
 
 <pre>$ rm -i file</pre>
 
-Adding the -i flag like many of the other commands, will give you a prompt on whether you want to actually remove the files or directories. 
+Добавление флага -i, также как и к другим командам, будет выдавать запросы на удаление файлов или директорий.
 
 <pre>$ rm -r directory</pre>
 
-You can’t just rm a directory by default, you’ll need to add the -r flag (recursive) to remove all the files and any subdirectories it may have.
+Вы не можете удалить каталог по-умолчанию, поэтому вам нужно добавить флаг -r для удаления всех файлов и подкаталогов, которые у вас есть.
 
-You can remove a directory with the rmdir command.
+Вы также можете удалить каталог с командой rmdir.
 
 <pre>$ rmdir directory</pre>
 
 ## Exercise
 
 <ol>
-<li>Create a file called -file (don't forget the dash!).</li>
-<li>Remove that file.</li>
+<li>Создайте файл -file (не забудьте тире!).</li>
+<li>Удалите этот файл.</li>
 </ol>
 
 ## Quiz Question
 
-How do you remove a file called myfile?
+Как удалить файл myfile?
 
 ## Quiz Answer
+
+rm myfile

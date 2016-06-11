@@ -2,19 +2,19 @@
 
 ## Lesson Content
 
-Whew, we’ve learned quite a bit of commands so far, if you are ever feeling doubtful about what a command does, you can use the whatis command. The whatis command provides a brief description of command line programs. 
+Уфф, пока мы узнали совсем немного команд, если вы сомневаетесь о том, что делает команда, то вы можете использовать команду whatis. Эта команда предоставит краткое описание консольных программ.
 
 <pre>$ whatis cat</pre>
 
-The description gets sourced from the manual page of each command. If you ran whatis cat, you’d see there is a small blurb with a short description. 
+Описание исходит со справочных страниц каждой команды. Если вы запустите whatis cat, то вы увидите небольшую заметку с кратким описанием.
 
 ## Exercise
 
-Run the whatis command on the less command.
+Запустите комнду whatis на команде less.
 
 ## Quiz Question
 
-What command can you use to see a small description of a command?
+Какую команду вы будете использовать для просмотра короткого описания команды?
 
 ## Quiz Answer
 

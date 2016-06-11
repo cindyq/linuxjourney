@@ -2,27 +2,27 @@
 
 ## Lesson Content
 
-Sometimes typing commands can get really repetitive, or if you need to type a long command many times, it’s best to have an alias you can use for that. To create an alias for a command you simply specify an alias name and set it to the command. 
+Иногда печатание команд может стать частым делом, и если вам потребуется написать длинную команду множество раз, лучше всего создать алиас. Для того, чтобы создать алиас для команды, просто введите alias, имя и присвойте его команде.
 
 <pre>$ alias foobar='ls -la'</pre>
 
-Now instead of typing ls -la, you can type foobar and it will execute that command, pretty neat stuff. Keep in mind that this command won't save your alias after reboot, so you'll need to add a permanent alias in:
+Теперь вместо набор ls -ls, вы можете напечатать foobar и команда исполнится, довольно интересно. Помните, что эта команда не сохраняет ваши алиасы после перезагрузки, так что если вам понадобится постоянный алиас, поместите его в:
 
 <pre>~/.bashrc</pre>
 
-or similar files if you want to have it persist after reboot.
+или в похожие файлы, если они сохраняются после перезагрузки.
 
-You can remove aliases with the unalias command: 
+Вы можете удалить алиасы с командой unalias:
 
 <pre>$ unalias foobar</pre>
 
 ## Exercise
 
-Create a couple of aliases then remove them.
+Создайте несколько алиасов, затем удалите их.
 
 ## Quiz Question
 
-What command is used to make an alias?
+Какая команда используется для создания алиасов?
 
 ## Quiz Answer
 
