@@ -32,7 +32,7 @@ en:
       body: "Получи уведомления о новых курсах и уроках!"
     about:
       title: "О нас"
-	  body: "Знания здесь были созданы open-source сообществом."
+      body: "Знания здесь были созданы open-source сообществом."
       url_name: "Внести вклад"
       url: "https://github.com/cindyq/linuxjourney"
     contact:
