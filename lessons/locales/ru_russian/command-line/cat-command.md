@@ -2,19 +2,19 @@
 
 ## Lesson Content
 
-We’re almost done navigating files, but first let’s learn how to read a file. A simple command to use is the cat command, short for concatenate, it not only displays file contents but it can combine multiple files and show you the output of them. 
+Мы почти закончили с навигацией по файлам, но давайте сначала научимся как читать файл. Простая команда для этого cat, сокращенно от "конкатенация" (concatenate, catenate), она не только отображает содержимое файла, но также может комбинировать содержимое нескольких файлов и отображать их вывод вам.
 
 <pre>$ cat dogfile birdfile</pre>
 
-It’s not great for viewing large files and it’s only meant for short content. There are many other tools that we use to view larger text files that we’ll discuss in the next lesson.
+Команда не очень хорошо подходит для просмотра больших файлов и предназначена для короткого содержимого. Существует множество инструментов, которые позволяют просматривать файлы большего размера, и о них мы поговорим в следующем уроке.
 
 ## Exercise
 
-Run cat on different files and directories. Then try to cat multiple files. 
+Выполните команду cat на различных файлах и директориях, затем попробуйте использовать cat на нескольких файлах одновременно.
 
 ## Quiz Question
 
-What's a good way to see the contents of a file?
+Как вы можете просмотреть содержимое файла?
 
 ## Quiz Answer
 

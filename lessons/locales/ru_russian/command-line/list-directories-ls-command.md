@@ -2,18 +2,18 @@
 
 ## Lesson Content
 
-Now that we know how to move around the system, how do we figure out what is available to us? Right now it’s like we are moving around in the dark. Well, we can use the wonderful ls command to list directory contents. The ls command will list directories and files in the current directory by default, however you can specify which path you want to list the directories of.
+Мы умеем перемещаться по файловой системе, но как мы можем понять, где мы можем перемещаться? Сейчас мы как будто ходим в темноте. Так вот, мы можем исопльзовать замечательную команду ls для вывода списка содержимого каталога. Команда ls отобразит список директорий и файлов в текущей директории по-умолчанию, однако вы можете указать по какому пути вы хотите получить список.
 
 <pre>$ ls
 $ ls /home/pete</pre>
 
-ls is a quite useful tool, it also shows you detailed information about the files and directories you are looking at.
+Это довольно полезный иструмент, который показывает вам детальную информацию о необходимых файлах и каталогах.
 
-Also note that not all files in a directory will be visible. Filenames that start with . are hidden, you can view them however with the ls command and pass the -a flag to it (a for all). 
+Также обратите внимание, что не все файлы в директории будут видимы. Файлы, чье имя начинается на . - скрыты, вы можете увидеть эти файлы добавив к ls флаг (flag) -a (all / все).
 
 <pre>$ ls -a</pre>
 
-There is also one more useful ls flag, -l for long, this shows a detailed list of files in a long format. This will show you detailed information, starting from the left: file permissions, number of links, owner name, owner group, file size, timestamp of last modification, and file/directory name. 
+Есть еще один полезный флаг -l (long / длинный), который покажет вам детальный лист в "длинном" формате. Этот флаг отображает детальную информацию, начиная слева: рарешения файла (file permissions), количество ссылок, имя владельца, группу владельца, размер файла, время последнего изменения (timestamp) и имя директории/файла.
 
 <pre>$ ls -l</pre>
 
@@ -28,17 +28,17 @@ drwxr-x--- 2 pete penguingroup   4096 Jul 27 12:41   Public
 drwxr-x--- 2 pete penguingroup   4096 Jul 27 12:41   Templates
 drwxr-x--- 2 pete penguingroup   4096 Jul 27 12:41   Videos</pre>
 
-Commands have things called flags (or arguments or options, whatever you want to call it) to add more functionality. See how we added -a and -l, well you can add them both together with -la. The order of the flags determines which order it goes in, most of the time this doesn’t really matter so you can also do ls -al and it would still work.
+У команд есть такие штуки, которые называются флагами (или аргументами, или опциями, называйте как хотите) для добавления дополнительной функциональности. Посмотрите как мы добавили -a и -l, но вы можете добавить их вместе с -la. Последовательность флагов определяет порядок, в котором они выполняются, но большую часть времени она ни на что не влияет, и вы также можете использовать -al, что тоже будет работать.
 
 <pre>$ ls -la</pre>
 
 ## Exercise
 
-Run ls with different flags and see the output you receive.
+Запустите ls с различными флагами и посмотрите на вывод, который вы получите.
 
 ## Quiz Question
 
-What command would you use to see hidden files?
+Какую комнду вы будете использовать для просмотра скрытых файлов?
 
 ## Quiz Answer
 

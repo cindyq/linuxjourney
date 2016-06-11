@@ -2,30 +2,30 @@
 
 ## Lesson Content
 
-If you are viewing text files larger than a simple output, less is more. (There is actually a command called more that does something similar, so this is ironic.) The text is displayed in a paged manner, so you can navigate through a text file page by page. 
+Если вы просматриваете текстовые файлы, которые больше, чем простой вывод, то less (меньше) - значит больше. (Существует также команда, названная more (больше), которая делает похожие вещи, но обладает меньшим функционалом, иронично). Текст отображается постранично, а значит вы можете перемещаться по тексту страница за страницей.
 
-Go ahead and look at the contents of a file with less. Once you’re in the less command, you can actually use other keyboard commands to navigate in the file. 
+Пойдем дальше и вглянем на содержимое файла с less. Однажды введя команду less, вы можете перемещаться по документу с помощью клавиатуры.
 
 <pre>$ less /home/pete/Documents/text1</pre>
 
-Use the following command to navigate through less: 
+Используйте эти команды для навигации с помощью less:
 
 <ul>
-<li>q - Used to quit out of less and go back to your shell.</li>
-<li>Page up, Page down, Up and Down - Navigate using the arrow keys and page keys.</li>
-<li>g - Moves to beginning of the text file.</li>
-<li>G - Moves to the end of the text file.</li>
-<li>/search - You can search for specific text inside the text document. Prefacing the words you want to search with /</li>
-<li>h - If you need a little help about how to use less while you’re in less, use help.</li>
+<li>q - Используется для выхода из less и возврата в вашу оболочку.</li>
+<li>Page up, Page down, Вверх и Вниз - Перемещение с помощью стрелок и кнопок страниц.</li>
+<li>g - Перемещает к началу файла.</li>
+<li>G - Перемещает в конец файла.</li>
+<li>/search - Вы можете искать (search) определенный текст внутри документа. Определяйте слова, которые вы хотите найти с помощью /</li>
+<li>h - Если вам нужна небольшая помощь по использованию less, пока вы в less, воспользуйтесь помощью (help).</li>
 </ul>
 
 ## Exercise
 
-Run less on a file, then page up and around the file. Try searching for a specific word. Quickly navigate to the beginning or the end of the file.
+Запустите less на файле, затем пролистайте пару страниц. Попробуйте найти какое-либо слово. Переместитесь в начало и в конец файла.
 
 ## Quiz Question
 
-How do you quit out of a less command?
+Как выйти из less?
 
 ## Quiz Answer
 

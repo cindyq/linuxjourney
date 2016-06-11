@@ -2,21 +2,21 @@
 
 ## Lesson Content
 
-In the previous lesson we learned about touch, let’s go back to that for a bit. Did you notice that the filename didn’t conform to standard naming like you’ve probably seen with other operating systems like Windows? Normally you would expect a file called banana.jpeg and expect a JPEG picture file. 
+В предыдуем уроке мы изучили touch, давайте вернемся немного назад. Вы замечали, что имя файла не соответствует стандарту наименования файлов, который вы, возможно, замечали в других операционных системах, таких как Windows? Обычно вы ожидаете файл, названный banana.jpeg и ждете файл JPEG с картинкой.
 
-In Linux, filenames aren’t required to represent the contents of the file. You can create a file called funny.gif that isn’t actually a GIF. 
+В Linux имена файлов не требуют представлять содержимое файла. Вы можете создать файл funny.gif, который на деле - не GIF.
 
-To find out what kind of file a file is, you can use the file command. It will show you a description of the file’s contents.
+Чтобы обнаружить, к какому типу принадлежит файл, вы можете использовать команду file. Она покажет описание содержимого файла.
 
 <pre>$ file banana.jpg</pre>
 
 ## Exercise
 
-Run the file command on a few different directories and files and note the output.
+Выполните команду file на нескольких каталогах и файлах.
 
 ## Quiz Question
 
-What command can you use to find the file type of a file?
+Какую команду вы будете использовать для определения типа файла?
 
 ## Quiz Answer
 
