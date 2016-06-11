@@ -2,33 +2,33 @@
 
 ## Lesson Content
 
-Now that you know where you are, let’s see if we can move around the filesystem a bit. Remember we’ll need to navigate our way using paths. There are two different ways to specify a path, with absolute and relative paths. 
+Теперь вы знаете где вы, но давайте посмотрим, можем ли мы перемещаться по файловой системе. Помчните, что мы должны проложить дорогу через пути. Есть два способа, чтобы проложить маршрут, через абсолютные и относительные пути.
 
 <ul>
-<li>Absolute path: This is the path from the root directory. The root is the head honcho. The root directory is commonly shown as a slash. Every time your path starts with / it means you are starting from the root directory. For example, /home/pete/Desktop.</li>
+<li>Абсолютный путь: Это путь, который начинается с корневой директории. Корень - главный. Корневая директория обычно обозначается слэшем. Каждый раз, когда ваш путь начинается с  /, Это оначает, что путь начинается с корневой директории. Например, /home/pete/Desktop.</li>
 
-<li>Relative path: This is the path from where you are currently in filesystem. If I was in location /home/pete/Documents and wanted to get to a directory inside Documents called taxes, I don’t have to specify the whole path from root like /home/pete/Documents/taxes, I can just go to taxes/ instead.</li>
+<li>Относительный путь: Это путь, который начинается с того места, в котором вы сейчас находитесь. Если бы я был в /home/pete/Documents и хотел бы переместиться в директорию, которая находится в Documents и называется taxes, мне бы не пришлось указывать путь, начиная с корня (/home/pete/Documents/taxes), можно просто ввести taxes/</li>
 </ul>
 
-Now that you know how paths work, we just need something to help us change to the directory we want to. Luckily, we have cd or “change directory” to do that. 
+Теперь вы знаете, как пути работают, но нам нужно что-то, что поможет нам перемещаться туда, куда мы хотим. К счастью, у нас есть cd или “change directory” (изменить директорию) чтобы осуществить это.
 
 <pre>$ cd /home/pete/Pictures</pre> 
 
-So now I've changed my directory location to /home/pete/Pictures.
+Теперь я изменил мою директорию на /home/pete/Pictures.
 
-Now from this directory I have a folder inside called Hawaii, I can navigate to that folder with:
+Сейчас в этой директории у меня имеется директория Hawaii, я могу переместиться туда так:
 
 <pre>$ cd Hawaii</pre>
 
-Notice how I just used the name of the folder? It’s because I was already in /home/pete/Pictures.
+Обратили внимание, что я просто написал имя директории? Это потому что она уже находится в /home/pete/Pictures.
 
-It can get pretty tiring navigating with absolute and relative paths all the time, luckily there are some shortcuts to help you out. 
+Перемещение с абсолютными и относительными путями все время может показаться утомительным, к счастью существуют несколько удобных сокращений, которые помогут вам:
 
 <ul>
-<li>. (current directory). This is the directory you are currently in. </li>
-<li>.. (previous directory). Takes you to the directory above your current.</li>
-<li>~ (home directory). This directory defaults to your “home directory”. Such as /home/pete.</li>
-<li>- (previous directory). This will take you to the previous directory you were just at.</li>
+<li>. (текущая директория). Эта директория, в которой вы находитесь сейчас.</li>
+<li>.. (предыдущая директория). Переносит вас в директорию, которая находится на один уровень выше.</li>
+<li>~ (домашняя директория). Это директория по умолчанию для вашей “домашней директории”, такая как /home/pete.</li>
+<li>- (предыдущая директория). Переносит вас в директорию, в которой вы находились до этого</li>
 </ul>
 
 <pre>$ cd .
@@ -36,17 +36,17 @@ $ cd ..
 $ cd ~
 $ cd -
 </pre>
-Give them a try!
+Попробуйте выполнить их!
 
 ## Exercise
 
 <ol>
-<li>Run the cd command without any flags, where does it take you?</li>
+<li>Запустите команду cd без каких либо флагов, куда она вас перенесет?</li>
 </ol>
 
 ## Quiz Question
 
-If you are in /home/pete/Pictures and wanted to go to /home/pete, what’s a good shortcut to use?
+Если вы в /home/pete/Pictures и хотите перейи в /home/pete, какую команду нужно выполнить?
 
 ## Quiz Answer
 

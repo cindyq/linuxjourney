@@ -2,7 +2,7 @@
 
 ## Lesson Content
 
-Everything in Linux is a file, as you journey deeper into Linux you’ll understand this, but for now just keep that in mind. Every file is organized in a hierarchical directory tree. The first directory in the filesystem is aptly named the root directory. The root directory has many folders and files which you can store more folders and files, etc. Here is an example of what the directory tree looks like: 
+Все в Linux - файлы, чем глубже вы будете погружаться в Linux, тем лучше вы это будете понимать, а пока просто имейте это в виду. Кажый файл организован в иерархическое древо директорий. Первая директория в файловой системе удачно названа корневой (root) директорией. Корневая директория содержит множество папок и файлов, которые могут содержать еще более папок и файлов и т.д. Вот пример того, как выглядит древо директорий:
 
 <pre>/
 |-- bin
@@ -17,21 +17,21 @@ Everything in Linux is a file, as you journey deeper into Linux you’ll underst
 |-- var
 </pre>
 
-The location of these files and directories are referred to as paths. If you had a folder named home with a folder inside of it named pete and another folder in that folder called Movies, that path would look like this: /home/pete/Movies, pretty simple huh?
+Расположения этих папок и директорий называются путями. Если у вас есть директория home с директорией pete в ней, которая содержит директорию Movies, то путь будет выглядеть вот так: /home/pete/Movies, довольно просто, не так ли?
 
-Navigation of the filesystem, much like real life is helpful if you know where you are and where you are going. To see where you are, you can use the pwd command, this command means “print working directory” and it just shows you which directory you are in, note the path stems from the root directory.
+Навигация по файловой системе, прямо как и в реальной жизни, очень полезна, если вы знаете где вы находитесь и куда вы идете. Чтобы увидеть где вы находитесь, вы можете использовать команду pwd, это команда означает “print working directory (напечатая рабочую директорию)”, и она покажет в какой директории вы находитесь, обратите внимание, что путь исходит из корневой директории.
 
 <pre>$ pwd</pre>
 
-Where are you? Where am I? Give it a try.
+Где вы? Где я? Попробуйте выполнить команду!
 
 ## Exercise
 
-No exercises for this lesson.
+Упражнений нет
 
 ## Quiz Question
 
-How do I find what directory you are currently in?
+Как найти директорию, в которой вы сейчас находитесь?
 
 ## Quiz Answer
 
