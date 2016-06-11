@@ -2,7 +2,7 @@
 
 ## Lesson Content
 
-Let's say you're working on a single terminal window and you're running a command that is taking forever. You can't interact with the shell until it is complete, however we want to keep working on our machines, so we need that shell open. Fortunately we can can control how our processes run with jobs: 
+Let's say you're working on a single terminal window and you're running a command that is taking forever. You can't interact with the shell until it is complete, however we want to keep working on our machines, so we need that shell open. Fortunately we can control how our processes run with jobs: 
 
 <b>Sending a job to the background</b>
 
