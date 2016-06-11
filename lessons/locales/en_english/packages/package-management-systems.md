@@ -7,14 +7,14 @@ Ah, the Batmans of package management, these systems come with all the fixins to
 <b>Install a package from a repository</b>
 
 <pre>
-Debian: $ apt-get install package_name
+Debian: $ apt install package_name
 RPM: $ yum install package_name
 </pre>
 
 <b>Remove a package</b>
 
 <pre>
-Debian: $ apt-get remove package_name
+Debian: $ apt remove package_name
 RPM: $ yum erase package_name
 </pre>
 
@@ -23,7 +23,7 @@ RPM: $ yum erase package_name
 It's always best practice to update your package repositories so they are up to date before you install and update a package. 
 
 <pre>
-Debian: apt-get update; apt-get upgrade
+Debian: apt update; apt upgrade
 RPM: yum update
 </pre>
 
