@@ -1,6 +1,6 @@
 # Linux Journey
 
-[Linux Journey](www.linuxjourney.com) is a site dedicated to making learning Linux fun and easy.
+[Linux Journey](https://linuxjourney.com) is a site dedicated to making learning Linux fun and easy.
 
 ## Language Support
 
