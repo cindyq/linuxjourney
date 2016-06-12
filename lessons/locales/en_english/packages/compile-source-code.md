@@ -6,7 +6,7 @@ Often times you will encounter an obscure package that only comes in the form of
 
 First thing is first, you'll need to have software to install the tools that will allow you to compile source code. 
 
-<pre>$ sudo apt-get install build-essential</pre>
+<pre>$ sudo apt install build-essential</pre>
 
 Once you do that, extract the contents of the package file, most likely a .tar.gz file. 
 
