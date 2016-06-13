@@ -14,7 +14,7 @@ Bu süre içerisinde BSD, MINIX vb. gibi başka çalışmalar da UNIX benzeri si
 
 Daha sonra 1991'de Linus Torvalds, bugün Linux çekirdeği olarak bildiğimiz şeyi geliştirmeye başladı.
 
-## Test
+## Alıştırma
 
 Ek Okumalar:
 <li><a href='https://www.gnu.org/home.en.html'>GNU</a></li>
