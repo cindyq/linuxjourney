@@ -6,9 +6,9 @@ Vamos a aprender unos cuantos comandos que serán de utilidad a la hora de proce
 
 <pre>$ echo 'El rápido zorro marrón salta sobre el perro perezoso' > sample.txt</pre>
 
-First command we'll be learning about is the cut command. It extracts portions of text from a file.
+El primer comando que aprenderemos a usar es cut. Este comando extrae partes de un texto de un archivo.
 
-To extract contents by a list of characters:
+Para extraer contenidos dados por una lista de caracteres:
 
 <pre>$ cut -c 5 sample.txt</pre>
 
