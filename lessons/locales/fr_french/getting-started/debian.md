@@ -13,7 +13,7 @@ Debian utilise aussi l'outil de gestion des paquets. Chaque distribution de Linu
 <b>Configurabilité</b>
 Debian pourrait ne pas être à jour, mais il est extrèmement stable. Si vous voulez un bon système d'exploitation, c'est lui qu'il vous faut.
 
-<b>Usage</b>
+<b>Usages</b>
 Debian est un système d'exploitation puissant pour n'importe quel usage.
 
 
