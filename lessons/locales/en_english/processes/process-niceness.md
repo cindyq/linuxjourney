@@ -14,7 +14,7 @@ You can see a column for NI right now, that is the niceness level of a process.
 
 To change the niceness level you can use the nice and renice commands:
 
-<pre>$ nice -n 5 apt-get upgrade</pre>
+<pre>$ nice -n 5 apt upgrade</pre>
 
 The nice command is used to set priority for a new process. The renice command is used to set priority on an existing process. 
 

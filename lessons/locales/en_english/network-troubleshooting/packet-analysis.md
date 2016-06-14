@@ -7,7 +7,7 @@ Packet analysis can be in a course of its own, they have books written just on p
 <b>Install tcpdump</b>
 
 <pre>
-$ sudo apt-get install tcpdump
+$ sudo apt install tcpdump
 </pre>
 
 <b>Capture packet data on an interface</b>
