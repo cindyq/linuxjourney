@@ -6,7 +6,7 @@ You may have heard of the terms single-threaded and multi-threaded processes. Th
 
 Processes operate with their own isolated system resources, however threads can share these resources among each other easily, making it easier for them to communicate among each other and at times it is more efficient to have a multi-threaded application than a multi-process application.
 
-Basically, let's say you open up Microsoft Word and Chrome, each is it's own separate process. Now you go inside Word and start editing text, when you edit the text it gets automatically saved. These two parallel "lightweight processes" of saving and editing are threads. 
+Basically, let's say you open up LibreOffice Writer and Chrome, each is it's own separate process. Now you go inside Writer and start editing text, when you edit the text it gets automatically saved. These two parallel "lightweight processes" of saving and editing are threads. 
 
 To view process threads, you can use: 
 
