@@ -14,7 +14,7 @@ ARP finds the MAC address associated with an IP address. ARP is used within the 
 
 Once we are on the same network, systems first use the ARP look-up table that stores information about what IP addresses are associated with what MAC address. If the value is not there, then ARP is used. So then the system will send a broadcast message to the network using the ARP protocol to find out which host has IP 10.10.1.4. A broadcast message is a special message that is sent to all hosts on a network (aptly named for sending a broadcast), any machine with the requested IP address will reply with an ARP packet containing the IP address and the MAC address.
 
-Now that we have all the necessary data we need, IP address and MAC addresses, our link layer forwards this frame through our network interface card, out to the next device and finds Patty's network. This step is a little more complex than I how I just explained it, but we will discuss more details in the Routing course.
+Now that we have all the necessary data we need, IP address and MAC addresses, our link layer forwards this frame through our network interface card, out to the next device and finds Patty's network. This step is a little more complex than how I just explained it, but we will discuss more details in the Routing course.
 
 And there it is a simple (or not so simple) packet traversal down the TCP/IP layer. Keep in mind that packets don't travel in a one way fashion like this. We haven't even gotten to Patty's network yet! When travelling through networks, it requires going through the TCP/IP model at least twice before any data is sent or received. In fact, in reality the way this packet looks would be something like this: 
 
