@@ -10,7 +10,7 @@ Il n'est pas adapté for la lecture de gros fichiers et est seulement destiné p
 
 ## Exercise
 
-Exécuter la commande cat sur différents fichiers et répertoires. Puis essayez sur plusieurs fichiers.
+Exécutez la commande cat sur différents fichiers et répertoires. Puis essayez sur plusieurs fichiers.
 
 ## Quiz Question
 Quel est un bon moyen de lire le contenu d'un fichier?
