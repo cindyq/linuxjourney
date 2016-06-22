@@ -24,7 +24,7 @@ Créez quelques alias puis supprimez les.
 
 ## Quiz Question
 
-Wuelle utilise t-on peut créer un alias?
+Quelle commande utilise t-on peut créer un alias?
 
 ## Quiz Answer
 
