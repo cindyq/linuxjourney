@@ -2,33 +2,33 @@
 
 ## Lesson Content
 
-In a lot (if not all) of Emacs documentation, you will see the syntax C-[letter]. This just means hit the Ctrl-letter, but for shorthand purposes, we'll call Ctrl with C. If you see syntax such as M-[letter], that means use the Meta key, most commonly the Alt key.
+En mucha (si no en toda) la documentación de Emacs, verás la sintaxis C-[letra]. Esto significa pulsar la tecla Ctrl-letra, pero para ahorrar, llamamos Ctrl con la letra C. Si ves la sintaxis siguiente M-[letra], significa que se usa la tecla Meta, comunmente la tecla Alt.
 
-<b>Saving files</b>
+<b>Guardar un archivo</b>
 
 <pre>
-C-x C-s - Save a file
-C-x C-w - Save file as
-C-x s - Save all
+C-x C-s - Guarda un archivo
+C-x C-w - Guarda un archivo como
+C-x s - Guardar todo
 </pre>
 
-The save file options will prompt you if you want to save each file.
+Las opciones de guardar archivo saltarán si quieres guardar cada archivo.
 
-<b>Opening a file</b>
+<b>Abrir un archivo</b>
 
 <pre>
 C-x C-f
 </pre>
 
-This will prompt you to type a filename to open. If you do not have a file that already exists, it will create a new file. You can load up a directory as well.
+Esta opción te dirá que teclees el nombre del archivo a abrir. Si el archivo no existe, se creará uno nuevo. Puedes cargar también un directorio.
 
 ## Exercise
 
-Play around with opening files and saving files.
+Experimenta un poco con la apertura y el guardado de archivos.
 
 ## Quiz Question
 
-What command is used to open a file?
+¿Qué comando se usa para abrir un archivo?
 
 ## Quiz Answer
 

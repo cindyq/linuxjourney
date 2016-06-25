@@ -2,28 +2,29 @@
 
 ## Lesson Content
 
-<b>To close out of emacs</b>
+<b>Para salir de emacs</b>
 
 <pre>C-x C-c</pre>
 
-If you have any open buffers, it will ask you to save it before closing out of emacs.
+Si tienes algún buffer abierto, te preguntará si quieres salvarlo antes de salir de emacs.
 
-<b>Confused?</b>
+<b>¿Confundido?</b>
 
-<pre>C-h C-h : help menu</pre>
+<pre>C-h C-h : menú yuda</pre>
 
-<b>Undo</b>
+<b>Deshacer</b>
 
 <pre>C-x u</pre>
 
-As you can see Emacs has more moving parts, so the learning curve is a little steeper. In exchange though, you get a very powerful text editor. 
+Como puedes ver Emacs tiene muchas combinaciones, por lo que la  curva de aprendizaje es un poco alta. A cambio, tienes un editor de texto realmente poderoso.
 
 ## Exercise
 
-Visit the Emacs site to learn about more commands. <a href="https://www.gnu.org/software/emacs/">Emacs</a>
+Visita el sitio de Emacs para aprender más comandos.<a href="https://www.gnu.org/software/emacs/">Emacs</a>
 
 ## Quiz Question
 
+¿Cómo accedes al menú de ayuda?
 How do you access the help menu?
 
 ## Quiz Answer

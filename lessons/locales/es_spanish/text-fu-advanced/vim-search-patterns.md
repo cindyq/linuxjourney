@@ -2,33 +2,32 @@
 
 ## Lesson Content
 
-To search for an expression just type the / key and then your search result while you are in a vim session. Once you hit enter, you can press "n" to go forward or "N" to go backward in your search results.
+Para buscar una expresión solo teclea / y lo que quieras buscar mientras estas en una sesión de vim. Una vez que pulses Intro, puedes presionar "n" para ir hacia delante o "N" para ir hacia atrás en los resultados.
 
 <pre>
 My pretty file is very pretty.
 
 /pretty
 
-will find the pretty words in the text file.
+encontrará las palabras pretty en el archivo de texto.
 </pre>
 
-
-The ? search command will search the text file backwards, so in the previous example, the last pretty would come up first. 
+El comando ? buscará en el texto pero empezando por el final, por lo que el primer pretty del ejemplo anterior aparecerá primero.
 <pre>
 My pretty file is very pretty.
 
 ?pretty
 
-will find the pretty words in the text file.
+encontrará las palabras pretty en el archivo de texto.
 </pre>
 
 ## Exercise
 
-Play with the search key, open a text file in vim with: vim [textfile] and start searching!
+Experimenta con los comandos de búsqueda, abre un archivo en vim con: vim [archivo de texto] y busca algo.
 
 ## Quiz Question
 
-What key is used to search in vim?
+¿Qué tecla se usa para buscar en vim?
 
 ## Quiz Answer
 
