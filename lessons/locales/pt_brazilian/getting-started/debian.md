@@ -19,7 +19,7 @@ Debian é um sistema operacional ótimo para qualquer plataforma.
 
 ## Exercise
 
-Se você está interessado em ter o Arch como seu sistema operacional, de uma olhada na seção de instalação e de uma chance a ele: <a href='https://www.debian.org/'>https://www.debian.org/</a>
+Se você está interessado em ter o Debian como seu sistema operacional, dê uma olhada na seção de instalação e dê uma chance a ele: <a href='https://www.debian.org/'>https://www.debian.org/</a>
 
 ## Quiz Question
 
