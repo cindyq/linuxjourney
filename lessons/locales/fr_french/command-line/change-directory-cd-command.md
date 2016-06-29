@@ -2,7 +2,7 @@
 
 ## Lesson Content
 
-Maintenant que vous savez où vous vous trouvez, voyons si nous pouvons un peu parcourir le système de fichiers. Souvenez-vous, nous nous déplacerons en utilisant des chemins. Il existe deux façons différentes de donner un chemin, chemins absolu et relatif. 
+Maintenant que vous savez où vous vous trouvez, voyons si nous pouvons un peu parcourir le système de fichiers. Souvenez-vous, nous nous déplacerons en utilisant des chemins. Il existe deux façons différentes de donner un chemin: chemins absolu et relatif. 
 
 <ul>
 <li>Chemin absolu: C'est le chemin ayant pour origine le répertoire racine. La racine est le grand patron. Le répertoire racine est généralement représenté à l'aide d'un slash (/). Chaque fois que votre chemin commence avec un /, cela signifie que vous venez du répertoire racine. Par exemple, /home/pete/Desktop.</li>
@@ -10,7 +10,7 @@ Maintenant que vous savez où vous vous trouvez, voyons si nous pouvons un peu p
 <li>Chemin relatif: C'est le chemin ayant pour origine le répertoire dans lequel vous vous trouvez. Si je me trouvais dans l'emplacement /home/pete/Documents et voudrais me rendre dans le répertoire "taxes" se trouvant dans Documents, j'ai pas besoin de préciser le chemin entier à partir de la racine comme ceci /home/pete/Documents/taxes, je peux juste faire ça à la place: taxes/</li>
 </ul>
 
-Maintenant que vous savez comment les chemins fonctionnent, nous avons besoin de quelque chose pour nous aider à nous rendre au répertoire que nous voulons. Heureusement, nous avons cd ou "change directory" (changer de répertoire) pour le faire. 
+Maintenant que vous savez comment les chemins fonctionnent, nous avons besoin de quelque chose pour nous aider à nous rendre dans le répertoire que nous voulons. Heureusement, nous avons cd ou "change directory" (changer de répertoire) pour le faire. 
 
 <pre>$ cd /home/pete/Pictures</pre> 
 
