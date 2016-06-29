@@ -2,7 +2,7 @@
 
 ## Lesson Content
 
-Le monde est à votre portée, ou plus précisement l'environnement (ou interpréteur) de commandes (le shell) est à votre portéee. C'est quoi l'environnement de commandes? L'environnement de commandes est simplement un programme qui recupère vos commandes du clavier et les envoie au système d'exploitation pour exécution. Si vous avez déjà utilisé une interface graphique, vous avez certainement vu des programmes comme "Terminal" ou "Console"; ce sont juste des programmes qui exécutent l'environnement de commandes pour vous. Tout au long de ce cours, nous allons apprendre les meiveilles de l'environnement de commandes.
+Le monde est à votre portée, ou plus précisement l'environnement (ou interpréteur) de commandes (le shell) est à votre portée. C'est quoi l'environnement de commandes? L'environnement de commandes est simplement un programme qui recupère vos commandes du clavier et les envoie au système d'exploitation pour exécution. Si vous avez déjà utilisé une interface graphique, vous avez certainement vu des programmes comme "Terminal" ou "Console"; ce sont juste des programmes qui exécutent l'environnement de commandes pour vous. Tout au long de ce cours, nous allons apprendre les meiveilles de l'environnement de commandes.
 
 Dans ce cours, nous utiliserons l'environnement de commandes bash (Bourne Again shell), présent dans presque toutes les distributions Linux. Il existe d'autres environnements de commandes tels que ksh, zsh, tsch, mais nous n'en parlerons pas.
 
