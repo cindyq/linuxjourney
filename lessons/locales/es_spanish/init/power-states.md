@@ -12,7 +12,7 @@ Esto detendrá el sistema (apagarlo), además debes especificar el momento en el
 
 <pre>$ sudo shutdown -h +2</pre>
 
-Esto hará que el sistema se apague dentro de dos minutos. Tambien puedes reiniciar trabajos con el comando shutdown:
+Esto hará que el sistema se apague dentro de dos minutos. Tambien puedes reiniciar el sistema con el comando shutdown:
 
 <pre>$ sudo shutdown -r now</pre>
 
