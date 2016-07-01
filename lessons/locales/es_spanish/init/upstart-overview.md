@@ -2,7 +2,7 @@
 
 ## Lesson Content
 
-Upstart fue desarrollado por Canonical, por lo que fue la implementación de init en Ubuntu por algún tiempo, sin embargo, en instalaciones más modernas de Ubuntu systemd es utilizado. Upstart fue creado para mejorar los problemas de Sys V, tales como el estricto proceso de inicio, el bloqueo de tareas, etc. El modelo de eventos y trabajos de Upstart permite responder a los eventos a medida que ocurren.
+Upstart fue desarrollado por Canonical, por lo que fue la implementación de init en Ubuntu por algún tiempo, sin embargo, en instalaciones más modernas del mismo systemd es utilizado. Upstart fue creado para mejorar los problemas de Sys V, tales como el estricto proceso de inicio, el bloqueo de tareas, etc. El modelo de eventos y trabajos de Upstart permite responder a los eventos a medida que ocurren.
 
 Para saber si estás utilizando Upstart, verifica si tienes el directorio /usr/share/upstart.
 
