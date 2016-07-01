@@ -2,7 +2,7 @@
 
 ## Lesson Content
 
-Upstart puede disparar muchos eventos y trabajos, desafortunadamente no hay una forma sencilla de ver donde se originaron los mismos, por lo que tendrás que mirar las configuraciones de los trabajos en /etc/init. La mayor parte del tiempo, no te será necesario, pero te resultará más fácil para controlar algún trabajo en específico. Hay muchos comandos útiles que puedes utilizar en un sistema Upstart. 
+Upstart puede disparar muchos eventos y trabajos, desafortunadamente no hay una forma sencilla de ver donde se originaron los mismos, por lo que tendrás que mirar las configuraciones de los trabajos en /etc/init. La mayor parte del tiempo, no te será necesario, pero te resultará más fácil si quieres controlar algún trabajo en específico. Hay muchos comandos útiles que puedes utilizar en un sistema Upstart. 
 
 <b>Ver trabajos</b>
 

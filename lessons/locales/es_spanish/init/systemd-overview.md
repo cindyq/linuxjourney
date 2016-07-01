@@ -18,11 +18,11 @@ De manera similar a los niveles de ejecución de Sys V, systemd inicia dentro de
 <li>poweroff.target - apagar sistema</li>
 <li>rescue.target - modo monousuario</li>
 <li>multi-user.target - modo multiusuario con soporte de red</li>
-<li>graphical.target - modo multiusuario con soporte de red e interfaz gráfica.</li>
+<li>graphical.target - modo multiusuario con soporte de red e interfaz gráfica</li>
 <li>reboot.target - reiniciar sistema</li>
 </ul>
 
-El objetivo de arranque por defecto de defaults.target generalmente apunta a graphical.target.
+Por defecto el objetivo de arranque de defaults.target apunta generalmente a graphical.target.
 
 El componente básico de systemd es la unidad. Systemd no solo detiene e inicia servicios, puede montar sistemas de ficheros, monitorear los sockets de red, etc y debido a su robustés tiene diferente tipos de unidades con las que puede operar. Las unidades mas comunes son:
 
@@ -32,7 +32,7 @@ El componente básico de systemd es la unidad. Systemd no solo detiene e inicia 
 <li>Unidades de objetivo - agrupa otras unidades, los ficheros de estas unidades terminan en .target</li>
 </ul>
 
-Por ejemplo, digamos que arrancamos en nuestro default.target, este unidad de objetivo agrupa unidades como networking.service, crond.service, etc por lo que cuando activamos una sola unidad, todo debajo de ella será activado. 
+Por ejemplo, digamos que arrancamos en default.target, esta unidad de objetivo agrupa unidades como networking.service, crond.service, etc por lo que cuando activamos una sola unidad, todo debajo de ella será activado. 
 
 ## Exercise
 

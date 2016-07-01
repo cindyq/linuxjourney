@@ -2,7 +2,7 @@
 
 ## Lesson Content
 
-Es difícil de creer que hasta ahora no hayamos discutido las diferentes maneras de controlar el estado de tu sistema desde la línea de comando, cuando hablamos de init, no solo hablamos de los modos que nos permiten iniciar nuestro sistema, sino tambien de aquellos que lo detienen.
+Es difícil de creer que hasta ahora no hayamos discutido las diferentes maneras de controlar el estado del sistema desde la línea de comando, cuando hablamos de init, no solo hablamos de los modos que nos permiten iniciar nuestro sistema, sino tambien de aquellos que lo detienen.
 
 Detener el sistema
 

@@ -2,7 +2,7 @@
 
 ## Lesson Content
 
-No entraremos en detalle de como se escriben los ficheros de unidades de systemd. Sim embargo, haremos un breve repaso de uno de estos archivos y como controlar las unidades de forma manual.
+No entraremos en detalle de como se escriben los ficheros de unidades de systemd. Sin embargo, haremos un breve repaso de uno de estos archivos y de como controlar las unidades de forma manual.
 
 Aqui tenemos una unidad de servicio bastante básica: foobar.service
 
