@@ -2,7 +2,7 @@
 
 ## Lesson Content
 
-Hay muchas herramientas de línea de comando que puedes utilizar para gestionar los servicios de Sys V.
+Hay varias herramientas de línea de comando que puedes utilizar para gestionar los servicios de Sys V.
 
 <b>Listar servicios</b>
 
@@ -20,7 +20,7 @@ Hay muchas herramientas de línea de comando que puedes utilizar para gestionar 
 
 <pre>$ sudo service networking restart</pre>
 
-Estos comandos no son solo específicos de sistemas que usan Sys V, puedes utilizarlos también para gestionar servicios Upstart. Aunque Linux está tratando de alejarse de los scripts más tradicionales de Sys V, todavía hay cosas para ayudar en esa transición.
+Estos comandos no son solo específicos de sistemas que usan Sys V, puedes utilizarlos también para gestionar servicios de Upstart. Aunque Linux está tratando de alejarse de los scripts más tradicionales de Sys V, todavía hay herramientas para ayudar en esa transición.
 
 ## Exercise
 
