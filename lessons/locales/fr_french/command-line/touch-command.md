@@ -6,7 +6,7 @@ Voyons comment créer quelques fichiers. Une façon plus simple est d'utiliser l
 
 <pre>$ touch monsuperhyperfichier</pre>
 
-Et boom! a nouveau fichier!
+Et boom! un nouveau fichier!
 
 touch est aussi utilisé pour changer les informations de date des fichiers/dossiers existants. Essayez, faitez un ls -l sur un fichier et notez la date, puis "touch" ce fichier et il va mettre à jour l'information de date. 
 

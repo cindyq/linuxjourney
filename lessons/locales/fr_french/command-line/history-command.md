@@ -2,15 +2,15 @@
 
 ## Lesson Content
 
-Dans votre invite de commande, il y a l'historique des commandes que vous avez précédemment saisies, vous pouvez en fait consulter ces commandes. C'est bien utile quand vous voulez chercher et exécuter une commande précédemment utilisée sans réellement la saisir à nouveau.
+Dans votre invite de commande, il y a l'historique des commandes que vous avez précédemment saisies, vous pouvez en fait consulter ces commandes. C'est bien utile quand vous voulez chercher et exécuter une commande précédemment utilisée sans la saisir à nouveau.
 
 <pre>$ history</pre>
 
-Envie reexécuter une même commande, appuyez just la flèche haut du clavier.
+Envie de reexécuter une même commande, appuyez just la flèche haut du clavier.
 
-Envie reexécuter une commande sans la saisir à nouveau? Taper juste "!!". Si vous avez exécuté la commande "cat fichier1" et voulez le reexécuter, vous pouvez juste faire !! et il exécutera votre dernière commande. 
+Envie de reexécuter une commande sans la saisir à nouveau? Taper juste "!!". Si vous avez exécuté la commande "cat fichier1" et voulez la reexécuter, vous pouvez juste faire !! et il exécutera votre dernière commande. 
 
-Un autre raccourci de l'historique est ctrl+R, c'est une commande re recherche inversée, si faites ctrl+R et commencez à saisir des termes de la commande que vous désirez, il vous affichera toutes les commandes correspondantes et vous pouvez les voir en faisant les touches ctrl+R. Une fois que vous trouvez votre commande, tappez juste la touche Entrée.
+Un autre raccourci de l'historique est ctrl+R, c'est une commande de recherche inversée, si faites ctrl+R et commencez à saisir des termes de la commande que vous désirez, il vous affichera toutes les commandes correspondantes et vous pouvez les voir en faisant les touches ctrl+R. Une fois que vous trouvez votre commande, tappez juste la touche Entrée.
 
 Notre invite de commande devient un peu touffu. Non? Faisons un peu de nétoyage, utilisez la commande "clear" pour effacher le tableau.
 
@@ -22,7 +22,7 @@ Parlant des choses utiles, une des fonctionnalités les plus importantes dans n'
 
 ## Exercise
 
-COnsultez l'historique de vos commandes avec les touches Up et Down. Amusez-vous avec le recherche inversée ctrl+R.
+Consultez l'historique de vos commandes avec les touches Up et Down. Amusez-vous avec le recherche inversée ctrl+R.
 
 ## Quiz Question
 
