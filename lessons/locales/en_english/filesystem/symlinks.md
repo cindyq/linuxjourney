@@ -47,7 +47,7 @@ total 16
 93401 -rw-rw-r-- 2 pete pete 8 Jan 21 21:36 myhardlink
 </pre>
 
-A hard link just creates another file with a link to the same inode. So even if I modify myhardlink, it would not affect myfile2 and even if I deleted the original file, myhardlink would still be in place. Here is where our link count in the ls command comes into play. The link count is the number of hardlinks that an inode has, when you remove a file, it will decrease that link count. The inode only gets deleted when all hardlinks to the inode have been deleted. When you create a file, it's link count is 1 because it is the only file that is pointing to that inode. Unlike symlinks, hardlinks do not span filesystems because inodes are unique to the filesystem. 
+A hardlink just creates another file with a link to the same inode. So if I modified the contents of myfile2 or myhardlink, the change would be seen on both, but if I deleted myfile2, the file would still be accessible through myhardlink. Here is where our link count in the ls command comes into play. The link count is the number of hardlinks that an inode has, when you remove a file, it will decrease that link count. The inode only gets deleted when all hardlinks to the inode have been deleted. When you create a file, it's link count is 1 because it is the only file that is pointing to that inode. Unlike symlinks, hardlinks do not span filesystems because inodes are unique to the filesystem. 
 
 <b>Creating a symlink</b>
 
