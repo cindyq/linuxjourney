@@ -1,37 +1,38 @@
-# File Permissions
+# مجوزهای فایل
 
-## Lesson Content
+## محتویات درس
 
-As we learned previously, files have different permissions or file modes. Let's look at an example:
+همانطور که پیشتر یاد گرفتیم، فایل‌ها مجوز و مُدهای مختلفی دارند. بگذارید با یک مثال نگاهی دقیق‌تر به آن بیندازیم:
 
 <pre>$ ls -l Desktop/
 drwxr-xr-x 2 pete penguins 4096 Dec 1 11:45 .
 </pre>
 
-There are four parts to a file's permissions. The first part is the filetype, which is denoted by the first character in the permissions, in our case since we are looking at a directory it shows <b>d</b> for the filetype. Most commonly you will see a <b>-</b> for a regular file. 
+در قسمت مجوز‌های فایل چهار قسمت وجود دارد. قسمت اول نوع فایل است که  توسط اولین کارکترِ قسمت مجوز‌ها مشخص شده است. در این مثال، ما در حال بررسی یک دایرکتوری یا به عبارت ساده پوشه هستیم و به همین خاطر این کاراکتر حرف <b>d</b> را برای نوع فایل نشان می‌دهد. در اکثر موراد شما با کاراکتر <b>-</b> برای فایل‌های معمولی مواجه خواهید شد.
 
-The next three parts of the file mode are the actual permissions. The permissions are grouped into 3 bits each. The first 3 bits are user permissions, then group permissions and then other permissions. I've added the pipe to make it easier to differentiate.
+سه قسمت بعدی در فایل‌مُد ما مجوزهای موجود فایل است. هر مجوز به سه گروه مجزا که هر کدام به سه بیت تقسیم شده‌اند، دسته‌بندی شده‌اند. سه بیت ابتدایی مجوزهای مربوط به کاربر "user" را نشان می‌دهد و سپس مجوزهای مربوط به گروه "group" و بعد از آن  مجوزهای سایر قرار گرفته‌اند. در مثال زیر با توجه به لوله‌های بین آن‌ها می‌توانید تفاوت را به وضوح ببینید.
 
 <pre>d | rwx | r-x | r-x </pre>
 
-Each character represent a different permission: 
+هر کاراکتر نشان‌دهنده‌ی مجوزهای متفاوتی است.
+
 <ul>
-<li>r: readable</li>
-<li>w: writable</li>
-<li>x: executable (basically an executable program)</li>
-<li>-: empty</li>
+<li>r: قابل خواندن</li>
+<li>w: قابل نوشتن</li>
+<li>x: قابل اجرا (در اصل یک برنامه‌ی قابل اجرا)</li>
+<li>-: خالی</li>
 </ul>
 
-So in the above example, we see that the user pete has read, write and execute permissions on the file. The group penguins has read and execute permissions. And finally, the other users (everyone else) has read and execute permissions. 
+خب در مثال بالا، ما می‌بینیم که کاربر pete تمام مجوزهای مربوط به خواندن، نوشتن و اجرا را دارد. گروه پنگوئن‌ها یا penguins نیز قادر به خواندن و اجرای فایل است. و در نهایت سایر کاربرها (شامل تمام افرادی که فایل در دسترس ایشان است) مجوزهای خواندن و اجرا را دارند.
 
-## Exercise
+## تمرین
 
-Use the ls -l command on multiple files and recite their permissions, user and group. 
+با استفاده از دستور ls -l بر روی چندین فایل مجوزهای آن‌ها و همچنین گروه و کاربرشان را مشخص کنید.
 
-## Quiz Question
+## سوال آزمون
 
-What permission bit is used for executable? 
+کدام قسمت مجوز نشان‌دهنده‌ی قابلیت اجرای فایل است؟
 
-## Quiz Answer
+## پاسخ آزمون
 
 x
