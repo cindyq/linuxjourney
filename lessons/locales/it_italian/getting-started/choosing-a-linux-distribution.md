@@ -2,27 +2,24 @@
 
 ## Contenuto della lezione 
 
-In the previous lesson, we learned about the Linux kernel which powers millions of devices a day. One thing before we move forward, the term Linux is actually quite a misnomer, since it actually refers to the Linux kernel. However, many distributions use the Linux kernel so therefore are commonly known as Linux operating systems. 
+Nella precedente lezione, abbiamo introdotto il kernel Linux che oggi è presente su milioni di dispositivi. Una cosa prima di continuare, il termine Linux è abbastanza appropriato, visto che si riferisce al kernel Linux e non ad un sistema operativo. Visto che molte ditribuzioni sono basate sul kernel Linux, questi sono conosciuti anche (ripetiamo, erroneamente) come sistemi operativi Linux.
 
-A Linux system is divided into three main parts:
+Un sistema Linux è divisio in tre parti principali:
 
 <ul>
-<li>Hardware - This includes all the hardware that your system runs on as well as memory, CPU, disks, etc.</li>
-<li>Linux Kernel - As we discussed above, the kernel is the core of the operating system. It manages the hardware and tells it how to interact with the system.</li>
-<li>User Space - This is where users like yourself will be directly interacting with the system.</li>
+<li>Hardware - Include tutto l'hardware su cui gira il tuo sistema, compresa memoria, CPU, dischi etc.</li>
+<li>Linux Kernel - Come detto poco fa, è il cuore del sistema operativo. Gestisce l'hardware e gestisce l'interazione col sistema.</li>
+<li>User Space - Dove l'utente, ovvero noi, interagisce col sistema.</li>
 </ul>
 
-So the first step we’ll need to take is to install Linux on your machine. You have many options to choose from and this course will help inform you and get you started on choosing a Linux distribution. 
-
-There are many Linux distributions to choose from, we’ll just go over the most popular options. 
-
+Come primo passo dobbiamo ovviamente installare un sistema operativo basato su Linux. Esistono molte distribuzioni fra cui scegliere, il resto di questo corso ti aiuterà a conoscere le più popolari. 
 
 ## Esercizi
 
-No exercises for this lesson.
+Nessun esercizio per questa lezione.
 
 ## Quiz
 
-No questions, skip ahead!
+Nessuna domanda, prosegui!
 
 ## Soluzione del Quiz
