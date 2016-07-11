@@ -3,24 +3,24 @@
 ## Contenuto della lezione
 
 <b>Overview</b>
-Gentoo offers ridiculous flexibility with the operating system at a price. It’s made for advanced users who don’t mind getting their hands dirty with the system.
+Gentoo offre una grande flessibilità ma ad un prezzo salato. E' fatto per gli avanzi a cui non interessa sporcarsi le mani col loro sistema.
 
-<b>Package Management</b>
-Gentoo uses its own package management, Portage. The Portage package management is very modular and easy to maintain, which plays a big part in the operating system as a whole being very flexible.
+<b>Gestione dei pacchetti</b>
+Gentoo usa il suo gestore dei pacchetti, Portage. Il Portage package management è molto modulare e facile da gestire, il quale gioca un grande ruolo nel rendere il sistema operativo nell'insieme molto flessibile.
 
-<b>Configurability</b>
-If you’re just getting started with Linux and want to take a more difficult path, I’d choose Gentoo or Arch Linux as your distribution.
+<b>Personalizzazione</b>
+Se sei agli inizi con Linux e vuoi prendere una strada più difficile, ti consiglierei di scegliere Gentoo o Arch come distribuzione.
 
-<b>Uses</b>
-Great for desktop and laptop.
+<b>Utilizzi</b>
+Ottimo per desktop e laptop.
 
 ## Esercizi
 
-If you're interested in having Gentoo as your operating system, head over to the installation section and give it a try: <a href='https://www.gentoo.org/'>https://www.gentoo.org/</a>
+Se sei interessato ad avere Gentoo come sistema operativo, vai alla sezione di installazione e provalo: <a href='https://www.gentoo.org/'>https://www.gentoo.org/</a>
 
 ## Quiz
 
-What package management system does Gentoo use?
+Quale sistema di package manager usa Gentoo?
 
 ## Soluzione del Quiz
 

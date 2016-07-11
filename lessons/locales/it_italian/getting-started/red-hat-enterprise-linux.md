@@ -5,13 +5,13 @@
 <b>Overview</b>
 Red Hat Enterprise Linux commonly referred to as RHEL is developed by Red Hat. RHEL has strict rules to restrict free re-distribution although it still provides source code for free.
 
-<b>Package Management</b>
+<b>Gestione dei pacchetti</b>
 RHEL uses a different package manager than Debian, RPM package manager, which we will eventually learn about as well.
 
-<b>Configurability</b>
+<b>Personalizzazione</b>
 RHEL-based operating systems will differ slightly from the Debian-based operating systems, most noticeably in package management. If you decide to go with RHEL it’s probably best if you know you’ll be working with it.
 
-<b>Uses</b>
+<b>Utilizzi</b>
 As described by the name it's mostly used in enterprise, so if you need a solid server OS this would be a good one.
 
 ## Esercizi
