@@ -1,6 +1,6 @@
 # Arch Linux
 
-## Lesson Content
+## Contenuto della lezione
 
 <b>Overview</b>
 Arch is a lightweight and flexible Linux distribution driven 100% by the community. Similar to Debian, Arch uses a rolling release model so incremental updates eventually become the Stable release. You really need to get your hands dirty to understand the system and its functions, but in turn you get complete and total control of your system.
@@ -14,14 +14,14 @@ If you want a lightweight operating system and really want to understand Linux u
 <b>Uses</b>
 Great for desktop and laptop. If you also have a small device such as a Raspberry Pi and need to stick a lightweight OS on it, you can’t go wrong with Arch.
 
-## Exercise
+## Esercizi
 
 If you're interested in having Arch as your operating system, head over to the installation section and give it a try: <a href='https://www.archlinux.org/'>https://www.archlinux.org/</a>
 
-## Quiz Questions
+## Quiz
 
 What package manager does Arch Linux use?
 
-## Quiz Answer
+## Soluzione del Quiz
 
 Pacman

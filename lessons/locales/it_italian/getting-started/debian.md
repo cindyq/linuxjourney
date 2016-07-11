@@ -1,6 +1,6 @@
 # Debian
 
-## Lesson Content
+## Contenuto della lezione
 
 <b>Overview</b>
 Debian is an operating system composed entirely of free and open-source software. It’s widely known and has been in development for over 20 years. There are three branches that you can use, Stable, Testing and Unstable. 
@@ -17,14 +17,14 @@ Debian may not get the latest updates, but it's extremely stable. If you want a 
 Debian is an overall great operating system for any platform.
 
 
-## Exercise
+## Esercizi
 
 If you're interested in having Debian as your operating system, head over to the installation section and give it a try: <a href='https://www.debian.org/'>https://www.debian.org/</a>
 
-## Quiz Question
+## Quiz
 
 What kind of release does Testing and Unstable have? 
 
-## Quiz Answer
+## Soluzione del Quiz
 
 Rolling

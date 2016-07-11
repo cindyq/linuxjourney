@@ -1,6 +1,6 @@
-# Choosing a Linux Distribution
+# Scegliere una distrubizione
 
-## Lesson Content
+## Contenuto della lezione 
 
 In the previous lesson, we learned about the Linux kernel which powers millions of devices a day. One thing before we move forward, the term Linux is actually quite a misnomer, since it actually refers to the Linux kernel. However, many distributions use the Linux kernel so therefore are commonly known as Linux operating systems. 
 
@@ -17,12 +17,12 @@ So the first step we’ll need to take is to install Linux on your machine. You 
 There are many Linux distributions to choose from, we’ll just go over the most popular options. 
 
 
-## Exercise
+## Esercizi
 
 No exercises for this lesson.
 
-## Quiz Question
+## Quiz
 
 No questions, skip ahead!
 
-## Quiz Answer
+## Soluzione del Quiz

@@ -1,6 +1,6 @@
 # Ubuntu
 
-## Lesson Content
+## Contenuto della lezione
 
 <b>Overview</b>
 One of the most popular Linux distributions for personal machines is Ubuntu. Ubuntu also releases its own desktop environment manager Unity by default. 
@@ -14,15 +14,15 @@ Ubuntu is a great choice for a beginner who wants to get into Linux. Ubuntu offe
 <b>Uses</b>
 Great for any platform, desktop, laptop and server.
 
-## Exercise
+## Esercizi
 
 If you're interested in having Ubuntu as your operating system, head over to the installation section and give it a try: 
 <a href='http://www.ubuntu.com/'>http://www.ubuntu.com/</a>
 
-## Quiz Questions
+## Quiz
 
 What operating system is Ubuntu based off of?
 
-## Quiz Answer
+## Soluzione del Quiz
 
 Debian

@@ -1,6 +1,6 @@
 # Linux Mint
 
-## Lesson Content
+## Contenuto della lezione
 
 <b>Overview</b>
 Linux Mint is based off of Ubuntu. It uses Ubuntu’s software repositories so the same packages are available on both distributions. Linux Mint is preferred by others over Ubuntu because it doesn’t come with some of the proprietary software that Ubuntu includes such as Unity.
@@ -14,14 +14,14 @@ Great user interface, great for beginners and less bloated than Ubuntu. In this 
 <b>Uses</b>
 Great for desktop and laptop.
 
-## Exercise
+## Esercizi
 
 If you're interested in having Linux Mint as your operating system, head over to the installation section and give it a try: <a href='http://linuxmint.com/'>http://linuxmint.com/</a>
 
-## Quiz Questions
+## Quiz
 
 What is Linux Mint based off of?
 
-## Quiz Answer
+## Soluzione del Quiz
 
 Ubuntu

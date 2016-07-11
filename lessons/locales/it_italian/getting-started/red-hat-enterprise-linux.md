@@ -1,6 +1,6 @@
 # Red Hat Enterprise Linux
 
-## Lesson Content
+## Contenuto della lezione
 
 <b>Overview</b>
 Red Hat Enterprise Linux commonly referred to as RHEL is developed by Red Hat. RHEL has strict rules to restrict free re-distribution although it still provides source code for free.
@@ -14,14 +14,14 @@ RHEL-based operating systems will differ slightly from the Debian-based operatin
 <b>Uses</b>
 As described by the name it's mostly used in enterprise, so if you need a solid server OS this would be a good one.
 
-## Exercise
+## Esercizi
 
 If you're interested in having RHEL as your operating system, head over to the installation section and give it a try: <a href='http://www.redhat.com/en/technologies/linux-platforms/enterprise-linux/'>https://www.redhat.com/rhel/</a>
 
-## Quiz Questions
+## Quiz
 
 What package manager does RHEL use?
 
-## Quiz Answer
+## Soluzione del Quiz
 
 RPM
