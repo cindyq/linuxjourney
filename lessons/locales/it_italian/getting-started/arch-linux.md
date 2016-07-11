@@ -2,25 +2,25 @@
 
 ## Contenuto della lezione
 
-<b>Overview</b>
-Arch is a lightweight and flexible Linux distribution driven 100% by the community. Similar to Debian, Arch uses a rolling release model so incremental updates eventually become the Stable release. You really need to get your hands dirty to understand the system and its functions, but in turn you get complete and total control of your system.
+<b>Panoramica</b>
+Arch è una distribuzione leggera e flessibile, gestita al 100% dalla comunità. Simile a Debian, Arch usa il rolling release model in modo che gli aggiornamenti diventino parte della release Stable in maniera incrementale. Per usare Arch devi sporcarti le mani e capire veramente il sistema e come funziona, ma in cambio avrai un controllo totale sul tuo sistema.
 
-<b>Package Management</b>
-It uses its own package manager, Pacman, to install, update and manage packages. 
+<b>Gestione dei pacchetti</b>
+Utilizza il suo package manager, Pacman, per installare, aggiornare e gestire i pacchetti.
 
-<b>Configurability</b>
-If you want a lightweight operating system and really want to understand Linux use Arch! There’s a bit of a learning curve, but for the hardcore Linux users, this is a great choice.
+<b>Personalizzazione</b>
+Se vuoi un sistema operativo leggero e vuoi veramente capire Linux usa Arch! La curva d'apprendimento non è molto alta, ma per il Linuxiano hardcore questa è la scelta perfetta.
 
-<b>Uses</b>
-Great for desktop and laptop. If you also have a small device such as a Raspberry Pi and need to stick a lightweight OS on it, you can’t go wrong with Arch.
+<b>Utilizzi</b>
+Ottimo per desktop e portatili. Se hai un dispositivo simile a una Rasberry PI ed hai bisogno di un sistema operativo leggero, non puoi sbagliare con Arch.
 
 ## Esercizi
 
-If you're interested in having Arch as your operating system, head over to the installation section and give it a try: <a href='https://www.archlinux.org/'>https://www.archlinux.org/</a>
+Se sei interessato ad avere arch come sistema operativo, vai alla sezione di installazione e provalo: <a href='https://www.archlinux.org/'>https://www.archlinux.org/</a>
 
 ## Quiz
 
-What package manager does Arch Linux use?
+Quale package manager usa Arch Linux?
 
 ## Soluzione del Quiz
 
