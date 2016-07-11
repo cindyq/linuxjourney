@@ -1,29 +1,49 @@
-# Boot Process: BIOS
+# فرآیند بوت: BIOS
 
-## Lesson Content
+## محتوای درس
 
-<b>BIOS</b>
+**BIOS**
 
-The first step in the Linux boot process is the BIOS which performs system integrity checks. The BIOS is a firmware that comes most common in IBM PC compatible computers, the dominant type of computers out there today. You've probably used the BIOS firmware to change the boot order of your harddisks, check system time, your machine's mac address, etc. The BIOS's main goal is to find the system bootloader.
+اولین مرحله در فرآیند بوت ‌BIOS است که وضعیت سیستم را بررسی می‌کند. BIOS فرم‌ویری
+عمومی است که در اکثر کامپیوتر‌های مبتنی بر کامپیوتر‌های IBM (اغلب کامپیوتر‌های
+موجود) قرار دارد. احتمالا شما هم از فرم‌ویر BIOS برای تغییر چیدمان بوت، بررسی
+زمان سیستم‌، بررسی مک آدرس سیستم و یا … استفاده کرده‌اید. هدف اصلی BIOS‌، یافتن
+bootloader سیستم است.
 
-So once the BIOS boots up the hard drive, it searches for the boot block to figure out how to boot up the system. Depending on how you partition your disk, it will look to the master boot record (MBR) or GPT. The MBR is located in the first sector of the hard drive, the first 512 bytes. The MBR contains the code to load another program somewhere on the disk, this program in turn actually loads up our bootloader. 
+زمانی که BIOS‌، دیسک سخت را بوت می‌کند، به دنبال بلاک بوت (Boot Block) می‌گردد تا
+چگونگی بوت سیستم را پیدا کند. بسته به چگونگی پارتیشن‌بندی دیسک سخت‌تان‌، BIOS به
+دنبال master boot record (MBR)‎ یا GPT می‌گردد. MBR، در اولین بخش دیسک سخت (۵۱۲
+بایت اول) قرار می‌گیرد و شامل کدی برای بارگذاری برنامه‌ای دیگر از روی دیسک سخت
+می‌شود. در حقیقت این برنامه وضیفهٔ بارگذاری bootloader را بر عهده دارد.
 
-Now if you partitioned your disk with GPT, the location of the bootloader changes a bit.
+حال اگر دیسک سخت‌تان را با GPT پارتیشن‌بندی کرده باشید‌، موقعیت bootloader کمی فرق دارد.
 
-<b>UEFI</b>
+**UEFI**
 
-There is another way to boot up your system instead of using BIOS and that is with UEFI (stands for "Unified extensible firmware interface"). UEFI was designed to be successor to BIOS, most hardware out there today comes with UEFI firmware built in. Macintosh machines have been using EFI booting for years now and Windows has mostly moved all of their stuff over to UEFI booting. The GPT format was intended for use with EFI. You don't necessarily need EFI if you are booting a GPT disk. The first sector of a GPT disk is reserved for a "protective MBR" to make it possible to boot a BIOS-based machine.
+روش دیگری نیز برای بوت کردن به غیر از BIOS وجود دارد که UEFI نام دارد. UEFI مخفف
+عبارت Unified Extensible Firmware Interface یا به عبارتی «رابط یک‌پارچه و قابل
+گسترش فرم‌ویر» است. UEFI به عنوان جایگزین BIOS طراحی شد و اکثر سخت‌افزار‌هایی که
+امروزه عرضه می‌شوند از این فرم‌ویر استفاده می‌کنند. ماشین‌های مکینتاش‌، سال‌هاست که از
+پروسهٔ بوت EFI بهره می‌برند و ویندوز هم اکثر تشکیلاتش را به پروسهٔ بوت UEFI منتقل
+کرده است. فرمت GPT، برای استفاده با EFI تغیین شده است. عملا اگر از دیسک‌های GPT
+بهره می‌برید‌، ملزم به استفاده از EFI نیستید. اولین بخش یک دیسک GPT به عنوان
+«Protective MBR» در نظر گرفته شده که بوت کردن این نوع پارتیشن‌بندی دیسک را با یک
+ماشین بر مبنای BIOS ممکن می‌سازد.
 
-UEFI stores all the information about startup in an .efi file. This file is stored on a special partition called EFI system partition on the hardware. Inside this partition it will contain the bootloader. UEFI comes with many improvements from the traditional BIOS firmware. However, since we are using Linux, the majority of us are using BIOS. So all of these lessons will be going along with that pretense.
+‏UEFI تمام اطلاعات مربوط به فرآیند شروع را در یک فایل ‎.efi ذخیره می‌کند. این فایل
+در یک پارتیشن مخصوص به اسم EFI system partition روی سخت‌افزار قرار دارد. همچنین
+این پارتیشن شامل bootloader نیز می‌شود. UEFI نسبت به BIOS شامل بهبود‌های بسیاری
+است. اما به هر حال‌، چون ما از لینوکس استفاده می‌کنیم، اکثرمان در حال بهره‌گیری از
+BIOS هستیم. و بر همین اساس ادامهٔ مباحث بر همین اصل ادامه خواهد یافت.
 
-## Exercise
+## تمرین
 
-Go into your BIOS menu and see if you have UEFI booting enabled. 
+به منوی BISO خود بروید و بررسی کنید که آیا UEFI booting فعال است یا خیر.
 
-## Quiz Question
+## سوال آزمون
 
-What does the BIOS load? 
+‏BIOS چه چیزی را بارگذاری می‌کند؟
 
-## Quiz Answer
+## پاسخ
 
 bootloader
