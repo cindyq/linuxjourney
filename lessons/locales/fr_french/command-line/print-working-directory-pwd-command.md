@@ -31,7 +31,7 @@ Pas d'exercices dans cette leçon.
 
 ## Quiz Question
 
-Comment trouve je le répertoire dans lequel vous vous trouvez actuellement?
+Comment trouve t-on le répertoire dans lequel on se trouve actuellement?
 
 ## Quiz Answer
 

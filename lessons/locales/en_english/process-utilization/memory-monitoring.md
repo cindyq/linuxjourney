@@ -41,8 +41,8 @@ The fields are as follows:
 
 <b>system</b>
 <ul>
-<li>Number of interrupts per second</li>
-<li>Number of context switches per second</li>
+<li>in - Number of interrupts per second</li>
+<li>cs - Number of context switches per second</li>
 </ul>
 
 <b>cpu</b>

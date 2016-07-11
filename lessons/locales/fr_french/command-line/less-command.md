@@ -2,7 +2,7 @@
 
 ## Lesson Content
 
-Si vous trouvez que les fichiers text sont plus que le simple fichier, "less" est beaucoup plus. (Il existe en fait une commande appelée "more" qui fait la même chose) Le texte est affiché par page, ainsi vous pouvez parcourir le texte page par page. 
+Si vous trouvez que les fichiers text sont plus lourds qu'un simple fichier, "less" est beaucoup plus. (Il existe en fait une commande appelée "more" qui fait la même chose). Le texte est affiché par page, ainsi vous pouvez parcourir le texte page par page. 
 
 Allez-y et regardez le contenu d'un fichier avec la commande less. Une fois dans la commande less, vous pouvez en fait utiliser des raccourcis clavier pour parcourir le fichier. 
 
