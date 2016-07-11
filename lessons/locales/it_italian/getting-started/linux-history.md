@@ -1,31 +1,30 @@
-# History
+# Storia 
 
-## Lesson Content
+## Contenuto della lezione
+Hey recluta! Quindi hai deciso di entrare in questo bellissimo mondo chiamato Linux? Bene, reggiti forte perchè sarà un lungo e tortuoso viaggio. Il mio nome è Penguin Pete e sono qui per guidarti in questo viaggio. Iniziamo con un po di storia su Linux
 
-Hey rookie! So you decided to dive into this wonderful world known as Linux? Well you better strap in, because it’s gonna be a long and hard road. My name is Penguin Pete and I’m here to guide you through this journey. Let’s get started with a little bit of backstory about Linux. 
+Per capire come Linux è arrivato a diventare quello che è oggi, dobbiamo tornare nel 1969 quando Ken Thompson e Dennis Ritchie svilupparono il sistema operatiov UNIX pressi i Bell Laboratories. Fu successivamente riscritto in C per renderlo più portabile e inizio a diventare un sistema operativo molto utilizzato.
 
-To learn about how Linux came to be, let’s go back to the beginning to 1969 where Ken Thompson and Dennis Ritchie of Bell Laboratories developed the UNIX operating system. It was later rewritten in C to make it more portable and eventually became a widely used operating system. 
+Una decina di anni dopo, Richard Stallman inizio a lavorare su un progetto GNU (GNU is Not UNIX) chiamato GNU Hurd, un kernel che purtroppo non vide mai la luce. La GNU General Public License (GPL), una licenza per il software libero, fu creata in quello stesso peridoo.
 
-A decade or so later, Richard Stallman started working on the GNU (GNU is Not UNIX) project, the GNU kernel called Hurd, which unfortunately never came to completion. The GNU General Public License (GPL), a free software license, was also created as a result of this.
+Il kernel è una delle parti più importanti nei sistemi operativi. Permette all' hardware di comunicare col software. Esegue anche molte altre cose, ma scaveremo a fondo a riguardo in un corso successivo. Per ora, ti basta sapere che il kernel controlla praticamente tutto ciò che accade sul tuo sistema.
 
-The kernel is the most important piece in the operating system. It allows the hardware to talk to the software. It also does a whole lot of other things, but we’ll dig into that in a different course. For now, just know that the kernel controls pretty much everything that happens on your system. 
+Durante questo periodo, altri sistemi come BSD, MINIX, etc venivano sviluppati come cloni di UNIX. Comunque, una cosa comune a tutti questi cloni era l'assenza di un kernel unificato.
 
-During this time other efforts such as BSD, MINIX, etc were developed to be UNIX like-systems. However, one thing that all these UNIX like-systems had in common was the lack of a unified kernel. 
+Poi nel 1991, un giovane programmatore chiamato Linus Torvalds iniziò a sviluppare quello che oggi conosciamo come il kernel Linux.
 
-Then in 1991, a young fellow named Linus Torvalds started developing what we now know today as the Linux kernel.
+## Esercizi 
 
-## Exercise
-
-Additional reading:
+Letture aggiuntive:
 <li><a href='https://www.gnu.org/home.en.html'>GNU</a></li>
 <li><a href='https://en.wikipedia.org/wiki/Ken_Thompson'>Ken Thompson</a></li>
 <li><a href='https://stallman.org/'>Richard Stallman</a></li>
 <li><a href='https://en.wikipedia.org/wiki/Linus_Torvalds'>Linus Torvalds</a></li>
 
-## Quiz Question
+## Quiz
 
-Who developed the Linux kernel? 
+Chi ha sviluppoato il kernel Linux?
 
-## Quiz Answer
+## Soluzione del Quiz
 
 Linus Torvalds
