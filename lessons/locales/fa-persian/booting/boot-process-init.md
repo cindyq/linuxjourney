@@ -1,33 +1,43 @@
-# Boot Process: Init
+# فرآیند بوت:‌Init
 
-## Lesson Content
+# محتوای درس
 
-We've discussed init in previous lessons and know that it is the first process that gets started and it starts all the other essential services on our system. But how?
+در درس قبل در خصوص init صحبت کردیم و می‌دانیم اولین پروسه‌ای است که شروع به کار
+می‌کند و مسئولیت اجرای تمامی سرویس‌های مورد نیاز سیستم ما را بر عهده دارد. اما چگونه؟
 
-There are actually three major implementations of init in Linux: 
+در حال حاضر ۳ پیاده‌سازی اصلی از init برای لینوکس وجود دارد:
 
-<b>System V init (sysv)</b>
+### ‏System V init (sysv)‎
 
-This is the traditional init system. It sequentially starts and stops processes, based on startup scripts. The state of the machine is denoted by runlevels, each runlevel starts or stops a machine in a different way. 
+این سیستم init مرسوم و سنتی مورد استفاده سیستم عامل‌های لینوکسی است که به صورت
+ترتیبی پروسه‌ها را بر اساس اسکریپت‌های شروع (startup scripts) اجرا یا متوقف می‌کند.
+وضعیت ماشین نیز با استفاده از runlevel‌ها مشخص می‌شود. هر runlevel ماشین را به
+شیوه‌ای متفاوت اجرا یا متوقف می‌کند.
 
-<b>Upstart</b>
+### ‏Upstart
 
-This is the init you'll find on older Ubuntu installations. Upstart uses the idea of jobs and events and works by starting jobs that performs certain actions in response to events. 
+این پیاده‌سازی از init را می‌توانید در نسخه‌های قدیمی Ubuntu پیدا کنید. Upstart بر
+اساس ایدهٔ کار‌ها (jobs) و وقایع (events) کار می‌کند و یک سری از کار‌ها را برای پاسخ
+دادن به مجموعه‌ای از وقایع شروع می‌کند.
 
-<b>Systemd</b>
+### ‏Systemd
 
-This is the new standard for init, it is goal oriented. Basically you have a goal that you want to achieve and systemd tries to satisfy the goal's dependencies to complete the goal. 
+این پیاده‌سازی، استاندارد جدید init است و بر مبنای اهداف (goals) تعریف شده است.
+اساسا شما هدفی دارید که نیاز به رفع آن دارید. systemd موظف است که به منظور تکمیل
+هدف، پیش‌نیاز‌های مربوطه را تکمیل کند.
 
-We have an entire course on Init systems where we will dive into each of these systems in more detail.
+ما یک بخش درسی کامل در خصوص سیستم‌های Init داریم که به طور کامل به جزئیات مربوط به این سیستم‌ها خواهیم پرداخت. 
 
-## Exercise
+## تمرینات
 
-No exercises for this lesson.
+بدون تمرینات
 
-## Quiz Question
+## سوالات آزمون
 
-What is the newest standard for init?
+جدید‌ترین استاندارد پیاده‌سازی سیستم‌های init چه نام دارد.
 
-## Quiz Answer
+## پاسخ آزمون
 
+```
 systemd
+```
