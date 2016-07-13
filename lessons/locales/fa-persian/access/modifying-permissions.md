@@ -1,56 +1,62 @@
-# Modifying Permissions
+# دستکاری مجوزها
 
-## Lesson Content
+## محتویات درس
 
-Changing permissions can easily be done with the <b>chmod</b> command. 
+شما با استفاده از فرمان **chmod** به راحتی می‌توانید مجوزها را تغییر دهید.
 
-First, pick which permission set you want to change, user, group or other. You can add or remove permissions with a <b>+</b> or <b>-</b>, let's look at some examples.
+ابتدا دسته‌ی مجوزی که می‌خواهید تغییر دهید را انتخاب کنید. دسته‌ی کاربر، گروه و یا دیگران. حالا می‌توانید با استفاده از **+** و **-** آن‌ها را اضافه یا حذف کنید. با هم نگاهی به چند مثال می‌اندازیم.
 
-<b>Adding permission bit on a file</b>
-<pre>$ chmod u+x myfile</pre>
+**اضافه کردن یک بیتِ مجوز به فایل**
 
-The above command reads like this: change permission on myfile by adding executable permission bit on the user set. So now the user has executable permission on this file!
+```$ chmod u+x myfile```
 
-<b>Removing permission bit on a file</b>
-<pre>$ chmod u-x myfile</pre>
+دستور بالا اینگونه خوانده می‌شود: مجوز فایل myfile را با اضافه کردن قابلیت اجرا به مجوزهای دسته‌ی کاربر، تغییر بده. در نتیجه کاربر از این به بعد مجوز اجرا کردن این فایل را خواهد داشت.
 
-<b>Adding multiple permission bits on a file</b>
-<pre>$ chmod ug+w</pre>
+لازم به ذکر است که منظور از کاربر، کاربری‌ست که خط فرمان را در اختیار دارد و در حال اجرای دستور یا فرمان است.
 
-There is another way to change permissions using numerical format. This method allows you to change permissions all at once. Instead of using r, w, or x to represent permissions, you'll use a numerical representation for a single permission set. So no need to specify the group with g or the user with u.
 
-The numerical representations are seen below:
+**حذف بیتِ مجوز از یک فایل**
 
-<ul>
-<li>4: read permission</li>
-<li>2: write permission</li>
-<li>1: execute permission</li>
-</ul>
+```$ chmod u-x myfile```
 
-Let's look at an example: 
+**اضافه کردن چند بیتِ مجوز به یک فایل**
 
-<pre>$ chmod 755 myfile</pre>
+```$ chmod ug+w```
 
-Can you guess what permissions we are giving this file? Let's break this down, so now 755 covers the permissions for all sets. The first number (7) represents user permissions, the second number (5) represents group permissions and the last 5 represents other permissions. 
+یک راه دیگر نیز برای عوض کردن مجوزها استفاده از فرمت عددی است. این روش به شما اجازه‌ی تغییر تمامی مجوزها را در آن واحد می‌دهد. به جای استفاده از r و w و یا x برای اضافه و کم کردن بیت مجوزها می تواند از یک عدد برای یک دسته از مجوزها استفاده کنید. به عبارتی دیگر لازم نیست که از u برای کاربر و از g برای مشخص کردن گروه استفاده کنید.
 
-Wait a minute, 7 and 5 weren't listed above, where are we getting these numbers? Remember we are combining all the permissions into one number now, so you'll have to get some math involved.
+نمونه‌های عددی را در زیر می‌توانید ببینید:
 
-7 = 4 + 2 + 1, so 7 is the user permissions and it has read, write and execute permissions
 
-5 = 4 + 1, the group has read and execute permissions
++ 4: مجوز خواندن
++ 2: مجوز نوشتن
++ 1: مجوز اجرا شدن
 
-5 = 4 +1, and all other users have read and execute permissions
+نگاهی به یک مثال بیندازیم:
 
-One thing to note: it's not a great idea to be changing permissions nilly willy, you could potentially expose a sensitive file for everyone to modify, however many times you legitimately want to change permissions, just take precaution when using the chmod command.
+```$ chmod 755 myfile```
 
-## Exercise
+می‌توانید حدس بزنید که در دستور بالا، چه مجوزهایی به فایل مورد نظر ما داده شده است؟ 775 کلِ دسته‌ی مجوزهای ما را مورد پوشش خود قرار می‌دهد. اولین عدد یعنی (7) مجوزهای کاربر، دومین عدد یعنی (5) مجوزهای گروه و سومین عدد یعنی (5) هم مجوزهای سایرین را تعیین می‌کند.
 
-Change some basic text file permissions and see the bits changing as you do an ls -l.
+ولی ۵ و ۷ که جزو عددهای بالا نیستند؟ این عددها از کجا آمده‌اند؟ از آنجایی که قرار است کل مجوزهای کاربر یا گروه یا سایرین با استفاده از یک عدد انجام شود، شاید بد نباشد کمی هم ریاضیات را در این کار دخالت دهیم. اما چطور؟
 
-## Quiz Question
+با مجوز کاربر یعنی عدد (7) شروع کنیم. این عدد برابر است با: 7 = 4 + 2 + 1 به عبارتی هفت مجموع عدد سه مجوز خواندن، نوشتن و ا جرا شدن است و در نتیجه کاربر هر سه مجوز را دارد.
 
-What number represents the read permission when using numerical format?
+گروه و سایرین (تمامی دیگر کاربران) که به ترتیب دو عدد بعدی نماینده‌ی آن‌ها هستند با (5) مشخص شده‌اند. پنج مجموع عددهای 1 و 4 است و به عبارتی گروه و سایرین مجوز خواندن و اجرا کردن فایل مورد نظر را دارند.
 
-## Quiz Answer
+و البته یک نکته‌ی دیگر و آن اینکه به صورت هوا و هوسی و دل‌بخواهی مجوزها را دستکاری نکنید چرا که ممکن است فایل‌های حساس را در معرض سوءاستفاده‌ی سایرین قرار دهید و برای خودتان دردسر درست کنید. برای استفاده کاربردی و درست از chmod بهترین کار این است که جانب احتیاط را رعایت کنید و قبل از انجام تغییر مجوزها، دستور را بررسی کنید. به هر حال در بسیاری از مواقع نیاز به آن خواهید داشت و اگر هوشیارانه از آن استفاده کنید هیچگونه خطری را برای خود به جان نخواهید خرید.
+
+
+## تمرین
+
+مجوزهای چند فایل ساده‌ی متنی را تغییر دهید و تغییرات ایجاد شده در بیت‌های آن را با استفاده از دستور ls -l رویت کنید.
+
+
+## سوال آزمون
+
+در فرمت عددی مجوزها، چه عددی نشان‌دهنده‌ی مجوز خواندن برای یک فایل است؟
+
+
+## پاسخ آزمون
 
 4
