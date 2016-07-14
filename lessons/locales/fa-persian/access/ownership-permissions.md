@@ -1,34 +1,36 @@
-# Ownership Permissions
+# حق مالکیت
 
-## Lesson Content
 
-In addition to modifying permissions on files, you can also modify the group and user ownership of the file as well. 
+## محتویات درس
 
-<b>Modify user ownership</b>
+علاوه بر تغییر در مجوزهای فایل، شما می‌توانید گروه یا حتی کاربر مالک فایل را تغییر دهید.
 
-<pre>$ sudo chown patty myfile</pre>
+**تغییر کاربر مالک فایل**
 
-This command will set the owner of myfile to patty.
+```$ sudo chown patty myfile```
 
-<b>Modify group ownership</b>
+با توجه به قرار گرفتن sudo در ابتدای دستور، و با داشتن مجوزهای لازم برای این کار، بدون توجه به اینکه مالک اولیه فایل کیست، این دستور به اجبار patty را مالک فایل (myfile) می‌کند.
 
-<pre>$ sudo chgrp whales myfile</pre>
+**تغییر مالکیت گروه فایل**
 
-This command will set the group of myfile to whales.
+```$ sudo chgrp whales myfile```
 
-<b>Modify both user and group ownership at the same time</b>
-If you add a colon and groupname after the user you can set both the user and group at the same time.
+این دستور گروه فایل (myfile) را به whales تغییر می‌دهد.
 
-<pre>$ sudo chown patty:whales myfile</pre> 
+**تغییر کاربر و گروهِ مالک فایل در آن واحد**
 
-## Exercise
+اگر شما بین نام کاربر و نام گروه دو نقطه قرار دهید می‌توانید هر دوی این مقادیر را در آن واحد تغییر دهید. ابتدا نام کاربر و سپس نام گروهی که می‌خواهید مالکیت فایل را در اختیار بگیرند قرار دهید.
 
-Modify the group and user of some test files. Afterwards take a look at the permissions with ls -l.
+```$ sudo chown patty:whales myfile```
 
-## Quiz Question
+## تمرین
 
-What command do you use to change user ownership?
+چند فایل آزمایشی را انتخاب کنید و مالیکت گروه و کاربر آن را تغییر دهید. بعد از آن با استفاده از دستور ls -l نگاهی به مجوزهای آن‌ها بیندازید.
 
-## Quiz Answer
+## سؤال آزمون
+
+از چه دستوری برای تغییر کاربر مالک فایل استفاده می‌کنید؟
+
+## پاسخ آزمون
 
 chown
