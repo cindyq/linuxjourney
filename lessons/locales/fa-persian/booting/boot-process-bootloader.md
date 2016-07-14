@@ -1,36 +1,43 @@
-# Boot Process: Bootloader
+# فرآیند بوت: Bootloader
 
-## Lesson Content
+# محتوای درس
 
-The bootloader's main responsibilities are:
+مسئولیت‌های اصلی bootloader شامل موارد زیر است:
 
-<ul>
-<li>Booting into an operating system, it can also be used to boot to non-Linux operating systems</li>
-<li>Select a kernel to use</li>
-<li>Specify kernel parameters</li>
-</ul>
+- بوت کردن یک سیستم عامل که البته شامل امکان بوت کردن سیستم عامل‌های غیر لینوکسی هم می‌شود.
+- انتخاب یک کرنل (Kernel) برای استفاده.
+- مشخص کردن پارامتر‌های کرنل.
 
-The most common bootloader for Linux is GRUB, you are most likely using it on your system. There are many other bootloaders that you can use such as LILO, efilinux, coreboot, SYSLINUX and more. However, we will just be working with GRUB as our bootloader. 
+معروف‌ترین bootloader لینوکس‌، گراب (GRUB) است که احتمالا شما هم روی سیستم‌تان از
+آن استفاده می‌کنید. البته bootloader‌های دیگری همچون LILO, efilinux, coreboot,
+SYSLINUX و بسیاری دیگر نیز وجود دارند که می‌توانید از آن‌ها نیز بهره ببرید. اما ما
+به هر حال در ادامهٔ بحث فرض می‌کنیم که از گراب به عنوان bootloader استفاده می‌کنیم.
 
-So we know that the bootloader's main goal is to load up the kernel, but where does it find the kernel? To find it, we will need to look at our kernel parameters. The parameters can be found by going into the GRUB menu on startup using the 'e' key. If you don't have GRUB no worries, we'll go through the boot parameters that you will see:
+پس می‌دانیم که هدف اصلی bootloader بارگذاری کرنل است. اما او از کجا می‌تواند کرنل
+را پیدا کند؟ برای پیدا کردن کرنل‌، نیاز است که به پارامتر‌های کرنل نگاهی
+بیاندازیم. این پارامتر‌ها در منوی گراب و زمان شروع سیستم با زدن کلید «e» قابل
+مشاهده‌اند. اگر گراب ندارید‌، نگران نباشید، با هم پارامتر‌هایی که ممکن است ببینید
+را مرور می‌کنیم:
 
-<ul>
-<li>initrd - Specifies the location of initial RAM disk (we'll talk more about this in the next lesson).
-<li>BOOT_IMAGE  - This is where the kernel image is located</li>
-<li>root - The location of the root filesystem, the kernel searches inside this location to find init. It is often represented by it's UUID or the device name such as /dev/sda1.</li>
-<li>ro - This parameter is pretty standard, it mounts the fileystem as read-only mode.</li>
-<li>quiet - This is added so that you don't see display messages that are going on in the background during boot.</li>
-<li>splash - This lets the splash screen be shown.</li>
-</ul>
+- ‏`initrd`: محل RAM disk اولیه را مشخص می‌کند (در درس بعدی‌، در این خصوص بیشتر صحبت خواهیم کرد).
+- ‏`BOOT_IMAGE`: نشان دهندهٔ جایی است که کرنل قرار گرفته است.
+- `root`: محل فایل سیستم root را نشان می‌دهد. کرنل در این فایل سیستم به دنبال init
+  می‌گردد. این فایل سیستم عموما با مشخصهٔ UUID یا اسم دستگاه ماننده `‎/dev/sda1` مشخص
+  می‌شود.
+- `ro`: این پارامتر کاملا استاندارد است. وظیفه‌اش بارگذاری فایل سیستم root با دسترسی فقط خواندنی (read only) است. 
+- `quiet`: با اضافه شدن این پارامتر‌، شما پیغام‌هایی که در هنگام بارگذاری کرنل نمایش داده می‌شوند را مشاهده نمی‌کنید.
+- `splash`: این پارامتر اجازه می‌دهد Splash screen در هنگام بارگذاری نمایش داده شود. 
 
-## Exercise
+## تمرینات
 
-If you have GRUB as your bootloader, go into the GRUB menu with 'e' and take a look at the settings.
+اگر از bootloader گراب استفاده می‌کنید‌، به منوی گراب رفته و کلید «e» را بزنید و به تنظیماتش نگاهی بیاندازید.
 
-## Quiz Question
+## سوالات آزمون
 
-What kernel parameter makes it so you don't see bootup messages?
+کدام پارامتر کرنل از نمایش پیغام‌های بوت در هنگام بارگذاری کرنل جلوگیری می‌کند؟
 
-## Quiz Answer
+## پاسخ آزمون
 
+```
 quiet
+```
