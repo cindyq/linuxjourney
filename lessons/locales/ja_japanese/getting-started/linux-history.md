@@ -1,4 +1,4 @@
-# History
+# 歴史
 
 ## Lesson Content
 
