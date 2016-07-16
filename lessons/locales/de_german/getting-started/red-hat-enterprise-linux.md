@@ -3,8 +3,7 @@
 ## Inhalt der Lektion
 
 <b>Übersicht</b>
-
-Red Hat Enterprise Linux, meistens nur kurz RHEL genannt, wird von der Firma Red Hat entwickelt und gepflegt. Die RHEL Lizenz hat strenge Regeln für das weiterwerteilen der Software. Dennoch veröffenlicht Red Hat den zugrundeliegenden Sourcecode.
+Red Hat Enterprise Linux, meistens nur kurz RHEL genannt, wird von der Firma Red Hat entwickelt und gepflegt. Die RHEL Lizenz hat strenge Regeln für das weiterwerteilen der Software. Dennoch veröffenlicht Red Hat den zugrundeliegenden Quellcode.
 
 <b>Paketverwaltung</b>
 RHEL benutzt einen anderen Paketmanager als Debian, den RPM Paketmanager. Wir werden später noch die Paketveraltungswerkzeuge für RPM kennenlernen.

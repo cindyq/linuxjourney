@@ -22,7 +22,7 @@ Wenn du planst Debian zu installieren gehe auf diese Seite:
 
 ## Quizfrage
 
-Wleche Art von Release-Modell haben die Debian Zweige Testing und Unstable?
+Welche Art von Release-Modell haben die Debian Zweige Testing und Unstable?
 
 ## Quiz Antwort
 

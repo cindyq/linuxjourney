@@ -3,22 +3,18 @@
 ## Inhalt der Lektion
 
 <b>Übersicht</b>
-openSUSE Linux wird vom openSUSE Projekt gepflegt, einer Gemeinschaft die Linuxbenutztung versucht voranzutreiben.
-
-
-openSUSE Linux is created by the openSUSE Project. A community that promotes the use of Linux everywhere, working together in an open, transparent and friendly manner as part of the worldwide Free and Open Source Software community. openSUSE is the second oldest still running Linux Distributions and shares the base system with SUSE's award-winning SUSE Linux Enterprise products.
+openSUSE Linux wird vom openSUSE Projekt gepflegt, einer Gemeinschaft die versucht die Linuxbenutztung voranzutreiben und in transparenter und offener Atmosphäre zusammenarbeitet. OpenSUSE ist die zweitälteste Linux Distribution die noch heute weiterentwickelt und gepflegt wird. OpenSUSE teilt sich das Basissystem mit dem SUSE Enterprise Linux von SUSE.
 
 <b>Paketverwaltung</b>
-
 Benutzt die RPM Paketverwaltung.
 
 <b>Eigenschaften</b>
 
-openSUSE is a great choice for a new Linux user. It offers an easy to use graphical installer/administration application (<a href="http://yast.github.io/">YaST</a>) and a tiday base system, easy to tinker with. openSUSE includes everything you need to enjoy the Internet worry free of viruses/spy-ware and to live out your creativity, be it with your photos, videos, music or code.
+openSUSE ist eine gute Wahl für einen Linux Neuling. Es verfügt über einen einfachen grafischen Installationsvorgang und eine grafische Anwendung zur Administration des gesamten Systems namens <a href="http://yast.github.io/">YaST</a>. OpenSUSE bringt alles mit was man für den normalen Alltag braucht um das Internet ohne Viruse und Spy-Ware zu genießen und mit Fotos, Videos, Musik arbeiten zu können.
 
 <b>Einsatz</b>
 
-openSUSE Leap is fully capable of being used on a desktop PC and laptop.
+openSUSE lässt sich einfach auf einem Laptop oder Dekstop PC einsetzen.
 
 ## Übung
 
@@ -26,7 +22,7 @@ Wenn du dich für openSUSE interessierst findest du hier weitere Informationen: 
 
 ## Quizfrage
 
-What is the name of openSUSE's Administration/Installation Tool?
+Was ist der Name der openSUSE Administrationsanwendung?
 
 ## Quiz Antwort
 

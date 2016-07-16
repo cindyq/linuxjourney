@@ -3,7 +3,7 @@
 ## Inhalt der Lektion
 
 <b>Übersicht</b>
-Arch Linux ist eine leichtgewichtige und flexible Linux Distribution die 100% von der Community entwickelt und gepflegt wird. Vergleichbar zu Debian verwendet Arch ein Rolling Release Model, bei dem inkrementelle Updates schließlich zu einem stabilen System werden. Ähnlich wie bei Gentoo, muss man sich auch bei Arch die Finger schmutzig machen wenn es um Installtion und Pflege des Systems geht, kann dafür aber viel lernen und hat die volle Kontrolle über sein System.
+Arch Linux ist eine leichtgewichtige und flexible Linux Distribution die 100% von der Community entwickelt und gepflegt wird. Vergleichbar zu Debian verwendet Arch ein Rolling Release Model, bei dem inkrementelle Updates schließlich zu einem stabilen System führen. Ähnlich wie bei Gentoo, muss man sich auch bei Arch die Finger schmutzig machen, wenn es um Installtion und Pflege des Systems geht, kann dafür aber viel lernen und hat die volle Kontrolle über sein System.
 
 <b>Paketverwaltung</b>
 Arch benutzt den Paketmanager Pacman um Pakete zu installieren, zu aktualisieren und zu verwalten.
@@ -12,7 +12,7 @@ Arch benutzt den Paketmanager Pacman um Pakete zu installieren, zu aktualisieren
 Wenn du auf der Suche nach einem leichtgewichtigen Betriebssystem bist und du Linux wirklich verstehen möchtest benutzte Arch! Die Lernkurve ist steil, aber für den hardcore Linux Benutzer ist es eine gute Wahl.
 
 <b>Einsatz</b>
-Gut für Desktop und Latop. Wenn du auf für kleine Geräte, wie etwa dem Rasperry Pi noch ein Leichtgewichtiges OS suchst, ist Arch eine gute Wahl.
+Gut für Desktop und Latop. Wenn du auf für kleine Geräte, wie etwa dem Rasperry Pi noch ein Leichtgewichtiges OS suchst, ist Arch ebenfalls eine gute Wahl.
 
 ## Übung
 
