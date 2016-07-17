@@ -29,10 +29,10 @@ tr:
       title: "Linux-fu öğrenin, hem de ücretsiz."
     subscribe:
       title: "Abone ol"
-      body: "Yeni kurs ve ders güncellemelerinden haberdar ol!"
+      body: "Yeni kurs ve derslerden haberdar ol!"
     about:
       title: "Hakkımızda"
-      body: "Bugün buarad kazanılan bilgi birikimi açık kaynak topluluğu tarafından desteklenmektedir."
+      body: "Bugün burada kazanılan bilgi birikimi açık kaynak topluluğu tarafından desteklenmektedir."
       url_name: "Katkıda bulunun ve güçlerimizi birleştirelim"
       url: "https://github.com/cindyq/linuxjourney"
     contact:
