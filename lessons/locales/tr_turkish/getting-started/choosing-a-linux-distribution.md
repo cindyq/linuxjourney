@@ -12,7 +12,7 @@ Bir Linux sistemi üç ana parçadan oluşur:
 <li>Kullanıcı Uzayı - Bu kısım kullanıcıların sistem ile doğrudan etkileşimin olduğu yerdir.</li>
 </ul>
 
-Bu yüzden yapmamız gereken ilk adım, makinemize linux yüklemektir. Seçim Yapmak için birçok seçeneğiniz var ve bu kurs Linux dağıtımı seçerken size yardımcı olacak ve bilgilendirecek.
+Bu yüzden yapmamız gereken ilk adım, makinemize Linux yüklemektir. Seçim Yapmak için birçok seçeneğiniz var ve bu kurs Linux dağıtımı seçerken size yardımcı olacak ve bilgilendirecek.
 
 Birçok Linux dağıtımı var, biz sadece popüler olanlarını sunacağız.
 
@@ -23,6 +23,6 @@ Bu ders için alıştırma yok.
 
 ## Quiz
 
-Soru yok.
+Soru yok, Devam edin!
 
 ## Quiz Cevabı
