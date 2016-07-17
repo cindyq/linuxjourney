@@ -12,17 +12,17 @@ Bir Linux sistemi üç ana parçadan oluşur:
 <li>Kullanıcı Uzayı - Bu kısım kullanıcıların sistem ile doğrudan etkileşimin olduğu yerdir.</li>
 </ul>
 
-So the first step we’ll need to take is to install Linux on your machine. You have many options to choose from and this course will help inform you and get you started on choosing a Linux distribution. 
+Bu yüzden yapmamız gereken ilk adım, makinemize linux yüklemektir. Seçim Yapmak için birçok seçeneğiniz var ve bu kurs Linux dağıtımı seçerken size yardımcı olacak ve bilgilendirecek.
 
-There are many Linux distributions to choose from, we’ll just go over the most popular options. 
+Birçok Linux dağıtımı var, biz sadece popüler olanlarını sunacağız.
 
 
-## Exercise
+## Alıştırmalar
 
-No exercises for this lesson.
+Bu ders için alıştırma yok.
 
-## Quiz Question
+## Quiz
 
-No questions, skip ahead!
+Soru yok.
 
-## Quiz Answer
+## Quiz Cevabı
