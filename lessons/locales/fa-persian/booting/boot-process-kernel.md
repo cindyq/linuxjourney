@@ -1,27 +1,44 @@
-# Boot Process: Kernel
+# فرآیند بوت: کرنل
 
-## Lesson Content
+## محتوای درس
 
-So now that our bootloader has passed on the necessary parameters, let's see how it get's started:
+حال که bootloader، پارامتر‌های لازم را ارائه کرده، بیایید ببینیم که کرنل چگونه شروع به کار می‌کند:
 
-<b>Initrd vs Initramfs</b>
+**‏Initrd vs Initramfs**
 
-There is a bit of a chicken and egg problem when we talk about the kernel bootup. The kernel manages our systems hardware, however not all drivers are available to the kernel during bootup. So we depend on a temporary root filesystem that contains just the essential modules that the kernel needs to get to the rest of the hardware. In older versions of Linux, this job was given to the initrd (initial ram disk). The kernel would mount the initrd, get the necessary bootup drivers, then when it was done loading everything it needed, it would replace the initrd with the actual root filesystem. These days, we have something called the initramfs, this is a temporary root filesystem that is built into the kernel itself to load all the necessary drivers for the real root filesystem, so no more locating the initrd file. 
+وقتی که در خصوص کرنل صحبت می‌کنیم‌، قضیه تا حدی به قضیهٔ مرغ و تخم مرغ شباهت دارد.
+کرنل وظیفه مدیریت سخت‌افزار سیستم ما را بر عهده دارد، با این حال‌، همهٔ این
+سخت‌افزار‌ها در هنگام بارگذاری کرنل‌، در دسترس‌اش قرار ندارند. پس ما به یک فایل
+سیستم root موقت وابسته‌ایم که ماژول‌های مورد نیاز کرنل را برای شناسایی باقی
+سخت‌افزار‌ها فراهم می‌کند. در نسخه‌های قدیمی‌تر لینوکس‌، این وظیفه بر عهدهٔ initrd‎ یا
+همان Ram disk اولیه‌، قرار داشت. کرنل، initrd را سوار (mount) می‌کرد، و پس از
+بارگذاری موارد مورد نیاز بوت و درایور‌های لازم‌، initrd را با فایل سیستم root
+اصلی‌، جایگزین می‌کرد. امروزه‌، ما چیز دیگری به اسم initramfs داریم که شامل فایل
+سیستم روت موقتی است که درون خود کرنل قرار داده شده تا تمامی درایور‌های حیاتی برای
+فایل سیستم root اصلی را بارگذاری کند، تا دیگر نیازی به جایگزینی فایل initrd
+نباشد.
 
-In fact, if you are using a modern kernel, you can remove the initrd reference in the parameters and your system would still be able to boot up. (Note: you should probably comment instead of deleting the line, as your system could screw you over).
+در حقیقت‌، اگر از یک کرنل مدرن استفاده می‌کنید‌، می‌توانید پارامتر initrd را از
+bootloader حذف کنید‌، و همچنان بدون مشکل سیستم را بوت کنید. (نکته: بهتر است به
+جای پاک کردن پارامتر‌، خط مربوطه‌اش را کامنت کنید، تا وقتی سیستم‌تان به مشکل بر
+خورد‌، به راحتی این مقدار را باز گردانید.)
 
-<b>Mounting the root filesystem</b>
+**سوار کردن فایل سیستم root**
 
-Now the kernel has all the modules it needs to create a root device and mount the root partition. Before you go any further though, the root partition is actually mounted in read-only mode first so that fsck can run safely and check for system integrity. Afterwards it remounts the root filesystem in read-write mode. Then the kernel locates the init program and executes it. 
+حالا کرنل‌، تمامی ماژول‌های مورد نیاز جهت ساخت یک دیوایس root و سوار کردن پارتیشن
+root را در دسترس دارد. قبل از پیش‌روی بیشتر‌، پارتیشن root‌، در حقیقت به صورت فقط
+خواندنی (read-only) سوار شده تا `fsck` بتواند در امنیت کامل فایل سیستم را بررسی
+کند. سپس فایل سیستم root مجدد با قابلیت خواندن و نوشتن سوار می‌شود. سرانجام کرنل
+برنامهٔ init را پیدا کرده و آن را اجرا می‌کند.
 
-## Exercise
+## تمرینات
 
-No exercises for this lesson.
+بدون تمرین
 
-## Quiz Question
+## سوالات آزمون
 
-What is used in modern systems to load up a temporary root filesystem?
+در کرنل‌های مدرن از چه مکانیزمی جهت بارگذاری فایل سیستم موقت استفاده شده است؟
 
-## Quiz Answer
+## پاسخ آزمون
 
 initramfs
