@@ -2,7 +2,7 @@
 
 ## Ders İçeriği
 
-Bir önceki derste, milyonlarca cihazda kullanılan linux çekirdeği hakkında birşeyler öğrendik. İlerlemeden önce bilmemiz gereken birşeyde, "Linux" teriminin oldukça yanlış kullanılıyor olması,çünkü "Linux" terimi aslında Linux çekirdeğini ima eder. Ancak birçok dağıtım(işletim sistemi) Linux çekirdeğini kullanır, bu nedenle çoğunlukla Linux işletim sistemleri olarak bilinirler. 
+Bir önceki derste, milyonlarca cihazda kullanılan linux çekirdeği hakkında birşeyler öğrendik. İlerlemeden önce bilmemiz gereken birşeyde, "Linux" teriminin oldukça yanlış kullanılıyor olması,çünkü "Linux" terimi aslında Linux çekirdeğini ima eder. Ancak birçok dağıtım Linux çekirdeğini kullanır, bu nedenle çoğunlukla Linux işletim sistemleri olarak bilinirler. 
 
 Bir Linux sistemi üç ana parçadan oluşur:
 
