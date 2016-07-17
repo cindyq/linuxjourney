@@ -1,37 +1,50 @@
-# Boot Process Overview
+# بررسی اجمالی فرآیند بوت
 
-## Lesson Content
+## محتوای درس
 
-Now that we've gotten a pretty good grasp at some of the important components of Linux, let's piece them altogether by learning about how the system boots. When you turn on your machine, it does some neat things like show you the logo screen, run through some different messages and then at the end you're prompted with a login window. Well there is actually a ton of stuff happening between when you push the power button to when you login and we'll discuss those in this course. 
+حال که درک خوبی نسبت به برخی از اجزای حیاتی لینوکس پیدا کرده‌ایم‌، بیایید با در
+کنار هم قرار دادنشان‌، نحوه‌ٔ بوت سیستم را شرح دهیم. وقتی که کامپیوتر را روشن
+می‌کنید‌، چند کار متفاوت مثل نمایش نمایهٔ سیستم، چند پیغام مختلف را مشاهده می‌کنیم و
+سر انجام با صفحهٔ لاگین سیستم عامل مواجه می‌شویم. در حقیقت چندین کار مختلف در
+بازهٔ بین فشار دادن دکمهٔ پاور توسط شما تا نمایش صفحهٔ لاگین رخ می‌دهد که در این درس
+به آن‌ها خواهیم پرداخت.
 
-The Linux boot process can be broken down in 4 simple stages: 
+فرآیند بوت لینوکس می‌تواند به چهار بخش اصلی تقسیم‌بندی شود:
 
-<b>1. BIOS</b>
+### ۱. ‏BIOS
 
-The BIOS (stands for "Basic Input/Output System") initializes the hardware and makes sure with a Power-on self test (POST) that all the hardware is good to go. The main job of the BIOS is to load up the bootloader.
+‏BIOS (مخفف Basic Input/Output System)، سخت‌افزار را بارگذاری کرده و با یک
+خود‌باز‌بینی (POST)، از آماده بودن و سلامت سخت‌افزار برای ادامهٔ فرآیند بوت اطمینان حاصل
+می‌کند. وظیفهٔ اصلی BIOS بارگذاری bootloader است.
 
-<b>2. Bootloader</b>
+### ۲. ‏Bootloader
 
-The bootloader loads the kernel into memory and then starts the kernel with a set of kernel parameters. One of the most common bootloaders is GRUB, which is a universal Linux standard. 
+‏Bootloader کرنل را به همراه پارامتر‌های اولیه، در حافظهٔ RAM سیستم‌، بارگذاری
+می‌کند. یکی از معروف‌ترین bootloader‌ها GRUB است‌، که به صورت یک استاندارد برای
+توزیع‌های لینوکس در آمده است.
 
-<b>3. Kernel</b>
+### ۳. کرنل
 
-When the kernel is loaded, it immediately initializes devices and memory. The main job of the kernel is to load up the init process. 
+زمانی که کرنل بارگذاری شد‌، بلافاصله‌، سخت‌افزار‌ها و حافظهٔ سیستم را مقدار‌دهی می‌کند.
+کار اصلی کرنل‌، بارگذاری پروسهٔ init است.
 
-<b>4. Init</b>
+### ۴. ‏Init
 
-Remember the init process is the first process that gets started, init starts and stops essential service process on the system. There are three major implementations of init in Linux distributions. We will go over them briefly and then dive into them in another course.
+همان‌طور که گفتیم‌، init اولین پروسه‌ای است که در سیستم آغاز به کار می‌کند. init
+وظیفهٔ اجرا و متوقف کردن سرویس‌های ضروری سیستم را بر عهده دارد. ۳ پیاده‌سازی اصلی
+برای توزیع‌های لینوکس وجود دارد. هر کدام از آن‌ها را به طور مختصر مورد بررسی قرار
+خواهیم داد و در بخشی دیگر‌، به توضیح کامل‌شان می‌پردازیم. 
 
-There it is, the (very) simple explanation of the Linux boot process. We will go into more detail about these stages in the next lessons.
+در درس‌های بعدی به توضیح مفصل‌تر این مراحل خواهیم پرداخت. 
 
-## Exercise
+## تمرینات
 
-Reboot your system and see if you can spot each step as your machine boots up. 
+سیستم‌تان را Reboot کنید و ببینید که آیا می‌توانید مراحل مختلف بوت را مشاهده کنید؟
 
-## Quiz Question
+## سوالات آزمون
 
-What is the last stage in the Linux boot process?
+آخرین مرحلهٔ فرآیند بوت لینوکس چه نام دارد؟
 
-## Quiz Answer
+## پاسخ‌های آزمون
 
 init
