@@ -1,11 +1,11 @@
 # Debian
 
-## Lesson Content
+## Ders İçeriği
 
-<b>Overview</b>
-Debian is an operating system composed entirely of free and open-source software. It’s widely known and has been in development for over 20 years. There are three branches that you can use, Stable, Testing and Unstable. 
+<b>Genel Bakış</b>
+Debian baştan sona özgür ve açık kaynak koddan oluşan, yaygın bilinen bir işletim sistemidir. 20 yılı aşkın süredir geliştirilmektedir. Kullanabileceğiniz üç versiyonu vardır; Kararlı, Test ve Kararsız.
 
-Stable is an overall good branch to be on. Testing and Unstable are rolling releases. This means that any incremental changes in those branches will eventually become Stable. For example, if you wanted to get to the next update from Windows 8 to Windows 10, you’ll have to do a complete Windows 10 installation. However being on the Testing release, you’ll automatically get updates until it becomes the next operating system release without having to do a full installation. 
+Kararlı versiyonu,Debianı kullanmak için idealdir. Test ve Kararsız versiyonları hataların olabileceği, sallanan versiyonlardır.. This means that any incremental changes in those branches will eventually become Stable. For example, if you wanted to get to the next update from Windows 8 to Windows 10, you’ll have to do a complete Windows 10 installation. However being on the Testing release, you’ll automatically get updates until it becomes the next operating system release without having to do a full installation. 
 
 <b>Package Management</b>
 Debian also uses Debian package management tools. Every Linux distribution installs and manages packages differently and they use different package management tools. We’ll get more into this in a later course. 
