@@ -1,4 +1,4 @@
-#Linux Tarihçesi
+#Tarihçe
 
 ## Ders İçeriği
 
