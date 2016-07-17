@@ -1,8 +1,8 @@
-# Choosing a Linux Distribution
+# Bir Linux Dağıtımı Seçmek 
 
-## Lesson Content
+## Ders İçeriği
 
-In the previous lesson, we learned about the Linux kernel which powers millions of devices a day. One thing before we move forward, the term Linux is actually quite a misnomer, since it actually refers to the Linux kernel. However, many distributions use the Linux kernel so therefore are commonly known as Linux operating systems. 
+Bir önceki derste, milyonlarca cihazda kullanılan linux çekirdeği hakkında birşeyler öğrendik. İlerlemeden önce bilmemiz gereken birşeyde, "Linux" teriminin oldukça yanlış kullanılıyor olması,çünkü "Linux" terimi aslında Linux kernelini ima eder. Ancak birçok dağıtım(işletim sistemi) Linux kernelini kullanır, bu nedenle çoğunlukla Linux işletim sistemleri olarak bilinirler. 
 
 A Linux system is divided into three main parts:
 
