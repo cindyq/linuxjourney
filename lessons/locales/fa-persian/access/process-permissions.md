@@ -1,41 +1,40 @@
-# Process Permissions
+# مجوزهای یک پروسه
 
-## Lesson Content
+## محتویات درس
 
-Let's segway into proccess permissions for a bit, remember how I told you that when you run the passwd command with the SUID permission bit enabled you will run the program as root? That is true, however does that mean since you are temporarily root you can modify other user's passwords? Nope fortunately not!
+نوبت به مجوزهای پروسه «Process» رسید. یادتان هست که گفتم اجرای دستور passwd وقتی که بیت مجوز SUID فعال است برنامه را با دسترسی روت اجرا می‌کند؟ این موضوع، درست است، ولی آیا به این معناست که زمانی که به صورت موقتی کاربر روت هستید می‌توانید پسورد سایر کاربران را نیز تغییر دهید؟ خوشبختانه خیر!
 
-This is because of the many UIDs that Linux implements. There are three UIDS associated with every process:
+این اتفاق به خاطر UIDهای زیادی که لینوکس به کار برده است، می‌افتد. سه UID به هر پروسه‌ای گره خورده است:
 
-When you launch a process, it runs with the same permissions as the user or group that ran it, this is known as an <b>effective user ID</b>. This UID is used to grant access rights to a process. So naturally if Bob ran the touch command, the process would run as him and any files he created would be under his ownership.
+زمانی که یک پروسه را اجرا می‌کنید، این پروسه با مجوزهایی مشابه با مجوزهای کاربر و گروهی که آن را شروع کرده‌اند، اجرا می‌شود. این مورد به عنوان **شناسه‌ی کاربر تحت تأثیر** یا **effective user ID** شناخته می‌شود. این UID برای اعطای مجوزهای دسترسی به یک پروسه استفاده می‌شود. بنابراین اگر Bob دستور touch را اجرا کند، آن پروسه با شناسه‌ی او اجرا شده و هر فایلی که توسط آن ساخته شود به مالکیت Bob در خواهد آمد.
 
-There is another UID, called the <b>real user ID</b> this is the ID of the user that launched the process. These are used to track down who the user who launched the process is.
+البته یک UID دیگر به اسم **شناسه کاربر حقیقی** یا **real user ID** نیز هست که به شناسه کاربری که پروسه را شروع کرده اطلاق می‌شود. این شناسه‌ها برای پیگیری کاربری که پروسه را اجرا کرده، مورد استفاده قرار می‌گیرد.
 
-One last UID is the <b>saved user ID</b>, this allows a process to switch between the effective UID and real UID, vice versa. This is useful because we don't want our process to run with elevated privileges all the time, it's just good practice to use special privileges at specific times. 
+آخرین UID، **شناسه کاربر ذخیره‌شده** یا **saved user ID** است که به یک پروسه اجازه می‌دهد تا از شناسه‌ی تحت تأثیر به شناسه‌ی حقیقی و بالعکس تغییر کند. این UID به این دلیل به دردبخور است که ما همیشه نمی‌خواهیم پروسه‌هایمان با دسترسی‌های اعطا شده‌‌ی دارای مجوزهای بالا اجرا شوند. به عبارتی کار درست این است که در زمان‌های خاص از مجوزهای خاص استفاده کنیم.
 
-Now let's piece these all together by looking at the passwd command once more. 
+اکنون با نگاهی به فرمان passwd تکه‌های پازلمان را به یکدیگر می‌چسبانیم.
 
-When running the passwd command, your effective UID is your user ID, let's say its 500 for now. Oh but wait, remember the passwd command has the SUID permission enabled. So when you run it, your effective UID is now 0 (0 is the UID of root). Now this program can access files as root.
+زمانی که فرمان passwd اجرا می‌شود، شناسه‌ی کاربر تحت تأثیر همان شناسه‌ی کاربر شماست، فرض کنید اکنون این شناسه 500 است. خب ولی یک نکته اینجاست، دستور passwd یک مجوز فعال SUID نیز دارد. در نتیجه زمانی که شما آن را اجرا می‌کنید، شناسه‌ی کاربر تحت تأثیر 0 است (0 شناسه‌ی کاربر روت است). در نتیجه برنامه به فایل با مجوز روت، دسترسی دارد.
 
-Let's say you get a little taste of power and you want to modify Sally's password, Sally has a UID of 600. Well you'll be out of luck, fortunately the process also has your real UID in this case 500. It knows that your UID is 500 and therefore you can't modify the password of UID of 600. (This of course is always bypassed if you are a superuser on a machine and can control and change everything).
+حالا که مزه‌ی قدرت زیر زبانتان آمد شاید بد نباشد که پسورد Sally را هم عوض کنید. Sally شناسه‌ی کاربر 600 دارد. شانس با شما یار نیست چرا که خوشبختانه پروسه، شناسه کاربر حقیقی شما را نیز دارد که در مثال ما 500 است. به عبارتی به این خاطر که شناسه‌ی کاربرتان 500 است و پروسه این موضوع را می‌داند، نمی‌توانید پسورد کسی که شناسه‌ی کاربرش 600 است را تغییر دهید. (البته این مورد اگر شما یک سوپریوزر یا superuser بر روی دستگاه باشید می‌تواند دور زده شود و کنترل تمام قسمت‌های سیستم من جمله تغییر پسوردها را به دستتان بسپارد).
 
-Since you ran passwd, it will start the process off using your real UID, and it will save the UID of the owner of the file (effective UID), so you can switch between the two. No need to modify all files with root access if it's not required. 
+با توجه به اینکه شما passwd را اجرا می‌کنید، فرمان، پروسه را با شناسه کاربر حقیقی (real UID) اجرا کرده و سپس و شناسه‌ی کاربر صاحب فایل را ذخیره می‌کنید (شناسه کاربر تحت تأثیر یا effective UID) در نتیجه شما می‌توانید بین این شناسه‌ها عقب و جلو شوید. در حقیقت نیازی نیست در زمانی که الزام به تغییر با دسترسی روت وجود ندارد، همه‌ی فایل‌ها را با مجوز روت دستکاری کنید.
 
-Most of the time the real UID and the effective UID are the same, but in such cases as the passwd command they will change.
+بیشتر اوقات شناسه کاربر حقیقی و شناسه کاربر تحت تأثیر یکی هستند اما در برخی موقعیت‌ها مانند زمانی که از فرمان passwd استفاده می‌کنید، آن‌ها تغییر می‌کنند.
 
-## Exercise
+## تمرین
 
-We haven't discussed processes yet, we can still take a look at this change happening in real time: 
+ما هنوز در خصوص پروسه‌ها صحبت نکرده‌ایم ولی می‌توانیم این تغییرات را در حال حاضر ملاحظه کنیم:
 
-<ol>
-<li>Open one terminal window, and run the command: <b>watch -n 1 "ps aux | grep passwd"</b>. This will watch for the passwd process.</li>
-<li>Open a second terminal window and run: <b>passwd</b></li>
-<li>Look at the first terminal window, you'll see a process come up for passwd. The first column in the process table is the effective user ID, lo and behold it's the root user!</li>
-</ol>
++ یک پنجره ترمینال باز کنید و دستور **watch -n 1 "ps aux | grep passwd"‎** را صادر کنید. این کار پروسه‌ی passwd را زیر نظر می‌گیرد.
++ یک ترمینال دیگر باز کنید و دستور **passwd** را اجرا کنید.
++ حالا به پنجره‌ی اولی که باز کردید نگاه بیندازید. می‌بینید که یک پروسه برای passwd اجرا شده است.
++ اولین ستون در جدول پروسه، شناسه کاربر تحت تأثیر است. و نگاه کنید! اینکه کاربر روت است!
 
-## Quiz Question
+## سؤال آزمون
 
-What UID decides what access to grant?
+چه شناسه‌ی کاربری تصمیم می‌گیرد که چه دسترسی‌هایی را به پروسه اعطا کند؟
 
-## Quiz Answer
+## پاسخ آزمون
 
 effective
