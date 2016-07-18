@@ -21,7 +21,7 @@ Debian herhangi bir platform için müthiş bir işletim sistemidir.
 
 Eğer işletim sistemi olarak Debianı düşünüyorsanız, kurulum bölümüne göz atın ve bir şans verin: <a href='https://www.debian.org/'>https://www.debian.org/</a>
 
-## Quiz Sorusu
+## Quiz
 
 Test ve Kararsız versiyonlar ne tür versiyonlardır?
 
