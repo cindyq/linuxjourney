@@ -1,38 +1,56 @@
-# dd
+# ‏dd
 
-## Lesson Content
+## محتوای درس
 
-The dd tool is super useful for converting and copying data. It reads input from a file or data stream and writes it to a file or data stream. 
+‏dd ابزاری فوق‌العاده برای تبدیل و کپی داده است. داده‌ها را از یک فایل یا یک جریان
+داده (data stream) خوانده و آن را داخل یک فایل یا جریان داده‌ای دیگر می‌نویسد. 
 
-Consider the following command: 
+به دستور زیر توجه کنید:
 
-<pre>$ dd if=/home/pete/backup.img of=/dev/sdb bs=1024 </pre>
+```
+$ dd if=/home/pete/backup.img of=/dev/sdb bs=1024
+```
 
-This command is copying the contents of backup.img to /dev/sdb. It will copy the data in blocks of 1024 bytes until there is no more data to be copied. 
+این دستور محتوای backup.img را در ‎/dev/sdb کپی می‌کند. همچنین داده‌ها در بلاک‌های
+۱۰۲۴ بایتی کپی می‌شوند تا وقتی که دیگر دیتایی برای کپی شدن باقی نمانده باشد.
 
-<ul>
-<li>if=file - Input file, read from a file instead of standard input</li>
-<li>of=file - Output file, write to a file instead of standard output</li>
-<li>bs=bytes - Block size, it reads and writes this many bytes of data at a time. You can use different size metrics by denoting the size with a k for kilobyte, m for megabyte, etc, so 1024 bytes is 1k</li>
-<li>count=number - Number of blocks to copy.</li>
-</ul>
+- ‏if=file - فایل ورودی، به جای ورودی استاندارد‌، داده‌ها را از یک فایل بخوان.
+- of=file - فایل خروجی، به جای خروجی استاندارد‌، داده‌ها را در یک فایل خروجی بنویس.
+- bs=bytes - حجم بلاک، به dd می‌فهماند که به اندازهٔ تعیین شده در این قسمت از ورودی
+  دیتا بخواند و در خروجی بنویسد. شما می‌توانید از اندازه‌ها و واحد‌های مختلف برای این منظور
+  استفاده کنید. برای نشانه‌گذاری واحد‌های دیگر می‌توانید از k برای کیلوبایت‌، m برای کیلوبایت و
+  به همین صورت از نشانه‌های واحد‌های بزرگتر استفاده کنید. همچنین لازم به ذکر است که ۱۰۲۴ 
+  بایت برابر با 1k است. 
+- count=number - تعداد بلاک‌هایی که باید کپی شوند. 
 
-You will see some dd commands that use the count option, usually with dd if you want to copy a file that is 1 megabyte, you'll usually want to see that file as 1 megabyte when it's done being copied. Let's say you run the following command: 
+دستور‌های dd‌ای را خواهید دید که که از آرگومان count استفاده می‌کنند. معمولا وقتی
+از dd برای کپی یک فایل یک مگابایتی استفاده می‌کنید، انتظار دارید که پس از کپی
+فایل مقصد حجمی برابر یک مگابایت داشته باشد. بیایید فرض کنیم شما دستور زیر را
+اجرا می‌کنید:
 
-<pre>$ dd if=/home/pete/backup.img of=/dev/sdb bs=1M count=2</pre>
+```
+$ dd if=/home/pete/backup.img of=/dev/sdb bs=1 count=2
+```
 
-Our backup.img file is 10M, however, we are saying in this command to copy over 1M 2 times, so only 2M is being copied, leaving our copied data incomplete. Count can come in handy in many situations, but if you are just copying over data, you can pretty much omit count and even bs for that matter. If you really want to optimize your data transfers, then you'll want to start using those options.
+حجم فایل backup.img برابر 10M است، اما دستور ما از dd می‌خواهد که دو بخش 1Mی از
+آن را کپی کند، پس فقط ۲ مگابایت از این فایل کپی خواهد شد، و کپی دیتا را ناقص
+خواهد گذاشت. count می‌تواند در مواردی کاربردی هم باشد‌، اما اگر می‌خواهید دیتایتان
+را کپی کنید احتمالا از count و شاید هم bs استفاده نخواهید کرد. اما اگر واقعا می‌خواهید 
+فرآیند انتقال داده‌تان را بهینه کنید‌، شاید استفاده از این دو آرگومان به شما کمک کند. 
 
-dd is extremely powerful, you can use it to make backups of anything, including whole disk drives, restoring disks images, and more. Be careful, that powerful tool can come at a price if you aren't sure what you are doing.
+‏dd دستوری فوق‌العاده قدرتمند است‌، می‌توانید از آن برای پشتیبان گیری از هر چیزی مثل
+یک دیسک سخت کامل یا بازیابی image‌های دیسک و خیلی چیز‌های دیگر استفاده کنید.
+همچنین توجه داشته باشید که در صورت عدم آشنایی با این دستور، استفاده از آن
+می‌تواند هزینه‌هایی هم برای‌تان داشته باشد.
 
-## Exercise
+## تمرینات
 
-Use the dd command to make a backup of your drive and set the output to a .img file.
+از دستور dd برای پشتیبان گیری از درایو‌تان در یک فایل ‎.img استفاده کنید.
 
-## Quiz Question
+## سوالات آزمون
 
-What is the dd option for block size?
+کدام آرگومان از دستور dd برای مشخص کردن اندازهٔ بلاک استفاده می‌شود. 
 
-## Quiz Answer
+## پاسخ آزمون
 
 bs
