@@ -1,32 +1,32 @@
 # Setgid
 
-## Lesson Content
+## محتویات درس
 
-Similar to the set user ID permission bit, there is a set group ID (SGID) permission bit. This bit allows a program to run as if it was a member of that group. 
+مشابه با دسته‌ی بیتِ مجوز شناسه کاربر، یک دسته بیتِ مجوز برای شناسه‌ی گروه با نام SGID وجود دارد. این بیت به برنامه اجازه می‌تواند تا در صورتی که توسط یکی از اعضای آن گروهِ مورد نظر  فراخوانده شد، اجرا شود.
 
-Let's look at one example: 
+نگاهی به یک مثال بیندازیم:
 
-<pre>$ ls -l /usr/bin/wall
--rwxr-sr-x 1 root tty 19024 Dec 14 11:45 /usr/bin/wall
-</pre>
+```$ ls -l /usr/bin/wall```
 
-We can see now that the permission bit is in the group permission set. 
+```-rwxr-sr-x 1 root tty 19024 Dec 14 11:45 /usr/bin/wall```
 
-<b>Modifying SGID</b>
+اکنون می‌توانیم ببینیم که بیت مجوز، در دسته‌ی مجوز گروه وجود دارد.
 
-<pre>$ sudo chmod g+s myfile
-$ sudo chmod 2555 myfile
-</pre>
+**دستکاریِ SGID**
 
-The numerical representation for SGID is 2.
+```$ sudo chmod g+s myfile```
 
-## Exercise
+```$ sudo chmod 2555 myfile```
 
-No exercises for this lesson.
+عدد نمایش‌دهنده‌ی SGID دو (2) است.
 
-## Quiz Question
+## تمرین
 
-What number represents the SGID?
+این درس تمرینی ندارد. خوش بگذرانید!
+
+## سؤال آزمون
+
+چه عددی نمایش‌دهنده‌ی SGID است؟
 
 ## Quiz Answer
 
