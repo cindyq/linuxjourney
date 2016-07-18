@@ -9,7 +9,7 @@ $ ls /home/pete</pre>
 
 ls est un outil très utile, il vous montre aussi les informations sur les fichiers et dossiers que vous regardez.
 
-Noter aussi que ce sont pas tous les fichiers dans le répertoire qui seront visibles. Les noms de fichiers commençant avec "." sont cachés, vous pouvez cependant les voir en ajoutant le paramètre "-a" (a pour dire "tout", all en anglais) à la commande ls.
+Notez aussi que ce ne sont pas tous les fichiers dans le répertoire qui seront visibles. Les noms de fichiers commençant avec "." sont cachés, vous pouvez cependant les voir en ajoutant le paramètre "-a" (a pour dire "tout", all en anglais) à la commande ls.
 
 <pre>$ ls -a</pre>
 
@@ -28,13 +28,13 @@ drwxr-x--- 2 pete penguingroup   4096 Jul 27 12:41   Public
 drwxr-x--- 2 pete penguingroup   4096 Jul 27 12:41   Templates
 drwxr-x--- 2 pete penguingroup   4096 Jul 27 12:41   Videos</pre>
 
-Les commandes ont ce qu'on appèle paramètres (ou arguments ou options, peut importe comment vous les appelez) pour ajouter plus de fonctionnalités. Rappelez comment nous avons ajoutés -a et -l, bien vous pouvez les utiliser ensemble en faisant "-la". L'ordre des paramètres détermine quel ordre suit le résultat, bien des fois c'est pas problématique alors vous pouvez faire "ls -al" et ça fonctionnera aussi.
+Les commandes ont ce qu'on appelle des paramètres (ou arguments ou options, peu importe comment vous les appelez) pour ajouter plus de fonctionnalités. Rappelez comment nous avons ajoutés -a et -l, bien vous pouvez les utiliser ensemble en faisant "-la". L'ordre des paramètres détermine quel ordre suit le résultat, bien des fois c'est pas problématique alors vous pouvez faire "ls -al" et ça fonctionnera aussi.
 
 <pre>$ ls -la</pre>
 
 ## Exercise
 
-Exécutez ls avec différents paramètres et regarde le résultat retourné.
+Exécutez ls avec différents paramètres et regardez le résultat reçu.
 
 ## Quiz Question
 

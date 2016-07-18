@@ -11,7 +11,7 @@ monfichiercool est le fichier à copier et /home/pete/Documents/docscool est la 
 Vous pouvez copier plusieurs fichiers et dossiers avec l'utilisation des métacaractères. Un métacaractère est un caractère qui peut être substitué par une sélection de motifs, vous donnant plus de flexibilité dans la recherche. Vous pouvez utiliser des métacaractères dans chaque commande pour plus de flexibilité.
 
 <ul>
-<li>* le métacaractère des métacaractères, il est utilisé pour représenter n'importe quel caractère ou n'importe quelle chaine de caractères.</li>
+<li>* le métacaractère des métacaractères, il est utilisé pour représenter n'importe quel caractère ou n'importe quelle chaîne de caractères.</li>
 <li>? utilisé pour représenter un caractère.</li>
 <li>[] utilisé pour représenter n'importe caractère dans les crochets.</li>
 </ul>
@@ -22,7 +22,7 @@ Ceci va copier tous les fichiers d'extension .jpg du répertoire courant vers le
 
 Une commande utile est l'utilisation du paramètre -r, il va copier de façon récursive les fichiers et répertoires.
 
-Essayez d'exécuter cp sur un répertoire contenant des fichiers vers le répertoire Documents. Ca ne marche pas. Si?
+Essayez d'exécuter cp sur un répertoire contenant des fichiers vers le répertoire Documents. Ça ne marche pas. Si?
 Bien c'est parce que vous devez copier tous les fichiers et répertoires dans le dossier avec le paramètre -r.
 
 <pre>$ cp -r Pumpkin/ /home/pete/Documents</pre>

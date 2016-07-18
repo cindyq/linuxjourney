@@ -12,7 +12,7 @@ Vous pouvez aussi créer des sous-répertoires directement en ajoutant le param�
 
 ## Exercise
 
-Créez des répertoires et déplacer quelques fichiers à l'intérieure.
+Créez des répertoires et déplacer quelques fichiers à l'intérieur.
 
 ## Quiz Question
 
