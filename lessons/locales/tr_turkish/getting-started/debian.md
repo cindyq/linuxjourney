@@ -5,26 +5,26 @@
 <b>Genel Bakış</b>
 Debian baştan sona özgür ve açık kaynak koddan oluşan, yaygın bilinen bir işletim sistemidir. 20 yılı aşkın süredir geliştirilmektedir. Kullanabileceğiniz üç versiyonu vardır; Kararlı, Test ve Kararsız.
 
-Kararlı versiyonu,Debianı kullanmak için idealdir. Test ve Kararsız versiyonları hataların olabileceği, sallanan versiyonlardır.. This means that any incremental changes in those branches will eventually become Stable. For example, if you wanted to get to the next update from Windows 8 to Windows 10, you’ll have to do a complete Windows 10 installation. However being on the Testing release, you’ll automatically get updates until it becomes the next operating system release without having to do a full installation. 
+Kararlı versiyonu, Debianı kullanmak için idealdir. Test ve Kararsız versiyonları sallanan versiyonlardır. Bunun anlamı bu versiyonlarda artan değişiklikler sonunda kararlı hale geleceğidir. Örnek vermek gerekirse, eğer Windows 8 den Windows 10 a geçmek istiyorsanız, Tamamiyle Windows 10 kurulumu yapmalısınız. Ancak Test versiyonunda, yeni sürümün tam kurulumunu yapmadan, mevcut sürüm yeni sürüme evrilene kadar güncellemeleri almaya devam edersiniz. 
 
-<b>Package Management</b>
-Debian also uses Debian package management tools. Every Linux distribution installs and manages packages differently and they use different package management tools. We’ll get more into this in a later course. 
+<b>Paket Yönetimi</b>
+Debian ayrıca Debian paket yönetim araçlarını kullanır. Tüm Linux dağıtımları paketleri farklı şekilde yükler, yönetir ve farklı paket yönetim araçları kullanır.Bu konuya ileride daha ayrıntılı değineceğiz. 
 
-<b>Configurability</b>
-Debian may not get the latest updates, but it's extremely stable. If you want a good "core" operating system, this is the one for you.
+<b>Ayarlanabilirlik</b>
+Debian, son güncellemeleri almasanız bile son derece kararlıdır. Eğer iyi bir "çekirdek" işletim sistemi istiyorsanız, Debian tam size göre.
 
-<b>Uses</b>
-Debian is an overall great operating system for any platform.
+<b>Kullanım</b>
+Debian herhangi bir platform için müthiş bir işletim sistemidir.
 
 
-## Exercise
+## Alıştırma
 
-If you're interested in having Debian as your operating system, head over to the installation section and give it a try: <a href='https://www.debian.org/'>https://www.debian.org/</a>
+Eğer işletim sistemi olarak Debianı düşünüyorsanız, kurulum bölümüne göz atın ve bir şans verin: <a href='https://www.debian.org/'>https://www.debian.org/</a>
 
-## Quiz Question
+## Quiz
 
-What kind of release does Testing and Unstable have? 
+Test ve Kararsız versiyonlar ne tür versiyonlardır?
 
-## Quiz Answer
+## Quiz Cevabı
 
-Rolling
+Sallanan
