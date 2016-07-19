@@ -11,12 +11,12 @@ RHELのパッケージマネージャは、Debuanのそれとは別物で、RPM�
 <b>コンフィギュアビリティ</b>
 RHELベースのオペレーティングシステムは、Debianベースのものとは少し異なる。特に違いが目立つのは、パッケージ管理だ。仕事で使うのであれば、RHELでいく方針にするなら、それがベストだろう。
 
-<b>ユーザー</b>
+<b>用途</b>
 その名の通り、RHELはほとんどの場合エンタープライズ環境で使われている。手堅いサーバOSが欲しいなら、いい選択だろう。
 
 ## Exercise
 
-オペレーティングシステムとしてRHELを使ってみたいのなら、Get startedセクションを読んで、試してみよう。<a href='http://www.redhat.com/en/technologies/linux-platforms/enterprise-linux/'>https://www.redhat.com/rhel/</a>
+オペレーティングシステムとしてRHELを使ってみたいのなら、インストールに関するセクションを読んで、試してみよう。<a href='http://www.redhat.com/en/technologies/linux-platforms/enterprise-linux/'>https://www.redhat.com/rhel/</a>
 
 ## Quiz Questions
 

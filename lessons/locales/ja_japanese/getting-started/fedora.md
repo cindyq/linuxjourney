@@ -2,25 +2,27 @@
 
 ## Lesson Content
 
-<b>Overview</b>
-Backed by Red Hat, the Fedora Project is community driven containing open-source and free software. Red Hat Enterprise Linux branches off Fedora, so think of Fedora as an upstream RHEL operating system. Eventually RHEL will get updates from Fedora after thorough testing and quality assurance. Think of Fedora as an Ubuntu equivalent that uses a Red Hat backend instead of Debian.
+<b>概要</b>
+Fedoraプロジェクトは、Red Hat社の支援のもと、コミュニティ主導で運営されている。Fedoraは、オープンソースソフトウェアおよびフリーソフトウェアで構成されている。Red Hat Enterprise LinuxはFedoraから枝分かれして作られているので、FedoraはRHELオペレーティングシステムの上流にあたると考えていい。Fedoraでテストされ、品質保証を受けた内容が、最終的にRHELへ取り込まれる。
+UbuntuがDebianをバックエンドとしているのと同じように、FedoraはRHELをバックエンドとしている。その意味で、FedoraはUbuntuと似たような位置づけと言える。
 
-<b>Package Management</b>
-Uses Red Hat package manager.
+<b>パッケージ管理</b>
+Red Hatパッケージマネージャを使っている。
 
-<b>Configurability</b>
-If you want to use a Red Hat based operating system, this is a user friendly version.
+<b>コンフィギュアビリティ</b>
+Red Hatベースのオペレーティングシステムを使いたいのなら、Fedoraはそのユーザーフレンドリーなバージョンだと言える。
 
-<b>Uses</b>
+<b>用途</b>
+Red Hatベースのオペレーティングシステムで、値札のついていないものを使いたいという場合には、Fedoraが適している。デスクトップでも、ノートパソコンでもおすすめできる。
 Fedora is great if you want a Red Hat based operating system without the price tag. Recommended for desktop and laptop.
 
 ## Exercise
 
-If you're interested in having Fedora as your operating system, head over to the installation section and give it a try: <a href='https://getfedora.org/'>https://getfedora.org/</a>
+オペレーティングシステムとしてFedoraを使ってみたいのなら、インストールに関するセクションを読んで、試してみよう。 <a href='https://getfedora.org/'>https://getfedora.org/</a>
 
 ## Quiz Questions
 
-What is RHEL branched off of?
+RHELは何から枝分かれして作られている？
 
 ## Quiz Answer
 
