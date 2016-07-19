@@ -2,25 +2,25 @@
 
 ## Lesson Content
 
-<b>Overview</b>
-Red Hat Enterprise Linux commonly referred to as RHEL is developed by Red Hat. RHEL has strict rules to restrict free re-distribution although it still provides source code for free.
+<b>概要</b>
+Red Hat Enterprise  Linuxは、よくRHELと略される。開発はレッドハット社が行っている。RHELには、自由な再配布を制限する厳格なルールがあるが、ソースコードは無料で提供されている。
 
-<b>Package Management</b>
-RHEL uses a different package manager than Debian, RPM package manager, which we will eventually learn about as well.
+<b>パッケージ管理</b>
+RHELのパッケージマネージャは、Debuanのそれとは別物で、RPMパッケージマネージャという。これも後ほど見ていこう。
 
-<b>Configurability</b>
-RHEL-based operating systems will differ slightly from the Debian-based operating systems, most noticeably in package management. If you decide to go with RHEL it’s probably best if you know you’ll be working with it.
+<b>コンフィギュアビリティ</b>
+RHELベースのオペレーティングシステムは、Debianベースのものとは少し異なる。特に違いが目立つのは、パッケージ管理だ。仕事で使うのであれば、RHELでいく方針にするなら、それがベストだろう。
 
-<b>Uses</b>
-As described by the name it's mostly used in enterprise, so if you need a solid server OS this would be a good one.
+<b>ユーザー</b>
+その名の通り、RHELはほとんどの場合エンタープライズ環境で使われている。手堅いサーバOSが欲しいなら、いい選択だろう。
 
 ## Exercise
 
-If you're interested in having RHEL as your operating system, head over to the installation section and give it a try: <a href='http://www.redhat.com/en/technologies/linux-platforms/enterprise-linux/'>https://www.redhat.com/rhel/</a>
+オペレーティングシステムとしてRHELを使ってみたいのなら、Get startedセクションを読んで、試してみよう。<a href='http://www.redhat.com/en/technologies/linux-platforms/enterprise-linux/'>https://www.redhat.com/rhel/</a>
 
 ## Quiz Questions
 
-What package manager does RHEL use?
+RHELの使っているパッケージマネージャは何？
 
 ## Quiz Answer
 
