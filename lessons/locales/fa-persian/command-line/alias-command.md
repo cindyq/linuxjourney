@@ -1,29 +1,27 @@
-# alias
+# alias یا نام ساختگی
 
-## Lesson Content
+## محتویات درس
 
-Sometimes typing commands can get really repetitive, or if you need to type a long command many times, it’s best to have an alias you can use for that. To create an alias for a command you simply specify an alias name and set it to the command. 
+گاهی تایپ کردن دوباره و دوباره‌ی یک دستور خسته‌کننده می‌شود. گاهی هم تایپ یک دستور بلند برای چندین و چند بار این حس مزخرف را تداعی می‌کند و اینجاست که اهمیت اِلیِسْ یا نام‌های ساختگی مشخص می‌شود. برای ایجاد یک الیس برای یک دستور کافیست که اسم الیس رو به همراه دستور وارد خط فرمان کنید.
 
-<pre>$ alias foobar='ls -la'</pre>
+```$ alias foobar='ls -la'```
 
-Now instead of typing ls -la, you can type foobar and it will execute that command, pretty neat stuff. Keep in mind that this command won't save your alias after reboot, so you'll need to add a permanent alias in:
+اکنون به جای تایپ ls -la می‌توانید foobar را تایپ کنید و دقیقاً همان فرمان را اجرا کنید. البته لازم است که بدانید که دستور بالا، تا زمانی که سیستم را ری‌استارت کنید، جوابگو است و چیزی برای استفاده مجدد در شروع‌مجدد سیستم، ذخیره نمی‌شود. به عبارت ساده‌تر بعد از ری‌استارت سیستم اگر دستور foobar را تایپ کنید، خط فرمان به شما می‌گوید که چنین فرمانی وجود خارجی ندارد. اگر می‌خواهید الیس‌ها بعد از شروع‌مجدد سیستم باز هم در دسترس شما باشند، بایستی آن‌ها به فایل زیر و یا فایل‌های مشابه‌اش اضافه کنید.
 
-<pre>~/.bashrc</pre>
+```~/.bashrc```
 
-or similar files if you want to have it persist after reboot.
+برای حذف یک نام ساختگی هم از دستور  unalias می‌توانید کمک بگیرید:
 
-You can remove aliases with the unalias command: 
+```$ unalias foobar```
 
-<pre>$ unalias foobar</pre>
+## تمرین
 
-## Exercise
+چند الیس بسازید و حذف کنید تا دستتان راه بیفتد.
 
-Create a couple of aliases then remove them.
+## سؤال آزمون
 
-## Quiz Question
+بایستی چه دستوری را برای ساخت یک الیس یا نام‌ساختگی به کار ببرید.
 
-What command is used to make an alias?
-
-## Quiz Answer
+## جواب آزمون
 
 alias
