@@ -1,29 +1,27 @@
 # Umask
 
-## Lesson Content
+## محتویات درس
 
-Every file that gets created comes with a default set of permissions. If you ever wanted to change that default set of permissions, you can do so with the umask command. This command takes the 3 bit permission set we see in numerical permissions. 
+هر فایلی که ساخته می‌شود، شامل یک دسته از مجوزهای پیش‌فرض نیز هست. اگر می‌خواهید که این مجوزهای پیش‌فرض را تغییر دهید، فرمان umask می‌تواند همکار خوبی برای‌تان باشد. umask سه دسته از اعدادی که در فرم عددی مجوزها دیدیم را دریافت و انگولک می‌کند.
 
-Instead of adding these permissions though, umask takes away these permissions. 
+البته با این تفاوت که umask به جای اضافه کردن، این مجوزها را از فایل می‌گیرد.
 
-<pre>$ umask 021</pre>
+```$ umask 021```
 
-In the above example, we are stating that we want the default permissions of new files to allow users access to everything, but for groups we want to take away their write permission and for others we want to take away their executable permission. The default umask on most distributions is 022, meaning all user access, but no write access for group and other users.
+در مثال بالا ما به وسیله‌ی umask مجوزهای پیش‌فرض فایل جدیدمان (فایل‌های جدیدی که بعد از صدور دستور بالا می‌سازیم) را به این صورت تغییر می‌دهیم که کاربر، تمامی مجوزها اعم از خواندن، نوشتن، و اجرا را داشته باشد، ولی مجوز نوشتن را از گروه‌ها می‌گیریم و در نهایت مجوز اجرا را نیز از سایر افراد دریغ می‌کنیم. umask در اکثر توزیع‌ها بر روی 022 تنظیم شده به این معنی که کاربر تمامی مجوزها را دارد ولی مجوز نوشتن برای گروه یا سایر کاربران وجود ندارد.
 
-When you run the umask command it will give that default set of permissions on any new file you make. However, if you want it to persist you'll have to modify your startup file (.profile), but we'll discuss that in a later lesson.
+زمانی که شما umask را اجرا می‌کنید، این کار، دسته‌ی مجوزها را بر روی هر فایلی که شما تولید می‌کنید، با توجه به مقادیر پیش‌فرض خودش اعمال می‌کند. و البته اگر می‌خواهید که این حالت یک وضعیت پایدار و همیشگی برای سیستم شما باشد، بایستی که فایل استارت‌آپ (‎.profile) را به این منظور ویرایش کنید که در درس‌های دیگر این موضوع را باز خواهیم کرد.
 
-## Exercise
+## تمرین
 
-<ol>
-<li>Create a new file, then note it's permissions.</li>
-<li>Modify the umask and then create another new file.</li>
-<li>Check the permissions once more on the new file, what do you expect to see?</li>
-<ol>
++ فایل جدیدی بسازید و مجوزهایش را بررسی کنید.
++ حالا umask را دستکاری کنید و سپس یک فایل جدید دیگر بسازید.
++ دسته‌ی مجوزهای فایل تازه‌ای که ساخته‌اید را بررسی کنید. چه انتظاری داشتید؟ چی شد؟ تغییر در مجوزهای فایل تازه‌تر را دیدید؟
 
-## Quiz Question
+## سؤال آزمون
 
-What command is used to change default file permissions?
+چه دستوری برای تغییر مقادیر پیش‌فرض مجوزها استفاده می‌شود؟
 
-## Quiz Answer
+## پاسخ آزمون
 
 umask
