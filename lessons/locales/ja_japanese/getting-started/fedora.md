@@ -14,7 +14,6 @@ Red Hatベースのオペレーティングシステムを使いたいのなら�
 
 <b>用途</b>
 Red Hatベースのオペレーティングシステムで、値札のついていないものを使いたいという場合には、Fedoraが適している。デスクトップでも、ノートパソコンでもおすすめできる。
-Fedora is great if you want a Red Hat based operating system without the price tag. Recommended for desktop and laptop.
 
 ## Exercise
 
