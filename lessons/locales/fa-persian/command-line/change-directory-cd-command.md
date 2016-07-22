@@ -1,53 +1,53 @@
-# cd (Change Directory)
+# cd (تغییر دایرکتوری)
 
-## Lesson Content
+## محتویات درس
 
-Now that you know where you are, let’s see if we can move around the filesystem a bit. Remember we’ll need to navigate our way using paths. There are two different ways to specify a path, with absolute and relative paths. 
+اکنون که می‌دانید دقیقاً در چه دایرکتوری قرار دارید، بهتر است که کمی در فایل‌سیستم گشت و گذار کنیم. حداقل دیگر گُم نمی‌شویم. زمانی که با استفاده از مسیرها (path) راهمان را پیدا می‌کردیم را به خاطر می‌آورید؟ حالا بهتر است بدانید که برای تعیین مسیر، دو گزینه در پیش روی ما قرار دارد: مسیر مطلق (کامل) یا مسیر نسبی.
 
-<ul>
-<li>Absolute path: This is the path from the root directory. The root is the head honcho. The root directory is commonly shown as a slash. Every time your path starts with / it means you are starting from the root directory. For example, /home/pete/Desktop.</li>
++ مسیر مطلق: این مسیر از سرچشمه، یعنی از دایرکتوری روت آغاز می‌شود. روت به عنوان سردسته‌ی رئیس‌ها شناخته می‌شود. دایرکتوری روت با استفاده از یک اسلش مشخص می‌شود. هر بار که مسیری با استفاده از یک / آغاز می‌شود به این معنی‌ست که شما دارید از دایرکتوری روت شروع می‌کنید. به عنوان مثال:
 
-<li>Relative path: This is the path from where you are currently in filesystem. If I was in location /home/pete/Documents and wanted to get to a directory inside Documents called taxes, I don’t have to specify the whole path from root like /home/pete/Documents/taxes, I can just go to taxes/ instead.</li>
-</ul>
+```home/pete/Desktop ```
 
-Now that you know how paths work, we just need something to help us change to the directory we want to. Luckily, we have cd or “change directory” to do that. 
++ مسیر نسبی: مسیر نسبی درست از جایی که شما قرار دارید شروع می‌شود. شما هر لحظه در خط فرمان در جایی از فایل‌سیستم قرار دارید. در اکثر مواقع شما در حالت عادی در مسیر خانگی خود هستید. به هر حال اگر به عنوان مثال در مسیر ‎/home/pete/Documents بودید و می‌خواهید به داخل پوشه‌ای به نام taxes در داخل پوشه‌ی جاری یعنی Documents بروید، دیگر لازم نیست که از مسیر مطلق استفاده کنید، بلکه با توجه به جایی که قرار دارید می‌توانید خط فرمان را به دایرکتوری جدید راهنمایی کنید.
 
-<pre>$ cd /home/pete/Pictures</pre> 
 
-So now I've changed my directory location to /home/pete/Pictures.
+اکنون که خم و چم مسیرها را یاد گرفتیم، لازم است بفهمیم چطور باید بین این مسیرها جابجا شویم. خوشبختانه فرمانی به اسم **cd** که مختصر شده‌ی “change directory” است برای این کار فراهم شده است.
 
-Now from this directory I have a folder inside called Hawaii, I can navigate to that folder with:
+```$ cd /home/pete/Pictures```
 
-<pre>$ cd Hawaii</pre>
+اکنون مسیر جاری را با استفاده از مسیر مطلق به ‎/home/pete/Pictures تغییر دادیم.‎
 
-Notice how I just used the name of the folder? It’s because I was already in /home/pete/Pictures.
+خب، من یک پوشه به اسم Hawaii در داخل مسیر جاری دارم، که می‌خواهم واردش شوم. به مثال نگاه کنید (مسیر نسبی):
 
-It can get pretty tiring navigating with absolute and relative paths all the time, luckily there are some shortcuts to help you out. 
+```$ cd Hawaii```
 
-<ul>
-<li>. (current directory). This is the directory you are currently in. </li>
-<li>.. (previous directory). Takes you to the directory above your current.</li>
-<li>~ (home directory). This directory defaults to your “home directory”. Such as /home/pete.</li>
-<li>- (previous directory). This will take you to the previous directory you were just at.</li>
-</ul>
+دیدید که چطور از اسم پوشه برای تغییر مسیر استفاده کردم؟ من این کار را به خاطر اینکه قبل از رفتن به پوشه‌ی Hawaii در مسیر ‎/home/pete/Pictures بودم، توانستم انجام دهم.
 
-<pre>$ cd .
-$ cd ..
-$ cd ~
-$ cd -
-</pre>
-Give them a try!
+البته استفاده از مسیرهای مطلق یا نسبی برای رسیدن به جاهای خاصی از سیستم‌فایل به خودی خود خسته‌کننده است. به همین خاطر میانبرهایی برای تغییر مسیر نیز در سیستم تعبیه شده است.
 
-## Exercise
++ . (نقطه یا دایرکتوری جاری). یک تک نقطه، نشانگر مسیری‌ست که شما در آن قرار دارید.
++ .. (دو نقطه یا دایرکتوری بالاتر). دو نقطه نشانگر یک پله بالاتر از مسیری که در آن قرار دارید، است. با به کار گرفتن آن در دستور cd می‌توانید یک پله بالا بروید.
++ ~ (دایرکتوری خانه). این میانبر، نشانگر مسیر خانگی شماست. به عنوان مثال ‎/home/pete
++ دش یا - (دایرکتوری پیشین). علامت دش، نشانگر مسیری‌ست که دقیقاً پیش از مسیر جاری در آن بودید. کاری که دکمه‌ی Back در فایل‌منیجرتان انجام می‌دهد را می‌توانید با به کارگیری cd و این نشانگر، انجام دهید.
 
-<ol>
-<li>Run the cd command without any flags, where does it take you?</li>
-</ol>
+```$ cd .```
 
-## Quiz Question
+```$ cd ..```
 
-If you are in /home/pete/Pictures and wanted to go to /home/pete, what’s a good shortcut to use?
+```$ cd ~```
 
-## Quiz Answer
+```$ cd -```
 
-cd ..
+این دستورات را در خط فرمان خود امتحان کنید.
+
+## تمرین
+
++ دستور cd را بدون هیچ نشانگری اجرا کنید. دستور شما را کجا بُرد؟
+
+## سؤال آزمون
+
+اگر شما در ‎/home/pete/Pictures باشید و بخواهید به ‎/home/pete بروید، بهترین میانبر چیست؟
+
+## پاسخ آزمون
+
+```cd ..```
