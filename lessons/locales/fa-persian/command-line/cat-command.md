@@ -1,21 +1,25 @@
 # cat
 
-## Lesson Content
+## محتویات درس
 
-We’re almost done navigating files, but first let’s learn how to read a file. A simple command to use is the cat command, short for concatenate, it not only displays file contents but it can combine multiple files and show you the output of them. 
+تقریباً گشت و گذار در بین فایل‌ها و فولدرها را فرا گرفتیم و حال وقتش است که ببینیم چطور یک فایل را می‌توانیم، بخوانیم. یک دستور ساده برای این کار، فرمان cat است که کوتاه‌شده‌ی کلمه‌ی  concatenate است. این دستور نه تنها می‌تواند محتویات فایل را نمایش دهد که می‌تواند چند فایل را با هم ترکیب کند و خروجی آن را برای‌تان صادر کند.
 
-<pre>$ cat dogfile birdfile</pre>
+```$ cat dogfile birdfile```
 
-It’s not great for viewing large files and it’s only meant for short content. There are many other tools that we use to view larger text files that we’ll discuss in the next lesson.
+به عنوان مثال برای چسباندن دو فایل ‎1.mp3 و ‎2.mp3 به هم و قرار دادن آن‌ها در فایلِ جدید ‎3.mp3 دستور زیر را صادر کنید:
 
-## Exercise
+```cat 1.mp3 2.mp3 >> 3.mp3```
 
-Run cat on different files and directories. Then try to cat multiple files. 
+البته این ابزار برای دیدن فایل‌های خیلی بزرگ، مناسب نیست و برای فایل‌های با محتویات کم، طراحی شده است. در ضمن، ابزارهای بسیار زیاد دیگری برای دیدن فایل‌های متنی بزرگ نیز وجود دارند که در درس‌های آینده به آن‌ها اشاره خواهیم کرد.
 
-## Quiz Question
+## تمرین
 
-What's a good way to see the contents of a file?
+از cat برای دیدن محتویات فایل‌ها، و دایرکتوری‌ها استفاده کنید. سپس سعی کنید چند فایل (مثلاً دو فایل صوتی mp3) را با استفاده از فرمان cat به هم بچسبانید.
 
-## Quiz Answer
+## سؤال آزمون
+
+چه راه مناسبی برای دیدن محتویات یک فایل سراغ دارید؟
+
+## پاسخ آزمون
 
 cat
