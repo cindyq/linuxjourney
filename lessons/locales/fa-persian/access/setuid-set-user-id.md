@@ -1,55 +1,55 @@
 # Setuid
 
-## Lesson Content
+## محتویات درس
 
-There are many cases in which normal users need elevated access to do stuff. The system administrator can't always be there to enter in a root password every time a user needed access to a protected file, so there are special file permission bits to allow this behavior. The Set User ID (SUID) allows users to run programs as the owner of the file rather than the original user who is running it.
+خیلی اوقات پیش می‌آید که کاربرهای عادی برای انجام کاری، به دسترسی به چیزی بیش از آنچه یک کاربر می‌تواند داشته باشد، نیاز دارند. مدیر سیستم هم که نمی‌تواند دائم آنجا حضور داشته باشد تا پسورد روت را هر بار که یک کاربر نیاز به دسترسی به یک فایل محافظت‌شده دارد، وارد کند. برای همین منظور بیت‌های مجوز خاصی طراحی شده‌اند که در ادامه شما را با آن‌ها آشنا می‌کنیم. SUID به کاربرها اجازه می‌دهد که برنامه‌ها را به عنوان صاحب یک فایل به اجرا در آوردند، در حالی که صاحب اصلی فایل می‌تواند کاربر دیگری باشد.
 
-Let's look at an example: 
+با هم نگاهی به یک مثال بیندازیم:
 
-Let's say I want to change my password, simple right? I just use the passwd command:
+فرض کنید که می‌خواهیم پسوردمان را عوض کنیم. ساده است. درست؟ از فرمان  passwd به این منظور استفاده می‌کنیم.
 
-<pre>$ passwd</pre>
+```$ passwd```
 
-What is the password command doing? It's modifying a couple of files, but most importantly it's modifying the /etc/shadow file. Let's look at that file for a second: 
+فرمان بالا چه کاری را انجام می‌دهد؟ این فایل چند فایل مختلف من جمله فایل بسیار حیاتی ‎/etc/shadow را دستکاری می‌کند. حالا نگاهی به فایل مذکور بیندازیم.
 
-<pre>$ ls -l /etc/shadow
+```$ ls -l /etc/shadow```
 
--rw-r----- 1 root shadow 1134 Dec 1 11:45 /etc/shadow
-</pre>
+```-rw-r----- 1 root shadow 1134 Dec 1 11:45 /etc/shadow```
 
-Oh wait a minute here, this file is owned by root? How is it possible that we are able to modify a file owned by root? 
+چی شد؟ صاحب این فایل کاربر روت است و کاربران دیگر حق دخل و تصرف در فایل مذکور را ندارند؟ چطور ما به عنوان یک کاربر عادی توانستیم یک فایل متعلق به روت را دستکاری کنیم؟
 
-Let's look at another permission set, this time of the command we ran: 
+نگاهی به دسته‌ی دیگری از مجوزها بیندازیم. این بار دسته مجوزهای خودِ فرمان اجرا شده یعنی passwd.
 
-<pre>$ ls -l /usr/bin/passwd
+```$ ls -l /usr/bin/passwd```
 
--rwsr-xr-x 1 root root 47032 Dec 1 11:45 /usr/bin/passwd
-</pre>
+```-rwsr-xr-x 1 root root 47032 Dec 1 11:45 /usr/bin/passwd```
 
-You'll notice a new permission bit here <b>s</b>. This permission bit is the SUID, when a file has this permission set, it allows the users who launched the program to get the file owner's permission as well as execution permission, in this case root. So essentially while a user is running the password command, they are running as root.
+اینجا به یک بیت مجوز تازه‌ای با نام **s** برمی‌خوریم. این بیت مجوز، SUID نام دارد و زمانی که یک فایل، این بیت مجوز را دارد، به کاربری که آن برنامه را اجرا می‌کند اجازه داده می‌شود تا مجوز مالکیت فایل در کنار اجازه‌ی اجرا را داشته باشد، که در مثال ما این مجوزها مربوط به کاربر ریشه است. در حقیقت زمانی که یک کاربر، فرمان پسورد را وارد می‌کند، این کار را به عنوان کاربر روت انجام می‌دهد و در نتیجه اجازه‌ی دستکاری در فایل به آن کاربر داده می‌شود.
 
-That's why we are able to access a protected file like /etc/shadow when we run the passwd command. Now if you removed that bit, you would see that you will not be able to modify /etc/shadow and therefore change your password. 
+به همین خاطر است که ما اجازه‌ی دسترسی به فایل محافظت‌شده‌ای نظیر ‎/etc/shadow را زمانی که فرمان passwd را اجرا می‌کنیم، داریم. اکنون اگر شما آن بیت مجوز را حذف کنید خواهید دید که دیگر قادر به دستکاری فایل ‎/etc/shadow و تغییر کلمه‌ی عبور خودتان نخواهید بود.
 
-<b>Modifying SUID</b>
+**ویرایش SUID**
 
-Just like regular permissions there are two ways to modify SUID permissions. 
+درست شبیه به مجوزهای عادی دو راه برای دستکاری مجوزهای SUID وجود دارد.
 
-<i>Symbolic way:</i>
-<pre>$ sudo chmod u+s myfile</pre>
+*با استفاده از نمادها*
 
-<i>Numerical way:</i>
-<pre> sudo chmod 4755 myfile</pre>
+```$ sudo chmod u+s myfile```
 
-As you can see the SUID is denoted by a 4 and pre-pended to the permission set. You may see the SUID denoted as a capital <b>S</b> this means that it still does the same thing, but it does not have execute permissions.
+*با استفاده از اعداد*
 
-## Exercise
+```$ sudo chmod 4755 myfile```
 
-Look at the permission for /etc/passwd in detail, do you notice anything else? Files with SUID enabled are also easily distinguishable.
+همانطور که مشاهده می‌کنید SUID با عدد ۴ مشخص می‌شود و در ابتدای دسته‌ی مجوزها جای می‌گیرد. همچنین ممکن است که شما SUID را با **S** بزرگ ببینید که این بدین معنی‌ست که فایل مورد اشاره، مجوز اجرا ندارد.
 
-## Quiz Question
+## تمرین
 
-What number represents the SUID?
+به ریزِ مجوزهای فایل ‎/etc/passwd نگاهی بیندازید. چیز دیگری نظرتان را جلب کرد؟ فایل‌های با SUID فعال، به راحتی قابل تمایز هستند.
 
-## Quiz Answer
+## سؤال آزمون
+
+چه عددی نمایش‌دهنده‌ی SUID است؟
+
+## پاسخ آزمون
 
 4
