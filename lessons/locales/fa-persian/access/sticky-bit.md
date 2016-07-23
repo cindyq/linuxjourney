@@ -1,33 +1,33 @@
-# The Sticky Bit
+# بیت چسبناک
 
-## Lesson Content
+## محتویات درس
 
-One last special permission bit I want to talk about is the sticky bit. 
+آخرین بیت مجوزی که قرار است درباره‌اش صحبت کنیم، بیت Sticky یا بیت چسبناک است.
 
-This permission bit, "sticks a file/directory" this means that only the owner or the root user can delete or modify the file. This is very useful for shared directories. Take a look at the example below:
+این بیت مجوز به یک فایل یا دایرکتوری (به زبان ساده فولدر) می‌چسبد. به این معنی که تنها صاحب فایل و یا کاربر ریشه می‌توانند آن فایل را حذف یا دستکاری کنند. این بیت مجوز زمانی که می‌خواهید دایرکتوری‌ها را به اشتراک بگذارید، بسیار به کارتان خواهد آمد. با هم نگاهی به یک مثال می‌اندازیم:
 
-<pre>$ ls -ld /tmp
-drwxrwxrwxt 6 root root 4096 Dec 15 11:45 /tmp
-</pre>
+```$ ls -ld /tmp```
 
-You'll see a special permission bit at the end here <b>t</b>, this means everyone can add files, write files, modify files in the /tmp directory, but only root can delete the /tmp directory. 
+```drwxrwxrwxt 6 root root 4096 Dec 15 11:45 /tmp```
 
-<b>Modify sticky bit</b>
+همانطور که در خروجی بالا مشاهده می‌کنید یک بیت مجوز خاص در انتهای دسته‌ی بیت مجوزها قرار دارد که **t** نام دارد. وجود این **t** به این معنی‌ست که هر کسی می‌تواند به دایرکتوری یا مسیر ‎/tmp فایل اضافه کند یا فایل‌های این مسیر را ویرایش کند و فایل‌هایی را در این مسیر بنویسد، ولی تنها کاربر ریشه است که می‌تواند دایرکتوری یا مسیر ‎/tmp را حذف کند.
 
-<pre>$ sudo chmod +t mydir
+**دستکاری بیت چسبناک**
 
-$ sudo chmod 1755 mydir</pre>
+```$ sudo chmod +t mydir```
 
-The numerical representation for the sticky bit is <b>1</b>
+```$ sudo chmod 1755 mydir```
 
-## Exercise
+عددِ نماینده‌ی بیتِ چسبناک **1** است. همانطور که مشاهده می‌کند برای تغییر این بیت بایستی عدد 1 را به ابتدای سری عددی مجوزها اضافه کنید.
 
-What other files and directories do you think have a sticky bit enabled? 
+## تمرین
 
-## Quiz Question
+به نظرتان چه فایل یا دایرکتوری‌هایی با بیت چسبناک فعال در سیستم شما وجود دارند؟ بکاویدشان.
 
-What symbol represents the sticky bit?
+## سؤال آزمون
 
-## Quiz Answer
+چه حرف یا نشانه‌ای نمایش‌دهنده‌ی بیت چسبناک است؟
+
+## پاسخ آزمون
 
 t
