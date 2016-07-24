@@ -1,25 +1,44 @@
-# /dev directory
+# دایرکتوری ‎/dev
 
-## Lesson Content
+## محتوای درس
 
-When you connect a device to your machine, it generally needs a device driver to function properly. You can interact with device drivers through device files or device nodes, these are special files that look like regular files. Since these device files are just like regular files, you can use programs such as ls, cat, etc to interact with them. These device files are generally stored in the /dev directory. Go ahead and ls the /dev directory on your system, you'll see a large amount of devices files that are on your system. 
+عموما زمانی که دستگاهی را به کامپیوتر‌تان متصل می‌کنید‌، آن دستگاه به راه‌انداز
+مناسبش جهت عملکرد درست نیاز دارد. از این رو شما می‌توانید از طریق device files،
+یا device nodes با راه‌انداز دستگاه تعامل داشته باشید. device file‌ها‌، فایل‌های
+مخصوصی هستند که بسیار شبیه دیگر فایل‌ها هستند. از همین‌رو می‌توانید از برنامه‌هایی
+چون ls، cat و غیره جهت بررسی‌شان استفاده کنید. این فایل‌ها معمولا در دایرکتوری
+‎/dev ذخیره می‌شوند. همین الان دستور ls را روی دایرکتوری ‎/dev اجرا کنید تا ببینید
+چه تعداد زیادی از این نوع فایل‌ها روی سیستم‌تان قرار دارد.
 
-<pre>$ ls /dev </pre>
+```
+$ ls /dev
+```
 
-Some of these devices you've already used and interacted with such as /dev/null. Remember when we send output to /dev/null, the kernel knows that this device takes all of our input and just discards it, so nothing gets returned.
+بعضی از این دستگاه‌ها را تا این‌جای این کتاب استفاده کرده‌ایم. مثل ‎/dev/null، که
+خروجی دستوراتمان را به آن می‌فرستادیم. کرنل می‌داند که این دستگاه، تمامی ورودی‌های
+دریافتی‌اش را دور می‌ریزد پس چیزی هم بر نمی‌گرداند.
 
-In the old days, if you wanted to add a device to your system, you'd add the device file in /dev and then probably forget about it. Well repeat that a couple of times and you can see where there was a problem. The /dev directory would get cluttered with static device files of devices that you've long since upgraded, stopped using, etc. Devices are also assigned device files in the order that the kernel finds them. So if everytime you rebooted your system, the devices could have different device files depending on when they were discovered.
+در گذشته، اگر می‌خواستید دستگاه جدیدی به سیستم‌تان اضافه کنید‌، باید فایل‌های دستگاه
+را به ‎/dev انتقال می‌دادید و فراموشش می‌کردید. اگر این کار را چند باری انجام
+می‌دادید می‌توانستید مشکل این فرآیند را ببینید. دایرکتوری ‎/dev پر می‌شد از device
+files دستگاه‌هایی که از خیلی وقت پیش دیگر استفاده‌اش نمی‌کنید! یا به روز‌رسانی‌اش
+کرده‌اید یا اتفاق‌های دیگری را تجربه کرده که دیگر آن فایل مورد نیاز‌تان نیست. هدف
+از device files برای دستگاه این است که کرنل بتواند آن‌ها را شناسایی کند. پس بعد
+از هر ریبوت، دستگاه‌ها می‌توانستند بسته به این که کدام device file شناسایی می‌شد‌،
+راه‌انداز متفاوتی از چیزی که مد نظر شماست را داشته باشند.
 
-Thankfully we no longer use that method, now we have something that we use to dynamically add and remove devices that are currently being used on the system and we'll be discussing this in the coming lessons.
+خوشبختانه‌، امروزه دیگر از آن روش استفاده نمی‌شود. حالا دیگر ابزاری داریم که برای
+اضافه یا حذف کردن خودکار دستگاه‌هایی که در حال حاضر روی سیستم قرار دارند استفاده
+می‌شود. در درس‌های پیش‌رو بیشتر در این خصوص صحبت خواهیم کرد. 
 
-## Exercise
+## تمرینات
 
-Check out the contents of the /dev directory, do you recognize any familiar devices? 
+محتوای دایرکتوری ‎/dev را بررسی کنید‌، دستگاه آشنایی را می‌بینید؟
 
-## Quiz Question
+## سوالات آزمون
 
-Where are device files stored on the system?
+‏device files در کجای سیستم ذخیره شده‌اند؟
 
-## Quiz Answer
+## پاسخ‌های آزمون
 
 /dev
