@@ -1,48 +1,50 @@
-# Device Names
+# نام دستگاه‌هایی
 
-## Lesson Content
+## محتوای درس
 
-Here are the most common device names that you will encounter: 
+در این‌جا معمول‌ترین نام دستگاه‌هایی که ممکن است با آن‌ها برخورد کنید را با هم مرور می‌کنیم:
 
-<b>SCSI Devices</b>
+### ‏دستگاه‌های SCSI 
 
-If you have any sort of mass storage on your machine, chances are it is using the SCSI (pronounced "scuzzy") protocol. SCSI stands for Small Computer System Interface, it is a protocol used for allow communication between disks, printers, scanners and other peripherals to your system. You may have heard of SCSI devices which aren't actually in use in modern systems, however our Linux systems correspond SCSI disks with hard disk drives in /dev. They are represented by a prefix of sd (SCSI disk):
+اگر از سیستم‌تان از نوعی سیستم ذخیره‌سازی با گنجایش بالا بهره می‌گیرد‌، احتمالش وجود
+دارد که از پروتکل SCSI (به صورت «اسکازی» خوانده می‌شود) استفاده کند. SCSI مخفف
+Small Computer System Interface پروتکلی است که امکان ارتباط بین دیسک‌های
+ذخیره‌سازی، چاپگرها، اسکنر‌ها و دیگر لوازم جانبی را فراهم می‌کند. ممکن است شنیده
+باشید که سخت‌افزار‌های SCSI در سیستم‌های امروزی مورد استفاده قرار نمی‌گیرند‌، اما
+سیستم‌های لینوکسی دیسک‌های سخت را با این پروتکل مورد استفاده قرار می‌دهند و در
+دایرکتوری ‎/dev ذخیره می‌کنند. فایل‌های مربوط به این سخت‌افزار‌ها با پیشوند sd (SCSI
+disk)‎ ذخیره می‌شود:
 
-Common SCSI device files:
+فایل‌های سخت‌افزار‌های SCSI:
 
-<ul>
-<li>/dev/sda - First hard disk</li>
-<li>/dev/sdb - Second hard disk</li>
-<li>/dev/sda3 - Third partition on the first hard disk</li>
-</ul>
+- ‏‎/dev/sda - اولین دیسک سخت
+- ‎/dev/sdb - دومین دیسک سخت
+- ‎/dev/sda3 - سومین پارتیشن دیسک سخت اول
 
-<b>Pseudo Devices</b>
+### شبه دستگاه‌ها (Pseudo Devices)
 
-As we discussed earlier, pseudo devices aren't really physically connected to your system, most common pseudo devices are character devices: 
+همانطور که قبلا شرح دادیم‌، شبه دستگاه‌ها‌، به صورت فیزیکی به سیستم شما متصل
+نشده‌اند. لیستی از عمده‌ترین شبه دستگاه‌ها را در زیر می‌بینید:
 
-<ul>
-<li>/dev/zero - accepts and discards all input, produces a continuous stream of NULL (zero value) bytes</li>
-<li>/dev/null - accepts and discards all input, produces no output</li>
-<li>/dev/random - produces random numbers</li>
-</ul>
+- ‏‎/dev/zero - ورودی‌های دریافتی‌اش را دور می‌ریزد و جریانی از بایت NULL (مقدار صفر) تولید می‌کند. 
+- ‎/dev/null - ورودی‌های دریافتی‌اش را دور می‌ریزد و هیچ خروجی‌ای تولید نمی‌کند.
+- ‎/dev/random - اعداد تصادفی تولید می‌کند. 
 
-<b>PATA Devices</b>
+### دستگاه‌های PATA
 
-Sometimes in older systems you may see hard drives being referred to with an hd prefix: 
+گاها ممکن است در سیستم‌های قدیمی‌تر با دیسک سخت‌هایی روبرو شوید که با پیشوند hd ذخیره شده‌اند:
 
-<ul>
-<li>/dev/hda - First hard disk</li>
-<li>/dev/hdd2 - Second partition on 4th hard disk</li>
-</ul> 
+- ‏‎/dev/hda - اولین دیسک سخت
+- ‎/dev/hdd4 - دومین پارتیشن روی چهارمین دیسک سخت
 
-## Exercise
+## تمرینات
 
-Write to the pseudo devices and see what happens, be careful not to write your disks to those devices!
+مقداری ورودی روی یکی از شبه دستگاه‌ها بنویسید و ببینید که چه اتفاقی رخ می‌دهد. مراقب باشید که دیسک ذخیره‌سازی‌تان را روی آن‌ها ننویسید!
 
-## Quiz Question
+## سوالات آزمون
 
-What would commonly be the device name for the first partition on the second SCSI disk?
+معمولا اولین پارتیشن از دومین دیسک SCSI با چه نامی در دایرکتوری ‎/dev ذخیره می‌شود؟
 
-## Quiz Answer
+## پاسخ آزمون
 
-sdb1
+sdb2
