@@ -1,27 +1,27 @@
 # exit
 
-## Lesson Content
+## محتویات درس
 
-Well, you sure did a good job getting through the basics. We’ve only scratched the surface, now that you’ve learned to crawl, in the next set of courses, I’m gonna teach how to walk. 
+تا اینجای کار اصول دین لینوکسی را با هم یاد گرفتیم و اکنون نوبت تاتی تاتی کردن است. پس چهار دست و پا رفتن را فراموش، و سعی کنید، بلند شوید!
 
-For now, you can pat yourself on the back and take a break. To exit from the shell, you can use the exit command
+اکنون بهتر است کمی به خودتان استراحت بدهید و از شل خارج شوید. ولی چطور از شل خارج شویم؟ خب اینجاست که دستور exit به کارتان خواهد آمد:
 
-<pre>$ exit</pre>
+```$ exit```
 
-Or the logout command:
+و یا از دستور logout استفاده کنید:
 
-<pre>$ logout</pre>
+```$ logout```
 
-Or if you are working out of a terminal GUI, you can just close the terminal, see you in the next course!
+یا دیگر در نهایت اگر از یک رابط گرافیکی برای ترمینال استفاده می‌کنید، آن را ببندید. به هر حال در دوره‌ی بعدی منتظرتان هستیم!
 
-## Exercise
+## تمرین
 
-Exit out of the shell and see what happens. Make sure you don't need to do anymore work in that shell.
+از شل خارج شوید و ببینید که چه اتفاقی می‌افتد. البته قبل از این کار مطمئن شوید که کار دیگری با شل ندارید.
 
-## Quiz Question
+## سؤال آزمون
 
-How can you exit from the shell?
+با چه فرمانی می‌توان از شِل خارج شد؟
 
-## Quiz Answer
+## پاسخ آزمون
 
 exit
