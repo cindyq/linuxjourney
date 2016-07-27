@@ -1,43 +1,43 @@
-# cp (Copy)
+# cp (کپی یا رونوشت)
 
-## Lesson Content
+## محتویات درس
 
-Let’s start making some copies of these files. Much like copy and pasting files in other operating systems, the shell gives us an even simpler way of doing that. 
+شاید بد نباشد با رونوشت گرفتن از چند فایل شروع کنیم. با cp شما از طریق شِل می‌توانید درست شبیه به کپی و پِیْست کردن فایل در سایر سیستم‌عامل‌ها، از فایل‌هایتان به سادگی رونوشت بگیرید.
 
-<pre>$ cp mycoolfile /home/pete/Documents/cooldocs</pre>
+```$ cp mycoolfile /home/pete/Documents/cooldocs```
 
-mycoolfile is the file you want to copy and /home/pete/Documents/cooldocs is where you are copying the file to.
+در دستور بالا، فایل mycoolfile را قرار است به مسیر ‎/home/pete/Documents/cooldocs کپی کنیم.
 
-You can copy multiple files and directories as well as use wildcards. A wildcard is a character that can be substituted for a pattern based selection, giving you more flexibility with searches. You can use wildcards in every command for more flexibility.
+شما همچنین می‌توانید به جای یک فایل با استفاده از وایلدکارت‌ها چند فایل یا دایرکتوری را به صورت همزمان کپی کنید. وایلدکارت در حقیقت یک کاراکتر است که می‌تواند به عنوان یک الگو برای انتخاب فایل‌ها یا دایرکتوری‌هایی که از آن الگو تبعیت می‌کنند، استفاده شود. این کار به شما قدرت و انعطاف بیشتری را در انتخاب و جستجوی فایل‌ها می‌دهد. شما از یک وایلدکارت در هر دستوری که بخواهید می‌توانید بهره ببرید.
 
-<ul>
-<li>* the wildcard of wildcards, it's used to represent all single characters or any string.</li>
-<li>? used to represent one character</li>
-<li>[] used to represent any character within the brackets</li>
-</ul>
++ * یا به زبان خودمان، ستاره، وایلدکارتِ وایلدکارت‌هاست و قدرت عجیبی دارد. این وایلدکارت در اصل نماینده‌ی تمام کاراکترها در یک رشته است. به عبارتی یک * به عنوان یک وایلدکارت، تمام فایل‌ها و دایرکتوری‌ها را هدف قرار می‌دهد، چون می‌تواند جایگزین هر کاراکتری که فکرش را می‌کنید، شود.
++ ? یا علامت سوال، نماینده‌ی یک تک کاراکتر است.
++ [] یا براکت‌ها بیانگر هر کاراکتری که داخل آن‌ها قرار بگیرد است.
 
-<pre>$ cp *.jpg /home/pete/Pictures</pre>
+```$ cp *.jpg /home/pete/Pictures```
 
-This will copy all files with the .jpg extension in your current directory to the Pictures directory.
+دستور بالا، تمام فایل‌های با پسوند jpg که در مسیر جاری قرار دارند را به پوشه‌ی تصاویر منتقل می‌کند.
 
-A useful command is to use the -r flag, this will recursively copy the files and directories within a directory. 
+یکی از فلگ‌ها یا پرچم‌هایی که به کرات با cp استفاده می‌شود ‎-r است. این سوئیچ به شما امکان کپی رفت‌وبرگشتی را می‌دهد. به این معنی که فایل‌های داخل یک دایرکتوری و دایرکتوری‌های داخل دیگر دایرکتوری‌ها به همراه فایل‌هایشان را نیز کپی می‌کند و فقط به فایل‌های مسیر جاری اکتفا نمی‌کند.
 
-Try to do a cp on a directory that contains a couple of files to your Documents directory. Didn’t work did it? Well that’s because you’ll need to copy over the files and directories inside as well with -r command.
+حالا با استفاده از دستور cp یک دایرکتوری که شامل یک سری از فایل‌های شماست، را به پوشه‌ی Documents خود رونوشت کنید. نشد؟ خب دلیلش این است که اگر بخواهید فایل‌ها و دایرکتوری‌های داخلِ یک دایرکتوری دیگر را کپی کنید، لازم است از سوئیچ ‎-r استفاده کنید.
 
-<pre>$ cp -r Pumpkin/ /home/pete/Documents</pre>
+```$ cp -r Pumpkin/ /home/pete/Documents```
 
-One thing to note, if you copy a file over to a directory that has the same filename, the file will be overwritten with whatever you are copying over. This is no bueno if you have a file that you don’t want to get accidentally overwritten. You can use the -i flag (interactive) to prompt you before overwriting a file. 
+یک نکته‌ی دیگر اینکه اگر فایلی را به مسیری کپی کنید که فایلی با نام مشابه در آن قرار دارد، فایل شما بر روی فایل قبلی بازنویسی می‌شود. به عبارتی فایل قبلی نابود و فایل شما جایگزین آن می‌شود. اگر فایل قبلی برای‌تان ارزشمند بوده باشد، خب این خبر خوبی برای‌تان نخواهد بود. پس چاره چیست؟ چطور می‌توان از بازنویسی شدن تصادفی فایل‌ها با استفاده از cp جلوگیری کرد؟ اینجاست که فلگِ ‎-i به داد شما می‌رسد. این سوئیچ قبل از بازنویسی فایل، شما را از انجام آن با خبر می‌کند و منتظر دستور شما برای انجام کار می‌شود.
 
-<pre>$ cp -i mycoolfile /home/pete/Pictures</pre>
+```$ cp -i mycoolfile /home/pete/Pictures```
 
-## Exercise
+در ضمن می‌توانید از چند فلگ به صورت همزمان استفاده کنید. مثلاً دستور cp -ir یک دستور کاملاً درست است.
 
-Copy over a couple of files, be careful not to overwrite anything important.
+## تمرین
 
-## Quiz Question
+چند فایل را کپی کنید و مراقب باشید که دخل فایل‌های مهم‌تان را با بازنویسی‌شان نیاورید.
 
-What flag do you need to specify to copy over a directory?
+## سؤال آزمون
 
-## Quiz Answer
+چه فلگ یا سوئیچی را برای کپی یک دایرکتوری باید به کار بگیرید؟
+
+## پاسخ آزمون
 
 -r
