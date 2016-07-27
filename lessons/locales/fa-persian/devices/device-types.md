@@ -1,67 +1,80 @@
-# device types
+# نوع دستگاه‌ها
 
-## Lesson Content
+## محتوای درس
 
-Before we chat about how devices are managed, let's actually take a look at some devices.
+قبل از صبحت در مورد این که دستگاه‌ها چطور مدیریت می‌شوند‌، بیایید نگاهی به تعدادی از آن‌ها بیاندازیم:
 
-<pre>$ ls -l /dev
+
+```
+$ ls -l /dev
 brw-rw----   1 root disk      8,   0 Dec 20 20:13 sda
 crw-rw-rw-   1 root root      1,   3 Dec 20 20:13 null
 srw-rw-rw-   1 root root           0 Dec 20 20:13 log
 prw-r--r--   1 root root           0 Dec 20 20:13 fdata
-</pre>
+```
 
-The columns are as follows from left to right:
+هر ستون از چپ به راست به نشانگر مقادیر زیر است:
 
-<ul>
-<li>Permissions</li>
-<li>Owner</li>
-<li>Group</li>
-<li>Major Device Number</li>
-<li>Minor Device Number</li>
-<li>Timestamp</li>
-<li>Device Name</li>
-</ul>
+- اجازه‌های دسترسی
+- مالک
+- گروه
+- شماره دستگاه اصلی
+- شماره دستگاه فرعی
+- زمان
+- نام دستگاه
 
-Remember in the ls command you can see the type of file with the first bit on each line. Device files are denoted as the following: 
+به خاطر دارید که می‌توانید با استفاده از بیت اول هر خط از خروجی دستور ls،
+می‌توانید به نوع آن فایل پی ببرید؟ device file‌ها به صورت زیر نشانه‌گذاری می‌شوند:
 
-<ul>
-<li>c - character</li>
-<li>b - block</li>
-<li>p - pipe</li>
-<li>s - socket</li>
-</ul>
+- ‏c - کاراکتر
+- b - بلاک
+- p - پایپ
+- s - سوکت
 
-<b>Character Device</b>
+### دستگاه کاراکتر
 
-These devices transfer data, but one a character at a time. You'll see a lot of pseudo devices (/dev/null) as character devices, these devices aren't really physically connected to the machine, but they allow the operating system greater functionality. 
+این نوع دستگاه‌ها قابلیت انتقال داده به صورت یک کاراکتر در لحظه را دارند. تعداد
+زیادی از شبه دستگاه‌ها (از جمله ‎/dev/null) از نوع دستگاه کاراکتر‌اند. این دستگاه‌ها
+به صورت فیزیکی به سیستم متصل نشده‌اند، ولی به سیستم عامل قدرت عمل بیشتری می‌دهند.
 
-<b>Block Device</b>
+### دستگاه بلاک
 
-These devices transfer data, but in large fixed-sized blocks. You'll most commonly see devices that utilize data blocks as block devices, such as harddrives, filesystems, etc. 
+این نوع دستگاه‌ها نیز قابلیت انتقال داده دارند‌، ولی این کار را به صورت یک بلاک
+بزرگ از داده به اندازهٔ ثابت انجام می‌دهند. عموما دستگاه‌هایی که از داده‌ها استفاده
+می‌کنند‌، به صورت دستگاه بلاک نشانه گذاری می‌شوند. دستگاه‌هایی چون دیسک‌های سخت و
+سیستم فایل‌ها از این دست‌اند.
 
-<b>Pipe Device</b>
+### دستگاه پایپ
 
-Named pipes allow two or more processes to communicate with each other, these are similar to character devices, but instead of having output sent to a device, it's sent to another process. 
+دستگاه‌های پایپ (لوله) امکان ارتباط بین چند پروسه با یکدیگر را فراهم می‌کنند. این
+نوع دستگاه‌ها از بسیاری جهات شبیه به دستگاه‌های کاراکتر عمل می‌کنند، اما به جای
+ارسال خروجی به یک دستگاه‌، آن را به پروسه‌ای دیگر هدایت می‌کنند.
 
-<b>Socket Device</b>
+### دستگاه سوکت
 
-Socket devices facilitate communication between processes, similar to pipe devices but they can communicate with many processes at once. 
+دستگاه‌های سوکت‌، همچون دستگاه‌های پایپ ارتباط بین پروسه‌ها را تسهیل می‌کنند‌. ولی
+امکان ارتباط همزمان با تعداد زیادی از پروسه‌های مختلف را دارند.
 
-<b>Device Characterization</b>
+### شناسایی دستگاه‌هایی
 
-Devices are characterized using two numbers, <b>major device number</b> and <b>minor device number</b>. You can see these numbers in the above ls example, they are separated by a comma. For example, let's say a device had the device numbers: <b>8, 0</b>:
+دستگاه‌ها با استفاده از دو عدد شناسایی می‌شوند. **شماره دستگاه اصلی** و **شماره
+دستگاه فرعی**. در نمونه خروجی دستور ls بالا‌،‌می‌توانید این اعداد را مشاهده کنید که
+با یک کاما از هم جدا شده‌اند. برای نمونه بیایید فرض کنیم یک دستگاه با شماره‌های
+**8, 0** نشانه گذاری شده است:
 
-The major device number represents the device driver that is used, in this case 8, which is often the major number for sd block devices. The minor number tells the kernel which unique device it is in this driver class, in this case 0 is used to represent the first device (a).
+شماره دستگاه اصلی‌، نشان‌گر راه‌انداز دستگاهی است که استفاده شده است. مثلا در این‌جا
+8، که عموما به عنوان شماره دستگاه اصلی دستگاه‌های بلاک sd استفاده می‌شود. شماره
+دستگاه فرعی‌، به کرنل نشان می‌دهد که دستگاه حاضر در کجای کلاس راه‌انداز حاضر قرار
+دارد. در نمونهٔ فعلی‌، عدد 0 نشان می‌دهد که دستگاه حاضر‌، اولین دستگاه این کلاس راه‌انداز است.
 
-## Exercise
+## تمرینات
 
-Look at your /dev directory and find out what types of devices you can see.
+به دایرکتوری ‎/dev سیستم خود نگاهی بیاندازید و ببینید چه نوع دستگاه‌هایی در آن خواهید یافت. 
 
-## Quiz Question
+## سوال آزمون
 
-What is the symbol for character devices in the ls -l command?
+علامت اختصاصی دستگاه‌های کاراکتر در خروجی دستور `ls -l` چیست؟
 
-## Quiz Answer
+## پاسخ آزمون
 
 c
