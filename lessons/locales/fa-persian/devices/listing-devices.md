@@ -1,29 +1,37 @@
-# lsusb, lspci, lssci
+# ‏lsusb, lspci, lssci
 
-## Lesson Content
+## محتوای درس
 
-Just like we would use the ls command to list files and directories, we can use similar tools that list information about devices.
+دقیقا همانطوری که می‌توانیم از دستور `ls` برای لیست کردن فایل‌ها و دایرکتوری‌ها
+استفاده کنیم‌، می‌توانیم از ابزار‌های مشابهی برای لیست کردن اطلاعات دستگاه‌ها
+استفاده کنیم.
 
-<b>Listing USB Devices</b>
+### لیست کردن دستگاه‌های USB
 
-<pre>$ lsusb </pre>
+```
+$ lsusb
+```
 
-<b>Listing PCI Devices</b>
+### لیست کردن دستگاه‌های PCI
 
-<pre>$ lspci </pre>
+```
+$ lspci
+```
 
-<b>Listing SCSI Devices</b>
+### لیست کردن دستگاه‌های SCSI
 
-<pre>$ lsscsi </pre>
+```
+$ lssci
+```
 
-## Exercise
+## تمرینات
 
-Try out each of these commands and see the output you receive.
+هر کدام از دستورات ارائه شده در این درس را اجرا و خروجی آن‌ها را بررسی کنید.
 
-## Quiz Question
+## سوال آزمون
 
-What command can be used to view usb devices?
+از کدام دستور می‌توان برای دیدن دستگاه‌های USB استفاده کرد؟
 
-## Quiz Answer
+## پاسخ آزمون
 
 lsusb
