@@ -2,13 +2,13 @@
 
 ## Lesson Content
 
-Maintenant, je crois que nous avons beaucoup de fichiers, supprimons s'en quelques. La commande 'rm' (remove - supprimer) est utilisé pour supprimer les fichiers et répertoires. 
+Maintenant, je crois que nous avons beaucoup de fichiers, supprimons en quelques-uns. La commande 'rm' (remove - supprimer) est utilisé pour supprimer les fichiers et répertoires. 
 
 <pre>$ rm fichier1</pre>
 
 Faites attention en utilisant la commande rm, il y a pas de corbeille magique où vous pouvez récupérer les fichiers supprimés. Une fois supprimés, ils sont supprimés pour de bon, donc attention. 
 
-Heureusement ils existent des mesures de sécurité mises en place, donc un utilisateur normal ne peut pas supprimer un ensemble de fichiers importants. Une confirmation vous sera demandée avant la suppression. Si le répertoire est protégé en écriture, il sera aussi difficile à supprimer. 
+Heureusement il existe des mesures de sécurité mises en place, donc un utilisateur normal ne peut pas supprimer un ensemble de fichiers importants. Une confirmation vous sera demandée avant la suppression. Si le répertoire est protégé en écriture, il sera aussi difficile à supprimer. 
 
 Maintenant si vous n'avez que faire de ça, vous pouvez bien sûr supprimer un ensemble de fichiers. 
 

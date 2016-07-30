@@ -25,9 +25,9 @@ Remarquez vous comment j'ai juste utilisé le nom du dossier (Hawaï)? Parce que
 Il peut être très fatiguant de se déplacer avec des chemins absolu et relatif, heureusement il existe des raccourcis pour vous aider. 
 
 <ul>
-<li>. (répertoire courant). C'est le répertoire dans lequel vous êtes actuellement. </li>
-<li>.. (répertoire précédent). Vous amene dans le répertoire au dessus de votre répertoire courant.</li>
-<li>~ (répertoire home). Ce répertoire conduit à votre "répertoire mère" par défaut (on parle de "home"). Comme /home/pete.</li>
+<li>. (répertoire courant). C'est le répertoire dans lequel vous êtes actuellement.</li>
+<li>.. (répertoire parent). Vous amène dans le répertoire au dessus de votre répertoire courant.</li>
+<li>~ (répertoire home). Ce répertoire conduit à votre "répertoire maison" par défaut (on parle de "home"). Comme /home/pete.</li>
 <li>- (répertoire précédent). Il vous conduira au répertoire précédent dont vous venez.</li>
 </ul>
 

@@ -9,10 +9,10 @@ Une des distributions Linux pour ordinateurs les plus populaires est Ubuntu. Ubu
 Ubuntu est un système d'exploitation basé sur Debian et développé par Canonical. Par conséquent, il utilise une partie du système de gestion des paquets.
 
 <b>Configurabilité</b>
-ubuntu est un bon choix pour un débutant qui veut se lancer dans Linux. Ubuntu offre une facilité d'utilisation et une grande expérience de l'interface utilisateur ce qui a conduit à sa grande utilisation. Il est largement utilisé et maintenu; et il est plus semblable aux autres systèmes comme OSX et Windows en terme de convivialité.
+Ubuntu est un bon choix pour un débutant qui veut se lancer dans Linux. Ubuntu offre une facilité d'utilisation et une grande expérience de l'interface utilisateur ce qui a conduit à sa grande utilisation. Il est largement utilisé et maintenu; et il est plus semblable aux autres systèmes comme OSX et Windows en terme de convivialité.
 
 <b>Usages</b>
-Utilisable pour n'importe quelle plate-forme, ordinateur de bureau, ordinateur portable and serveur.
+Utilisable pour n'importe quelle plate-forme, ordinateur de bureau, ordinateur portable et serveur.
 
 ## Exercise
 

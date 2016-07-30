@@ -11,8 +11,8 @@ Allez-y et regardez le contenu d'un fichier avec la commande less. Une fois dans
 Utilisez la commande suivante pour en apprendre plus sur less:
 
 <ul>
-<li>q - Utilisé pour quitter less et revenir dans l'invite de commandes.</li>
-<li>Page up, Page down, Up and Down - Parcourir le fichier en utilisant les flèvhes du clavier.</li>
+<li>q - Utilisé pour quitter less et revenir dans l'invité de commandes.</li>
+<li>Page up, Page down, Haut et Bas - Parcourir le fichier en utilisant les flèches du clavier.</li>
 <li>g - Se positionne au début du fichier.</li>
 <li>G - Se positionne à la fin du fichier.</li>
 <li>/search - Lancer une recherche dans le document. Précédez les mots que vous voulez rechercher avec "/"</li>

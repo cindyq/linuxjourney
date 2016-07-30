@@ -6,7 +6,7 @@ Dans la leçon précédente, nous avons étudié la commande touch, revenons un 
 
 Sur Linux, les noms de fichier ne sont pas obligés de représenter le contenu de ces fichiers. Vous pouvez créer un fichier drole.gif qui ne contient en fait pas un GIF. 
 
-Pour connaitre exactement quel genre de fichier est un fichier, vous pouvez utiliser la commande "file". Il vous présentera la description du contenu du fichier.
+Pour connaître exactement quel genre de fichier est un fichier, vous pouvez utiliser la commande "file". Elle vous présentera la description du contenu du fichier.
 
 <pre>$ file banane.jpg</pre>
 
