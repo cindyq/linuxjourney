@@ -1,23 +1,23 @@
 # file
 
-## Lesson Content
+## محتویات درس
 
-In the previous lesson we learned about touch, let’s go back to that for a bit. Did you notice that the filename didn’t conform to standard naming like you’ve probably seen with other operating systems like Windows? Normally you would expect a file called banana.jpeg and expect a JPEG picture file. 
+در درس قبلی در خصوص touch صحبت کردیم و در این درس با این فرمان یک فایل خواهیم ساخت. حالا به سراغ موضوع اصلی این درس برویم. آیا به این مورد توجه داشتید که در لینوکس «نام فایل» مستلزم رعایت استانداردی که در سیستم‌عامل‌هایی مانند ویندوز رعایت می‌شود نیست؟ یعنی ما معمولاً از فایلی که با اسم banana.jpeg مشخص می‌شود، انتظار داریم که یک فایل تصویری با فرمت JPEG باشد ولی در لینوکس شرایط همیشه اینگونه نیست.
 
-In Linux, filenames aren’t required to represent the contents of the file. You can create a file called funny.gif that isn’t actually a GIF. 
+در لینوکس، نام فایل‌ها نماینده‌ی نوع فایل نیست. به عبارتی لازم نیست که یک فایل عکس با فرمت JPEG حتماً پسوند jpg را در نامش داشته باشد. یا حتی برعکسش، شما می‌توانید یک فایل funny.gif بسازید که اصلاً فایل جیف نباشد. و لینوکس بر خلاف ویندوز این موضوع را متوجه می‌شود.
 
-To find out what kind of file a file is, you can use the file command. It will show you a description of the file’s contents.
+حالا اگه می‌خواهید که ماهیت فایل را تشخیص دهید باید چکار کنیم؟ پسوندها که همیشه با ما صادق نیستند؟ اینجاست که دستور file به کمک شما می‌آید. این فرمان به شما توضیحی در خصوص نوعِ محتویات فایل ارائه می‌کند که این توضیح ربطی به نام فایل ندارد و در اصل بر اساس بیت‌های اولیه‌ی فایل، نوشته می‌شود.
 
-<pre>$ file banana.jpg</pre>
+```$ file banana.jpg```
 
-## Exercise
+## تمرین
 
-Run the file command on a few different directories and files and note the output.
+فرمان file را بر روی چند فایل و دایرکتوری امتحان کنید و خروجی را با دقت مطالعه نمایید.
 
-## Quiz Question
+## سؤال آزمون
 
-What command can you use to find the file type of a file?
+از چه دستوری برای شناسایی نوعِ محتوای یک فایل استفاده می‌کنید؟
 
-## Quiz Answer
+## پاسخ آزمون
 
 file
