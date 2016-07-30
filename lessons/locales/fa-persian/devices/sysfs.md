@@ -1,31 +1,40 @@
-# sysfs
+# ‏sysfs
 
-## Lesson Content
+## محتوای درس
 
-Sysfs was created long ago to better manage devices on our system that the /dev directory failed to do. Sysfs is a virtual filesystem, most often mounted to the /sys directory. It gives us more detailed information than what we would be able to see in the /dev directory. Both directories /sys and /dev seem to be very similar and they are in some regards, but they do have major differences. Basically, the /dev directory is simple, it allows other programs to access devices themselves, while the /sys filesystem is used to view information and manage the device. 
+‏Sysfs مدت‌ها قبل برای مدیریت بهتر دستگاه‌هایی از سیستم که ‎/dev قادر به مدیریت‌شان
+نیست ساخته شد. Sysfs یک فایل سیستم مجازی است و عمدتا در دایرکتوری ‎/sys سوار
+(mount) می‌شود. Sysfs همچنین جزئیات بیشتری از دستگاه‌ها نسبت به چیزی که ‎/dev در
+اختیارمان می‌گذارد به ما نشان می‌دهد. دو دایرکتوری ‎/dev و /sys به نظر بسیار مشابه
+یکدیگرند و در بعضی مواقع نیز چنین است، ولی شامل تفاوت‌های عمده‌ای نیز می‌شوند. به
+طور پایه‌ای‌‌، ‎/dev بسیار ساده است و اجازه می‌دهند که برنامه‌ها خودشان به سخت‌افزار
+دسترسی پیدا کنند. در حالی که ‎/sys برای دیدن اطلاعات دستگاه‌ها و مدیریت‌شان کاربرد دارد. 
 
-The /sys filesystem basically contains all the information for all devices on your system, such as the manufacturer and model, where the device is plugged in, the state of the device, the hierarchy of devices and more. The files you see here aren't device nodes, so you don't really interact with devices from the /sys directory, rather you are managing devices. 
+فایل سیستم ‎/sys شامل اطلاعات تمام دستگاه‌های سیستم شما از قبیل شمارهٔ مدل، کارخانهٔ
+سازندهٔ آن، جای نصب دستگاه روی سیستم، وضعیت فعلی آن، معماری دستگاه و بسیاری
+جزئیات دیگر از این دست می‌شود. فایل‌هایی که در این دایرکتوری می‌بینید‌، device node
+نیستند، از این رو شما قادر به دستیابی مستقیم به دستگاه‌ها از طریق این دایرکتوری
+نیستید و تنها می‌توانید به مدیریت آن‌ها بپردازید.
 
-Take a look at the contents of the /sys directory:
+در زیر می‌توانید نمونه‌ای از محتوای دایرکتوری ‎/sys را مشاهده کنید:
 
-<pre>
+'''
 pete@icebox:~$ ls /sys/block/sda
 alignment_offset  discard_alignment  holders   removable  sda6       trace
 bdi               events             inflight  ro         size       uevent
 capability        events_async       power     sda1       slaves
 dev               events_poll_msecs  queue     sda2       stat
 device            ext_range          range     sda5       subsystem
-</pre>
+'''
 
+## تمرین
 
-## Exercise
+محتوای دایرکتوری ‎/sys سیستم‌تان را مشاهده کنید و ببینید چه فایل‌هایی در آن قرار دارد. 
 
-Check out the contents of the /sys directory and see what files are located in there.
+## سوال آزمون
 
-## Quiz Question
+کدام دایرکتوری برای مشاهدهٔ جزئیات دستگاه‌های سیستم مورد استفاده قرار می‌گیرد؟
 
-What directory is used to view detailed information on devices? 
-
-## Quiz Answer
+## پاسخ آزمون
 
 /sys
