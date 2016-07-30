@@ -1,31 +1,29 @@
 # find
 
-## Lesson Content
+## محتویات درس
 
-With all these files we have on the system it can get a little hectic trying to find a specific one. Well there’s a command we can use for that, find! 
+با وجود این همه فایلی که احتمالاً در سیستم شما جای خوش کرده، پیدا کردن یک فایل خاص، باید کار پر دردسری باشد. خب در اصل ما در لینوکس برای این کار هم یک فرمان داریم و آن چیزی غیر از find نیست.
 
-<pre>$ find /home -name puppies.jpg</pre>
+```$ find /home -name puppies.jpg```
 
-With find you’ll have to specify the directory you’ll be searching it, what you’re searching for, in this case we are trying to find a file by the name of puppies.jpg. 
+در دستور find شما بایستی که یک مسیر یا دایرکتوری را مشخص کنید تا فرمان در آن مسیر به دنبال چیزی که شما به دنبالش می‌گردید، بگردد. در مثال بالا ما به دنبال فایلی با اسم puppies.jpg در مسیر خانگی یا همان ‎/home می‌گردیم.
 
-You can specify what type of file you are trying to find. 
+شما در find همچنین می‌توانید نوع فایلی که می‌خواهید پیدا کنید، را نیز مشخص نمائید.
 
-<pre>$ find /home -type d -name MyFolder</pre>
+```$ find /home -type d -name MyFolder```
 
-You can see that I set the type of file I’m trying to find as (d) for directory and I’m still searching by the name of MyFolder. 
+در دستور بالا مشاهده می‌کنید که من نوع فایل را با استفاده از سوئیچ ‎-type با d یعنی دایرکتوری مشخص کردم و نام چیزی که به دنبالش هستم را نیز با سوئیچ ‎-name و مقدار MyFolder تعیین کردم.
 
-One cool thing to note is that find doesn’t stop at the directory you are searching, it will look inside any subdirectories that directory may have as well.
+یک موردِ مهم را از قلم نیندازم و آن اینکه find به مسیر جاری اکتفا نمی‌کند و تمام زیرمسیرهایی که در سفر اکتشافی‌اش به آن‌ها برخورد می‌کند را نیز می‌کاود. به عبارتی، تمام فایل‌های پوشه‌هایی که در پوشه‌ی تعیین‌شده قرار دارند و حتی لایه‌های پایین‌تر را نیز در جستجوی فایل شما، زیر و رو خواهد کرد.
 
-## Exercise
+## تمرین
 
-<ol>
-<li>Find a file from the root directory that has the word net in it.</li>
-</ol>
++ با استفاده از find فایلی که در نامش کلمه‌ی net در مسیر روت را داشته باشد، بیابید.
 
-## Quiz Question
+## سؤال آزمون
 
-What option should I specify for find if I want to search by name?
+کدام گزینه (سوئیچ) را بایستی برای مشخص کردن مقدار نام فایلی که به دنباش هستیم، اضافه کنیم؟
 
-## Quiz Answer
+## پاسخ آزمون
 
 -name
