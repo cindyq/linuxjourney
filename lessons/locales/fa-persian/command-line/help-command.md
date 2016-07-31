@@ -1,25 +1,25 @@
 # help
 
-## Lesson Content
+## محتویات درس
 
-Linux has some great built-in tools to help you how to use a command or check what flags are available for a command. One tool, help, is a built-in bash command that provides help for other bash commands (echo, logout, pwd, etc).
+لینوکس یک سری ابزار درون‌سازی‌شده را، برای کمک به کاربر درباره‌ی نحوه‌ی کار با دستورها و چگونگی استفاده از فلگ‌ها، دارد. یکی از این ابزارها help است که در اصل یک دستور درون‌سازی شده در بش به حساب می‌آید و برای سایر فرمان‌های بش مانند echo یا logout یا pwd یا غیره، یک کمک یا راهنما به حساب می‌آید.
 
-<pre>$ help echo</pre>
+```$ help echo```
 
-This will give you a description and the options you can use when you want to run echo. For other executable programs, it’s convention to have an option called --help or something similar. 
+دستور فوق، توضیحی در خصوص اختیاراتی که شما در اجرای فرمان echo دارید، می‌دهد. مرسوم است که گزینه‌ای به اسم ‎--help یا چیزی شبیه به آن برای هر دستوری داشته باشید.
 
-<pre>$ echo --help</pre>
+```$ echo --help```
 
-Not all developers who ship out executables will conform to this standard, but it’s probably your best shot to find some help on a program.
+البته همه‌ی توسعه‌دهنده‌ها به چیزی که مرسوم خواندیم، پایبند نیستند و ممکن است با فرمانی روبرو شوید که گزینه‌ی ‎--help برای آن جواب ندهد ولی در هر صورت این گزینه یک سنگ مفت برای گنجشکِ مفت است.
 
-## Exercise
+## تمرین
 
-Run help on the echo command, logout command and pwd command.
+گزینه‌ی help را برای فرمان‌های echo و logout و pwd اجرا کنید و خروجی را مطالعه نمائید.
 
-## Quiz Question
+## سؤال آزمون
 
-How do you get quick command line help for built-in bash commands?
+چگونه در خط فرمان برای یک دستور، اطلاعات کمکی را می‌گیرید؟ به کمک چه گزینه‌ای؟
 
-## Quiz Answer
+## پاسخ آزمون
 
 help
