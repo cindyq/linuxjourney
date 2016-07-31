@@ -1,29 +1,47 @@
-# udev
+# ‏udev
 
-## Lesson Content
+## محتوای درس
 
-Back in the old days and actually today if you really wanted to, you would create device nodes using a command such as: 
+در گذشته و در واقع حتی امروز‌، اگر واقعا نیاز به ساخت یک device node جدید داشتید‌،
+از دستوری مثل دستور زیر استفاده می‌کردید:
 
-<pre>$ mknod /dev/sdb1 b 8 3</pre>
+```
+$ mknod /dev/sdb1 b 8 3
+```
 
-This command will make a device node /dev/sdb1 and it will make it a block device (b) with a major number of 8 and a minor number of 3.
+این دستور یک device node جدید از نوع بلاک (b) با شناسه اصلی 8 و شناسه فرعی 3 در
+آدرس ‎/dev/sdb1 ایجاد می‌کند.
 
-To remove a device, you would simply <b>rm</b> the device file in the /dev directory. 
+برای پاک کردن یک دستگاه نیز کافی بود با استفاده از دستور `rm` فایل مربوط به
+دستگاه را از دایرکتوری ‎/dev پاک کنید.
 
-Luckily, we really don't need to do this anymore because of udev. The udev system dynamically creates and removes device files for us depending on whether or not they are connected. There is a udevd daemon that is running on the system and it listens for messages from the kernel about devices connected to the system. Udevd will parse that information and it will match the data with the rules that are specified in /etc/udev/rules.d, depending on those rules it will most likely create device nodes and symbolic links for the devices. You can write your own udev rules, but that is a little out of scope for this lesson. Fortunately, your system already comes with lots of udev rules so you may never need to write your own.
+خوشبختانه‌، ما دیگر ملزم به استفاده از این روش نیستیم. سیستم udev‌، به طور خودکار
+فرآیند ساخت و حذف فایل‌های دستگاه را بر اساس متصل بودن یا نبودنشان برای ما انجام
+می‌دهد. یک دیمون (daemon) به اسم udevd در حال اجرا روی سیستم است که به پیغام‌های
+کرنل در خصوص دستگاه‌های نصب شده گوش می‌کند. udevd این پیغام‌ها را پردازش نموده و
+آن‌ها را با قوانین تعریف شده در ‎/etc/udev/rules.d مطابقت می‌دهد. بر اساس همین
+قوانین نیز udev فایل‌ها و پیوند‌های نمادین (symbolic link) مورد نیاز دستگاه را
+می‌سازد. شما نیز می‌توانید قوانین udev مورد نیاز خودتان را بنویسید که البته کمی
+خارج از محدودهٔ مورد بحث این درس است. همچنین سیستم شما تعداد زیادی از این قوانین
+را به صورت از پیش تعریف شده همراه دارد که احتمالا شما را از نوشتن یک نمونهٔ جدید
+بی‌نیاز می‌سازد.
 
-You can also view the udev database and sysfs using the <b>udevadm</b> command. This tool is very useful, but sometimes can get very convoluted, a simple command to view information for a device would be:
+از سوی دیگر‌، شما می‌توانید دیتابیس udev و sysfs را با استفاده از دستور `udevadm`
+بررسید کنید. این دستور خیلی کاربردی است‌، ولی گاهی می‌تواند سردرگم کننده باشد. یک
+دستور ساده برای دیدن اطلاعات دستگاهی‌، می‌تواند به صورت زیر باشد:
 
-<pre>$ udevadm info --query=all --name=/dev/sda</pre>
+```
+$ udevadm info --query=all --name=/dev/sda
+```
 
-## Exercise
+## تمرین
 
-Run the udevadm command given and check out the input.
+نمونه دستور `udevadm` داده شده را اجرا و خروجی آن را بررسی کنید.
 
-## Quiz Question
+## سوال آزمون
 
-What dynamically adds and removes devices? 
+چه ابزاری به صورت خودکار فایل‌های دستگاه‌های مورد نیاز را اضافه یا حذف می‌کند؟
 
-## Quiz Answer
+## پاسخ آزمون
 
 udev
