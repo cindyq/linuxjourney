@@ -1,32 +1,30 @@
 # less
 
-## Lesson Content
+## محتویات درس
 
-If you are viewing text files larger than a simple output, less is more. (There is actually a command called more that does something similar, so this is ironic.) The text is displayed in a paged manner, so you can navigate through a text file page by page. 
+اگر می‌خواهید که یک فایل متنی که خیلی بزرگ‌تر از یک خروجی ساده است را ببینید، less خیلی بیشتر از آنچه اسمش تداعی می‌کند به کارتان خواهد آمد. (البته یک دستور با کارایی مشابه هم به اسم more هست که اسمش بیشتر کنایه‌ای به less تلقی می‌شود). با استفاده از less متنی که شما مشاهده می‌کنید به سبک یک جزوه‌ی چند برگ نمایش داده می‌شود و شما می‌توانید آن را به راحتی ورق بزنید و اطلاعات مورد نظرتان را بخوانید.
 
-Go ahead and look at the contents of a file with less. Once you’re in the less command, you can actually use other keyboard commands to navigate in the file. 
+حالا نوبت شماست که یک فایل را انتخاب کنید و محتویات درون آن را با استفاده از less بخوانید.  زمانی که در حال استفاده از less هستید، با استفاده از سایر فرمان‌های صفحه‌کلید می‌توانید در فایل جابجا شوید.
 
-<pre>$ less /home/pete/Documents/text1</pre>
+```$ less /home/pete/Documents/text1```
 
-Use the following command to navigate through less: 
+دستورات زیر را می‌توانید برای جابجا شدن در متن، اجرا کنید.
 
-<ul>
-<li>q - Used to quit out of less and go back to your shell.</li>
-<li>Page up, Page down, Up and Down - Navigate using the arrow keys and page keys.</li>
-<li>g - Moves to beginning of the text file.</li>
-<li>G - Moves to the end of the text file.</li>
-<li>/search - You can search for specific text inside the text document. Prefacing the words you want to search with /</li>
-<li>h - If you need a little help about how to use less while you’re in less, use help.</li>
-</ul>
++ q – از این دستور برای خارج شدن از less و بازگشت به شل استفاده کنید.
++  Page up, Page down, کلید جهت‌دار بالا و پایین – برای جابه‌جا شدن در بین خطوط یا صفحات متن از یکی از این چهار کلید استفاده کنید.
++ g – رفتن به ابتدای متن.
++ G – رفتن به انتهای متن.
++ ‎/search – برای جستجوی یک کلمه، زمانی که داخل سند متنی هستید. البته به جای search همان لغتی که به دنبالش هستید را بنویسید.
++ h – اگر به یک کمک جزئی نیاز دارید از این ابزار کمکی درون‌سازی شده برای راهنمایی بیشتر استفاده کنید.
 
-## Exercise
+## تمرین
 
-Run less on a file, then page up and around the file. Try searching for a specific word. Quickly navigate to the beginning or the end of the file.
+less را بر روی یک فایل متنی اجرا کنید و سپس داخل فایل به گشت‌وگذار بپردازید. سعی کنید با قابلیت جستجو، یک کلمه‌ی خاص را پیدا کنید. با دستورات صفحه‌کلید، به ابتدا و انتهای فایل بروید.
 
-## Quiz Question
+## سؤال آزمون
 
-How do you quit out of a less command?
+چگونه از less خارج می‌شوید؟
 
-## Quiz Answer
+## پاسخ آزمون
 
 q
