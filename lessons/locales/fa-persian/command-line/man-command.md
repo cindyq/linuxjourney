@@ -1,23 +1,23 @@
 # man
 
-## Lesson Content
+## محتویات درس
 
-Gee I wish some of these programs had a manual so we can see some more information about them. Well luckily they do! Aptly named man pages, you can see the manuals for a command with the man command. 
+ای اسپاگتی پرنده، ای کاش بعضی از این برنامه‌ها یک راهنما داشتند، تا اطلاعات بیشتری در خصوصشان کسب می‌کردیم. برآورده شد! چه اسم درخوری هم این راهنما یا manual دارد. صفحه‌ی man. شما به راحتی می‌توانید که راهنمای یک دستور را با قرار دادن فرمان man در پیش از آن، مطالعه کنید.
 
-<pre>$ man ls</pre>
+```$ man ls```
 
-Man pages are manuals that are by default built into most Linux operating systems. They provide documentation about commands and other aspects of the system. 
+صفحات Man راهنماهایی هستند که به صورت پیش‌فرض در بیشتر سیستم‌عامل‌های لینوکسی توسازی شده‌اند و اسناد مربوط به فرمان‌ها و جنبه‌های مختلف سیستم را به نمایش می‌گذارند.
 
-Try it out on a few commands to get more information about them.
+این فرمان را بر روی چند دستور اجرا کنید، و اطلاعات را مطالعه نمائید. این کار به شما درک بهتری از فرمانی که راهنمایش را می‌خوانید می‌دهد، پس بهتر است با دستورهایی شروع کنید که بیشترین استفاده را از آن‌ها می‌کنید.
 
-## Exercise
+## تمرین
 
-Run the man command on the ls command.
+فرمان man را برای دستور ls اجرا کنید.
 
-## Quiz Question
+## سؤال آزمون
 
-How do you see the manuals for a command?
+چطور می‌توانیم راهنمای یک دستور را ببینیم؟
 
-## Quiz Answer
+## پاسخ آزمون
 
 man
