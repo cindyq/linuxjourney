@@ -1,23 +1,25 @@
-# mkdir (Make Directory)
+# mkdir (ساخت دایرکتوری)
 
-## Lesson Content
+## محتویات درس
 
-We’re gonna need some directories to store all these files we’ve been working on. The mkdir command (Make Directory) is useful for that, it will create a directory if it doesn’t already exist. You can even make multiple directories at the same time.
+برای نگه‌داری تمام فایل‌هایی که با آن‌ها سر و کله می‌زنیم، لاجرم به پوشه یا دایرکتوری نیازی داریم. و اینجاست که فرمان mkdir خود نمایی می‌کند. در اصل این فرمان، دایرکتوری یا مسیری را می‌سازد که تا پیش از این وجود خارجی نداشته است. حتی با استفاده از فرمانِ بالا، می‌توانید چند مسیر را به صورت همزمان بسازید. مثلاً در نمونه‌ی زیر همزمان در مسیر جاری دو پوشه‌ی books و paintings ساخته می‌شود.
 
-<pre>$ mkdir books paintings</pre>
+```$ mkdir books paintings```
 
-You can also create subdirectories at the same time with the -p (parent flag).
+از آنجایی که فاصله در فرمان mkdir باعث ساخت پوشه‌ی جدید می‌شود، مواظب باشید که قصد ساخت مسیری که در داخل اسمش فاصله یا Space دارید نکنید که روش ساخت آن‌ها کاملاً متفاوت است. بهتر است در زمانی که در خط فرمان به سر می‌برید، از فاصله، فاصله بگیرید و جای آن را با خط‌تیره عوض کنید.
 
-<pre>$ mkdir -p books/hemmingway/favorites</pre>
+همچنین با فلگِ والد که با حرف ‎-p نمایش داده می‌شود، می‌توانید در آنِ واحد، زیرمسیر یا ساب‌دایرکتوری هم بسازید.
 
-## Exercise
+```$ mkdir -p books/hemmingway/favorites```
 
-Make a couple of directories and move some files into that directory.
+## تمرین
 
-## Quiz Question
+چند دایرکتوری بسازید و فایل‌ها را با استفاده از اطلاعاتی که پیش‌تر یاد گرفتید به داخل آن‌ها جابجا کنید.
 
-What command is use to make a directory?
+## سؤال آزمون
 
-## Quiz Answer
+از چه فرمانی برای ساخت یک دایرکتوری استفاده می‌کنیم؟
+
+## پاسخ آزمون
 
 mkdir
