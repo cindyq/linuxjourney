@@ -1,23 +1,27 @@
-# ls (List Directories)
+# ls (لیست دایرکتوری‌ها)
 
-## Lesson Content
+## محتویات درس
 
-Now that we know how to move around the system, how do we figure out what is available to us? Right now it’s like we are moving around in the dark. Well, we can use the wonderful ls command to list directory contents. The ls command will list directories and files in the current directory by default, however you can specify which path you want to list the directories of.
+حالا که یاد گرفتیم که چطور در سیستم به گشت‌وگذار بپردازیم، بد نیست یاد بگیریم که در جایی که هستیم، چه چیزهایی در دسترس ما قرار دارند. الان مثل این است که در اتاق تاریکی کورمال کورمال حرکت می‌کنیم. اینجاست که سوپر من داستان ما یعنی ls وارد می‌شود. فرمان ls به صورت پیشفرض، لیست تمامی دایرکتوری‌ها و فایل‌های موجود در مسیر جاری را به ما نشان می‌دهد. با وجود این، شما می‌توانید به ls یک مسیر مشخص را نیز معرفی کنید تا محتویات آن را هم به شما نشان دهد.
 
-<pre>$ ls
-$ ls /home/pete</pre>
+```
+$ ls
+$ ls /home/pete
+```
 
-ls is a quite useful tool, it also shows you detailed information about the files and directories you are looking at.
+ls یک ابزار بسیار کاربردی‌ست که می‌تواند در کنار لیست کردن اسم‌ها، جزئیات فراوانی را از فایل‌ها و دایرکتوری‌ها نیز نشان دهد.
 
-Also note that not all files in a directory will be visible. Filenames that start with . are hidden, you can view them however with the ls command and pass the -a flag to it (a for all). 
+به این موضوع توجه داشته باشید که همه‌ی فایل‌ها و دایرکتوری‌ها هم قابل مشاهده نیستند. به عبارتی اگر ابتدای اسم یک فایل یا دایرکتوری یک نقطه (.) باشد، آن فایل یا دایرکتوری در حالت مخفی به سر می‌برد و شما با ls نمی‌توانید آن را به صورت پیش‌فرض ببینید. پس باید چه کرد؟ استفاده از گزینه‌ی ‎-a به شما کمک می‌کند تا این مشکل را پشت سر بگذارید. a حرف اول all یعنی «همه» است.
 
-<pre>$ ls -a</pre>
 
-There is also one more useful ls flag, -l for long, this shows a detailed list of files in a long format. This will show you detailed information, starting from the left: file permissions, number of links, owner name, owner group, file size, timestamp of last modification, and file/directory name. 
+```$ ls -a```
 
-<pre>$ ls -l</pre>
+یک فلگ کاربردی دیگر غیر از ‎-a به اسم ‎-l نیز هست که برای نمایش جزئیات فایل‌ها در قالب اطلاعات طولانی به کار می‌رود. این اطلاعات شامل مجوزهای فایل، تعداد پیوندها به فایل، نام مالک فایل، نام گروه مالک، اندازه‌ی فایل، زمان آخرین دستکاری فایل و مطمئناً اسم خود فایل یا دایرکتوری، می‌شود.
 
-<pre>pete@icebox:~$ ls -l
+```$ ls -l```
+
+```
+pete@icebox:~$ ls -l
 total 80
 drwxr-x--- 7 pete penguingroup   4096 Nov 20 16:37 Desktop
 drwxr-x--- 2 pete penguingroup   4096 Oct 19 10:46  Documents
@@ -26,20 +30,21 @@ drwxr-x--- 2 pete penguingroup   4096 Oct  7 13:13   Music
 drwxr-x--- 2 pete penguingroup   4096 Sep 21 14:02 Pictures
 drwxr-x--- 2 pete penguingroup   4096 Jul 27 12:41   Public
 drwxr-x--- 2 pete penguingroup   4096 Jul 27 12:41   Templates
-drwxr-x--- 2 pete penguingroup   4096 Jul 27 12:41   Videos</pre>
+drwxr-x--- 2 pete penguingroup   4096 Jul 27 12:41   Videos
+```
 
-Commands have things called flags (or arguments or options, whatever you want to call it) to add more functionality. See how we added -a and -l, well you can add them both together with -la. The order of the flags determines which order it goes in, most of the time this doesn’t really matter so you can also do ls -al and it would still work.
+دستورها، چیزی به اسم پرچم یا فلگ دارند که به آن‌ها آوند، سوئیچ، شناسه، گزینه، آرگیومنت، و آپشن هم می‌گویند. البته در زبان انگلیسی این اسم‌ها اینقدر هم زیاد نیستند و به سه نام خلاصه می‌شوند، ولی در زبان فارسی هم از ترجمه‌ی این اسم‌ها و هم از خود این اسم‌ها استفاده می‌شود و به همین دلیل است که تعدادشان خیلی زیاد است و هر کسی این پرچم‌ها را بنا به ترجیحات خود صدا می‌کند. فلگ‌ها در اصل به کارایی یک فرمان، اضافه می‌کنند. پیش‌تر دیدید که چگونه با استفاده از ‎-a و ‎-l به دستور ls این فرمان را مجبور به انجام کارهایی که در حالت عادی نمی‌کند، کردیم. حالا می‌خواهم بگویم که می‌توانید این فلگ‌ها را با یکدیگر ترکیب هم کنید. یعنی به جای دو فلگ مجزا، از ‎-la استفاده کنید. ترتیب استفاده از فلگ‌ها، گاهی بر روی خروجی تأثیر می‌گذارد و باعث جلو و عقب شدن آن می‌شود، ولی در بسیاری از موارد هم، جابه‌جا شدن فلگ‌ها تأثیری بر روی خروجی ندارد. به عنوان مثال استفاده از ‎-al به جای ‎-la تفاوتی ایجاد نمی‌کند.
 
-<pre>$ ls -la</pre>
+```$ ls -la```
 
-## Exercise
+## تمرین
 
-Run ls with different flags and see the output you receive.
+فرمان ls را با فلگ‌های گوناگون اجرا کنید و خروجی را پویش نمائید.
 
-## Quiz Question
+## سؤال آزمون
 
-What command would you use to see hidden files?
+از چه دستوری برای دیدن فایل‌های مخفی استفاده می‌کنید؟
 
-## Quiz Answer
+## پاسخ آزمون
 
 ls -a
