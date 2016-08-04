@@ -1,42 +1,40 @@
-# rm (Remove)
+# rm (حذف)
 
-## Lesson Content
+## محتویات درس
 
-Now I think we have too many files, let’s remove some files. To remove files you can use the rm command. The rm (remove) command is used to delete files and directories. 
+اکنون که کلی فایل اضافه داریم، بد نیست تعدادی از آن‌ها را پاک کنیم. برای پاک کردن فایل‌ها می‌توانید از فرمان rm استفاده کنید. این دستور برای پاک کردن فایل‌ها و دایرکتوری‌ها استفاده می‌شود.
 
-<pre>$ rm file1</pre>
+```$ rm file1```
 
-Take caution when using rm, there is no magical trash can that you can fish out removed files. Once they are gone, they are gone for good, so be careful. 
+زمانی که از rm استفاده می‌کنید، احتیاط به خرج دهید، چرا که سطل زباله‌ی جادویی برای درآوردن فایل‌های پاک شده وجود خارجی ندارد. زمانی که پاکشان کنید، دیگر به امان خدا رفته‌اند و بازگشتی نیست. در نتیجه، مراقب باشید.
 
-Fortunately there are some safety measures put into place, so the average joe can’t just remove a bunch of important files. Write-protected files will prompt you for confirmation before deleting them. If a directory is write-protected it will also not be easily removed. 
+خوشبختانه اقدامات پیشگیرانه‌ای برای رعایت جانب احتیاط در نظر گرفته شده و در نتیجه یک کاربر معمولی با دسترسی‌های محدود خود نمی‌تواند فایل‌های مهم را از بین ببرد. از طرفی فایل‌هایی که از نوشتن محافظت‌شده‌اند به این راحتی‌ها پاک نمی‌شوند.
 
-Now if you don’t care about any of that, you can absolutely remove a bunch of files. 
+حالا، اگر فایل‌هایی هستند که اهمیتی برای‌تان ندارند، بهتر است دست به کار شویم و حذفشان کنیم.
 
-<pre>$ rm -f file1</pre>
+```$ rm -f file1```
 
--f or force option tells rm to remove all files, whether they are write protected or not, without prompting the user (as long as you have the appropriate permissions).
+فلگ f، سوئیچ «زور» به حساب می‌آید و به rm می‌گوید که چه فایل از نوشتن محافظت‌شده باشد چه نباشد، بدون اینکه به کاربر در این خصوص هشداری بدهی، پاکش کن. (البته تا زمانی که مجوز این کار را داشته باشید، وگرنه فایلی که اجازه‌ی نوشتن بر رویش را نداشته باشید، با این گزینه هم پاک نمی‌شود).
 
-<pre>$ rm -i file</pre>
+```$ rm -i file```
 
-Adding the -i flag like many of the other commands, will give you a prompt on whether you want to actually remove the files or directories. 
+اضافه کردن فلگ ‎-i به مانند بسیاری دیگر از دستورها، قبل از پاک کردن فایل‌ها و دایرکتوری‌ها به شما هشدار می‌دهد.
 
-<pre>$ rm -r directory</pre>
+```$ rm -r directory```
 
-You can’t just rm a directory by default, you’ll need to add the -r flag (recursive) to remove all the files and any subdirectories it may have.
+شما به صورت معمول با استفاده از rm نمی‌توانید یک دایرکتوری را پاک کنید، به همین خاطر به فلگ ‎-r نیاز خواهید داشت. با این آپشن شما می‌توانید تمامی فایل‌ها و زیر-مسیرها را پاک کنید.
 
-You can remove a directory with the rmdir command.
+البته برای حذف دایرکتوری، فرمان مخصوصی به اسم rmdir نیز هست.
 
-<pre>$ rmdir directory</pre>
+```$ rmdir directory```
 
-## Exercise
+## تمرین
 
-<ol>
-<li>Create a file called -file (don't forget the dash!).</li>
-<li>Remove that file.</li>
-</ol>
++ فایلی با اسم ‎-file درست کنید (آن دش را در ابتدای نام فایل فراموش نکنید).
++ حالا فایل را حذف کنید.
 
-## Quiz Question
+## سؤال آزمون
 
-How do you remove a file called myfile?
+چگونه فایلی که نامش myfile است را باید پاک کنیم؟
 
-## Quiz Answer
+## پاسخ آزمون
