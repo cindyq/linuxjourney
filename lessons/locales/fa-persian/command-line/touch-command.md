@@ -1,29 +1,27 @@
 # touch
 
-## Lesson Content
+## محتویات درس
 
-Let’s learn how to make some files. A very simple way is to use the touch command. Touch allows you to the create new empty files.
+نوبت به ساخت فایل رسیده است. ساده‌ترین راه استفاده از دستور touch است. touch به شما اجازه می‌دهد که یک فایل جدید و خالی بسازید.
 
-<pre>$ touch mysuperduperfile</pre>
+```$ touch mysuperduperfile```
 
-And boom, new file! 
+و فایل جدید به همین راحتی ساخته شد.
 
-Touch is also used to change timestamps on existing files and directories. Give it a try, do an ls -l on a file and note the timestamp, then touch that file and it will update the timestamp. 
+برای تغییر برچسب زمانی فایل‌ها یا دایرکتوری‌های از پیش ساخته شده نیز می‌توانید از touch استفاده کنید. شاید بد نباشد برای آشنایی با نحوه‌ی انجام این کار، امتحانش کنیم. با استفاده از ls -l برچسب‌زمانی یک فایل را در نظر بگیرید. حالا همان فایل را تاچ کنید.
 
-There are many other ways to create files that involve other things like redirection and text editors, but we’ll get to that in the Text Manipulation course.
+راه‌های بسیار زیاد دیگری برای ساخت فایل هست که در دوره‌ی آموزشی دستکاری فایل‌های متنی به آن‌ها خواهیم پرداخت.
 
-## Exercise
+## تمرین
 
-<ol>
-<li>Create a new file</li>
-<li>Note the timestamp</li>
-<li>Touch the file and check the timestamp once again</li>
-</ol>
++ یک فایل جدید بسازید.
++ به برچسب زمانی آن نگاهی بیندازید.
++ حالا آن فایل را تاچ (touch) کنید و دو مرتبه برچسب زمانی را مشاهده کنید.
 
-## Quiz Question
+## سوال آزمون
 
-How do you create a file called myfile?
+چطور فایل با نام myfile بسازیم؟
 
-## Quiz Answer
+## پاسخ آزمون
 
 touch myfile
