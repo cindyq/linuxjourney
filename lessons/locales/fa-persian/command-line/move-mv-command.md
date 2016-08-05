@@ -1,41 +1,41 @@
-# mv (Move)
+# mv (جابجا کردن)
 
-## Lesson Content
+## محتویات درس
 
-Used for moving files and also renaming them. Quite similar to the cp command in terms of flags and functionality. 
+دستور mv یک فرمان مشابه به cp از نظر فلگ و سوئیچ‌هاست ولی کارش جابجا کردن و یا تغییر نام دادن فایل‌هاست.
 
-You can rename files like this:
+شما می‌توانید فایل را به این صورت با استفاده از mv تغییر نام دهید:
 
-<pre>$ mv oldfile newfile</pre>
+```$ mv oldfile newfile```
 
-Or you can actually move a file to a different directory: 
+یا می‌توانید یک فایل را جابجا کرده و به یک دایرکتوری بفرستید:
 
-<pre>$ mv file2 /home/pete/Documents</pre>
+```$ mv file2 /home/pete/Documents```
 
-And move more than one file:
+و یا حتی فایل‌های بیشتری را با یک حرکت، جابجا کنید:
 
-<pre>$ mv file_1 file_2 /somedirectory</pre>
+```$ mv file_1 file_2 /somedirectory```
 
-You can rename directories as well:
+همچنین با mv می‌توانید دایرکتوری‌ها را نیز تغییر نام دهید:
 
-<pre>$ mv directory1 directory2</pre>
+```$ mv directory1 directory2```
 
-Like cp, if you mv a file or directory it will overwrite anything in the same directory. So you can use the -i flag to prompt you before overwriting anything.
+شبیه به cp زمانی که از mv استفاده می‌کنید، فایل‌ها و دایرکتوری‌ها رونویسی می‌شوند و این موضوع اگر با بی‌دقتی همراه شود می‌تواند باعث نابود شدن اطلاعات شما شود. به همین خاطر استفاده از فلگ ‎-i می‌تواند مفید باشد، چرا که به شما قبل از هر رونویسی هشدار می‌دهد.
 
-<pre>mv -i directory1 directory2</pre>
+```mv -i directory1 directory2```
 
-Let’s say you did want to mv a file to overwrite the previous one. You can also make a backup of that file and it will just rename the old version with a ~. 
+فرض کنید که می‌خواهید یک فایل را بر روی فایل قبلی بنویسید (رونویسی فایل). ولی بعد به این فکر می‌افتید که بهتر است از فایل قبلی که قرار است نابود شود، یک پشتیبان یا بک‌آپ داشته باشید. برای این کار از فلگ ‎-b می‌توانید استفاده کنید. این فلگ اسم فایلی که قرار است بازنویسی شود را با یک ~ تغییر و آن را نگه می‌دارد.
 
-<pre>$ mv -b directory1 directory2</pre>
+```$ mv -b directory1 directory2```
 
-## Exercise
+## تمرین
 
-Rename a file, then move that file to a different directory.
+با استفاده از فرمان mv یک فایل را تغییر نام دهید و سپس آن را به یک دایرکتوری دیگر بفرستید (جابجا کنید).
 
-## Quiz Question
+## سؤال آزمون
 
-How do you rename a file called cat to dog?
+چگونه می‌توانید فایل cat را به dog تغییرنام دهید؟ (راهنمایی: از mv استفاده کنید و با طبیعت نجنگید)
 
-## Quiz Answer
+## پاسخ آزمون
 
 mv cat dog
