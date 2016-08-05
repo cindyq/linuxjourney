@@ -1,10 +1,11 @@
-# pwd (Print Working Directory)
+# pwd (دایرکتوری جاری را چاپ کن)
 
-## Lesson Content
+## محتویات درس
 
-Everything in Linux is a file, as you journey deeper into Linux you’ll understand this, but for now just keep that in mind. Every file is organized in a hierarchical directory tree. The first directory in the filesystem is aptly named the root directory. The root directory has many folders and files which you can store more folders and files, etc. Here is an example of what the directory tree looks like: 
+در لینوکس همه چیز فایل است و هرچقدر به اعماق لینوکس نزدیک‌تر شویم، با این مسأله بهتر آشنا خواهید شد. هر فایلی هم در یک سیستم لینوکسی جایگاهی در درخت دایرکتوری ترتیبی دارد. اولین دایرکتوری هم اسم درخوری به نام روت یا دایرکتوری ریشه دارد. ما در LinuxJourney، برای ملموس‌تر بودن بیشتر از روت استفاده می‌کنیم. دایرکتوری روت، شامل فایل‌ها و فولدرهای بسیار زیادی می‌شود که هر کدام از آن‌ها هم به خودی خود شامل فولدرها و فایل‌های دیگری هستند. اینجا مثالی از یک درخت دایرکتوری را مشاهده می‌کنید:
 
-<pre>/
+```
+/
 |-- bin
 |   |-- file1
 |   |-- file2
@@ -15,24 +16,24 @@ Everything in Linux is a file, as you journey deeper into Linux you’ll underst
 |       `-- file5
 |-- home
 |-- var
-</pre>
+```
 
-The location of these files and directories are referred to as paths. If you had a folder named home with a folder inside of it named pete and another folder in that folder called Movies, that path would look like this: /home/pete/Movies, pretty simple huh?
+جایگاهی که هر فایل یا دایرکتوری دارد را به عنوان مسیر یا path می‌شناسیم. اگر پوشه‌ای دارید که نامش home است و داخل آن فولدر دیگری با نام pete و داخل آن هم پوشه‌ای با نام Movies دارید، مسیر آن شبیه این خواهد بود: ‎/home/pete/Movies ساده بود! نه؟
 
-Navigation of the filesystem, much like real life is helpful if you know where you are and where you are going. To see where you are, you can use the pwd command, this command means “print working directory” and it just shows you which directory you are in, note the path stems from the root directory.
+گشت و گذار در فایل‌سیستم درست مانند زندگی واقعی که دانستن اینکه «الان کجایید» مهم است، می‌تواند راه‌گشا باشد. به همین خاطر دستوری با نام pwd که مخفف print working directory است برای شما در نظر گرفته شده است. این فرمان به شما نشان می‌دهد که اکنون دقیقاً در چه جایی از فایل‌سیستم قرار دارید و آن را از دایرکتوری روت به بعد، نمایش می‌دهد.
 
-<pre>$ pwd</pre>
+```$ pwd```
 
-Where are you? Where am I? Give it a try.
+بد نیست همین الان دستور بالا را امتحان کنید و ببینید که کجایید. اگر مسیر را عوض نکرده باشید، احتمالاً در مسیر خانگی‌تان هستید.
 
-## Exercise
+## تمرین
 
-No exercises for this lesson.
+تمرینی برای این درس نیست.
 
-## Quiz Question
+## سؤال آزمون
 
-How do I find what directory you are currently in?
+چطور می‌توانم مسیرِ دایرکتوری در آن قرار دارم را پیدا کنم؟
 
-## Quiz Answer
+## پاسخ آزمون
 
 pwd
