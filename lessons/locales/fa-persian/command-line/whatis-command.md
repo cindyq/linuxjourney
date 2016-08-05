@@ -1,21 +1,21 @@
 # whatis
 
-## Lesson Content
+## محتویات درس
 
-Whew, we’ve learned quite a bit of commands so far, if you are ever feeling doubtful about what a command does, you can use the whatis command. The whatis command provides a brief description of command line programs. 
+کلی دستور خط فرمانی تا اینجا یاد گرفتید. دمتون گرم! ولی شده شک کنید که کدام فرمان، چه کاری را انجام می‌داد؟ خب اینجاست که فرمان whatis وارد عمل می‌شود. این دستور یک توضیح مختصری را از برنامه‌ی تحت خط فرمان به شما می‌دهد.
 
-<pre>$ whatis cat</pre>
+```$ whatis cat```
 
-The description gets sourced from the manual page of each command. If you ran whatis cat, you’d see there is a small blurb with a short description. 
+این توضیح از صفحه‌ی راهنمای هر دستور اقتباس می‌شود. اگر آن را بر روی دستور cat اجرا کنید یک توضیح مختصر در خصوصش خواهید دید.
 
-## Exercise
+## تمرین
 
-Run the whatis command on the less command.
+فرمان whatis را بر روی دستور less اجرا کنید.
 
-## Quiz Question
+## سؤال آزمون
 
-What command can you use to see a small description of a command?
+از چه دستوری برای دیدن یک توضیح مختصر از یک فرمان، استفاده می‌کنید؟
 
-## Quiz Answer
+## پاسخ آزمون
 
 whatis
