@@ -1,34 +1,35 @@
-# The Shell
+# شل
 
-## Lesson Content
+## محتویات درس
 
-The world is your oyster, or really the shell is your oyster. What is the shell? The shell is basically a program that takes your commands from the keyboard and sends them to the operating system to perform. If you’ve ever used a GUI, you’ve probably seen programs such as “Terminal” or “Console” these are just programs that launch a shell for you. Throughout this entire course we will be learning about the wonders of the shell. 
+شل، جایی‌ست که شما به کل شکوفا می‌شوید. حالا شل (shell) چیست؟ شل در اصل برنامه‌ای‌ست که دستورات شما را از طریق صفحه‌کلید می‌گیرد و برای اجرا به سیستم‌عامل ارسال می‌کند. اگر شما از یک رابط گرافیکی استفاده کرده باشید، با برنامه‌هایی مثل «Terminal» و «Console» باید  آشنا باشید. این برنامه‌ها شل را برای شما اجرا می‌کنند. در تمام این دوره در خصوص کارهای جادویی که با شل می‌توانید انجام دهید، برای‌تان خواهیم گفت.
 
-In this course we will use the shell program bash (Bourne Again shell), almost all Linux distributions will default to the bash shell. There are other shells available such as ksh, zsh, tsch, but we won’t get into any of those. 
+در این دوره‌ی آموزشی ما از برنامه‌ی شل با نام بش (bash) استفاده می‌کنیم. بش مخفف عبارت (Bourne Again shell) است. تقریباً تمام توزیع‌های لینوکسی از بش به عنوان شلِ پیش‌فرضشان استفاده می‌کنند. البته شل‌های دیگری با نام‌های ksh, zsh, tsch هستند که ما کاری به کارشان نداریم.
 
-Let’s jump right in! Depending on the distribution your shell prompt might change, but for the most part it should adhere to the following format:
-<pre>username@hostname:current_directory
-pete@icebox:/home/pete $</pre>
+وقت شیرجه زدن در بش است! بسته به توزیعی که استفاده می‌کنید، شل پرامپت (اطلاعات روی صفحه که نشان از آمادگی شل برای دریافت دستور است) می‌تواند متفاوت باشد، ولی در اکثر مواقع شما با چیزی شبیه به این روبرو خواهید شد.
 
-Notice the $ at the end of the prompt? Different shells will have different prompts, in our case the $ is for a normal user using Bash, Bourne or Korn shell, you don't add the prompt symbol when you type the command, just know that it's there.
+```
+username@hostname:current_directory
+pete@icebox:/home/pete $
+```
 
-Let’s start with a simple command, echo. The echo command just prints out the text arguments to the display.
+به علامت دلار ($) در انتهای پرامپت دقت کردید؟ شل‌های مختلف، پرامپت‌های مختلفی دارند و در مثال ما، $ برای کاربر معمولی که از شل Bash, Bourne یا Korn استفاده می‌کند به کار می‌رود. زمانی که در حال تایپ دستوری هستید نماد پرامپت، مثلا در مثال ما علامت دلار را تایپ نکنید.
 
-<pre>$ echo Hello World</pre>
+بیایید با یک دستور ساده، مثل echo شروع کنیم. این فرمان، کارش چاپ کردن آرایه‌های متنی بر روی صفحه‌نمایش است.
 
-## Exercise
+```$ echo Hello World```
 
-Try some other Linux commands and see what they output:
+## تمرین
 
-<ol>
-<li>$ date</li>
-<li>$ whoami</li>
-</ol>
+چند فرمان لینوکسی را اجرا کنید و خروجی را بررسی نمائید.
 
-## Quiz Question
++ $ date
++ $ whoami
 
-What should be outputted to the display when you type echo Hello World?
+## سؤال آزمون
 
-## Quiz Answer
+زمانی که فرمان echo Hello World را صادر می‌کنید چه چیزی در خروجی چاپ می‌شود؟
+
+## پاسخ آزمون
 
 Hello World
