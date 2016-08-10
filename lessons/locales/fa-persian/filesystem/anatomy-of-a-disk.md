@@ -1,50 +1,44 @@
-# Anatomy of a Disk
+# آناتومی دیسک
 
-## Lesson Content
+## محتویات درس
 
-Hard disks can be subdivided into partitions, essentially making multiple block devices. Recall such examples as, /dev/sda1 and /dev/sda2, /dev/sda is the whole disk, but /dev/sda1 is the first partition on that disk. Partitions are extremely useful for separating data and if you need a certain filesystem, you can easily create a partition instead of making the entire disk one filesystem type.
+هاردیسک‌ها می‌توانند به پارتیشن‌ها تقسیم شوند و در‌واقع چندین دستگاهِ بلاک بسازند. بلاک در حقیقت به طول معینی از بیت‌ها یا بایت‌ها گفته می‌شود که در یک دستگاه ذخیره‌سازی قرار می‌گیرد. مثال‌ها در خصوص ‎/dev/sda1 و ‎/dev/sda2 یا ‎/dev/sda را به خاطر می‌آورید؟ ‎/dev/sda کل دیسکِ سخت و ‎/dev/sda1 اولین پارتیشن بر روی همان دیسک سخت است. پارتیشن‌ها در زمانی که به داده‌های مجزا بر روی دیسک نیاز دارید و یا اینکه می‌خواهید در یک دیسک از فایل‌سیستم‌های مختلف بهره ببرید، بسیار کاربردی هستند و به جای اختصاص کل هارد دیسک به یک نوع فایل‌سیستم، می‌توانید با کمک آن‌ها دست و بال بازتری داشته باشید.
 
-<b>Partition Table</b>
+**جدول پارتیشن**
 
-Every disk will have a partition table, this table tells the system how the disk is partitioned. This table tells you where partitions begin and end, which partitions are bootable, what sectors of the disk are allocated to what partition, etc. There are two main partition table schemes used, Master Boot Record (MBR) and GUID Partition Table (GPT).
+هر دیسک سختی، یک جدول پارتیشن دارد، که این جدول به سیستم در خصوص چگونگی پارتیشن‌شدنِ دیسکِ سخت گزارش می‌دهد. این جدول، تشریح جایگاهِ شروع و پایانِ پارتیشن‌ها و اینکه کدامیک از آن‌ها، پارتیشنِ با قابلیت راه‌اندازی است، را بر عهده دارد. همچنین اطلاعاتی را در خصوص اینکه کدامیک از سکتورهای دیسک به کدام پارتیشن تعلق دارد، در خود ذخیره کرده است. دو طرح اصلی برای جدول پارتیشن وجود دارد که یکی ‎Master Boot Record (MBR) و دیگری ‎GUID Partition Table (GPT) نام دارد.
 
-<b>Partition</b>
+**پارتیشن**
 
-Disks are comprised of partitions that help us organize our data. You can have multiple partitions on a disk and they can't overlap each other, if there is space that is not allocated to a partition it is known as free space. The types of partitions depend on your partition table. Inside a partition, you can have a filesystem or dedicate a partition to other things like swap (we'll get to that soon).
+دیسک‌ها از پارتیشن‌هایی تشکیل شده‌اند تا کمکی به ما در مرتب‌سازی و سامان‌دادن به فایل‌ها باشند. شما می‌توانید چندین پارتیشن بر روی یک هارد دیسک داشته باشید، ولی این پارتیشن‌ها نمی‌توانند بر روی هم قرار بگیرند و نهایتاً شانه به شانه‌ی هم در دیسک جای خوش می‌کنند. اگر فضایی بر روی دیسک باشد که به هیچ پارتیشنی تعلق ندارد، آن را فضای خالی می‌نامیم. نوع پارتیشن‌هایتان به جدول پارتیشن بستگی دارد. در درون یک پارتیشن می‌توانید یک فایل‌سیستم داشته باشید و یا حتی آن را به چیزهای دیگری مثل swap اختصاص دهید. در خصوص swap در آینده بیشتر صحبت خواهیم کرد.
 
-<i>MBR</i>
+*MBR*
 
-<ul>
-<li>Traditional partition table, was used as the standard</li>
-<li>Can have primary, extended, and logical partitions</li>
-<li>MBR has a limit of four primary partitions</li>
-<li>Additional partitions can be made by making a primary partition into an extended partition (there can only be one extended partition on a disk). Then inside the extended partition you add logical partitions. The logical partitions are used just like any other partition. Silly I know.</li> 
-<li>Supports disks up to 2 terabytes</li>
-</ul>
++ جدول پارتیشن سابق است که به عنوان استاندارد استفاده می‌شد.
++ می‌تواند پارتیشن‌های اصلی (primary)، گسترده (extended) و منطقی (logical) داشته باشد.
++ MBR محدود به داشتن نهایتاً چهار پارتیشن اصلی است.
++ پارتیشن‌های بیشتر با ساخت یک پارتیشن اصلی به عنوان پارتیشن گسترده، می‌توانند ایجاد شوند (البته هار دیسک می‌تواند تنها یک پارتیشن گسترده داشته باشد). سپس شما می‌توانید پارتیشن‌های منطقی را در داخل پارتیشن گسترده به تعداد دلخواه بسازید. از پارتیشن‌های منطقی هم می‌توان درست شبیه به سایر پارتیشن‌ها بهره برد. مسخره است، می‌دانیم.
++ هارد دیسک‌هایی تا ظرفیت ۲ ترابایت را پشتیبانی می‌کند.
 
-<i>GPT</i>
+*GPT*
 
-<ul>
-<li>GUID Partition Table (GPT) is becoming the new standard for disk partitioning</li>
-<li>Has only one type of partition and you can make many of them</li>
-<li>Each partition has a globally unique ID (GUID)</li>
-<li>Used mostly in conjunction with UEFI based booting (we'll get into details in another course)</li> 
-</ul>
++ GUID Partition Table (GPT) به استاندارد جدیدی برای پارتیشن‌بندی دیسک بدل شده است.
++ تنها یک نوع پارتیشن دارد و شما می‌توانید بسیاری از آن‌ها را بر روی یک دیسک بسازید.
++ هر پارتیشن یک شناسه‌ی عمومیِ یکتا دارد که به آن GUID می‌گویند.
++ GPT در سیستم‌هایی که بر اساس UEFI راه‌اندازی می‌شوند، کاربرد فراوانی دارد (در خصوص UEFI در دوره‌ی دیگری، صحبت خواهیم کرد).
 
-<b>Filesystem Structure</b>
+**ساختار فایل‌سیستم**
 
-We know from our previous lesson that a filesystem is an organized collection of files and directories. In its simplest form, it is comprised of a database to manage files and the actual files themselves, however we're going to go into a little more detail. 
+از خیر سر درس‌های قبل، می‌دانیم که فایل‌سیستم، مجموعه‌ای سامان‌مند از فایل‌ها و دایرکتوری‌هاست. در ساده‌ترین شکلش، یک فایل‌سیستم از یک پایگاه داده که فایل‌ها را مدیریت می‌کند، ساخته شده است. در آینده وارد جزئیات بیشتری خواهیم شد.
 
-<ul>
-<li>Boot block - This is located in the first few sectors of the filesystem, it's not really used the by the filesystem rather it contains information used to boot the operating system. Only one boot block is needed by the operating system, if you have multiple partitions they will have boot blocks but many are unused.</li>
-<li>Super block - This is a single block that comes after the boot block, it contains information about the filesystem, such as the size of the inode table, size of the logical blocks and the size of the filesystem.</li>
-<li>Inode table - Think of this as the database that manages our files (we have a whole lesson on inodes, don't worry). Each file or directory has a unique entry in the inode table and it has various information about the file.</li>
-<li>Data blocks - This is the actual data for the files and directories.</li>
-</ul>
- 
-Let's take a look at the different partition tables. Below is an example of a partition using the MBR partitioning table (msdos). You can see the primary, extended and logical partitions on the machine.
++ بلاک راه‌انداز یا بوت‌بلاک – جایگاه بوت‌بلاک در چند سکتور ابتدایی فایل‌سیستم است. این سکتورها شامل اطلاعاتی که برای راه‌اندازی سیستم‌عامل نیاز است، می‌شوند و به کار خود فایل‌سیستم نمی‌آیند. سیستم‌عامل نیز فقط یک بوت‌بلاک، نیاز دارد و اگر شما بیش از یکی دارید، بقیه آن‌ها بی‌استفاده خواهند ماند.
++ سوپر بلاک – یک بلاک بعد از بوت‌بلاک، سوپر بلاک خوانده می‌شود و شامل اطلاعاتی در خصوص خود فایل‌سیستم است. اطلاعاتی مانند اندازه‌ی جدول آی‌نود، اندازه‌ی بلاک‌های منطقی و اندازه‌ی فایل‌سیستم.
++ جدول آی‌نود – اینجور فکر کنید که با یک پایگاه داده‌ای طرفید که وظیفه‌ی مدیریت و سامان دادن به فایل‌های ما را بر عهده دارد. و اینکه اگر نفهمیدید چی شد، نگران نباشید چون ما یک درس کامل برای تشریح آی‌نودها داریم. هر فایل یا دایرکتوری یک ورودی یکتا در جدول آی‌نود دارد و اطلاعات مختلفی در خصوص فایل در این جدول نوشته می‌شود.
++ بلاک داده یا دیتا بلاک – بلاک داده، دقیقاً دیتایی است که برای فایل‌های و دایرکتوری‌ها مورد استفاده قرار می‌گیرد.
 
-<pre>
+حالا بد نیست نگاهی به تفاوت‌های جدول‌های پارتیشن بیندازیم. یک مثال از یک مدل پارتیشن‌بندی که با استفاده از MBR درست شده را در پایین می‌بینید. شما می‌توانید پارتیشن‌های اصلی، گسترده، و منطقی را بر روی دستگاهِ زیر ببینید.
+
+```
 pete@icebox:~$ sudo parted -l
 Model: Seagate (scsi)
 Disk /dev/sda: 21.5GB
@@ -56,12 +50,11 @@ Number  Start   End     Size    Type      File system     Flags
  2      6861MB  21.5GB  14.6GB  extended
  5      6861MB  7380MB  519MB   logical   linux-swap(v1)
  6      7381MB  21.5GB  14.1GB  logical   xfs
-</pre>
+```
 
+و این هم یک مثال از GPT که تنها از یک شناسه‌ی یکتا برای پارتیشن‌ها استفاده می‌کند.
 
-This example is GPT, using just a unique ID for the partitions.
-
-<pre>
+```
 Model: Thumb Drive (scsi)
 Disk /dev/sdb: 4041MB
 Sector size (logical/physical): 512B/512B
@@ -70,16 +63,16 @@ Partition Table: gpt
 Number  Start   End     Size     File system  Name        Flags
  1      17.4kB  1000MB  1000MB                first
  2      1000MB  4040MB  3040MB                second
-</pre>
+```
 
-## Exercise
+## تمرین
 
-Run <b>parted -l</b> on your machine and evaluate your results.
+فرمان parted -l را اجرا و نتیجه را سبک‌سنگین کنید. خروجی ندارد؟ با استفاده از مجوز روت، فرمان را تکرار کنید.
 
-## Quiz Question
+## سؤال آزمون
 
-What partition type is used to create more than 4 partitions in the MBR partitioning scheme?
+در طرح پارتیشن MBR برای ساخت بیش از چهار پارتیشن از چه نوع پارتیشنی استفاده می‌شود؟
 
-## Quiz Answer
+## پاسخ آزمون
 
 extended
