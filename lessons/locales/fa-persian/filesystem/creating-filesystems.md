@@ -1,21 +1,21 @@
-# Creating Filesystems
+# چگونگی ساخت فایل‌سیستم‌ها
 
-## Lesson Content
+## محتویات درس
 
-Now that you've actually partitioned a disk, let's create a filesystem!
+حالا که پارتیشن‌بندی دیسک را انجام دادید، بهتر است که برای پارتیشن‌هایمان، فایل‌سیستم نیز تعیین کنیم.
 
-<pre>$ sudo mkfs -t ext4 /dev/sdb2</pre>
+```$ sudo mkfs -t ext4 /dev/sdb2```
 
-Simple as that! The <b>mkfs</b> (make filesystem) tool allows us to specify the type of filesystem we want and where we want it. You'll only want to create a filesystem on a newly partitioned disk or if you are repartitioning an old one. You'll most likely leave your filesystem in a corrupted state if you try to create one on top of an existing one. 
+به همین راحتی با استفاده از mkfs که مخفف دو کلمه‌ی ساخت فایل‌سیستم (make filesystem) است می‌توانید نوع فایل‌سیستم و جایی که می‌خواهیم قرار بگیرد را مشخص کنیم. شما تنها زمانی نیاز به ساخت یک فایل‌سیستم دارید که در حال کار بر روی یک دیسک تازه پارتیشن‌شده‌اید یا یک دیسک قدیمی را می‌خواهید دو مرتبه پارتیشن‌بندی کنید. اگر بخواهید که یک فایل‌سیستم را بر روی یک فایل‌سیستم دیگر بسازید، احتمالاً تنها چیزی که برای‌تان می‌ماند، یک فایل‌سیستم خراب است.
 
-## Exercise
+## تمرین
 
-Make an ext4 filesystem on the USB drive.
+یک فایل‌سیستم ext4 بر روی یک کارت حافظه USB یا همان فلش بسازید.
 
-## Quiz Question
+## سؤال آزمون
 
-What command is used to create a filesystem?
+از چه دستوری برای ساخت فایل‌سیستم استفاده می‌کنیم؟
 
-## Quiz Answer
+## پاسخ آزمون
 
 mkfs
