@@ -1,35 +1,33 @@
-# Disk Partitioning
+# پارتیشن‌بندی دیسک سخت
 
-## Lesson Content
+## محتویات درس
 
-Let's do some practical stuff with filesytems by working through the process on a USB drive. If you don't have one, no worries, you can still follow along these next couple of lessons. 
+وقتش شده که کمی دست به کار شویم و یک درایو USB را با فایل‌سیستم‌های مختلف امتحان کنیم. درایو USB چیست؟ یه فلش‌مموری دارید؟ همان برای شروع خوب است. همان هم ندارید؟ باز هم اشکالی ندارد.
 
-First we'll need to partition our disk. There are many tools available to do this: 
+اول باید دیسک‌مان را پارتیشن‌بندی کنیم. ابزارهای زیادی برای این کار هست که خب ما با یکی به هر حال شروع می‌کنیم.
 
-<ul>
-<li>fdisk - basic command-line partitioning tool, it does not support GPT</li>
-<li>parted - this is a command line tool that supports both MBR and GPT partitioning</li>
-<li>gparted - this is the GUI version of parted</li>
-<li>gdisk - fdisk, but it does not support MBR only GPT</li>
-</ul>
++ fdisk – یک ابزار ابتدایی خط‌فرمان که از GPT پشتیبانی نمی‌کند.
++ parted – یک ابزار خط‌فرمانی که هم از MBR و هم از GPT پشتیبانی می‌کند.
++ gparted – رابط گرافیکی برنامه‌ی parted
++ gdisk – همان fdisk با این تفاوت که به جای پشتیبانی از MBR، تنها از GPT پشتیبانی می‌کند.
 
-Let's use parted to do our partitioning. Let's say I connect the USB device and we see the device name is /dev/sdb2. 
+از parted برای پارتیشن‌بندی‌مان استفاده می‌کنیم. فرض کنید که درایو USB را وصل کردیم و اکنون نامش ‎/dev/sda2 هست.
 
-<b>Launch parted</b>
+**parted را آتش کنید**
 
-<pre>$ sudo parted</pre>
+```$ sudo parted```
 
-You'll be entered in the parted tool, here you can run commands to partition your device. 
+اکنون وارد فضای کاری ابزار parted شدید و می‌توانید فرامین مربوطه را برای پارتیشن‌بندی دستگاه خود، اجرا کنید.
 
-<b>Select the device</b>
+**انتخاب دستگاه یا دیوایس**
 
-<pre>select /dev/sdb2</pre>
+```select /dev/sdb2```
 
-To select the device you'll be working with, select it by its device name.
+برای انتخاب دستگاهی که می‌خواهید بر روی آن کار کنید، نامش را تایپ نمائید.
 
-<b>View current partition table</b>
+**دیدن وضعیت فعلی جدول پارتیشن‌ها**
 
-<pre>
+```
 (parted) print                                                            
 Model: Seagate (scsi)
 Disk /dev/sda: 21.5GB
@@ -41,34 +39,34 @@ Number  Start   End     Size    Type      File system     Flags
  2      6861MB  21.5GB  14.6GB  extended
  5      6861MB  7380MB  519MB   logical   linux-swap(v1)
  6      7381MB  21.5GB  14.1GB  logical   xfs
-</pre>
+```
 
-Here you will see the available partitions on the device. The <b>start</b> and <b>end</b> points are where the partitions take up space on the hard drive, you'll want to find a good start and end location for your partitions. 
+همانطور که در بالا می‌بینید، تمام پارتیشن‌های موجود بر روی دستگاه، نمایش داده شده است. نقطه آغاز که با **start** و پایان که با **end** مشخص شده نشان‌دهنده‌ی موقعیت‌هایی‌ست که پارتیشن بر روی دیسک، قرار گرفته و خب به شما کمک می‌کند تا نقطه‌ی آغاز و پایان مناسب با شرایط خود را انتخاب کنید.
 
-<b>Partition the device</b>
+**پارتیشن‌بندی دستگاه**
 
-<pre>mkpart primary 123 4567</pre>
+```mkpart primary 123 4567```
 
-Now just choose a start and end point and make the partition, you'll need to specify the type of partition depending on what table you used. 
+اکنون یک نقطه آغاز و پایان انتخاب کنید و پارتیشن را بسازید. همچنین بر اساس جدول پارتیشنی که استفاده می‌کنید، لازم است نوع پارتیشن را نیز مشخص کنید.
 
-<b>Resize a partition</b>
+**تغییر اندازه پارتیشن**
 
-You can also resize a partition if you don't have any space. 
+همچنین می‌توانید یک پارتیشن را، مثلاً اگر فضای خالی ندارید، تغییر اندازه دهید.
 
-<pre>resize 2 1245 3456</pre>
+```resize 2 1245 3456```
 
-Select the partition number and then the start and end points of where you want to resize it to. 
+شماره پارتیشن را انتخاب کنید و سپس نقطه‌ی آغاز و پایانی که می‌خواهید پارتیشنتان به آن منتقل شود را مشخص نمائید.
 
-Parted is a very powerful tool and you should be careful when partitioning your disks. 
+Parted یک ابزار قدرتمند است، با این حساب بایستی به مانند یه چاقوی دو لبه، هنگام استفاده از آن دقت کافی را داشته باشید وگرنه مشکل‌ساز خواهد شد.
 
-## Exercise
+## تمرین
 
-Partition a USB drive with half of the drive as ext4 and the other half as free space. 
+یک درایو USB را پارتیشن‌بندی کنید. به این صورت که نصف درایو را پارتیشنی با فایل‌سیستم ext4 بگیرد و نیم دیگرش خالی باشد.
 
-## Quiz Question
+## سؤال آزمون
 
-What is the parted command to make a partition?
+فرمانی که در parted برای ساخت یک پارتیشن استفاده می‌کنیم چیست؟
 
-## Quiz Answer
+## پاسخ آزمون
 
 mkpart
