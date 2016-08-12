@@ -1,37 +1,35 @@
-# /etc/fstab
+# ‎/etc/fstab
 
-## Lesson Content
+## محتویات درس
 
-When we want to automatically mount filesystems at startup we can add them to a file called /etc/fstab (pronounced "eff es tab" not "eff stab") short for filesystem table. This file contains a permanent list of filesystems that are mounted.
+زمانی که می‌خواهیم فایل‌سیستم‌ها را به صورت خودکار در شروع به کار سیستم، سوار کنیم، از فایلی با نام fstab که در مسیر ‎/etc/fstab جای خوش کرده استفاده می‌کنیم. (فایل را به صورت اِفْ اِسْ تَبْ تلفظ کنید). fstab مخفف filesystem table یا جدول فایل‌سیستم است و حاوی یک لیست از فایل‌سیستم‌هایی می‌شود که سوار شده‌اند یا قرار است در راه‌اندازی سیستم سوار شوند.
 
-<pre>
+```
 pete@icebox:~$ cat /etc/fstab
 UUID=130b882f-7d79-436d-a096-1e594c92bb76 /               ext4    relatime,errors=remount-ro 0       1
 UUID=78d203a0-7c18-49bd-9e07-54f44cdb5726 /home           xfs     relatime        0       2
 UUID=22c3d34b-467e-467c-b44d-f03803c2c526 none            swap    sw              0       0
-</pre>
+```
 
-Each line represents one filesystem, the fields are: 
+هر خط، نمایش دهنده‌ی یک فایل‌سیستم است. و هر فیلد بیانگر موارد زیر است:
 
-<ul>
-<li>UUID - Device identifier</li>
-<li>Mount point - Directory the filesystem is mounted to</li>
-<li>Filesystem type</li>
-<li>Options - other mount options, see manpage for more details</li>
-<li>Dump - used by the dump utility to decide when to make a backup, you should just default to 0</li>
-<li>Pass - Used by fsck to decide what order filesystems should be checked, if the value is 0, it will not be checked</li>
-</ul>
++ UUID – کد شناسایی دیوایس.
++ Mount point – دایرکتوری که قرار است فایل‌سیستم در آن سوار شود.
++ نوع فایل‌سیستم.
++ Options – دیگر گزینه‌های سوار کردن پارتیشن. برای اطلاعات بیشتر به صفحه‌ی man مربوط به fstab مراجعه کنید.
++ Dump – با استفاده از ابزار dump تصمیم می‌گیرد که چه وقت پشتیبان بگیرد. مقدار پیش‌فرض این فیلد صفر است و باید آن را رعایت کنید.
++ Pass – با استفاده از fsck تصمیم می‌گیرد که به چه ترتیبی فایل‌سیستم‌ها بایستی بررسی شوند. اگر مقدار این فیلد صفر باشد، فایل‌سیستم بررسی نخواهد شد.
 
-To add an entry, just directly modify the /etc/fstab file using the entry syntax above. Be careful when modifying this file, you could potentially make your life a little harder if you mess up.
+برای اضافه کردن ورودی فقط کافیست که فایل ‎/etc/fstab را ویرایش کنید و با توجه به اطلاعات بالا، یک فایل‌سیستم اضافه کنید. زمانی که در حال دستکاری این فایل هستید، مراقب باشید چرا که ویرایش بی‌جای خطوط حساس ممکن است زندگی را به دهانتان زهر کند.
 
-## Exercise
+## تمرین
 
-Add the USB drive we've been working on as a entry in /etc/fstab, when you reboot you should still see it mounted. 
+آن USB درایوی که در درس‌های قبل اذیتش کردیم را بردارید و اطلاعاتش را به fstab اضافه کنید. زمانی که سیستم را ری‌استارت کردید بایستی که به صورت خودکار سوار شود. یا بعد از اجرای دستور sudo mount -a بایستی این اتفاق بیفتد.
 
-## Quiz Question
+## سؤال آزمون
 
-What file is used to define how filesystems should be mounted? 
+کدام فایل برای مشخص کردن اینکه فایل‌سیستم‌ها چطور سوار شوند بایستی مورد حمله‌ی ما قرار بگیرد؟
 
-## Quiz Answer
+## پاسخ آزمون
 
 /etc/fstab
