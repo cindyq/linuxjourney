@@ -1,21 +1,21 @@
-# Filesystem Repair
+# تعمیر فایل‌سیستم
 
-## Lesson Content
+## محتویات درس
 
-Sometimes our filesystem isn't always in the best condition, if we have a sudden shutdown, our data can become corrupt. It's up to the system to try to get us back in a working state (although we sure can try ourselves). 
+بعضی وقت‌ها فایل‌سیستم‌ها در بهترین شرایط و وضعیت قرار ندارند. مثلاً وقتی سیستم یک دفعه‌ای خاموش می‌شود، ممکن است که اطلاعاتمان خراب شود. البته این وظیفه‌ی سیستم است که ما را به وضعیت درست هدایت کند و سیستمی که کار می‌کند را به ما تحویل دهد. به عبارتی شرایط را برای شروع به کار سیستم، بعد از، از دست دادن اطلاعات مهیا کند. هرچند ما می‌توانیم خودمان نیز به صورت دستی همین کار را انجام دهیم.
 
-The <b>fsck</b> (filesystem check) command is used to check the consistency of a filesystem and can even try to repair it for us. Usually when you boot up a disk, fsck will run before your disk is mounted to make sure everything is ok. Sometimes though, your disk is so bad that you'll need to manually do this. However, be sure to do this while you are in a rescue disk or somewhere where you can access your filesystem without it being mounted.
+فرمانِ بررسی فایل‌سیستم یا **fsck** سلامت و انسجام یک فایل‌سیستم را آزمایش و حتی می‌تواند تلاش برای رفع مشکل کند. معمولاً وقتی که یک دیسک را راه‌اندازی می‌کنید، fsck قبل از اینکه دیسک شما سوار شود، از خوب بودن اوضاع اطمینان حاصل پیدا می‌کند. بعضی وقت‌ها اوضاع دیسک دیگر به حدی خراب است که شما مجبور به انجام دستی این کار می‌شوید. در ضمن بایستی برای این کار از طریق یک دیسک نجات و یا به هر نحوی به فایل‌سیستم، بدون نیاز به سوار کردن آن، دسترسی داشته باشید. به همین خاطر اگر قرار است که فایل‌سیستمی که حکم دایرکتوری خانه یا روت را برای شما دارد، تعمیر کنید، لازم است از سیستم‌عامل دیگری استفاده کنید چرا که در سیستم‌عامل خود به هر حال مجبور به سوار کردن این فایل‌سیستم‌ها خواهید بود.
 
-<pre>$ sudo fsck /dev/sda</pre> 
+```$ sudo fsck /dev/sda```
 
-## Exercise
+## تمرین
 
-Look at the manpage for fsck to see what else it can do.
+نگاهی بر manpage فرمان fsck بیندازید. چه کارهای دیگری می‌توانید با آن انجام دهید؟
 
-## Quiz Question
+## سؤال آزمون
 
-What command is used to check the integrity of a filesystem?
+از چه دستوری برای بررسی سلامت فایل‌سیستم استفاده می‌کنید؟
 
-## Quiz Answer
+## پاسخ آزمون
 
 fsck
