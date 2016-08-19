@@ -1,40 +1,38 @@
-# Filesystem Hierarchy
+# ترتیب/سلسه‌مراتب فایل‌سیستم
 
-## Lesson Content
+## محتویات درس
 
-At this point, you're probably well familiar with the directory structure of your system, if not you will be soon. Filesystems can vary with how they are structured, but for the most part they should conform to the Filesystem Hierarchy Standard. 
+تا اینجا بایستی با ساختار دایرکتوری و سیستمِ خود آشنا شده باشید. فایل‌سیستم‌ها با توجه به نوع ساختارشان، متفاوتند ولی اغلب آن‌ها به استانداردهای ترتیبی فایل‌سیستم، پایبند هستند.
 
-Go ahead and do an <b>ls -l /</b> to see the directories listed under the root directory, yours may look different than mine, but the directories should for the most part look like the following:
+فرمان **ls -l /‎** را اجرا کنید و ببینید که چه دایرکتوری‌هایی در زیر روت جای خوش کرده‌اند. با وجود اینکه ممکن است خروجی شما با مال من متفاوت باشد، ولی اغلب آن‌ها باید شبیه به یکدیگر باشند.
 
-<ul>
-<li>/ - The root directory of the entire filesystem hierarchy, everything is nestled under this directory.</li>
-<li>/bin - Essential ready-to-run programs (binaries), includes the most basic commands such as ls and cp.</li>
-<li>/boot - Contains kernel boot loader files.</li>
-<li>/dev - Device files.</li>
-<li>/etc - Core system configuration directory, should hold only configuration files and not any binaries.</li>
-<li>/home - Personal directories for users, holds your documents, files, settings, etc. </li>
-<li>/lib - Holds library files that binaries can use.</li>
-<li>/media - Used as an attachment point for removable media like USB drives.</li>
-<li>/mnt - Temporarily mounted filesystems.</li>
-<li>/opt - Optional application software packages.</li>
-<li>/proc - Information about currently running processes.</li>
-<li>/root - The root user's home directory.</li>
-<li>/run - Information about the running system since the last boot.</li>
-<li>/sbin - Contains essential system binaries, usually can only be ran by root.</li>
-<li>/srv - Site-specific data which are served by the system.</li>
-<li>/tmp - Storage for temporary files</li>
-<li>/usr - This is unfortunately named, most often it does not contain user files in the sense of a home folder. This is meant for user installed software and utilities, however that is not to say you can't add personal directories in there. Inside this directory are sub-directories for /usr/bin, /usr/local, etc.</li>
-<li>/var - Variable directory, it's used for system logging, user tracking, caches, etc. Basically anything that is subject to change all the time.</li>
-</ul>
++ / – دایرکتوری روت که سلسله‌مراتب کل سیستم را شامل می‌شود و هر چیز دیگری که فکرش را بکنید، جزئی از سلسله‌مراتب زیرین روت خواهد بود.
++ ‎/bin – برنامه‌های ضررویِ آماده‌ی اجرا (باینری‌ها) شامل فرمان‌های پایه‌ای مثل cp یا ls.
++ ‎/boot – شامل فایل‌های راه‌انداز هسته می‌شود.
++ ‎/dev – فایل‌های دستگاه‌ها.
++ ‎/etc – دایرکتوری فایل‌های پیکربندی هسته‌ی سیستم که بایستی تنها شامل فایل‌های پیکربندی شود و فاقد هرگونه باینری است.
++ ‎/home – دایرکتوری شخصی، برای کاربرها که در بردارنده‌ی اسناد، فایل‌ها، تنظیمات و غیره می‌شود.
++ ‎/lib – فایل‌های لایبرری یا کتابخانه‌ای را که باینری‌ها از آن‌ها استفاده می‌کنند، نگه‌داری می‌کند.
++ ‎/media – شامل نقاط اتصال مدیاهای جداشونده‌ای مانند USB درایوها استفاده می‌شود.
++ ‎/mnt – شامل فایل‌سیستم‌هایی که به صورت موقت سوار شده‌اند.
++ ‎/opt – پکیج‌های نرم‌افزاریِ برنامه‌های اختیاری.
++ ‎/proc – اطلاعات در خصوص پروسه‌های در حال اجرا.
++ ‎/root – دایرکتوری خانگیِ کاربر ریشه.
++ ‎/run – اطلاعات در خصوص سیستمِ در حال اجرا از زمان آخرین راه‌اندازی تا به حالا.
++ ‎/sbin – شامل باینری‌های ضرروی سیستم می‌شود که معمولاً تنها با روت اجرا می‌شوند.
++ ‎/srv – داده‌های مربوط به سایت که سیستم در اختیار کاربر قرار می‌دهد.
++ ‎/tmp – ذخیره‌سازی برای فایل‌های موقت.
++ ‎/usr – این دایرکتوری که با بدسلیقگی نام‌گذاری شده، اغلب شامل فایل‌های کاربران مانند آن چیزی که در پوشه‌ی خانگی ذخیره می‌شود، نیست. هدف این پوشه، نرم‌افزارها و برنامه‌هایی‌ست که توسط کاربر نصب شده‌اند. البته این بدان معنا نیست که نمی‌توانید فایل‌های شخصی را به آن اضافه کنید.
++ ‎/var – دایرکتوری فایل‌های متغیر که برای نگه‌داری لاگ سیستم، کش، ردگیری کاربر و غیره به کار می‌رود. در اصل هر چیزی که در طول زمان تغییر می‌کند در اینجا جا خوش می‌کند.
 
-## Exercise
+## تمرین
 
-Look inside your /usr directory, what kind of information is located there?
+در داخل مسیر ‎/usr نگاهی بیندازید. چه اطلاعاتی در آنجا قرار دارد؟
 
-## Quiz Question
+## سؤال آزمون
 
-What directory is used to store logs? 
+کدام دایرکتوری لاگ‌ها را نگه‌داری می‌کند؟
 
-## Quiz Answer
+## پاسخ آزمون
 
 /var
