@@ -4,7 +4,7 @@
 
 * Erste Schritte - Was ist Linux? Finde Hilfe bei der Auswahl einer Distribution und bei der Installation.
 
-* Kommandozeile - Lerne die Grundlagen der Kommandozeile, nagiviere Ordner, Dateien und mehr.
+* Kommandozeile - Lerne die Grundlagen der Kommandozeile, navigiere Ordner, Dateien und mehr.
 
 * Text-Fu - Lerne grundlegende Textbearbeitung- und navigation.
 
@@ -12,11 +12,11 @@
 
 * Benutzerverwaltung - Lerne alles über die Benutzerverwaltung und Benutzerrollen.
 
-* Berechtigungen - Lerne alles über das Berechtigungssystem und Rechteverwaltung.
+* Berechtigungen - Lerne alles über das Berechtigungssystem und die Rechteverwaltung.
 
 * Prozesse - Lerne etwas über die laufenden Prozesse auf deinem System.
 
-* Pakete - Lerne alles über die dpkg, apt-get, rpm and yum Packetverwaltungswerkzeuge.
+* Pakete - Lerne alles über die dpkg, apt-get, rpm and yum Paketverwaltungswerkzeuge.
 
 ## Wandergeselle
 
@@ -32,19 +32,19 @@
 
 * Prozess Auslastung - Lerne deine Systemauslastung zu überwachen, mit top, iostat und mehr.
 
-* Logging - Lerne alles über System-Logs und das /var/log verzeichnis.
+* Logging - Lerne alles über System-Logs und das /var/log Verzeichnis.
 
 ## Netzwerk Nomade
 
 * Netzwerk Dateiaustausch - Dateifreigaben und Synchronisation im Netzwerk mit rsync, scp, nfs und mehr.
 
-* Netzwerk Grundlagen - Alles zu Netzwerkgrundlagen und dem TCP/IP model.
+* Netzwerk Grundlagen - Alles zu Netzwerkgrundlagen und dem TCP/IP Modell.
 
 * Subnetze - Kapitel zum Thema Subnets und Subnet Arithmetik.
 
-* Routing - Lerne wie Packete durch das Netwerk geroutet werden!
+* Routing - Lerne wie Pakete durch das Netzwerk geroutet werden!
 
-* Netzwerk Konfiguration - Lerne wie man mit Linux Bordmitteln Netzwerkeinstellungen vornimmt.
+* Netzwerk Konfiguration - Lerne wie man mit Linux-Bordmitteln Netzwerkeinstellungen vornimmt.
 
 * Problemlösung - Lerne wie man gängige Netzwerk Werkzeuge zur Problemlösung einsetzt.
 
