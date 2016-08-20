@@ -1,48 +1,46 @@
-# Filesystem Types
+# انواع فایل‌سیستم
 
-## Lesson Content
+## محتویات درس
 
-There are many different filesystem implementations available. Some are faster than others, some support larger capacity storage and others only work on smaller capacity storage. Different filesystems have different ways of organizing their data and we'll go into detail about what types of filesystems there are. Since there are so many different implementations available, applications need a way to deal with the different operations. So there is something called the Virtual File System (VFS) abstraction layer. It is a layer between applications and the different filesystem types, so no matter what filesystem you have, your applications will be able to work with it. 
+چندین و چند نوع فایل‌سیستم در دسترس کاربران است که تعدادشان واقعاً کم نیست. برخی از آن‌ها از بقیه سریع‌ترند و بعضی فضاهای ذخیره‌ساز با ظرفیت بالا را به خوبی پشتیبانی می‌کنند و تعدادی تنها برای فضاهای ذخیره‌ساز با ظرفیت پایین‌تر مناسب هستند. فایل‌سیستم‌های متفاوت، روش‌های متفاوتی را برای سامان دادن به اطلاعات به کار می‌گیرند و ما در اینجا وارد جزئیات بیشتری از آن‌ها خواهیم شد. از آنجایی که انواع مختلف فایل‌سیستم موجود است، برنامه‌ها به راه‌هایی برای تعامل با عامل‌های مختلف نیاز دارند. به همین دلیل چیزی به اسم لایه‌ی انتزاعی VFS یا فایل‌سیستم‌مجازی وجود دارد. این لایه، بین انواع مختلف فایل‌سیستم و برنامه‌ها قرار می‌گیرد. در نتیجه، نوعِ فایل‌سیستم برای کارکرد درست برنامه، دیگر مهم نخواهد بود و به هر حال برنامه می‌تواند با آن فایل‌سیستم کار کند.
 
-You can have many filesystem on your disks, depending on how they are partitioned and we will go through that in a coming lesson.
+شما می‌توانید تعداد زیادی فایل‌سیستم بر روی دیسک خود داشته باشید و این موضوع بستگی به نحوه‌ی پارتیشن‌بندی دیسک دارد. ما به این مسأله در دروس پیشِ رو خواهیم پرداخت.
 
-<b>Journaling</b>
+**ژورنالینگ**
 
-Journaling comes by default on most filesystem types, but just in case it doesn't, you should know what it does. Let's say you're copying a large file and all of a sudden you lose power. Well if you are on a non-journaled filesystem, the file would end up corrupted and your filesystem would be inconsistent and then  when you boot back up, your system would perform a filesystem check to make sure everything is ok. However, the repairs could take awhile depending on how large your filesystem was. 
+ژورنالینگ را بهتر است با همین نام فرنگی بشناسید. این ویژگی در اکثر فایل‌سیستم‌ها به صورت پیش‌فرض وجود دارد. ولی ژورنالینگ دقیقاً چیست؟ فرض کنید در حال کپی کردن یک فایل حجیم هستید و یک دفعه برق قطع می‌شود. اگر در حال انجام عملیات بر روی یک فایل‌سیستم غیر-ژورنالی باشید، نهایتاً با یک فایل خراب روبرو می‌شوید و فایل‌سیستمِ شما، آن یک‌پارچگی خود را از دست می‌دهد. بعد که سیستم را دومرتبه روشن کردید، یک بررسی فایل‌سیستم در دستور کار آن برای اطمینان از عمل‌کرد صحیحِ همه‌چیز، قرار خواهد گرفت. و این بررسی و تعمیر، بسته به اندازه‌ی فایل‌سیستم مدت زمانی را به طول خواهد انجامید.
 
-Now if you were on a journaled system, before your machine even begins to copy the file, it will write what you're going to be doing in a log file (journal). Now when you actually copy the file, once it completes, the journal marks that task as complete. The filesystem is always in a consistent state because of this, so it will know exactly where you left off if your machine shutdown suddenly. This also decreases the boot time because instead of checking the entire filesystem it just looks at your journal.
+حالا فرض کنید که بر روی یک فایل‌سیستم با قابلیت ژورنالینگ بودید. قبل از اینکه سیستم شروع به کپی کردن فایل کند، کاری که شما در شُرف انجامش هستید را در یک فایلِ لاگ ژورنال می‌کند و یا به عبارت ساده‌تر می‌نویسد. حالا وقتی که کپی کردن آن فایل تمام شد، ژورنال آن وظیفه را در لاگ به عنوان یک کار تکمیل شده، نشانه‌گذاری می‌کند. به این صورت فایل‌سیستم همیشه در حالت یک‌پارچه قرار دارد، چون دقیقاً می‌داند زمانی که سیستم به یک‌باره خاموش شد، شما در حال انجام چه کاری بوده‌اید. این کار، زمان راه‌اندازی را نیز کاهش می‌دهد، چرا که به جای بررسی کلِ فایل‌سیستم، فقط کافی‌ست که سیستم‌عامل نگاهی به ژورنال شما کند.
 
-<b>Common Desktop Filesystem Types</b>
+**انواعِ معمول فایل‌سیستم‌های دسکتاپ**
 
-<ul>
-<li>ext4 - This is the most current version of the native Linux filesystems. It is compatible with the older ext2 and ext3 versions. It supports disk volumes up to 1 exabyte and file sizes up to 16 terabytes and much more. It is the standard choice for Linux filesystems.</li>
-<li>Btrfs - "Better or Butter FS" it is a new filesystem for Linux that comes with snapshots, incremental backups, performance increase and much more. It is widely available, but not quite stable and compatible yet.</li>
-<li>XFS - High performance journaling file system, great for a system with large files such as a media server.</li>
-<li>NTFS and FAT - Windows filesystems</li>
-<li>HFS+ - Macintosh filesystem</li>
-</ul>
++ ext4 – جدیدترین نسخه از فایل‌سیستم اصلی لینوکس است. این فایل‌سیستم با نسخه‌های قبلی یعنی ext2 و ext3 سازگار است و دیسک‌هایی تا حجم یک اگزابایت و فایل‌هایی تا اندازه‌ی ۱۶ ترابایت را پشتیبانی می‌کند.
++ Btrfs – این فایل‌سیستمِ جدید لینوکسی با قابلیت اسنپ‌شات، بک‌آپ‌های افزایشی، عمل‌کرد بهتر و بسیاری ویژگی‌های دیگر عرضه شده است. این فایل‌سیستم در اکثر سیستم‌ها در دسترس است ولی به خاطر سازگاری و پایداری نه‌چندان کاملش، زیاد مورد استفاده قرار نمی‌گیرد. بک‌آپ افزایشی، به پشتیبان‌گیری گفته می‌شود که در آن به جای ایجاد یک فایل پشتیبان جدید، فایل قبلی به روز می‌شود و به این صورت مدت زمان کمتری برای پشتیبان‌گیری هدر می‌رود.
+XFS – یک فایل‌سیستم با قابلیت ژورنالینگ و عمل‌کرد بسیار بالا که مناسب سیستم‌هایی با فایل‌های بزرگ مانند مدیا-سرورها است.
+NTFS و FAT – فایل‌سیستم‌های ویندوزی.
++ ‎HFS+‎ – فایل‌سیستم مکینتاش.
 
-Check out what filesystems are on your machine: 
+حالا نوبت شماست که ببینید چه فایل‌سیستم‌هایی بر روی کامپیوتر شما جای خوش کرده‌اند.
 
-<pre>
+```
 pete@icebox:~$ df -T
 Filesystem     Type     1K-blocks    Used Available Use% Mounted on
 /dev/sda1      ext4       6461592 2402708   3707604  40% /
 udev           devtmpfs    501356       4    501352   1% /dev
 tmpfs          tmpfs       102544    1068    101476   2% /run
 /dev/sda6      xfs       13752320  460112  13292208   4% /home
-</pre>
+```
 
-The <b>df</b> command reports file system disk space usage and other details about your disk, we will talk more about this tool later.
+دستور **df** گزارشی از فضای استفاده شده‌ی فایل‌سیستم و جزئیاتی دیگر را به شما نشان می‌دهد. ما در خصوص این ابزار در آینده صحبت خواهیم کرد.
 
-## Exercise
+## تمرین
 
-Do a little bit of research online on the other filesystem types: ReiserFS, ZFS, JFS and others you can find.
+یک تحقیق کوچک پیرامون فایل‌سیستم‌های دیگر انجام دهید: ReiserFS, ZFS, JFS و هر چیز دیگری که پیدا کردید.
 
-## Quiz Question
+## سؤال آزمون
 
-What is the common Linux filesystem type?
+پر استفاده‌ترین فایل‌سیستم لینوکسی چیست؟
 
-## Quiz Answer
+## پاسخ آزمون
 
 ext4
