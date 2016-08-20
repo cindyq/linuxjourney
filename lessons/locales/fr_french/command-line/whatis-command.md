@@ -14,7 +14,7 @@ Exécutez la commande whatis sur la commande less.
 
 ## Quiz Question
 
-Quelle commande peut-on utiliser pour voir une brêve description d'une commande?
+Quelle commande peut-on utiliser pour voir une brève description d'une commande?
 
 ## Quiz Answer
 

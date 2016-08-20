@@ -30,7 +30,7 @@ Disons que vous avez voulu déplacer un fichier en écrasant l'existant. Vous po
 
 ## Exercise
 
-renommer un fichier, puis déplacer dans un répertoire différent.
+Renommez un fichier, puis déplacez dans un répertoire différent.
 
 ## Quiz Question
 

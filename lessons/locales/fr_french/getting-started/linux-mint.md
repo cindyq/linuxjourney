@@ -3,7 +3,7 @@
 ## Lesson Content
 
 <b>Vue d'ensemble</b>
-Linux Mint est basé sur Ubuntu. Il utilise les dépôts Ubuntu donc les mêmes paquets sont disponibles sur les deux distributions. Linux Mint est préféré par d'autres au détriment d'Ubuntu parceque celui-ci ne vient pas avec certains logiciels propriétaires que Ubuntu comprend telque Unity.
+Linux Mint est basé sur Ubuntu. Il utilise les dépôts Ubuntu donc les mêmes paquets sont disponibles sur les deux distributions. Linux Mint est préféré par d'autres au détriment d'Ubuntu parce que celui-ci ne vient pas avec certains logiciels propriétaires que Ubuntu comprend tel que Unity.
 
 <b>Gestion des paquets</b>
 Puisque basé sur Ubuntu, il utilise le gestionnaire des paquets de Debian.

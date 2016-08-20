@@ -1,8 +1,8 @@
-# Tarihçe
+#Tarihçe
 
 ## Ders İçeriği
 
-Merhaba! Görünene göre Linux olarak bilinen bu muhteşem dünyaya adım atmaya karar verdin. En iyisi kemerini sıkı bağla, çünkü uzun ve zorlu bir yolculuk olacak. Benim adım Penguen Pete, sana bu yolculukta rehberlik yapmak üzere buradayım. Haydi Linux hakkındaki hikayeyle yavaş yvaş başlayalım.
+Merhaba Çaylak! Görünene göre Linux olarak bilinen bu muhteşem dünyaya adım atmaya karar verdin. En iyisi kemerini sıkı bağla, çünkü uzun ve zorlu bir yolculuk olacak. Benim adım Penguen Pete, sana bu yolculukta rehberlik yapmak üzere buradayım. Haydi Linux hakkındaki hikayeyle yavaş yavaş başlayalım.
 
 Linux'un başlangıç hikayesini öğrenmek için 1969'lara yani Bell Laboratuvarları'ndan Ken Thompson ve Dennis Ritchie'nin UNIX işletim sistemini geliştirdiği zamanlara gidelim. O zamanlar daha taşınabilir olması için C'de tekrar yazılmıştı ve sonunda yaygın kullanılan bir işletim sistemi haline gelmişti.
 
