@@ -1,48 +1,46 @@
-# Inodes
+# Inodes (آی‌نودها)
 
-## Lesson Content
+## محتویات درس
 
-Remember how our filesystem is comprised of all our actual files and a database that manages these files? The database is known as the inode table. 
+خاطرتان هست که چطور فایل‌سیستم از فایل‌های واقعیِ ما، و پایگاه‌داده برای مدیریت این فایل‌ها استفاده می‌کرد؟ آن پایگاه داده به عنوان جدول **آی‌نود** شناخته می‌شود.
 
-<b>What is an inode?</b>
+**یک آی‌نود چیست؟**
 
-An inode (index node) is an entry in this table and there is one for every file. It describes everything about the file, such as:
+یک آی‌نود (index node) یک ورودی در جدول مذکور است که در آن جدول برای هر فایل یک عدد از آن (آی‌نود) موجود است.  آی‌نود توضیح تمام چیزهایی‌ست که یک فایل دارد. مانند:
 
-<ul>
-<li>File type - regular file, directory, character device, etc</li>
-<li>Owner</li>
-<li>Group</li>
-<li>Access permissions</li>
-<li>Timestamps - mtime (time of last file modification), ctime (time of last attribute change), atime (time of last access)</li>
-<li>Number of hardlinks to the file</li>
-<li>Size of the file</li>
-<li>Number of blocks allocated to the file</li>
-<li>Pointers to the data blocks of the file - most important!</li>
-</ul>
++ نوع فایل – فایل معمولی، دایرکتوری، کاراکتر دیوایس که اجازه‌ی دسترسی به سخت‌افزار را به صورت مستقیم فراهم می‌کند و غیره
++ صاحب
++ گروه
++مجوزهای دسترسی
++ تایم‌استمپز – mtime (زمان آخرین دستکاری فایل)، ctime (زمان آخرین تغییر ویژگی فایل)، atime (زمان آخرین دسترسی به فایل)
++ تعداد لینک‌های سخت به یک فایل (هاردلینک)
++ اندازه یا حجم فایل
++ تعداد بلاک‌هایی که توسط فایل اشغال شده است
++ نشانگر به بلاک‌های داده‌ی فایل – مهم‌ترین اطلاعاتی که آی‌نود دارد، همین است
 
-Basically inodes store everything about the file, except the filename and the file itself!
+در اصل آی‌نود تمام جزئیات فایل را می‌داند به غیر از نام و البته خودِ فایل.
 
-<b>When are inodes created?</b>
+**چه زمانی آی‌نودها ساخته می‌شوند؟**
 
-When a filesystem is created, space for inodes is allocated as well. There are algorithms that take place to determine how much inode space you need depending on the volume of the disk and more. You've probably at some point in your life seen errors for out of disk space issues. Well the same can occur for inodes as well (although less common), you can run out of inodes and therefore be unable to create more files. Remember data storage depends on both the data and the database (inodes). 
+زمانی که فایل‌سیستم را می‌سازید، فضایی هم برای آی‌نودها اختصاص داده می‌شود. بر اساس اطلاعاتی مانند حجم دیسک و غیره، فضایی برای آی‌نود در نظر گرفته می‌شود. حتماً شده که با خطای «دیسک سخت پر شده» در طول عمر خود مواجه شده‌اید. این مورد برای آی‌نودها هم می‌تواند اتفاق بیفتد (هرچند نادرتر است). آی‌نودهای شما ممکن است تمام شود و به تبع آن قادر نباشید که فایل‌های جدیدی را بسازید. همیشه در خاطرتان باشد که ذخیره‌ساز اطلاعات به خود اطلاعات و پایگاه داده‌‌ی این اطلاعات (یا همان آی‌نود) وابسته است.
 
-To see how many inodes are left on your system, use the command <b>df -i</b>
+برای دیدن مقدار باقیمانده‌ی آی‌نودهای موجود بر روی سیستم خود می‌توانید از دستور **df -i** استفاده کنید.
 
-<b>Inode information</b>
+**اطلاعات آی‌نود**
 
-Inodes are identified by numbers, when a file gets created it is assigned an inode number, the number is assigned in sequential order. However, you may sometimes notice when you create a new file, it gets an inode number that is lower than others, this is because once inodes are deleted, they can be reused by other files. To view inode numbers run <b>ls -li</b>:
+آی‌نودها با اعداد شناسایی می‌شوند. زمانی که یک فایل ساخته می‌شود، یک شماره‌ی آی‌نود به آن تعلق می‌گیرد. این اعداد به ترتیب، یکی پس از دیگری به فایل‌ها اختصاص داده می‌شود. هر چند بعضی وقت‌ها می‌بینید که شماره‌ی آی‌نودی که به فایل جدید اختصاص داده شده است، پایین‌تر از برخی دیگر از آی‌نودهاست. چرا این اتفاق می‌افتد؟ زمانی که یک آی‌نود حذف می‌شود، آن‌ها آماده‌ی استفاده مجدد برای فایل‌‌های دیگر می‌شوند. برای دیدن شماره‌ی آی‌نود می‌توانید از فرمان **ls -li** استفاده کنید.
 
-<pre>
+```
 pete@icebox:~$ ls -li
 140 drwxr-xr-x 2 pete pete 6 Jan 20 20:13 Desktop
 141 drwxr-xr-x 2 pete pete 6 Jan 20 20:01 Documents
-</pre>
+```
 
-The first field in this command lists the inode number.
+اولین فیلدِ خروجی این فرمان، شماره‌ی آی‌نودها را لیست کرده است.
 
-You can also see detailed information about a file with stat, it tells you information about the inode as well.
+همچنین می‌توانید اطلاعات جزئی‌تر در خصوص فایل را با استفاده از stat به دست بیاورید. این فرمان اطلاعات لازم در خصوص آی‌نود را نیز در اختیارتان قرار می‌دهد.
 
-<pre>
+```
 pete@icebox:~$ stat ~/Desktop/
   File: ‘/home/pete/Desktop/’
   Size: 6               Blocks: 0          IO Block: 4096   directory
@@ -52,21 +50,20 @@ Access: 2016-01-20 20:13:50.647435982 -0800
 Modify: 2016-01-20 20:13:06.191675843 -0800
 Change: 2016-01-20 20:13:06.191675843 -0800
  Birth: -
-</pre>
+```
 
+**آی‌نودها چطور فایل‌ها را پیدا می‌کنند؟**
 
-<b>How do inodes locate files?</b>
+می‌دانیم که اطلاعاتمان جایی در دیسک جای خوش کرده، ولی این اطلاعات که در یک تسلسل پیوسته نیستند در نتیجه مجبوریم برای ردیابی آن‌ها از آی‌نودها استفاده کنید. آی‌نودها نشانگری را به سمت بلاک داده‌های فایل شما، در خود دارند. در یک فایل‌سیستم معمولی (و نه همه چون کارکرد آن‌ها با هم متفاوت است) هر آی‌نود شامل ۱۵ نشانگر می‌شود. ۱۲ نشانگر اولیه مستقیماً به بلاک‌های داده اشاره دارند. نشانگر ۱۳ به بلاکی که شامل نشانگرها برای بلاک‌های بیشتر داده است اشاره دارد. نشانگر ۱۴ به یک بلاک تو در توی دیگری از نشانگرها اشاره دارد. و نشانگر ۱۵ باز هم به یک بلاک دیگر از نشانگرها! گیج شدید؟ می‌دانم! دلیل وجود این همه نشانگر تودرتو چیست؟ دلیلش حفظ ساختار یکسان آی‌نود برای هر آی‌نود است، که در کنارش قابلیت اشاره به فایل‌ها با حجم‌های متفاوت را نیز بتواند داشته باشد. اگر یک فایل کوچک دارید، با استفاده از دوزاده نشانگر مستقیم، سریع‌تر می‌توانید پیدایش کنید؛ فایل‌های بزرگ‌تر می‌توانند توسط نشانگرهای تودرتو پیدا شوند. در هر دو صورت ساختار آی‌نود یکسان است.
 
-We know our data is out there on the disk somewhere, unfortunately it probably wasn't stored sequentially, so we have to use inodes. Inodes point to the actual data blocks of your files. In a typical filesystem (not all work the same), each inode contains 15 pointers, the first 12 pointers point directly to the data blocks. The 13th pointer, points to a block containing pointers to more blocks, the 14th pointer points to another nested block of pointers, and the 15th pointer points yet again to another block of pointers! Confusing, I know! The reason this is done this way is to keep the inode structure the same for every inode, but be able to reference files of different sizes. If you had a small file, you could find it quicker with the first 12 direct pointers, larger files can be found with the nests of pointers. Either way the structure of the inode is the same.
+## تمرین
 
-## Exercise
+چند شماره‌ی آی‌نود موجود بر روی سیستم خود را از نظر بگذرانید، کدامشان به صورت معمول زودتر ساخته شده‌اند؟
 
-Observe some inode numbers for different files, which ones are usually created first?
+## سؤال آزمون
 
-## Quiz Question
+چطور می‌توانید بفهمید که چه مقداری آی‌نود بر روی سیستم شما باقی مانده است؟
 
-How do you see how many inodes are left on your system?
-
-## Quiz Answer
+## پاسخ آزمون
 
 df -i
