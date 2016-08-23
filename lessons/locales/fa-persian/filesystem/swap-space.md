@@ -1,38 +1,36 @@
 # swap
 
-## Lesson Content
+## محتویات درس
 
-In our previous example, I showed you how to see your partition table, let's revisit that example, more specifically this line:
+در مثال قبلی، به شما نحوه‌ی دیدن جدول پارتیشن را نشان دادیم. بیایید به همان مثال برگردیم و یک خط ویژه را با دقت مضاعفی بررسی کنیم.
 
-<pre>
+```
 Number  Start   End     Size    Type      File system     Flags
  5      6861MB  7380MB  519MB   logical   linux-swap(v1)
-</pre>
+```
 
-What is this swap partition? Well swap is what we used to allocate virtual memory to our system. If you are low on memory, the system uses this partition to "swap" pieces of memory of idle processes to the disk, so you're not bogged for memory.
+پارتیشن سواپ (SWAP) چیست؟ سواپ در حقیقت حافظه‌ی مجازی اختصاص داده شده به سیستم، محسوب می‌شود. اگر با کمبود حافظه‌ی اصلی (RAM) مواجه شوید، سیستم از سواپ برای جابجا کردن قسمت‌هایی از حافظه که در وضعیت بی‌کار به سر می‌برند به پارتیشن مذکور استفاده می‌کند، در نتیجه سیستم شما به خاطر کمبود حافظه کُند نمی‌شود. اصلاً Swap در انگلیسی به معنی «جابجا یا تعویض کردن دو چیز» است.
 
-<b>Using a partition for swap space</b>
+**استفاده از یک پارتیشن برای فضای سواپ**
 
-Let's say we wanted to set our partition of /dev/sdb2 to be used for swap space. 
+فرض کنید که می‌خواهیم پارتیشنی که در مسیر ‎/dev/sdb2 قرار دارد را به فضای سواپ اختصاص دهیم.
 
-<ol>
-<li>First make sure we don't have anything on the partition</li>
-<li>Run: mkswap /dev/sdb2 to initialize swap areas</li>
-<li>Run: swapon /dev/sdb2 this will enable the swap device</li>
-<li>If you want the swap partition to persist on bootup, you need to add an entry to the /etc/fstab file. sw is the filesystem type that you'll use.</li>
-<li>To remove swap: swapoff /dev/sdb2</li>
-</ol>
++ اول مطمئن شوید که هیچ اطلاعات خاصی بر روی پارتیشن مذکور ندارید، چرا که نابود خواهند شد.
++ فرمان mkswap /dev/sdb2 را برای آماده‌سازی فضای سواپ صادر کنید.
++فرمان swapon /dev/sdb2 را برای فعال کردن دیوایس سواپ صادر کنید.
++ اگر می‌خواهید که پارتیشن سواپ از زمان راه‌اندازی مورد استفاده قرار بگیرد، بایستی یک ورودی به فایل ‎/etc/fstab اضافه کنید. sw نوع فایل‌سیستم شما برای سواپ خواهد بود.
++ شاید به هر دلیلی نخواهید که از سواپ استفاده کنید. برای این کار دستور swapoff /dev/sdb2 را بزنید. و اگر خطی به fstab اضافه کرده‌اید، حذفش کنید.
 
-Generally you should allocate about twice as much swap space as you have memory. But modern systems today are usually pretty powerful enough and have enough RAM as it is.
+در حالت کلی شما بایستی فضایی معادل دو برابر حافظه‌ی اصلی خود را به سواپ اختصاص دهید. با این حال در سیستم‌های امروزی معمولاً آنقدر حافظه‌ی اصلی وجود دارد که به ندرت نیازی به استفاده از سواپ می‌شود، در نتیجه لازم نیست قاعده‌ی بالا را رعایت کنید.
 
-## Exercise
+## تمرین
 
-Partition the free space in the USB drive for swap space.
+فضای خالی روی درایو USB را برای فضای سواپ آماده کنید.
 
-## Quiz Question
+## سؤال آزمون
 
-What is the command to enable swap space on a device? 
+چه دستوری را برای فعال کردن سواپ بر روی یک دیوایس، به کار می‌گیرید؟
 
-## Quiz Answer
+## پاسخ آزمون
 
 swapon
