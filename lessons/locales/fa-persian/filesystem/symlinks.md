@@ -1,22 +1,22 @@
 # symlinks
 
-## Lesson Content
+## محتویات درس
 
-Let's use a previous example of inode information: 
+بد نیست با مثالی که در بخش آی‌نود دیدیم، شروع کنیم:
 
-<pre>
+```
 pete@icebox:~$ ls -li
 140 drwxr-xr-x 2 pete pete 6 Jan 20 20:13 Desktop
 141 drwxr-xr-x 2 pete pete 6 Jan 20 20:01 Documents
-</pre>
+```
 
-You may have noticed that we've been glossing over the third field in the ls command, that field is the link count. The link count is the total number of hard links a file has, well that doesn't mean anything to you right now. So let's discuss links first. 
+شاید شما هم متوجه شده باشید که ما توجه چندانی به سومین فیلد در خروجی فرمان ls نداشتیم. ولی این فیلد چیست؟ پاسخ ساده است: شمارِ لینک‌هایی که یک فایل دارد! خب این چه معنی می‌دهد؟ بگذارید در خصوص لینک‌ها کمی بیشتر برای‌تان بگویم تا به شمار لینک‌ها هم برسیم.
 
-<b>Symlinks</b>
+**Symlinks/سیم‌لینک‌ها**
 
-In the Windows operating system, there are things known as shortcuts, shortcuts are just aliases to other files. If you do something to the original file, you could potentially break the shortcut. In Linux, the equivalent of shortcuts are symbolic links (or soft links or symlinks). Symlinks allow us to link to another file by its filename. Another type of links found in Linux are hardlinks, these are actually another file with a link to an inode. Let's see what I mean in practice starting with symlinks.
+در سیستم‌عامل ویندوز، چیزی به اسم شورت‌کات یا میانبُر وجود دارد. میانبرها راه‌های دستیابی ثانویه به فایل‌های دیگر محسوب می‌شوند. اگر شما کاری با فایل اصلی بکنید، احتمال اینکه میانبر را به اصطلاح بشکنید یا خراب کنید، وجود دارد. در لینوکس، معادل میانبرها، به اسم سیمبالیک‌لینک (یا سافت‌لینک یا سیم‌لینک) شناخته می‌شوند. سیم‌لینک‌ها به ما اجازه‌ی برقراری یک پیوند بین فایل از طریق نامش را فراهم می‌کنند. نوع دیگر پیوندها، هاردلینک خوانده می‌شود که در اصل یک فایل مجزا با پیوندی به یک آی‌نود هستند. حالا بیایید ببینید که این‌ها در عمل چه هستند.
 
-<pre>
+```
 pete@icebox:~/Desktop$ echo 'myfile' > myfile
 pete@icebox:~/Desktop$ echo 'myfile2' > myfile2
 pete@icebox:~/Desktop$ echo 'myfile3' > myfile3
@@ -28,15 +28,15 @@ total 12
 93401 -rw-rw-r-- 1 pete pete 8 Jan 21 21:36 myfile2
 93402 -rw-rw-r-- 1 pete pete 8 Jan 21 21:36 myfile3
 93403 lrwxrwxrwx 1 pete pete 6 Jan 21 21:39 myfilelink -> myfile
-</pre>
+```
 
-You can see that I've made a symbolic link named myfilelink that points to myfile. Symbolic links are denoted by ->. Notice how I got a new inode number though, symlinks are just files that point to filenames. When you modify a symlink, the file also gets modified. Inode numbers are unique to filesystems, you can't have two of the same inode number in a single filesystem, meaning you can't reference a file in a different filesystem by its inode number. However, if you use symlinks they do not use inode numbers, they use filenames, so they can be referenced across different filesystems. 
+در مثال بالا دیدید که من یک سیم‌لینک را با اسم myfilelink که اشاره به myfile دارد، ساختم. سیم‌لینک‌ها با نماد ‎ ->‎ نشان داده می‌شوند. دقت کنید که من یک شماره‌ی جدید آی‌نود به دست آوردم. سیم‌لینک‌ها در حقیقت، فایل‌هایی هستند که به یک نامِ فایل اشاره دارد. زمانی که یک سیم‌لینک را تغییر می‌دهید، آن فایل هم تغییر پیدا می‌کند. شماره‌های آی‌نود برای فایل‌سیستم یکتا هستند و شما نمی‌توانید دو آی‌نود یکسان را در یک فایل‌سیستم داشته باشید. به عبارتی شما نمی‌توانید به فایلی در یک فایل‌سیستم دیگر، با استفاده از آی‌نود پیوندی برقرار کنید. ولی برای ساخت میانبر در بین فایل‌سیستم‌های مختلف چه کاری باید انجام داد؟ از آنجایی که سیم‌لینک‌ها اشاره به نامِ فایل دارند و از آی‌نود برای ایجاد پیوند استفاده نمی‌کنند، می‌توانید از این نمونه لینک‌ها به این منظور استفاده کنید.
 
-<b>Hardlinks</b>
+**هاردلینک‌ها**
 
-Let's see an example of a hardlink:
+با هم نگاهی به یک مثال از هاردلینک می‌اندازیم.
 
-<pre>
+```
 pete@icebox:~/Desktop$ ln myfile2 myhardlink
 pete@icebox:~/Desktop$ ls -li
 total 16
@@ -45,32 +45,30 @@ total 16
 93402 -rw-rw-r-- 1 pete pete 8 Jan 21 21:36 myfile3
 93403 lrwxrwxrwx 1 pete pete 6 Jan 21 21:39 myfilelink -> myfile
 93401 -rw-rw-r-- 2 pete pete 8 Jan 21 21:36 myhardlink
-</pre>
+```
 
-A hardlink just creates another file with a link to the same inode. So if I modified the contents of myfile2 or myhardlink, the change would be seen on both, but if I deleted myfile2, the file would still be accessible through myhardlink. Here is where our link count in the ls command comes into play. The link count is the number of hardlinks that an inode has, when you remove a file, it will decrease that link count. The inode only gets deleted when all hardlinks to the inode have been deleted. When you create a file, it's link count is 1 because it is the only file that is pointing to that inode. Unlike symlinks, hardlinks do not span filesystems because inodes are unique to the filesystem. 
+هاردلینک، یک فایل دیگر را می‌سازد و آن را به آی‌نود مشابه فایل اولیه، پیوند می‌زند. اگر من محتویات myfile2 یا myhardlink را دستکاری کنم، تغییرات در هر دو فایل مشاهده خواهد شد، ولی اگر myfile2 را حذف کنم، فایل هنوز از طریق myhardlink در دسترس خواهد بود. اینجاست که شماره‌ی پیوندی که در خروجی دستور ls دیدیم وارد بازی می‌شود. این شماره‌ی پیوند، تعداد هاردلینک‌هایی‌ست که یک آی‌نود دارد، و زمانی که شما یک فایل را حذف می‌کنید، تعداد آن‌ها کاهش پیدا می‌کند. آی‌نود هم تنها زمانی حذف می‌شود که تمامی فایل‌های پیوند خورده به آن، حذف شوند. زمانی که فایلی را می‌سازید، این عدد ۱/یک خواهد بود، به این معنی که آی‌نود مذکور، تنها به یک فایل (که فایل ساخته شده باشد) اشاره دارد. برخلاف سیم‌لینک‌ها، شما نمی‌توانید از هاردلینک در بین فایل‌سیستم‌های مختلف استفاده کنید چرا که هر فایل‌سیستم شماره‌های آی‌نود مربوط به خود را دارد.
 
-<b>Creating a symlink</b>
+**ساخت یک سیم‌لینک**
 
-<pre>
-$ ln -s myfile mylink</pre>
+```$ ln -s myfile mylink```
 
-To create a symbolic link, you use the ln command with -s for symbolic and you specific a target file and then a link name. 
+برای ساخت یک سیم‌لینک، می‌توانید از دستور ln به همراه ‎-s به معنی سیمبالیک بودن لینک، استفاده کنید. کافیست که بعد از دستور و سوئیچ ‎-s آدرس فایل و سپس نام لینکی که قرار است بسازید را وارد و فرمان را صادر کنید.
 
-<b>Creating a hardlink</b>
+**ساخت یک هاردلینک**
 
-<pre>
-$ ln somefile somelink</pre>
+```$ ln somefile somelink```
 
-Similar to a symlink creation, except this time you leave out the -s.
+درست به مانند ساخت سیم‌لینک از ln ولی اینبار بدون استفاده از سوئیچ s می‌توانید یک هاردلینک بسازید.
 
-## Exercise
+## تمرین
 
-Play around with making symlinks and hardlinks, delete a couple and see what happens.
+کمی سیم‌لینک و هاردلینک بسازید تا با نحوه‌ی ساختن آن‌ها آشنا شوید و سپس حذفشان کنید.
 
-## Quiz Question
+## سؤال آزمون
 
-What is the command used to make a symlink?
+از چه دستوری برای ساخت یک سیم‌لینک استفاده می‌کنید؟
 
-## Quiz Answer
+## پاسخ آزمون
 
 ln -s
