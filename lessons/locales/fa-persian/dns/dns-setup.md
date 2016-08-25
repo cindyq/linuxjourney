@@ -1,31 +1,45 @@
-# DNS Setup
+# پیاده‌سازی DNS
 
-## Lesson Content
+## محتوای درس
 
-We won't got through setting up a DNS server, as that would be quite a lengthy tutorial. Instead here is a quick comparison list of the popular DNS servers to use with Linux.
+در این بخش نمی‌خواهیم مراحل کامل پیاده‌سازی یک سرور DNS را شرح دهیم‌، چرا که این
+مبحث خود نیازمند یک راهنمای طولانی است. در عوض در این‌جا لیستی از DNS سرور‌های
+محبوبی که می‌توانید با لینوکس استفاده کنید را معرفی کرده و به صورت کوتاه
+مقایسه‌شان می‌کنیم.
 
-<b>BIND</b>
+### ‏BIND
 
-The most popular DNS server on the Internet, it's the standard that is used with Linux distributions. It was originally developed at the University of California at Berkeley hence the name BIND (Berkeley Internet Name Domain). If you need full-featured power and flexibility, you can't go wrong with BIND.
+معروف‌ترین DNS سرور در اینترنت که به شکل یک استاندارد در توزیع‌های لینوکس در آمده.
+اصالتا در دانشگاه کالیفورنیا در برکلی توسعه داده شد و از همین رو نام BIND (سر
+حرف Berkeley Internet Name Domain) را برایش برگزیدند. اگر به یک DNS سرور کامل و
+قابل انعطاف نیاز دارید‌، BIND انتخاب کاملا درستی برایتان خواهد بود.
 
-<b>DNSmasq</b>
+### ‏DNSmasq
 
-Lightweight and much easier to configure than BIND. If you want simplicity and don't need all the bells and whistles of BIND, use DNSmasq. It comes with all the tools you need to setup DHCP and DNS, recommended for a smaller network.
+سبک و بسیار ساده‌تر در تنظیمات در مقایسه با BIND. اگر سادگی از ویژگی‌های مد نظرتان
+است و به تمامی امکانات ارائه شدهٔ BIND نیازی ندارید‌، می‌توانید از DNSmasq استفاده
+کنید. DNSmasq همچنین شامل تمام ابزار‌های مورد نیاز شما برای تنظیم DHCP و DNS
+می‌باشد، و برای شبکه‌های کوچک پیشنهاد می‌شود.
 
-<b>PowerDNS</b>
+## ‏PowerDNS
 
-Full-featured and similar to BIND, it offers you a little bit more flexibility with options. It reads information from multiple databases such as MySQL, PostgreSQL, etc. for easier administration. Just because BIND has been the way we do things, it doesn't mean it has to stay that way.
+کامل و بسیار شبیه به BIND که کمی انعطاف‌پذیری بیشتری در تنظیمات دارد، و برای
+راحتی بیشتر می‌تواند اطلاعات مورد نیازش را از دیتابیس‌های مختلفی چون MySQL,
+PostgreSQL و … بخواند. این که قبلا BIND انتخاب همیشگی‌مان بوده، دلیل نمی‌شود که
+مجبور باشیم در آینده هم به آن وابسته باشیم.
 
-This isn't a complete list, but it should give you an idea of where to look if you are setting up your own DNS server. 
 
-## Exercise
+این لیست کامل نیست‌، ولی می‌تواند این ایده را به شما بدهد که اگر می‌خواهید DNS سرور
+خودتان را راه‌اندازی کنید‌، کجا‌ها به دنبال ابزار مورد نیازتان بگردید.
 
-No exercises for this lesson.
+## تمرینات
 
-## Quiz Question
+برای این درست تمرینی وجود ندارد. 
 
-What is the de facto DNS server for Linux?
+## سوال آزمون
 
-## Quiz Answer
+سرور DNSای که در توزیع‌های لینوکس به صورت یک استاندارد در آمده چه نام دارد؟
+
+## پاسخ آزمون
 
 BIND
