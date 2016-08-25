@@ -1,27 +1,31 @@
-# Arch Linux
+# Arch Linux / آرچ‌لینوکس
 
-## Lesson Content
+## محتویات درس
 
-<b>Overview</b>
-Arch is a lightweight and flexible Linux distribution driven 100% by the community. Similar to Debian, Arch uses a rolling release model so incremental updates eventually become the Stable release. You really need to get your hands dirty to understand the system and its functions, but in turn you get complete and total control of your system.
+**نگاه اجمالی**
 
-<b>Package Management</b>
-It uses its own package manager, Pacman, to install, update and manage packages.
+آرچ یک توزیع لینوکسیِ سبک و انعطاف‌پذیر است که کاملاً توسط جامعه‌ی کاربری مدیریت می‌شود. مانند دبیان، آرچ از مدل انتشار غلطان برای دریافت به‌روزرسانی‌ها به صورت مداوم استفاده می‌کند تا شما همیشه یک نسخه‌ی پایدار و به‌روز سیستم‌عامل را داشته باشید. برای فهمیدن اینکه در قلب سیستم شما چه می‌گذرد و سیستم چطور کار می‌کند، باید آستین‌ها را بالا بزنید. درست است که نسبت به توزیع‌هایی که یک سیستم‌عامل شسته و رفته را جلوی شما می‌گذارند، کارتان مشکل‌تر خواهد بود ولی در عوض بعد از نصب و راه‌اندازی، چنان با اجزاء سیستم آشنا خواهید شد، که کنترل کل سیستم را در زیر دستان خود احساس خواهید کرد.
 
-<b>Configurability</b>
-If you want a lightweight operating system and really want to understand Linux use Arch! There’s a bit of a learning curve, but for the hardcore Linux users, this is a great choice.
+**مدیریت بسته**
 
-<b>Uses</b>
-Great for desktop and laptop. If you also have a small device such as a Raspberry Pi and need to stick a lightweight OS on it, you can’t go wrong with Arch.
+آرچ از مدیرِ بسته‌ی خاص خود به اسم پک‌من (pacman) برای نصب، به‌روزرسانی و مدیریت بسته‌ها استفاده می‌کند.
 
-## Exercise
+**پیکربندی**
 
-If you're interested in having Arch as your operating system, head over to the installation section and give it a try: <a href='https://www.archlinux.org/'>https://www.archlinux.org/</a>
+اگر می‌خواهید که یک سیستم‌عامل سبک داشته باشید و در کنار آن بفهمید که یک سیستم لینوکسی دقیقاً چگونه کار می‌کند، آرچ راست کار شماست! هرچند یادگیری آن کمی زمان خواهد برد، ولی ارزشش را دارد و برای کاربران سمج لینوکسی، انتخاب بسیار هوشمندانه‌ای به حساب می‌آید.
 
-## Quiz Questions
+**موارد استفاده**
 
-What package manager does Arch Linux use?
+آرچ برای رایانه‌های رومیزی و لپ‌تاپ‌ها عالی‌ست. اگر دیوایس کوچکی مثل رسپری‌پای دارید و می‌خواهید که یک سیستم‌عامل سبک بر روی آن نصب کنید، از انتخاب آرچ‌لینوکس پشیمان نخواهید شد.
 
-## Quiz Answer
+## تمرین
+
+اگر بعد از خواندن این نگاه اجمالی به آرچ‌لینوکس علاقه‌مند شدید و خواستید امتحانش کنید، به قسمت نصب بروید و شانسی به این سیستم‌عامل و خودتان بدهید: [https://www.archlinux.org](https://www.archlinux.org/)
+
+## سؤال آزمون
+
+آرچ از چه مدیر بسته‌ای استفاده می‌کند؟
+
+## پاسخ آزمون
 
 Pacman
