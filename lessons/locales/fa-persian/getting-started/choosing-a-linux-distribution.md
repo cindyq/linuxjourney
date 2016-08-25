@@ -1,28 +1,23 @@
-# Choosing a Linux Distribution
+# انتخاب یک توزیع لینوکسی
 
-## Lesson Content
+## محتویات درس
 
-In the previous lesson, we learned about the Linux kernel which powers millions of devices a day. One thing before we move forward, the term Linux is actually quite a misnomer, since it actually refers to the Linux kernel. However, many distributions use the Linux kernel so therefore are commonly known as Linux operating systems. 
+در درس پیشین، ما در خصوص هسته‌ی لینوکس صحبت کردیم. هسته‌ای که میلیون‌ها دستگاه در طول روز، قدرتشان را از آن می‌گیرند. یک موضوع دیگر، قبل از اینکه پیشتر برویم این است که لینوکس یک اصطلاح اشتباهی است چرا که لینوکس، همان هسته‌ی لینوکس است. با این وجود، توزیع‌های فراوانی از (هسته) لینوکس استفاده می‌کنند؛ این توزیع‌ها معمولاً با اصطلاح سیستم‌عامل لینوکسی شناخته می‌شوند در حالی که یک سیستم‌عامل لینوکسی در حقیقت شامل اجزاء بی‌شماری‌ست که هسته‌ی لینوکس تنها یکی از آن‌هاست.
 
-A Linux system is divided into three main parts:
+لینوکس به سه بخش عمده تقسیم می‌شود:
 
-<ul>
-<li>Hardware - This includes all the hardware that your system runs on as well as memory, CPU, disks, etc.</li>
-<li>Linux Kernel - As we discussed above, the kernel is the core of the operating system. It manages the hardware and tells it how to interact with the system.</li>
-<li>User Space - This is where users like yourself will be directly interacting with the system.</li>
-</ul>
++ سخت‌افزار – این قسمت شامل سخت‌افزارهای سیستم شما مانند حافظه‌ی اصلی، پردازنده‌ی مرکزی، دیسک‌ها و غیره می‌شود.
++ هسته لینوکس – همانطور که پیشتر گفتیم، هسته، قلب سیستم‌عامل است که مدیریت سخت‌افزارها را بر عهده دارد و ارتباط بین سیستم و سخت‌افزار را برقرار می‌کند.
++ فضای کاربری – اینجا دقیقاً جایی‌ست که کاربرانی مانند شما با سیستم تعامل دارند.
 
-So the first step we’ll need to take is to install Linux on your machine. You have many options to choose from and this course will help inform you and get you started on choosing a Linux distribution. 
+اولین قدم، طبیعتاً نصب لینوکس بر روی دستگاه‌تان است. انتخاب‌های زیادی در پیش روی شما هستند و ما در این دوره به شما کمک می‌کنیم تا آن چیزی که راست کار شماست را برای‌تان مشخص نمائیم.
 
-There are many Linux distributions to choose from, we’ll just go over the most popular options. 
+## تمرین
 
+تمرینی برای این درس در کار نیست. خوش بگذرانید!
 
-## Exercise
+## سؤال آزمون
 
-No exercises for this lesson.
+سؤالی هم نیست، امروز شانس با شما یار است!
 
-## Quiz Question
-
-No questions, skip ahead!
-
-## Quiz Answer
+## پاسخ آزمون
