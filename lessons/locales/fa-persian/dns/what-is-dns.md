@@ -1,21 +1,33 @@
-# What is DNS?
+# ‏DNS چیست؟
 
-## Lesson Content
+# محتوای درس
 
-Imagine if every time you wanted to do a search on Google you had to type in http://192.78.12.4 instead of www.google.com. Well without DNS ("Domain Name System") that's exactly what would happen. Low level networking only understands the raw IP address to identify a host. DNS allows us humans to keep track of websites and hosts by name instead of an IP address.  It's like a contact list for the Internet. If you know someone's name but don’t know their phone number, you can simply look it up in your contacts list.
+تصور کنید که هر وقت که می‌خواستید جستجویی در گوگل انجام دهید‌، باید آدرس
+http://192.78.12.4 را به جای www.google.com تایپ می‌کردید. بدون DNS (Domain Name
+Server)‎ این دقیقا اتفاقی است که رخ خواهد داد. شبکه‌های کامپیوتری در سطوح پایین‌تر‌،
+تنها آدرس‌های IP را برای شناسایی میزبان تشخیص می‌دهند. DNS به ما انسان‌ها اجازه
+می‌دهد که به وبسایت‌ها با استفاده از اسامی مرسوم به جای آدرس IP دست‌رسی داشته
+باشیم. مثل لیست تماسی برای اینترنت، اگر شما اسم کسی را می‌دانید ولی شماره تماسش
+را ندارید‌، می‌توانید در لیست تماس به دنبال شماره تماسش بگردید.
 
-DNS is fundamentally a distributed database of hostnames to IP addresses, we manage our database so people know how to get to our site/domain, and somewhere else another person is managing their database so others can get to their domain. These domains are then able to talk to each other and build a massive contact list of the Internet.
+‏DNS اساسا یک پایگاه داده توزیع شده از نگاشت‌های hostname به شناسهٔ IP است. ما
+دیتایس خودمان را برای دسترسی دیگران به وب‌سایت/دامنه‌مان مدیریت می‌کنیم، و کس دیگری
+در جای دیگر‌، همین کار را برای وب‌سایت خودش انجام می‌دهد. این دامنه‌ها نهایتا
+می‌توانند با یک‌دیگر تعامل داشته باشند و لیست تماس بزرگی به اسم اینترنت را ایجاد
+کنند.
 
-In this course, we will go over some basics of DNS, but be wary that DNS is an exhaustive topic and if you really want to get down and dirty with it, you'll need to do some additional research.
+در این درس‌، ما به بعضی از سرفصل‌های پایه‌ای DNS می‌پردازیم‌، ولی آگاه باشید که DNS
+موضوعی گسترده است و اگر می‌خواهید کاملا از روش کارکرد آن آگاهی داشته باشید‌، باید
+کمی بیشتر در موردش تحقیق کنید.
 
-## Exercise
+## تمرینات
 
-No exercises for this lesson.
+این درس تمرینی ندارد.
 
-## Quiz Question
+## سوال آزمون
 
-True or false, DNS helps us find MAC addresses for hostnames?
+درست یا غلط: DNS به ما کمک می‌کند که آدرس MAC یه hostname را پیدا کنیم.
 
-## Quiz Answer
+## پاسخ آزمون
 
-false
+غلط
