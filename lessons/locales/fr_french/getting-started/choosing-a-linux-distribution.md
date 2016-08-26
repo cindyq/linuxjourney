@@ -2,7 +2,7 @@
 
 ## Lesson Content
 
-Dans la leçon précédente, nous avons pris connaissance du noyau Linux qui tourne sur des million d'appareils chaque jour. Une chose avant de continuer, le terme Linux est en fait un abus de langage, puisqu'il fait en fait référence au noyau Linux. Cependant, beaucoup de distributions utilisent le terme noyau Linux par conséquent sont généralement connus comme des systèmes d'exploitation Linux. 
+Dans la leçon précédente, nous avons pris connaissance du noyau Linux qui tourne sur des million d'appareils chaque jour. Une chose avant de continuer, le terme Linux est en fait un abus de langage, puisqu'il fait en fait référence au noyau Linux. Cependant, beaucoup de distributions utilisent le noyau Linux et sont par conséquent connues comme des systèmes d'exploitation Linux. 
 
 Un système Linux est divisé en trois parties:
 
@@ -14,7 +14,7 @@ Un système Linux est divisé en trois parties:
 
 Donc la première chose à faire est d'installer Linux sur votre ordinateur. Vous avez beaucoup de choix et ce cours vous aidera à débuter en choisissant une distribution Linux. 
 
-Ils existent une multitude de distributions Linux pour faire un choix, nous étudierons juste les plus populaires.
+Ils existent une multitude de distributions Linux entre lesquelles choisir, nous étudierons juste les plus populaires.
 
 
 ## Exercise
