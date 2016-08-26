@@ -1,30 +1,33 @@
-# Debian
+# Debian / دبیان
 
-## Lesson Content
+## محتویات درس
 
-<b>Overview</b>
-Debian is an operating system composed entirely of free and open-source software. It’s widely known and has been in development for over 20 years. There are three branches that you can use, Stable, Testing and Unstable. 
+**نگاه اجمالی**
 
-Stable is an overall good branch to be on. Testing and Unstable are rolling releases. This means that any incremental changes in those branches will eventually become Stable. For example, if you wanted to get to the next update from Windows 8 to Windows 10, you’ll have to do a complete Windows 10 installation. However being on the Testing release, you’ll automatically get updates until it becomes the next operating system release without having to do a full installation. 
+دبیان یک سیستم‌عامل ساخته شده از نرم‌افزارهای آزاد و متن‌باز است. این سیستم‌عاملِ نامی، بیشتر از ۲۰ سال در دست توسعه بوده است. در دبیان سه شاخه‌ی اصلی وجود دارد که شما می‌توانید بر اساس نیاز خود یکی از آن‌ها را انتخاب کنید. ۱) Stable / پایدار ۲) Testing / در مرحله‌ی آزمایش ۳) Unstable / غیرپایدار
 
-<b>Package Management</b>
-Debian also uses Debian package management tools. Every Linux distribution installs and manages packages differently and they use different package management tools. We’ll get more into this in a later course. 
+شاخه‌ی پایدار، در کل یک نسخه‌ی خوب برای استفاده‌ی روزمره است. شاخه‌های در مرحله‌ی آزمایش و غیرپایدار، به سبک انتشار غلطان اداره می‌شوند. به این معنی که تغییرات افزایشی که در این شاخه‌ها اعمال می‌شود در نهایت سر از شاخه‌ی پایدار درمی‌آورد. به عنوان مثال، وقتی شما می‌خواهید از ویندوز ۸ به ویندوز ۱۰ نقل مکان کنید، بایستی که پروسه‌ی نصب ویندوز ۱۰ را از سر بگذرانید. ولی در شاخه‌ی تستینگ شما به صورت خودکار به‌روزرسانی‌ها را تا رسیدن به نسخه‌ی بعدی سیستم‌عامل، دریافت می‌کنید؛ بدون اینکه نیاز باشد پروسه‌ی نصب نسخه‌ی جدید را از سر بگذرانید.
 
-<b>Configurability</b>
-Debian may not get the latest updates, but it's extremely stable. If you want a good "core" operating system, this is the one for you.
+**مدیر بسته**
 
-<b>Uses</b>
-Debian is an overall great operating system for any platform.
+دبیان از ابزار مدیریت بسته‌های نرم‌افزاری نیز استفاده می‌کنید. هر توزیع لینوکسی به سبک خود بسته‌های نرم‌افزاری را مدیریت و نصب می‌کند و به همین خاطر از مدیر بسته‌ی متفاوتی نیز استفاده می‌کند. در این دوره، در این باره بیشتر صحبت خواهیم کرد.
 
+**پیکربندی**
 
-## Exercise
+دبیان معمولاً روی لبه‌ی تیغ حرکت نمی‌کند و به همین خاطر از نرم‌افزارهایی در قلب خود استفاده می‌کند که بسیار پایدار هستند. این پایدار بودن نرم‌افزارها، پایدار بودن کل سیستم‌عامل را حاصل شده است. اگر یک سیستم‌عامل قوی از نظر هسته‌ی اولیه می‌خواهید، دبیان راست کار شماست.
 
-If you're interested in having Debian as your operating system, head over to the installation section and give it a try: <a href='https://www.debian.org/'>https://www.debian.org/</a>
+**موارد استفاده**
 
-## Quiz Question
+دبیان در کل برای هر نوع پلت‌فرمی، مناسب است.
 
-What kind of release does Testing and Unstable have? 
+## تمرین
 
-## Quiz Answer
+اگر علاقه به نصب دبیان پیدا کردید، به قسمت مربوطه در سایت دبیان مراجعه و امتحانش کنید:  [https://www.debian.org](https://www.debian.org/)
+
+## سؤال آزمون
+
+شاخه‌های تستینگ و ناپایدار از چه مدل انتشاری استفاده می‌کنند؟
+
+## پاسخ آزمون
 
 Rolling
