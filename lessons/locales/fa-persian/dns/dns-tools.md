@@ -1,12 +1,14 @@
-# DNS Tools
+# ابزار‌های DNS
 
-## Lesson Content
+## محتوای درس
 
-<b>nslookup</b>
+### ‏nslookup
 
-The "name server lookup" tool is used to query name servers to find information about resource records. Let's find where the name server for google.com is:
+ابزار nslookup (name server lookup)‎ برای جستجوی name server‌ها و پیدا کردن
+اطلاعات مربوط به ورودی منابع‌شان استفاده می‌شود. بیایید name server مربوط به
+google.com را پیدا کنیم:
 
-<pre>
+```
 pete@icebox:~$ nslookup www.google.com
 Server:         127.0.1.1
 Address:        127.0.1.1#53
@@ -14,14 +16,15 @@ Address:        127.0.1.1#53
 Non-authoritative answer:
 Name:   www.google.com
 Address: 216.58.192.4
-</pre>
+```
 
-<b>dig</b>
+### ‏dig
 
-Dig (domain information groper) is a powerful tool for getting information about DNS name servers, it is more flexible than nslookup and great for troubleshooting DNS issues.
+ابزار dig (domain information groper)‎ ابزاری قدرمتند برای به دست آوردن اطلاعات
+مربوط به DNS name server است. انعطاف بیشتر نسبت به nslookup این ابزار
+را به ابزاری قدرتمند در پیدا کردن و رفع مشکلات DNS تبدیل کرده است.
 
-
-<pre>
+```
 pete@icebox:~$ dig www.google.com
 
 ; <<>> DiG 9.9.5-3-Ubuntu <<>> www.google.com
@@ -46,16 +49,16 @@ www.google.com.         5       IN      A       74.125.239.148
 ;; SERVER: 127.0.1.1#53(127.0.1.1)
 ;; WHEN: Sun Feb 07 10:14:00 PST 2016
 ;; MSG SIZE  rcvd: 123
-</pre>
+```
 
-## Exercise
+## تمرینات
 
-Read up on the manpage for dig.
+صفحه‌ی راهنمای (man page) مربوط به دستور dig را مطالعه کنید.
 
-## Quiz Question
+## سوال آزمون
 
-What tool is used to get detailed information about DNS name servers? 
+کدام ابزار برای به دست آوردن اطلاعات جامع مربوط به DNS name server استفاده می‌شود؟
 
-## Quiz Answer
+## پاسخ آزمون
 
 dig

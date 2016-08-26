@@ -1,33 +1,56 @@
-# DNS Process
+# فرآیند کارکرد DNS
 
-## Lesson Content
+## محتوای درس
 
-Let's look at an example of how your host finds a domain (catzontheinterwebz.com) with DNS. Essentially, we funnel our way down until we reach the DNS server that knows of that domain.
+بیایید به یک مثال از چگونگی جستجوی یک دامنه (catzontheinterwebz.com) از طریق DNS
+نگاهی بیاندازیم. این بررسی را از بالا به پایین انجام می‌دهیم تا به DNS سروری که
+شامل اطلاعات دامنه می‌شود دست یابیم.
 
-<b>Local DNS Server</b>
+## سرور DNS لوکال
 
-First our host asks, "Where is catzontheinterwebz.com?", our local DNS server doesn't know so it goes and starts from the top of the funnel to ask the Root Servers. Keep in mind that our host is not making these requests to find catzontheinterwebz.com directly, most users talk to a recursive DNS server provided by their ISPs and that server is then tasked to find the location of catzontheinterwebz.com.
+سیستم میزبان ما‌، اول از سرور DNS لوکال‌مان می‌پرسد که «catzontheinterwebz.com
+کجاست؟» که سرور لوکال‌، جوابش را نمی‌داند. پس به سراغ سرورهای اصلی رفته و دامنه
+مورد نظر را سوال می‌کند. به خاطر داشته باشید که سیستم میزبان ما خودش این سوال را
+برای پیدا کردن مستقیم catzontheinterwebz.com نمی‌پرسد، اکثر کاربران با یک DNS
+سرور میانی که توسط ISP (ارائه دهندهٔ دسترسی اینترنت‌شان) تامین می‌شود‌، این کار را
+انجام می‌دهند و آن سرور‌ها مسئولیت پیدا کردن دامنه را برعهده می‌گیرند.
 
-<b>Root Servers</b>
+## سرور‌های اصلی
 
-There are 13 Root Servers for the Internet, they are mirrored and distributed around the world to handle DNS requests for the Internet, so there are really hundreds of servers that are working, they are controlled by different organizations and they contain information about Top-Level Domains. Top-level domains are what you know as .org, .com, .net, etc addresses. So the Root Server doesn't know where catzontheinterwebz.com is, so it tells us ask the .com Top-Level Domain DNS Server at an IP address it gives us. 
+۱۳ سرور اصلی (Root) برای اینترنت وجود دارد که با یکدیگر به طور مرتب همرسانی
+می‌شوند و در جای جای مختلف دنیا قرار دارند تا درخواست‌های DNS کل اینترنت را پاسخ
+دهند. اما این سرور‌های اصلی خودشان نمی‌دانند که catzontheinterwebz.com کجا قرار
+دارد‌، بلکه این اطلاعات در اختیار صد‌ها سروری که توسط سازمان‌های مختلف کنترل
+شده و شامل اطلاعات سطح بالای دامنه‌هاست قرار دارد. منظور از دامنه‌های سطح بالا‌،
+چیزی است که شما به صورت ‎.org, .com, .net و غیره می‌شناسید. از این رو سرور اصلی‌،
+به درخواست شما با راهنمایی‌تان به یکی از این سرور‌های DNS دامنه‌های سطح بالا با
+استفاده از نشان دادن شناسهٔ IP آن سرور به شما فرآیند جستجوی نام دامنه را پی می‌گیرد.
 
-<b>Top-Level Domain</b>
+## دامنه‌های سطح بالا
 
-So now we send another request to the name server that knows about ".com" addresses and asks if it knows where catzontheinterwebz.com is? The TLD doesn't have the catzontheinterwebz.com in their zone files, but it does see a record for the name server for catzontheinterwebz.com. So it gives us the IP address of that name server and tells us to look there.
+پس حالا ما درخواست دیگری به سروری که اطلاعات مورد نیاز دامنه‌های «‎.com» را در
+اختیار دارد ارسال می‌کنیم و می‌پرسیم که آیا می‌داند که catzontheinterwebz.com
+کجاست؟ این TLD (Top-Level Domain)‎ دادهٔ مربوط به catzontheinterwebz.com را در
+zone file‌های خود ندارد ولی ورودی مربوط به name server برای
+catzontheinterwebz.com را می‌بیند. پس آدرس IP آن سرور را در اختیارمان می‌گذارد تا
+در آن‌جا به دنبال جواب سوال‌مان بگردیم.
 
-<b>Authoritative DNS Server</b>
+## سرور DNS معتبر
 
-Now we send a final request to the DNS server that actually has the record we want. The name server sees that it has a zone file for catzontheinterwebz.com and there is a resource record for 'www' for this host. It then gives us the IP address of this host and we can finally see some cats on the Internet. 
+حالا ما درخواست نهایی را برای سرور DNS‌ای که ورودی دادهٔ مورد نیاز ما را در اختیار
+دارد روانه می‌کنیم. name server متوجه می‌شود که zone file مربوط به
+catzontheinterwebz.com را در اختیار دارد و یک ورودی برای 'www' برای این هاست نیز
+موجود است. این سرور نهایتا آدرس IP هاست مورد نظر را برای ما ارسال می‌کند و ما
+می‌توانیم چند گربه را روی اینترنت تماشا کنیم.
 
-## Exercise
+## تمرینات
 
-No exercises for this lesson.
+تمرینی برای این درس وجود ندارد.
 
-## Quiz Question
+## سوال آزمون
 
-What is the abbreviation for the nameservers where .com, .net, .org, etc addresses are found? 
+مخفف نام سروری که اطلاعات مربوط به ‎.com, .net, .org و آدرس‌هایی از این دست را در اختیار دارد چیست؟
 
-## Quiz Answer
+## پاسخ آزمون
 
 TLD

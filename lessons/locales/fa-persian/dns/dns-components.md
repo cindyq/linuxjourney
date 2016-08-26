@@ -1,40 +1,57 @@
-# DNS Components
+# اجزای DNS
 
-## Lesson Content
+# محتوای درس
 
-The DNS database of the Internet relies on sites and organizations providing part of that database. To do that, they need:
+پایگاه داده DNS اینترنت، وابسته به سازمان‌هایی است که بخش‌های مختلفی از داده‌های
+مورد نیاز آن را فراهم می‌کنند، که برای این منظور به موارد زیر نیازمندند:
 
-<b>Name Server</b>
+### ‏‎Name Server
 
-We setup DNS via "name servers", the name servers load up our DNS settings and configs and answers any questions from clients or other servers that want to know things like "Who is google.com?". If the name server doesn't know the answer to that query, it will redirect the request to other name servers. Name servers can be "authoritative", meaning they hold the actual DNS records that you're looking for, or "recursive" meaning they would ask other servers and those servers would ask other servers until they found an authoritative server that contained the DNS records. Recursive servers can also have the information we want cached instead of reaching an authoritative server.
+ما DNS را با استفاده از «name server»ها پیاده‌سازی می‌کنیم‌، name server‌ها‌، تنظیمات
+DNS را بارگذاری می‌کنند و به درخواست‌های کلاینت‌ها یا سرور‌های دیگری که می‌خواهند
+بدانند مثلا «google.com کیست؟» جواب می‌دهند. اگر name serverی جواب این سوال را
+نداند‌، درخواست را به سمت name server دیگری هدایت می‌کند. name server‌ها می‌توانند
+«قابل اطمینان» باشند. به این معنی که یا مقدار اصلی DNSای را که شما جستجو می‌کنید، در خود ذخیره کرده‌اند، و یا «معنای بازگشتی» آن را به این معنی که تا زمانی که
+یک جواب درست شامل مقدار اصلی DNS را پیدا کنند‌، از name server‌های دیگر پرس و جو
+می‌کنند. سرور‌های بازگشتی همچنین می‌توانند این مقدار را به صورت کش برای دسترسی‌های
+بعدی در خود ذخیره کنند.
 
-<b>Zone File</b>
+### فایل محدوده (Zone File)
 
-Inside a name server lives something called zone files. Zone files are how the name server stores information about the domain or how to get to the domain if it doesn't know. 
+داخل هر name server‌، فایلی به اسم «فایل محدوده» وجود دارد. این فایل‌ها شامل
+اطلاعاتی در مورد چگونگی دریافت دامین‌های موجود یا غیرموجود می‌شوند.
 
-<b>Resource Records</b>
+### منابع
 
-A zone file is comprised of entries of resource records. Each line is a record and contains information about hosts, nameservers, other resources, etc. The fields consist of the following: 
+یک zone file‌، شامل داده‌های منابع می‌شود. هر خط یک ورودی است و شامل اطلاعات
+میزبان‌ها‌، nameserver‌ها و دیگر منابع است. فیلد‌های مربوطه به شرح زیر است:
 
-<ul>
-<li>Record name</li>
-<li>TTL - The time after which we discard the record and obtain a new one, in DNS TTL is denoted by time, so records could have a TTL of one hour. The reason we do this is because the Internet is constantly changing, one minute a host can be mapped to X IP address then next it can be at Y IP address</li>
-<li>Class - Namespace of the record information, most commonly IN is used for Internet</li>
-<li>Type - Type of information stored in the record data. We won't get into record types, but you've probably seen common ones like A for address, MX or mail exchanger, etc.</li>
-<li>Data - This field can contain an IP address if it's an A record or something else depending on the record type.</li>
-</ul>
-<pre>
-patty    IN  A      192.168.0.4 
-</pre>
+* نام ورودی (record)
+* TTL: مدت زمانی که پس از آن ما ورودی را باطل کرده تا در یک درخواست جدید دریافتش
+  کنیم. TTL بر اساس زمان محاسبه می‌شود و رکورد‌ها می‌توانند دارای TTL برابر با یک
+  ساعت باشند. دلیل این کارمان این است که اینترنت دائما در حال تغییر است. میزبانی
+  برای یک دقیقه از طریق شناسه IP برابر X در دسترس است ولی یک دقیقه بعد‌، با شناسه
+  Y باید شناسایی شود.
+* Class: محدودهٔ نام (NameSpace) داده‌های ذخیره شده‌، معمولا از IN برای اشاره به
+  رکورد‌های اینترنت استفاده می‌شود.
+* Type: نوع داده‌های ذخیره شده را نشان می‌دهد. ما انواع داده‌ها را مورد بحث قرار
+  نمی‌دهیم ولی شما احتمالا نمونه‌هایی از نوع A برای آدرس و MX برای Mail exchanger
+  را دیده‌اید.
+* Data: این فیلد زمانی که نوع داده A است‌، شامل یک شناسهٔ IP است و همین‌طور نسبت به
+  انواع دیگر داده‌ها تغییر می‌کند.
 
-## Exercise
+```
+patty    IN  A      192.168.0.4
+```
 
-No exercises for this lesson.
+## تمرینات
 
-## Quiz Question
+این بخش تمرینی ندارد.
 
-What resource record type is used for mail exchangers?
+## سوالات آزمون
 
-## Quiz Answer
+نوع (type) مورد استفاده برای ذخیرهٔ رکورد Mail Exchanger چه نام دارد؟
+
+## پاسخ آزمون
 
 MX
