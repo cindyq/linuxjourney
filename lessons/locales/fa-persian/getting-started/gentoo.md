@@ -1,27 +1,31 @@
-# Gentoo
+# جنتو
 
-## Lesson Content
+## محتویات درس
 
-<b>Overview</b>
-Gentoo offers ridiculous flexibility with the operating system at a price. It’s made for advanced users who don’t mind getting their hands dirty with the system.
+**نگاه اجمالی**
 
-<b>Package Management</b>
-Gentoo uses its own package management, Portage. The Portage package management is very modular and easy to maintain, which plays a big part in the operating system as a whole being very flexible.
+جنتو توزیعی‌ست که انعطاف‌پذیری زیادی را به کاربر ارزانی می‌دارد. آنقدر این انعطاف‌پذیری زیاد است که مسخره به نظر می‌رسد و خب این انعطاف‌پذیری زیاد، هزینه‌ای هم به کاربر تحمیل می‌کند و آن «وقتش» است. کاربران حرفه‌ای که اهمیتی نمی‌دهند که تک‌تک پیچ‌های سیستم‌شان را خودشان ببندند، از جنتو خوششان خواهد آمد.
 
-<b>Configurability</b>
-If you’re just getting started with Linux and want to take a more difficult path, I’d choose Gentoo or Arch Linux as your distribution.
+**مدیر بسته**
 
-<b>Uses</b>
-Great for desktop and laptop.
+جنتو از مدیر بسته‌ی اختصاصی خود به اسم Portage استفاده می‌کند. پورتیج بسیار ماژولار است. به راحتی می‌توانید آن را مدیریت کنید و نقش بزرگی در سیستم‌عامل جنتو در اختیار این نرم‌افزار بسیار انعطاف‌پذیر قرار دارد.
 
-## Exercise
+**پیکربندی**
 
-If you're interested in having Gentoo as your operating system, head over to the installation section and give it a try: <a href='https://www.gentoo.org/'>https://www.gentoo.org/</a>
+اگر تازه با لینوکس را شروع کرده‌اید و می‌خواهید راه سخت را برای پیمودن انتخاب کنید، من جنتو یا آرچ‌لینوکس را به شما پیشنهاد می‌دهم، ولی آگاه باشید که اعصاب پولادین لازم دارید.
 
-## Quiz Questions
+**موارد استفاده**
 
-What package management system does Gentoo use?
+جنتو برای رایانه‌های رومیزی و لپ‌تاپ‌ها گزینه‌ی بسیار مناسبی است.
 
-## Quiz Answer
+## تمرین
+
+اگر به جنتو علاقه‌مند شدید و می‌خواهید امتحانش کنید به قسمت نصب وب‌سایتش بروید: [https://www.gentoo.org](https://www.gentoo.org)
+
+## سؤال آزمون
+
+جنتو از چه مدیر بسته‌ای استفاده می‌کند؟
+
+## پاسخ آزمون
 
 Portage
