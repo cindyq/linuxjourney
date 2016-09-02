@@ -1,47 +1,56 @@
-# Systemd Overview
+# نگاهی به Systemd
 
-## Lesson Content
+## محتوای درس
 
-Systemd is slowly becoming the emerging standard for init. If you have a /usr/lib/systemd directory, you're most likely using systemd.
+‏Systemd کم‌کم دارد به سیستم استاندارد پیاده‌سازی init روی لینوکس‌ها تبدیل می‌شود.
+اگر روی سیستم‌تان دایرکتوری‌ای به اسم ‎/usr/lib/systemd دارید‌، به احتمال زیاد از
+این init بهره می‌برید.
 
-Systemd uses goals to get your system up and running. Basically you have a target that you want to achieve and this target also has dependencies that we need to achieve. Systemd is extremely flexible and robust, it does not follow a strict sequence to get processes started. Here's what happens during the typical systemd boot:
+‏Systemd از اهداف برای بالا آوردن سیستم بهره می‌برد. اساسا شما هدفی برای انجام
+دارید و آن هدف‌، پیش‌نیاز‌هایی برای مرتفع شدن دارد. Systemd بسیار انعطاف‌پذیر است، و
+از یک روند ثابت برای شروع پروسه‌ها استفاده نمی‌کند. در ادامه روندی که در واقع رخ
+می‌دهد را بررسی می‌کنیم:
 
-<ol>
-<li>First, systemd loads it's configuration files, usually located in /etc/systemd/system or /usr/lib/systemd/system</li>
-<li>Then it determines its boot goal, which is usually default.target</li>
-<li>Systemd figures out the dependencies of the boot target and activates them</l>
-</ol>
+- اول Systemd فایل‌های تنظیماتش را بارگذاری می‌کنید. این فایل‌ها معمولا در
+  ‎/usr/lib/systemd/system و یا ‎/etc/systemd/system قرار دارند.
+- سپس اهداف بارگذاری سیستم را مشخص می‌کند که معمولا default.target است.
+- در آخر systemd مشخص می‌کند که برای بارگذاری سیستم چه پیش‌نیاز‌هایی لازم است و
+  آن‌ها را فعال می‌کند.
 
-Similar to Sys V runlevels, systemd boots into different targets:
+همچون runlevel‌های Sys V، در واقع systemd نیز‌، در اهداف متفاوتی بارگذاری می‌شود:
 
-<ul>
-<li>poweroff.target - shutdown system</li>
-<li>rescue.target - single user mode</li>
-<li>multi-user.target - multiuser with networking</li>
-<li>graphical.target - multiuser with networking and GUI</li>
-<li>reboot.target - restart</li>
-</ul>
+- ‏poweroff.target: سیستم را خاموش می‌کند. 
+- rescue.target:‌حالت یک کاربره.
+- multi-user.target: حالت چند کاربره.
+- graphical.target: حالت چند کاربره به همراه شبکه و رابط گرافیکی.
+- reboot.target: راه‌اندازی مجدد سیستم. 
 
-The default boot goal of default.target usually points to the graphical.target. 
+معمولا حالت پیش‌فرض هدف default.target به graphical.target اشاره می‌کند. 
 
-The main object that systemd works with are known as units. Systemd doesn't just stop and start services, it can mount filesystems, monitor your network sockets, etc and because of that robustness it has different types of units it operates. The most common units are:
+عنصر اصلی‌ای که systemd با آن کار می‌کند unit نام دارد. Systemd تنها سرویس‌ها را
+خاموش و روشن نمی‌کند. بلکه می‌تواند فایل‌سیستم‌ها را سوار کند، سوکت‌های شبکه را زیر
+نظر بگیرد‌، و چون بسیار قدرتمند است‌، unit‌های متفاوتی دارد که می‌تواند بر اساس آن‌ها
+عمل کند. unit‌های مطرح اصلی به شرح زیر‌اند:
 
-<ul>
-<li>Service units - these are the services we've been starting and stopping, these unit files end in .service</li>
-<li>Mount units - These mount filesystems, these unit files end in .mount</li>
-<li>Target units - These group together other units, the files end in .target</li>
-</ul>
+- ‏unit سرویس‌ها: به ما اجازهٔ شروع و متوقف کردن سرویس‌ها را می‌دهند و در فایل‌هایی با
+  پسوند ‎.service ذخیره می‌شوند.
+- unit‌های سروار کردن:‌ وظیفهٔ سوار کردن فایل‌سیستم را دارند و در فایل‌هایی با پسوند
+  ‎.mount ذخیره می‌شوند.
+- unit‌های هدف:‌ که یونیت‌های دیگر را با یک‌دیگر تلفیق می‌کنند و در فایل‌هایی با پسوند
+  ‎.target ذخیره می‌شوند. 
+  
+برای مثال‌، فرض کنید default.target بارگذاری شده است. این هدف‌، سرویس‌های
+netwoking.service و crond.service را تلفیق می‌کنید. پس وقتی ما یک unit را فعال
+می‌کنید‌، هر چیزی که آن unit به آن وابسته است نیز فعال خواهد شد.
 
-For example, let's say we boot into our default.target, well this target groups together the networking.service unit, crond.service unit, etc, so once we activate a single unit, everything below that unit gets activated as well.
+## تمرینات
 
-## Exercise
+این درس تمرینی ندارد. 
 
-No exercises for this lesson.
+## سوالات آزمون
 
-## Quiz Question
+از کدام نوع unit برای تلفیق دیگر unit‌ها استفاده می‌شود؟
 
-What unit is used to group together other units?
-
-## Quiz Answer
+## پاسخ آزمون
 
 target
