@@ -1,27 +1,31 @@
-# Fedora
+# Fedora / فدورا
 
-## Lesson Content
+## محتویات درس
 
-<b>Overview</b>
-Backed by Red Hat, the Fedora Project is community driven containing open-source and free software. Red Hat Enterprise Linux branches off Fedora, so think of Fedora as an upstream RHEL operating system. Eventually RHEL will get updates from Fedora after thorough testing and quality assurance. Think of Fedora as an Ubuntu equivalent that uses a Red Hat backend instead of Debian.
+**نگاه اجمالی**
 
-<b>Package Management</b>
-Uses Red Hat package manager.
+پروژه‌ی فدورا که توسط ردهت پشتیبانی، و توسط جامعه‌ی کاربری جلو برده می‌شود، مجموعه‌ای از نرم‌افزارهای آزاد و باز-متن را گرد هم آورده تا یک توزیع لینوکسی را ارائه کند. ردهت اینترپرایز لینوکس (RHEL)، فدورا را به عنوان شاخه‌ای از خود، ارائه می‌دهد و می‌توانید به فدورا به عنوان یک آپ‌استریم از سیستم‌عامل RHEL نگاه کنید. در نهایت RHEL به‌روز رسانی‌های فدورا را بعد از آزمایش کامل و اطمینان از کیفیت، دریافت می‌کند. فدورا معادل اوبونتو است که از بک‌اند ردهت به جای دبیان استفاده می‌کند.
 
-<b>Configurability</b>
-If you want to use a Red Hat based operating system, this is a user friendly version.
+**مدیریت بسته‌ها**
 
-<b>Uses</b>
-Fedora is great if you want a Red Hat based operating system without the price tag. Recommended for desktop and laptop.
+فدورا از مدیر بسته‌ی ردهت استفاده می‌کند.
 
-## Exercise
+**پیکربندی**
 
-If you're interested in having Fedora as your operating system, head over to the installation section and give it a try: <a href='https://getfedora.org/'>https://getfedora.org/</a>
+اگر می‌خواهید یک سیستم‌عامل ردهتی را استفاده کنید، فدورا نسخه‌ی کاربرپسند آن است.
 
-## Quiz Questions
+**موارد استفاده**
 
-What is RHEL branched off of?
+اگر یک سیستم‌عامل بر پایه‌ی ردهت می‌خواهید، فدورا انتخاب بسیار مناسبی خواهد بود و از طرفی مجانی هم هست. برای استفاده در لپ‌تاپ‌ها و رایانه‌های رومیزی نیز پیشنهاد می‌شود.
 
-## Quiz Answer
+## تمرین
+
+اگر می‌خواهید که فدورا را به عنوان سیستم‌عامل‌تان داشته باشید، به قسمت نصب در سایت فدورا سری بزنید و امتحانش کنید: [https://getfedora.org](https://getfedora.org/)
+
+## سؤال آزمون
+
+چه توزیعی از RHEL منشعب شده است؟
+
+## پاسخ آزمون
 
 Fedora
