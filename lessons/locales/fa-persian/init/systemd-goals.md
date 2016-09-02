@@ -1,12 +1,13 @@
-# Systemd Goals
+# اهداف Systemd
 
-## Lesson Content
+## محتوای درس
 
-We won't get into the details of writing systemd unit files. We will however go over a brief overview of a unit file and how to manually control units. 
+ما به جزئیات نوشتن فایل‌های unit نمی‌پردازیم. ولی نگاهی جزئی به ساختار آن‌ها و
+روش‌های کنترل دستی‌شان خواهیم پرداخت.
 
-Here is a basic service unit file: foobar.service
+در این‌جا یک فایل unit برای سرویسی به اسم foobar.service را مشاهده می‌کنید
 
-<pre>
+```
 [Unit]
 Description=My Foobar
 Before=bar.target
@@ -16,50 +17,71 @@ ExecStart=/usr/bin/foobar
 
 [Install]
 WantedBy=multi-user.target
-</pre>
+```
 
-This is a simple service target, at the beginning of the file we see a section for [Unit], this allows us to give our unit file a description as well as control the ordering of when to activate the unit. The next portion is the [Service] section, under here we can start, stop or reload a service. And the [Install] section is used for dependency. This is only the tip of the iceberg for writing systemd files, so I implore you to read up on the subject if you want to know more. 
+این unit بسیار ساده است‌، در شروع فایل بخشی به اسم [unit] را مشاهده می‌کنید. این
+بخش به ما امکان تعریف توضیحات و چیدمان اجرای unit را می‌دهد. بخش بعدی‌، [Service]
+چگونگی شروع، پایان و بارگذاری مجدد سرویس را نشان می‌دهد. و در آخر بخش [Install]
+برای مدیریت نیازمندی‌ها استفاده شده است. این تنها مشتی نمونهٔ خروار از امکانات
+موجود برای توسعهٔ‌یک فایل systemd است. می‌توانید برای کشف جزئیات بیشتر در موردش روی
+اینترنت منابع بیشتری پیدا کیند.
 
-Now, let's get into some commands you can use with systemd units: 
+حالا بیایید به چند دستور که می‌توانید با systemd استفاده‌اش کنیم بپردازیم:
 
-<b>List units</b>
+### لیست کردن unit‌ها
 
-<pre>$ systemctl list-units</pre>
+```
+$ systemctl list-units
+```
 
-<b>View status of unit</b>
+### مشاهده وضعیت unit‌ها
 
-<pre>$ systemctl status networking.service</pre>
+```
+$ systemctl status networking.service
+```
 
-<b>Start a service</b>
+### شروع یک سرویس 
 
-<pre>$ sudo systemctl start networking.service</pre>
+```
+$ sudo systemctl start networking.service
+```
 
-<b>Stop a service</b>
+### متوقف کردن یک سرویس
 
-<pre>$ sudo systemctl stop networking.service</pre>
+```
+$ sudo systemctl stop networking.service
+```
 
-<b>Restart a service</b>
+### اجرای مجدد یک سرویس
 
-<pre>$ sudo systemctl restart networking.service</pre>
+```
+$ sudo systemctl restart networking.service
+```
 
-<b>Enable a unit</b>
+### فعال کردن یک unit
 
-<pre>$ sudo systemctl enable networking.service</pre>
+```
+$ sudo systemctl enable networking.service
+```
 
-<b>Disable a unit</b>
+### غیرفعال کردن یک unit
 
-<pre>$ sudo systemctl disable networking.service</pre>
 
-Again, you have yet to see how much depth systemd gets into, so read up on it if you want to learn more.
+```
+$ sudo systemctl disable networking.service
+```
 
-## Exercise
+تکرار می‌کنم‌، برای دیدن عمق امکانات systemd‌، بهتر است منابع بیشتری در خصوصش مطالعه کنید.
 
-View the unit statuses and start and stop a few services. What do you observe?
 
-## Quiz Question
+## تمرینات
 
-What is the command to start a service named peanut.service?
+وضعیت سریوس‌های روی سیستم‌تان را بررسی کنید و چند‌تایی را شروع یا متوقف کنید. چه چیزی مشاهده می‌کنید؟
 
-## Quiz Answer
+### سوالات آزمون
 
+دستور شروع برای سرویسی به اسم peanut.service چیست؟
+
+```
 sudo systemctl start peanut.service
+```
