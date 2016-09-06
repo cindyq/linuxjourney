@@ -3,7 +3,7 @@
 ## Lesson Content
 
 <b>Vue d'ensemble</b>
-Gentoo offre une flexibilité réduite avec le système d'exploitation. Il est fait pour des utilisateurs avancés qui n'ont pas peur de se salir les mains avec le système.
+Gentoo offre une flexibilité incoyable avec le système d'exploitation. Il est fait pour des utilisateurs avancés qui n'ont pas peur de mettre les mains dans le cambouis.
 
 <b>Gestion des paquets</b>
 Gentoo utilise son propre gestionnaire des paquets, Portage. Le gestionnaire Portage est très modulable et facile à maintenir, ce qui joue un grand rôle dans le système d'exploitation dans son ensemble étant très flexible.
