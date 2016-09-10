@@ -1,33 +1,47 @@
-# Power States
+# وضعیت‌های Power
 
-## Lesson Content
+## محتوای درس
 
-Hard to believe we haven't actually discussed ways to control your system state through the command line, but when talking about init, we not only talk about the modes that get us starting our system, but also the ones that stop our system.
+باورش سخت است که ما از راه‌های کنترل وضعیت سیستم از طریق خط فرمان صحبت نکرده‌ایم‌،
+اما وقتی از init صحبت می‌کنیم‌، در کنار مد‌هایی که به شروع سیستم می‌انجامند باید به
+مد‌های مربوط به توقف سیستم نیز اشاره کنیم.
 
-To shutdown your system:
+برای خاموش (shutdown) سیستم‌:
 
-<pre>$ sudo shutdown -h now</pre>
+```
+$ sudo shutdown -h now
+```
 
-This will halt the system (power it off), you must also specify a time when you want this to take place. You can add a time in minutes that will shutdown the system in that amount of time.
+سیستم را خاموش می‌کند، و می‌توانید تایین کنید که در چه زمانی این اتفاق بیافتد.
+می‌توانید زمان را به صورت چند دقیقه بعد از الان مشخص کنید که دستور عمل کنید:
 
-<pre>$ sudo shutdown -h +2</pre>
+```
+$ sudo shutdown -h + 2
+```
 
-This will shutdown your system in two minutes. You can also restart with the shutdown command: 
+این دستور سیستم را دو دقیقه بعد خاموش می‌کند. همین‌طور شما می‌توانید سیستم را
+restart هم بکنید:
 
-<pre>$ sudo shutdown -r now</pre>
+```
+$ sudo shutdown -r now
+```    
 
-Or just use the reboot command:
+و یا تنها از دستور reboot استفاده کنید:
 
-<pre>$ sudo reboot</pre>
+```
+$ sudo reboot</pre>
+```
 
-## Exercise
+## تمرین
 
-What do you think is happening with init when you shutdown your machine?
+فکر می‌کنید وقتی سیستم‌تان را خاموش می‌کنید‌، چه اتفاقی برای init رخ می‌دهد؟
 
-## Quiz Question
+## سوالات آزمون
 
-What is the command to poweroff your system in 4 minutes?
+دستور مناسب برای خاموش کردن سیستم در ۴ دقیقه بعد چیست؟
 
-## Quiz Answer
+## پاسخ آزمون
 
+```
 sudo shutdown -h +4
+```
