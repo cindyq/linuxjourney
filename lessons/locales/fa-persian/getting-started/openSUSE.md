@@ -1,27 +1,31 @@
-# openSUSE
+# openSUSE / اوپن‌سوزه
 
-## Lesson Content
+## محتویات درس
 
-<b>Overview</b>
-openSUSE Linux is created by the openSUSE Project. A community that promotes the use of Linux everywhere, working together in an open, transparent and friendly manner as part of the worldwide Free and Open Source Software community. openSUSE is the second oldest still running Linux Distributions and shares the base system with SUSE's award-winning SUSE Linux Enterprise products.
+**نگاه اجمالی**
 
-<b>Package Management</b>
-Uses RPM package manager.
+اوپن‌‌سوزه لینوکس توسط پروژه‌ی اوپن‌سوزه ساخته شده است. جامعه‌ای که استفاده از لینوکس در همه‌جا را تبلیغ می‌کند و به عنوان بخشی از جامعه‌ی نرم‌افزارهای منبع‌باز و آزاد در این حیطه با شفافیت و به سبکی دوستانه در حال تلاش است. اوپن‌سوزه، مقام دوم پر سابقه‌ترین لینوکسی که هنوز به فعالیتش ادامه می‌دهد را دارد و پایه‌ی سیستمش را با مدل تجاری لینوکس سوزه شریک است.
 
-<b>Configurability</b>
-openSUSE is a great choice for a new Linux user. It offers an easy to use graphical installer/administration application (<a href="http://yast.github.io/">YaST</a>) and a tiday base system, easy to tinker with. openSUSE includes everything you need to enjoy the Internet worry free of viruses/spy-ware and to live out your creativity, be it with your photos, videos, music or code.
+**مدیریت بسته**
 
-<b>Uses</b>
-openSUSE Leap is fully capable of being used on a desktop PC and laptop.
+از مدیر بسته‌ی RPM استفاده می‌کند.
 
-## Exercise
+**قابلیت پیکربندی**
 
-If you're interested in having openSUSE as your operating system, head over to the download page and give it a try: <a href='https://software.opensuse.org/'>software.opensuse.org</a>
+اوپن سوزه انتخاب بسیار خوبی برای کاربران تازه‌کار لینوکسی به حساب می‌آید. یک برنامه‌ی گرافیکی مدیریت/نصب به اسم [YaST](http://yast.github.io) در سوزه به شما کمک می‌کند تا سیستم خود را بر اساس تمایلاتتان آماده کنید و یا تغییرات جزئی در آن به وجود آورید. اوپن‌سوزه تمام آن چیزی که از یک سیستم‌عامل می‌خواهید را برایتان به ارمغان می‌آورد. یک سیستم که به وسیله آن در اینترنت بدون دغدغه‌ی ویروس‌ها و نرم‌افزارهای جاسوسی گشت و گذار کنید، عکس‌های، فیلم‌ها، موزیک‌ها و حتی کدهایتان را در چنگ خود داشته باشید و خلاصه در یک کلام، یک سیستم تمام عیار.
 
-## Quiz Questions
+**موارد استفاده**
 
-What is the name of openSUSE's Administration/Installation Tool?
+اوپن‌سوزه برای استفاده از سیستم دسکتاپ و لپ‌تاپ بسیار مناسب است.
 
-## Quiz Answer
+## تمرین
+
+اگر شما مشتاق به داشتن اوپن‌سوزه شدید، به قسمت دانلود سایت اوپن‌سوزه مراجعه، آن را دریافت و در نهایت نصبش کنید. [software.opensuse.org](https://software.opensuse.org)
+
+## سؤال آزمون
+
+اسم ابزار مدیریت/نصب اوپن‌سوزه چیست؟
+
+## پاسخ
 
 yast
