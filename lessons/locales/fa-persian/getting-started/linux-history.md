@@ -1,31 +1,31 @@
-# History
+# تاریخچه
 
-## Lesson Content
+## محتویات درس
 
-Hey rookie! So you decided to dive into this wonderful world known as Linux? Well you better strap in, because it’s gonna be a long and hard road. My name is Penguin Pete and I’m here to guide you through this journey. Let’s get started with a little bit of backstory about Linux.
+سلام تازه‌کار! خب تصمیم گرفتی که یک شیرجه بزنی تو قسمت پر عمق سیستم‌عامل‌ها که همان لینوکس باشد؟ خب پس کمربندت را سفت ببند که سفر طول و درازی در پیش داریم. اسم من Penguin Pete است و راهنمای شما در این سفر هستم. بیایید به عقب برگردیم و از داستان پشت لینوکس شروع کنیم.
 
-To learn about how Linux came to be, let’s go back to the beginning to 1969 where Ken Thompson and Dennis Ritchie of Bell Laboratories developed the UNIX operating system. It was later rewritten in C to make it more portable and eventually became a widely used operating system.
+برای اینکه بفهمید چطور شد که لینوکس پا به عرصه‌ی ظهور گذاشت بایستی به ابتدای سال ۱۹۶۹ برگردیم. زمانی که کن تامپسون و دنیس ریچی در آزمایشگاه‌های بل شروع به توسعه‌ی سیستم‌عامل یونیکس کردند. چیزی که بعدها به زبان سی بازنویسی شد تا قابلیت حمل بیشتری داشته باشد و در نهایت به سیستم‌عامل پر استفاده‌ای تبدیل شود.
 
-A decade or so later, Richard Stallman started working on the GNU (GNU is Not UNIX) project, the GNU kernel called Hurd, which unfortunately never came to completion. The GNU General Public License (GPL), a free software license, was also created as a result of this.
+حدود یک دهه بعد، ریچارد استالمن پروژه‌ی گنو را شروع کرد. هسته‌ی گنو با اسم هِرد شناخته شد ولی متأسفانه نتوانست که به کمال یا حدی برسد که قابل استفاده‌ی گسترده باشد. *گواهی عمومی همگانی گنو،* یک گواهی نرم‌افزارهای آزاد نیز به عنوان نتیجه‌ی این پروژه به وجود آمد.
 
-The kernel is the most important piece in the operating system. It allows the hardware to talk to the software. It also does a whole lot of other things, but we’ll dig into that in a different course. For now, just know that the kernel controls pretty much everything that happens on your system.
+هسته، مهم‌ترین بخش یک سیستم‌عامل است. هسته به سخت‌افزار اجازه می‌دهد که با نرم‌افزار ارتباط برقرار کند. همچنین کارهای زیاد دیگری نیز بر عهده‌ی هسته است که در طول دوره‌های مختلف شما را با آن‌ها آشنا می‌کنیم. فعلاً این را بدانید که تقریباً تمام آنچه در سیستم شما اتفاق می‌افتد توسط هسته کنترل می‌شود.
 
-During this time other efforts such as BSD, MINIX, etc were developed to be UNIX like-systems. However, one thing that all these UNIX like-systems had in common was the lack of a unified kernel.
+در همین بازه‌ی زمانی، تلاش‌های دیگری مانند BSD، MINIX و غیره برای توسعه‌ی سیستم‌های شبه‌یونیکس انجام پذیرفت. هر چند تمام این سیستم‌های شبه یونیک از کمبود یه هسته‌ی یکپارچه رنج می‌بردند.
 
-Then in 1991, a young fellow named Linus Torvalds started developing what we now know today as the Linux kernel.
+بالاخره در سال ۱۹۹۱، یک شخص جوان به اسم لینوس تروالدز شروع به توسعه‌ی چیزی کرد که امروزه به اسم هسته‌ی لینوکس می‌شناسیم.
 
-## Exercise
+## تمرین
+ منابع بیشتر برای مطالعه:
 
-Additional reading:
-<li><a href='https://www.gnu.org/home.en.html'>GNU</a></li>
-<li><a href='https://en.wikipedia.org/wiki/Ken_Thompson'>Ken Thompson</a></li>
-<li><a href='https://stallman.org/'>Richard Stallman</a></li>
-<li><a href='https://en.wikipedia.org/wiki/Linus_Torvalds'>Linus Torvalds</a></li>
+[GNU](https://www.gnu.org/home.en.html)
+[Ken Thompson](https://en.wikipedia.org/wiki/Ken_Thompson)
+[Richard Stallman](https://stallman.org)
+[Linus Torvalds](https://en.wikipedia.org/wiki/Linus_Torvalds)
 
-## Quiz Question
+## سؤال آزمون
 
-Who developed the Linux kernel?
+چه کسی هسته‌ی لینوکس را توسعه داد؟
 
 ## Quiz Answer
 
-Linus Torvalds
+لینوس تروالدز
