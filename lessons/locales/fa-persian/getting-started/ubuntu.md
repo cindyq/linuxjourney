@@ -1,28 +1,33 @@
-# Ubuntu
+# Ubuntu / اوبونتو
 
-## Lesson Content
+## محتویات درس
 
-<b>Overview</b>
-One of the most popular Linux distributions for personal machines is Ubuntu. Ubuntu also releases its own desktop environment manager Unity by default. 
+**نگاه اجمالی**
 
-<b>Package Management</b>
-Ubuntu is a Debian-based operating system developed by Canonical. So it uses a core Debian package management system.
+یکی از محبوب‌ترین توزیع‌های لینوکسی برای سیستم‌های شخصی، اوبونتو است. اوبونتو همچنین مجهز به محیط دسکتاپ خاص خود به اسم یونیتی به صورت پیش‌فرض است.
 
-<b>Configurability</b>
-Ubuntu is a great choice for a beginner who wants to get into Linux. Ubuntu offers ease of use and a great user interface experience that has led to its wide adoption. It’s widely used and supported and is most like other operating systems like OSX and Windows in terms of usability.
+**مدیریت بسته**
 
-<b>Uses</b>
-Great for any platform, desktop, laptop and server.
+اوبونتو بر پایه‌ی دبیان ساخته شده و توسط کانونیکال توسعه پیدا می‌کند. به همین خاطر اوبونتو از مدیر بسته‌ی هسته‌ای دبیان استفاده می‌کند.
 
-## Exercise
+**قابلیت پیکربندی**
 
-If you're interested in having Ubuntu as your operating system, head over to the installation section and give it a try: 
-<a href='http://www.ubuntu.com/'>http://www.ubuntu.com/</a>
+اوبونتو یک انتخاب عالی برای کاربران تازه‌کار یا کسانی که می‌خواهند لینوکس را بهتر بشناسند، به حساب می‌آید. اوبونتو  تجربه‌ی بسیار خوب و راحت رابط کاربری را برای کاربران به ارمغان آورده و همین باعث شده تا به شدت مورد استقبال قرار بگیرد. اوبونتو سیستم‌عامل افراد بیشماری‌ست و به خوبی نیز پشتیبانی می‌شود و از نظر کارایی در رده‌ی سیستم‌عامل‌هایی چون OSX و ویندوز قرار می‌گیرد.
 
-## Quiz Questions
+**موارد استفاده**
 
-What operating system is Ubuntu based off of?
+برای هر سکوی کاری از دسکتاپ، لپ‌تاپ تا سرورها بسیار مناسب است.
 
-## Quiz Answer
+## تمرین
 
-Debian
+اگر به اوبونتو علاقه‌مند شدید، به سایت این توزیع و قسمت نصب آن مراجعه کنید:
+
+[ubuntu.com](http://www.ubuntu.com)
+
+## سؤال آزمون
+
+اوبونتو بر پایه‌ی چه سیستم‌عاملی بنا شده است؟
+
+## پاسخ آزمون
+
+دبیان
