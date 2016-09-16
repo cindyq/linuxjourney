@@ -1,39 +1,41 @@
-# Kernel Installation
+# نصب هسته / کرنل
 
-## Lesson Content
+## محتویات درس
 
-Ok, now that we've got all that boring stuff out of the way, let's talk about actually installing and modifying kernels. You can install multiple kernels on your system, remember in our lesson on the boot process? In our GRUB menu we can choose which kernel to boot to. 
+حالا وقتش شده که تمام آن کارهای کسل‌کننده را از سر راه برداریم و درباره‌ی نصب و دستکاری هسته‌ها صحبت کنیم. شما می‌توانید چند هسته‌ی مختلف رو بر روی سیستم خود نصب کنید. درس پروسه‌ی راه‌اندازی را به یاد می‌آورید؟ در منوی گراب ما می‌توانیم هسته‌ی دلخواه خود برای راه‌اندازی سیستم را انتخاب کنیم.
 
-To see what kernel version you have on your system, use the following command:
+برای دیدن نسخه‌ی کرنلی که بر روی سیستم شما نصب شده از دستور زیر استفاده می‌کنیم:
 
-<pre>$ uname -r
-3.19.0-43-generic</pre>
+```
+$ uname -r
+3.19.0-43-generic
+```
 
-The uname command prints system information, the -r command will print out all of the kernel release version.
+دستور uname اطلاعات سیستم را چاپ می‌کند و سوئیچ ‎-r شماره‌ی نسخه‌ی منتشر شده‌ی کرنل را چاپ می‌کند.
 
-You can install the Linux kernel in different ways, you can download the source package and compile from source or you can install it using package management tools.
+برای نصب کرنل لینوکس گزینه‌های مختلفی پیش روی شماست. می‌توانید بسته‌ی کد منبع را دانلود و سپس کامپایل کنید و یا می‌توانید از ابزار مدیریت بسته برای این کار کمک بگیرید.
 
-<pre>$ sudo apt install linux-generic-lts-vivid</pre>
+```$ sudo apt install linux-generic-lts-vivid```
 
-and then just reboot into the kernel you installed. Simple right? Kind of, you'll need to also install other linux packages such as the linux-headers, linux-image-generic, etc). You can also specify the version number, so the above command can look like, <b>sudo apt install 3.19.0-43-generic</b>
+و بعد از آن با یک شروع‌مجدد، سیستم را با هسته‌ی جدید راه‌اندازی کنید. ساده است؟ البته شما نیاز به نصب هسته‌ی دیگر لینوکس مانند linux-headers و linux-image-generic و غیره در کنار هسته خواهید داشت. همچنین می‌توانید با مشخص کردن نسخه‌ی کرنل، آن را از طریق دستور بالا نصب کنید. به عنوان مثال:
 
-Alternatively, if you just want the updated kernel version, just use dist-upgrade, it performs upgrades to all package on your system:
+``` sudo apt install 3.19.0-43-generic```
 
-<pre>$ sudo apt dist-upgrade</pre>
+روش دیگر برای به‌روزرسانی کرنل استفاده از dist-upgrade است. این دستور تمام بسته‌های نصب شده بر روی سیستم شما را ارتقاء می‌دهد.
 
-There are many different kernel versions, some are used as LTS (long term support), some are the latest and greatest, the compatibility may be very different between kernel versions so you may want to try out different kernels.
+```$ sudo apt dist-upgrade```
 
-## Exercise
+نسخه‌های بسیار مختلفی از کرنل وجود دارد. بعضی از آن‌ها LTS (با پشتیبانی بلندمدت) هستند و بعضی آخرین به‌روزرسانی‌ها را با خود دارند. سازگاری نیز از کرنل به کرنل متفاوت است و شاید بخواهید برای سیستم‌های مختلف از کرنل‌های سازگارتر با آن سیستم استفاده کنید.
 
-<ol>
-<li>Find out what kernel version you have.</li>
-<li>Research the different versions of kernels available</li>
-</ol>
+## تمرین
 
-## Quiz Question
++ نسخه‌ی کرنل نصب شده بر روی سیستم‌تان را در بیاورید.
++ کرنل‌های مختلفِ موجود را بررسی و در خصوصشان تحقیق کنید.
 
-How do you see the kernel version of your system?
+## سؤال آزمون
 
-## Quiz Answer
+چگونه نسخه‌ی کرنل موجود بر روی سیستم خود را می‌بینید؟
+
+## پاسخ آزمون
 
 uname -r
