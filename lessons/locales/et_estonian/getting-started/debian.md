@@ -22,7 +22,7 @@ Kui sul on huvi kasutada Debiani enda operatsioonisüsteemina, mine vaata paigal
 
 ## Küsimus
 
-Kuidas lastakse välja on Testing ja Unstable haru Debiani?
+Kuidas lastakse välja Testing ja Unstable harusid?
 
 ## Vastus
 
