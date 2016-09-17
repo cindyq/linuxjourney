@@ -1,0 +1,9 @@
+Kuidas täpselt peaks tõlkima: 
+
+FEDORA
+*backend
+*Red Hat Enterprise Linux branches off Fedora, so think of Fedora as an upstream RHEL operating system.
+
+LINUX MINT
+*less bloated than Ubuntu
+
