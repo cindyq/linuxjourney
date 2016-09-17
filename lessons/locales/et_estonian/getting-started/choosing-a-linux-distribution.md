@@ -1,25 +1,25 @@
 # Linuxi distributsiooni valimine
 
-## Õppetüki sisu
+## Ã•ppetÃ¼ki sisu
 
-Eelmises õppetükis õppisime Linuxi tuuma kohta, mis varustab miljoneid masinad päevas. Tähelepanek, enne kui liigume edasi, väljend Linux on tegelikult eksitav, kuna viitab tegelikult Linuxi tuumale. Sellegi poolest, paljud distrivutsioonid kasutavad Linuxi tuuma ning on seetõttu tavaliselt tuntud kui Linuxi operatsioonisüsteemid.
+Eelmises ÃµppetÃ¼kis, lugesime Linuxi tuuma kohta, mis varustab iga pÃ¤ev miljoneid masinaid. Enne kui liigume edasi tuleks tÃ¤hele panna, et vÃ¤ljend Linux on pisut eksitav, kuna viitab tegelikut Linuxi tuumale. Sellegi poolest kasutavad paljud distributsioonid Linuxi tuuma ning on seetÃµttu tavapÃ¤raselt tuntud kui Linuxi operatsioonisÃ¼steemid.
 
-Linuxi süsteem on jagatud kolmeks põhiliseks osaks:
+Linuxi sÃ¼steem on jagatud kolmeks pÃµhiliseks osaks:
 
 <ul>
-<li>Riistvara - Siia hulka kuulub kogu riistvara, millel sinu süsteem jookseb, sealhulgas mälu, protsessor, kettad jne.</li>
-<li>Linuxi tuum - Nagu enne arutasime on tuum operatsioonisüsteemi südamik. See haldab riistvara ning ütleb sellele kuidas suhelda süsteemiga.</li>
-<li>Kastuaja ruum - See on ruum, kus kasutaja, nagu sa ise, saab otseselt suhelda süsteemiga.</li>
+<li>Riistvara - Siia hulka kuulub kogu riistvara, millel sinu sÃ¼steem jookseb, sealhulgas mÃ¤lu, protsessor, kettad jne.</li>
+<li>Linuxi tuum - Nagu enne arutasime on tuum operatsioonisÃ¼steemi sÃ¼damik. See haldab riistvara ning Ã¼tleb sellele kuidas suhelda sÃ¼steemiga.</li>
+<li>Kastuaja ruum - See on ruum, kus kasutaja, nagu sa ise, saab otseselt suhelda sÃ¼steemiga.</li>
 </ul>
 
-Esimene samm, mida peame ette võtma, on paigaldada Linux sinu masinasse. Sul on palju võimalusi, mille hulgast valida. See kursus aitab sul saada teadlikuks ning teeb otsa lahti, et oskaksid valida endale Linuxi distributsiooni.
+Esimene ette vÃµetav samm on paigaldada Linux sinu masinasse. Sul on palju vÃµimalusi, mille hulgast valida. See kursus aitab sul saada teadlikuks ning teeb otsa lahti, et oskaksid valida endale Linuxi distributsiooni.
 
 ## Harjutus
 
-Selles õppetükis harjutust pole.
+Selles ÃµppetÃ¼kis harjutust pole.
 
-## Küsimus
+## KÃ¼simus
 
-Küsimusi pole, mine aga edasi!
+KÃ¼simusi pole, mine aga edasi!
 
 ## Vastus  
