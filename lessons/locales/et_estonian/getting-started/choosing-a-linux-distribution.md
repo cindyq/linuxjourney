@@ -1,6 +1,6 @@
-# Linuxi distributsiooni valimine
+﻿# Linuxi distributsiooni valimine
 
-## Õppetunni sisu
+## Tunni sisu
 
 Eelmises õppetükis, lugesime Linuxi tuuma kohta, mis varustab iga päev miljoneid masinaid. Enne kui liigume edasi tuleks tähele panna, et väljend Linux on pisut eksitav, kuna viitab tegelikut Linuxi tuumale. Sellegi poolest kasutavad paljud distributsioonid Linuxi tuuma ning on seetõttu tavapäraselt tuntud kui Linuxi operatsioonisüsteemid.
 

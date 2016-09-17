@@ -1,6 +1,6 @@
-# Ajalugu
+﻿# Ajalugu
 
-## Õppetunni sisu
+## Tunni sisu
 
 Hei algaja! Sa oled siis otsustanud sukelduda sellesse imelisse Linuxina tuntud maailma? Parem kinnita turvavöö, kuna see tee on pikk ja raske. Minu nimi on Pingviin Pete ja ma olen siin selleks, et sind sellel teekonnal abistada. Alustame natukese Linuxi taustalooga.
 
