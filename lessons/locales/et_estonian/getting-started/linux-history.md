@@ -1,32 +1,32 @@
 # Ajalugu
 
-## Õppetunni Sisu
+## Ã•ppetunni sisu
 
-Hei algaja! Sa oled siis otsustanud sukelduda sellesse imelisse Linuxina tuntud maailma? Parem kinnita turvavöö, kuna see tee on pikk ja raske. Minu nimi on Pingviin Pete ja ma olen siin selleks, et sind sellel teekonnal abistada. Alustame natukese Linuxi taustalooga.
+Hei algaja! Sa oled siis otsustanud sukelduda sellesse imelisse Linuxina tuntud maailma? Parem kinnita turvavÃ¶Ã¶, kuna see tee on pikk ja raske. Minu nimi on Pingviin Pete ja ma olen siin selleks, et sind sellel teekonnal abistada. Alustame natukese Linuxi taustalooga.
 
-Selleks, et saada teada, kuidas Linux alguse sai, peame pöörduma tagasi 1969. aasta algusesse, kui Ken Thompson ja Dennis Richie Bell Laboratories'st lõid UNIX operatsiooni süsteemi, mis sai hiljem C keeles ümber kirjutatud, et muuta see portatiivsemaks. Lõpuks sai sellest laialt kasutatav operatsioonisüsteem.
+Selleks, et saada teada, kuidas Linux alguse sai, peame pÃ¶Ã¶rduma tagasi 1969. aasta algusesse, kui Ken Thompson ja Dennis Richie Bell Laboratories'st lÃµid UNIX operatsiooni sÃ¼steemi, mis sai hiljem C keeles Ã¼mber kirjutatud, et muuta see portatiivsemaks. LÃµpuks sai sellest laialt kasutatav operatsioonisÃ¼steem.
 
-Umbes aastakümme hiljem alustas Richard Stallman tööd GNU (GNU is Not UNIX) projektiga, Hurd nimelise GNU tuumaga, mida kahjuks kunagi ei lõpetatud. GNU General Public License (GPL) vabavara litsents loodi samuti selle projekti tulemusena.
+Umbes aastakÃ¼mme hiljem alustas Richard Stallman tÃ¶Ã¶d GNU (GNU is Not UNIX) projektiga, Hurd nimelise GNU tuumaga, mida kahjuks kunagi ei lÃµpetatud. GNU General Public License (GPL) vabavara litsents loodi samuti selle projekti tulemusena.
 
-Tuum on operatsioonisüsteemi kõige olulisem osa. See laseb riistvaral tarkvaraga suhelda. See teeb ka väga palju muid asju, kuid me kaevume sellesse teisel kursusel. Praegu tea lihtsalt, et tuum kontrollib põhimõtteliselt kõike, mis toimub sinu süsteemis.
+Tuum on operatsioonisÃ¼steemi kÃµige olulisem osa. See laseb riistvaral tarkvaraga suhelda. See teeb ka vÃ¤ga palju muid asju, kuid me kaevume sellesse teisel kursusel. Praegu tea lihtsalt, et tuum kontrollib pÃµhimÃµtteliselt kÃµike, mis toimub sinu sÃ¼steemis.
 
-Selle aja jooksul arendati teisigi UNIXilaadseid süsteeme nagu BSD, MINIX jt. Kuid üks asi, mis kõigil nendel UNIXilaadsetel süsteemidel on ühist, on ühtse tuuma puudumine.
+Selle aja jooksul arendati teisigi UNIXilaadseid sÃ¼steeme nagu BSD, MINIX jt. Kuid Ã¼ks asi, mis kÃµigil nendel UNIXilaadsetel sÃ¼steemidel on Ã¼hist, on Ã¼htse tuuma puudumine.
 
-Kuid siis 1991. aastal alustas Linus Torvaldsi nimeline tüüp tööd millegi kallal, mida täna teame Linuxi tuumana.
+Kuid siis 1991. aastal alustas Linus Torvaldsi nimeline tÃ¼Ã¼p tÃ¶Ã¶d millegi kallal, mida tÃ¤na teame Linuxi tuumana.
 
 ## Harjutus
 
-Täiendav lugemine:
+TÃ¤iendav lugemine:
 <li><a href='https://www.gnu.org/home.en.html'>GNU</a></li>
 <li><a href='https://en.wikipedia.org/wiki/Ken_Thompson'>Ken Thompson</a></li>
 <li><a href='https://stallman.org/'>Richard Stallman</a></li>
 <li><a href='https://en.wikipedia.org/wiki/Linus_Torvalds'>Linus Torvalds</a></li>
 
-## Testi Küsimus
+## KÃ¼simus
 
 Kes arendas Linuxi tuuma?
 
-## Testi Vastus
+## Vastus
 
 Linus Torvalds
 
