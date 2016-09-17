@@ -1,4 +1,4 @@
-# Debian
+﻿# Debian
 
 ## Õppetunni sisu
 
@@ -7,7 +7,7 @@ Debian on operatsioonisüsteem, mis on täielikult kokku pandud tasuta ja vabava
 
 Stable on üleüldiselt kasutamiseks hea haru. Testing ja Unstable on jooksvad väljalasked. See tähendab, et igasugused täiendavad muutused nendes saavad kunagi Stable haruks. Näiteks, kui sul on soov uuendada Windows 8 Windows 10ks, siis pead läbi viima täieliku Windows 10 paigaldamise. Kui sa aga alsutasid juba Testing väljalaskega, saaksid sa automaatselt uuendusi, kuni lõpuks muutub see järgmiseks operatsioonisüstemi versiooniks ilma, et peaksid seda tervikuna paigaldama.
 
-<b>Paketi haldus</b>
+<b>Paketihaldus</b>
 Debian kasutab Debiani paketi haldamise tööriistu. Iga Linuxi distributsioon paigaldab ja haldab pakette erinevalt ning nad kasutavad erinevaid paketihalduse tööriistu. Me süveneme sellesse rohkem vähe hiljem.
 
 <b>Seadistatavus</b>

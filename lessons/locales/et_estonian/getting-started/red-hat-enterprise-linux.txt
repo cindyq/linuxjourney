@@ -1,0 +1,9 @@
+# Red Hat Enterprise Linux
+
+## Tunni sisu
+
+<b>Ülevaade</b>
+Red Hat Enterprise Linux, tavaliselt tuntud kui RHEL on arendatud Red Hati poolt. RHELil on peal ranged levitamist piiravad reegleid kuid lähtekood on ikkagi vabalt kättesaadav.
+
+<b>Paketihaldus</b>
+ 
