@@ -5,7 +5,7 @@
 <b>Ülevaade</b>
 Debian on operatsioonisüsteem, mis on täielikult kokku pandud tasuta ja vabavaralisest tarkvarast. See on laialdaselt tuntud ning on olnud arenduses üle 20 aasta. Sellest on kasutamiseks kolm haru: Stable, Testing ja Unstable.
 
-Stable on üleüldiselt kasutamiseks hea haru. Testing ja Unstable on jooksvad väljalasked. See tähendab, et igasugused täiendavad muutused nendes saavad kunagi Stable versiooniks. Näiteks, kui sul on soov uuendada Windows 8 Windows 10ks, siis pead läbi viima täieliku Windows 10 paigaldamise. Kui sa aga alsutasid juba Testing väljalaskega, saaksid sa automaatselt uuendusi, kuni lõpuks muutub see järgmiseks operatsioonisüstemi versiooniks ilma, et peaksid seda tervikuna paigaldama.
+Stable on üleüldiselt kasutamiseks hea haru. Testing ja Unstable on jooksvad väljalasked. See tähendab, et igasugused täiendavad muutused nendes saavad kunagi Stable versiooniks. Näiteks, kui sul on soov uuendada Windows 8 Windows 10ks, siis pead läbi viima täieliku Windows 10 paigaldamise. Kui sa aga alustasid juba Testing väljalaskega, saaksid sa automaatselt uuendusi, kuni lõpuks muutub see järgmiseks operatsioonisüstemi versiooniks ilma, et peaksid seda tervikuna paigaldama.
 
 <b>Paketihaldus</b>
 Debian kasutab Debiani paketi haldamise tööriistu. Iga Linuxi distributsioon paigaldab ja haldab pakette erinevalt ning nad kasutavad erinevaid paketihalduse tööriistu. Me süveneme sellesse rohkem vähe hiljem.
