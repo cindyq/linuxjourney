@@ -2,25 +2,25 @@
 
 ## Tunni sisu
 
-<b>Ülevaade</b>
-Red Hati poolt toetatuna, on avatud lähtekoodiga ning vabavaralise Fedora projekti eestvedajaks kogukond. Fedorast hargneb välja Red Hat Enterprise Linux. Seega võib mõelda justkui oleks Fedora RHELi peajõgi. Lõpuks pärast põhjalikku testimist ja kvaliteedikontrolli saab RHEL uuendused Fedoralt. Kujutle Fedorat kui Ubuntuga samaväärtuslikku, mis kasutab Debiani backendi asemel Red Hati oma.
+<b>Ãœlevaade</b>
+Red Hati poolt toetatuna on avatud lÃ¤htekoodiga ning vabavaralise Fedora projekti eestvedajaks kogukond. Fedorast hargneb vÃ¤lja Red Hat Enterprise Linux. Seega vÃµib mÃµelda justkui oleks Fedora RHELi peajÃµgi. LÃµpuks pÃ¤rast pÃµhjalikku testimist ja kvaliteedikontrolli saab RHEL uuendused Fedoralt. Kujutle Fedorat kui Ubuntuga samavÃ¤Ã¤rtuslikku, mis kasutab Debiani backendi asemel Red Hati oma.
 
 <b>Paketihaldus</b>
 Kasutab Red Hati paketihaldurit.
 
 <b>Seadistatavus</b>
-Kui sul on soov kasutada Red Hatil põhinevat operatsioonisüsteemi, siis see oleks sõbralik vesrioon.
+Kui sul on soov kasutada Red Hatil pÃµhinevat operatsioonisÃ¼steemi, siis Fedora oleks sÃµbralik vesrioon.
 
 <b>Kasutusalad</b>
-Fedora on hea valik, kui soovid Red Hat-põhist operatsioonisüsteemi, kuid ilma hinnasildita. Soovitatud töölaudadele ja sülearvutitele.
+Fedora on hea valik, kui soovid Red Hat-pÃµhist operatsioonisÃ¼steemi, kuid ilma hinnasildita. Soovitatud tÃ¶Ã¶laudadele ja sÃ¼learvutitele.
 
 ## Harjutus
 
-Kui sul on huvi kasutada Fedorat enda operatsioonisüsteemina, mine vaata paigaldamise sektsiooni ja proovi see ära: <a href='https://getfedora.org/'>https://getfedora.org/</a>
+Kui sul on huvi kasutada Fedorat enda operatsioonisÃ¼steemina, mine vaata paigaldamise sektsiooni ja proovi see Ã¤ra: <a href='https://getfedora.org/'>https://getfedora.org/</a>
 
-## Küsimus
+## KÃ¼simus
 
-Millisel operatsioonisüsteemil põhineb RHEL?
+Millisel operatsioonisÃ¼steemil pÃµhineb RHEL?
 
 ## Vastus
 
