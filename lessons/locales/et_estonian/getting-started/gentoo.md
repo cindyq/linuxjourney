@@ -3,23 +3,23 @@
 ## Lesson Content
 
 
-<b>Ülevaade</b>
-Gentoo operatsioonisüsteem pakub naeruväärset paindlikkust, kuid see ka maksab. See on loodud edasijõudnud kasutajatele, kes ei karda süsteemis käsi määrida.
+<b>Ãœlevaade</b>
+Gentoo operatsioonisÃ¼steem pakub naeruvÃ¤Ã¤rselt head paindlikkust, kuid see ka maksab. Gentoo on loodud edasijÃµudnud kasutajatele, kes ei karda sÃ¼steemis kÃ¤si mÃ¤Ã¤rida.
 
 <b>Paketihaldus</b>
-Gentoo kasutab isiklikku paketihaldurit Portage, mis on väga modulaarne ja kergesti hallatav. See mängib ka suurt rolli kogu süsteemi kui terviku paindlikkusel.
+Gentoo kasutab isiklikku paketihaldurit Portage, mis on vÃ¤ga modulaarne ja kergesti hallatav. See mÃ¤ngib ka suurt rolli kogu sÃ¼steemi kui terviku paindlikkusel.
 
 <b>Seadistatavus</b>
-Kui sa alles alustad Linuxiga ja tahad valida natuke keerulisema tee, siis soovitan sulle Gentoo või Arch Linuxi distributsiooni.
+Kui sa alles alustad Linuxiga ja tahad valida natuke keerulisema tee, siis soovitan sulle Gentoo vÃµi Arch Linuxi distributsiooni.
 
 <b>Kasutusalad</b>
-Suurepärane töölauale või sülearvutile.
+SuurepÃ¤rane tÃ¶Ã¶lauale vÃµi sÃ¼learvutile.
 
 ## Harjutus
 
-Kui sul on huvi kasutada Debiani enda operatsioonisüsteemina, mine vaata paigaldamise sektsiooni ja proovi see ära: <a href='https://www.gentoo.org/'>https://www.gentoo.org/</a>
+Kui sul on huvi kasutada Debiani enda operatsioonisÃ¼steemina, mine vaata paigaldamise sektsiooni ja proovi see Ã¤ra: <a href='https://www.gentoo.org/'>https://www.gentoo.org/</a>
 
-## Küsimus
+## KÃ¼simus
 
 Millist paketihaldurit Gentoo kasutab?
 
