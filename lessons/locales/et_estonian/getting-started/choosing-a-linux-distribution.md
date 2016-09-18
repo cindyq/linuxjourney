@@ -2,7 +2,7 @@
 
 ## Tunni sisu
 
-Eelmises õppetükis, lugesime Linuxi tuuma kohta, mis varustab iga päev miljoneid masinaid. Enne kui liigume edasi tuleks tähele panna, et väljend Linux on pisut eksitav, kuna viitab tegelikut Linuxi tuumale. Sellegi poolest kasutavad paljud distributsioonid Linuxi tuuma ning on seetõttu tavapäraselt tuntud kui Linuxi operatsioonisüsteemid.
+Eelmises peatükis, lugesime Linuxi tuuma kohta, mis varustab iga päev miljoneid masinaid. Enne kui liigume edasi tuleks tähele panna, et väljend Linux on pisut eksitav, kuna viitab tegelikut Linuxi tuumale. Sellegi poolest kasutavad paljud distributsioonid Linuxi tuuma ning on seetõttu tavapäraselt tuntud kui Linuxi operatsioonisüsteemid.
 
 Linuxi süsteem on jagatud kolmeks põhiliseks osaks:
 
