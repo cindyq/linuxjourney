@@ -3,20 +3,20 @@
 ## Tunni sisu
 
 <b>Ülevaade</b>
-Red Hat Enterprise Linux, tavaliselt tuntud kui RHEL, on arendatud Red Hati poolt. RHELil on peal ranged levitamist piiravad reeglid, kuid lähtekood on endiselt vabalt kättesaadav.
+Red Hat Enterprise Linux, tavaliselt tuntud kui RHEL, on arendatud Red Hati poolt. RHEL'i levitamist piiravad ranged reeglid, kuid lähtekood on endiselt vabalt kättesaadav.
 
 <b>Paketihaldus</b>
-RHEL kasutab pakettide haldamiseks teistuguseid tööriistu kui Debian. Täpsemalt RPM paketihaldurit, mille kohta me samuti õpime edaspidi rohkem.
+RHEL kasutab teistugust paketihaldussüsteemi kui Debian. Täpsemalt RPM paketihaldurit, mille kohta me samuti õpime edaspidi rohkem.
 
 <b>Seadistatavus</b>
-RHEL-põhised operatsioonisüsteemid erinevad kergelt Debian-põhistest. Kõige märgatavamalt just pakettide haldamise osas. Kui sa otsustad minna RHEL teed, siis oleks parem, kui sa tead, et sa hakkad sellega tööd tegema.
+RHEL-põhised operatsioonisüsteemid erinevad kergelt Debian-põhistest. Kõige märgatavamalt just paketihalduse osas. Kui sa otsustad kasutada RHEL'i siis oleks parem seda pisut rohkem tundma õppida.
 
 <b>Kasutusalad</b>
-Nagu ka nime järgi võib arvata, kasutatakse seda põhiliselt ettevõtetes, seega kui vajad kindlat serveri OSi, siis see sobib väga hästi.
+Nagu ka nime järgi võib arvata, kasutatakse seda põhiliselt ettevõtetes. Seega kui vajad kindlat operatsioonisüsteemi serverisse siis RHEL sobib väga hästi.
 
 ## Harjutus
 
-Kui sul on huvi kasutada RHELi enda operatsioonisüsteemina, mine vaata paigaldamise sektsiooni ja proovi see ära: <a href='http://www.redhat.com/en/technologies/linux-platforms/enterprise-linux/'>https://www.redhat.com/rhel/</a>
+Kui sul on huvi kasutada RHELi enda operatsioonisüsteemina, mine vaata paigaldusjuhist ja proovi ära: <a href='https://www.redhat.com/rhel/'>https://www.redhat.com/rhel/</a>
 
 ## Küsimus
 
