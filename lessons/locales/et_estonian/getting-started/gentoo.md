@@ -7,7 +7,7 @@
 Gentoo operatsioonisüsteem pakub naeruväärselt head paindlikkust, kuid see ka maksab. Gentoo on loodud edasijõudnud kasutajatele, kes ei karda süsteemis käsi määrida.
 
 <b>Paketihaldus</b>
-Gentoo kasutab isiklikku paketihaldurit Portage, mis on väga modulaarne ja kergesti hallatav. See mängib ka suurt rolli kogu süsteemi kui terviku paindlikkusel.
+Gentoo kasutab isiklikku paketihaldurit Portage, mis on väga modulaarne ja kergesti hallatav. Ka see mängib ka suurt rolli kogu süsteemi kui terviku paindlikkusel.
 
 <b>Seadistatavus</b>
 Kui sa alles alustad Linuxiga ja tahad valida natuke keerulisema tee, siis soovitan sulle Gentoo või Arch Linuxi distributsiooni.
