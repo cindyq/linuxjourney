@@ -2,25 +2,25 @@
 
 ## Tunni sisu
 
-<b>Ülevaade</b>
-Üks kõige populaarsem Linuxi distributsioon personaalarvutitele on Ubuntu. Muuhulgas annab Ubuntu vaikimisi välja enda töölaua keskkonna halduri Unity.
+<b>Ãœlevaade</b>
+Ãœks kÃµige populaarsem Linuxi distributsioon personaalarvutitele on Ubuntu. Muuhulgas annab Ubuntu vaikimisi vÃ¤lja enda tÃ¶Ã¶laua keskkonna halduri Unity.
 
 <b>Paketihaldus</b>
-Ubuntu on Debian-põhine Canonicali väljatöötatud operatsioonisüsteem ning kasutab seega ka Debiani keskset paketihalduse süsteemi.
+Ubuntu on Debian-pÃµhine Canonicali vÃ¤ljatÃ¶Ã¶tatud operatsioonisÃ¼steem ning kasutab seega ka Debiani keskset paketihalduse sÃ¼steemi.
 
 <b>Seadistatavus</b>
-Ubuntu on suurepärane valik algajale, kes alles tahab Linuxiga alustada. Ubuntu pakub kasutamise lihtsus ja suurepärast kasutajaliidese kogemust, mis on viinud selle operatsioonisüsteemi laialdase kasutuselevõtnui.
+Ubuntu on suurepÃ¤rane valik igaÃ¼hele, kes alles tahab Linuxiga alustada. Ubuntu pakutav kasutamise lihtsus ja suurepÃ¤rasne kasutajaliidese kogemus on viinud selle operatsioonisÃ¼steemi laialdase kasutuselevÃµtuni.
 
 <b>Kasutusalad</b>
-Suurepärane igale platvormile, töölauale, sülearvutile ja serverile.
+SuurepÃ¤rane igale platvormile, tÃ¶Ã¶lauale, sÃ¼learvutile ja serverile.
 
 ## Harjutus
 
-Kui sul on huvi kasutada Ubuntut enda operatsioonisüsteemina, mine vaata paigaldamise sektsiooni ja proovi see ära: <a href='http://www.ubuntu.com/'>http://www.ubuntu.com/</a>
+Kui sul on huvi kasutada Ubuntut enda operatsioonisÃ¼steemina, mine vaata paigaldamise sektsiooni ja proovi see Ã¤ra: <a href='http://www.ubuntu.com/'>http://www.ubuntu.com/</a>
 
-## Küsimus
+## KÃ¼simus
 
-Millisel operatsioonisüsteemil põhineb Ubuntu?
+Millisel operatsioonisÃ¼steemil pÃµhineb Ubuntu?
 
 ## Vastus
 
