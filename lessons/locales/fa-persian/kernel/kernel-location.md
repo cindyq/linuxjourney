@@ -1,28 +1,26 @@
-# Kernel Location
+# موقعیت مکانی کرنل
 
-## Lesson Content
+## محتویات درس
 
-What happens when you install a new kernel? Well it actually adds a couple of files to your system, these files are usually added to the /boot directory. 
+وقتی یک کرنل جدید نصب می‌کنید، دقیقاً چه اتفاقی می‌افتد؟ شما تعدادی فایل را به سیستم خود اضافه می‌کنید. این فایل‌ها معمولاً به دایرکتوری ‎/boot اضافه می‌شوند.
 
-You will see multiple files for different kernel versions:
+شما فایل‌های مختلفی رو برای نسخه‌های مختلف کرنل خواهید یافت:
 
-<ul>
-<li>vmlinuz - this is the actual linux kernel</li>
-<li>initrd - as we've discussed before, the initrd is used as a temporary file system, used before loading the kernel</li>
-<li>System.map - symbolic lookup table</li>
-<li>config - kernel configuration settings, if you are compiling your own kernel, you can set which modules can be loaded</li>
-</ul>
++ vmlinuz – این فایل همان تصویر یا ایمیج هسته یا کرنل لینوکس است.
++ initrd – همانطور که پیشتر گفتیم، initrd به عنوان یک سیستم‌فایل موقت پیش از بارگزاری کرنل استفاده می‌شود.
++ System.map – جدول مراجعه سمبولیک
++ config – تنظیمات پیکربندی کرنل؛ اگر شما کرنل ویژه‌ی خود را کامپایل کنید، با استفاده از همین تنظیمات می‌توانید ماژول‌هایی که بایستی لود شوند را انتخاب کنید.
 
-If your /boot directory runs out of space, you can always delete old versions of these files or just use a package manager, but be careful when doing maintenance in this directory and don't accidentally delete the kernel you are using.
+اگه دایرکتوری ‎/boot شما با مشکل فضا مواجه شود، می‌توانید نسخه‌های قدیمی‌تر فایل‌های بالا را پاک کنید یا برای نصب کرنل از مدیر بسته‌ی سیستم‌عامل استفاده کنید. مراقب باشید که در حین رُفت و روی این مسیر، کرنلی که در حال استفاده از آن هستید را پاک و سیستم را ناقص نکنید.
 
-## Exercise
+## تمرین
 
-Go into your boot directory and see what files are in there. 
+به دایرکتوری بوت بروید و ببینید که چه فایل‌هایی در آنجا قرار دارد.
 
-## Quiz Question
+## سؤال آزمون
 
-What is the kernel image called in /boot?
+ایمیج کرنل که در ‎/boot قرار دارد، چه نامیده می‌شود؟
 
-## Quiz Answer
+## پاسخ آزمون
 
 vmlinuz
