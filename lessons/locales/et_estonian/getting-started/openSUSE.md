@@ -2,25 +2,25 @@
 
 ## Tunni sisu
 
-<b>Ülevaade</b>
-openSUSE Linux on loodud openSUSE Project poolt. See on kogukond, mis edendab ja kasutab Linuxit kõikjal töötades koos avatult, läbipaistvalt ja sõbralikul moel osana ülemaailmsest Free and Open Source Software kogukonnast. openSUSE on vanuselt teine siiamaani töötav Linuxi distributsioon. See jagab oma baassüsteemi SUSE'i auhindu võitnud SUSE Linux Enterprise toodetega.
+<b>Ãœlevaade</b>
+openSUSE Linux on loodud openSUSE Projecti poolt. See on kogukond, mis edendab ja kasutab Linuxit kÃµikjal, tÃ¶Ã¶tades koos avatult, lÃ¤bipaistvalt ja sÃµbralikul moel osana Ã¼lemaailmsest Free and Open Source Software kogukonnast. openSUSE on vanuselt teine siiamaani tÃ¶Ã¶tav Linuxi distributsioon. See jagab oma baassÃ¼steemi SUSE'i auhindu vÃµitnud SUSE Linux Enterprise toodetega.
 
 <b>Paketihaldus</b>
 Kasutab RPM paketihaldurit.
 
 <b>Seadistatavus</b>
-openSUSE on hea valik uuele Linuxi kasutajale. See pakub lihtsasti kasutatavat graafilist paigaldamise/administreerimise rakendust (<a href="http://yast.github.io/">YaST</a>) ja baassüsteemi, mille kallal on kerge nokitseda. openSUSE hõlmab kõike, mida on taris, et nautida Internetti muretsemata viiruste ja nuhkvara pärast. Saad nautida loomingulisust, tegeledes enda fotode, videote või koodiga.  
+openSUSE on hea valik uuele Linuxi kasutajale. See pakub lihtsasti kasutatavat graafilist paigaldamise/administreerimise rakendust (<a href="http://yast.github.io/">YaST</a>) ja baassÃ¼steemi, mille kallal on kerge nokitseda. openSUSE hÃµlmab kÃµike, mida on tarvis, et nautida Internetti muretsemata viiruste ja nuhkvara pÃ¤rast. Saad nautida loomingulisust, tegeledes enda fotode, videote vÃµi koodiga.  
 
 <b>Kasutusalad</b>
-openSUSE Leapi on täiesti võimalik kasutada personaalarvuti töölaual ja süleatvutis.
+openSUSE Leapi on tÃ¤iesti vÃµimalik kasutada personaalarvuti tÃ¶Ã¶laual ja sÃ¼learvutis.
 
 ## Harjutus
 
-Kui sul on huvi kasutada Arch Linuxit enda operatsioonisüsteemina, mine vaata paigaldamise sektsiooni ja proovi see ära: <a href='https://software.opensuse.org/'>software.opensuse.org</a>
+Kui sul on huvi kasutada Arch Linuxit enda operatsioonisÃ¼steemina, mine vaata paigaldamise sektsiooni ja proovi see Ã¤ra: <a href='https://software.opensuse.org/'>software.opensuse.org</a>
 
-## Küsimus
+## KÃ¼simus
 
-Mis on openSUSE administreerimise/paigaldamise tööriista nimi?
+Mis on openSUSE administreerimise/paigaldamise tÃ¶Ã¶riista nimi?
 
 ## Vastus
 
