@@ -4,7 +4,7 @@
 
 Hei algaja! Sa oled siis otsustanud sukelduda sellesse imelisse Linuxi maailma? Parem kinnita turvavöö, kuna tee on pikk ja raske. Minu nimi on Pingviin Pete ja ma olen siin selleks, et sind eelseisval teekonnal abistada. Alustame natukese Linuxi taustalooga.
 
-Selleks, et saada teada, kuidas Linux alguse sai, peame pöörduma tagasi 1969. aasta algusesse, kui Ken Thompson ja Dennis Richie Bell Laboratories'st lõid UNIX operatsiooni süsteemi, mis sai hiljem C keeles ümber kirjutatud, et muuta see portatiivsemaks. Lõpuks sai sellest laialt kasutatav operatsioonisüsteem.
+Selleks, et saada teada, kuidas Linux alguse sai, peame pöörduma tagasi 1969. aasta algusesse, kui Ken Thompson ja Dennis Richie Bell Laboratories'st lõid UNIX operatsiooni süsteemi, mis hiljem kirjutati C keeles ümber,et see oleks portatiivsem. Lõpuks sai sellest laialt kasutatav operatsioonisüsteem.
 
 Umbes aastakümme hiljem alustas Richard Stallman tööd GNU (GNU is Not UNIX) projektiga, Hurd nimelise GNU tuumaga, mida kahjuks kunagi ei lõpetatud. GNU General Public License (GPL) vabavara litsents loodi samuti selle projekti tulemusena.
 
