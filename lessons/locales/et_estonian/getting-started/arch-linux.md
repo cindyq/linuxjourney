@@ -2,22 +2,22 @@
 
 ## Tunni sisu
 
-<b>Ülevaade</b>
-Arch on kerge ja paindlik 100% kogukonna poolt veetud Linuxi distributsioon. Sarnaselt Debianile lastakse Archi välja jooksvalt, nõnda, et olulistest uuendustest kasvab lõpuks Stable väljalase. Siin pead küll käised üles käärima, et süsteemi ja selle funktsioone mõista. Kuid vastutasuks antakse sulle täielik ja lõplik kontroll.
+<b>Ãœlevaade</b>
+Arch on kerge ja paindlik 100% kogukonna poolt veetud Linuxi distributsioon. Sarnaselt Debianile lastakse Archi vÃ¤lja jooksvalt, nÃµnda, et olulistest uuendustest kasvab lÃµpuks Stable vÃ¤ljalase. Siin pead kÃ¼ll kÃ¤ised Ã¼les kÃ¤Ã¤rima, et sÃ¼steemi ja selle funktsioone mÃµista. Kuid vastutasuks antakse sulle tÃ¤ielik ja lÃµplik kontroll.
 
 <b>Paketihaldus</b>
 Kasutab pakettide paigaldamiseks, uuendamiseks ja haldamiseks enda paktihaldurit Pacman.
 
 <b>Seadistatavus</b>
-Kui soocid kerget operatsioonisüsteemi ja tahad tõeliselt Linuxist aru saada, siis kasuta Archi. Alguses on õppimine natuke raske, kuid hardcore Linuxi kasutajale on see suurepärane valik.
+Kui soovid kerget operatsioonisÃ¼steemi ja tahad tÃµeliselt Linuxist aru saada, siis kasuta Archi. Alguses on Ãµppimine natuke raske, kuid hardcore Linuxi kasutajale on see suurepÃ¤rane valik.
 
 <b>Kasutusalad</b>
-Suurepärane töölauale ja sülearvutile. Samuti, kui sul on väike seadeldis nagu näiteks Raspberry Pi ning sul on vaja lükata sellele peale mingisugune kerge OS, siis sa ei saa Archiga mööda panna.
+SuurepÃ¤rane tÃ¶Ã¶lauale ja sÃ¼learvutile. Samuti, kui su seade on vÃ¤ike, nagu nÃ¤iteks Raspberry Pi, ning sul on vaja lÃ¼kata sellele peale mingisugune kerge OS, siis sa ei saa Archiga mÃ¶Ã¶da panna.
 
 ## Harjutus
-Kui sul on huvi kasutada Arch Linuxit enda operatsioonisüsteemina, mine vaata paigaldamise sektsiooni ja proovi see ära: <a href='https://www.archlinux.org/'>https://www.archlinux.org/</a>
+Kui sul on huvi kasutada Arch Linuxit enda operatsioonisÃ¼steemina, mine vaata paigaldamise sektsiooni ja proovi see Ã¤ra: <a href='https://www.archlinux.org/'>https://www.archlinux.org/</a>
 
-## Küsimus
+## KÃ¼simus
 Millist paketihaldurit kasutab Arch Linux?
 
 ## Vastus
