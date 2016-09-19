@@ -1,35 +1,48 @@
-# System V Service
+# سرویس‌های System V
 
-## Lesson Content
+## محتوای درس
 
-There are many command line tools you can use to manage Sys V services. 
+دستورات خط فرمان متعددی جهت مدیریت سرویس‌های System V وجود دارد.
 
-<b>List services</b>
+### لیست کردن سرویس‌ها:
 
-<pre>$ service --status-all</pre>
+```
+$ service --status-all
+```
 
-<b>Start a service</b>
+### اجرا کردن یک سرویس:
 
-<pre>$ sudo service networking start</pre>
+```
+$ sudo service networking start
+```
 
-<b>Stop a service</b>
+### متوقف کردن یک سرویس:
 
-<pre>$ sudo service networking stop</pre>
+```
+$ sudo service networking stop
+```
 
-<b>Restart a service</b>
+### راه‌اندازی مجدد یک سرویس:
 
-<pre>$ sudo service networking restart</pre>
+```
+$ sudo service networking restart
+```
 
-These commands aren't specific to Sys V init systems, you can use these commands to manage Upstart services as well. Since Linux is trying to move away from the more traditional Sys V init scripts, there are still things in place to help that transition. 
+این دستورات محدود به پیاده‌سازی System V نیستند‌، بلکه می‌توانید از همین دستورات
+جهت مدیریت سرویس‌های Upstart نیز بهره ببرید. از آن‌جایی که لینوکس در حال حرکت به
+سمت تغییر اسکریپت‌های init مرسوم Sys V است‌، همچنان راه‌کار‌هایی در جهت کمک به این
+انتقال نیز وجود دارد.
 
-## Exercise
+## تمرین
 
-Manage a couple of services and change their states, what do you observe?
+با استفاده از دستورات مدیریتی فوق وضعیت چند سرویس سیستم‌تان را تغییر دهید‌، چه چیزی مشاهده می‌کنید؟
 
-## Quiz Question
+## سوال آزمون
 
-What is the command to stop a service named peanut with Sys V?
+دستور مورد استفاده جهت متوقف کردن سرویس peanut با استفاده از Sys V را بنویسید:
 
-## Quiz Answer
+## پاسخ آزمون
 
-sudo service peanut stop
+```
+$ sudo service peanut stop
+```
