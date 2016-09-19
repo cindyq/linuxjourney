@@ -6,7 +6,7 @@ Hei algaja! Sa oled siis otsustanud sukelduda sellesse imelisse Linuxi maailma? 
 
 Selleks, et saada teada, kuidas Linux alguse sai, peame pöörduma tagasi 1969. aasta algusesse, kui Ken Thompson ja Dennis Richie Bell Laboratories'st lõid UNIX operatsioonisüsteemi, mis hiljem kirjutati C keeles ümber, et see oleks kasutatav erinevatel riistvaraplatvormidel. Lõpuks sai sellest laialt kasutatav operatsioonisüsteem.
 
-Umbes aastakümme hiljem alustas Richard Stallman tööd GNU (GNU is Not UNIX) projektiga, Hurd nimelise GNU tuumaga, mida kahjuks kunagi ei saanud valmis. GNU Üldine Avalik Litsents (GPL) loodi samuti selle projekti tulemusena.
+Umbes aastakümme hiljem alustas Richard Stallman tööd GNU (GNU is Not UNIX) projektiga, Hurd nimelise GNU tuumaga, mida kahjuks kunagi ei saadud valmis. GNU Üldine Avalik Litsents (GPL) loodi samuti selle projekti tulemusena.
 
 Tuum on operatsioonisüsteemi kõige olulisem osa. See võimaldab riistvaral tarkvaraga suhelda. Lisaks teeb ka väga palju muid asju, kuid sellesse süveneme rohkem teisel kursusel. Praegu tea lihtsalt, et tuum kontrollib põhimõtteliselt kõike, mis toimub sinu süsteemis.
 
