@@ -1,53 +1,55 @@
-# Kernel Modules
+# ماژول‌های کرنل
 
-## Lesson Content
+## محتویات درس
 
-Let's say I have a sweet ride, I invest a lot of time and money into it. I add a spoiler, hitch, bike rack and other random things. These components don't actually change the core functionality of the car and I can remove and add them very easily. The kernel uses the same concept with kernel modules.
+من یک ماشین دوست‌داشتنی دارم. کلی پول و وقت صرف سر هم کردن این ماشین کردم. یک اسپویلر، آویزِ چرخ، و کمی متعلقات دیگر. این اضافات، کارکرد اصلی ماشین را تغییر نمی‌دهد و من می‌توانم آن‌ها را به راحتی از ماشین جدا کنم. کرنل نیز با وجود ماژول‌های کرنل از راه‌کاری مشابه بهره می‌برد.
 
-The kernel in itself is a monolithic piece of software, when we want to add support for a new type of keyboard, we don't write this code directly into the kernel code. Just as we wouldn't meld a bike rack to our car (well maybe some people would do that). Kernel modules are pieces of code that can be loaded and unloaded into the kernel on demand. They allow us to extend the functionality of the kernel without actually adding to the core kernel code. We can also add modules and not have to reboot the system (in most cases).
+کرنل به خودی خود، یک نرم‌افزار یکپارچه و یک‌تکه است. زمانی که می‌خواهیم پشتیبانی از یک کیبورد جدید را اضافه کنیم، کد شناسایی کیبورد را مستقیماً به کد کرنل اضافه نمی‌کنیم. دقیقاً مثل زمانی که یک آویز دوچرخه را به ماشین جوش نمی‌دهیم (یا شاید هم شما جوش می‌دهید!؟ پیچ و مهره را از شما گرفته‌اند مگر!؟). ماژول‌های کرنل کدهایی هستند که می‌توانند بنا به خواست شما بر روی کرنل سوار یا جدا شوند. ماژول‌ها به ما اجاره می‌دهند که عمل‌کرد کرنل را بدون اینکه نیازی به اضافه کردن کد به هسته‌ی اصلی کرنل باشد، گسترش دهیم. ما در اکثر مواقع می‌توانیم ماژول‌ها را بدون اینکه نیازی به راه‌اندازی مجدد سیستم باشد به هسته اضافه کنیم.
 
-<b>View a list of currently loaded modules</b>
+**نگاهی به لیست ماژول‌های جاریِ لود شده**
 
-<pre>$ lsmod</pre>
+***$ lsmod***
 
-<b>Load a module</b>
+**لود یا بارگیری یک ماژول**
 
-<pre>$ sudo modprobe bluetooth</pre>
+**$ sudo modprobe bluetooth**
 
-Modprobe loads tries the module from <b>/lib/modules/(kernel version)/kernel/drivers</b>. Kernel modules may also have dependencies, modprobe loads our module dependencies if they are not already loaded. 
+Modprobe سعی می‌کند ماژول مورد نظر را از **/lib/modules/(kernel version)/kernel/drivers/** لود کند. ماژول‌های هسته ممکن است که پیش‌نیازهایی نیز داشته باشند. در این حالت modprobe ماژولِ ما به همراه پیش‌نیازهایش (اگر لود نشده‌اند) با هم لود می‌کند.
 
-<b>Remove a module</b>
+**حذف یک ماژول**
 
-<pre>$ sudo modprobe -r bluetooth</pre>
+```$ sudo modprobe -r bluetooth```
 
-<b>Load on bootup</b>
+**لود در زمان راه‌اندازی سیستم**
 
-You can also load modules during system boot, instead of temporarily loading them with modprobe (which will be unloaded when you reboot). Just modify the <b>/etc/modprobe.d</b> directory and add a configuration file in it like so:
+شما همچنین می‌توانید ماژول‌ها را در حین راه‌اندازی سیستم لود کنید. این کار نیاز به لود کردن موقت ماژول توسط modprobe را برطرف می‌کند. زمانی که از modprobe استفاده می‌کنید، ماژول بعد از ری‌استارت پیاده یا آن‌لود می‌شود. فقط کافیست که دایرکتوری ‎/etc/modprobe.d را دستکاری کرده و فایل پیکربندی را به این صورت به آن اضافه کنید:
 
-<pre>pete@icebox:~$ /etc/modprobe.d/peanutbutter.conf
+```
+pete@icebox:~$ /etc/modprobe.d/peanutbutter.conf
 
 options peanut_butter type=almond
-</pre>
+```
 
-A bit of a outlandish example, but if you had a module named peanut_butter and you wanted to add a kernel parameter for type=almond, you can have it load on startup using this configuration file. Also note that kernel modules have their own kernel parameters so you'll want to read about the module specifically to find out more.
+مثالِ عجیب غریبی بود ولی خب یک ماژول با اسم peanut_butter دارید و می‌خواهید که پارامتر هسته برای type=almond را به آن اضافه کنید. و اکنون شما این پیکربندی جدید را در حین راه‌اندازی سیستم بارگیری می‌کنید. همچنین به خاطر داشته باشید که ماژول‌های کرنل پارامترهای کرنل مخصوص به خود را دارند.
 
-<b>Do not load on bootup</b>
+**در هنگام راه‌اندازی ماژول را لود نکن**
 
-You can also make sure a module does not load on bootup by adding a configuration file like so:
+با اضافه کردن یک فایل پیکربندی شبیه به فایل زیر می‌توانید اطمینان حاصل کنید که یک ماژول در حین راه‌اندازی سیستم، لود نمی‌شود:
 
-<pre>pete@icebox:~$ /etc/modprobe.d/peanutbutter.conf
+```
+pete@icebox:~$ /etc/modprobe.d/peanutbutter.conf
 
 blacklist peanut_butter
-</pre>
+```
 
-## Exercise
+## تمرین
 
-Unload your bluetooth module with modprobe and see what happens. How will you fix this?
+ماژول بلوتوث خود را با modprobe آن‌لود کنید و ببینید چه اتفاقی می‌افتد. چطور درستش می‌کنید؟
 
-## Quiz Question
+## سؤال آزمون
 
-What command is used to unload a module?
+چه دستوری برای آن‌لود کردن یک ماژول مورد استفاده قرار می‌گیرد.
 
-## Quiz Answer
+## پاسخ آزمون
 
 modprobe -r
