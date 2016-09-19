@@ -9,7 +9,7 @@ openSUSE Linux on loodud openSUSE Projekti poolt. See on kogukond, mis edendab L
 Kasutab RPM paketihaldurit.
 
 <b>Seadistatavus</b>
-openSUSE on hea valik algajale linuxikasutajale. See pakub lihtsalt kasutatavat graafilist tarkvarahaldusrakendust (<a href="http://yast.github.io/">YaST</a>) ja baassüsteemi. openSUSE võimaldab kasutada internetti muretsemata viiruste ja nuhkvara pärast. Saad nautida loomingulisust, tegeledes enda fotode, videote või koodiga.  
+openSUSE on hea valik algajale linuxikasutajale. See pakub lihtsalt kasutatavat graafilist tarkvarahaldusrakendust (<a href="http://yast.github.io/">YaST</a>) ja baassüsteemi. openSUSE võimaldab kasutada Internetti muretsemata viiruste ja nuhkvara pärast. Saad nautida loomingulisust, tegeledes enda fotode, videote või koodiga.  
 
 <b>Kasutusalad</b>
 openSUSE Leap sobib kasutamiseks laua- ja sülearvutis.
