@@ -1,9 +1,9 @@
-Kuidas t�pselt peaks t�lkima: 
+Kuidas täpselt peaks tõlkima: 
 
 FEDORA
-*backend
-*Red Hat Enterprise Linux branches off Fedora, so think of Fedora as an upstream RHEL operating system.
+*backend - baasliides (sõltub ka kontekstist, nt “audio backend“ tõlgitakse “helisüsteem”)
+*Red Hat Enterprise Linux branches off Fedora, so think of Fedora as an upstream RHEL operating system - Fedora on RHELi edasiarendus
 
 LINUX MINT
-*less bloated than Ubuntu
+*less bloated than Ubuntu - vähem mittevajalikust tarkvarast üleujutatud kui Ubuntu
 

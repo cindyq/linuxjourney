@@ -2,22 +2,24 @@
 
 ## Tunni sisu
 
-<b>Ülevaade</b>
-Linux Mint põhineb Ubuntul. See kasutab Ubuntu tarkvara repositooriume, mistõttu on samad paketid saadaval mõlema distributsiooni jaoks. On neid, kes eelistavad Linux Minti Ubuntule, kuna sellega ei tule kaasa mõningane patenditud tarkvara, mis on Ubuntus kaasatud, näiteks Unity.
+<b>Ãœlevaade</b>
+Linux Mint pÅ‘hineb Ubuntul. See kasutab Ubuntu tarkvara varamuid, mistÅ‘ttu on samad paketid saadaval mÅ‘lema distributsiooni jaoks. MÃµned eelistavad Linux Minti Ubuntule kuna sellega ei tule kaasa patenteeritud tarkvara, nÃ¤iteks Unity.
+
+<b>Paketihaldus</b> Kuna Linux Mint pÃµhineb Ubuntul siis see kasutab Debiani paketihaldurit.
 
 <b>Seadistatavus</b>
-Suurepärane kasutajaliides, ideaalne algajatele ja kergem kui Ubuntu. Sellel kursusel hakkan mina kasutama Linux Minti, kuid iga teine distributsioon sobib samuti.
+SuurepÃ¤rane kasutajaliides, sobiv algajatele ja kergem kasutada kui Ubuntu. Sellel kursusel hakkan mina kasutama Linux Minti, kuid iga teine distributsioon sobib samuti.
 
 <b>Kasutusalad</b>
-Suurepärane töölaudadele ja sülearvutitele.
+Sobib tÃ¶Ã¶laua- ja sÃ¼learvutitele.
 
 ## Harjutus
 
-Kui sul on huvi kasutada Linux Minti enda operatsioonisüsteemina, mine vaata paigaldamise sektsiooni ja proovi see ära: <a href='http://linuxmint.com/'>http://linuxmint.com/</a>
+Kui sul on huvi kasutada Linux Minti enda operatsioonisÃ¼steemina, mine vaata paigaldusjuhist ja proovi Ã¤ra: <a href='http://linuxmint.com/'>http://linuxmint.com/</a>
 
-## Küsimus
+## KÃ¼simus
 
-Millel põhineb Linux Mint?
+Millel pÅ‘hineb Linux Mint?
 
 ## Vastus
 
