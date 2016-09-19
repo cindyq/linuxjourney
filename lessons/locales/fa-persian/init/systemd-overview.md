@@ -20,7 +20,7 @@
 همچون runlevel‌های Sys V، در واقع systemd نیز‌، در اهداف متفاوتی بارگذاری می‌شود:
 
 - ‏poweroff.target: سیستم را خاموش می‌کند.
-- rescue.target:‌حالت یک کاربره.
+- rescue.target:‌ حالت یک کاربره.
 - multi-user.target: حالت چند کاربره.
 - graphical.target: حالت چند کاربره به همراه شبکه و رابط گرافیکی.
 - reboot.target: راه‌اندازی مجدد سیستم.
