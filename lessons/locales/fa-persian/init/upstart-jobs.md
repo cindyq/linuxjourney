@@ -1,52 +1,78 @@
-# Upstart Jobs
+# وظایف Upstart
 
-## Lesson Content
+## محتوای درس
 
-Upstart can trigger a lot of events and jobs to run, unfortunately there is no easy way to see where an event or job originated, so you'll have to poke around the job configurations in /etc/init. Most of the time, you won't ever need to look at the Upstart job configuration files, but you will want to control some specific jobs more easily. There are a lot of useful commands you can use in an Upstart system. 
+‏Upstart می‌تواند رویداد‌ها (events) و وظایف (jobs) متعددی را جهت اجرا فراخوانی
+کند. اما متاسفانه راهکار آسانی برای پیدا کردن منشا یک وظیفه یا رویداد وجود
+ندارد‌ و برای این منظور باید تنظیمات مربوط به وظایف در ‎/etc/init را بررسی کنید.
+اکثر مواقع‌، نیازی به بررسی فایل‌های تنظیمات وظایف نیست‌، اما می‌توانید برای مدیریت
+راحت‌تر وظایف از آن‌ها کمک بگیرید. دستورات کاربردی زیادی در سیستم Upstart وجود
+دارد که می‌توانید از آن‌ها استفاده کنید.
 
-<b>View jobs</b>
+### دیدن وظایف
 
-<pre>initctl list
+```
+$ initctl list
 
 shutdown stop/waiting
 console stop/waiting
 ...
-</pre>
+```
 
-You'll see a list of Upstart jobs with different statuses applied to them. In each line, the job name is the first value and the second field (before the /) is actually the goal of the job, the third value (after the /) is the current status. So we see that our shutdown job eventually wants to stop, but it is currently in a state of waiting. The job status and goals will change as you start or stop jobs. 
+لیستی از وظایف موجود در Upstart به همراه وضعیت اعمال شده روی آن‌ها را مشاهده
+می‌کنید. در هر خط‌، اسم وظیفه اولین مقدار موجود است‌، و بخش دوم (قبل از /) هدف
+نهایی سرویس را نشان می‌دهد. همچنین‌، فیلد سوم (بعد از /) نشانگر وضعیت فعلی وظیفه
+است. بر همین اساس می‌بینینم که وظیفهٔ shutdown سیستم در نهایت به حالت stop تبدیل
+خواهد شد ولی فعلا در حالت waiting است. حالات وظیفه و اهداف‌شان زمانی که شما آن‌ها
+را اجرا یا متوقف می‌کنید تغییر می‌کنند.
 
-<b>View specific job</b>
+### بررسی وضعیت یک وظیفه مشخص
 
-<pre>initctl status networking
+```
+$ initctl status networking
 networking start/running
-</pre>
+```
 
-We won't get into the details of how to write an Upstart job configuration, however we already know that jobs are stopped, started and restarted in these configurations. These jobs also emit events, so they can start other jobs. We'll go through the manual commands of the Upstart operation, but if you are curious, you should dig into the .conf files in more depth.
+ما به جزئیات چگونگی توسعه تنظیمات وظیفه‌های Upstart نمی‌پردازیم‌، اما به هر حال
+می‌دانیم که با استفاده از همین تنظیمات است که وظایف می‌توانند‌، اجرا‌، متوقف یا مجدد
+راه‌اندازی شوند. این وظایف همچنین با فراخوانی رویداد‌ها می‌توانند وظایف دیگر را نیز
+اجرا کنند. در ادامه به بررسی دستوراتی جهت مدیریت Upstart می‌پردازیم‌، اما اگر
+بیشتر کنجکاو هستید، می‌توانید فایل‌های ‎.conf را بیشتر بررسی کنید.
 
-<b>Manually start a job</b>
+### اجرای یک وظیفه
 
-<pre>$ sudo initctl start networking</pre>
+```
+$ sudo initctl start networking
+```
 
-<b>Manually stop a job</b>
+### متوقف کردن یک وظیفه
 
-<pre>$ sudo initctl stop networking</pre>
+```
+$ sudo initctl stop networking
+```
 
-<b>Manually restart a job</b>
+### راه‌اندازی مجدد یک وظیفه
 
-<pre>$ sudo initctl restart networking</pre>
+```
+$ sudo initctl restart networking
+```
 
-<b>Manually emit an event</b>
+### فراخوانی یک رویداد
 
-<pre>$ sudo initctl emit some_event</pre>
+```
+$ sudo initctl emit some_event
+```
 
-## Exercise
+## تمرین
 
-Observe your list of Upstart jobs, now change the job state with one of the commands we learned today. What do you notice afterwards?
+لیست وظایف Upstart خود را بررسی کنید‌، حالا وضعیت یک وظیفه را با استفاده از
+دستورات بالا تغییر دهید و ببینید چه رخ می‌دهد.
 
-## Quiz Question
+### سوال آزمون
 
-How would I manually restart an Upstart job called peanuts?
+برای راه‌اندازی مجدد یک سرویس به اسم Peanut از چه دستوری استفاده می‌کنید؟
 
-## Quiz Answer
 
+```
 sudo initctl restart peanuts
+```
