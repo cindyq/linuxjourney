@@ -2,42 +2,42 @@
 
 ## Tunni sisu
 
-Teeme mõnest failist koopiad. Sarnaselt teistes operatsioonisüsteemis kopeerimisele ja kleepimisele võimaldab shell meil seda isegi veel lihtsamalt teha.
+Teeme mÃµnest failist koopiad. Sarnaselt teistes operatsioonisÃ¼steemides kopeerimisele ja kleepimisele, vÃµimaldab shell meil seda isegi veel lihtsamalt teha.
 
 <pre>$ cp minuvingefail /home/pete/Dokumendid/vingeddokud</pre>
 
 minuvingefail on see fail, mida sa tahad kopeerida ja /home/pete/Dokumendid/vingeddokud on see, kuhu sa tahad seda kopeerida.
 
-Sa saad kopeerida ka korraga mitmeid faile ja katalooge, ning kasutada metamärki. Metamärk on selline tähemärk, mis võib asendada mingil mustril põhinevat valikut, andes sulle otsimiseks rohkem vabadust. Sa võid pandlikkuse mõttes kasutada metamärke iga käsu juures.
+Sa saad kopeerida ka korraga mitmeid faile ja katalooge ning kasutada metamÃ¤rki. MetamÃ¤rk on selline tÃ¤hemÃ¤rk, mis vÃµib asendada mingil mustril pÃµhinevat valikut, andes sulle otsimiseks rohkem vabadust. Sa vÃµid pandlikkuse mÃµttes kasutada metamÃ¤rke iga kÃ¤su juures.
 
 
 <ul>
-<li>* metamärkide metamärk, kasutatakse, et esinada ükskõik millist tähemärki või sõnet.</li>
-<li>? esindab ühte tähemäri</li>
-<li>[] asindab ükskõik millist kantsulgudesse kirjutatud tähemärki</li>
+<li>* metamÃ¤rkide metamÃ¤rk, kasutatakse, et esinada Ã¼kskÃµik millist tÃ¤hemÃ¤rki vÃµi sÃµnet</li>
+<li>? esindab Ã¼hte tÃ¤hemÃ¤ri</li>
+<li>[] asindab Ã¼kskÃµik millist kantsulgudesse kirjutatud tÃ¤hemÃ¤rki</li>
 </ul>
 
 <pre>$ cp *.jpg /home/pete/Pildid</pre>
 
-See käsk kopeerib kõik .jpg laiendiga failid sinu jooksvast kataloogist kataloogi Pildid.
+See kÃ¤sk kopeerib kÃµik .jpg laiendiga failid sinu jooksvast kataloogist kataloogi Pildid.
 
-Päris kasulik on kasutada ka -r lippu, see kopeerib tagasiulatuvalt kataloogis asuvad kataloogid ja failid.
+PÃ¤ris kasulik on kasutada ka -r lippu, see kopeerib tagasiulatuvalt kataloogis asuvad kataloogid ja failid.
 
-Proovi kasutada cp käsku, et kopeerida Dokumentide kausta mõni kataloog, milles on mõned failid sees. See ei töötanud, eks? Seda selle pärast, et sa pead kopeerima ka kõik failid ja kataloogid, mis seal kaustas on käsuga -r.
+Proovi kasutada cp kÃ¤sku, et kopeerida Dokumentide kausta mÃµni kataloog, milles on failid sees. See ei tÃ¶Ã¶tanud, eks? Seda selle pÃ¤rast, et sa pead kopeerima ka kÃµik failid ja kataloogid, mis seal kaustas on kÃ¤suga -r.
 
-<pre>$ cp -r Kõrvits/ /home/pete/Dokumendid</pre>
+<pre>$ cp -r KÃµrvits/ /home/pete/Dokumendid</pre>
 
-Oluline on panna tähele, et kui sa kopeerid faili kataloogi, milles on sama nimega fail, siis see fail kirjutatakse üle kopeeritava failiga. See ei ole väga bueno, kui sul on seal mõni fail, mida sa ei taha kogemata ülekirjutada. Sa võid kasutada lippu -i (interaktiivne), et sult küsitaks enne kui fail ülekirjutatakse.
+Oluline on panna tÃ¤hele, et kui sa kopeerid faili kataloogi, milles on sama nimega fail, siis see fail kirjutatakse Ã¼le kopeeritava failiga. See ei ole vÃ¤ga bueno, kui sul on seal mÃµni fail, mida sa ei taha kogemata Ã¼lekirjutada. Sa vÃµid kasutada lippu -i (interaktiivne), et sult kÃ¼sitaks enne kui fail Ã¼lekirjutatakse.
 
 <pre>$ cp -i minuvingefail /home/pete/Pildid</pre>
 
 ## Harjutus
 
-Kopeeri mõnda faili, kuid ole ettevaatlik, et sa midagi olulist üle ei kirjutaks.
+Kopeeri mÃµnda faili, kuid ole ettevaatlik, et sa midagi olulist Ã¼le ei kirjutaks.
 
-## Küsimus
+## KÃ¼simus
 
-Millist lippu on sul täpsustamiseks vaja, kui soovid kopeeria kataloogi?
+Millist lippu on sul tÃ¤psustamiseks vaja, kui soovid kopeeria kataloogi?
 
 ## Vastus
 
