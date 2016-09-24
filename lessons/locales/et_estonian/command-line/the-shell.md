@@ -2,32 +2,32 @@
 
 ## Tunni sisu
 
-Maailm on su auster, no tegelikult on shell su auster. Mis asi on shell? See on põhimõtteliselt programm, mis võtab klaviatuurilt sinu sisestatud käsu ja saadab selle operatsioonisüsteemile täitmiseks. Kuisa oled kunagi kasutanud graafilist kasutajaliidest, siis sa oled ilmselt näinud programme nagu "Terminal" ja "Konsool". Need on kõigest programmid, mis käivitavad sulle shelli. Selle kursuse vältel õpime shelli võludest.
+Mis asi on shell? See on pÃµhimÃµtteliselt programm, mis vÃµtab klaviatuurilt sinu sisestatud kÃ¤su ja saadab selle operatsioonisÃ¼steemile tÃ¤itmiseks. Kui sa oled kunagi kasutanud graafilist kasutajaliidest, siis sa oled ilmselt nÃ¤inud programme nagu "Terminal" ja "Konsool". Need on kÃµigest programmid, mis kÃ¤ivitavad sulle shelli. Selle kursuse vÃ¤ltel Ãµpime shelli vÃµludest.
 
-Sellel kursusel kasutame shelli programmi bash (Bourne Again shell). Peaaegu kõik Linuxi distributsioonid kasutavad vaikimisi bashi. Saadaval on ka teisi shelle, nagu ksh, zsh, tsch, kuid siin me nendesse ei süvene.
+Sellel kursusel kasutame shelli programmi bash (Bourne Again shell). Peaaegu kÃµik Linuxi distributsioonid kasutavad vaikimisi bashi. Saadaval on ka teisi shelle, nagu ksh, zsh, tsch, kuid siin me nendesse ei sÃ¼vene.
 
-Asume siis kohe asja kallale! Sõltuvalt distributsioonist võib su käsurida pisut erineda, kuid suuremalt jaolt peaks see siiski alluma järgmisele formaadile:
+Asume siis kohe asja kallale! SÃµltuvalt distributsioonist vÃµib su kÃ¤surida pisut erineda, kuid suuremalt jaolt peaks see siiski alluma jÃ¤rgmisele formaadile:
 <pre>username@hostname:current_directory
 pete@icebox:/home/pete $</pre>
 
-Märkasid $ sümbolit teate lõpus? Erinevatel shellidel näevad käsuread erinevad välja, meie puhul tähistab $ Bashi, Bourne'i või Korn shelli tavakasutajat. Kui sa kirjutad käsku, siis sa seda käsureamärki ei kirjuta, kuid tea, et see on seal olemas.
+MÃ¤rkasid $ sÃ¼mbolit teate lÃµpus? Erinevatel shellidel nÃ¤evad kÃ¤suread erinevad vÃ¤lja, meie puhul tÃ¤histab $ Bashi, Bourne'i vÃµi Korn shelli tavakasutajat. Kui sa kirjutad kÃ¤sku, siis sa seda kÃ¤sureamÃ¤rki ei kirjuta, kuid tea, et see on seal olemas.
 
-Alustame lihtsa käsuga, echo. Echo käsk trükib ekraanile teksti argumendi.
+Alustame lihtsa kÃ¤suga, echo. Echo kÃ¤sk trÃ¼kib ekraanile teksti argumendi.
 
 <pre>$ echo Hello World</pre>
 
 ## Harjutus
 
-Proovi veel mõnda Linuxi käsku ja uuri nende väljundeid:
+Proovi veel mÃµnda Linuxi kÃ¤sku ja uuri nende vÃ¤ljundeid:
 
 <ol>
 <li>$ date</li>
 <li>$ whoami</li>
 </ol>
 
-## Küsimus
+## KÃ¼simus
 
-Milline väljund kuvatakse ekraanile kui sa sisestad käsureale echo Hello World?
+Milline vÃ¤ljund kuvatakse ekraanile kui sa sisestad kÃ¤sureale echo Hello World?
 
 ## Vastus
 
