@@ -2,25 +2,25 @@
 
 ## Tunni sisu
 
-Nüüd õpime kuidas faile teha. Väga lihtne moodus selleks on käsuga touch. Touch laseb sul luua uusi tühje faile.
+NÃ¼Ã¼d Ãµpime kuidas faile teha. VÃ¤ga lihtne moodus selleks on kÃ¤suga touch. Touch laseb sul luua uusi tÃ¼hje faile.
 
 <pre>$ touch minusuperfail</pre>
 
-Ja nagu võluväel, uus fail!
+Ja nagu vÃµluvÃ¤el, uus fail!
 
-Touchi kasutatakse ka selleks, et muuta olemasolevate failide ajatempleid. Proovi ka. Rakenda failile ls -l käsku ja vaata, mis ajatempel sellel on. Seejärel kasuta touch käsku ja see uuednab ajatempli ära.
+Touchi kasutatakse ka selleks, et muuta olemasolevate failide ajatempleid. Proovi ise ka. Rakenda failile ls -l kÃ¤sku ja vaata, mis ajatempel sellel on. SeejÃ¤rel kasuta touch kÃ¤sku ja see uuednab ajatempli Ã¤ra.
 
-FAilide loomiseks on palju võimalusi, mis kaasavad muid asju, nagu ümbersuunamine ja tekstiredaktorid, kuid nendega tegeleme teksti manipuleerimise kursusel.
+Failide loomiseks on palju vÃµimalusi, mis kaasavad muid asju, nagu Ã¼mbersuunamine ja tekstiredaktorid, kuid nendega tegeleme teksti manipuleerimise kursusel.
 
 ## Harjutus
 
 <ol>
 <li>Loo uus fail</li>
 <li>Vaata, milline ajatempel sellel on</li>
-<li>Rakenda sellel failil touch käsku ja vaata uuesti ajatemplit</li>
+<li>Rakenda sellel failil touch kÃ¤sku ja vaata uuesti ajatemplit</li>
 </ol>
 
-# Küsimus
+# KÃ¼simus
 
 Kuidas sa lood faili nimega minufail?
 
