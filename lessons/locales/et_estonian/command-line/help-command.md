@@ -2,24 +2,24 @@
 
 ## Tunni sisu
 
-Linuxil on mõned päris head sisemised tööriistad, mis aitavad sind käsu kasutamise või käsu lippude olemasolu osas. Üks selline tööriist on help. See on sisemine bashi käs, mis pakub abi teiste bashi käskude osas (echo, logout, pwd jne).
+Linuxil on mÃµned pÃ¤ris head sisemised tÃ¶Ã¶riistad, mis aitavad sind kÃ¤su kasutamise vÃµi kÃ¤su lippude olemasolu osas. Ãœks selline tÃ¶Ã¶riist on help. See on sisemine bashi kÃ¤sk, mis pakub abi teiste bashi kÃ¤skude osas (echo, logout, pwd jne).
 
 
 <pre>$ help echo</pre>
 
-See annab sulle kirjelduse ja valikud selles osas, kuidas on võimalik rakendada echo käsku. Teistes käivitatavates programmides on konventsiooniks, kasutada varianti --help, või midagi sarnast-
+See annab sulle kirjelduse ja valikud selles osas, kuidas on vÃµimalik rakendada echo kÃ¤sku. Teistes kÃ¤ivitatavates programmides on konventsiooniks, kasutada varianti --help, vÃµi midagi sarnast.
 
 <pre>$ echo --help</pre>
 
-Mitte kõik tarkvara arendajad ei kasuta sellist standartset vormi, kuid see ilmselt sul kõige tõenäolisem viis mõnes programmis abi leida.
+Mitte kÃµik tarkvara arendajad ei kasuta sellist standartset vormi, kuid see ilmselt kÃµige tÃµenÃ¤olisem viis mÃµnes programmis abi leida.
 
 ## Harjutus
 
-Kasuta helpi echo, logout ja pwd käskude peal.
+Kasuta helpi echo, logout ja pwd kÃ¤skude peal.
 
-## Küsimus
+## KÃ¼simus
 
-Kuidas saada käsureal kiirelt abi bashi sisemiste käskude kohta?
+Kuidas saada kÃ¤sureal kiirelt abi bashi sisemiste kÃ¤skude kohta?
 
 ## Vastus
 
