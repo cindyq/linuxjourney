@@ -2,31 +2,31 @@
 
 ## Tunni sisu
 
-Sul on shellis sisestatud käskude ajalugu, mida sa tegelikult saad isegi vaadata. See on isegi päris kasulik, kui sa soovid leida ja rakendada mõnda eelnevalt kasutatud käsku ilma seda uuesti trükkimata.
+Sul on shellis sisestatud kÃ¤skude ajalugu, mida saab tegelikult isegi vaadata. See on pÃ¤ris kasulik, kui soovid leida ja rakendada mÃµnda eelnevalt kasutatud kÃ¤sku ilma seda uuesti trÃ¼kkimata.
 
 <pre>$ history</pre>
 
-Kui soovid kasutada käsku, mida sa viimasena rakendasid, vajuta lihtsalt nooleklahviga üles.
+Kui soovid kasutada kÃ¤sku, mida sa viimasena rakendasid, vajuta lihtsalt nooleklahviga Ã¼les.
 
-Tahad kasutada eelmist ksäku ilma seda uuesti trükkimata? Kasuta !!. Kui sa kirjutasin enne cat fail1 ja tahad seda uuesti kasutada, siis võid lihtsalt kirjutada !! ja see rakendab su viimatise käsu.
+Tahad kasutada eelmist ksÃ¤ku ilma seda uuesti trÃ¼kkimata? Kasuta !!. Kui sa kirjutasin enne cat fail1 ja tahad seda uuesti kasutada, siis vÃµid lihtsalt kirjutada !! ja see rakendab su viimatise kÃ¤su.
 
-Veel üks history otsetee on ctrl-R. See on tagurpidine otsingu käsk. Kui sa vajutad klaviatuuril ctrl-R ja hakkad kirjutama osa käsust, näitab see sulle võimalikke vasteid ja sa saad nende vahel liikuda kui vajutad uuesti ctrl-R. Kui sa oled lõpuks leidnud käsu, mida tahad uuesti kasutada, vajuta lihtsalt Enter.
+Veel Ã¼ks history otsetee on ctrl-R. See on tagurpidine otsingu kÃ¤sk. Kui sa vajutad klaviatuuril ctrl-R ja hakkad kirjutama osa kÃ¤sust, nÃ¤itab see sulle vÃµimalikke vasteid ja sa saad nende vahel liikuda kui vajutad uuesti ctrl-R. Kui sa oled lÃµpuks leidnud kÃ¤su, mida tahad uuesti kasutada, vajuta lihtsalt Enter.
 
-Meie terminali aken hakkab natuke liiga kirjuks muutuma? Koristaks pisut. Kasuta clear käsku, et oma kuva ära tühjendada.
+Meie terminali aken hakkab natuke liiga kirjuks muutuma? Koristaks pisut. Kasuta clear kÃ¤sku, et oma kuva Ã¤ra tÃ¼hjendada.
 
 <pre>$ clear</pre>
 
-Nii näeb juba palju parem välja, eks?
+Nii nÃ¤eb juba palju parem vÃ¤lja, eks?
 
-Kui me juba räägime kasulikest asjadest, siis üks kasulikemaid käsurea keskkonna omadusi on tabulaatorklahviga käskude lõpetamine. Kui sa alustad käsu, faili, kataloogi vms kirjutamist, vajuta tabulaatorit, põhinedes sellele, mida ta leiab otsitavast kataloogist, lõpetab see käsu automaatselt, kui just ei ole teisigi faile, mis algavad samade tähtedega. Näiteks, kui sa tahaksid sisestada käsku chrome, võid sa kirjutada chr ja vajutada tabulaatorit ja chrome lõpetatakse sulle automaatselt.
+Kui me juba rÃ¤Ã¤gime kasulikest asjadest, siis Ã¼ks kasulikemaid kÃ¤surea keskkonna omadusi on tabulaatorklahviga kÃ¤skude lÃµpetamine. Kui sa alustad kÃ¤su, faili, kataloogi vms kirjutamist, vajuta tabulaatorit, pÃµhinedes sellele, mida ta leiab otsitavast kataloogist, lÃµpetab see kÃ¤su automaatselt, kui just ei ole teisigi faile, mis algavad samade tÃ¤htedega. NÃ¤iteks, kui sa tahaksid sisestada kÃ¤sku chrome, vÃµid sa kirjutada chr ja vajutada tabulaatorit ja chrome lÃµpetatakse sulle automaatselt.
 
 ## Harjutus
 
-Liigu oma käskude ajaloos üles ja alla nooleklahvidega. Mängi natuke ctrl-R otsinguga.
+Liigu oma kÃ¤skude ajaloos Ã¼les ja alla nooleklahvidega. MÃ¤ngi natuke ctrl-R otsinguga.
 
-## Küsimus
+## KÃ¼simus
 
-Millise käsuga saab puhastada terminali akna?
+Millise kÃ¤suga saab puhastada terminali akna?
 
 ## Vastus
 
