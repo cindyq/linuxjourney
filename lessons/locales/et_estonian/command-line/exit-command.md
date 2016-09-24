@@ -2,26 +2,26 @@
 
 ## Tunni sisu
 
-Hästi tehtud, said baasteadmistest läbi. Me oleme seda kõike aga ainult kergelt puudutanud. Nüüd kui sa oled õppinud roomama, õpetan ma su järgmisel kursusel kõndima.
+HÃ¤sti tehtud, said baasteadmistest lÃ¤bi. Me oleme seda kÃµike aga ainult kergelt puudutanud. NÃ¼Ã¼d kui sa oled Ãµppinud roomama, Ãµpetan ma su jÃ¤rgmisel kursusel kÃµndima.
 
-Hetkel võid aga endale õlale patsutada ja natuke puhata. Et shellist väljuda, kasuta käsku exit
+Hetkel vÃµid aga endale Ãµlale patsutada ja natuke puhata. Et shellist vÃ¤ljuda, kasuta kÃ¤sku exit
 
 <pre>$ exit</pre>
 
-või logout
+vÃµi logout
 
 
 <pre>$ logout</pre>
 
-või sa võid lihtsalt sulgeda terminali akna. Näeme järgmisel kursusel!
+vÃµi sa vÃµid lihtsalt sulgeda terminali akna. NÃ¤eme jÃ¤rgmisel kursusel!
 
 ## Harjutus
 
-Välju shelli aknast ja vaata, mis juhtub. Hoolitse selle eest, et sa seal rohkem midagi tegema ei pea.
+VÃ¤lju shelli aknast ja vaata, mis juhtub. Hoolitse selle eest, et sa oled seal tÃ¶Ã¶ lÃµpetanud.
 
-## Küsimus
+## KÃ¼simus
 
-Kuidas saab shellist väljuda?
+Kuidas saab shellist vÃ¤ljuda?
 
 ## Vastus
 
