@@ -2,32 +2,32 @@
 
 ## Tunni sisu
 
-Nüüd, kui sa tead, kus sa oled, vaatame, kas meil õnnestub failisüsteemis pisut ringi liikuda. Pea meeles, et liikumiseks peame kasutama asukoti. Asukoha määramiseks on kaks võimalust: absoluutne ja suhteline.
+NÃ¼Ã¼d, kui sa tead, kus sa oled, vaatame, kas meil Ãµnnestub failisÃ¼steemis pisut ringi liikuda. Pea meeles, et liikumiseks peame kasutama asukoti. Asukoha mÃ¤Ã¤ramiseks on kaks vÃµimalust: absoluutne ja suhteline.
 
 <ul>
-<li>Absoluutne asukoht: See on faili asukoht alates juurkataloogist. Juur on meil see kõige olulisem tegelane. Juurkataloogi kuvatakse tavaliselt kaldkriipsuga. Kui asukoha alguses on /, siis tähendab, et sa alustad juurkataloogist. Näiteks /home/pete/Töölaud.</li>
+<li>Absoluutne asukoht: See on faili asukoht alates juurkataloogist. Juur on meil see kÃµige olulisem tegelane. Juurkataloogi kuvatakse tavaliselt kaldkriipsuga. Kui asukoha alguses on /, siis tÃ¤hendab, et sa alustad juurkataloogist. NÃ¤iteks /home/pete/TÃ¶Ã¶laud.</li>
 
-<li>Suhteline asukoht: See on faili asukoht alates sinu praegusest asukohast failisüsteemis. Kui ma asuksin praegu /home/pete/Dokumendid ja tahaksin liikuda Dokumentides asuvasse Arced kataloogi, siis ei ole mul vaja täpsustada kogu asukohta alates juurest, ma võin lihtsalt minna arved/ .</li>
+<li>Suhteline asukoht: See on faili asukoht alates sinu praegusest asukohast failisÃ¼steemis. Kui ma asuksin praegu /home/pete/Dokumendid ja tahaksin liikuda Dokumentides asuvasse arved kataloogi, siis ei ole mul vaja tÃ¤psustada kogu asukohta alates juurest, ma vÃµin lihtsalt minna arved/ .</li>
 </ul>
 
-Nüüd, kui me teame kuidas asukohad toimivad, on meil vaja midagi, mis aitaks meil liikuda soovitud kataloogi. õnneks on meil cd või siis "muuda kataloogi", et seda saavutada.
+NÃ¼Ã¼d, kui me teame kuidas asukohad toimivad, on meil vaja midagi, mis aitaks meil liikuda soovitud kataloogi. Ãµnneks on meil cd vÃµi siis "muuda kataloogi", et seda saavutada.
 
 <pre>$ cd /home/pete/Pildid</pre>
 
-Nüüd ma muutsin oma asukohaks home/pete/Pildid.
+NÃ¼Ã¼d ma muutsin oma asukohaks home/pete/Pildid.
 
-Selles kasutas on mul aga katalaoog Hawaii, ma saan sinna liikuda nõnda:
+Selles kasutas on mul aga katalaoog Hawaii, ma saan sinna liikuda nÃµnda:
 
 <pre>$ cd Hawaii</pre>
 
-Märkasid, et ma kasutasin ainult kausta nime? Sain nii teha, kuna mu asukoht juba oli /home/pete/Pildid
+MÃ¤rkasid, et ma kasutasin ainult kausta nime? Sain nii teha, kuna mu asukoht juba oli /home/pete/Pildid.
 
-Võib muutuda päris väsitavaks, kui kogu aeg peab kasutama absoluutseid või suhtelisi asukohti. Õnneks on meie abistamiseks olemas otseteed.
+VÃµib muutuda pÃ¤ris vÃ¤sitavaks, kui kogu aeg peab kasutama absoluutseid vÃµi suhtelisi asukohti. Ã•nneks on meie abistamiseks olemas otseteed.
 
 <ul>
 <li>. (praegune kataloog). See on kataloog, milles sa asud. </li>
-<li>.. (eelnev kataloog). Viib su praeguse kataloogi ülemkataloogi.</li>
-<li>~ (home kataloog). See on vaikimisi su kodukataloog, näiteks /home/pete.</li>
+<li>.. (eelnev kataloog). Viib su praeguse kataloogi Ã¼lemkataloogi.</li>
+<li>~ (home kataloog). See on vaikimisi su kodukataloog, nÃ¤iteks /home/pete.</li>
 <li>- (eelmine kataloog). Viib su kataloogi, kus sa viimati asusid.</li>
 </ul>
 
@@ -36,13 +36,13 @@ $ cd ..
 $ cd ~
 $ cd -
 </pre>
-Proovi need ära!
+Proovi need Ã¤ra!
 
 <ol>
-<li>Kuhu sa satud, kui sisestad cd käsu ilma täiendava infota?</li>
+<li>Kuhu sa satud, kui sisestad cd kÃ¤su ilma tÃ¤iendava infota?</li>
 </ol>
 
-## Küsimus
+## KÃ¼simus
 
 Kui su asukoht on /home/pete/Pildid ja sa tahad minna kataloogi /home/pete, siis millist otseteed oleks hea kasutada?
 
