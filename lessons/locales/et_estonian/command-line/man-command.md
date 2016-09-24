@@ -2,21 +2,21 @@
 
 ## Tunni sisu
 
-Oh, kuidas ma vahel unistan, et mõnel nendest programmidest oleks kasutusjuhend, et saaks nende kohta informatsiooni järgi vaadata. Aga õnneks neil ongi! Asjakohaselt nimetatud man (manuaal) leheküljed. Man käsuga saab vaadata mõne käsu kohta käivat kasutusjuhiste lehekülge.
+Oh, kuidas ma vahel unistan, et mÃµnel nendest programmidest oleks kasutusjuhend, et saaks nende kohta informatsiooni jÃ¤rgi vaadata. Aga Ãµnneks neil ongi! Asjakohaselt nimetatud man (manuaal) lehekÃ¼ljed. Man kÃ¤suga saab vaadata mÃµne kÃ¤su kohta kÃ¤ivat kasutusjuhiste lehekÃ¼lge.
 
 <pre>$ man ls</pre>
 
-Man lehelüljed on kasutusjuhendid, mis on vaikimisi Linuxi operatsioonisüsteemidesse sisse ehitatud. Sealt võib leida kohta dokumentatsiooni käskude kohta või muid aspekte süsteemi kohta.
+Man lehelÃ¼ljed on kasutusjuhendid, mis on vaikimisi Linuxi operatsioonisÃ¼steemidesse sisse ehitatud. Sealt vÃµib leida dokumentatsiooni kÃ¤skude kohta vÃµi muid aspekte sÃ¼steemi kohta.
 
-Katseta mõne käsuga, et selle kohta rohkem informatsiooni saada.
+Katseta mÃµne kÃ¤suga, et sellestrohkem teada saada.
 
 ## Harjutus
 
-Kasuta mani ls käsu peal.
+Kasuta mani ls kÃ¤su peal.
 
-## Küsimus
+## KÃ¼simus
 
-Kuidas saab näha käsu kasutusjuhendit?
+Kuidas saab nÃ¤ha kÃ¤su kasutusjuhendit?
 
 ## Vastus
 
