@@ -2,40 +2,40 @@
 
 ## Tunni sisu
 
-Nüüd kui mulle tundub, et meil vist on liiga palju faile, eemaldaks mõned. Selleks, et faile eemaldada, kasutame rm käsku. Rm (inglise keeles remove ehk eemalda) käsku kasutatakse, et kustutada faile ja katalooge.
+NÃ¼Ã¼d kui mulle tundub, et meil on liiga palju faile, eemaldaks mÃµned. Selleks, et faile eemaldada, kasutame rm kÃ¤sku. Rm (inglise keeles remove ehk eemalda) kÃ¤sku kasutatakse, et kustutada faile ja katalooge.
 
 <pre>$ rm fail1</pre>
 
-Ole rm kasutamisega ettevaatlik, sul ei ole maagilist prügikasti, kust hiljem eemaldatud faile välja õngitseda. Kui nad läinud, siis nad igaveseks läinud, seega ole tähelepanelik.
+Ole rm kasutamisega ettevaatlik, sul ei ole maagilist prÃ¼gikasti, kust hiljem eemaldatud faile vÃ¤lja Ãµngitseda. Kui nad lÃ¤inud, siis on nad igaveseks lÃ¤inud, seega ole tÃ¤helepanelik.
 
-Õnneks on üles seatud turvameetmed, et päris igaüks ei saaks eemaldada olulisi faile. Kirjutamise vastu kaitstud failid küsivad sult kinnitust enne kui sa nad ära kustutad. Samuti ei ole kirjutamise vastu kaitstud kataloogi niisama lihtne eemaldada.
+Ã•nneks on Ã¼les seatud turvameetmed, et pÃ¤ris igaÃ¼ks ei saaks eemaldada olulisi faile. Kirjutamise vastu kaitstud failid kÃ¼sivad sult kinnitust enne, kui sa nad Ã¤ra kustutad. Samuti ei ole kirjutamise vastu kaitstud kataloogi niisama lihtne eemaldada.
 
-Kui sind kõik see eelneb ei huvita, siis saad sa igal juhul eemaldada mingid failid.
+Kui sind kÃµik see eelnev ei huvita, siis saad sa faile igal juhul eemaldada.
 
 <pre>$ rm -f fail1</pre>
 
--f (inflise keeles force ehk jõuga) valik ütleb rm käsule, et see eemaldaks kõik failid hoolimata sellest, kas nad on kirjutamise vastu kaitstud või mitte. Seda ilma, et sult enne üle küsitakse (kui sul on selleks vastavad volitused).
+-f (inflise keeles force ehk jÃµuga) valik Ã¼tleb rm kÃ¤sule, et see eemaldaks kÃµik failid hoolimata sellest, kas nad on kirjutamise vastu kaitstud vÃµi mitte. Seda ilma, et sult enne Ã¼le kÃ¼sitakse (kui sul on selleks vastavad volitused).
 
 <pre>$ rm -i fail</pre>
 
-Sanraselt teistele käskudele, annab lipu -i lisamine sulle enne faili või kataloogi kustutamist võimaluse valida, kas sa ikka soovid seda teha.
+Sarnaselt teistele kÃ¤skudele, annab lipu -i lisamine sulle enne faili vÃµi kataloogi kustutamist vÃµimaluse valida, kas sa ikka soovid seda teha.
 
 <pre>$ rm -r kataloog</pre>
 
-Kataloogi ei saa niisama lihtsalt eemaldada, sul on vaja lisada lipp -r (rekursiivne), et eemaldatakse kõik failid ja alamkataloogid, mis seal võivad olla.
+Kataloogi ei saa niisama lihtsalt eemaldada, sul on vaja lisada lipp -r (rekursiivne), et eemaldatakse kÃµik failid ja alamkataloogid, mis seal vÃµivad olla.
 
-Kataloogi saab eemaldada rmdir käsuga.
+Kataloogi saab eemaldada rmdir kÃ¤suga.
 
 <pre>$ rmdir kataloog</pre>
 
 ## Harjutus
 
 <ol>
-<li>Loo fail nimega -fail (ära unusta sidekriipsu!).</li>
+<li>Loo fail nimega -fail (Ã¤ra unusta sidekriipsu!).</li>
 <li>Eemalda see fail.</li>
 </ol>
 
-## Küsimus
+## KÃ¼simus
 
 Kuidas eemaldada fail nimega minufail?
 
