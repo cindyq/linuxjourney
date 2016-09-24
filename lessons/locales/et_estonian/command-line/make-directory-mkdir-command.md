@@ -2,7 +2,7 @@
 
 ## Tunni sisu
 
-Meil l‰heb vaja kataloogi kıikide nende failide jaoks, millega me oleme tegelenud. Mkdri (loo uus kataloog) k‰sk on kasulik, sest see teeb sulle uue kataloogi, kui seda veel ei ole. Korraga saab luua isegi mitu kataloogi?
+Meil l√§heb vaja kataloogi k√µikide nende failide jaoks, millega me oleme tegelenud. Mkdri (loo uus kataloog) k√§sk on kasulik, sest see teeb sulle uue kataloogi, kui seda veel ei ole. Korraga saab luua isegi mitu kataloogi.
 
 <pre>$ mkdir raamatud maalid</pre>
 
@@ -12,11 +12,11 @@ Samal ajal saab luua ka alamkatalooge. Kasuta selleks -p (inglise keeles parent 
 
 ## Harjutus
 
-Loo mıned uued kataloogid ja tısta sinna faile.
+Loo m√µned uued kataloogid ja t√µsta sinna faile.
 
-## K¸simus
+## K√ºsimus
 
-Millise k‰suga luuakse uus kataloog?
+Millise k√§suga luuakse uus kataloog?
 
 ## Vastus
 
