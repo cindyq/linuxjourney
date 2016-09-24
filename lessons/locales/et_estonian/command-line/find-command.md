@@ -2,29 +2,29 @@
 
 ## Tunni sisu
 
-Meil on süsteemis palju faile ning nendest ühe konkreetse leidmine võib muutuda veidi keeruliseks. Saame selle jaoks kasutada käsku find!
+Meil on sÃ¼steemis palju faile ning nendest Ã¼he konkreetse leidmine vÃµib muutuda veidi keeruliseks. Saame selle jaoks kasutada kÃ¤sku find!
 
 <pre>$ find /home -name kutsikad.jpg</pre>
 
-Kui kasutad find käsku, pead täpsustama, millisest kataloogist tuleb faili otsida, mida sa otsid. Praegusel juhul otsime faili nime (name) kutsikad.jpg järgi.
+Kui kasutad find kÃ¤sku, pead tÃ¤psustama, millisest kataloogist tuleb faili otsida. Praegusel juhul otsime faili nime (name) kutsikad.jpg jÃ¤rgi.
 
-Sa võid ka täpsustada, millist tüüpi faili sa leida püüad.
+Sa vÃµid ka tÃ¤psustada, millist tÃ¼Ã¼pi faili sa leida pÃ¼Ã¼ad.
 
 <pre>$ find /home -type d -name MinuKaust</pre>
 
-Nagu märkasid, siis ma panin faili tüüpbiks d kataloogi jaoks ning samal ajal ma otsin endiselt nime järgi MinuKaust.
+Nagu mÃ¤rkasid, siis ma panin faili tÃ¼Ã¼pbiks d (kataloogi jaoks) ning samal ajal ma otsin endiselt nime jÃ¤rgi MinuKaust.
 
-Lahe asi, mida silmas pidada, on see, et find ei piirdu otsimisega täpsustatud kataloogist, see otsib ka kõikvõimalikes alamkataloogidest.
+Lahe asi, mida silmas pidada, on see, et find ei piirdu otsimisega tÃ¤psustatud kataloogist, see otsib ka kÃµikvÃµimalikest alamkataloogidest.
 
 ## Harjutus
 
 <ol>
-<li>Leia juurkataloogist fail, mille nimes on sõna net.</li>
+<li>Leia juurkataloogist fail, mille nimes on sÃµna net.</li>
 </ol>
 
-## Küsimus
+## KÃ¼simus
 
-Kuidas pean find käsku täpsustama, kui tahan otsida nime järgi?
+Kuidas pean find kÃ¤sku tÃ¤psustama, kui tahan otsida faili nime jÃ¤rgi?
 
 ## Vastus
 
