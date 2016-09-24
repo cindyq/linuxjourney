@@ -2,30 +2,30 @@
 
 ## Tunni sisu
 
-Kui sa vaatad faile, mis on suuremad kui su tavapärane väljundikuva, siis ilmselt teeb korraga vähem teksti kuvamine lugemise palju kergemaks. (On ka olemas käask more, mis teeb mida sarnast.) Kuna teksti kuvatakse lehekülgede kaupa, saad sa liikuda läbi teksti lehekülg haaval.
+Kui sa vaatad faile, mis on suuremad kui su tavapÃ¤rane vÃ¤ljundikuva, siis ilmselt teeb korraga vÃ¤hem teksti kuvamine lugemise palju kergemaks. (On ka olemas kÃ¤sk more, mis teeb mida sarnast.) Kuna teksti kuvatakse lehekÃ¼lgede kaupa, saad sa liikuda lÃ¤bi teksti lehekÃ¼lg haaval.
 
-Lase käia, proovi vaadata faili sisu käsuga less. Kui käsk on käivitatud, saad failis navigeerumiseks kasutada veel teisigi käske.
+Lase kÃ¤ia, proovi vaadata faili sisu kÃ¤suga less. Kui kÃ¤sk on kÃ¤ivitatud, saad failis navigeerumiseks kasutada veel teisigi kÃ¤ske.
 
 <pre>$ less /home/pete/Dokumendid/tekst1</pre>
 
-Kasuta järgmisi käske lessis navigeerumiseks:
+Kasuta jÃ¤rgmisi kÃ¤ske lessis navigeerumiseks:
 
 <ul>
-<li>q - Kasuta selleks, et väljuda lessist ja pöörduda tagasi shelli.</li>
-<li>Page up, Page down, Up and Down - Liigu kasutades Page- ja nooleklahve.</li>
+<li>q - Kasuta selleks, et vÃ¤ljuda lessist ja pÃ¶Ã¶rduda tagasi shelli.</li>
+<li>Page up, Page down, Ã¼les ja alla nooleklahvid - Liigu kasutades Page- ja nooleklahve.</li>
 <li>g - Liigu tekstifaili algusesse.</li>
-<li>G - Liigu tekstifaili lõppu.</li>
-<li>/search - Sa võid otsida konkreetset teksti enda dokumendist. Alusta otsitavat sõna sõmboliga /</li>
+<li>G - Liigu tekstifaili lÃµppu.</li>
+<li>/search - Sa vÃµid otsida dokumendist konkreetset teksti. Alusta otsitavat sÃµna sÃµmboliga /</li>
 <li>h - Kui sul on vaja abi lessi kasutamise osas, siis kui see on juba avatud.</li>
 </ul>
 
 ## Harjutus
 
-Kasuta faili peal less käsku, see järal liigu seal ringi noolklahvidega ning pgup ja pgdn klahvidega. Proovi otsida mingit sõna. Liigu kiirelt faili algusesse või lõppu.
+Kasuta faili peal less kÃ¤sku, see jÃ¤ral liigu seal ringi nooleklahvidega ning pgup ja pgdn klahvidega. Proovi otsida mingit sÃµna. Liigu kiirelt faili algusesse vÃµi lÃµppu.
 
-## Küsimus
+## KÃ¼simus
 
-Kuidas sa saad less käsust väljuda?
+Kuidas sa saad less kÃ¤sust vÃ¤ljuda?
 
 ##
 
