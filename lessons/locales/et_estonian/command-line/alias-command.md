@@ -2,27 +2,27 @@
 
 ## Tunni sisu
 
-Mõnikord võib muutuda käskude sisestamine väga korduvaks, võik on sul on vaja kirjutada väga pikka käsku mitu korda. Sellisel juhul oleks parem kasutada selleks aliast. Käsule aliase loomiseks, pead lihtsalt täpsustama aliase nime ja seostama selle käsuga.
+MÃµnikord vÃµib muutuda kÃ¤skude sisestamine vÃ¤ga korduvaks, vÃµi on sul on vaja kirjutada vÃ¤ga pikka kÃ¤sku mitu korda. Sellisel juhul oleks parem kasutada aliast. KÃ¤sule aliase loomiseks pead lihtsalt tÃ¤psustama aliase nime ja seostama selle kÃ¤suga.
 
 <pre>$ alias foobar='ls -la'</pre>
 
-Nüüd võid ls -ls asemel kirjutada foobar, ja see käivitab käsu. Päris viisakas värk. Pea meelest, et aliased ei säili, kui pead arvuti taaskävitama. Selleks peab looma permanentse aliase:
+NÃ¼Ã¼d vÃµid ls -ls asemel kirjutada foobar ja see kÃ¤ivitab kÃ¤su. PÃ¤ris viisakas vÃ¤rk. Pea meelest, et aliased ei sÃ¤ili, kui pead arvuti taaskÃ¤vitama. Selleks peab looma permanentse aliase:
 
 <pre>~/.bashrc</pre>
 
-või mõnda teise sarnasesse faili, kui soovid, et see säiliks ka pärst taaskäivitamist.
+vÃµi mÃµnda teise sarnasesse faili, kui soovid, et see sÃ¤iliks ka pÃ¤rst taaskÃ¤ivitamist.
 
-Aliase saab eemaldada unalias käsuga:
+Aliase saab eemaldada unalias kÃ¤suga:
 
 <pre>$ unalias foobar</pre>
 
 ## Harjutus
 
-Loo mõned aliased ja eemalda nad.
+Loo mÃµned aliased ja eemalda need.
 
-## Küsimus
+## KÃ¼simus
 
-Millise käsuga luuakse alias?
+Millise kÃ¤suga luuakse alias?
 
 ## Vastus
 
