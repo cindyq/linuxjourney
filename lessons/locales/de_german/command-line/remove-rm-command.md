@@ -18,11 +18,11 @@ Die -f (force) Option löscht alle angegebenen Dateien ohne Nachfrage, es sei de
 
 <pre>$ rm -i datei</pre>
 
-Wie bei vielen anderen Kommandos führt die -i Option dazu, dass vor dem löschen von Dateien noch einmal nachgefragt wird.
+Wie bei vielen anderen Kommandos führt die -i Option dazu, dass vor dem Löschen von Dateien noch einmal nachgefragt wird.
 
 <pre>$ rm -r ordner</pre>
 
-Ordner lassen sich nicht ohne die -r Option entfernen. Wie bei cp steht das -r hier für rekursiv. Es führt dazu, dass man Verzeichnisse mitsamt ihren Unterverzeichnisen und Dateien löschen kann.
+Ordner lassen sich nicht ohne die -r Option entfernen. Wie bei cp steht das -r hier für rekursiv. Es führt dazu, dass man Verzeichnisse mitsamt ihren Unterverzeichnissen und Dateien löschen kann.
 
 Ein Ordner lässt sich alternativ mit dem rmdir Kommando löschen.
 

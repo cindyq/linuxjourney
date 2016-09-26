@@ -2,7 +2,7 @@
 
 ## Inhalt der Lektion
 
-Linux hat einige gut Möglichkeiten mit an Bord, um Hilfe zu Kommandos zu bekommen und zu sehen was diese an Argumenten und Optionen untersützten. Eine Möglichkeit ist help, ein in Bash integriertes Kommando das Hilfe für andere Bash Kommandos anzeigt (echo, logout, pwd, etc).
+Linux hat einige gute Möglichkeiten mit an Bord, um Hilfe zu Kommandos zu bekommen und zu sehen, was diese an Argumenten und Optionen untersützen. Eine Möglichkeit ist help, ein in Bash integriertes Kommando das Hilfe für andere Bash Kommandos anzeigt (echo, logout, pwd, etc).
 
 <pre>$ help echo</pre>
 

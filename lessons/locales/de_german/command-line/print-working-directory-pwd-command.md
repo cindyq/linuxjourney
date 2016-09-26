@@ -2,7 +2,7 @@
 
 ## Inhalt der Lektion
 
-Alles in Linux ist eine Datei, während deiner Reise ins innere von Linux sollte das noch klarer werden. Für den Moment behalte es einfach im Hinterkopf. Jede Datei ist in einen hirarchischen Verzeichnisbaum einsortiert. Das erste Verzeichnis das alle anderen beinhaltet heißt deshalb Wurzelverzeichnis (root directory). Das Wurzelverzeichnis beinhaltet einige Ordner und Dateien, die wiederum Ordner und Dateien enthalten usw. Hier ein Beispiel wie so ein Verzeichnisbaum aussieht:
+Alles in Linux ist eine Datei, während deiner Reise ins Innere von Linux wird dir das noch klarer werden. Jede Datei ist in einen hirarchischen Verzeichnisbaum einsortiert. Das erste Verzeichnis, das alle anderen beinhaltet heißt Wurzelverzeichnis (root directory). Das Wurzelverzeichnis beinhaltet einige Ordner und Dateien, die wiederum Ordner und Dateien enthalten usw. Hier ein Beispiel wie so ein Verzeichnisbaum aussieht:
 
 <pre>/
 |-- bin
@@ -17,9 +17,9 @@ Alles in Linux ist eine Datei, während deiner Reise ins innere von Linux sollte
 |-- var
 </pre>
 
-Die Ortsangabe einer Datei, oder eines Verzeichnises, nennt man Pfad. Wenn du einen Ordner namens home mit einem Ordner namens pete darin hast, indem sich wiederum ein Ordner namens Movies befindet, würde der Pfad folgendermaßen aussehen: `/home/pete/Movies`, recht einfach, oder?
+Die Ortsangabe einer Datei oder eines Verzeichnisses nennt man Pfad. Wenn du einen Ordner namens home mit einem Ordner namens pete darin hast, indem sich wiederum ein Ordner namens Movies befindet, würde der Pfad folgendermaßen aussehen: `/home/pete/Movies`. Recht einfach, oder?
 
-Wenn man im Verzeichnisbaum navigiert, ist es immer hilfreich zu wissen wo man sich gerade befindet und wo man sich hin bewegen möchte. Um zu sehen wo man sich befindet kann man das pwd Kommando verwenden. Der Befehl pwd steht für "print working directory", zu deutsch etwas "zeige Arbeitsverzeichnis". Dieser Befehl gibt also das Verzeichnis aus in dem man sich gerade befindet. Es zeigt den Pfad beginnend beim Wurzelverzeichnis.
+Wenn man im Verzeichnisbaum navigiert, ist es immer hilfreich zu wissen wo man sich gerade befindet und wo man sich hinbewegen möchte. Um zu sehen, wo man sich befindet, kann man das pwd Kommando verwenden. Der Befehl pwd steht für "print working directory", zu deutsch etwa "zeige Arbeitsverzeichnis". Dieser Befehl gibt also das Verzeichnis aus, in dem man sich gerade befindet. Es zeigt den Pfad beginnend beim Wurzelverzeichnis.
 
 <pre>$ pwd</pre>
 
@@ -31,7 +31,7 @@ Keine Übung für diese Lektion.
 
 ## Quizfrage
 
-Wie mit welchem Befehl findest du das Verzeichnis heraus in dem du gerade bist?
+Mit welchem Befehl findest du das Verzeichnis heraus, in dem du gerade bist?
 
 ## Quiz Answer
 

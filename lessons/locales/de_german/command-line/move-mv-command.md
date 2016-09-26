@@ -2,7 +2,7 @@
 
 ## Inhalt der Lektion
 
-Das mv Kommando wird zum verschieben und umbenennen von Dateien und Ordnern benutzt. Es ist sehr ähnlich zum cp Kommando hinsichtlich seiner Argumente und seiner Benutzung.
+Das mv Kommando wird zum Verschieben und Umbenennen von Dateien und Ordnern benutzt. Es ist sehr ähnlich zum cp Kommando hinsichtlich seiner Argumente und seiner Benutzung.
 
 So kannst du Dateien umbenennen:
 
@@ -20,7 +20,7 @@ Du kannst auch Ordner umbenennen:
 
 <pre>$ mv ordner_1 ordner_2</pre>
 
-Wie cp wird auch mv alles überschreiben dass schon unter gleichem Namen existiert. Aber auch hier gibt es die -i Option, die dich vor dem Überschreiben warnt.
+Wie cp wird auch mv alles überschreiben, das schon unter gleichem Namen existiert. Aber auch hier gibt es die -i Option, die dich vor dem Überschreiben warnt.
 
 <pre>mv -i datei_1 datei_2</pre>
 
@@ -32,7 +32,7 @@ Das überschreibt datei_2 mit Inhalt aus datei_1 sichert aber die ursprüngliche
 
 ## Übung
 
-Ändere den Namen einer Datei und verchiebe sie dann in ein anderes Verzeichnis.
+Ändere den Namen einer Datei und verschiebe sie dann in ein anderes Verzeichnis.
 
 ## Quizfrage
 
