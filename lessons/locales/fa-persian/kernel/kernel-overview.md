@@ -1,25 +1,25 @@
-# Overview of the Kernel
+# نگاهی اجمالی به کرنل
 
-## Lesson Content
+## محتویات درس
 
-As you've learned up to this point, the kernel is the core of the operating system. We've talked about the other parts of the operating system but have yet to show how they all work together. The Linux operating system can be organized into three different levels of abstraction.
+تا اینجای کار می‌دانید که کرنل، در حقیقت هسته‌ی سیستم‌عامل است. در خصوص قسمت‌های دیگر سیستم‌عامل نیز صحبت کرده‌ایم ولی قسمت نشده که بدانید این قسمت‌ها چطور با هم به صورت یکپارچه کار می‌کنند. سیستم‌عاملِ لینوکسی می‌تواند به صورتی تنظیم شود که در سه سطح مختلف عمل کند.
 
-The most basic level is hardware, this includes our CPU, memory, hard disks, networking ports, etc. The physical layer that actually computes what our machine is doing.
+پایه‌ای‌ترین سطح، سخت‌افزار است که شامل پرازنده، حافظه‌ی اصلی، حافظه‌ی جانبی، پورت‌های شبکه و… می‌شود. لایه‌ی فیزیکی که در اصل وظیفه‌ی محاسبه‌ی آن چیزی که دستگاه در حال انجامش است را دارد.
 
-The next level is the kernel, which handles process and memory management, device communication, system calls, sets up our filesystem, etc. The kernel's job is to talk to the hardware to make sure it does what we want our processes to do. 
+سطح بعدی، کرنل است که مدیریت حافظه و پردازش، ارتباطات دستگاه‌ها، فراخوان‌های سیستمی، برپایی فایل‌سیستم و غیره را برعهده دارد. وظیفه‌ی کرنل صحبت کردن با سخت‌افزار است تا مطمئن شود که آن چیزی که ما می‌خواهیم، توسط لایه‌ی فیزیکی پردازش می‌شود.
 
-And the level that you are familiar with is the user space, the user space includes the shell, the programs that you run, the graphics, etc.
+و سطحی که شما هم با آن آشنا هستید، فضای کاربر است. فضای کاربر شامل شل، برنامه‌هایی که اجرا می‌کنید، گرافیکی که مشاهده می‌نمایید و غیره می‌شود.
 
-In this course, we'll be focusing on the kernel and learning its intricacies.
+ما در این دوره بر روی کرنل و ریزه‌کاری‌هایش تمرکز خواهیم کرد.
 
-## Exercise
+## تمرین
 
-No exercises for this lesson.
+تمرینی برای این درس نداریم. خوش بگذرانید.
 
-## Quiz Question
+## سؤال آزمون
 
-What level of the operating system manages devices?
+کدام سطح از سیستم‌عامل، دستگاه‌ها را مدیریت می‌کند؟
 
-## Quiz Answer
+## پاسخ آزمون
 
 kernel
