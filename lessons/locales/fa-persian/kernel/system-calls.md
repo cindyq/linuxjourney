@@ -1,25 +1,25 @@
-# System Calls
+# System Calls / فراخوان‌های سیستمی
 
-## Lesson Content
+## محتویات درس
 
-Remember Britney in the previous lesson? Let's say we want to see her and get some drinks together, how do we get from standing outside in the crowds of people to inside her innermost circle? We would use system calls. System calls are like the VIP passes that get you to a secret side door that leads directly to Britney.
+بریتنی را در درس قبل که یادتان هست؟ خب فرض کنید می‌خواهیم بریتنی را ببینیم و با هم کمی نوشیدنی بخوریم. حالا چطور از میان جمعیتِ بیرون به داخلی‌ترین حلقه‌ی او وارد شویم؟ می‌توانیم از فراخوان‌های سیستمی استفاده کنیم. فراخوان‌های سیستمی مانند اجازه‌های ورود VIPست که به شما درِ مخفی را برای دسترسی مستقیم به بریتنی نشان می‌دهد.
 
-System calls (syscall) provide user space processes a way to request the kernel to do something for us. The kernel makes certain services available through the system call API. These services allow us to read or write to a file, modify memory usage, modify our network, etc. The amount of services are fixed, so you can't be adding system calls nilly willy, your system already has a table of what system calls exist and each system call has a unique ID. 
+فراخوان‌های سیستم (سیس‌کال) به پروسه‌های فضای کاربری یک راه مخفی برای درخواست از کرنل برای انجام کار خاصی را ایجاد می‌کند. کرنل، سرویس‌های خاصی را از طریق API فراخوان‌های سیستمی در دسترس قرار می‌دهد. این سرویس‌ها به ما اجازه‌ی خواندن و نوشتن یک فایل، دستکاری حافظه‌ی مصرفی، دستکاری شبکه و غیره را می‌دهد. میزان سرویس‌ها از قبل تعیین شده است و نمی‌توانید به دلخواه، فراخوان‌های سیستمی را اضافه یا کم کنید. سیستم شما جدولی در خصوص فراخوان‌هایی که موجودند، دارد. هر فراخوان سیستم یک شناسه یا ID یکتا و مخصوص به خود دارد.
 
-I won't get into specifics of system calls, as that will require you to know a bit of C, but the basics is that when you call a program like ls, the code inside this program contains a system call wrapper (so not the actual system call yet). Inside this wrapper it invokes the system call which will execute a trap, this trap then gets caught by the system call handler and then references the system call in the system call table. Let's say we are trying to call the stat() system call, it's identified by a syscall ID and the purpose of the stat() system call is to query the status of a file. Now remember, you were running the ls program in non-privilege mode. So now it sees you're trying to make a syscall, it then switches you over to kernel mode, there it does lots of things but most importantly it looks up your syscall number, finds it in a table based on the syscall ID and then executes the function you wanted to run. Once it's done, it will return back to user mode and your process will receive a return status if it was successful or if it had an error. The inner workings of syscalls get really detailed, I would recommend looking at information online if you want to learn more. 
+من در این دوره وارد جزئیات فراخوان‌های سیستمی نخواهم شد چرا که ورود به این مبحث نیاز به دانستن زبان C دارد.  در این حد بگویم که زمانی که یک برنامه مثل ls را فرا می‌خوانید، کدِ داخل برنامه شامل یک رَپِر / لفافه‌ی فراخوان سیستمی (system call wrapper) می‌شود (این همان فراخوان سیستمی نیست). سپس این لفافه / رپر، به فراخوان سیستمی متوسل می‌شود. فراخوان سیستمی یک تِرَپ / تله را اجرا می‌کند. سپس این تله توسط هندلرِ فراخوان سیستمی دریافت شده و سپس به فراخوان سیستمی موجود در جدول فراخوان‌های سیستمی ارجاع داده می‌شود. بگذارید با مثال مطلب را برای‌تان جا بیندازیم. فرض کنید ما می‌خواهیم فراخوان سیستمی stat()‎ را فراخوانی کنم. این فراخوان توسط یک شناسه‌ی syscall شناسایی می‌شود. هدف فراخوان سیستمیِ ‎stat()‎ جویا شدن وضعیت یک فایل است. خب یادتان هست که ما برنامه ls را در مدِ بدون دسترسی لازم اجرا کردیم؟ اینجاست که برنامه متوجه می‌شود که شما در حال تلاش برای ساخت یک سیس‌کال (فراخوان سیستمی) هستید، در نتیجه شما را یک لحظه به مد کرنل می‌برد که کارهای فراوانی در آنجا صورت می‌پذیرد. البته مهم‌ترینشان گشتن به دنبال شماره‌ی سیس‌کال، و پیدا کردن آن در جدولی که بر پایه‌ی شناسه‌ی سیس‌کال‌ها نوشته شده، است. در نهایت پروسه‌ی در حال اجرای شما یک وضعیت یا به اصطلاح گزارش را دریافت می‌کند که نتیجه موفقیت یا خطا را باز می‌گرداند. عمل‌کرد داخلی سیس‌کال‌ها واقعاً جزئیات بیشماری را در خود دارد و اگر می‌خواهید در این زمینه بیشتر یاد بگیرید، بهتر است که کمی به گشت و گذار در دنیای اینترنت بپردازید.
 
-You can actually view the system calls that a process makes with the strace command. The strace command is useful for debugging how a program executed. 
+همچنین شما می‌توانید سیستم کال‌هایی که یک پروسه می‌سازد را با دستور strace مشاهده کنید. دستور strace برای دی‌باگ کردن اینکه یک برنامه چگونه اجرا می‌شود می‌تواند مورد استفاده مفید قرار بگیرد.
 
-<pre>$ strace ls</pre>
+$ strace ls
 
-## Exercise
+## تمرین
 
-No exercises for this lesson.
+تمرینی برای این درس نیست.
 
-## Quiz Question
+## سؤال آزمون
 
-What is used to switch from user mode to kernel mode?
+چه چیزی برای تغییر از مد کاربر به مد کرنل مورد استفاده قرار می‌گیرد؟
 
-## Quiz Answer
+## پاسخ آزمون
 
 system call
