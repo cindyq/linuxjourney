@@ -1,27 +1,29 @@
-# Authentication Logging
+# گزارش اصالت‌سنجی
 
-## Lesson Content
+## محتویات درس
 
-Authentication logging can be very useful to look at if you are having issues logging in. 
+اصالت‌سنجی (Authentication) یا احراز هویت در اینجا به تأیید اصالت کاربری اشاره دارد که تلاش می‌کند از اختیارات خود استفاده کند به این صورت که این اختیارات در دسترس فرد دیگری قرار نگیرد. به عنوان مثال، تأیید هویت کاربر در حین ورود به سیستم توسط کلمه‌ی عبور باعث می‌شود که سیستم بفهمد کاربری که در حال ورود به سیستم است و اختیارات معینی را صاحب می‌شود، همان کاربر با اصالت و نه یک خرابکار است.
 
-<b>/var/log/auth.log</b>
+زمانی که با ورود به سیستم مشکل دارید، گزارش اصالت‌سنجی اطلاعات مفیدی را در اختیارتان قرار می‌دهد.
 
-This contains system authorization logs, such as user login and the authentication method used. 
+**/var/log/auth.log**
 
-Sample snippet:
+این فایل شامل گزارش‌های اصالت‌سنجی مانند روشی که کاربر برای ورود و اصالت‌سنجی انتخاب کرده می‌شود.
 
-<pre>
+نمونه‌ی کوچک:
+
+```
 Jan 31 10:37:50 icebox pkexec: pam_unix(polkit-1:session): session opened for user root by (uid=1000)
-</pre>
+```
 
-## Exercise
+## تمرین
 
-Do some failed logins and then a successful one, look at your /var/log/auth.log and see what happened.
+چند بار با وارد کردن کلمه‌ی عبور اشتباه، سعی کنید که وارد سیستم شوید و سپس نگاهی به فایل ‎/var/log/auth.log بیندازید. چه چیزی می‌بینید؟
 
-## Quiz Question
+## سؤال آزمون
 
-What log is used for user authentication?
+چه فایلِ گزارشی برای اصالت‌سنجی کاربر استفاده می‌شود؟
 
-## Quiz Answer
+## پاسخ آزمون
 
 auth.log
