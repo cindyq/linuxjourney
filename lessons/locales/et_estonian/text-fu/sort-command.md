@@ -2,7 +2,7 @@
 
 ## Tunni sisu
 
-Sort käsk on kasulik ridade sorteerimiseks.
+Sort kÃ¤sk on kasulik ridade sorteerimiseks.
 
 <pre>
 fail1.txt
@@ -30,21 +30,21 @@ kass
 elevant
 </pre>
 
-Samuti ka numbrilise väärtuse põhjal:
+Samuti ka numbrilise vÃ¤Ã¤rtuse pÃµhjal:
 
 <pre>$ sort -n fail1.txt
---pean järgi proovima--
+---pean jÃ¤rgi proovima---
 </pre>
 
 ## Harjutus
 
-Sort käsu tõeline jõud tuleneb võimalusest kasutada seda koos teiste käskudega. Proovi järgmist käsku ja vaata, mis juhtub?
+Sort kÃ¤su tÃµeline jÃµud tuleneb vÃµimalusest kasutada seda koos teiste kÃ¤skudega. Proovi jÃ¤rgmist kÃ¤sku ja vaata, mis juhtub?
 
 <pre>$ ls /etc | sort -rn</pre>
 
-## Küsimus
+## KÃ¼simus
 
-Millise käsuga saab teha tagurpidi soreteerimist?
+Millise kÃ¤suga saab teha tagurpidi soreteerimist?
 
 ## Vastus
 
