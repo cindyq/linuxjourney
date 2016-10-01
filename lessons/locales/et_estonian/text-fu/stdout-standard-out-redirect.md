@@ -2,47 +2,47 @@
 
 ## Tunni sisu
 
-Praguseks oleme juba päris paljude käskude ja nende väljunditega tuttavaks saanud ja see viib meid ka edasi järgmise teemani: sisend/väljund vood. Sisestame järgmise käsu ja pärast arutame, kuidas see töötab:
+Praguseks oleme juba pÃ¤ris paljude kÃ¤skude ja nende vÃ¤ljunditega tuttavaks saanud ja see viib meid ka edasi jÃ¤rgmise teemani: sisend/vÃ¤ljund vood. Sisestame jÃ¤rgmise kÃ¤su ja pÃ¤rast arutame, kuidas see tÃ¶Ã¶tab:
 
-<pre>$ echo Hello World > pähklid.txt</pre>
+<pre>$ echo Hello World > pÃ¤hklid.txt</pre>
 
-Mis just praegu juhtus? Aga mine kontrolli seda kataloogi, kus sa selle käsu käivitasid ja pane end valmis, sest sa peaksid sealt leidma faili nimega pähklid.txt. Kui sa sinna sisse vaatad, siis peaksid leidma teksti Hello World. Selle ühe käsuga juhtus päris palju, vaatame seda jupp haaval.
+Mis just praegu juhtus? Aga mine kontrolli seda kataloogi, kus kÃ¤sk kÃ¤ivitati ja pane end valmis, sest sa peaksid sealt leidma faili nimega pÃ¤hklid.txt. Kui sa sinna sisse vaatad, siis peaksid leidma teksti Hello World. Selle Ã¼he kÃ¤suga juhtus pÃ¤ris palju, vaatame seda jupp haaval.
 
 Vaatame esimest osa:
 
 <pre>$ echo Hello World</pre>
 
-Me teame, et see trükib ekraanile Hello World, aga kuidas? Protsessid kasutavad sisend-väljund voogusid, et võtta vastu sisendandmeid ja väljastada väljundeid. Vaikimisi võtab echo käsk sisendi (standard sisend või stdin) klaviatuurilt ja tagastab väljundi (standard väljund või stdout) ekraanile. Seepärast, kuvatakse su ekraanile Hello World, kui sa sisestad shelli echo Hello World. Sisend-väljundi ümbersuunamisega saame aga seda vaikimisi käitumist muuta, see annab meile failide osas suurema paindlikuse.
+Me teame, et see trÃ¼kib ekraanile Hello World, aga kuidas? Protsessid kasutavad sisend-vÃ¤ljund voogusid, et vÃµtta vastu sisendandmeid ja vÃ¤ljastada vÃ¤ljundeid. Vaikimisi vÃµtab echo kÃ¤sk sisendi (standard sisend vÃµi stdin) klaviatuurilt ja tagastab vÃ¤ljundi (standard vÃ¤ljund vÃµi stdout) ekraanile. SeepÃ¤rast, kuvatakse su ekraanile Hello World, kui sa sisestad kesta echo Hello World. Sisend-vÃ¤ljundi Ã¼mbersuunamisega saame aga seda vaikimisi kÃ¤itumist muuta, see annab meile failide osas suurema paindlikuse.
 
-Vaatame, mis selle käsuga edasi juhtus:
+Vaatame, mis kÃ¤suga edasi juhtus:
 
 <pre> > </pre>
 
-> on ümbersuunamise operaator, mis laseb meil muuta seda, kuhu suunatakse standardväljund. See lubab meil suunata echo Hello Worldi väljundi ekraani asemel faili. Kui sellist faili veel olemas ei ole, siis see luuakse. Kui see aga on olemas, siis kirjutatakse see üle (olenevalt shellist, saad sa lisada käsule lipu, et sellist olukorda vältida).
+> on Ã¼mbersuunamise operaator, mis laseb meil muuta seda, kuhu suunatakse standardvÃ¤ljund. See lubab meil suunata echo Hello Worldi vÃ¤ljundi ekraani asemel faili. Kui sellist faili veel olemas ei ole, siis see luuakse. Kui see aga on olemas, siis kirjutatakse see Ã¼le (olenevalt kestast, saad sa lisada kÃ¤sule lipu, et sellist olukorda vÃ¤ltida).
 
-Ja nii põhimõtteliselt stdout ümbersuunamine töötabki!
+Ja nii pÃµhimÃµtteliselt stdout Ã¼mbersuunamine tÃ¶Ã¶tabki!
 
-Ütleme aga, et ma ei taha oma pähklid.txt faili ülekirjutada. Õnneks on selle jaoks ja olemas ümbersuunamise operaator, >>:
+Ãœtleme aga, et ma ei taha oma pÃ¤hklid.txt faili Ã¼lekirjutada. Ã•nneks on selle jaoks ja olemas Ã¼mbersuunamise operaator, >>:
 
 
-<pre>$ echo Hello World >> pähklid.txt</pre>
+<pre>$ echo Hello World >> pÃ¤hklid.txt</pre>
 
-See lisab Hello Worldi pähklid.txt faili lõppu. Kui aga faili eelnevalt ei eksisteerinud, siis luuakse see, justnagu > ümbersuunamisegagi.
+See lisab Hello Worldi pÃ¤hklid.txt faili lÃµppu. Kui aga faili eelnevalt ei eksisteerinud, siis luuakse see, justnagu > Ã¼mbersuunamise puhulgi.
 
 
 ## Harjutus
 
-Proovi paari käsku:
+Proovi paari kÃ¤sku:
 
 <pre>
-$ ls -l /var/log > minuväljund.txt
+$ ls -l /var/log > minuvÃ¤ljund.txt
 $ echo Hello World > rm
 $ > mingifail.txt 
 </pre>
 
-## Küsimus
+## KÃ¼simus
 
-Millist käsku kasutad kui tahad väljundi lisada olemasoleva faili lõppu?
+Millist kÃ¤sku kasutad kui tahad vÃ¤ljundi lisada olemasoleva faili lÃµppu?
 
 ## Vastus
 
