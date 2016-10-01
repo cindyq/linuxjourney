@@ -2,28 +2,28 @@
 
 ## Tunni sisu
 
-Eelmises tunnis õppisime, et me saame kasutada erinevaid stdout voogusid, näiteks faili või ekraani. Samamoodi on olemas ka standardsisendi (stdin) voogusid. Teame, et onolemas stdin seadmetelt nagu klaviatuur, kuid me võime kasutada ka faile, teiste protsesside väljundeid ning ka terminali. Vaatame näidet.
+Eelmises tunnis Ãµppisime, et me saame kasutada erinevaid stdout voogusid, nÃ¤iteks faili vÃµi ekraani. Samamoodi on olemas ka standardsisendi (stdin) voogusid. Teame, et on olemas stdin seadmetelt nagu klaviatuur, kuid me vÃµime kasutada ka faile, teiste protsesside vÃ¤ljundeid ning ka terminali. Vaatame nÃ¤idet.
 
-Kasutame selle näite jaoks eelmise tunni pähklid.txt faili. Meenuta, et seal oli sees tekst Hello World.
+Kasutame selle nÃ¤ite jaoks eelmise tunni pÃ¤hklid.txt faili. Meenuta, et seal oli sees tekst Hello World.
 
-<pre>$ cat <b>&lt;</b> pähklid.txt <b>&gt;</b> banaan.txt </pre> 
+<pre>$ cat <b>&lt;</b> pÃ¤hklid.txt <b>&gt;</b> banaan.txt </pre> 
 
-Just nagu meil oli <b>&gt;</b> stdout ümbersuunamiseks, on meil <b>&lt;</b> stdin ümbersuunamise jaoks.
+Just nagu meil oli <b>&gt;</b> stdout Ã¼mbersuunamiseks, on meil <b>&lt;</b> stdin Ã¼mbersuunamise jaoks.
 
-Tavaliselt saadaksid sa cat käsu puhul sellele faili ja sellest saab stdin, praegusel juhul aga suunasime me stdin'ks pähklid.txt. Sedasi suunatakse cat pähklid.txt väljund ümber faili mimega banaan.txt
+Tavaliselt saadaksid sa cat kÃ¤su puhul sellele faili ja sellest saab stdin, praegusel juhul aga suunasime me stdin'ks pÃ¤hklid.txt. Sedasi suunatakse cat pÃ¤hklid.txt vÃ¤ljund Ã¼mber faili mimega banaan.txt
 
 ## Harjutus
 
-Proovi paari käsku:
+Proovi paari kÃ¤sku:
 <pre>
-$ echo <b>&lt;</b> pähklid.txt <b>&gt;</b> banaan.txt
-$ ls <b>&lt;</b> pähklid.txt <b>&gt;</b> banaan.txt
-$ pwd <b>&lt;</b> pähklid.txt <b>&gt;</b> banaan.txt
+$ echo <b>&lt;</b> pÃ¤hklid.txt <b>&gt;</b> banaan.txt
+$ ls <b>&lt;</b> pÃ¤hklid.txt <b>&gt;</b> banaan.txt
+$ pwd <b>&lt;</b> pÃ¤hklid.txt <b>&gt;</b> banaan.txt
 </pre>
 
-## Küsimus
+## KÃ¼simus
 
-Millise käsuga suunad sa ümber stdin?
+Millise kÃ¤suga suunad sa Ã¼mber stdin?
 
 ## Vastus
 
