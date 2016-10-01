@@ -2,25 +2,25 @@
 
 ## Tunni sisu
 
-Käivita käsk:
+KÃ¤ivita kÃ¤sk:
 
-$ echo $HOME
+<pre>$ echo $HOME</pre>
 
-Sa peaksid nägema oma kodukataloogi otsiteeknda, minu oma näeb selline välja /home/pete.
+Sa peaksid nÃ¤gema oma kodukataloogi otsiteekonda, minu oma nÃ¤eb selline vÃ¤lja /home/pete.
 
-Aga see käsk?
+Aga see kÃ¤sk?
 
-$ echo $USER 
+<pre>$ echo $USER</pre> 
 
-Sa peaksid nägema enda kasutajanime!
+Sa peaksid nÃ¤gema enda kasutajanime!
 
-Kust see infiormatsioon pärineb? See pärineb sinu keskkonna muutujatest. Sa saad neid näha, kui trükid
+Kust see infiormatsioon pÃ¤rineb? See pÃ¤rineb sinu keskkonna muutujatest. Neid saab nÃ¤ha, kui trÃ¼kid
 
-$ env 
+<pre>$ env</pre> 
 
-See väljund, kuvab palju infot selle kohta, millised keskkonna muutujad sul parasjagu seatud on. Nendes muutujates on palju kaslikku infot, mida kest ja teised protsessid saavad kasutada.
+See vÃ¤ljund kuvab palju infot parasjagu seatud keskkonna muutujate kohta. Nendes muutujates on palju kaslikku infot, mida kest ja teised protsessid saavad kasutada.
 
-Siin on lühike näide:
+Siin on lÃ¼hike nÃ¤ide:
 
 <pre>
 PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/bin
@@ -28,25 +28,25 @@ PWD=/home/user
 USER=pete
 </pre>
 
-Üks eriliselt oluline muutuja on PATH muutuja.  Nendele saab ligi, kui topid $ sümboli muutujanime ette, niimoodi:
+Ãœks eriliselt oluline muutuja on PATH muutuja.  Nendele saab ligi, kui topid $ sÃ¼mboli muutujanime ette, niimoodi:
 
 <pre>
 $ echo $PATH
 /usr/local/sbin:/usr/local/bin:/usr/sbin:/bin
 </pre>
 
-See tagastab nimekirja koolonitega eraldatud teekondades, milleni su süsteem ulatub, kui see käivitab käsu.  Ütleme, et sa laed Internetis käsitsi alla ja paigaldad paketi, mille sa paned mittestandardsesse kataloogi ja tahas käivitada käsku. Sa kirjutad $ lahekäsk ja käsuviip ütleb, et käsku ei leitud. See on küll tobe. Sa vaatad kaustas binaari ja tead, et see on olemas. Mis toimub on see, et  $PATH muutuja ei kontrolli selle kataloogi seda binaari ning seetõttu annab veateate.
+Kui kÃ¤sk kÃ¤ivitada, tagastab see nimekirja koolonitega eraldatud teekondades, milleni su sÃ¼steem ulatub. Ãœtleme, et sa laed Internetis kÃ¤sitsi alla ja paigaldad paketi, mille sa paned mittestandardsesse kataloogi ja tahas kÃ¤ivitada kÃ¤sku. Sa kirjutad $ lahekÃ¤sk ja kÃ¤suviip Ã¼tleb, et kÃ¤sku ei leitud. See on kÃ¼ll tobe! Sa vaatad kaustas binaari ja tead, et see on olemas. Mis toimub on see, et $PATH muutuja ei kontrolli selle kataloogi seda binaari ning seetÃµttu annab veateate.
 
-Ütleme, et sul on tonnides binaare, mida sa tahad käivitada väljaspool seda kataloogi, sa võid lihtsalt muuta PATH muutujat, et see sisaldaks vajalikku kataloogi sinu PATH keskkonna muutujas.
+Ãœtleme, et sul on tonnides binaare, mida sa tahad kÃ¤ivitada vÃ¤ljaspool seda kataloogi. VÃµib lihtsalt muuta PATH muutujat, et see sisaldaks vajalikku kataloogi sinu PATH keskkonna muutujas.
 
 ## Harjutus
 
-Mida teeb järgmine käsk? Miks?
+Mida teeb jÃ¤rgmine kÃ¤sk? Miks?
 <pre>$ echo $HOME</pre>
 
-## Küsimus
+## KÃ¼simus
 
-Kuidas sa näed keskkonna muutujaid?
+Kuidas nÃ¤ha keskkonna muutujaid?
 
 ## Vastus
 
