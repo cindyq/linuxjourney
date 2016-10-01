@@ -12,7 +12,7 @@ Aga see käsk?
 
 <pre>$ echo $USER</pre> 
 
-Sa peaksid nägema enda kasutajanime!
+Peaksid nägema enda kasutajanime!
 
 Kust see infiormatsioon pärineb? See pärineb sinu keskkonna muutujatest. Neid saab näha, kui trükid
 
