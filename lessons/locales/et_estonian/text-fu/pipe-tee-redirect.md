@@ -2,31 +2,31 @@
 
 ## Tunni sisu
 
-Nüüd hakkame natuke torustikuga tegelema. No mitte päris, aga pisut. Proovime käsku:
+NÃ¼Ã¼d hakkame natuke torustikuga tegelema. No mitte pÃ¤ris, aga natuke ikkagi. Proovime kÃ¤sku:
 
 <pre>$ ls -la /etc</pre>
 
-Sa peaksid nägema väga pikka nimekirja, mida on isegi natuke raske lugeda. Selle asemel, et seda faili suunata, kas ei oleks toredam, kui saaksime seda väljundit vaadata mõne teise käsga nagu less? Aga me saamegi!
+Sa peaksid nÃ¤gema vÃ¤ga pikka nimekirja, mida on isegi natuke raske lugeda. Selle asemel, et seda faili suunata, kas ei oleks toredam, kui saaksime seda vÃ¤ljundit vaadata mÃµne teise kÃ¤sga nagu less? Aga saamegi!
 
 <pre>$ ls -la /etc | less </pre>
 
-Toru operaator |, mida esindab püstkriips, lugag meil saada mõne käsu stdout ja teha sellest teisele protsessile stdin. Meie näite puhul me võtsime ls -la /etc stdout'i ja siis suunasime <i>toruga</i> less käsule. Toru käsk on äärmiselt kasulik ja me jätkame selle kasutamist aegade lõpuni.
+Toru operaator |, mida esindab pÃ¼stkriips, lubab meil saada mÃµne kÃ¤su stdout ja teha sellest teisele protsessile stdin. Meie nÃ¤ite puhul me vÃµtsime ls -la /etc stdout'i ja siis suunasime <i>toruga</i> less kÃ¤sule. Toru kÃ¤sk on Ã¤Ã¤rmiselt kasulik ja me jÃ¤tkame selle kasutamist aegade lÃµpuni.
 
-Aga kui ma tahan kirjutada oma käsu väljundi kahele erinevale voole? See on väimalik järgmise käsuga:
+Aga kui ma tahan kirjutada oma kÃ¤su vÃ¤ljundi kahele erinevale voole? See on vÃµimalik jÃ¤rgmise kÃ¤suga:
 
-<pre>$ ls | tee pähklid.txt</pre>
+<pre>$ ls | tee pÃ¤hklid.txt</pre>
 
-SA peaksid nägema ls väljundit ekraanid ja kui sa avad pähklid.txt faili, peaksid sa nägema seal täpselt sama informatsiooni!
+Sa peaksid nÃ¤gema ls vÃ¤ljundit ekraanid ja kui sa avad pÃ¤hklid.txt faili, peaksid sa nÃ¤gema seal tÃ¤pselt sama informatsiooni!
  
 
 ## Harjutus
 
-Proovi järgmist käsku:
-<pre>$ ls | tee pähklid.txt banaan.txt</pre>
+Proovi jÃ¤rgmist kÃ¤sku:
+<pre>$ ls | tee pÃ¤hklid.txt banaan.txt</pre>
 
-## Küsimus
+## KÃ¼simus
 
-Milline sümbol esindab toruoperaatorit?
+Milline sÃ¼mbol esindab toruoperaatorit?
 
 ## Vastus
 
