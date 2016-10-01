@@ -2,36 +2,35 @@
 
 ## Tunni sisu
 
-Grep on väga tõenäoliselt kõige tavalisem teksti töötlemise käsk, mida sa kasutama hakkad. See lubab sul otsida failist täemärke, mis vastavad teatud mustrile. Mis siis kui sa tahad teada, kas mingi fail eksisteerib mingis konkreetses kataloogis või kui sa tahad teada, kas mingis failis asub mingi otsitav sõne? Kindlasti ei hakkaks sa kogu teksti läbi otsima, sa kasutaksid grep'i!
+Grep on vÃ¤ga tÃµenÃ¤oliselt kÃµige tavalisem teksti tÃ¶Ã¶tlemise kÃ¤sk, mida sa kasutama hakkad. See vÃµimaldab otsida failist tÃ¤emÃ¤rke, mis vastavad teatud mustrile. Mis siis kui tahad teada, kas mingi fail eksisteerib mingis konkreetses kataloogis vÃµi, kas mingis failis asub mingi otsitav sÃµne? Kindlasti ei hakkaks sa kogu teksti lÃ¤bi otsima, sa kasutaksid grep'i!
 
-Kasutame näitena näide.txt faili:
+Kasutame nÃ¤itena nÃ¤ide.txt faili:
 
-<pre>$ grep rebane näide.txt</pre>
+<pre>$ grep rebane nÃ¤ide.txt</pre>
 
-Sa peaksid nägema, et grep leidis sõna rebane failist näide.txt
+Peaksid nÃ¤gema, et grep leidis sÃµna rebane failist nÃ¤ide.txt
 
-Sa saad ka otsida väike- ja suurtähedele mittetundlikku teksti, kui kasutad lippu -i.
+Saab otsida ka vÃ¤ike- ja suurtÃ¤hedele mittetundlikku teksti, kui kasutad lippu -i.
 
 <pre>$ grep -i mingimuster mingifail</pre>
 
-Et veelgi paindlikkust lisada, võib grep'i kombineerida teiste käskudega | operaatoriga.
+Et veelgi paindlikkust lisada, vÃµib grep'i kombineerida teiste kÃ¤skudega | operaatoriga.
 
 <pre>$ env | grep -i Kasutaja</pre>
 
-Nagu näha, on grep väga mitmekülgne. Mustris või kasutada isegi tavapäraseid väljendeid:
-
+Nagu nÃ¤ha, on grep vÃ¤ga mitmekÃ¼lgne. Mustris vÃµib kasutada isegi tavapÃ¤raseid vÃ¤ljendeid:
 
 <pre>$ ls /mingikat | grep '.txt$'</pre>
 
-Peaks kuvama kataloogist mingikat kõik failid mis lõpevad .txt.
+Peaks kuvama kataloogist mingikat kÃµik failid mis lÃµpevad .txt.
 
 ## Harjutus
 
-Ehk oled kuulnud käskudest egrep ja fgrep, need on nüüd vananenud ning asendatud käskudega grep -E ja grep -F. Loe grep'i man lehekülge ja saad rohkem teada.
+Ehk oled kuulnud kÃ¤skudest egrep ja fgrep, need on nÃ¼Ã¼d vananenud ning asendatud kÃ¤skudega grep -E ja grep -F. Loe grep'i man lehekÃ¼lge ja saad rohkem teada.
 
-## Küsimus
+## KÃ¼simus
 
-Millist käsku kasutad, et mingit tähemärgi kombinatsiooni leida?
+Millist kÃ¤sku kasutad, et mingit tÃ¤hemÃ¤rgi kombinatsiooni leida?
 
 ## Vastus
 
