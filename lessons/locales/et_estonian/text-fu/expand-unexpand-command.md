@@ -2,26 +2,26 @@
 
 ## Tunni sisu
 
-Cut käsu peatükis oli meil näide.txt fail, milles oli kasutatud tabulaatorit. Tavaliselt peaks see olema märgatavalt näha, kuid mõned tekstifailid ei näita seda piisavalt hästi. Tabulaator ei pruugi olla parim eraldaja, mida tekstifailis kasutada.
-Et muuta kõik oma tabulaatorid tühikuteks, kasuta expand käsku.
+Cut kÃ¤su peatÃ¼kis oli meil nÃ¤ide.txt fail, milles oli kasutatud tabulaatorit. Tavaliselt peaks selle kasutamine olema mÃ¤rgatavalt nÃ¤ha, kuid mÃµned tekstifailid ei nÃ¤ita seda vÃ¤ga selgelt. Tabulaator ei pruugi olla parim eraldaja, mida tekstifailis kasutada.
+Et muuta kÃµik oma tabulaatorid tÃ¼hikuteks, kasuta expand kÃ¤sku.
 
-<pre>$ expand näide.txt</pre>
+<pre>$ expand nÃ¤ide.txt</pre>
 
-See käsk trükib väljundi, kus kõik tabulaatorid on muudetud grupiks tühikuteks. Et see väljund faili salvestada, kasuta väljundi ümbersuunamist, nagu all näidatud.
+See kÃ¤sk trÃ¼kib vÃ¤ljundi, kus kÃµik tabulaatorid on muudetud grupiks tÃ¼hikuteks. Et vÃ¤ljund faili salvestada, kasuta Ã¼mbersuunamist nagu all nÃ¤idatud.
 
-<pre>$ expand näide.txt > tulemus.txt</pre>
+<pre>$ expand nÃ¤ide.txt > tulemus.txt</pre>
 
-Vastandile expand käsule, saame muuta ka grupi tühikuid tabulaatoriks. Kasutame selleks käsku unexpand:
+Vastandina expand kÃ¤sule, saame muuta ka grupi tÃ¼hikuid tabulaatoriks. Kasutame selleks kÃ¤sku unexpand:
 
 <pre>$ unexpand -a tulemus.txt</pre>
 
 ## Harjutus
 
-Mis juhtun kui sisestad lihtsalt expand ilma faili sisendita?
+Mis juhtub kui sisestad lihtsalt expand ilma faili sisendita?
 
-## Küsimus
+## KÃ¼simus
 
-Millise käsuga muudetakse tabulaatorid tühikuteks?
+Millise kÃ¤suga muudetakse tabulaatorid tÃ¼hikuteks?
 
 ## Vastus
 
