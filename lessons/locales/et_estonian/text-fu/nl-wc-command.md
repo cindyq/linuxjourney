@@ -2,20 +2,20 @@
 
 ## Tunni sisu
 
-wc (inglise keele word count ehk sõnade loendus) käsk kuvab faili täieliku sõnade hulga.
+wc (word count ehk sÃµnade loendus) kÃ¤sk kuvab faili tÃ¤ieliku sÃµnade hulga.
 
 <pre>$ wc /etc/passwd
  96     265    5925 /etc/passwd
 </pre>
 
-Vastavalt väljundile on kuvatud ridade, sõnade ja vaitide arv.
+Vastavalt vÃ¤ljundile on kuvatud ridade, sÃµnade ja baitide arv.
 
-Selleks, et ainult ühte välja kuvataks, kasuta vastavalt -l, -w või -c.
+Selleks, et ainult Ã¼hte vÃ¤lja kuvataks, kasuta vastavalt -l, -w vÃµi -c.
 
 <pre>$ wc -l /etc/passwd
 96</pre>
 
-Veel üks käsk, millega saab faili ridade arvu teada, on nl (number lines ehk ridade number).
+Veel Ã¼ks kÃ¤sk, millega saab faili ridade arvu teada, on nl (number lines ehk ridade number).
 
 <pre>
 fail1.txt
@@ -32,11 +32,11 @@ kilpkonnad
 
 ## Harjutus
 
-Kuidas sa saaksid nl käsku kasutades faili lõpliku ridade arvu ilma, et peaksid kogu väljundil läbi vaatama? Vihje: Kasuta mõningaid teisi käske, mida sellel kursusel juba õppinud oled.
+Kuidas sa saaksid nl kÃ¤sku kasutades faili lÃµpliku ridade arvu ilma, et peaksid kogu vÃ¤ljundit lÃ¤bi vaatama? Vihje: Kasuta mÃµningaid teisi kÃ¤ske, mida sellel kursusel juba Ãµppinud oled.
 
-## Küsimus
+## KÃ¼simus
 
-Millist käsku kasutaksid, et saada failist ainult lõplik sõnade arv.
+Millist kÃ¤sku kasutaksid, et saada failist ainult lÃµplik sÃµnade arv.
 
 ## Vastus
 
