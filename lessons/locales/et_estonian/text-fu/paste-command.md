@@ -2,36 +2,36 @@
 
 ## Tunni sisu
 
-Paste käsk on sarnane cat käsule. See ühendab read failis kokku.
-Loome uue faili järgneva sisuga:
+Paste kÃ¤sk on sarnane cat kÃ¤sule. See Ã¼hendab read failis kokku.
+Loome uue faili jÃ¤rgneva sisuga:
 
 <pre>
-näide2.txt
+nÃ¤ide2.txt
 kiire
 pruun
 rebane
 </pre>
 
-Ühendame nüüd kõik need read:
+Ãœhendame nÃ¼Ã¼d kÃµik need read:
 
-<pre>$ paste -s näide2.txt</pre>
+<pre>$ paste -s nÃ¤ide2.txt</pre>
 
-Vaikimisi on paste'i eraldaja tabulaator, seega nüüd on siis üks rida, kus iga sõna eraldab tabulaator.
+Vaikimisi on paste'i eraldaja tabulaator, seega nÃ¼Ã¼d on siis tulemuseks Ã¼ks rida, kus sÃµnu eraldab tabulaator.
 
 Muudame selle eraldaja (-d) millegi loetavama vastu:
 
 
-<pre>$ paste -d ' ' -s näide2.txt</pre> 
+<pre>$ paste -d ' ' -s nÃ¤ide2.txt</pre> 
 
-Nüüd peaks kõik olema ühest reas eraldatuna tühikute poolt.
+NÃ¼Ã¼d peaks kÃµik sÃµnad olema Ã¼hes reas tÃ¼hikutega eraldatud.
 
 ## Harjutus
 
-Proovi paste käsku mitme faili peal, mis juhtub?
+Proovi paste kÃ¤sku mitme faili peal, mis juhtub?
 
-## Küsimus
+## KÃ¼simus
 
-Millist lippu sa kasutad, et saada kogu sisu ühele reale?
+Millist lippu sa kasutad, et saada kogu sisu Ã¼hele reale?
 
 ## Vastus
 
