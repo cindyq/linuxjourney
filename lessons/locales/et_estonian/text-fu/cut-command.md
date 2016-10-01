@@ -2,41 +2,41 @@
 
 ## Tunni sisu
 
-Õpime nüüd mõned kasulikud teksti töötlemise käsud. Enne kui alustame loome faili, millega hakkame tegelema. Kopeeri ja kleebi järgmine käsk, kui oled seda teinud, siis lisa tabulaator laisa ja koerda vahele (hoia all Ctrl-v + TAB).
+Ã•pime nÃ¼Ã¼d mÃµned kasulikud teksti tÃ¶Ã¶tlemise kÃ¤sud. Enne, kui alustame, loome faili, millega hakkame tegelema. Kopeeri ja kleebi jÃ¤rgmine kÃ¤sk, kui oled seda teinud, siis lisa tabulaator laisa ja koera vahele (hoia all Ctrl-v + TAB).
 
-<pre>$ echo 'Kiire pruun; rebane hüppas üle laisa  koera' > näide.txt</pre>
+<pre>$ echo 'Kiire pruun; rebane hÃ¼ppas Ã¼le laisa  koera' > nÃ¤ide.txt</pre>
 
-Esimesena õpime lõikamise käsu kohta. See eraldab faili tekstist mingisuguse osa.
+Esimesena Ãµpime lÃµikamise kÃ¤su kohta. See eraldab faili tekstist mingisuguse osa.
 
-Et eraldada sisu tähemärkide nimekirja põhjal:
+Et eraldada sisu tÃ¤hemÃ¤rkide nimekirja pÃµhjal:
 
-<pre>$ cut -c 7 näide.txt</pre>
+<pre>$ cut -c 7 nÃ¤ide.txt</pre>
 
-See annab väljundiks faili iga rea seitsmenda tähemärgi. Praegusel juhul on see "p". Märka, et ka tühikud loevad tähemärkidena.
+See annab vÃ¤ljundiks faili iga rea seitsmenda tÃ¤hemÃ¤rgi. Praegusel juhul on see "p". MÃ¤rka, et ka tÃ¼hikud loevad tÃ¤hemÃ¤rkidena.
 
-Et eraldada sisu failipõhiselt, tuleb natuke muudatusi sisse viia:
+Et eraldada sisu failipÃµhiselt, tuleb natuke muudatusi sisse viia:
 
-<pre>$ cut -f 2 näide.txt</pre>
+<pre>$ cut -f 2 nÃ¤ide.txt</pre>
 
--f või siis väljalipp, lõikab teksti põhinedes väljadele. Vaikimis kasutab see eraldajana tabulaatorit, mis tähendab, et kõik, mida eraldab tabulaator, peeatakse omaette väljaks. Sa peaksid nägema "koera" oma väljundina.
+-f vÃµi siis vÃ¤ljalipp, lÃµikab teksti pÃµhinedes vÃ¤ljadele. Vaikimis kasutab see eraldajana tabulaatorit, mis tÃ¤hendab, et kÃµik, mida eraldab tabulaator, peeatakse omaette vÃ¤ljaks. Sa peaksid nÃ¤gema "koera" oma vÃ¤ljundina.
 
 <pre>$ cut -f 1 -d ";" sample.txt</pre>
 
-See muudab eraldaja tabulaatorist hoopis semikooloniks ";" ja kuna me lõikame esimest v'lja, peaks tulemus olema hoopis "kiire pruun rebane".
+See muudab eraldaja tabulaatorist hoopis semikooloniks ";" ja kuna me lÃµikame esimest v'lja, peaks tulemus olema hoopis "kiire pruun rebane".
 
 
 ## Harjutus
 
-Mida järgmine käsk teeb? Miks?
+Mida jÃ¤rgmine kÃ¤sk teeb? Miks?
 
-<pre>$ cut -c 5-10 näide.txt
-$ cut -c 5- näide.txt
-$ cut -c -5 näide.txt
+<pre>$ cut -c 5-10 nÃ¤ide.txt
+$ cut -c 5- nÃ¤ide.txt
+$ cut -c -5 nÃ¤ide.txt
 </pre>
 
-## Küsimus
+## KÃ¼simus
 
-Millist käsku sa kasutaksid, et saada iga rea esimene tähemärk?
+Millist kÃ¤sku sa kasutaksid, et saada iga rea esimene tÃ¤hemÃ¤rk?
 
 ## Vastus
 
