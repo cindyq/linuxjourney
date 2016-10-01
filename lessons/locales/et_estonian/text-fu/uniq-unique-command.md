@@ -2,9 +2,9 @@
 
 ## Tunni sisu
 
-Uniq (unikaalne) käsk on veel üks kasulik töörist teksti töötlemiseks.
+Uniq (unikaalne) kÃ¤sk on veel Ã¼ks kasulik tÃ¶Ã¶rist teksti tÃ¶Ã¶tlemiseks.
 
-Ütleme, et sul on ühest failist mitu koopiat:
+Ãœtleme, et sul on Ã¼hes failist mitu koopiat:
 
 
 <pre>
@@ -18,7 +18,7 @@ artikkel
 ajakiri
 </pre>
 
-ja sa tahad korduvatest eksemplaridest lahti saada. Selleks saab kasutada uniq käsku:
+ja sa tahad korduvatest eksemplaridest lahti saada. Selleks saab kasutada uniq kÃ¤sku:
 
 <pre>$ uniq lugemin.txt
 raamat
@@ -34,12 +34,12 @@ Kuvame iga rea kohta nende esinemissageduse:
 2 artikkel
 1 ajakiri</pre>
 
-Võtame ainult unikaalsed väärtused:
+VÅ‘tame ainult unikaalsed vÃ¤Ã¤rtused:
 
 <pre>$ uniq -u lugemine.txt
 ajakiri</pre>
 
-Võtame ainult korduvad väärtused:
+VÅ‘tame ainult korduvad vÃ¤Ã¤rtused:
 
 <pre>$ uniq -d lugemine.txt
 raamat
@@ -47,9 +47,9 @@ ajaleht
 artikkel
 </pre>
 
-<b>Märkus</b> : uniq ei tuvasta korduvaid ridu juhul, kui nad ei asu kõrvuti. Näiteks:
+<b>MÃ¤rkus</b> : uniq ei tuvasta korduvaid ridu juhul, kui nad ei asu kÅ‘rvuti. NÃ¤iteks:
 
-Ütleme, et sul on fail, mille korduvad read ei asu kõrvuti:
+Ãœtleme, et sul on fail, mille korduvad read ei asu kÅ‘rvuti:
 
 <pre>
 lugemine.txt
@@ -71,9 +71,9 @@ artikkel
 ajakiri
 artikkelt</pre>
 
-Uniq'i tagastatud väljund sisaldab kõiki kirjed, erinevalt esimesest näitest.
+Uniq'i tagastatud vÃ¤ljund sisaldab kÅ‘iki kirjed, erinevalt esimesest nÃ¤itest.
 
-Et sellest piirangust vabaneda, võime kasutada uniq käsku koos sort käsuga:
+Et sellest piirangust vabaneda, vÅ‘ime kasutada uniq kÃ¤sku koos sort kÃ¤suga:
 
 <pre>
 $ sort lugemine.txt | uinq
@@ -84,11 +84,11 @@ ajaleht</pre>
 
 ## Harjutus
 
-Milline oleks väljud kui prooviksid sisestada uniq -uc?
+Milline oleks vÃ¤ljud kui prooviksid sisestada uniq -uc?
 
-## Küsimus
+## KÃ¼simus
 
-Millist käsku kasutaksid, et vabaneda failis kordustest?
+Millist kÃ¤sku kasutaksid, et vabaneda failis kordustest?
 
 ## Vastus
 
