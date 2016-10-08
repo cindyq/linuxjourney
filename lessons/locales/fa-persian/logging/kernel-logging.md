@@ -1,21 +1,23 @@
-# Kernel Logging
+# کرنل لاگینگ
 
-## Lesson Content
+## محتویات درس
 
-<b>/var/log/dmesg</b>
-On boot-time your system logs information about the kernel ring buffer. This shows us information about hardware drivers, kernel information and status during bootup and more. This log file can be found at /var/log/dmesg and gets reset on every boot, you may not actually see any use in it now, but if you were to ever have issues with something during bootup or a hardware issue, dmesg is the best place to look. You can also view this log using the dmesg command. 
+**/var/log/dmesg**
 
-<b>/var/log/kern.log</b>
-Another log you can use to view kernel information is the /var/log/kern.log file, this logs the kernel information and events on your system, it also logs dmesg output.
+در زمان راه‌اندازی، سیستم شما اطلاعاتی در خصوص کرنل را لاگ یا گزارش می‌کند. این اطلاعات در خصوص راه‌اندازهای سخت‌افزاری، اطلاعات کرنل، وضعیت سیستم در حین راه‌اندازی و غیره است. این فایلِ لاگ، در مسیر ‎/var/log/dmesg در دسترس است و با هر بار راه‌اندازی سیستم، از نو نوشته می‌شود. شاید اکنون فکر کنید که این فایل آنقدر هم به کارتان نخواهد آمد، اما ارزش آن را اگر در حین راه‌اندازی سیستم به مشکل برخوردید و یا سخت‌افزاری مشکل پیدا کرد، خواهید دانست. برای مشاهده‌ی این لاگ می‌توانید از فرمان dmesg استفاده کنید.
 
-## Exercise
+**/var/log/kern.log**
 
-Look at your dmesg and kern logs, what differences do you notice?
+یک لاگ دیگر که حاوی اطلاعات کرنل است در فایل ‎/var/log/kern.log قرار دارد. این فایل شامل گزارشی از اطلاعات کرنل و رخدادهای سیستمی است و همچنین خروجی dmesg را لاگ و ثبت می‌کند.
 
-## Quiz Question
+## تمرین
 
-What command can be used to view kernel bootup messages?
+به لاگ‌های dmesg و kern یک نیم‌نگاهی بیندازید. چه تفاوت‌هایی در این دو لاگ می‌بینید؟
 
-## Quiz Answer
+## سؤال آزمون
+
+چه دستوری برای مشاهده‌ی پیام‌های راه‌اندازی کرنل می‌تواند مورد استفاده قرار بگیرد؟
+
+## پاسخ آزمون
 
 dmesg
