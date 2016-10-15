@@ -2,7 +2,7 @@
 
 ## Tunni sisu
 
-Linuxis on kõik asjad failid. Mida sügavamale Linuxi maailma sa rändad, seda paremini hakkad sa seda mõistma. Hetkel pea see aga lihtsalt meeles. Kõik failid on organiseeritud hierarhilise kataloogipuuna. Failisüsteemi esimese kataloogi nimi on väga asjakohaselt juurkataloog. Juur kataloogis asub palju kaustu ja faile, milles omakorda asub veel kaustu ja faile jne. Näide, kuidas kataloogi puu võib välja näha:
+Linuxis on kÃµik asjad failid. Mida sÃ¼gavamale Linuxi maailma sa rÃ¤ndad, seda paremini hakkad sa seda mÃµistma. Hetkel pea see aga lihtsalt meeles. KÃµik failid on organiseeritud hierarhilise kataloogipuuna. FailisÃ¼steemi esimese kataloogi nimi on vÃ¤ga asjakohaselt juurkataloog. Juur kataloogis asub palju kaustu ja faile, milles omakorda asub veel kaustu ja faile jne. NÃ¤ide, kuidas kataloogi puu vÃµib vÃ¤lja nÃ¤ha:
 
 <pre>/
 |-- bin
@@ -17,22 +17,22 @@ Linuxis on kõik asjad failid. Mida sügavamale Linuxi maailma sa rändad, seda par
 |-- var
 </pre>
 
-Failide ja Kataloogide puhul räägitakse nende asukohast. Kui sul oleks kaust nimega home, mille sees oleks pete nimeline kaust, mille sees omakorda oleks kaust Filmid, siis näeks selle asukoht välja järgmine: /home/pete/Filmid. Lihtne, või mis?
+Failide ja Kataloogide puhul rÃ¤Ã¤gitakse nende asukohast. Kui sul oleks kaust nimega home, mille sees oleks pete nimeline kaust, mille sees omakorda oleks kaust Filmid, siis nÃ¤eks selle asukoht vÃ¤lja jÃ¤rgmine: /home/pete/Filmid. Lihtne, vÃµi mis?
 
-Failisüsteemis, nagu ka reaalses maailmas, teeb navigeerumise oluliselt lihtsamaks, kui sa tead, kus sa asud ja kuhu sa minna tahad. Selleks, et näha, kus sa asud, võid kasutada käsku pwd. Tõlkes tähendab see käsk "kuva jooksev kataloog" ning see lihtsalt näitabki sulle, millises kataloogis sa asud. Pane tähele, et asukoht algab juurkataloogist.
+FailisÃ¼steemis, nagu ka reaalses maailmas, teeb navigeerumise oluliselt lihtsamaks, kui sa tead, kus sa asud ja kuhu sa minna tahad. Selleks, et nÃ¤ha, kus sa asud, vÃµid kasutada kÃ¤sku pwd. TÃµlkes tÃ¤hendab see kÃ¤sk "kuva asukoha otsiteekond" ning see lihtsalt nÃ¤itabki sulle, millises kataloogis sa asud. Pane tÃ¤hele, et asukoht algab juurkataloogist.
 
 
 <pre>$ pwd</pre>
 
-Kus sa oled? Kus mina olen? Proovi järgi.
+Kus sa oled? Kus mina olen? Proovi jÃ¤rgi.
 
 ## Harjutus
 
-Selles peatükis harjust ei ole.
+Selles peatÃ¼kis harjust ei ole.
 
-## Küsimus
+## KÃ¼simus
 
-Kuidas sa saad teada, millises kataloogis sa parasjagu oled?
+Kuidas saad teada, millises kataloogis sa parasjagu oled?
 
 ##
 
