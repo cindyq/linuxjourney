@@ -12,9 +12,9 @@ Sa võid ka täpsustada, millist tüüpi faili sa leida püüad.
 
 <pre>$ find /home -type d -name MinuKaust</pre>
 
-Nagu märkasid, siis ma panin faili tüüpbiks d (kataloogi jaoks) ning samal ajal ma otsin endiselt nime järgi MinuKaust.
+Nagu märkasid, siis ma panin faili tüübiks d (kataloogi jaoks) ning samal ajal ma otsin endiselt nime järgi MinuKaust.
 
-Lahe asi, mida silmas pidada, on see, et find ei piirdu otsimisega täpsustatud kataloogist, see otsib ka kõikvõimalikest alamkataloogidest.
+Lahe asi, mida silmas pidada on see, et find ei piirdu otsimisega täpsustatud kataloogist, see otsib ka kõikvõimalikest alamkataloogidest.
 
 ## Harjutus
 
