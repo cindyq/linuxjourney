@@ -37,7 +37,7 @@ fail2.txt
 3 Sue
 </pre>
 
-Et seda faili ühendada, peabtäpsustama milliseid välju ühendada. Hetkel me tahame välja 2 fail1.txt'st ja välja 2 fail2.txt's, seega näeb käsk välja nii:
+Et seda faili ühendada, peabtäpsustama milliseid välju ühendada. Hetkel me tahame välja 2 fail1.txt'st ja välja 1 fail2.txt's, seega näeb käsk välja nii:
 
 <pre>
 $ join -1 2 -2 1 fail1.txt fail2.txt
