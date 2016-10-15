@@ -2,7 +2,7 @@
 
 ## Tunni sisu
 
-Ütleme, et meil on väga pikk fail, meil on isegi mitu, mille hulgast valida, proovi cat /var/log/syslog. Sa peaksid nägema lehekülgede kaupa teksti.  Mis siis kui ma tahaksid näha ainult paari eimest teksti failirida? Seda saame teha käsuga head. Vaikimisi näitab head käsk sulle faili esimest 10 rida.
+Ütleme, et meil on väga pikk fail, meil on isegi mitu, mille hulgast valida, proovi cat /var/log/syslog. Sa peaksid nägema lehekülgede kaupa teksti.  Mis siis kui ma tahaksid näha ainult paari eimest tekstifaili rida? Seda saame teha käsuga head. Vaikimisi näitab head käsk sulle faili esimest 10 rida.
 
 <pre>$ head /var/log/syslog</pre>
 
