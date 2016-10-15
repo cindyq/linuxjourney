@@ -2,14 +2,14 @@
 
 ## Tunni sisu
 
-Nüüd, kus me oskame süsteemis ringi liikuda, kuidas saaksime teada, kuhu meil üldse on võimalik minna? Hetkel me eksleksime justkui pimeduses. Meil on võimalik kasutada imelist ls käsku, et kuvada kataloogide sisu. Ls käsk kuvab vaikimisi kõik jooksvas kataloogis asuvad kataloogid ja failid, kuid võid ka täpsustada, millise asukoha sisu sa näha soovid.
+Nüüd, kus me oskame süsteemis ringi liikuda, kuidas saaksime teada, kuhu meil üldse on võimalik minna? Hetkel me eksleme justkui pimeduses. Meil on võimalik kasutada imelist ls käsku, et kuvada kataloogide sisu. Ls käsk kuvab vaikimisi kõik jooksvas kataloogis asuvad kataloogid ja failid, kuid võid ka täpsustada, millise asukoha sisu sa näha soovid.
 
 <pre>$ ls
 $ ls /home/pete</pre>
 
 Ls on päris kasulik tööriist, sest see näitab sulle kuvatud failide ja kataloogide kohta detailset informatsiooni.
 
-Pea meeles, et mitte kõik failid ja katalookig ei ole sulle nähtavad. Failid, mille nimed algavad . on peidetud, kuid neid saab näha ls käsuga kui sellele on lisatud lipp -a (inglise keeles a nagu all ehk kõik).
+Pea meeles, et mitte kõik failid ja kataloogid ei ole sulle nähtavad. Failid, mille nimed algavad . on peidetud, kuid neid saab näha ls käsuga kui sellele on lisatud lipp -a (inglise keeles a nagu all ehk kõik).
 
 <pre>$ ls -a</pre>
 
@@ -28,7 +28,7 @@ drwxr-x--- 2 pete penguingroup   4096 Jul 27 12:41   Avalik
 drwxr-x--- 2 pete penguingroup   4096 Jul 27 12:41   Mallid
 drwxr-x--- 2 pete penguingroup   4096 Jul 27 12:41   Videod</pre>
 
-Käskudel on funktsionaalsuse lisamiseks lipud (või argumendid või valikud, kuidas sulle parasjagu meeldib neid nimetada).  Märkasid, et lisasime -a ja -l. Neid saab ka koos kasutada, lisades käsule -la. Lippude järjekorrast oleneb, mis järjekorras käsku täidetakse. Enamus ajast ei ole sellel erilist tähendust, nii et võid kirjutada ka -al ja see töötab sellegi poolest.
+Käskudel on funktsionaalsuse lisamiseks lipud (või argumendid või valikud, kuidas sulle parasjagu meeldib neid nimetada). Märkasid, et lisasime -a ja -l? Neid saab ka koos kasutada lisades käsule -la. Lippude järjekorrast oleneb, mis järjekorras käsku täidetakse. Enamus ajast ei ole sellel erilist tähendust, nii et võid kirjutada ka -al ja see töötab sellegi poolest.
 
 <pre>$ ls -la</pre>
 
