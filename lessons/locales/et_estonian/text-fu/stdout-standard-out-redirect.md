@@ -6,7 +6,7 @@ Praguseks oleme juba päris paljude käskude ja nende väljunditega tuttavaks sa
 
 <pre>$ echo Hello World > pähklid.txt</pre>
 
-Mis just praegu juhtus? Aga mine kontrolli seda kataloogi, kus käsk käivitati ja pane end valmis, sest sa peaksid sealt leidma faili nimega pähklid.txt. Kui sa sinna sisse vaatad, siis peaksid leidma teksti Hello World. Selle ühe käsuga juhtus päris palju, vaatame seda jupp haaval.
+Mis just praegu juhtus? Aga mine kontrolli seda kataloogi, kus käsk käivitati ja pane end valmis, sest peaksid sealt leidma faili nimega pähklid.txt. Kui sinna sisse vaadata, siis peaksid leidma teksti Hello World. Selle ühe käsuga juhtus päris palju, vaatame seda jupp haaval.
 
 Vaatame esimest osa:
 
