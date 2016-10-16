@@ -2,10 +2,10 @@
 
 ## Tunni sisu
 
-Nüüd kui oleme kirjutanud mõned read, redikeerime natuke ja eemaldame ebavajalikud osad.
+NÃ¼Ã¼d kui oleme kirjutanud mÃµned read, redigeerime natuke ja eemaldame ebavajalikud osad.
 
 <ul>
-<li>x - kasutatakse, et eemaldada valitud tekst ning kustutada tähemärke.</li>
+<li>x - kasutatakse, et eemaldada valitud tekst ning kustutada tÃ¤hemÃ¤rke.</li>
 <li>dd - kasuta aktiivse rea kustutamiseks</li>
 <li>y - kopeeri valitud osa</li>
 <li>yy - kopeeri aktiivne rida</li>
@@ -14,11 +14,11 @@ Nüüd kui oleme kirjutanud mõned read, redikeerime natuke ja eemaldame ebavajalik
 
 ## Harjutus
 
-See peatükk tutvustas veidraid käske, ava oma tekstiredaktor ja proovi neid kasutada.
+See peatÃ¼kk tutvustas veidraid kÃ¤ske, ava oma tekstiredaktor ja proovi neid kasutada.
 
-## Küsimus
+## KÃ¼simus
 
-Millise tähemärgiga kustutatakse terve rida?
+Millise tÃ¤hemÃ¤rgiga kustutatakse terve rida?
 
 ## Vastus
 
