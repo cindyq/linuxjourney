@@ -2,23 +2,23 @@
 
 ## Tunni sisu
 
-Emacs on mõeldud kasutajatele, kes soovivad eriti võimsat tekstiredaktorit. See on ehk isegi alahindamine, sest lõpuks sa ikkagi praktiliselt emacs'is. Kogu koodi redeigeerimine, failide haldamine jpm saab ära teha emacs'iga. See käivitub pisut aeglasemalt ja õppida on alguses natuke raskem kui vim'i, kuid kui soovid võimsat redaktorit, mis on äärmiselt laiendatav, siis on see just sinu jaoks. Kui ma ütlen laiendatav, siis ma mõtlen tõesti, et sa saad kirjutada emacs'ile skripte, et selle funktsionaalsust suurendada.
+Emacs on mÃµeldud kasutajatele, kes soovivad eriti vÃµimsat tekstiredaktorit. Kogu koodi redigeerimine, failide haldamine jpm saab Ã¤ra teha emacs'iga. See kÃ¤ivitub pisut aeglasemalt ja Ãµppida on alguses natuke raskem kui vim'i, kuid kui soovid vÃµimsat redaktorit, mis on Ã¤Ã¤rmiselt laiendatav, siis on see just sinu jaoks. Kui ma Ã¼tlen laiendatav, siis ma mÃµtlen tÃµesti, et sa saad kirjutada emacs'ile skripte, et selle funktsionaalsust suurendada.
 
-Et emacs'i käivitada, kasuta:
+Et emacs'i kÃ¤ivitada, kasuta:
 
 <pre>emacs</pre>
 
-Sind peaks vaikimisi võtma vastu tervituspuhver. 
+Sind peaks vaikimisi vÃµtma vastu tervituspuhver. 
 
-Emacsis asubki sinu tekst puhvrites. Seega, kui avad faili, hoitakse selle sisu puhvris. Sul võib olla üheaegselt avatud mitu puhvrit ning nende vahel saab hõlbsasti liikuda.
+Emacsis asubki sinu tekst puhvrites. Seega, kui avad faili, hoitakse selle sisu puhvris. Sul vÃµib olla Ã¼heaegselt avatud mitu puhvrit ning nende vahel saab hÃµlpsasti liikuda.
 
 ## Harjutus
 
-Selles peatükis harjutust ei ole.
+Selles peatÃ¼kis harjutust ei ole.
 
-## Küsimus
+## KÃ¼simus
 
-Küsimusi pole, mine edasi!
+KÃ¼simusi pole, mine edasi!
 
 ## Vastus
 
