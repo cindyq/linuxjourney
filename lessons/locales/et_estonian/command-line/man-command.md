@@ -8,11 +8,11 @@ Oh, kuidas ma vahel unistan, et mõnel nendest programmidest oleks kasutusjuhend
 
 Man lehelüljed on kasutusjuhendid, mis on vaikimisi Linuxi operatsioonisüsteemidesse sisse ehitatud. Sealt võib leida dokumentatsiooni käskude kohta või muid aspekte süsteemi kohta.
 
-Katseta mõne käsuga, et sellestrohkem teada saada.
+Katseta mõne käsuga, et sellest rohkem teada saada.
 
 ## Harjutus
 
-Kasuta mani ls käsu peal.
+Kasuta man'i ls käsu peal.
 
 ## Küsimus
 

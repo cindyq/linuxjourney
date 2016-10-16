@@ -33,7 +33,11 @@ elevant
 Samuti ka numbrilise väärtuse põhjal:
 
 <pre>$ sort -n fail1.txt
----pean järgi proovima---
+elevant
+kass
+koer
+lehm
+lind
 </pre>
 
 ## Harjutus

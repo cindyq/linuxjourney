@@ -18,11 +18,11 @@ Et eraldada sisu failipõhiselt, tuleb natuke muudatusi sisse viia:
 
 <pre>$ cut -f 2 näide.txt</pre>
 
--f või siis väljalipp, lõikab teksti põhinedes väljadele. Vaikimis kasutab see eraldajana tabulaatorit, mis tähendab, et kõik, mida eraldab tabulaator, peeatakse omaette väljaks. Sa peaksid nägema "koera" oma väljundina.
+-f või siis väljalipp, lõikab teksti põhinedes väljadele. Vaikimis kasutab see eraldajana tabulaatorit, mis tähendab, et kõik, mida eraldab tabulaator, peetakse omaette väljaks. Sa peaksid nägema  väljundina "koera".
 
 <pre>$ cut -f 1 -d ";" sample.txt</pre>
 
-See muudab eraldaja tabulaatorist hoopis semikooloniks ";" ja kuna me lõikame esimest v'lja, peaks tulemus olema hoopis "kiire pruun rebane".
+See muudab eraldaja tabulaatorist hoopis semikooloniks ";" ja kuna me lõikame esimest välja, peaks tulemus olema hoopis "kiire pruun rebane".
 
 
 ## Harjutus

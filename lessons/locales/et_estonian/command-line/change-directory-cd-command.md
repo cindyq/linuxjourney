@@ -2,7 +2,7 @@
 
 ## Tunni sisu
 
-Nüüd, kui sa tead, kus sa oled, vaatame, kas meil õnnestub failisüsteemis pisut ringi liikuda. Pea meeles, et liikumiseks peame kasutama asukoti. Asukoha määramiseks on kaks võimalust: absoluutne ja suhteline.
+Nüüd, kui sa tead, kus sa oled, vaatame, kas meil õnnestub failisüsteemis pisut ringi liikuda. Pea meeles, et liikumiseks peame kasutama asukohtade otsiteekondi. Asukoha määramiseks on kaks võimalust: absoluutne ja suhteline otsiteekond.
 
 <ul>
 <li>Absoluutne asukoht: See on faili asukoht alates juurkataloogist. Juur on meil see kõige olulisem tegelane. Juurkataloogi kuvatakse tavaliselt kaldkriipsuga. Kui asukoha alguses on /, siis tähendab, et sa alustad juurkataloogist. Näiteks /home/pete/Töölaud.</li>
@@ -16,7 +16,7 @@ Nüüd, kui me teame kuidas asukohad toimivad, on meil vaja midagi, mis aitaks m
 
 Nüüd ma muutsin oma asukohaks home/pete/Pildid.
 
-Selles kasutas on mul aga katalaoog Hawaii, ma saan sinna liikuda nõnda:
+Selles kaustas on mul aga katalaoog Hawaii, ma saan sinna liikuda nõnda:
 
 <pre>$ cd Hawaii</pre>
 

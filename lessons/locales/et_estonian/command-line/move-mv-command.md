@@ -20,7 +20,7 @@ Katalooge saab ka ümbernimetada:
 
 <pre>$ mv kataloog1 kataloog2</pre>
 
-Nagu ka cp, kui sa liigutad faili või kataloogi, siis see kirjutab samas kaustas teise samanimelise üle. Seega, kasuta -i lippu, et saaksid teate enne kui midagi üle tahetakse kirjutada.
+Nagu ka cp, kui sa liigutad faili või kataloogi, siis see kirjutab samas kaustas teise samanimelise üle. Seega, kasuta -i lippu, et saaksid teate enne, kui midagi üle tahetakse kirjutada.
 
 <pre>$ mv -i kataloog1 kataloog2</pre>
 

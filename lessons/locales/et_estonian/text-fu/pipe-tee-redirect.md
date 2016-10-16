@@ -16,7 +16,7 @@ Aga kui ma tahan kirjutada oma käsu väljundi kahele erinevale voole? See on v�
 
 <pre>$ ls | tee pähklid.txt</pre>
 
-Sa peaksid nägema ls väljundit ekraanid ja kui sa avad pähklid.txt faili, peaksid sa nägema seal täpselt sama informatsiooni!
+Sa peaksid nägema ls väljundit ekraanil ja, kui avad pähklid.txt faili, peaksid nägema seal täpselt sama informatsiooni!
  
 
 ## Harjutus

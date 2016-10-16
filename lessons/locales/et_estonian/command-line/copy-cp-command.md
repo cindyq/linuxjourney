@@ -2,7 +2,7 @@
 
 ## Tunni sisu
 
-Teeme mõnest failist koopiad. Sarnaselt teistes operatsioonisüsteemides kopeerimisele ja kleepimisele, võimaldab shell meil seda isegi veel lihtsamalt teha.
+Teeme mõnest failist koopiad. Sarnaselt teistes operatsioonisüsteemides kopeerimisele ja kleepimisele, võimaldab kest meil seda teha isegi veel lihtsamalt.
 
 <pre>$ cp minuvingefail /home/pete/Dokumendid/vingeddokud</pre>
 
@@ -14,7 +14,7 @@ Sa saad kopeerida ka korraga mitmeid faile ja katalooge ning kasutada metamärki
 <ul>
 <li>* metamärkide metamärk, kasutatakse, et esinada ükskõik millist tähemärki või sõnet</li>
 <li>? esindab ühte tähemäri</li>
-<li>[] asindab ükskõik millist kantsulgudesse kirjutatud tähemärki</li>
+<li>[] esindab ükskõik millist kantsulgudesse kirjutatud tähemärki</li>
 </ul>
 
 <pre>$ cp *.jpg /home/pete/Pildid</pre>
@@ -23,11 +23,11 @@ See käsk kopeerib kõik .jpg laiendiga failid sinu jooksvast kataloogist katalo
 
 Päris kasulik on kasutada ka -r lippu, see kopeerib tagasiulatuvalt kataloogis asuvad kataloogid ja failid.
 
-Proovi kasutada cp käsku, et kopeerida Dokumentide kausta mõni kataloog, milles on failid sees. See ei töötanud, eks? Seda selle pärast, et sa pead kopeerima ka kõik failid ja kataloogid, mis seal kaustas on käsuga -r.
+Proovi kasutada cp käsku, et kopeerida Dokumentide kausta mõni kataloog, milles on failid sees. See ei töötanud, eks? Seda selle pärast, et kopeerima peab ka kõik failid ja kataloogid, mis seal kaustas on käsuga -r.
 
 <pre>$ cp -r Kõrvits/ /home/pete/Dokumendid</pre>
 
-Oluline on panna tähele, et kui sa kopeerid faili kataloogi, milles on sama nimega fail, siis see fail kirjutatakse üle kopeeritava failiga. See ei ole väga bueno, kui sul on seal mõni fail, mida sa ei taha kogemata ülekirjutada. Sa võid kasutada lippu -i (interaktiivne), et sult küsitaks enne kui fail ülekirjutatakse.
+Oluline on panna tähele, et kui sa kopeerid faili kataloogi, milles on sama nimega fail, siis see fail kirjutatakse üle kopeeritava failiga. See ei ole väga bueno, kui sul on seal midagi, mida sa ei taha kogemata ülekirjutada. Sa võid kasutada lippu -i (interaktiivne), et sult küsitaks nõusolekut enne, kui fail ülekirjutatakse.
 
 <pre>$ cp -i minuvingefail /home/pete/Pildid</pre>
 

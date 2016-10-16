@@ -24,7 +24,7 @@ Aga mis saab siis, kui ma tahan näha nii stderr kui ka stdout väljundit pähkl
 
 <pre>$ ls /olematu/kataloog > pähklid.txt 2>&1</pre>
 
-See käsk saadab ls /olematu/kataloog tulemuse failile pähklid.txt ja seejärel suunab stderr väljundi stdout'le kasutades operaatorit 2>&1. Siin on oluline toimingute järjekord, 2>&1 saadab stderr'i millelegi, millele stdout viitab. Hetkel viitab see failile. Seega, kui sa avad selle pähklid.txt faili, pekasid sa nägema mõlemat, stderr ja stdout väljundit. Meie näite põhjal, on ülemise käsu väljund ainult stderr.
+See käsk saadab ls /olematu/kataloog tulemuse failile pähklid.txt ja seejärel suunab stderr väljundi stdout'le kasutades operaatorit 2>&1. Siin on oluline toimingute järjekord, 2>&1 saadab stderr'i millelegi, millele stdout viitab. Hetkel viitab see failile. Seega, kui sa avad selle pähklid.txt faili, peaksid nägema mõlemat, stderr ja stdout väljundit. Meie näite põhjal, on ülemise käsu väljund ainult stderr.
 
 Selline on lühem viis, kuidas suunata faili mõlemad, stdout ja stderr:
 
