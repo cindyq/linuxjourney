@@ -2,14 +2,14 @@
 
 ## Tunni sisu
 
-Et liikuda puhvrite (või siis avatud failide) vahel kastua järgmisi käske:
+Et liikuda puhvrite (vÃµi siis avatud failide) vahel kasuta jÃ¤rgmisi kÃ¤ske:
 
 <b>Puhvri vahetamine</b>
 
 <pre>
 C-x b - vaheta puhvrit
-C-x parem klahv - liigu puhvritsüklis paremale
-C-x vasak klahv - liigu puhvritsüklis vasakule
+C-x parem nooleklahv - liigu puhvritsÃ¼klis paremale
+C-x vasak nooleklahv - liigu puhvritsÃ¼klis vasakule
 </pre>
 
 <b>puhvri sulgemine</b>
@@ -20,21 +20,21 @@ C-x vasak klahv - liigu puhvritsüklis vasakule
 
 <pre>C-x 2</pre>
 
-See käsk võimaldab sul vaadata mitut puhvrit ühel kuval. Nende puhvrite vahel liikumiseks kasuta: C-x o
+See kÃ¤sk vÃµimaldab sul vaadata mitut puhvrit Ã¼hel kuval. Nende puhvrite vahel liikumiseks kasuta: C-x o
 
-<b>Sea üksik puhver aktiivseks kuvaks</b>
+<b>Sea Ã¼ksik puhver aktiivseks kuvaks</b>
 
 <pre>C-x 1</pre>
 
-Kui oled kunagi kasutanud terminali multiplekserit nagu screen ja tmux, siis tunduvad need puhvri käsud väga tuttavad.
+Kui oled kunagi kasutanud terminali multiplekserit nagu screen ja tmux, siis tunduvad need puhvri kÃ¤sud vÃ¤ga tuttavad.
 
 ## Harjutus
 
-Mängi natuke puhvritega.
+MÃ¤ngi natuke puhvritega.
 
-## Küsimus
+## KÃ¼simus
 
-Kuidas peatada puhvri töö?
+Kuidas peatada puhvri tÃ¶Ã¶?
 
 ## Vastus
 
