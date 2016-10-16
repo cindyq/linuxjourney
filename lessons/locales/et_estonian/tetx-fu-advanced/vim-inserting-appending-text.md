@@ -2,23 +2,23 @@
 
 ## Tunni sisu
 
-Sa ehk märkasid juba kui üritasid mingit teksti sisestada, siis see ei õnnestunud. See on nii, kuna asud käsureiimis. See võib muutuda päris keeruliseks, eriti kui tahad ainult avada faili ja teksti sisestada. Käsureiimi kasutatakse käskude nagu h,j,k,l jne sisestamiseks. Selleks, et sisestada teksti, pead sa enne sisenema sisestusreiimi
+VÃµis mÃ¤rgata, et kui Ã¼ritada teksti sisestada, siis see ei Ãµnnestu. See on nii, kuna asutakse kÃ¤sureÅ¾iimis. See vÃµib muutuda pÃ¤ris keeruliseks, eriti kui tahta ainult avada faili ja teksti sisestada. KÃ¤sureÅ¾iimi kasutatakse kÃ¤skude nagu h,j,k,l jne sisestamiseks. Selleks, et sisestada teksti, peab enne sisenema sisestusreÅ¾iimi
 
 <ul>
-<li>i - sisesta teksti kursori ette</li>
-<li>O - sisesta teksti eelmisele reale</li>
-<li>o - sisesta teksti järgmisele reale</li>
-<li>a - lisa teksti kursori järgi</li>
-<li>A - lisa teksti rea lõppu</li>
+<li>i - sisesta tekst kursori ette</li>
+<li>O - sisesta tekst eelmisele reale</li>
+<li>o - sisesta tekst jÃ¤rgmisele reale</li>
+<li>a - lisa tekst kursori jÃ¤rele</li>
+<li>A - lisa tekst rea lÃµppu</li>
 </ul>
 
-Märka, et kui sisened ühte nendest sisestusreiimidest, näitab ka vim sulle kestas, et oled sisestusreiimis. Et väljuda sisestusreiimist ja minna tagasi käsureiimi, vajuta lihtsalt Esc klahvi.
+Kui siseneda Ã¼hte nendest sisestusreÅ¾iimidest siis nÃ¤itab ka vim alumises servas, et ollakse sisestusreÅ¾iimis. Et vÃ¤ljuda sisestusreÅ¾iimist ja minna tagasi kÃ¤sureÅ¾iimi, vajutada lihtsalt Esc klahvi.
 
 ## Harjutus
 
-Mängi natuke reiimide vahetamisega.
+MÃ¤ngi natuke reÅ¾iimide vahetamisega.
 
-## Küsimus
+## KÃ¼simus
 
 Millise klahviga saab sisestada teksti kursori ette.
 
