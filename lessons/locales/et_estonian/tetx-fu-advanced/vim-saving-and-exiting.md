@@ -6,9 +6,9 @@ Kui teksti redigeerimine valmis, on aeg tehtud töö salvestada ja vim'ist välj
 
 <ul>
 <li>:w - kirjutab või salvestab faili</li>
-<li>:q - välju vim'ist</li>
-<li>:wq - kirjuta/salvesta ja siis välju</li>
-<li>:q! - lahku faili salvestamata</li>
+<li>:q - väljub vim'ist</li>
+<li>:wq - kirjutab/salvestab ja siis väljub</li>
+<li>:q! - väljutakse faili salvestamata</li>
 <li>ZZ - võrdväärne käsuga :wq, kuid ühe tähemärgi võrra kiirem</li>
 
 <li>u - võta tagasi viimane tegevus</li>
