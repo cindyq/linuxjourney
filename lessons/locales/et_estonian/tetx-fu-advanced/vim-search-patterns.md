@@ -1,32 +1,35 @@
-# Vim'i otsingu mustrid
+# Vim'i otsingumustrid
 
 ## Tunni sisu
 
-Et mõnda väljendit otsida, sisesta lihtsalt / ja siis otsingu tulemus, kui vim sessioon juba käib. Kui oled vajutanud Enter, võid liikuda otsitulemuste seas edasi ja tagasi vastavalt klahvidega "n" ja "N".
+Et mÃµnda vÃ¤ljendit otsida, sisestada lihtsalt / ja siis otsitav sÃµna vÃµi sÃ¼mbolid, kui vim sessioon juba kÃ¤ib. Kui oled vajutanud Enter, vÃµid liikuda otsitulemuste seas edasi ja tagasi vastavalt klahvidega "n" ja "N".
 
 
 <pre>
-Minu kaunis fail on väga kaunis.
+Minu kaunis fail on vÃ¤ga kaunis.
 
 /kaunis
 
-leiab tekstifailist sõnad kaunis.
+leiab tekstifailist sÃµnad kaunis.
 </pre>
 
-? otsingu käsk otsib failist tagurpidi. Eelmis näite põhjal leitaks kõigepealt viimane "kaunis".
+? otsingukÃ¤sk otsib failist tagurpidi jÃ¤rjekorras. Eelmise nÃ¤ite pÃµhjal leitakse kÃµigepealt viimane sÃµna "kaunis".
 
-/kaunis
+<pre>
+Minu kaunis fail on vÃ¤ga kaunis.
 
-leiab tekstifailist sõnad kaunis.
+?kaunis
+
+leiab tekstifailist sÃµnad kaunis tagurpidi jÃ¤rjekorras.
 </pre>
 
 ## Harjutus
 
-Mängi natuke otsinguga. Ava vim'iga tekstifail: vim [tekstifail] ja asu otsima!
+MÃ¤ngi natuke otsinguga. Ava vim'iga tekstifail: vim [tekstifail] ja asu otsima!
 
-## Küsimus
+## KÃ¼simus
 
-Millist sümbolit kasutab vim, et teostada ostingut?
+Millist sÃ¼mbolit kasutab vim, et teostada ostingut?
 
 ## Vastus
 
