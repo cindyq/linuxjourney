@@ -2,23 +2,23 @@
 
 ## Tunni sisu
 
-Käivita käsk:
+Käivitada käsk:
 
 <pre>$ echo $HOME</pre>
 
-Sa peaksid nägema oma kodukataloogi otsiteekonda, minu oma näeb selline välja /home/pete.
+Peaks nägema kodukataloogi otsiteekonda, näiteks /home/pete.
 
 Aga see käsk?
 
 <pre>$ echo $USER</pre> 
 
-Peaksid nägema enda kasutajanime!
+Peaks nägema enda kasutajanime!
 
-Kust see infiormatsioon pärineb? See pärineb sinu keskkonna muutujatest. Neid saab näha, kui trükid
+Kust see informatsioon pärineb? See pärineb keskkonnamuutujatest. Neid saab näha, kui trükkida
 
 <pre>$ env</pre> 
 
-See väljund kuvab palju infot parasjagu seatud keskkonna muutujate kohta. Nendes muutujates on palju kaslikku infot, mida kest ja teised protsessid saavad kasutada.
+See väljund kuvab palju infot parasjagu seatud keskkonnamuutujate kohta. Nendes muutujates on palju kasulikku infot, mida kest ja teised protsessid saavad kasutada.
 
 Siin on lühike näide:
 
@@ -28,16 +28,16 @@ PWD=/home/user
 USER=pete
 </pre>
 
-Üks eriliselt oluline muutuja on PATH muutuja.  Nendele saab ligi, kui topid $ sümboli muutujanime ette, niimoodi:
+Üks eriliselt oluline muutuja on PATH (otsiteekond). Muutujate väärtusi saab vaadata kui kirjutada $ sümbol muutujanime ette:
 
 <pre>
 $ echo $PATH
 /usr/local/sbin:/usr/local/bin:/usr/sbin:/bin
 </pre>
 
-Kui käsk käivitada, tagastab see nimekirja koolonitega eraldatud teekondades, milleni su süsteem ulatub. Ütleme, et sa laed Internetis käsitsi alla ja paigaldad paketi, mille sa paned mittestandardsesse kataloogi ja tahas käivitada käsku. Sa kirjutad $ lahekäsk ja käsuviip ütleb, et käsku ei leitud. See on küll tobe! Sa vaatad kaustas binaari ja tead, et see on olemas. Mis toimub on see, et $PATH muutuja ei kontrolli selle kataloogi seda binaari ning seetõttu annab veateate.
+Kui käsk käivitada, tagastab see nimekirja koolonitega eraldatud otsiteekondadega. Näiteks kui laadida internetist käsitsi alla ja paigaldada tarkvarapakett, mis pannakse mittestandardsesse (otsiteekonnas mitteasuvasse) kataloogi ja tahta käivitada seda käsku. Kui kirjutada $ lahekäsk ja käsuviip ütleb, et käsku ei leitud kuigi on teada, et see on olemas. Mis toimub on see, et $PATH muutuja ei kontrolli seda kataloogi ega seal asuvat binaarfaili ning seetõttu annab veateate.
 
-Ütleme, et sul on tonnides binaare, mida sa tahad käivitada väljaspool seda kataloogi. Võib lihtsalt muuta PATH muutujat, et see sisaldaks vajalikku kataloogi sinu PATH keskkonna muutujas.
+Ütleme, et arvutis on tonnides binaare, mida tahetakse käivitada väljaspool otsiteekonda asuvat kataloogi. Võib lihtsalt muuta PATH muutujat, et see sisaldaks vajalikku kataloogi sisseloginud kasutaja PATH keskkonnamuutujas.
 
 ## Harjutus
 
