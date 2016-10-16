@@ -2,15 +2,15 @@
 
 ## Tunni sisu
 
-Grep on väga tõenäoliselt kõige tavalisem teksti töötlemise käsk, mida sa kasutama hakkad. See võimaldab otsida failist täemärke, mis vastavad teatud mustrile. Mis siis kui tahad teada, kas mingi fail eksisteerib mingis konkreetses kataloogis või, kas mingis failis asub mingi otsitav sõne? Kindlasti ei hakkaks sa kogu teksti läbi otsima, sa kasutaksid grep'i!
+Grep on kõige tavalisem tekstitöötlemise käsk. See võimaldab otsida failist tähemärke, mis vastavad teatud mustrile. Mis siis kui tahta teada, kas mingi fail eksisteerib mingis konkreetses kataloogis või kas mingis failis asub otsitav sõne? Kindlasti ei hakkaks keegi kogu teksti läbi otsima vaid kasutaks grep'i!
 
 Kasutame näitena näide.txt faili:
 
 <pre>$ grep rebane näide.txt</pre>
 
-Peaksid nägema, et grep leidis sõna rebane failist näide.txt
+Peaks nägema, et grep leidis sõna rebane failist näide.txt
 
-Saab otsida ka väike- ja suurtähedele mittetundlikku teksti, kui kasutad lippu -i.
+Saab otsida ka väike- ja suurtähedele mittetundlikku teksti, kui kasutada lippu -i.
 
 <pre>$ grep -i mingimuster mingifail</pre>
 
@@ -22,15 +22,15 @@ Nagu näha, on grep väga mitmekülgne. Mustris võib kasutada isegi tavapärase
 
 <pre>$ ls /mingikat | grep '.txt$'</pre>
 
-Peaks kuvama kataloogist mingikat kõik failid mis lõpevad .txt.
+Peaks kuvama kataloogist mingikat kõik TXT-tüüpi tekstifailid.
 
 ## Harjutus
 
-Ehk oled kuulnud käskudest egrep ja fgrep, need on nüüd vananenud ning asendatud käskudega grep -E ja grep -F. Loe grep'i man lehekülge ja saad rohkem teada.
+Ehk ollakse kuulnud käskudest egrep ja fgrep, need on nüüd vananenud ning asendatud käskudega grep -E ja grep -F. Lugeda grep'i man lehekülge ja saab rohkem teada.
 
 ## Küsimus
 
-Millist käsku kasutad, et mingit tähemärgi kombinatsiooni leida?
+Millist käsku kasutada, et mingit tähemärgi kombinatsiooni leida?
 
 ## Vastus
 
