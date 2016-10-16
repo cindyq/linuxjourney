@@ -2,14 +2,14 @@
 
 ## Tunni sisu
 
-Väga suur osa (kui mitte kõik) Emacs'i dokumentasiooni kasutab süntaksit C-[täht]. See tähendab lihtsalt Ctrl-täht, kuid lühendamise eesmärgil kirjutame Ctrl asemel C. Kui sa näed süntaksit, kus kasutatakse M-täht kirjapilti, tähendab see Meta klahvi, kõige tavalisemalt on selle Alt.
+VÃ¤ga suur osa (kui mitte kÃµik) Emacs'i dokumentatsiooni kasutab sÃ¼ntaksit C-[tÃ¤ht]. See tÃ¤hendab lihtsalt Ctrl-tÃ¤ht, kuid lÃ¼hendamise eesmÃ¤rgil kirjutame Ctrl asemel C. Kui sa nÃ¤ed sÃ¼ntaksit, kus kasutatakse M-tÃ¤ht kirjapilti, tÃ¤hendab see Meta klahvi, kÃµige tavalisemalt on selleks Alt.
 
 <b>Failide salvestamine</b>
 
 <pre>
 C-x C-s - Salvesta fail
 C-x C-w - Salvesta fail nimega
-C-x s - Salvesta kõik
+C-x s - Salvesta kÃµik
 </pre>
 
 Faili salvestamise valiku korral, avaneb iga faili salvestamisel valikuaken.
@@ -20,15 +20,15 @@ Faili salvestamise valiku korral, avaneb iga faili salvestamisel valikuaken.
 C-x C-f
 </pre>
 
-Sult küsitakse millise nimega faili soovid avada. Kui sul ei eksisteeri olemasolevat faili, siis luuakse uus. Avada saab ka kataloogi. 
+KÃ¼sitakse millise nimega faili soovitakse avada. Kui olemasolevat faili ei eksisteeri siis luuakse uus. Avada saab ka kataloogi. 
 
 ## Harjutus
 
 Proovi failide avamist ja salvestamist.
 
-## Küsimus
+## KÃ¼simus
 
-Millise käsuga vatake fail?
+Millise kÃ¤suga vatake fail?
 
 ## Vastus
 
