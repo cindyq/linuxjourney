@@ -8,6 +8,7 @@ Vim on tõeliselt väikesemahuline. Faili avamine ja muutmine vim'iga on kiire j
 
 Vim'i käivitamiseks sisestada: 
 <pre>vim</pre>
+... ja vajutada Enter-klahvi
 
 ## Harjutus
 
