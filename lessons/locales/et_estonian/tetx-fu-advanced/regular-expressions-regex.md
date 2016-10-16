@@ -2,30 +2,30 @@
 
 ## Tunni sisu
 
-Regulaaravaldised on võimsad tööriistad mustril põhineva valiku teostamiseks. See kasutab erilist kirjapilti, mis sarnaneb natuke sellele, millega oleme juba kokku puutunud, näiteks metamärk *.
+Regulaaravaldised on vÃµimsad tÃ¶Ã¶riistad mustril pÃµhineva valiku teostamiseks. See kasutab erilist kirjapilti, mis sarnaneb natuke sellele, millega oleme juba kokku puutunud, nÃ¤iteks metamÃ¤rk *.
 
-Võtame läbi mõned kõige tavalisemad regulaaravaldised, mis on pea-aegu universaalsed ükskõik millises programmeerimiskeeles.
+VÃµtame lÃ¤bi mÃµned kÃµige tavalisemad regulaaravaldised, mis on peaaegu universaalsed Ã¼kskÃµik millises programmeerimiskeeles.
 
-Kasutame järgmist fraasi testsõnena:
+Kasutame jÃ¤rgmist fraasi testsÃµnena:
 <pre>
 sally sells seashells 
 by the seashore
 </pre>
 
-<b>1. Rea alustamine märgiga ^</b>
+<b>1. Rea alustamine mÃ¤rgiga ^</b>
 <pre>
 <b>^by</b>
 saaks vasteks rea "by the seashore"
 </pre>
 
-<b>2. Rea lõpetamine märgiga $</b>
+<b>2. Rea lÃµpetamine mÃ¤rgiga $</b>
 
 <pre>
 seashore<b>$</b>
 saaks vasteks "by the seashore"
 </pre>
 
-b>3. Ühe märgi sidumine sümboliga .</b>
+b>3. Ãœhe mÃ¤rgi sidumine sÃ¼mboliga .</b>
 
 <pre>
 b<b>.</b>
@@ -34,47 +34,47 @@ saaks vasteks by
 
 <b>4. Sulgude [] ja () kasutamine</b>
 
-See võib olla natuke keerulisem, sulud lubavad meil täpsustada, mis häälikuid nende seest võib leida.
+See vÃµib olla natuke keerulisem, sulud lubavad meil tÃ¤psustada, mis hÃ¤Ã¤likuid nende seest vÃµib leida.
 
 <pre>
 d<b>[iou]</b>g
 saaks vasteks: dig, dog, dug
 </pre>
 
-Kui kasutada nnne mainitud sümbolit ^ sulgude sees, tähendab see, et peetakse silmas kõiki tähemärke, peale nende mis sulgudes on.
+Kui kasutada ankursilti ^ sulgude sees, tÃ¤hendab see, et peetakse silmas kÃµiki tÃ¤hemÃ¤rke, peale nende mis sulgudes on.
 
 <pre>
 d<b>[^i]</b>g
 saaks vasteks: dog ja dug aga mitte dig
 </pre>
 
-Sulgudes saab kasutada ka vahemikku, et suurendada soovitud tähemärkide hulka.
+Sulgudes saab kasutada ka vahemikku, et suurendada soovitud tÃ¤hemÃ¤rkide hulka.
 
 <pre>
 d<b>[a-c]</b>g
 leiab vasteks dag, dbg, ja dcg
 </pre>
 
-Ole hoolikas, sulud on tõstutundlikud.
+Ole ettevaatlik, sulud on tÃµstutundlikud.
 
 <pre>
 d<b>[A-C]</b>g
 vasteks on dAg, dBg ja dCg kuid mitte dag, dbg ja dcg
 </pre>
 
-Ja need ongi mõned põhilised regulaaravaldised.
+Ja need ongi mÃµned pÃµhilised regulaaravaldised.
 
 ## Harjutus
 
-Proovi kombineerida regulaaravaldisi grep'iga ja vaata läbi mõned failid.
+Proovi kombineerida regulaaravaldisi grep'iga ja vaata lÃ¤bi mÃµned failid.
 
 <pre>
 grep [siia regulaaravaldis] [fail]
 </pre>
 
-## Küsimus
+## KÃ¼simus
 
-Millise regulaaravalidse vasteks on üksik tähemärk?
+Millise regulaaravaldise vasteks on Ã¼ksik tÃ¤hemÃ¤rk?
 
 ## Vastus
 
