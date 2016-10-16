@@ -18,7 +18,7 @@ Et veelgi paindlikkust lisada, võib grep'i kombineerida teiste käskudega | ope
 
 <pre>$ env | grep -i Kasutaja</pre>
 
-Nagu näha, on grep väga mitmekülgne. Mustris võib kasutada isegi tavapäraseid väljendeid:
+Nagu näha, on grep väga mitmekülgne. Mustris võib kasutada ka regulaaravaldisi:
 
 <pre>$ ls /mingikat | grep '.txt$'</pre>
 
