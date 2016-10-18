@@ -2,34 +2,39 @@
 
 ## Tunni sisu
 
-Nüüd, kui sa tead, kus sa oled, vaatame, kas meil õnnestub failisüsteemis pisut ringi liikuda. Pea meeles, et liikumiseks peame kasutama asukohtade otsiteekondi. Asukoha määramiseks on kaks võimalust: absoluutne ja suhteline otsiteekond.
+Vaatame kas meil õnnestub failisüsteemis pisut ringi liikuda teadmistega, mis käesolevaks hetkeks kogutud. Tuleb meeles pidada, et liikumiseks peame kasutama asukohtade otsiteekondi. Asukoha määramiseks on kaks võimalust: absoluutne ja suhteline otsiteekond.
 
 <ul>
-<li>Absoluutne asukoht: See on faili asukoht alates juurkataloogist. Juur on meil see kõige olulisem tegelane. Juurkataloogi kuvatakse tavaliselt kaldkriipsuga. Kui asukoha alguses on /, siis tähendab, et sa alustad juurkataloogist. Näiteks /home/pete/Töölaud.</li>
+<li>Absoluutne asukoht: See on faili asukoht alates juurkataloogist. Juur on meil see kõige olulisem tegelane. Juurkataloogi kuvatakse tavaliselt kaldkriipsuga. Kui asukoha alguses on /, siis tähendab, et alustatakse juurkataloogist. Näiteks /home/pete/Töölaud.</li>
 
-<li>Suhteline asukoht: See on faili asukoht alates sinu praegusest asukohast failisüsteemis. Kui ma asuksin praegu /home/pete/Dokumendid ja tahaksin liikuda Dokumentides asuvasse arved kataloogi, siis ei ole mul vaja täpsustada kogu asukohta alates juurest, ma võin lihtsalt minna arved/ .</li>
+<li>Suhteline asukoht: See on faili asukoht alates praegusest asukohast failisüsteemis. Kui hetkel asutakse /home/pete/Dokumendid ja tahetakse liikuda kataloogis Dokumendid asuvasse arved kataloogi, siis ei ole vaja täpsustada kogu asukohta alates juurkataloogist vaid võib lihtsalt minna kataloogi arved/ .</li>
 </ul>
 
-Nüüd, kui me teame kuidas asukohad toimivad, on meil vaja midagi, mis aitaks meil liikuda soovitud kataloogi. õnneks on meil cd või siis "muuda kataloogi", et seda saavutada.
+Kui on teada kuidas asukohad toimivad siis on vaja midagi, mis aitaks liikuda soovitud kataloogi. Õnneks on olemas cd või siis "muuda kataloogi", et seda saavutada.
 
 <pre>$ cd /home/pete/Pildid</pre>
 
-Nüüd ma muutsin oma asukohaks home/pete/Pildid.
+Sellega muudeti asukohaks home/pete/Pildid.
 
-Selles kaustas on mul aga katalaoog Hawaii, ma saan sinna liikuda nõnda:
+Selles kaustas on aga alamkataloog Hawaii, ma saan sinna liikuda nõnda:
 
 <pre>$ cd Hawaii</pre>
 
-Märkasid, et ma kasutasin ainult kausta nime? Sain nii teha, kuna mu asukoht juba oli /home/pete/Pildid.
+Paneme tähele, et kasutati ainult kausta nime! See on võimalik kuna asukoht juba oli /home/pete/Pildid.
 
-Võib muutuda päris väsitavaks, kui kogu aeg peab kasutama absoluutseid või suhtelisi asukohti. Õnneks on meie abistamiseks olemas otseteed.
+Võib muutuda päris väsitavaks kui kogu aeg peab kasutama absoluutseid või suhtelisi asukohti. Õnneks on meie abistamiseks olemas otseteed.
 
 <ul>
-<li>. (praegune kataloog). See on kataloog, milles sa asud. </li>
-<li>.. (eelnev kataloog). Viib su praeguse kataloogi ülemkataloogi.</li>
-<li>~ (home kataloog). See on vaikimisi su kodukataloog, näiteks /home/pete.</li>
-<li>- (eelmine kataloog). Viib su kataloogi, kus sa viimati asusid.</li>
+<li>. (praegune kataloog). See on kataloog, milles sa asud</li>
+<li>.. (eelnev kataloog). Viib su praeguse kataloogi ülemkataloogi</li>
+<li>~ (home kataloog). See on vaikimisi su kodukataloog, näiteks /home/pete</li>
+<li>- (eelmine kataloog). Viib su kataloogi, kus sa viimati asusid</li>
 </ul>
+
+Kui käsurida on äsja avatud siis ei pruugi ajalugu olla eelnevates kataloogides liikumisest ja seetõttu ei pruugi kohe eelmisesse kataloogi liikumine toimida. Eelmise kataloogi väärtust näeb käsuga:
+<pre>
+echo $OLDPWD
+</pre>
 
 <pre>$ cd .
 $ cd ..
@@ -39,12 +44,12 @@ $ cd -
 Proovi need ära!
 
 <ol>
-<li>Kuhu sa satud, kui sisestad cd käsu ilma täiendava infota?</li>
+<li>Kuhu satutakse kui sisestada cd käsk ilma täiendava infota?</li>
 </ol>
 
 ## Küsimus
 
-Kui su asukoht on /home/pete/Pildid ja sa tahad minna kataloogi /home/pete, siis millist otseteed oleks hea kasutada?
+Kui asukoht on /home/pete/Pildid ja soovitakse minna kataloogi /home/pete, siis millist otseteed oleks hea kasutada?
 
 ## Vastus
 
