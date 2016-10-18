@@ -2,19 +2,19 @@
 
 ## Tunni sisu
 
-Eelmises tunnis õppisime, et me saame kasutada erinevaid stdout voogusid, näiteks faili või ekraani. Samamoodi on olemas ka standardsisendi (stdin) voogusid. Teame, et on olemas stdin seadmetelt nagu klaviatuur, kuid me võime kasutada ka faile, teiste protsesside väljundeid ning ka terminali. Vaatame näidet.
+Eelmises tunnis õppiti, et saab kasutada erinevaid stdout (standardväljundi) vooge, näiteks faili või ekraani. Samamoodi on olemas ka standardsisendi (stdin) vood. Teame, et on olemas stdin seadmetelt nagu klaviatuur, kuid võib kasutada ka faile, teiste protsesside väljundeid ning ka terminali. Vaatame näidet.
 
-Kasutame selle näite jaoks eelmise tunni pähklid.txt faili. Meenuta, et seal oli sees tekst Hello World.
+Kasutame selle näite jaoks eelmise tunni pähklid.txt faili. Meenutame, et seal oli sees tekst Hello World.
 
 <pre>$ cat <b>&lt;</b> pähklid.txt <b>&gt;</b> banaan.txt </pre> 
 
-Just nagu meil oli <b>&gt;</b> stdout ümbersuunamiseks, on meil <b>&lt;</b> stdin ümbersuunamise jaoks.
+Nii nagu <b>&gt;</b> on stdout (standardväljundi) ümbersuunamiseks, on <b>&lt;</b> stdin (standardsisendi) ümbersuunamise jaoks.
 
-Tavaliselt saadaksid sa cat käsu puhul sellele faili ja sellest saab stdin, praegusel juhul aga suunasime me stdin'ks pähklid.txt. Sedasi suunatakse cat pähklid.txt väljund ümber faili mimega banaan.txt
+Tavaliselt saadetakse cat käsu puhul fail sisendisse ja sellest saab stdin (standardsisend), praegusel juhul aga suunasime me stdin'ks pähklid.txt. Sedasi suunatakse cat pähklid.txt väljund ümber faili mimega banaan.txt
 
 ## Harjutus
 
-Proovi paari käsku:
+Proovida paari käsku:
 <pre>
 $ echo <b>&lt;</b> pähklid.txt <b>&gt;</b> banaan.txt
 $ ls <b>&lt;</b> pähklid.txt <b>&gt;</b> banaan.txt
@@ -23,7 +23,7 @@ $ pwd <b>&lt;</b> pähklid.txt <b>&gt;</b> banaan.txt
 
 ## Küsimus
 
-Millise käsuga suunad sa ümber stdin?
+Millise käsuga suunatakse ümber stdin (standardsisend)?
 
 ## Vastus
 
