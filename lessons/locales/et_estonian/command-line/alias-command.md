@@ -35,6 +35,10 @@ Aliase saab eemaldada unalias käsuga:
 
 <pre>$ unalias foobar</pre>
 
+Lisainfot aliaste kohta<br />
+<a href="https://viki.pingviin.org/Alias" target="_blank">Pingviini viki artikkel</a><br />
+<a href="https://wiki.itcollege.ee/index.php/Alias_bash_shellis" target="_blank">IT Kolledži viki artikkel</a>
+
 ## Harjutus
 
 Luua mõned aliased ja eemalda need.
