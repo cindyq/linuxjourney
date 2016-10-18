@@ -6,25 +6,25 @@ Meil on süsteemis palju faile ning nendest ühe konkreetse leidmine võib muutu
 
 <pre>$ find /home -name kutsikad.jpg</pre>
 
-Kui kasutad find käsku, pead täpsustama, millisest kataloogist tuleb faili otsida. Praegusel juhul otsime faili nime (name) kutsikad.jpg järgi.
+Kui kasutada find käsku, peab täpsustama, millisest kataloogist tuleb faili otsida. Praegusel juhul otsime faili nime (*name*) kutsikad.jpg järgi.
 
-Sa võid ka täpsustada, millist tüüpi faili sa leida püüad.
+Võib ka täpsustada, millist tüüpi faili leida püütakse.
 
 <pre>$ find /home -type d -name MinuKaust</pre>
 
-Nagu märkasid, siis ma panin faili tüübiks d (kataloogi jaoks) ning samal ajal ma otsin endiselt nime järgi MinuKaust.
+Nagu märkata võis siis pandi failitüübiks d (kataloogi jaoks) ning samal ajal otsiti endiselt nime järgi MinuKaust.
 
-Lahe asi, mida silmas pidada on see, et find ei piirdu otsimisega täpsustatud kataloogist, see otsib ka kõikvõimalikest alamkataloogidest.
+Lahe asi mida silmas pidada on see, et *find* ei piirdu otsimisega täpsustatud kataloogist, see otsib ka kõikvõimalikest alamkataloogidest.
 
 ## Harjutus
 
 <ol>
-<li>Leia juurkataloogist fail, mille nimes on sõna net.</li>
+<li>Leia juurkataloogist fail, mille nimes on sõna *net*.</li>
 </ol>
 
 ## Küsimus
 
-Kuidas pean find käsku täpsustama, kui tahan otsida faili nime järgi?
+Kuidas peab *find* käsku täpsustama, kui tahta otsida failinime järgi?
 
 ## Vastus
 
