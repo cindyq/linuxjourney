@@ -2,9 +2,9 @@
 
 ## Tunni sisu
 
-Uniq (unikaalne) käsk on veel üks kasulik töörist teksti töötlemiseks.
+Uniq (unikaalne) käsk on veel üks kasulik tööriist teksti töötlemiseks.
 
-Ütleme, et sul on ühes failist mitu koopiat:
+Näiteks on ühest failist mitu koopiat:
 
 
 <pre>
@@ -18,7 +18,7 @@ artikkel
 ajakiri
 </pre>
 
-ja sa tahad korduvatest eksemplaridest lahti saada. Selleks saab kasutada uniq käsku:
+... ja soovitakse korduvatest eksemplaridest lahti saada. Selleks saab kasutada uniq käsku:
 
 <pre>$ uniq lugemin.txt
 raamat
@@ -49,7 +49,7 @@ artikkel
 
 <b>Märkus</b> : uniq ei tuvasta korduvaid ridu juhul, kui nad ei asu kőrvuti. Näiteks:
 
-Ütleme, et sul on fail, mille korduvad read ei asu kőrvuti:
+Näiteks on fail, mille korduvad read ei asu kőrvuti:
 
 <pre>
 lugemine.txt
@@ -84,11 +84,11 @@ ajaleht</pre>
 
 ## Harjutus
 
-Milline oleks väljud kui prooviksid sisestada uniq -uc?
+Milline oleks väljund kui proovida sisestada uniq -uc?
 
 ## Küsimus
 
-Millist käsku kasutaksid, et vabaneda failis kordustest?
+Millist käsku kasutada, et vabaneda kordustest failis?
 
 ## Vastus
 
