@@ -13,7 +13,7 @@ elevant
 lind
 
 $ sort fail1.txt
-elevenat
+elevant
 kass
 koer
 lehm
@@ -42,13 +42,13 @@ lind
 
 ## Harjutus
 
-Sort käsu tõeline jõud tuleneb võimalusest kasutada seda koos teiste käskudega. Proovi järgmist käsku ja vaata, mis juhtub?
+Sort käsu tõeline jõud tuleneb võimalusest kasutada seda koos teiste käskudega. Proovida järgmist käsku ja vaadata, mis juhtub?
 
 <pre>$ ls /etc | sort -rn</pre>
 
 ## Küsimus
 
-Millise käsuga saab teha tagurpidi soreteerimist?
+Millise lipuga saab teha tagurpidi sorteerimist?
 
 ## Vastus
 
