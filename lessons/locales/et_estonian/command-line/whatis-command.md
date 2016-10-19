@@ -1,4 +1,4 @@
-# whatsis
+# whatis
 
 ## Tunni sisu
 
