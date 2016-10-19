@@ -1,29 +1,28 @@
-# General Logging
+# گزارش‌گیری عمومی
 
-## Lesson Content
+## محتویات درس
 
-There are many log files you can view on your system, many important ones can be found under /var/log. We won't go through them all, but we'll discuss a couple of the major ones. 
+فایل‌های لاگِ حاوی گزارش‌های مختلف بر روی سیستم شما به وفور پیدا می‌شد. بسیاری از فایل‌های لاگِ مهم در مسیر ‎/var/log قرار گرفته‌اند. ما در این دوره قرار نیست که همه‌ی این فایل‌ها را بررسی کنیم ولی چند فایل مهم‌تر را از نظر می‌گذرانیم.
 
-There are two general log files you can view to get a glimpse of what your system is doing:
+دو فایل لاگ اصلی در سیستم شما وجود دارد که گزارش از عمل‌کرد حال حاضر سیستم را به شما نشان می‌دهد.
 
-<b>/var/log/messages</b>
+**/var/log/messages**
 
-This log contains all non-critical and non-debug messages, includes messages logged during bootup (dmesg), auth, cron, daemon, etc. Very useful to get a glimpse of how your machine is acting. 
+این فایل شامل تمام پیام‌های غیر-حساس و non-debug شامل پیام‌های گزارش شده در حین راه‌اندازی سیستم (dmesg)، auth, cron, daemon و غیره می‌شود. این فایل برای نگاهی به سیستم برای دیدن احوالات آن بسیار به درد بخور است.
 
-<b>/var/log/syslog</b>
+**/var/log/syslog**
+تمام پیام‌ها به غیر از پیام‌های auth را گزارش می‌کند. این فایل برای دی‌باگ یا رفع خطاهای سیستمی بسیار مفید است.
 
-This logs everything except auth messages, it's extremely useful for debugging errors on your machine. 
+این دو فایل لاگ برای برطرف کردن مشکلات سیستمی از کافی هم کافی‌تر هستند. با این حال اگر می‌خواهید لاگ‌های خاص هر کدام از اجزاء سیستم را ببینید، فایل‌های گزارش جداگانه‌ای برای هر کدام از آن‌ها در سیستم شما وجود دارد.
 
-These two logs should be more than enough when troubleshooting issues with your system, However, if you just want to view a specific log component, there are also separate logs for those as well.
+## تمرین
 
-## Exercise
+به فایل لاگ ‎/var/log/messages و ‎/var/log/syslog نگاهی بیندازید و تفاوت‌ها را دریابید.
 
-Look at your /var/log/messages and /var/log/syslog files and see what the differences are.
+## سؤال آزمون
 
-## Quiz Question
+چه فایلِ لاگی همه چیز به غیر از پیام‌های auth را ذخیره می‌کند؟
 
-What log file logs everything except auth messages?
-
-## Quiz Answer
+## پاسخ آزمون
 
 syslog
