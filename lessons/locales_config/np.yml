@@ -1,0 +1,55 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+en:
+  menu:
+    languages:
+      lang: "भाषा"
+      flag: "flags/Nepal.png"
+  home:
+    tagline: 
+      title: "Linux-fu को बारेमा सिक्नुहोस्, सित्तैमा।"
+    subscribe:
+      title: "Subscribe"
+      body: "नयाँ कोर्स र पाठको बारेमा जानकारी पाउनुहोस।"
+    about:
+      title: "हाम्रो बारेमा "
+      body: "यहाँ पाइएको ग्यान  open-source समाजको देन हो ।."
+      url_name: "मिल्नुहोस् र सहयोग गर्नुहोस् ।"
+      url: "https://github.com/cindyq/linuxjourney"
+    contact:
+      title: "सम्पर्क"
+      body: "bug देख्नुभो? केहि सुझाब ?नोट गर्न मान छ?"
+      url_name: "हामीलाई जानकारी दिनुहोस्।"
+      url: "contact@linuxjourney.com"
+  courses:
+    titles:
+      exercises: "अभ्यास"
+      quiz: "Quiz"
+  forms:
+    buttons:
+      check_answer: "जबाफ हेर्नुहोस् "
+      continue: "लाग्नुहोस"
+      return: "मुख्य प्र्षठमा जानुहोस् "
+      home: "होम"
+    messages:
+      answer_correct: "साहि जबाफ!"
+      answer_incorrect: "ठ्याक्कै भएन, फेरी प्र्यास गर्नुहोस् "
