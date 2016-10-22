@@ -1,38 +1,38 @@
-# Tööristad kasutajate haldamiseks
+# Vahendid kasutajate haldamiseks
 
 ## Tunni sisu
 
-Paljud ärikeskkonnad kasuvad kasutajate, kontode ja salasõnade haldamiseks haldamise sütsteeme. Üksikul masinal aga saab kasutajate haldamisega hakkama kui mõne kasuliku käskudega.
+Paljud Ã¤rikeskkonnad kasuvad kasutajate, kontode ja salasÃµnade haldamiseks haldamise sÃ¼tsteeme. Ãœksikul masinal aga saab kasutajate haldamisega hakkama kui mÃµne kasuliku kÃ¤skudega.
 
 <b>Kasutajate lisamine</b>
 
-Võib kasutada *adduser* või *useadd* käske. *adduser* hõlmab aga rohkem kasulike omadusi, näiteks kodukataloogi loomine. Uute kasutajate loomiseks saab muuta seadistusfaile, sõlitvalt sellest, mida soovitakse määrata vaikimisi kasutajale.
+VÃµib kasutada *adduser* vÃµi *useadd* kÃ¤ske. *adduser* hÃµlmab aga rohkem kasulike omadusi, nÃ¤iteks kodukataloogi loomine. Uute kasutajate loomiseks saab muuta seadistusfaile, sÃµlitvalt sellest, mida soovitakse mÃ¤Ã¤rata vaikimisi kasutajale.
 
 <pre>$ sudo useradd peeter</pre>
 
-Viimane käsk loob peetri kohta sisestuse faili /etc/passwd, loob vaikimis grupi ka lisab sisestuse ka faili /etc/shadow.
+Viimane kÃ¤sk loob peetri kohta sisestuse faili /etc/passwd, loob vaikimis grupi ka lisab sisestuse ka faili /etc/shadow.
 
 <b>Kasutajate kustutamine</b>
 
-Kasutaja kustutamiseks võib kasutada *userdel* käsku.
+Kasutaja kustutamiseks vÃµib kasutada *userdel* kÃ¤sku.
 
 <pre>$ sudo userdel peeter</pre>
 
-Põhimõtteliselt annab see käsk endast parima, et võtta tagasi muudatused mida *useradd* failidesse tegi.
+PÃµhimÃµtteliselt annab see kÃ¤sk endast parima, et vÃµtta tagasi muudatused mida *useradd* failidesse tegi.
 
-<b>Salasõna muutmine</b>
+<b>SalasÃµna muutmine</b>
 
 <pre>$ passwd peeter</pre>
 
-Selle käsuga saab muuta enda või mõne teise kasutaja prooli (muidugi juhul kui oled juurkasutaja).
+Selle kÃ¤suga saab muuta enda vÃµi mÃµne teise kasutaja prooli (muidugi juhul kui oled juurkasutaja).
 
 ## Harjutus
 
 Luua uus kasutaja, muuta tema parool ja siis selle kasutajana sisse logida.
 
-## Küsimus
+## KÃ¼simus
 
-Millise käsuga saab muuta kasutajate paroole?
+Millise kÃ¤suga saab muuta kasutajate paroole?
 
 ## Vastus
 
