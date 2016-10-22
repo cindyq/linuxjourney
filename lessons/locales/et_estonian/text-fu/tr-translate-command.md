@@ -2,25 +2,25 @@
 
 ## Tunni sisu
 
-Tõlgendamise käsk tr laseb sul tõlkida mingi tähemärkide komplekti teiseks.  Proovime näteks tõlgendada kõiki väikesi tähti suurteks.
+TÃµlgendamise kÃ¤sk tr laseb sul tÃµlkida mingi tÃ¤hemÃ¤rkide komplekti teiseks.  Proovime nÃ¤teks tÃµlgendada kÃµiki vÃ¤ikesi tÃ¤hti suurteks.
 
 <pre>$ tr a-z A-Z
 hallo
 HALLO</pre>
 
-Nagu sa näed siis me muutsime vahemiku a-z vahemikuks A-Z ja kogu meie väikesetäheline sisend muutub suuretäheliseks.
+Nagu nÃ¤ha siis muudeti vahemik a-z vahemikuks A-Z ja kogu vÃ¤ikesetÃ¤heline sisend muudeti suuretÃ¤heliseks.
 
 ## Harjutus
 
-Proovi järgnevat käsku. Mis juhtub?
+Proovida jÃ¤rgnevaid kÃ¤ske, vajutades rea lÃµpus ka Enter. Mis juhtub?
 
 <pre>$ tr -d allo
 hallo</pre>
 
 
-## Küsimus
+## KÃ¼simus
 
-Millise käsuga tõlgendatakse ümber tähemärke?
+Millise kÃ¤suga tÃµlgendatakse Ã¼mber tÃ¤hemÃ¤rke?
 
 ## Vastus
 

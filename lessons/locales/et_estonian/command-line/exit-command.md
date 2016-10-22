@@ -2,9 +2,9 @@
 
 ## Tunni sisu
 
-Hästi tehtud, said baasteadmistest läbi. Me oleme seda kõike aga ainult kergelt puudutanud. Nüüd kui oled õppinud roomama, õpetan ma su järgmisel kursusel kõndima.
+Hästi tehtud - baasteadmised on läbitud! Me oleme seda kõike aga ainult kergelt puudutanud. Nüüd kui on õpitud roomama siis järgmisel kursusel hakatakse kõndima.
 
-Hetkel võid aga endale õlale patsutada ja natuke puhata. Et kestast väljuda, kasuta käsku exit
+Hetkel võib aga endale õlale patsutada ja natuke puhata. Et kestast väljuda, kasuta käsku exit
 
 <pre>$ exit</pre>
 
@@ -12,15 +12,15 @@ või logout
 
 <pre>$ logout</pre>
 
-või lihtsalt sulgeda terminali akna. Näeme järgmisel kursusel!
+või lihtsalt sulgeda terminali akna. Seda saab ka teha kiirklahviga CTRL+D. Näeme järgmisel kursusel!
 
 ## Harjutus
 
-Välju kesta aknast ja vaata, mis juhtub. Hoolitse selle eest, et sa oled seal töö lõpetanud.
+Välju kestprogrammi aknast ja vaata, mis juhtub. Hoolitse selle eest, et töö oleks seal lõpetatud.
 
 ## Küsimus
 
-Kuidas saab kestast väljuda?
+Kuidas saab kestprogrammist väljuda?
 
 ## Vastus
 

@@ -1,30 +1,30 @@
-# Emacs: väljumine ja abi
+# Emacs: vÃ¤ljumine ja abi
 
 ## Tunni sisu
 
-<b>Väljumiseks</b>
+<b>VÃ¤ljumiseks</b>
 
 <pre>C-x C-c</pre>
 
-Kui sul on sel hetkel avatud puhvreid, siis palutakse sul need enne väljumist salvestada.
+Kui sel hetkel on avatud puhvreid, siis palutakse need enne vÃ¤ljumist salvestada.
 
 <b>Oled segaduses?</b>
 
 <pre>C-h C-h : help menu</pre>
 
-<b>Võta tagasi</b>
+<b>VÃµta tagasi</b>
 
 <pre>C-x u</pre>
 
-Nagu isegi näed on Emacs'il rohkem liikuvaid osi, nii et selle õppimine on alguses natuke raskem. Vastutasuks saad aga väga võimsa teksti redaktori.
+Nagu isegi nÃ¤ed on Emacs'il rohkem liikuvaid osi ja selle Ãµppimine on alguses natuke raskem. Vastutasuks saad aga vÃ¤ga vÃµimsa tekstiredaktori.
 
 ## Harjutus
 
-Külasta Emacs'i veebilehte, et rohkem käske ära õppida. <a href="https://www.gnu.org/software/emacs/">Emacs</a>
+KÃ¼lasta Emacs'i veebilehte, et rohkem kÃ¤ske Ã¤ra Ãµppida. <a href="https://www.gnu.org/software/emacs/">Emacs</a>
 
-## Küsimus
+## KÃ¼simus
 
-Kuidas pääseda ligi abi menüüle?
+Kuidas pÃ¤Ã¤seda ligi Abi menÃ¼Ã¼le?
 
 ## Vastus
 

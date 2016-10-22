@@ -1,31 +1,31 @@
-# Vim salvestamine ja väljumine 
+# Vim salvestamine ja vÃ¤ljumine 
 
 ## Tunni sisu
 
-Kui oled teksti redigeerimisega ühel pool, on aeg tehtud töö salvestada ja vim'ist väljuda:
+Kui teksti redigeerimine valmis, on aeg tehtud tÃ¶Ã¶ salvestada ja vim'ist vÃ¤ljuda:
 
 <ul>
-<li>:w - kirjutab või salvestab faili</li>
-<li>:q - välju vim'ist</li>
-<li>:wq - kirjuta/salvesta ja siis välju</li>
-<li>:q! - lahku faili salvestamata</li>
-<li>ZZ - võrdväärne käsuga :wq, kuid ühe tähemärgi võrra kiirem</li>
+<li>:w - kirjutab vÃµi salvestab faili</li>
+<li>:q - vÃ¤ljub vim'ist</li>
+<li>:wq - kirjutab/salvestab ja siis vÃ¤ljub</li>
+<li>:q! - vÃ¤ljutakse faili salvestamata</li>
+<li>ZZ - vÃµrdvÃ¤Ã¤rne kÃ¤suga :wq, kuid Ã¼he tÃ¤hemÃ¤rgi vÃµrra kiirem</li>
 
-<li>u - võta tagasi viimane tegevus</li>
-<li>Ctrl-r - tee uuesti viimane tagasivõtmine</li>
+<li>u - vÃµta tagasi viimane tegevus</li>
+<li>Ctrl-r - tee uuesti viimane tagasivÃµtmine</li>
 </ul>
 
-Sa ehk arvad, et ZZ on ebavajalik, kuid küll sa peagi näed, et su sõrmed kalduvad pigem selle, kui :wq poole.
+VÃµib tunduda, et ZZ ei ole vajalik kuid praktikas on see mugavam kui :wq kasutamine.
 
-Oh, seda infor vim'i kohta oli küll päris palju. Nüüd kui sa tead mõnda peamist käsku ja oskad navigeeruda, võid hakata teksti faile redigeerima. Vim'is on veel palju valikuid, mida kasutada, et tõsta su tekstiredigeerimise meistri võimekust. Mine uuri Vim'i Interneti juhendit.
+Infot vim'i kohta on nÃ¼Ã¼d piisavalt. NÃ¼Ã¼d kus on teada mÃµned peamised kÃ¤sud ja osatakse liikuda, vÃµib hakata tekstifaile redigeerima. Vim'is on veel palju vÃµimalusi, et tÃµsta teksti redigeerimise meisterlikkust. Soovitame uurida <a href="http://www.vim.org/docs.php" target="_blank">Vim'i juhendeid kodulehel</a>.
 
 ## Harjutus
 
-Selles peatükis harjutust ei ole.
+Selles peatÃ¼kis harjutust ei ole.
 
-## Küsimus
+## KÃ¼simus
 
-Kuidas väljuda vim'ist salvestamata?
+Kuidas vÃ¤ljuda vim'ist salvestamata?
 
 ## Vastus
 

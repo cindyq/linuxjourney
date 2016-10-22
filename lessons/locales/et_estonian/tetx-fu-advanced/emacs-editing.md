@@ -5,21 +5,21 @@
 <b>Tekstis liikumine</b>
 
 <pre>
-C-üles nool: liigu üks lõik üles
-C-alla nool: liigu üks lõik alla
-C-vasak nool: liigu üks sõna vasakule
-C-parem nool: liigu üks sõna paremale
-M-> : liigu puhvri lõppu
+C-Ã¼les nool: liigu Ã¼ks lÃµik Ã¼les
+C-alla nool: liigu Ã¼ks lÃµik alla
+C-vasak nool: liigu Ã¼ks sÃµna vasakule
+C-parem nool: liigu Ã¼ks sÃµna paremale
+M-> : liigu puhvri lÃµppu
 </pre>
 
-Tekstis liikudes, töötavad su tavapärased teksti klahvid nagu nad peaksid: home, end, page up, page down, nooleklahvid jne.
+Tekstis liikudes, tÃ¶Ã¶tavad tavapÃ¤rased tekstiklahvid: home, end, page up, page down, nooleklahvid jne.
 
-<b>Lõikamine ja kleepimine</b>
+<b>LÃµikamine ja kleepimine</b>
 
-Et lõigata (kill) või kleepida (yank) Emacs'is, on sul vaja esiteks valida tekst. Teksti valimiseks liigu kursoriga, kus sa soovid lõigata või kleepida ja siis vajuta <pre>C-tühik</pre>. Seejärel saad kasutada navigeerimise klahve ja valida vajaliku tekstilõigu. Siis saad aga lõigata ja kleepida nõnda:
+Et lÃµigata (kill) vÃµi kleepida (yank) Emacs'is, on sul vaja esiteks valida tekst. Teksti valimiseks liigu kursoriga, kus sa soovid lÃµigata vÃµi kleepida ja siis vajuta <pre>C-tÃ¼hik</pre>. SeejÃ¤rel saad kasutada navigeerimise klahve ja valida vajaliku tekstilÃµigu. Siis saad aga lÃµigata ja kleepida nÃµnda:
 
 <pre>
-C-w : lõika
+C-w : lÃµika
 C-y : kleebi
 </pre>
 
@@ -27,9 +27,9 @@ C-y : kleebi
 
 Tutvu tekstis liikumisega.
 
-## Küsimus
+## KÃ¼simus
 
-Kuidas liikuda puhvri lõppu?
+Kuidas liikuda puhvri lÃµppu?
 
 ## Vastus
 

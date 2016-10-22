@@ -1,20 +1,20 @@
-# whatsis
+# whatis
 
 ## Tunni sisu
 
-Me oleme käskude kohta juba päris palju õppinud. Kui sa mingil hetkel pole päris kindel, mida mõni käsk teeb, siis võid kasutada whatis käsku. Whatis kuvab lühikese kirjelduse käsurea programmi kohta.
+Me oleme kÃ¤skude kohta juba pÃ¤ris palju Ãµppinud. Kui mingil hetkel pole pÃ¤ris kindel, mida mÃµni kÃ¤sk teeb, siis vÃµib kasutada *whatis* kÃ¤sku. *Whatis* kuvab lÃ¼hikese kirjelduse kÃ¤surea programmi kohta.
 
 <pre>$ whatis cat</pre>
 
-See kirjeldus pärineb iga käsu man leheküljelt. Kui sa rakendaksid whatis cat, siis näeksid lühikest kokkuvõtvat kirjeldust.
+See kirjeldus pÃ¤rineb iga kÃ¤su man lehekÃ¼ljelt. Kui rakendada *whatis cat*, siis on nÃ¤ha lÃ¼hikest kokkuvÃµtvat kirjeldust.
 
 ## Harjutus
 
-Kasuta whatis käsku ls peal.
+Kasutada *whatis* kÃ¤sku *ls* peal.
 
-## Küsimus
+## KÃ¼simus
 
-Millist käsku saab kasutada, et näha käsu lühikirjeldust?
+Millist kÃ¤sku saab kasutada, et nÃ¤ha kÃ¤su lÃ¼hikirjeldust?
 
 ## Vastus
 

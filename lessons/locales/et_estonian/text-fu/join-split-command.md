@@ -2,9 +2,9 @@
 
 ## Tunni sisu
 
-Join käsk lubab sul ühise välja kaudu liita kokku mitu faili:
+Join käsk lubab ühise välja kaudu liita kokku mitu faili:
 
-Ütleme, et mul on kaks faili, mida ma tahan kokku liita:
+Näiteks kaks faili, mida on vaja kokku liita:
 
 <pre>fail1.txt
 1 John
@@ -22,9 +22,9 @@ $ join fail1.txt fail2.txt
 3 Mary Sue
 </pre>
 
-Nägid kuidas see mu failid kokku liitis? Nad ühendatakse vaikimisi esimese välja kaudu, mis peavad olema identsed. Kui nad seda ei ole, peaks neid korrastama, nii et praegusel juhul ühendatakse neid 1, 2, 3 abil.
+Failid ühendatakse vaikimisi esimese välja kaudu, mis peavad olema identsed. Kui nad seda ei ole, peaks neid korrastama, nii et praegusel juhul ühendatakse neid 1, 2, 3 abil.
 
-Kuidas sa liidaksid järgmisi faile?
+Kuidas liita järgmisi faile?
 
 <pre>fail1.txt
 John 1
@@ -37,7 +37,7 @@ fail2.txt
 3 Sue
 </pre>
 
-Et seda faili ühendada, peabtäpsustama milliseid välju ühendada. Hetkel me tahame välja 2 fail1.txt'st ja välja 1 fail2.txt's, seega näeb käsk välja nii:
+Et seda faili ühendada, peab täpsustama milliseid välju ühendada. Hetkel me tahame välja 2 fail1.txt'st ja välja 1 fail2.txt's, seega näeb käsk välja nii:
 
 <pre>
 $ join -1 2 -2 1 fail1.txt fail2.txt
@@ -58,7 +58,7 @@ Liida kokku kaks faili, milles on erinev arv ridu. Mis juhtub?
 
 ## Küsimus
 
-Millise käsuga liidaksid sa kokku failid kass, koer ja lehm?
+Millise käsuga liita kokku failid kass, koer ja lehm?
 
 ## Vastus
 

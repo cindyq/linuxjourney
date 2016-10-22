@@ -2,20 +2,21 @@
 
 ## Tunni sisu
 
-Vim tähendab vi (Improved ehk täiustatud). Justnagu nimi ütleb, on tegu vi tekstiredaktori täiustatud käsuga.
+Vim tÃ¤hendab vi (Improved ehk tÃ¤iustatud). Nagu nimi Ã¼tleb, on tegu vi tekstiredaktori tÃ¤iustatud versiooniga.
 
-See on tõeliselt väikesemahuline. Faili avamine ja muutmine vim'iga on kiire ja lihtne. See on ka pea-aegu alati kättesaadav. Kui sa käivitad suvalise Linuxi distributsiooni, on väga tõenäoline, et vim on sellele juba vaikimisi paigaldatud.
+Vim on tÃµeliselt vÃ¤ikesemahuline. Faili avamine ja muutmine vim'iga on kiire ja lihtne. See on ka peaaegu alati kÃ¤ttesaadav.  TÃµenÃ¤oliselt on Vim pea igas Linuxis vaikimisi olemas.
 
-Et vim käima tõmmata, sisesta lihtsalt: 
+Vim'i kÃ¤ivitamiseks sisestada: 
 <pre>vim</pre>
+... ja vajutada Enter-klahvi
 
 ## Harjutus
 
-Selles peatükis harjutust eiole.
+Selles peatÃ¼kis harjutust ei ole.
 
-## Küsimus
+## KÃ¼simus
 
-Küsimust pole, mina aga julgelt edasi!
+KÃ¼simusi pole, minna julgelt edasi!
 
 ## Vastus
 

@@ -2,15 +2,15 @@
 
 ## Tunni sisu
 
-Me oleme failides navigeerimisega peaaegu valmis, kuid kõigepealt õpime kuidas faili lugeda. Lihtne käsk selle jaoks on cat (lühend inglisekeelsest sõnast concatenate ehk kokkukleepima). See mitte ainult ei kuva sulle faili sisu, vaid võib ka kombineerida mitu faili ja siis näidata sulle nende kõigi sisu.
+Me oleme failides navigeerimisega peaaegu valmis, kuid kõigepealt õpime kuidas faili lugeda. Lihtne käsk selle jaoks on cat (lühend inglisekeelsest sõnast concatenate ehk kokku kleepima). See mitte ainult ei kuva faili sisu, vaid võimaldab ka liita mitu faili kokku ja siis näidata nende kõigi sisu korraga.
 
 <pre>$ cat koerafail linnufail</pre>
 
-Sellega ei ole väga hea vaadata suuri faile ja on mõeldud pigem lühikese sisu kuvamiseks. Suuremate failide kuvamiseks on palju teisi tööriistu, millest me räägime järmises peatükis.
+Sellega ei ole väga hea vaadata suuri faile ja on mõeldud pigem lühikese sisu kuvamiseks. Suuremate failide kuvamiseks on palju teisi tööriistu, millest räägitakse järmises peatükis.
 
 ## Harjutus
 
-Rakenda cat käsku erinevatel failidel ja kataloogiel. Proovi käsku ka mitme faili peal korraga.
+Rakendada cat käsku erinevatel failidel ja kataloogiel. Proovida käsku ka mitme faili peal korraga.
 
 ## Küsimus
 

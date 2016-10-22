@@ -27,11 +27,11 @@ Nüüd peaks kõik sõnad olema ühes reas tühikutega eraldatud.
 
 ## Harjutus
 
-Proovi paste käsku mitme faili peal. Mis juhtub?
+Proovida paste käsku mitme faili peal. Mis juhtub?
 
 ## Küsimus
 
-Millist lippu sa kasutad, et saada kogu sisu ühele reale?
+Millist lippu kasutada, et saada kogu sisu ühele reale?
 
 ## Vastus
 

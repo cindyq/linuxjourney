@@ -2,18 +2,18 @@
 
 ## Tunni sisu
 
-Nüüd, kus me oskame süsteemis ringi liikuda, kuidas saaksime teada, kuhu meil üldse on võimalik minna? Hetkel me eksleme justkui pimeduses. Meil on võimalik kasutada imelist ls käsku, et kuvada kataloogide sisu. Ls käsk kuvab vaikimisi kõik jooksvas kataloogis asuvad kataloogid ja failid, kuid võid ka täpsustada, millise asukoha sisu sa näha soovid.
+Nüüd, kus osatakse süsteemis ringi liikuda, kuidas saab teada, kuhu üldse on võimalik minna? Hetkel me eksleme justkui pimeduses. Meil on võimalik kasutada imelist *ls* käsku, et kuvada kataloogide sisu. *Ls* käsk kuvab vaikimisi kõik jooksvas kataloogis asuvad kataloogid ja failid, kuid võib ka täpsustada, millise asukoha sisu näha soovitakse.
 
 <pre>$ ls
 $ ls /home/pete</pre>
 
-Ls on päris kasulik tööriist, sest see näitab sulle kuvatud failide ja kataloogide kohta detailset informatsiooni.
+*Ls* on päris kasulik tööriist, sest see näitab kuvatud failide ja kataloogide kohta detailset informatsiooni.
 
-Pea meeles, et mitte kõik failid ja kataloogid ei ole sulle nähtavad. Failid, mille nimed algavad . on peidetud, kuid neid saab näha ls käsuga kui sellele on lisatud lipp -a (inglise keeles a nagu all ehk kõik).
+Pea meeles, et mitte kõik failid ja kataloogid ei ole nähtavad. Failid, mille nimed algavad punktiga (.) on peidetud, kuid neid saab näha ls käsuga kui sellele on lisatud lipp *-a* (inglise keeles a nagu *all* ehk kõik).
 
 <pre>$ ls -a</pre>
 
-Üks kasulik lipp on veel, -l nagu long ehk pikk. See kuvab failide detailse nimekirja pikemas formaadis. Detailne info, mida kuvatakse on alates vasakult: faili õigused, ühenduste arv, omaniku nimi, omanik-grupp, faili suurus, viimase muutmise ajatempel, ja faili/kataloogi nimi.
+Üks kasulik lipp on veel, *-l* nagu *long* ehk pikk. See kuvab failide detailse nimekirja pikemas formaadis. Detailne info, mida kuvatakse on alates vasakult: failiõigused, linkide arv, omaniku nimi, omaniku grupp, faili suurus, viimase muutmise ajatempel, ja faili/kataloogi nimi.
 
 <pre>$ ls -l</pre>
 
@@ -28,17 +28,17 @@ drwxr-x--- 2 pete penguingroup   4096 Jul 27 12:41   Avalik
 drwxr-x--- 2 pete penguingroup   4096 Jul 27 12:41   Mallid
 drwxr-x--- 2 pete penguingroup   4096 Jul 27 12:41   Videod</pre>
 
-Käskudel on funktsionaalsuse lisamiseks lipud (või argumendid või valikud, kuidas sulle parasjagu meeldib neid nimetada). Märkasid, et lisasime -a ja -l? Neid saab ka koos kasutada lisades käsule -la. Lippude järjekorrast oleneb, mis järjekorras käsku täidetakse. Enamus ajast ei ole sellel erilist tähendust, nii et võid kirjutada ka -al ja see töötab sellegi poolest.
+Käskudel on funktsionaalsuse lisamiseks lipud (või argumendid, parameetrid, valikud - kuidas parasjagu meeldib neid nimetada). Märkasid, et lisasime -a ja -l? Neid saab ka koos kasutada lisades käsule -la. Lippude järjekorrast oleneb, mis järjekorras käsku täidetakse. Enamus ajast ei ole sellel erilist tähendust, nii et võib kirjutada ka -al ja see töötab sellegipoolest.
 
 <pre>$ ls -la</pre>
 
 ## Harjutus
 
-Proovi sisestada ls käsku erinevate lippudega ja vaata, mis väljundi sa saad.
+Proovida sisestada ls käsku erinevate lippudega ja vaata, mis väljund saadakse.
 
 ## Küsimus
 
-Millist käsku sa kasutaksid, et näha peidetud faile?
+Millist käsku kasutada, et näha peidetud faile?
 
 ## Vastust
 

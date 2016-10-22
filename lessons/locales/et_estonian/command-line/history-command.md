@@ -2,27 +2,27 @@
 
 ## Tunni sisu
 
-Sul on kestas sisestatud käskude ajalugu, mida saab tegelikult isegi vaadata. See on päris kasulik, kui soovid leida ja rakendada mõnda eelnevalt kasutatud käsku ilma seda uuesti trükkimata.
+Kestprogrammis (shell) on sisestatud käskude ajalugu, mida saab tegelikult isegi vaadata. See on päris kasulik, kui on vaja leida ja rakendada mõnda eelnevalt kasutatud käsku ilma seda uuesti trükkimata.
 
 <pre>$ history</pre>
 
-Kui soovid kasutada käsku, mida sa viimasena rakendasid, vajuta lihtsalt nooleklahviga üles.
+Kui soovitakse kasutada viimati kasutatud käske siis vajutada lihtsalt nooleklahviga üles.
 
-Tahad kasutada eelmist käsku ilma seda uuesti trükkimata? Kasuta !!. Kui kirjutasid enne cat fail1 ja tahad seda uuesti kasutada, siis võid lihtsalt kirjutada !! ja see rakendab su viimatise käsu.
+Tahad kasutada eelmist käsku ilma seda uuesti trükkimata? Kasuta !!. Kui kirjutati enne *cat fail1* ja tahetakse seda uuesti kasutada, siis võib lihtsalt kirjutada *!!* ja see rakendab viimase käsu.
 
-Veel üks history otsetee on ctrl-R. See on tagurpidine otsingu käsk. Kui sa vajutad klaviatuuril ctrl-R ja hakkad kirjutama osa käsust, näitab see sulle võimalikke vasteid ja nende vahel saab liikuda kui vajutad uuesti ctrl-R. Kui sa oled lõpuks leidnud käsu, mida tahad uuesti kasutada, vajuta lihtsalt Enter.
+Veel üks *history* otsetee on *ctrl-R*. See on tagurpidine otsingu käsk. Kui klaviatuuril vajutati *ctrl-R* ja hakkati kirjutama osa käsust, näitab see sulle võimalikke vasteid ja nende vahel saab liikuda kui vajutad uuesti *ctrl-R*. Kui soovitud käsk leitud, vajutada lihtsalt Enter.
 
-Kas meie terminali aken hakkab natuke liiga kirjuks muutuma? Koristaks pisut. Kasuta clear käsku, et oma kuva ära tühjendada.
+Kas meie terminali aken hakkab natuke liiga kirjuks muutuma? Koristaks pisut. Kasuta *clear* või *ctrl-L* käsku, et oma kuva ära tühjendada.
 
 <pre>$ clear</pre>
 
 Nii näeb juba palju parem välja, eks?
 
-Kui me juba räägime kasulikest asjadest, siis üks kasulikemaid käsurea keskkonna omadusi on tabulaatorklahviga käskude lõpetamine. Kui sa alustad käsu, faili, kataloogi vms kirjutamist, vajuta tabulaatorit. Põhinedes sellele, mida ta leiab otsitavast kataloogist, lõpetab see käsu automaatselt, kui sul just ei ole teisigi faile, mis algavad samade tähtedega. Näiteks, kui tahaksid sisestada käsku chrome, võid sa kirjutada chr ja vajutada tabulaatorit ja chrome lõpetatakse sulle automaatselt.
+Kui me juba räägime kasulikest asjadest, siis üks kasulikemaid käsurea keskkonna omadusi on tabulaatorklahviga käskude lõpetamine. Kui alustatakse käsu, faili, kataloogi vms kirjutamist, vajutada tabulaatorit. Põhinedes sellele, mida ta leiab otsitavast kataloogist, lõpetab see käsu automaatselt, kui seal just ei ole teisigi faile, mis algavad samade tähtedega. Näiteks, kui vaja sisestada käsku *chrome*, võib kirjutada *chr* ja vajutada tabulaatorit ja *chrome* lõpetatakse  automaatselt.
 
 ## Harjutus
 
-Liigu oma käskude ajaloos üles ja alla nooleklahvidega. Mängi natuke ctrl-R otsinguga.
+Liikuda käskude ajaloos üles ja alla nooleklahvidega. Mängida natuke *ctrl-R* otsinguga.
 
 ## Küsimus
 
