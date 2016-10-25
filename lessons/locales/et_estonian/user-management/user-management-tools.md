@@ -2,15 +2,15 @@
 
 ## Tunni sisu
 
-Paljud ärikeskkonnad kasuvad kasutajate, kontode ja salasõnade haldamiseks haldamise sütsteeme. Üksikul masinal aga saab kasutajate haldamisega hakkama kui mõne kasuliku käskudega.
+Paljud ettevõtted kasutavad kasutajakontode ja salasõnade haldamiseks keskhaldussüsteeme. Üksikul masinal aga saab kasutajate haldamisega hakkama ka käskudega.
 
 <b>Kasutajate lisamine</b>
 
-Võib kasutada *adduser* või *useadd* käske. *adduser* hõlmab aga rohkem kasulike omadusi, näiteks kodukataloogi loomine. Uute kasutajate loomiseks saab muuta seadistusfaile, sõlitvalt sellest, mida soovitakse määrata vaikimisi kasutajale.
+Võib kasutada *adduser* või *useadd* käske. *adduser* hõlmab aga rohkem kasulike omadusi, näiteks kodukataloogi loomine. Uute kasutajate loomiseks saab muuta seadefaile sõltuvalt sellest, mida soovitakse kasutajale määrata vaikimisi.
 
 <pre>$ sudo useradd peeter</pre>
 
-Viimane käsk loob peetri kohta sisestuse faili /etc/passwd, loob vaikimis grupi ka lisab sisestuse ka faili /etc/shadow.
+Viimane käsk loob kasutaja peeter kohta sisestuse faili */etc/passwd*, loob vaikimisi grupi ja lisab selle ka faili */etc/shadow*.
 
 <b>Kasutajate kustutamine</b>
 
@@ -24,16 +24,16 @@ Põhimõtteliselt annab see käsk endast parima, et võtta tagasi muudatused mid
 
 <pre>$ passwd peeter</pre>
 
-Selle käsuga saab muuta enda või mõne teise kasutaja prooli (muidugi juhul kui oled juurkasutaja).
+Selle käsuga saab muuta enda või mõne teise kasutaja salasõna (muidugi juhul kui oled juurkasutaja).
 
 ## Harjutus
 
-Luua uus kasutaja, muuta tema parool ja siis selle kasutajana sisse logida.
+Luua uus kasutaja, muuta tema salasõna ja siis selle kasutajana sisse logida.
 
 ## Küsimus
 
-Millise käsuga saab muuta kasutajate paroole?
+Millise käsuga saab muuta kasutajate salasõnu?
 
 ## Vastus
 
-passwd
+*passwd*
