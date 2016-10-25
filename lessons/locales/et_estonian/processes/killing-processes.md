@@ -26,7 +26,7 @@ Need signaalid kõlavad kõik üsna sarnaselt kuid on siiski erinevad.
 <li>SIGSTOP (19) - Peatab protsessi ajutiselt </li>
 </ul>
 
-Kõigi signaale ja nende numbrilisi väärtusi näeb kui paigaldada programm *htop* ja mõne protsessi peal vajutada F9 (katkestamiseks *ESC*).
+Kõigi signaale ja nende numbrilisi väärtusi näeb näiteks kui paigaldada programm *htop* ja mõne protsessi peal vajutada F9 (katkestamiseks *ESC*).
 
 ## Harjutus
 
