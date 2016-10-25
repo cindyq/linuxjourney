@@ -1,21 +1,21 @@
-# Töö kontroll
+# TÃ¶Ã¶ kontroll
 
 ## Tunni sisu
 
-Ütleme, et töötatakse terminali aknas ja käivitatud on käsk, mille täitmiseks kulub lõpmata palju aega. Kestaporgrammi ei saa kasutada nii kaua kui see oma ülesandega valmis saab, soov on aga tööga jätkata. Õnneks saab töödega kontrollida kuidas protsessid töötavad:
+Ãœtleme, et tÃ¶Ã¶tatakse terminali aknas ja kÃ¤ivitatud on kÃ¤sk, mille tÃ¤itmiseks kulub lÃµpmata palju aega. Kestprogrammi ei saa kasutada nii kaua kui see oma Ã¼lesandega valmis saab, soov on aga tÃ¶Ã¶ga jÃ¤tkata. Ã•nneks saab kontrollida kuidas protsessid tÃ¶Ã¶dega tÃ¶Ã¶tavad:
 
-<b>Töö tagaplaanile saatmine</b>
+<b>TÃ¶Ã¶ tagaplaanile saatmine</b>
 
-Ampersandi (&) lisamisel käsule käivitub prosess tagaplaanil võimaldades kestaprogrammi edasi kasutada. Näide:
+Ampersandi (&) lisamisel kÃ¤sule kÃ¤ivitub protsess tagaplaanil, vÃµimaldades kestprogrammi edasi kasutada. NÃ¤ide:
 
 <pre>$ sleep 1000 &
 $ sleep 1001 &
 $ sleep 1002 &
 </pre>
 
-<b>Tagaplaanil olevate tööde kuvamine</b>
+<b>Tagaplaanil olevate tÃ¶Ã¶de kuvamine</b>
 
-Tagaplaanile saadetud töid saab vaadata.
+Tagaplaanile saadetud tÃ¶id saab vaadata.
 
 <pre>$ jobs
 
@@ -25,7 +25,7 @@ Tagaplaanile saadetud töid saab vaadata.
 
 </pre>
 
-Kui mõni töö juba käib ja vaja on ta tagaplaanile saaata pole vaja teda peatada ja siis uuesti käivitada. Peata töö ajutiselt klahvikombinatsiooniga Ctrl-Z, see järel sisesta <b>bg</b> käsk, mis saadab töö tagaplaanile.
+Kui mÃµni tÃ¶Ã¶ juba kÃ¤ib ja vaja on ta tagaplaanile saata, pole vaja teda peatada ja siis uuesti kÃ¤ivitada. Peata tÃ¶Ã¶ ajutiselt klahvikombinatsiooniga Ctrl-Z, see jÃ¤rel sisesta <b>bg</b> kÃ¤sk, mis saadab tÃ¶Ã¶ tagaplaanile.
 
 <pre>
 pete@icebox ~ $ sleep 1003
@@ -43,25 +43,25 @@ pete@icebox ~ $ jobs
 [4]+   Running     sleep 1003 &
 </pre>
 
-<b>Töö tagaplaanilt esiplaanile toomine</b>
+<b>TÃ¶Ã¶ tagaplaanilt esiplaanile toomine</b>
 
-Et tuua töö tagaplaanilt ära on vaja täpsustada vaid töö ID. Kui sisestada *fg* ilma täpsustusteta tuuakse tagasi kõige hilisem taustatöö (töö mille juures on +).
+Et tuua tÃ¶Ã¶ tagaplaanilt Ã¤ra on vaja tÃ¤psustada vaid tÃ¶Ã¶ ID. Kui sisestada *fg* ilma tÃ¤psustusteta tuuakse tagasi kÃµige hilisem taustatÃ¶Ã¶ (tÃ¶Ã¶ mille juures on +).
 
 <pre>$ fg %1</pre>
 
-<b>Tagaplaanil olevate tööde peatamine </b>
+<b>Tagaplaanil olevate tÃ¶Ã¶de peatamine </b>
 
-Tööde esiplaanile liigutamise käsule sarnases formaadis on ka nende peatamise käsk, ikka kasutades IDd.
+TÃ¶Ã¶de esiplaanile liigutamise kÃ¤sule sarnases formaadis on ka nende peatamise kÃ¤sk, ikka kasutades ID'd.
 
 <pre>kill %1</pre>
 
 ## Harjutus
 
-Liigutada töid esi- ja tagaplaani vahel.
+Liigutada tÃ¶id esi- ja tagaplaani vahel.
 
-## Küsimus
+## KÃ¼simus
 
-Millise käsuga näeb tagaplaani töid?
+Millise kÃ¤suga nÃ¤eb tagaplaani tÃ¶id?
 
 ## Vastus
 
