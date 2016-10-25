@@ -1,4 +1,4 @@
-# /proc failisüsteem
+# */proc* failisüsteem
 
 ## Tunni sisu
 
@@ -12,7 +12,7 @@ Sisestame ühe protsessi ja uurime selle faili:
 
 <pre>$ cat /proc/12345/status</pre>
 
-Seal on informatsioon staatuse kohta, aga ka palju muud detailset infot. Tuum näeb süsteemi nii nagu see on */proc* kaustas, mistõttu on seal ka oluliselt rohkem infot kui *ps* näitab.
+Seal on informatsioon protsesside olekute kohta aga ka palju muud detailset infot. Tuum näeb süsteemi nii nagu see on */proc* kaustas, mistõttu on seal ka oluliselt rohkem infot kui *ps* näitab.
 
 ## Harjutus
 
