@@ -4,7 +4,7 @@
 
 See ja eelmine peatükk on puhtalt informatiivsed, et tutvustada natuke protsesside hingeelu. Siia võib igal ajal tagasi pöörduda kui ollakse veidi rohkem protsesside kallal töötanud.
 
-Protsessi loomisel põhimõtteliselt kloonitakse juba olemasolevat protsessi kasutades midagi, mida nimetatakse *haru* (ingl.k *fork*) süsteemseks kutseks (süsteemsetest kutsetest räägitakse alles väga kauges tulevikus). *Haru* kutse loob olemasolevale protsessile identse tütarprotsessi, mis võtab endale uue protsessi ID (PID) ja esialgsest protsessist saab vanemprotsess, mis saab endale vanemprotsessi ID <b>PPID</b>. Hiljem võib aga tütarprotsess jätkata sama programmi kasutamist, mida kasutas tema vanem või kasutada *execve* süsteemset kutset, et käivitada uus programm. See kutse hävitab senise tuuma poolt selle protsessi jaoks loodud mälu haldamise ning seab üles uued just selle programmi jaoks.
+Protsessi loomisel põhimõtteliselt kloonitakse juba olemasolevat protsessi kasutades midagi, mida nimetatakse *haru* (ingl.k *fork*) süsteemseks kutseks (süsteemsetest kutsetest räägitakse alles väga kauges tulevikus). *Haru* kutse loob olemasolevale protsessile identse tütarprotsessi, mis võtab endale uue protsessi ID (PID) ja esialgsest protsessist saab vanemprotsess, mis saab endale vanemprotsessi ID ehk <b>PPID</b> (*Parent Process ID*). Hiljem võib aga tütarprotsess jätkata sama programmi kasutamist, mida kasutas tema vanem või kasutada *execve* süsteemset kutset, et käivitada uus programm. See kutse hävitab senise tuuma poolt selle protsessi jaoks loodud mälu haldamise ning seab üles uued just selle programmi jaoks.
 
 Seda võib tegevuses näha:
 
