@@ -8,7 +8,7 @@ Terminale on kahte sorti: tavapärased <b>terminalseade</b> ja <b>pseudoterminal
 
 Liigume siit nüüd sujuvalt edasi, et seda näidata. Kasutada klahvikombinatsiooni Ctrl-Alt-F1, et pääseda ligi virtuaalsele konsoolile TTY1. Kuvatakse ainult terminal, ei mingit graafikat. Seda nimetatakse tavapäraseks terminalseadmeks. Sellest saab väljuda klahvikombinatsiooniga Ctrl-Alt-F7.
 
-Pseudoterminal on aga juba harjumuspäraseks saanud terminal, mis emuleerib terminali kestprogrammi aknaga ja märgistus on PTS. Kui uuest vaadata *ps*i, siis kasutatav kestprogrammi protsess on leitav *pts/* * alt:
+Pseudoterminal on aga juba harjumuspäraseks saanud terminal, mis emuleerib terminali kestprogrammi aknaga ja märgistus on PTS. Kui uuest vaadata *ps*i, siis kasutatav kestprogrammi protsess on leitav *pts/* * alt, näiteks:
 <pre>
 ps -e | grep pts
 11477 pts/0    00:00:00 tmux
