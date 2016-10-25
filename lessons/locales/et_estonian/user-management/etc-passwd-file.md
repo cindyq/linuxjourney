@@ -2,37 +2,37 @@
 
 ## Tunni sisu
 
-Meenutame, et kasutajanimed ei ole tekelikult kasutajate tuvastamise aluseks. Süsteem kasutab selleks hoopis kasutajate IDsid (UID). Selleks, et näha millised kasutajad milliste IDdega seotud on, võib vaadata faili /etc/passwd.
+Meenutame, et kasutajanimed ei ole tegelikult kasutajate tuvastamise aluseks. SÃ¼steem kasutab selleks hoopis kasutajate ID'sid (UID - *User ID*). Selleks, et nÃ¤ha millised kasutajad milliste ID'dega seotud on, vÃµib vaadata faili */etc/passwd*.
 
 <pre>$ cat /etc/passwd</pre>
 
-See fail sisaldab nimekirja kasutajatest ja igaühe kohta ka detailset informatsiooni. Näiteks, kõige tõenäolisemalt näeb faili esimene rida välja nõnda:
+See fail sisaldab nimekirja kasutajatest ja igaÃ¼he kohta ka detailset informatsiooni. KÃµige tÃµenÃ¤olisemalt nÃ¤eb faili esimene rida vÃ¤lja nÃµnda:
 
 <pre>root:x:0:0:root:/root:/bin/bash</pre>
 
-Iga rida kuvab infot ühe kasutaja kohta ning juurkasutaja on tavaliselt kõige esimesel real. Paljud koolonitega eraldatud väljad annavad kasutajate kohta täiendavat infot, vaatame neid kõiki:
+Iga rida kuvab infot Ã¼he kasutaja kohta ning juurkasutaja on tavaliselt kÃµige esimesel real. Paljud koolonitega eraldatud vÃ¤ljad annavad kasutajate kohta tÃ¤iendavat infot, vaatame neid kÃµiki:
 
 <ol>
 <li>Kasutajanimi</li>
-<li>Kasutaja parool - parooli ennast tegelikult selles failis ei hoita, tavaliselt on see hoopis failis /etc/shadow. Sellest failist räägitakse rohkem järgmises peatükis, praegu aga võiks meelde jätta vaid, et seal hoitakse kasutajate krüpteeritud parole. Selles väljas võivad olla väga erinevad sümbolid. "x" tähendab, et parooli hoitakse failis /etc/shadow, "*" tähendab, et kasutajal puudub sisse logimise õigus ja kui see väli on tühi, tähendab, et kasutajale pole parooli seatud.</li>
-<li>Kasutaja ID - nagu näha on juurkasutaja UID 0</li>
+<li>Kasutaja salasÃµna - seda tegelikult selles failis ei hoita, tavaliselt on see hoopis failis */etc/shadow*. Sellest failist rÃ¤Ã¤gitakse rohkem jÃ¤rgmises peatÃ¼kis, praegu aga vÃµiks meelde jÃ¤tta vaid, et seal hoitakse kasutajate krÃ¼pteeritud salasÃµnu. Selles vÃ¤ljas vÃµivad olla vÃ¤ga erinevad sÃ¼mbolid. "x" tÃ¤hendab, et salasÃµna hoitakse failis */etc/shadow*, "*" tÃ¤hendab, et kasutajal puudub sisse logimise Ãµigus ja kui see vÃ¤li on tÃ¼hi, tÃ¤hendab, et kasutajale pole salasÃµna seatud.</li>
+<li>Kasutaja ID - nagu nÃ¤ha on juurkasutaja UID 0</li>
 <li>Grupi ID</li>
-<li>GECOS väli - Tavapäraselt kasutatakse seda välja, et jätta kasutaja konto kohta kommentaar, näiteks kasutaja päris nimi või telefoni number, eraldajaks on koma.</li>
+<li>GECOS vÃ¤li - TavapÃ¤raselt kasutatakse seda vÃ¤lja, et jÃ¤tta kasutaja konto kohta kommentaar, nÃ¤iteks kasutaja pÃ¤ris nimi vÃµi telefoni number, eraldajaks on koma.</li>
 <li>Kasutaja kodukataloog</li>
-<li>Kasutaja kestaprogramm - väga paljudel kasutajatel on see vaikimisi *bash*</li>
+<li>Kasutaja kestprogramm - vÃ¤ga paljudel kasutajatel on see vaikimisi *bash*</li>
 </ol>
 
-Tavaliselt oleks ootuspärane leida kasutaja seadete lehelt vaid inimkasutajad, siin aga on näha, et /etc/passwd sisaldab ka teisi. Meenutame, et kasutajad eksisteerivad ainult selleks, et süsteemis erinevate õigustega protsesse käivitada. Mõnikord on eelistatud käivitada mingeid protessse eelnevalt sätestatud õigustest. Näiteks, deemoni kasutajat kasutatakse deemoni protseside jaoks.
+Tavaliselt oleks ootuspÃ¤rane leida kasutajaseadete lehelt vaid inimkasutajad, siin aga on nÃ¤ha, et */etc/passwd* sisaldab ka teisi. Meenutame, et kasutajad eksisteerivad ainult selleks, et sÃ¼steemis erinevate Ãµigustega protsesse kÃ¤ivitada. MÃµnikord on eelistatud kÃ¤ivitada mingeid protsesse eelnevalt sÃ¤testatud Ãµigustest. NÃ¤iteks, deemoni kasutajat kasutatakse deemoni protseside jaoks.
 
-Märgiks ära, et  /etc/passwd faili saab ka käsitsi muuta, kui on vaja lisada kasutajaid või muuta olemasolevate informatsiooni. Selleks on tööriist nimega <b>vipw</b>, kuid targem oleks siisi jätta sellised tegevused tööriistadele, millest räägitakse veidi hiljem. Need on näiteks *useradd* ja *userdel*. 
+MÃ¤rgiks Ã¤ra, et */etc/passwd* faili saab ka kÃ¤sitsi muuta, kui on vaja lisada kasutajaid vÃµi muuta olemasolevate informatsiooni. Selleks on tÃ¶Ã¶riist nimega <b>vipw</b>, kuid targem oleks siiski jÃ¤tta sellised tegevused tÃ¶Ã¶riistadele, millest rÃ¤Ã¤gitakse veidi hiljem. Need on nÃ¤iteks *useradd* ja *userdel*. 
 
 ## Harjutus
 
-Vaadata faili /etc/passwd ning uurida milliseid õigusi erinevatel kasutajatel on.
+Vaadata faili */etc/passwd* ning uurida milliseid Ãµigusi erinevatel kasutajatel on.
 
-## Küsimus
+## KÃ¼simus
 
-Kuidas on märgitud failis /etc/passwd, kui kasutajal puudub sisselogimise õigus?
+Kuidas on mÃ¤rgitud failis */etc/passwd*, kui kasutajal puudub sisselogimise Ãµigus?
 
 ## Vastus
 
