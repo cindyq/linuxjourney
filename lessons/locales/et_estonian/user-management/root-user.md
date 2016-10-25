@@ -2,22 +2,22 @@
 
 ## Tunni sisu
 
-Eelmises peatükis vaadeldi ühte superkasutajale ligipääsemise viisi. Superkasutaja käske saab sisestada ka *su* käsuga. See käsk vahetab kasutaja välja, kui kasutajanime ei täpsustata, avab see käsk kestaprogrammi juurõigustes. Selle käsuga saab vahetada kasutajat ükskõik millise vastu, vaja on ainult teada ka vastavat parooli.
+Eelmises peatÃ¼kis vaadeldi Ã¼hte superkasutajale ligipÃ¤Ã¤semise viisi. Superkasutaja kÃ¤ske saab sisestada ka *su* kÃ¤suga. See kÃ¤sk vahetab kasutaja vÃ¤lja kui kasutajanime ei tÃ¤psustata ehk siis avatakse kestprogramm juurÃµigustes. Selle kÃ¤suga saab vahetada kasutajat Ã¼kskÃµik millise vastu, vaja on ainult teada ka vastavat salasÃµna.
 
 <pre>$ su</pre>
 
-Eks sellel metoodikal on ka pahupool: juurkasutajana töötades on palju lihtsam on teha kriitilisi vigu. Näiteks, ei peata arvet nende käskude üle, mida kasutatakse süsteemi seadete muutmiseks jpm. Lihtsamalt öeldes, kui on vaja sisestada käsku superkasutajana, tasub esialgu jääda *sudo* juurde.
+Eks sellel metoodikal on ka pahupool: juurkasutajana tÃ¶Ã¶tades on palju lihtsam teha kriitilisi vigu. NÃ¤iteks ei peeta arvet nende kÃ¤skude Ã¼le, mida kasutatakse sÃ¼steemi seadete muutmiseks jpm. Lihtsamalt Ã¶eldes: kui on vaja sisestada kÃ¤sku superkasutajana, tasub esialgu jÃ¤Ã¤da *sudo* juurde.
 
-Nüüd on selge kuidas sisestada käske superkasutajana. Kuid kuidas teha kindlaks, kellel on selleks õigused? Süsteem ei lase igal Tuha Juhanil superkasutajana käske sisestada. Kuidas ta siis aga teab? On olemas fail /etc/sudoers, milles on nimekiri kasutajatest kellel on õigus *sudo*t kasutada. Seda faili saab muuta käsuga <b>visudo</b>.
+NÃ¼Ã¼d on selge kuidas sisestada kÃ¤ske superkasutajana. Kuid kuidas teha kindlaks, kellel on selleks Ãµigused? SÃ¼steem ei lase igal Tuha Juhanil superkasutajana kÃ¤ske sisestada. Kuidas ta siis aga teab? On olemas fail */etc/sudoers*, milles on nimekiri kasutajatest kellel on Ãµigus *sudo*t kasutada. Seda faili saab muuta kÃ¤suga <b>visudo</b>.
 
 ## Harjutus
 
-Avada /etc/sudoers fail ja vaadata milliseid superkasutaja õigusei teistel kasutajatel selles masinas on.
+Avada fail */etc/sudoers* ja vaadata millistel kasutajatel selles masinas on superkasutaja Ãµiguseid.
 
-## Küsimus
+## KÃ¼simus
 
-Millisest failist saab infot selle kohta, kellel on ligipääsu õigus *sudo*le?
+Millisest failist saab infot selle kohta, kellel on ligipÃ¤Ã¤su Ãµigus *sudo*le?
 
 ## Vastus
 
-/etc/sudoers
+*/etc/sudoers*

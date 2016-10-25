@@ -1,26 +1,41 @@
-# Kontrollterminalid
+# Kontrollterminal
 
 ## Tunni sisu
 
-Eelmises peatükis sai räägitud TTY väljast *ps*i väljundis. TTY on see terminal, mis käsu käivitas.
+Eelmises peatÃ¼kis sai rÃ¤Ã¤gitud TTY vÃ¤ljast *ps*i vÃ¤ljundis. TTY on see terminal, mis kÃ¤su kÃ¤ivitas.
 
-Terminale on kahte sorti: tavapärased <b>terminalid</b> ja <b>pseudoterminalid</b>. Tavapärane terminal on kohalik vahend, millesse saab trükkida ja saata väljund süsteemile. Kõlab justnagu terminali raknedus, mida oleme seni kasutanud, et käivitada kestaprogrammi, kuid päris nii see pole.
+Terminale on kahte sorti: tavapÃ¤rased <b>terminalseade</b> ja <b>pseudoterminalseade</b>. TavapÃ¤rane terminalseade on loomulik vahend, millesse saab trÃ¼kkida ja saata vÃ¤ljund sÃ¼steemile. KÃµlab kui terminalirakendus, mida oleme seni kasutanud, et kÃ¤ivitada kestprogrammi kuid pÃ¤ris nii see pole.
 
-Liigume siit nüüd sujuvalt edasi, et seda demonstreerida. Kasuta klahvikombinatsiooni Ctrl-Alt-F1, et pääseda ligi virtuaalsele konsoolile TTY1. Kuvatakse ainult terminal, ei mingit graafikat. Seda nimetatakse tavapäraskes terminaliks. Seal saab väljuda klahvikombinatsiooniga Ctrl-Alt-F7.
+Liigume siit nÃ¼Ã¼d sujuvalt edasi, et seda nÃ¤idata. Kasutada klahvikombinatsiooni Ctrl-Alt-F1, et pÃ¤Ã¤seda ligi virtuaalsele konsoolile TTY1. Kuvatakse ainult terminal, ei mingit graafikat. Seda nimetatakse tavapÃ¤raseks terminalseadmeks. Sellest saab vÃ¤ljuda klahvikombinatsiooniga Ctrl-Alt-F7.
 
-Pseudoterminal on aga juba harjumuspäraseks saanud terminal, mis emuleerib terminali kestaprogrammi aknaga ja märgistus on PTS. Kui uuest vaadata *ps*i, siis kasutatav kesta protsess leitav pts/* alt.
+Pseudoterminal on aga juba harjumuspÃ¤raseks saanud terminal, mis emuleerib terminali kestprogrammi aknaga ja mÃ¤rgistus on PTS. Kui uuest vaadata *ps*i, siis kasutatav kestprogrammi protsess on leitav *pts/* * alt, nÃ¤iteks:
+<pre>
+ps -e | grep pts
+11477 pts/0    00:00:00 tmux
+11510 pts/2    00:00:00 bash
+11612 pts/2    00:00:00 sudo
+11672 pts/2    00:00:00 bash
+11720 pts/1    00:00:00 bash
+16012 pts/1    00:00:00 man
+16024 pts/1    00:00:00 pager
+16750 pts/5    00:00:00 bash
+27323 pts/5    00:00:00 ps
+27324 pts/5    00:00:00 grep
+32565 pts/3    00:00:00 ssh
+32598 pts/4    00:00:00 ssh
+</pre>
 
-Kui nüüd ringiga kontrollterminalide juurde tagasi tulla, siis protsessid ongi tavalieslt ühega seotud. Näiteks, kui sul kestaprogrammi aknas mingi protsess töötab ja see aken sulgeda, siis sulgub koos sellega too protsess.
+Kui nÃ¼Ã¼d ringiga kontrollterminalide juurde tagasi tulla, siis protsessid ongi tavaliselt Ã¼hega seotud. Kui kestprogrammi aknas mingi protsess tÃ¶Ã¶tab, nÃ¤iteks *find* ja see aken sulgeda siis sulgub koos sellega ka protsess.
 
-On olemas spetsiaalsed protsessid, näiteks deemoni protsessid, mis hoiavad süsteemi käimas. Need käivituav tavaliselt süsteemi alglaadimisel ja peatuvad kui süsteem välja lülitada. Need protsessid töötavad taustal ja kuna me ei taha, et need peatuksid, siis ei ole need ka ühegi kontrollterminaliga seotud. *ps*i väljundis on TTY koha peal ?, mis tähendabki, et kontrollterminal puudub. 
+On olemas spetsiaalsed protsessid - deemonid, mis hoiavad sÃ¼steemi tÃ¶Ã¶s. Need kÃ¤ivituad tavaliselt sÃ¼steemi alglaadimisel ja peatuvad kui sÃ¼steem vÃ¤lja lÃ¼litada. Need protsessid tÃ¶Ã¶tavad taustal ja kuna me ei taha, et need peatuksid siis ei ole need ka Ã¼hegi kontrollterminaliga seotud. *ps*i vÃ¤ljundis on TTY kohal ?, mis tÃ¤hendabki, et kontrollterminal puudub. 
 
 ## Harjutus
 
-Vaadata *ps*i väljundit ja täheldada kõiki unikaalseid TTY väärtusi.
+Vaadata *ps*i vÃ¤ljundit ja kuva kÃµik unikaalsed TTY vÃ¤Ã¤rtused.
 
-## Küsimus
+## KÃ¼simus
 
-Milline väärtus antakse protsessile, millel ei ole kontrollterminali?
+Milline vÃ¤Ã¤rtus antakse protsessile, millel ei ole kontrollterminali?
 
 ## Vastus
 
