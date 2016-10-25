@@ -1,27 +1,27 @@
-# /proc failisüsteem
+# /proc failisÃ¼steem
 
 ## Tunni sisu
 
-Meenutame, et Linuxis on kõik asjad failid, isegi protsessid. Informatsiooni protsesside kohta hoitakse spetsiaalses failisüsteemis /proc.
+Meenutame, et Linuxis on kÃµik asjad failid - isegi protsessid. Informatsiooni protsesside kohta hoitakse spetsiaalses failisÃ¼steemis */proc*.
 
 <pre>$ ls /proc</pre>
 
-Sealt paistavad erinevad väärtused, iga PID jaoks on alamkataloog. Kui eelnevalt on *ps* väljundi abil PID tuvastatud, saab selle /proc kaustast üles otsida.
+Sealt paistavad erinevad vÃ¤Ã¤rtused, iga PID jaoks on alamkataloog. Kui eelnevalt on *ps* vÃ¤ljundi abil PID tuvastatud, saab selle */proc* kaustast Ã¼les otsida.
 
-Sisestame ühe protsessi ja uurime selle faili:
+Sisestame Ã¼he protsessi ja uurime selle faili:
 
 <pre>$ cat /proc/12345/status</pre>
 
-Seal on informatsioon staatuse kohta, aga ka palju muud detailset infot. Tuum näeb süsteemi nii nagu see on /proc kaustas, mistõttu on seal ka oluliselt rohkem infot kui *ps* näitab.
+Seal on informatsioon staatuse kohta, aga ka palju muud detailset infot. Tuum nÃ¤eb sÃ¼steemi nii nagu see on */proc* kaustas, mistÃµttu on seal ka oluliselt rohkem infot kui *ps* nÃ¤itab.
 
 ## Harjutus
 
-Selles peatükis harjutust pole.
+Selles peatÃ¼kis harjutust pole.
 
-## Küsimus
+## KÃ¼simus
 
-Millises failisüsteemis hoitakse infot protsesside kohta?
+Millises failisÃ¼steemis hoitakse infot protsesside kohta?
 
 ## Vastus
 
-/proc
+*/proc*
