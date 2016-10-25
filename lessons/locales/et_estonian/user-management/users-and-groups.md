@@ -2,38 +2,38 @@
 
 ## Tunni sisu
 
-Traditsiooniliselt on igas operatsioonisüsteemis kasutajad ja grupid. Need eksisteerivad selleks, et tagada ligipääsu ja õigusi. Iga protsess käivitub selle omaniku õigustes, olgu see siis Mari või Mart. Failide ligipääs ja omandus sõltub samuti ligipääsu õigustest. Me ju ei taha, et Mari näeks Mardi dokumente ja vastupidi.
+Traditsiooniliselt on igas operatsioonisÃ¼steemis kasutajad ja grupid. Need eksisteerivad selleks, et tagada ligipÃ¤Ã¤su ja Ãµigusi. Iga protsess kÃ¤ivitub selle omaniku Ãµigustes, olgu see siis Mari vÃµi Mart. Failide ligipÃ¤Ã¤s ja omanik sÃµltub samuti ligipÃ¤Ã¤suÃµigustest. Me ju ei taha, et Mari nÃ¤eks Mardi dokumente ja vastupidi.
 
-Igal kasutajal on isiklik kodukataloog, kus hoitakse kasutajaga seotud faile. See asub tavaliselt /home/kasutajanimi, kuid võib distributsiooniti erineda.
+Igal kasutajal on isiklik kodukataloog kus hoitakse kasutajaga seotud faile. See asub tavaliselt */home/kasutajanimi*, kuid vÃµib distributsiooniti erineda.
 
-Süsteem kasutab kasutajate haldamiseks kasutaja IDsid (UID), kasutajanimed on sõbralikum viis kasutaja tuvastamiseks, kuid süsteem kasutab sellkes just UIDsid. Sellele lisaks on süsteemis õiguste haldamiseks grupid, mis kujutavad endast lihtsalt mingit komplekti kasutajaid, kellel kõigil on samad grupi õigused. Neid eristatakse süsteemis grupi ID (GID) järgi.
+SÃ¼steem kasutab kasutajate haldamiseks kasutaja ID'sid (UID), kasutajanimed on sÃµbralikum viis kasutaja tuvastamiseks kuid sÃ¼steem kasutab selleks just UID'sid. Sellele lisaks on sÃ¼steemis Ãµiguste haldamiseks grupid, mis kujutavad endast lihtsalt mingit komplekti kasutajaid, kellel kÃµigil on samad grupi Ãµigused. Neid eristatakse sÃ¼steemis grupi ID (GID) jÃ¤rgi.
 
-Linuxis võivad olla ka kasutajad, kes ei olegi tavapärased süsteemi kasutavad inimesed. Leidub selliseid kasutajaid, kes on tegelikult süsteemi deemonid, mis üidevalt jooksutavad protsesse ja hoiavad süsteemi töökorras. Üks olulisimaid selliseid kasutajaid on juur või superkasutaja. Juurkasutaja on süsteemis kõige mõjuvõimsam, ta saab ligi kõikidele failidele ja käivitada või peatada ükskõik millist protsessi. Sellel põhjusel on ka ohtlik pidevalt juurkasutajana tegutseda, võib näiteks kogemata kustutada mõne kriitilise süsteemi faili. Õnneks aga, kui kasutajal on ligipääs juurele ja tal selle õigusi peaks vaja minema, võib ta sudo käsuga sisestada käske hoopis juurkasutaja õigustega. Sudo käsku (*superuser do*) kasutataksegi just selleks, et käsk käivituks juure õigustega. Sellest, kuidas kasutaja saab omandada juurkasutaja õigsued räägitakse süvitsi veidi hiljem.
+Linuxis vÃµivad olla ka kasutajad, kes ei olegi tavapÃ¤rased sÃ¼steemi kasutavad inimesed. Leidub selliseid kasutajaid, kes on tegelikult sÃ¼steemi deemonid, mis pidevalt kÃ¤ivitavad protsesse ja hoiavad sÃ¼steemi tÃ¶Ã¶korras. Ãœks olulisimaid selliseid kasutajaid on *root* ehk siis *superkasutaja* (ka *juurkasutaja*). Juurkasutaja on sÃ¼steemis kÃµige mÃµjuvÃµimsam: ta saab ligi kÃµikidele failidele ja kÃ¤ivitada vÃµi peatada Ã¼kskÃµik millist protsessi. Sellel pÃµhjusel on ka ohtlik pidevalt juurkasutajana tegutseda: nÃ¤iteks vÃµib kogemata kustutada mÃµne kriitilise sÃ¼steemi faili. Ã•nneks aga kui kasutajal on ligipÃ¤Ã¤s juurkasutajale ja tal selle Ãµigusi peaks vaja minema, vÃµib ta *sudo* kÃ¤suga sisestada kÃ¤ske hoopis juurkasutaja Ãµigustega. Sudo kÃ¤sku (*superuser do*) kasutataksegi just selleks, et kÃ¤sk kÃ¤ivituks juurkasutaja Ãµigustega. Sellest, kuidas kasutaja saab omandada juurkasutaja Ãµigused rÃ¤Ã¤gitakse sÃ¼vitsi veidi hiljem.
 
-Proovi vaadata kaitsud faili, näitks /etc/shadow:
+Proovi vaadata kaitsud faili, nÃ¤iteks */etc/shadow*:
 
 <pre>$ cat /etc/shadow</pre>
 
-Pane tähele, et antakse veateade ligipääsu keelamise kohta. Nii saab vaadata õigusi:
+Pane tÃ¤hele, et antakse veateade ligipÃ¤Ã¤su keelamise kohta. Nii saab vaadata Ãµigusi:
 
 <pre>$ ls -la /etc/shadow
 
 -rw-r----- 1 root shadow 1134 Dec 1 11:45 /etc/shadow
 </pre>
 
-Õigustest ei ole küll veel lähemalt räägitud, kuid eelnevast on näha, et faili omanik on juur (ehk *root*) ja faili sisu lugemiseks on vaja juurkasutaja ligipääsuõigusi või kuulumist *shadow* gruppi. Nüüd aga prooviks sama käsku *sudo*ga:
+Ã•igustest ei ole kÃ¼ll veel lÃ¤hemalt rÃ¤Ã¤gitud kuid eelnevast on nÃ¤ha, et faili omanik on juur (ehk *root*) ja faili sisu lugemiseks on vaja juurkasutaja ligipÃ¤Ã¤suÃµigusi vÃµi kuulumist *shadow* gruppi. NÃ¼Ã¼d aga prooviks sama kÃ¤sku *sudo*ga:
 
 <pre>$ sudo cat /etc/shadow</pre>
 
-Nüüd on faili sisu nähtav!
+NÃ¼Ã¼d on faili sisu nÃ¤htav!
 
 ## Harjutus
 
-Selles peatükkis harjutust ei ole.
+Selles peatÃ¼kkis harjutust ei ole.
 
-## Küsimus
+## KÃ¼simus
 
-Kuidas saab sisestada käsku juurkasutaja õigustega?
+Kuidas saab sisestada kÃ¤sku juurkasutaja Ãµigustega?
 
 ## Vastus
 
