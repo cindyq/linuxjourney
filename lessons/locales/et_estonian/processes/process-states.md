@@ -9,9 +9,9 @@ Vaatame uuesti *ps aux* käsku:
 STAT tulbas võib näha palju väärtusi. Linuxi protsess võib olla üsna paljudes erinevates olekutes.
 
 <ul>
-<li>R: running ehk töötav, ootab, et protsessor temaga tegeleks</li>
-<li>D: uninterruptible sleep ehk siis protsess on katkematus unes - ootab, et mingi sündmus oma tööga valmis saaks, näiteks terminali sisend</li>
-<li>Z: zombi, eelmises peatükis räägiti, et zombid on töö lõpetanud protsessid, mis ootavad, et nende oleku kohta info ära korjataks</li>
+<li>R: <i>running</i> ehk <i>töötav</i>, ootab, et protsessor temaga tegeleks</li>
+<li>D: <i>uninterruptible sleep</i> ehk siis protsess on <i>katkematus unes</i> - ootab, et mingi sündmus oma tööga valmis saaks, näiteks terminali sisend</li>
+<li>Z: <i>zombi</i>, eelmises peatükis räägiti, et <i>zombid</i> on töö lõpetanud protsessid, mis ootavad, et nende oleku kohta info ära korjataks</li>
 <li>T: peatunud, protsess on ajutiselt peatatud</li>
 </ul>
 
@@ -21,7 +21,7 @@ Tutvuda süsteemis töötavate protsesside ja nende olekutega.
 
 ## Küsimus
 
-Millise STAT koodiga on esindatud segamatus unes protsessid?
+Millise STAT koodiga on esindatud <i>katkematus unes</i> protsessid?
 
 ## Vastus
 
