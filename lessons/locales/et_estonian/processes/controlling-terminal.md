@@ -11,6 +11,18 @@ Liigume siit nüüd sujuvalt edasi, et seda näidata. Kasutada klahvikombinatsio
 Pseudoterminal on aga juba harjumuspäraseks saanud terminal, mis emuleerib terminali kestprogrammi aknaga ja märgistus on PTS. Kui uuest vaadata *ps*i, siis kasutatav kestprogrammi protsess on leitav *pts/* * alt:
 <pre>
 ps -e | grep pts
+11477 pts/0    00:00:00 tmux
+11510 pts/2    00:00:00 bash
+11612 pts/2    00:00:00 sudo
+11672 pts/2    00:00:00 bash
+11720 pts/1    00:00:00 bash
+16012 pts/1    00:00:00 man
+16024 pts/1    00:00:00 pager
+16750 pts/5    00:00:00 bash
+27323 pts/5    00:00:00 ps
+27324 pts/5    00:00:00 grep
+32565 pts/3    00:00:00 ssh
+32598 pts/4    00:00:00 ssh
 </pre>
 
 Kui nüüd ringiga kontrollterminalide juurde tagasi tulla, siis protsessid ongi tavaliselt ühega seotud. Kui kestprogrammi aknas mingi protsess töötab, näiteks *find* ja see aken sulgeda siis sulgub koos sellega ka protsess.
