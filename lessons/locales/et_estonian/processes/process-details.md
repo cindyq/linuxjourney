@@ -2,27 +2,27 @@
 
 ## Tunni sisu
 
-Enne kui süveneda protsesside praktilise rakendamise poolele, peaks mõistma, mis nad on ja kuidas nad töötavad. See osa võib päris keeruliseks minna, kuna lähme päris asja tuumani. Kui pole soovi praegu asjasse süveneda, võib selle peatüki juurde soovi korral ka hiljem tagasi pöörduda.
+Enne kui sÃ¼veneda protsesside praktilise rakendamise poolele, peaks mÅ‘istma, mis nad on ja kuidas nad tÃ¶Ã¶tavad. See osa vÅ‘ib pÃ¤ris keeruliseks minna, kuna lÃ¤heme pÃ¤ris asja tuumani. Kui pole soovi praegu asjasse sÃ¼veneda, vÅ‘ib selle peatÃ¼ki juurde soovi korral ka hiljem tagasi pÃ¶Ã¶rduda.
 
-Nagu ennegi mainitud on protsess programm, mis süsteemis töötab, täpsemalt öeldes eraldab süsteem programmile töötamise jaoks mälu, protsessorit ja sisendit/väljundit. Protsess on töötava programmi üks esinemine. Proovida järgmist: Avada kolm terminali akent, kahes neist käiviata <b>cat</b> ilma lippudeta. Kolmandas aknas aga käivita <b>ps aux | grep cat</b>. On näha kaks *cat*i protessi, hoolimata sellest, et need mõlemad pöörduvad ühe programmi poole.
+Nagu enne mainitud on protsess programm, mis sÃ¼steemis tÃ¶Ã¶tab, tÃ¤psemalt Ã¶eldes eraldab sÃ¼steem programmile tÃ¶Ã¶tamise jaoks mÃ¤lu, protsessorit ja sisendit/vÃ¤ljundit. Protsess on tÃ¶Ã¶tava programmi Ã¼ks esinemine. Proovida jÃ¤rgmist: Avada kolm terminali akent, kahes neist kÃ¤iviata <b>cat</b> ilma lippudeta. Kolmandas aknas aga kÃ¤ivita <b>ps aux | grep cat</b>. On nÃ¤ha kaks *cat*i protsessi hoolimata sellest, et need mÅ‘lemad pÃ¶Ã¶rduvad Ã¼he programmi poole.
 
-Protsesside eest vastutab tuum. Kui käivitada programm, siis tuum laeb mälust programmi koodi, tuvastab ja määrab sellele vajalikud ressursid ning peab arvet kõikide protsesside üle, mis sellega seotud on:
+Protsesside eest vastutab tuum. Kui kÃ¤ivitada programm siis tuum laeb mÃ¤lust programmi koodi, tuvastab ja mÃ¤Ã¤rab sellele vajalikud ressursid ning peab arvet kÅ‘ikide protsesside Ã¼le, mis sellega seotud on:
 
 <ul>
-<li>Protsessi staatus</li>
-<li>Ressursid, mida protsess kasutab ja vastu võtab</li>
+<li>Protsessi olek</li>
+<li>Ressursid, mida protsess kasutab ja vastu vÅ‘tab</li>
 <li>Protsessi omanik</li>
-<li>Signal handling (sellest räägitakse hiljem lähemalt)</li>
-<li>Ja põhimõtteliselt kõik muu ka</li>
+<li>Signaalide kÃ¤sitlemine (sellest rÃ¤Ã¤gitakse hiljem lÃ¤hemalt)</li>
+<li>Ja pÅ‘himÅ‘tteliselt kÅ‘ik muu ka</li>
 </ul>
 
-Kõik protsessid tahavad maitsta magusad ressursside pirukat, tuuma ülesanne on hoolitseda selle eest, et iga protsess saab just nii palju, kui vaja on. Kui protsess lõppeb, vabanevad ressursid mõne teise jaoks.     
+KÅ‘ik protsessid tahavad maitsta magusat ressursside pirukat, tuuma Ã¼lesanne on hoolitseda selle eest, et iga protsess saab just nii palju kui vaja on. Kui protsess lÅ‘peb, vabanevad ressursid mÅ‘ne teise jaoks.     
 
 ## Harjutus
 
-Selles peatükis harjutust ei ole.
+Selles peatÃ¼kis harjutust ei ole.
 
-## Küsimus
+## KÃ¼simus
 
 Mis haldab ja kontrollib protsesse?
 

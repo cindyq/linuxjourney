@@ -2,27 +2,27 @@
 
 ## Tunni sisu
 
-Õppisime, mis toimub, kui protsesse luuakse, kuid mis saab siis kui neid enam vaja pole? Ole hoiatatud, Linux kipub vahel veidi süngeks...
+Ã•ppisime, mis toimub kui protsesse luuakse kuid mis saab siis kui neid enam vaja pole? Ole hoiatatud, Linux kipub vahel veidi sÃ¼ngeks...
 
-Protsessist võib väljuda kasutades *_exit* süsteemset kutset. Sellisel juhul vabastatakse protsessi ressursid ümberjaotamise tarbeks. Kui protsess on valmis oma tööd lõpetama, annab ta tuumale teada lõpetamise põhjuse läbi lõpetamise staatuse. Tavaliselt tähendab 0, et protsess oli edukas. Kuid sellest ei piisa, et protsessi tööd lõpetada. Emaprotsess peab tütre töö lõpetamist tunnistama kasutades selleks *wait* süsteemset kutset, mis kontrollib tütarporsessi töö peatamise seisundit. Võib ju tunduda julm, aga *wait* kutse on paratamatult vajalik, sest milline ema ei tahaks teada, kuidas nende laps suri?
+Protsessist vÃµib vÃ¤ljuda kasutades *_exit* sÃ¼steemset kutset. Sellisel juhul vabastatakse protsessi ressursid Ã¼mberjaotamise tarbeks. Kui protsess on valmis oma tÃ¶Ã¶d lÃµpetama, annab ta tuumale teada lÃµpetamise pÃµhjuse lÃ¤bi lÃµpetamise oleku. Tavaliselt tÃ¤hendab 0, et protsess oli edukas. Kuid sellest ei piisa, et protsessi tÃ¶Ã¶d lÃµpetada. Vanemprotsess peab tÃ¼tre tÃ¶Ã¶ lÃµpetamist tunnistama kasutades selleks *wait* sÃ¼steemset kutset, mis kontrollib tÃ¼tarprotsessi tÃ¶Ã¶ peatamise olekut. VÃµib ju tunduda julm, aga *wait* kutse on paratamatult vajalik, sest milline vanem ei tahaks teada, kuidas nende laps suri?
 
-On veel üks viis protsessi peatamiseks, mis hõlmab signaalide kasutamist, millest räägitakse õigepea.
+On veel Ã¼ks viis protsessi peatamiseks, mis hÃµlmab signaalide kasutamist, millest rÃ¤Ã¤gitakse Ãµige pea.
 
-<b>Hüljatud protsessid</b>
+<b>HÃ¼ljatud protsessid</b>
 
-Kui emaprotsess peaks surema enne kui tütarprotsess, siis tuum teab, et *wai* kutset ei tule. Need protsessid nimetatakse orbudeks ja antakse *inti*i hoole alla (mäletatavasti kõikide protsesside ema). *Init* teostab mingil hetkel ikkagi *wait* kutse, nii et need hüjatud protsessid saavad ka ära lõppeda.
+Kui vanemprotsess peaks surema enne kui tÃ¼tarprotsess, siis tuum teab, et *wait* kutset ei tule. Need protsessid nimetatakse orbudeks ja antakse *init*'i hoole alla (mÃ¤letatavasti kÃµikide protsesside ema). *Init* teostab mingil hetkel ikkagi *wait* kutse, nii et need hÃ¼ljatud protsessid saavad ka Ã¤ra lÃµppeda.
 
 <b>Zombiprotsessid</b>
 
-Mis juhtub aga kui tütar on peatunud aga emaprotsess pole veel *wait* kutset teostanud? Soovime sellegi poolest teada, kuidas see juhtus ning hoolimata sellest, et tütarprotsess oma tegevuse lõpetas, muudab tuum ta zombiprotsessiks. Tütarprotsessi ressursid on ikkagi vabastatud, kuid protsesside tabelis on selle zombi kohta endiselt kanne. Zombiprotsesse ei saa "tappa", st sunniviisiliselt peatada, kuna nad on juba tegelikult peatunud. Zombide tapmiseks kasutatakse signaale. Kui lõpuks emaprotsess selle *wait* süsteemse kutse teostab, saab zombi kaduda, seda protsessi nimetatakse *reaping* (lõikus). Kui ema *wait* kutset ei teoasta, lapsendab *init* selle zombi ja teeb seda automaatselt ise, mille järel zombi eemaldatakse. Zombide üleküllus võib olla väga halb, kuna nad võtavad tabelis ruumi ning seega ei võimalda teistel protsessidel töötada.
+Mis juhtub aga kui tÃ¼tar on peatunud aga vanemprotsess pole veel *wait* kutset teostanud? Soovime sellegipoolest teada kuidas see juhtus ning hoolimata sellest, et tÃ¼tarprotsess oma tegevuse lÃµpetas, muudab tuum ta zombiprotsessiks. TÃ¼tarprotsessi ressursid on ikkagi vabastatud, kuid protsesside tabelis on selle zombi kohta endiselt kanne. Zombiprotsesse ei saa "tappa", st sunniviisiliselt peatada, kuna nad on juba tegelikult peatunud. Zombide tapmiseks kasutatakse signaale. Kui lÃµpuks vanemprotsess selle *wait* sÃ¼steemse kutse teostab, saab zombi kaduda, seda protsessi nimetatakse *reaping* (lÃµikus). Kui vanem *wait* kutset ei teosta, lapsendab *init* selle zombi ja teeb seda automaatselt ise, mille jÃ¤rel zombi eemaldatakse. Zombide Ã¼lekÃ¼llus vÃµib olla vÃ¤ga halb, kuna nad vÃµtavad tabelis ruumi ning seega ei vÃµimalda teistel protsessidel tÃ¶Ã¶tada.
 
 ## Harjutus
 
-Selles peatükis harjutuse pole.
+Selles peatÃ¼kis harjutuse pole.
 
-## Küsimus
+## KÃ¼simus
 
-Milline on kõige tavalisem edukalt töö lõpetanud protsessi peatumise staatus?
+Milline on kÃµige tavalisem edukalt tÃ¶Ã¶ lÃµpetanud protsessi peatumise staatus?
 
 ## Vastus
 

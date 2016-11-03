@@ -2,9 +2,9 @@
 
 ## Tunni sisu
 
-Protsessid on arvutis töötavad programmid. Neid haldab tuum ja neil kõigil on oma ID, mida nimetatakse <b>protsessi IDks (PID)</b>. Need IDd jagatakse välja protsessside loomise järjekorras.
+Protsessid on arvutis tÃ¶Ã¶tavad programmid. Neid haldab tuum ja neil kÅ‘igil on oma ID, mida nimetatakse <b>protsessi ID'ks (PID)</b>. Need ID'd jagatakse vÃ¤lja protsessside loomise jÃ¤rjekorras.
 
-*ps* käsku sisestades saab näha nimekirja töötavatest protsessidest:
+*ps* kÃ¤sku sisestades saab nÃ¤ha nimekirja tÃ¶Ã¶tavatest protsessidest:
 
 <pre>$ ps
 
@@ -13,51 +13,51 @@ PID        TTY     STAT   TIME          CMD
 51224    pts/4    R+        00:00:00     ps
 </pre>
 
-Kiire ülesvõte protsesside kohta annab järgmist infot:
+Kiire Ã¼lesvÅ‘te protsesside kohta annab jÃ¤rgmist infot:
 
 <ul>
 <li>PID: Protsessi ID</li>
 <li>TTY: Protsessiga seotud terminal (sellest pikemalt veidi hiljem)</li>
-<li>STAT: Protsessi staatuse kood</li>
-<li>TIME: Kumulatiivne protsessori kasutamise aeg</li>
-<li>CMD: Käsu/käivitatud rakenduse nimi</li>
+<li>STAT: Protsessioleku kood</li>
+<li>TIME: Summaarne protsessori kasutamise aeg</li>
+<li>CMD: KÃ¤su/kÃ¤ivitatud rakenduse nimi</li>
 </ul>
 
-*Ps*i *man* lehet võib leida palju erinevaid võimalusi selle käsu sisestamiseks. Need erinevad veidi sõltuvalt, millist variant soovitatakse kasutada - BSG, GNU või Unix. Tõenäolisel ton BSD stiil teistest natuke populaarsem, seega kasutatakse sellel kursusel seda. Uudishimu rahuldamiseks võib öelda, et erunevus seisneb selles mitut kriipsu kasutatakse ja lippudes.
+*Ps*i *man* lehet vÅ‘ib leida palju erinevaid vÅ‘imalusi selle kÃ¤su sisestamiseks. Need erinevad veidi sÅ‘ltuvalt millist variant soovitatakse kasutada - BSD, GNU vÅ‘i Unix. TÅ‘enÃ¤oliselt on BSD stiil teistest natuke populaarsem, seega kasutatakse sellel kursusel seda. Uudishimu rahuldamiseks vÅ‘ib Ã¶elda, et erinevus seisneb selles, mitut kriipsu kasutatakse ja lippudes.
  
 <pre>$ ps aux</pre>
 
-<b>a</b> kuvab kõik töötavad protsessid, kaasaaravtud need, mis töötavad teiste kasutajate all. <b>u</b> kuvab protsesside kohta rohkem detaile ja viimaks, <b>x</b> kuvab kõik protsessid, millega ei ole TTYd seostatud. Nened protsessidel on ? TTY väljas. Selline asi on väga levinud deemoni protsessides, mis seotud süsteemi käivitumisega.
+<b>a</b> kuvab kÅ‘ik tÃ¶Ã¶tavad protsessid, kaasaarvatud need, mis tÃ¶Ã¶tavad teiste kasutajate all. <b>u</b> kuvab protsesside kohta rohkem detaile ja viimaks, <b>x</b> kuvab kÅ‘ik protsessid, millega ei ole TTY'd seostatud. Nendel protsessidel on ? kuvatud TTY veerus. Selline asi on vÃ¤ga levinud deemonite (teenuste) puhul, mis seotud sÃ¼steemi kÃ¤ivitumisega.
 
-Selle käsuga on näga oluliselt rohkem välju. Neid pole vaja kõiki meelde jätta, järgmises peatükkis, kus räägitakseprotsessidest lähemalt, räägitakse neist uuesti:
+Selle kÃ¤suga on nÃ¤ha oluliselt rohkem vÃ¤lju. Neid pole vaja kÅ‘iki meelde jÃ¤tta kuna jÃ¤rgmises, protsesside peatÃ¼kis rÃ¤Ã¤gitakse neist tÃ¤psemalt:
 
 <ul>
-<li>USER: Kehtiv kasutaja (see kelle ligipääsuõigusi kasutatakse)</li>
+<li>USER: Kehtiv kasutaja (see kelle ligipÃ¤Ã¤suÅ‘igusi kasutatakse)</li>
 <li>PID: Protsessi ID</li>
-<li>%CPU: Protessori aja kasutuse suhe aega, mis protsess on töötanud</li>
-<li>%MEM: Ratio of the process's resident set size to the physical memory on the machine</li>
-<li>VSZ: Protsessi virtuaalmälu kasutus</li>
-<li>RSS: Resident set size, saalimata füüsiline mälu, mida tegum on kasutanud</li>
-<li>TTY: Protessiga seostatud terminal</li>
-<li>STAT: Protsessi staatuse kood</li>
-<li>START: Protsessi käivitumise aeg</li>
-<li>TIME: Kumulatiivne protsessori kasutamise aeg</li>
-<li>COMMAND: Käsu/käivitatud rakenduse nimi</li>
+<li>%CPU: Kasutatud protsessoriaja suhe aega, mille jooksul protsess on tÃ¶Ã¶tanud</li>
+<li>%MEM: Protsessi pÃ¼simahuosa kogu fÃ¼Ã¼silise mÃ¤lu suhtes</li>
+<li>VSZ: Protsessi virtuaalmÃ¤lu kasutus</li>
+<li>RSS: Tegumi pÃ¼simahuosa saalimata fÃ¼Ã¼silisest mÃ¤lust</li>
+<li>TTY: Protsessiga seostatud terminal</li>
+<li>STAT: Protsessioleku kood</li>
+<li>START: Protsessi kÃ¤ivitumise aeg</li>
+<li>TIME: Summaarne protsessori kasutamise aeg</li>
+<li>COMMAND: KÃ¤su/kÃ¤ivitatud rakenduse nimi</li>
 </ul> 
 
-*ps* käsu vaatamine võib muutuda tülikaks, hetkel uurime kõige rohkem välju PID, STAT ja COMMAND.
+*ps* kÃ¤su kogu vÃ¤ljundi vaatamine vÅ‘ib muutuda tÃ¼likaks, kÅ‘ige rohkem tasub vaadata PID, STAT ja COMMAND veerge.
 
-Teine väga kasulik käsk on *top*. See kuvab sulle töötavate protsesside kohta juba mitte enam hetke ülesvõtet, vaid jooksvat informatsiooni. Vaikimisi uuendatakse kuva iga 10 sekundi järel. *Top* on äärmisel kasulik vahend kui on vajalik teada, milised protsessid kasutavad suurem määral arbuti ressursse.
+Teine vÃ¤ga kasulik kÃ¤sk on *top*. See kuvab tÃ¶Ã¶tavate protsesside kohta juba mitte enam hetke Ã¼lesvÅ‘tet vaid jooksvat informatsiooni. Vaikimisi uuendatakse kuva iga 10 sekundi jÃ¤rel. *Top* on Ã¤Ã¤rmisel kasulik vahend kui on vajalik teada, millised protsessid kasutavad suuremal mÃ¤Ã¤ral arvuti ressursse.
 
 <pre>$ top</pre>
 
 ## Harjutus
 
-Kasutada *top*o erinevate lippudega ja pöörata tähelepanu sellele, kuidas muutub kuvatav info.
+Kasutada *ps* erinevate lippudega ja pÃ¶Ã¶rata tÃ¤helepanu sellele, kuidas muutub kuvatav info.
 
-## Küsimus
+## KÃ¼simus
 
-Millise lipuga kuvatakse protsesside kohta detailset infot?
+Millise *ps*'i lipuga kuvatakse protsesside kohta detailset infot?
 
 ## Vastus
 

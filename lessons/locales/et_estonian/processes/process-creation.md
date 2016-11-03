@@ -2,26 +2,26 @@
 
 ## Tunni sisu
 
-See ja eelmine peatükk on puhtalt informatiivsed, et tutvustada natuke kapotialust. Võid igal ajal siia tagasi pöörduda, kui oled juba veidi rohkem protsesside kallal töötanud.
+See ja eelmine peatÃ¼kk on puhtalt informatiivsed, et tutvustada natuke protsesside hingeelu. Siia vÃµib igal ajal tagasi pÃ¶Ã¶rduda kui ollakse veidi rohkem protsesside kallal tÃ¶Ã¶tanud.
 
-Protsessi loomisel põhimõtteliselt kloonitakse juba olemasolevat protsessi kasutades midagi, mida nimetatakse *fork* süsteemseks kutseks (süsteemsetest kutsetest räägitakse alles väga kauges tulevikus). *Fork* kutse loob olmeasolevale protsessile identse tütarprotsessi, mis võtab endale uue protsessi ID (PID) ja esialgsest protsessist saab emaprotsess, mis saab endale emaprotsessi ID <b>PPID</b>. Hiljem võib aga tütarprotsess jätkata sama programmi kastuamist, mida kasutas tema ema või kasutada *execve* süsteemset kutset, et käivitada uus programm. See kutse hävitab senise tuuma poolt selle protsessi jaoks loodud mälu haldamise ning seab üles uued just selle programmi jaoks.
+Protsessi loomisel pÃµhimÃµtteliselt kloonitakse juba olemasolevat protsessi kasutades midagi, mida nimetatakse *haru* (ingl.k *fork*) sÃ¼steemseks kutseks (sÃ¼steemsetest kutsetest rÃ¤Ã¤gitakse alles vÃ¤ga kauges tulevikus). *Haru* kutse loob olemasolevale protsessile identse tÃ¼tarprotsessi, mis vÃµtab endale uue protsessi ID (PID) ja esialgsest protsessist saab vanemprotsess, mis saab endale vanemprotsessi ID ehk <b>PPID</b> (*Parent Process ID*). Hiljem vÃµib aga tÃ¼tarprotsess jÃ¤tkata sama programmi kasutamist, mida kasutas tema vanem vÃµi kasutada *execve* sÃ¼steemset kutset, et kÃ¤ivitada uus programm. See kutse hÃ¤vitab senise tuuma poolt selle protsessi jaoks loodud mÃ¤lu haldamise ning seab Ã¼les uued just selle programmi jaoks.
 
-Seda võib tegevuses näha:
+Seda vÃµib tegevuses nÃ¤ha:
 
 <pre>$ ps l</pre>
 
-Valik l (nagu *long format* ehk pikk formaat) võimaldab jooksvaid protsesse vaadeleda isegi veel detailsemalt. Näha on tulp nimega <b>PPID</b>, see ongi ema ID. Kui nüüd vaadata oma terminali, siis on näha protsess, mis on jooksev kestaprogramm, näiteks *bash*. Meenuta, et kui sisestasid *ps l* käsu, käivitasid sa selle protsessist, mis käitas *bash*i. Märka, et *bash*i kesta <b>PID</b> on selle *ps l* käsu <b>PPID</b>.
+Valik l (nagu *long format* ehk *pikk formaat*) vÃµimaldab jooksvaid protsesse vaadelda isegi veel detailsemalt. NÃ¤ha on tulp nimega <b>PPID</b>, see ongi vanemprotsessi ID. Kui nÃ¼Ã¼d vaadata oma terminali siis on nÃ¤ha protsess, mis on jooksev kestprogramm, nÃ¤iteks *bash*. Meenutame, et kui sisestada *ps l* kÃ¤sk, kÃ¤ivitati see protsessist, mis kÃ¤ivitas *bash*i. Paneme tÃ¤hele, et *bash*i kesta <b>PID</b> on selle *ps l* kÃ¤su <b>PPID</b>.
 
-Seega, kui igal protsessil peab olema ema ja kõik protsessid on üksteise harud, peab ju kusagil olema kõikide protsesside ema, eks? Nii ongi. Kui süsteem algkäivitub, loob tuum protsessi nimega <b>init</b>, mille PID on 1. Seda protsessi saab peatada vaid siis kui süsteem välja lülitada. *Init* jookseb juurkasutaja õigustes ja käitab mitmeid teisi protsesse, mis võimaldavad süsteemil töötada. *Init* tuleb lähema vaatluse alla süsteemi algkäivitamise kursusel, praegu võiks meelde jätta, et tegu on kõikide teiste protsesside loojaga.
+Seega kui igal protsessil peab olema vanem ja kÃµik protsessid on Ã¼ksteise harud, peab ju kusagil olema kÃµikide protsesside ema, eks? Nii ongi. Kui sÃ¼steem algkÃ¤ivitub, loob tuum protsessi nimega <b>init</b>, mille PID on 1. Seda protsessi saab peatada vaid siis kui sÃ¼steem vÃ¤lja lÃ¼litada. *Init* tÃ¶Ã¶tab juurkasutaja Ãµigustes ja kÃ¤itab mitmeid teisi protsesse, mis vÃµimaldavad sÃ¼steemil tÃ¶Ã¶tada. *Init* tuleb lÃ¤hema vaatluse alla sÃ¼steemi algkÃ¤ivitamise kursusel, praegu vÃµiks meelde jÃ¤tta, et tegu on kÃµikide teiste protsesside loojaga.
 
 ## Harjutus
 
-Kui vaadata töötavaid protsesse, millistel protsessidel veel on emad?
+Vaadelda tÃ¶Ã¶tavaid protsesse - millistel protsessidel on vanemad?
 
-## Küsimus
+## KÃ¼simus
 
-Milline süsteemi kutse loob uue protsessi?
+Milline sÃ¼steemi kutse loob uue protsessi?
 
 ## Vastus
 
-fork
+*haru*

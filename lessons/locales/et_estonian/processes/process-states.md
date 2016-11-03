@@ -1,27 +1,27 @@
-# Protsesside Staatused
+# Protsesside olekud
 
 ## Tunni sisu
 
-Vaatame uuesti *ps aux* käsku:
+Vaatame uuesti *ps aux* kÃ¤sku:
 
 <pre>$ ps aux</pre>
 
-STAT tulbas võib näha palju väärtusi. Linuxi protsess võib olla üsna paljudes erinevates olekutes.
+STAT tulbas vÃµib nÃ¤ha palju vÃ¤Ã¤rtusi. Linuxi protsess vÃµib olla Ã¼sna paljudes erinevates olekutes.
 
 <ul>
-<li>R: *running* ehk töötav, ootab, et protsessor temaga tegeleks</li>
-<li>D: *uninterrupitble sleep* ehk siis protsess on segamatus unes, ootab, et mingi sündmus oma tööga valmis saaks, näiteks terminali sisend</li>
-<li>Z: zombi, eelmises peatükis räägiti, et zombid on töö lõpetanud protsessid, mis ootavad, et nende staatuse kohta info ära korjataks.</li>
+<li>R: <i>running</i> ehk <i>tÃ¶Ã¶tav</i>, ootab, et protsessor temaga tegeleks</li>
+<li>D: <i>uninterruptible sleep</i> ehk siis protsess on <i>katkematus unes</i> - ootab, et mingi sÃ¼ndmus oma tÃ¶Ã¶ga valmis saaks, nÃ¤iteks terminali sisend</li>
+<li>Z: <i>zombi</i>, eelmises peatÃ¼kis rÃ¤Ã¤giti, et <i>zombid</i> on tÃ¶Ã¶ lÃµpetanud protsessid, mis ootavad, et nende oleku kohta info Ã¤ra korjataks</li>
 <li>T: peatunud, protsess on ajutiselt peatatud</li>
 </ul>
 
 ## Harjutus
 
-Tutvuda süsteemis töötavate protsesside ja nende staatustega.
+Tutvuda sÃ¼steemis tÃ¶Ã¶tavate protsesside ja nende olekutega.
 
-## Küsimus
+## KÃ¼simus
 
-Millise STAT koodiga on esindatud segamatus unes protsessid?
+Millise STAT koodiga on esindatud <i>katkematus unes</i> protsessid?
 
 ## Vastus
 

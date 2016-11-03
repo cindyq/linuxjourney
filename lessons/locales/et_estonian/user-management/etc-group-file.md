@@ -2,27 +2,27 @@
 
 ## Tunni sisu
 
-Kasutajate haldamiseks kasutatakse veel ühte faili. /etc/group võimaldab erinevate õigustega gruppe.
+Kasutajate haldamiseks kasutatakse veel Ã¼hte faili. */etc/group* vÃµimaldab erinevate Ãµigustega gruppe.
 
 <pre>$ cat /etc/group
 
 root:*:0:pete
 </pre>
 
-Sarnaselt /etc/shadow failile, on /etc/group väljad järgmised:
+Sarnaselt */etc/shadow* failile, on */etc/group* vÃ¤ljad jÃ¤rgmised:
 
 <ol>
 <li>Grupi nimi</li>
-<li>Grupi salasõna - tegelikult pole vajadust seada grupile paroli,pigem on tavapärane tõstetud õiguste kasutamine, nagu näiteks *sudo* puhul. Vaikimis väärtus on "*".</li>
+<li>Grupi salasÃµna - tegelikult pole vajadust seada grupile salasÃµna, pigem on tavapÃ¤rane tÃµstetud Ãµiguste kasutamine, nagu nÃ¤iteks *sudo* puhul. Vaikimis vÃ¤Ã¤rtus on "*".</li>
 <li>Grupi ID (GID)</li>
-<li>Nimekiri kasutajatest - kastuajate gruppi kuuluvust saab käsitsi määrata</li>
+<li>Nimekiri kasutajatest - kasutajate gruppi kuuluvust saab kÃ¤sitsi mÃ¤Ã¤rata</li>
 </ol> 
 
 ## Harjutus
 
-Käivitada käsk <b>*groups*</b>. Mida kuvatakse?
+KÃ¤ivitada kÃ¤sk <b>*groups*</b>. Mida kuvatakse?
 
-## Küsimus
+## KÃ¼simus
 
 Mis on juurkasutaja GID?
 
