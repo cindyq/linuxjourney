@@ -2,13 +2,13 @@
 
 ## Lesson Content
 
-Before you can view the contents of your filesystem, you will have to mount it. To do that I'll need the device location, the filesystem type and a mount point, the mount point is a directory on the system where the filesystem is going to be attached. So we basically want to mount our device to a mount point. 
+Before you can view the contents of your filesystem, you will have to mount it. To do that you'll need the device location, the filesystem type and a mount point. The mount point is a directory on the system where the filesystem is going to be attached. So we basically want to mount our device to a mount point. 
 
-First create the mount point, in our case <b>mkdir /mydrive</b>
+First, create the directory that will serve as a mount point, in our case <code>mkdir /mydrive</code>:
 
 <pre>$ sudo mount -t ext4 /dev/sdb2 /mydrive</pre>
 
-Simple as that! Now when we go to /mydrive we can see our filesystem contents, the <b>-t</b> specifies the type of filesystem, then we have the device location, then the mount point. 
+Simple as that! Now when we go to <b>/mydrive</b> we can see our filesystem content. In the above command, the <code>-t ext4</code> specifies the type of filesystem, in this case ext4, and then we have the device location, then the mount point. 
 
 To unmount a device from a mount point: 
 
@@ -31,7 +31,7 @@ We can see our device names, their corresponding filesystem types and their UUID
 
 <pre>$ sudo mount UUID=130b882f-7d79-436d-a096-1e594c92bb76 /mydrive</pre>
 
-Most of the time you won't need to mount devices via their UUIDs, it's much easier to use the device name and often times the operating system will know to mount common devices like USB drives. If you need to automatically mount a filesystem at startup though like if you added a secondary hard drive, you'll want to use the UUID and we'll go over that in the next lesson.
+Most of the time you won't need to mount devices via their UUIDs. It's much easier to use the device name, and often times, the operating system will know to mount common devices like USB drives. But, if you need to automatically mount a filesystem at startup, like if you added a secondary hard drive, then you'll want to use the UUID, and we'll go over that in the next lesson.
 
 ## Exercise
 
