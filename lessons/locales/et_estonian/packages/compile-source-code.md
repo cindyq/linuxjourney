@@ -1,4 +1,4 @@
-# Lähtekoodi kompileerimine
+﻿# Lähtekoodi kompileerimine
 
 ## Tunni sisu
 
