@@ -6,9 +6,9 @@ Mõned levinumad seadmete nimed:
 
 <b>SCSI seadmed</b>
 
-Massmäluseadmed kasutavad kõige tõenäolisemalt SCSI (hääldatakse "skazi") protokolli. SCSI tähendab *Small Computer System Interface*, mis tõlkes oleks väikearvutisüsteemi liides. Tegu on protokolliga, mida kasutatakse välisseadmete, nagu kettad, printerid, skännerid ja muu, ühendamiseks arvutiga. Eksisteerivad SCSI seadmed, mida kaasajal tegelikult enam ei kasutata, Linux aga samastab SCSI kettad /dev'is kõvaketastega. Neid esindab prefiks *sd(SCSI disk):*
+Massmäluseadmed kasutavad kõige tõenäolisemalt SCSI (hääldatakse "skazi") protokolli. SCSI tähendab *Small Computer System Interface*, mis tõlkes oleks väikearvutisüsteemi liides. Tegu on protokolliga, mida kasutatakse välisseadmete nagu kettad, printerid, skannerid ja muu ühendamiseks arvutiga. Eksisteerivad SCSI seadmed, mida kaasajal tegelikult enam ei kasutata, Linux aga samastab SCSI kettad /dev kataloogis füüsiliste kõvaketastega, mida nimetatakse ka plokkseadmeteks (*block device*) ja nende vaatamiseks käsk *lsblk*. Neid esindab eesliide *sd(SCSI disk):*
 
-Tavapärased SCSI seadme failid:
+Tavapärased SCSI seadmefailid:
 
 <ul>
 <li>/dev/sda - Esimene kõvaketas</li>
@@ -18,7 +18,7 @@ Tavapärased SCSI seadme failid:
 
 <b>Pseudoseadmed</b>
 
-Kordame, et pseudoseadmed ei ole tegeleikult füüsiliselt arvutiga ühendatud ning enamik pseudoseadmeid on tähemärgiseadmed:
+Kordame, et pseudoseadmed ei ole tegelikult füüsiliselt arvutiga ühendatud ning enamik pseudoseadmeid on tähemärgiseadmed:
 
 <ul>
 <li>/dev/zero - võtab vastu ja heidab kogu sisendi kõrvale, väljundiks on NULL (nullväärtus) baitide jada</li>
@@ -28,7 +28,7 @@ Kordame, et pseudoseadmed ei ole tegeleikult füüsiliselt arvutiga ühendatud n
 
 <b>PATA seadmed</b>
 
-Mõnikord, just vanemates süstemides, võib näha, et kõvaketastele viidatakse hd prefiksiga:
+Mõnikord, just vanemates süsteemides, võib näha, et kõvaketastele viidatakse hd prefiksiga:
 
 <ul>
 <li>/dev/hda - Esimene kõvaketas</li>
@@ -37,7 +37,7 @@ Mõnikord, just vanemates süstemides, võib näha, et kõvaketastele viidatakse
 
 ## Harjutus
 
-Kirjutada pseudoseadmetele, ning uurida väljundit. Ettevaatust, et ei krijutaks nendele oma kettaid!
+Kirjutada pseudoseadmetele, ning uurida väljundit. Ettevaatust, et ei kirjutaks nendele oma kettaid!
 
 ## Küsimus
 
