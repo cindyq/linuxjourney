@@ -2,7 +2,7 @@
 
 ## Tunni sisu
 
-Paketihalduse Batmanid! Need süsteemid sisaldavad kõike vajaminevat, et muuta pakettide paigaldamine, eemaldamine ja muutmine lihtsaks. Sealhulgas ka sõltuvused. Kaks kõige populaarsemat süsteemi on <b>yum</b> ja <b>apt</b>. Yum kuulub eksklusiivselt Red Hat'i ja apt Debiani perekonda.
+Paketihalduse Batmanid! Need süsteemid sisaldavad kõike vajaminevat, et muuta pakettide paigaldamine, eemaldamine ja muutmine lihtsaks. Sealhulgas ka sõltuvused. Kaks kõige populaarsemat süsteemi on <b>yum</b> ja <b>apt</b>. Yum kuulub eksklusiivselt Red Hat'i ja apt Debiani perekonda. Kõik tarkvarahalduse käsud tuleb sisestada juurkasutaja õigustes.
 
 <b>Paketi paigaldamine hoidlast</b> 
 
