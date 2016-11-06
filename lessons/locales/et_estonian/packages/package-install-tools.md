@@ -2,13 +2,13 @@
 
 ## Tunni sisu
 
-Kuigi suurem osa sellest kurusest räägib paketihaldussüsteemidest (paketihalduse Batmanid), ei tohi unustada ka Robineid. Kuigi väga kasulikud ja usaldusväärsed, ei ole nendel uhket autot ja nutivööd.
+Kuigi suurem osa sellest kurusest rÃ¤Ã¤gib paketihaldussÃ¼steemidest (paketihalduse Batmanid), ei tohi unustada ka Robineid. Kuigi vÃ¤ga kasulikud ja usaldusvÃ¤Ã¤rsed, ei ole nendel uhket autot ja nutivÃ¶Ã¶d.
 
-Just nagu .exe on üksik käivitatav fail, on seda ka .deb ja .rpm.Kui kasutada paketihoidlaid, siis tavapäraselt neid eriti ei näe, kuid kui paketid otse alla laadida, siis on nad nendes poplaarsetes vormingutes. Loomulikult on nad distributsioonipõhised, .deb Debiani ja .rpm Red Hati süsteemidele.
+Just nagu .exe on Ã¼ksik kÃ¤ivitatav fail, on seda ka .deb ja .rpm. Kui kasutada paketivaramuid, siis tavapÃ¤raselt neid eriti ei nÃ¤e, kuid kui paketid veebilehelt otse alla laadida, siis on nad nendes populaarsetes vormingutes. Loomulikult on nad distributsioonipÃµhised, .deb Debiani ja .rpm Red Hati sÃ¼steemidele.
 
-Nende pakettide paigaldamiseks võib kasutadakäske *rpm* ja *dpkg*. Nõnda paigaldatakse paketi failid, küll aga mitte eelmises peatükis mainitud olulised sõltuvused. Seega, kui pektil on 10 sõltuvust, peaks need paketid ka eraldi veel paigaldama ning sama kehitb omakorda ka nende sõltuvuste kohta. Nagu isegi näha võib, on see üks põhjusi, mis kutsus ellu täis kohaga haldussüsteemid, millest räägitakse veidi hiljem.
+Nende pakettide paigaldamiseks vÃµib kasutada kÃ¤ske *rpm* ja *dpkg*. NÃµnda paigaldatakse paketi failid, kÃ¼ll aga mitte eelmises peatÃ¼kis mainitud olulised sÃµltuvused. Seega, kui pektil on 10 sÃµltuvust, peaks need paketid ka eraldi veel paigaldama ning sama kehitb omakorda ka nende sÃµltuvuste kohta. Nagu isegi nÃ¤ha vÃµib, on see Ã¼ks pÃµhjusi, mis kutsus ellu tÃ¤is kohaga haldussÃ¼steemid, millest rÃ¤Ã¤gitakse veidi hiljem.
 
-Kuna ilmselt tuleb ette loendamatu arb kordi kui on vaja nende käskudega paigaldada, pärida või kinnitada pakette, võiks need meelde jääta.
+Kuna ilmselt tuleb ette loendamatu arv kordi, kui on vaja nende kÃ¤skudega paigaldada, pÃ¤rida vÃµi kinnitada pakette, vÃµiks need meelde jÃ¤Ã¤ta.
 
 <b>Paketi paigaldamine</b>
 
@@ -17,7 +17,7 @@ Debian: $ dpkg -i mingi_deb_pakett.deb
 RPM: $ rpm -i mingi_rpm_pakett.rpm
 </pre>
 
-*i* tähistab installeerimist ehk paigaldamist. Võib kasutada ka pikemat formaati --install.
+*i* tÃ¤histab installeerimist ehk paigaldamist. VÃµib kasutada ka pikemat formaati --*install*.
 
 <b>Paketi eemaldamine</b>
 
@@ -26,8 +26,8 @@ Debian: $ dpkg -r mingi_deb_pakett.deb
 RPM: $ rpm -e mingi_rpm_pakett.rpm
 </pre>
 
-Debian: <b>r</b> nagu *remove* tähendab eemaldamist
-RPM: <b>e</b> nagu *erase* tähendab kustutamist
+Debian: <b>r</b> nagu *remove* tÃ¤hendab eemaldamist
+RPM: <b>e</b> nagu *erase* tÃ¤hendab kustutamist
 
 <b>Kuva paigaldatud paketid</b>
 
@@ -36,16 +36,16 @@ Debian: $ dpkg -l
 RPM: $ rpm -qa
 </pre>
 
-Debian: <b>l</b> nagu loetle
-RPM: <b>q</b> nagu *query* ehk päring <b>a</b> nagu *all* ehk kõik
+Debian: <b>l</b> nagu loetlema
+RPM: <b>q</b> nagu *query* ehk pÃ¤ring <b>a</b> nagu *all* ehk kÃµik
 
 ## Harjutus
 
-Leida mingi programm, mida on soov paigaldada, näiteks Google Chrome, ja paigaldada see kasutades õpitud käske.
+Leida mingi programm, mida on soov paigaldada, nÃ¤iteks Google Chrome, ja paigaldada see kasutades Ãµpitud kÃ¤ske.
 
-## Küsimus
+## KÃ¼simus
 
-Milline on .deb failide paketihaldustööriist?
+Milline on .deb failide paketihaldustÃ¶Ã¶riist?
 
 ## Vastus
 
