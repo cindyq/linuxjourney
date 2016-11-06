@@ -1,8 +1,8 @@
-﻿# Seadme tüübid
+# Seadme tüübid
 
 ## Tunni sisu
 
-Enne kui seadmete haldamise teemat, võiks mõnda lähemalt uurida.
+Enne kui alustada seadmete haldamise teemat, võiks mõnda lähemalt uurida.
 
 <pre>$ ls -l /dev
 brw-rw----   1 root disk      8,   0 Dec 20 20:13 sda
@@ -33,9 +33,9 @@ Meenutame, et *ls* käsu väljundi iga rea esimene bit kajastab faili tüüpi. S
 
 <b>Tähemärgiseadmed</b>
 
-Need seadmed öötlevad andmeid, kuid üks tähemärk korraga. Paljud pseudoseadmed (/dev/null) on sellised. Pseudoseadmed ei ole tegelikult füüsiliselt arvutiga ühendatud, kuid võimaldavad operatsioonisüsteemil paremini toimida.
+Need seadmed töötlevad andmeid, kuid üks tähemärk korraga. Paljud pseudoseadmed (/dev/null) on sellised. Pseudoseadmed ei ole tegelikult füüsiliselt arvutiga ühendatud, kuid võimaldavad operatsioonisüsteemil paremini toimida.
 
-<b>Blokiseadmed</b>
+<b>Blokkseadmed</b>
 
 Need seadmed töötlevad andmeid suurte fikseeritud suurustega blokkidena. Tavapäraselt on sellised andmeblokke kasutavad seadmed näitkes kõvakettad ja failisüsteemid.
 
@@ -49,10 +49,9 @@ Sokkelseadmed hõlbutavad protsesside vahelist suhtlust. Erinevalt toruseadmetes
 
 <b>Seadmete iseloomustamine</b>
 
-Seadmeid iseloomustatakse <b>juhtprogrammi</b> ja <b>seadme klassiga</b>. Neid numbreid võib näha eeltoodud *ls* väljundi näites. Numbreid eraldatakse komaga, näiteks ütleme, et seadme klassid on: <b>8, 0</b>:
+Seadmeid iseloomustatakse <b>juhtprogrammi klassi</b> ja <b>seadme klassiga</b>. Neid numbreid võib näha eeltoodud *ls* väljundi näites. Numbreid eraldatakse komaga, näiteks ütleme, et seadme klassid on: <b>8, 0</b>:
 
-Juhtprogrammi klass esindab juhtprogrammi, meie puhul 8, mis on tihti sd blokiseadmete klass. Seadme klass tuvastab tuuma jaks konkreetse seadme. Meie näites 0 esindab esimest seadet (a).
-
+Juhtprogrammi klass esindab juhtprogrammi, meie puhul 8, mis on tihti sd blokkseadmete klass. Seadme klass tuvastab tuuma jaks konkreetse seadme. Meie näites 0 esindab esimest seadet (a).
 
 ## Harjutus
 
