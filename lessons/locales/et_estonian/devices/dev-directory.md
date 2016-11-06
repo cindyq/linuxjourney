@@ -2,23 +2,23 @@
 
 ## Tunni sisu
 
-Seadmed vajavad arvutisse ühendamisel tavaliselt juhtprogramme, et korralikult töötada. Seadmete juhtporgrammidega saab tegeleda läbi seadme failide või seadmesõlmede, mis on tegelikult lihtsalt erilised failid, mis näevad välja nagu tavalised failid. Kuna seadme failid on just nagu tavalised failid, saab nendega tegutsemiseks kasutada programme nagu *ls*, *cat* jne. Seadmete faile hoitakse tavaliselt kataloogis /dev. Kui sisestada *ls* /dev kataloogis, võib näha suurt hulka erinevaid seadmefaile.
+Seadmed vajavad arvutisse Ã¼hendamisel tavaliselt juhtprogramme, et korralikult tÃ¶Ã¶tada. Seadmete juhtprogrammidega saab tegeleda lÃ¤bi seadme failide vÃµi seadmesÃµlmede, mis on tegelikult lihtsalt erilised failid, mis nÃ¤evad vÃ¤lja nagu tavalised failid. Kuna seadmefailid on just nagu tavalised failid, saab nendega tegutsemiseks kasutada programme nagu *ls*, *cat* jne. Seadmete faile hoitakse tavaliselt kataloogis /dev. Kui seal sisestada *ls* vÃµib nÃ¤ha suurt hulka erinevaid seadmefaile.
 
 <pre>$ ls /dev </pre>
 
-Mõnda seadet on siin kursustel juba kasutatud ka, näiteks /dev/null. Ühes peatükis sai /dev/null'le saadetud väljund, tuum teab rakendada seda seadet ja lihtsalt heita sisend kõrvale, väljundit ei tagastata.
+MÃµnda seadet on siin kursustel juba kasutatud ka, nÃ¤iteks /dev/null. Ãœhes peatÃ¼kis sai /dev/null'le saadetud vÃ¤ljund, tuum teab rakendada seda seadet ja lihtsalt heita sisend kÃµrvale, vÃ¤ljundit ei tagastata.
 
-Kui vanasti taheti lisada süsteemi seadmeid, võis lihtsalt lisada faili /dev kataloogi ja ta sinna unustada. Kui nüüd hästi järgi mõelda, siis taipab peagi, miks see ei ole eriti hea mõte. /dev kaust kuhjub täis staatilisi faile või seadmeid, mida on juba ammu uunedatud, kasutamine lõpetatud vms. Seadmetele määratakse seadmefail selles järjekorras, milles tuum nad leiab. Nii võis juhtuda, et iga kord kui süsteem taaskäivitada, on seadmel erinev seadmefail.
+Kui vanasti taheti lisada sÃ¼steemi seadmeid, vÃµis lihtsalt lisada faili /dev kataloogi ja ta sinna ka unustada. Kui nÃ¼Ã¼d hÃ¤sti jÃ¤rgi mÃµelda, siis taipab peagi, miks see ei ole eriti hea mÃµte. /dev kaust kuhjub tÃ¤is staatilisi faile vÃµi seadmeid, mida on juba ammu uunedatud, kasutamine lÃµpetatud vms. Seadmetele mÃ¤Ã¤ratakse seadmefail selles jÃ¤rjekorras, milles tuum nad leiab. Nii vÃµib juhtuda, et iga kord kui sÃ¼steem taaskÃ¤ivitada, on seadmel erinev seadmefail.
 
-Õnneks enam sellist meetodit ei kasutata. Nüüd kasutame midagi, et lisada ja eemaldada seadmeid dünaamiliselt ja sellest räägitakse tulevates peatükkides.
+Ã•nneks enam sellist meetodit ei kasutata. NÃ¼Ã¼d kasutame hoopis midagi muud, et lisada ja eemaldada seadmeid dÃ¼naamiliselt. Sellest rÃ¤Ã¤gitakse tulevates peatÃ¼kkides.
 
 ## Harjutus
 
-Uurida /dev kasuta sisu. Kas on märgata tuttavaid seadmeid?
+Uurida /dev kasuta sisu. Kas on mÃ¤rgata tuttavaid seadmeid?
 
-## Küsimus
+## KÃ¼simus
 
-Kus hoitakse süsteemi seadmefaile?
+Kus hoitakse sÃ¼steemi seadmefaile?
 
 ## Vastus
 
