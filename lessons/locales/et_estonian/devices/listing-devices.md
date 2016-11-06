@@ -1,8 +1,8 @@
-﻿# lsusb, lspci, lssci
+# lsusb, lspci, lssci
 
 ## Tunni sisu
 
-Just nagu *ls* kuvab nimekirja failidest ja kataloogidest, on olemas sarnased tööristaad ka seadmete jaoks.
+Just nagu *ls* kuvab nimekirja failidest ja kataloogidest, on olemas sarnased tööriistad ka seadmete jaoks.
 
 <b> USB seadmete kuvamine</b>
 
