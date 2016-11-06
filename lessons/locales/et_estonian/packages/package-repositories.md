@@ -1,6 +1,7 @@
-# Tarkvarahoidlad
+﻿# Tarkvarahoidlad
 
 ## Tunni sisu
+
 
 Kuidas saavad internetti üleslaetud paketid ühtäkki kasutajate arvutitesse? Kas peab minema iga paketi leheküljele ja laadima nad alla ja paigaldama? Tegelikult võib seda muidugi ka nii teha kuid on olemas palju parem lahendus, mida nimetatakse paketihoidlateks. Need ongi lihtsalt kesksed hoidlad pakettide jaoks. On olemas palju hoidlaid rikkaliku paketivalikuga ja mis kõige parem - need on kõik ka internetipõhiselt kättesaadavad ja tobedaid paigaldamiskettaid pole üldse tarvis. Küll aga ei oska arvutid ise ilma kasutaja abita neid hoidlaid otsida.
 
@@ -9,6 +10,7 @@ Näiteks kasutaja soovib oma arvutisse paigaldada WackyWidgets tarkvara. WackyWi
 Selle asemel, et minna veebilehele pakette allalaadima, võib öelda arvutile kust tarkvara leida.
 
 Linuxil on kaasas eelnevalt heaks kiidetud varamud, kust süsteem saab peamised olulised paketid. Debiani puhul on selleks failiks <b>/etc/apt/sources.list</b>. Arvuti oskab otsida sealt erinevaid allikaid, sealjuures neid, mida kasutajad võivad olla lisanud. Kasutajate poolt lisatavad varamud on oodatud kataloogi */etc/apt/sources.list.d/* ja seda *.list* tüüpi failidena. Kasutajad saavad varamuid lisada käsuga *add-apt-repository* või käsitsi .list faili kirjutades ja GPG-võtmeid importides.
+
 
 ## Harjutus
 

@@ -1,4 +1,4 @@
-# rpm ja dpkg
+﻿# rpm ja dpkg
 
 ## Tunni sisu
 
@@ -37,6 +37,7 @@ RPM: $ rpm -qa
 </pre>
 
 Debian: <b>l</b> nagu loetle
+
 RPM: <b>q</b> nagu *query* ehk päring <b>a</b> nagu *all* ehk kõik
 
 ## Harjutus

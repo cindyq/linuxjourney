@@ -1,4 +1,4 @@
-# Pakettide sõltuvused
+﻿# Pakettide sõltuvused
 
 ## Tunni sisu
 

@@ -1,4 +1,4 @@
-# Tarkvarakomplekt
+﻿# Tarkvarakomplekt
 Tarkvarakomplekti ehk distributsiooni kohta saab lugeda täpsemalt https://viki.pingviin.org/Distributsioon
 
 ## Tunni sisu

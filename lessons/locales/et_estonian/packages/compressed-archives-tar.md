@@ -1,4 +1,4 @@
-# tar ja gzip
+﻿# tar ja gzip
 
 ## Tunni sisu
 
@@ -16,11 +16,11 @@ Faili tihendamiseks:
 Lahtipakkimiseks:
 <pre>$ gunzip minulahefail.gz</pre>
 
+
 <b>Arhiivide loomine tar'i abil</b>
 Kahjuks ei saa *gzip* lisada arhiivi mitut faili. Õnneks saab seda teha *tar*'iga. Kui luua sellega arhiiv, on faililaiendiks .tar.
 
 <pre>$ tar cvf minutarfail.tar minulahefail1 minulahefail2</pre>
-
 
 <ul>
 <li>c - loomine</li>
