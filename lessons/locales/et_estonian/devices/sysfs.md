@@ -4,7 +4,7 @@
 
 *Sysfs* loodi väga ammu selleks, et paremini hallata seadmeid, mille haldamisega /dev kataloog hakkama ei saanud. *Sysfs* on virtuaalne failisüsteem, mis on tavaliselt ühendatud /sys kataloogi. Selle kuvatav informatsioon on detailsem kui /dev kataloogi oma. Mõlemad kataloogid tunduvad väga sarnased ja mõneti nad seda ka on, kuid neil on ka olulisi erinvusi. Põhimõtteliselt on /dev kataloog lihtne, see võimaldab teistel programmidel ise seadmetele ligi pääseda, samas kui /sys failisüsteemi kasutatakse informatsiooni kuvamiseks ja seadmete haldamiseks.
 
-/sys failisüsteem sisadab kogu informatsiooni süsteemi kõikide seadmete kohta, näiteks tootja ja mudel, kuhu seade on ühendatud, seadme olek, seadme hierarhia ja muudki. Failid, mida seal kuvatake ei ole seadmesõlmed, seega ei suhelda nendega /sys kataloogist, vaid pigem just hallatakse.
+/sys failisüsteem sisadab kogu informatsiooni süsteemi kõikide seadmete kohta, näiteks tootja ja mudel, kuhu seade on ühendatud, seadme olek, seadme hierarhia ja muudki. Failid, mida seal kuvatake ei ole seadmesõlmed, seega ei suhelda seadmetega /sys kataloogist, vaid pigem just hallatakse neid.
 
 /sys kataloogi sisu näide:
 
@@ -20,7 +20,7 @@ device            ext_range          range     sda5       subsystem
 
 ## Harjutus
 
-Vaadata /sys kataloogi, millised failid seal asuvad.
+Vaadata /sys kataloogi. Millised failid seal asuvad?
 
 ## Küsimus
 
