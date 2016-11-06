@@ -2,7 +2,7 @@
 
 ## Tunni sisu
 
-Paketihalduse Batmanid! Need süsteemid sisaldavad kõike vajaminevat, et muuta pakettide paigaldamine, eemaldamine ja muutmine lihtsaks. Sealhulgas ka sõltuvused. Kaks kõige popluaarsemat süsteemi on <b>yum</b> ja <b>apt</b>. Yum kuulub eksklusiivselt Red Hat perekonda ja apt Debiani omasse.
+Paketihalduse Batmanid! Need sÃ¼steemid sisaldavad kÃµike vajaminevat, et muuta pakettide paigaldamine, eemaldamine ja muutmine lihtsaks. Sealhulgas ka sÃµltuvused. Kaks kÃµige populaarsemat sÃ¼steemi on <b>yum</b> ja <b>apt</b>. Yum kuulub eksklusiivselt Red Hat'i ja apt Debiani perekonda.
 
 <b>Paketi paigaldamine hoidlast</b> 
 
@@ -30,17 +30,17 @@ RPM: yum update
 <b>Info saamine paigaldatud paketi kohta</b>
 
 <pre>
-Debian: apt show pekti_nimi
+Debian: apt show paketi_nimi
 RPM: yum info paketi_nimi
 </pre>
 
 ## Harjutus
 
-Kasutada kõiki õpitud käske ja tutvuda väljundiga.
+Kasutada kÃµiki Ãµpitud kÃ¤ske ja tutvuda vÃ¤ljundiga.
 
-## Küsimus
+## KÃ¼simus
 
-Millise käsuga kuvatakse Debianis informatsiooni paketi kohta?
+Millise kÃ¤suga kuvatakse Debianis informatsiooni paketi kohta?
 
 ## Vastus
 
