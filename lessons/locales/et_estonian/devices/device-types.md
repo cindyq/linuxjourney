@@ -33,7 +33,7 @@ Meenutame, et *ls* käsu väljundi iga rea esimene bitt kajastab faili tüüpi. 
 
 <b>Tähemärgiseadmed</b>
 
-Need seadmed töötlevad andmeid, kuid üks tähemärk korraga. Paljud pseudoseadmed (/dev/null) on sellised. Pseudoseadmed ei ole tegelikult füüsiliselt arvutiga ühendatud, kuid võimaldavad operatsioonisüsteemil paremini toimida.
+Need seadmed töötlevad andmeid, kuid üks tähemärk korraga. Paljud pseudoseadmed (nt */dev/null*) on sellised. Pseudoseadmed ei ole tegelikult füüsiliselt arvutiga ühendatud, kuid võimaldavad operatsioonisüsteemil paremini toimida.
 
 <b>Plokkseadmed</b>
 
