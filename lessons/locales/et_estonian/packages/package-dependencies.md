@@ -1,20 +1,20 @@
-# Pakettide sõltuvused
+# Pakettide sÃµltuvused
 
 ## Tunni sisu
 
-Pakettid töötavad väga harva iseseisvalt, tavaliselt saadavad neid abistavad sõltuvussuhted. Näiteks võib tuua restoranide grupi. Kõik restoranid pakuvad erinevate maade ja köökide toitu, kuid tooraine saavad samast farmist. Restoranide toit sõltub farmi reservist. Kui farm peaks lõpetama toorainega varustamise, siis oleksid kõik need restoranid ka väga täbaras olukorras.
+Paketid tÃ¶Ã¶tavad vÃ¤ga harva iseseisvalt, tavaliselt saadavad neid abistavad sÃµltuvussuhted. NÃ¤iteks vÃµib tuua restoranide grupi kus kÃµik restoranid pakuvad erinevate maade ja kÃ¶Ã¶kide toitu kuid tooraine saavad samast farmist. Restoranide toit sÃµltub farmi reservist. Kui farm peaks lÃµpetama toorainega varustamise, siis oleksid kÃµik need restoranid ka vÃ¤ga tÃ¤baras olukorras.
 
-Linuxis on sellisteks sõltuvusteks tavaliselt teised pakettid või jagatud teegid. Jagatud teegid on koodide teegid, mida teised programmid tahavad ka kasutada ilma, et peaks neid endale ümberkirjutama. Kui uuesti restoranidele mõelda, siis oleks väga palju lisa tööd, kui iga restoran veel hakkaks ise omale toorainet kasvatama.
+Linuxis on sellisteks sÃµltuvusteks tavaliselt teised paketid vÃµi jagatud teegid. Jagatud teegid on Ã¼hiskasutuses olevad tarkvarakomponendid, mida teised programmid tahavad ka kasutada ilma, et peaks neid endale Ã¼mber kirjutama. Kui uuesti restoranidele mÃµelda siis oleks vÃ¤ga palju lisatÃ¶Ã¶d kui iga restoran veel hakkaks ise omale toorainet kasvatama.
 
-Jagatud teekidest tuleb lähemalt jurru failisüsteemide kursusel, hetkel peab ainult meelde jätma, et pakettidel on sõltuvussuhted, mis aitavad neil töötada. Olgu nendeks siis teised pakettid või teegid, kui olulised elemendid on puudu, võib pakett sattuda katkisesse seisundisse või siis suurem osa ajast, ei saa seda üldse paigaldada.
+Jagatud teekidest tuleb lÃ¤hemalt juttu failisÃ¼steemide kursusel, hetkel peab ainult meelde jÃ¤tma, et pakettidel on sÃµltuvussuhted, mis aitavad neil tÃ¶Ã¶tada. Olgu nendeks siis teised paketid vÃµi teegid - kui olulised elemendid on puudu, vÃµib pakett sattuda katkisesse seisundisse ja Ã¼ldjuhul ei saa seda Ã¼ldse paigaldada.
 
 ## Harjutus
 
 Harjutust pole.
 
-## Küsimus
+## KÃ¼simus
 
-Küsimust pole.
+KÃ¼simust pole.
 
 ## Vastus
 
