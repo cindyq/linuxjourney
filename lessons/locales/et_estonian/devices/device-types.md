@@ -22,11 +22,11 @@ Tulbad vasakult paremale:
 <li>Ajatempel</li>
 <li>Seadme nimi</li>
 
-Meenutame, et *ls* käsu väljundi iga rea esimene bit kajastab faili tüüpi. Seadme faile märgistatakse järgmiselt:
+Meenutame, et *ls* käsu väljundi iga rea esimene bitt kajastab faili tüüpi. Seadmefaile märgistatakse järgmiselt:
 
 <ul>
 <li>c - tähemärk</li>
-<li>b - blokk</li>
+<li>b - plokk</li>
 <li>p - toru</li>
 <li>s - sokkel</li>
 </ul>
