@@ -1,4 +1,4 @@
-﻿# dd
+# dd
 
 ## Tunni sisu
 
@@ -21,7 +21,7 @@ Mõned *dd* käsud kasutavad *count*i. Kui on soov kopeerida 1 megabaidine fail,
 
 <pre>$ dd if=/home/pete/backup.img of=/dev/sdb bs=1M count=2</pre>
 
-backup.img fail on 10M, käsk ütleb aga, et kopeerida tuleb 1M kaks korda, mis tähendab, et kopeeritakse vaid 2M, mis tähendab, et kopeeritud andmed ei ole täielikud. *Count* võib päris paljudes olukordades kasulikuks osutuda, kuid kui eesmärk on lihtsalt andmete kopeerimine võib *count*i ja isegi *bs*i vabalt vahele jätta. Kui eesmärk on tõsine andmete ülekandmise optimeerimine siis tasub alles hakata neid variante kasutama.
+backup.img fail on 10M, käsk ütleb aga, et kopeerida tuleb 1M kaks korda, mis tähendab, et kopeeritakse vaid 2M, mis tähendab, et kopeeritud andmed ei ole täielikud. *Count* võib päris paljudes olukordades kasulikuks osutuda, kuid kui eesmärk on lihtsalt andmete kopeerimine võib *count*i ja isegi *bs*i vabalt vahele jätta. Kui eesmärk on tõsine andmete ülekandmise optimeerimine siis tasub alles hakata neid variante kaaluma.
 
 *dd* on äärmisel võimas, sellega võib teha varukoopiaid ükskõik millest, selhuglas terved kettad, kettakujutiste taastamine ja palju muud. Ettevaatus kulub ära, sest võimsa tööriista kasutamine võib kätte maksta, kui ei olda oma tegevustes päris kindel.
 
