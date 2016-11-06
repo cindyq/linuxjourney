@@ -2,11 +2,11 @@
 
 ## Tunni sisu
 
-Enne kui rääida pakettide paigaldamisest ja erinevatest haldusprogrammidest, võiks rääkida failide arhiveerimisest ja tihendamisest, sest neid tuleb kindlasti internetist tarkvara jahtides ette.
+Enne kui rÃ¤Ã¤ida pakettide paigaldamisest ja erinevatest haldusprogrammidest, vÃµiks rÃ¤Ã¤kida failide arhiveerimisest ja tihendamisest, sest neid tuleb kindlasti internetist tarkvara jahtides ette.
 
-Failid, mille laiend on .rar ja .zip on arhiivifailid. Nende sees on veel omakorda palju faile, kuid nad on kenasti üheks arhiivina tuntud failiks kokku pakitud.
+Failid, mille laiend on .rar ja .zip on arhiivifailid. Nende sees on veel omakorda palju faile, kuid nad on kenasti Ã¼heks arhiivina tuntud failiks kokku pakitud.
 
-<b>Failide tihendamine ja *gzip*<b/>
+<b>Failide tihendamine ja *gzip*</b>
 
 *Gzip* on programm, mida kasutatakse failide tihendamiseks Linuxis, nende laiendiks on .gz.
 
@@ -16,16 +16,16 @@ Faili tihendamiseks:
 Lahti pakkimiseks:
 <pre>$ gunzip minulahefail.gz</pre>
 
-<b>Arhiivide loomine ja tar</b>
-Kahjuks ei saa *gzip* lisada arhiivi mitut faili. Õnneks aga saab seda teha *tar*ga. Kui luua sellega arhiiv, on faililaiendiks .tar.
+<b>Arhiivide loomine ja *tar*</b>
+Kahjuks ei saa *gzip* lisada arhiivi mitut faili. Ã•nneks aga saab seda teha *tar*iga. Kui luua sellega arhiiv, on faililaiendiks .tar.
 
 <pre>$ tar cvf minutarfail.tar minulahefail1 minulahefail 2</pre>
 
 
 <ul>
 <li>c - loomine</li>
-<li>v - ütleme programmile, et see kannaks ette, mida ta teeb</li>
-<li>f - selle võtme järel peab tulema *tar* faili nimi, kui luua uus fail tuleb nimi välja mõelda/li>
+<li>v - Ã¼tleme programmile, et see kannaks ette, mida ta teeb</li>
+<li>f - selle vÃµtme jÃ¤rel peab tulema *tar* faili nimi, kui luua uus fail tuleb nimi vÃ¤lja mÃµelda/li>
 </ul>
 
 <b>Arhiivide lahti pakkimine ja *tar*</b>
@@ -36,13 +36,13 @@ Et pakkida lahti *tar* faili:
 
 <ul>
 <li>x - lahtipakkimine</li>
-<li>v - ütleme programmile, et see kannaks ette, mida ta teeb</li>
+<li>v - Ã¼tleme programmile, et see kannaks ette, mida ta teeb</li>
 <li>f - fail, mida soovitakse lahti pakkida</li>
 </ul>
 
 <b>Arhiivide tihendamine ja lahti pakkimine *gzip* ja *tar*iga</b>
 
-Tihti võib leida *tar* faile, mis on tihendatud: minutihendatudarhiiv.tar.gz. Sellisel juhul tuleb hakkata tegutsema väljast poolt sissepoole: esiteks eemaldame tihenduse *gunzip*iga ja seejärel pakime *tar* faili lahti. On ka võimalik kasutada <b>z</b> varianti, mis ütleb *tar*ile, et on vaja kasutada *gzip* või *gunzip* utiliiti.
+Tihti vÃµib leida *tar* faile, mis on tihendatud: minutihendatudarhiiv.tar.gz. Sellisel juhul tuleb hakkata tegutsema vÃ¤ljast poolt sissepoole: esiteks eemaldame tihenduse *gunzip*iga ja seejÃ¤rel pakime *tar* faili lahti. On ka vÃµimalik kasutada <b>z</b> varianti, mis Ã¼tleb *tar*ile, et on vaja kasutada *gzip* vÃµi *gunzip* haldusvahendit.
 
 Tihendatud *tar* faili loomine:
 <pre>$ tar czf minufail.tar.gz</pre>
@@ -50,21 +50,21 @@ Tihendatud *tar* faili loomine:
 Tihenduse eemaldamine ja lahti pakkimine:
 <pre>$ tar xzf fail.tar</pre>
 
-Inglise keele tundmine aitab käsku meeles pidada: e<b>X</b>tract all <b>Z</b>ee <b>F</b>iles!
+Inglise keele tundmine aitab kÃ¤sku meeles pidada: e<b>X</b>tract all <b>Z</b>ee <b>F</b>iles!
 
-*tar* on üks nendest käskudest, mis on väga oluline kuid, mida kunagi ei suudeta päriselt meelde jätta: <a href="https://xkcd.com/1168/">https://xkcd.com/1168/</a>
+*tar* on Ã¼ks nendest kÃ¤skudest, mis on vÃ¤ga oluline kuid, mida kunagi ei suudeta pÃ¤riselt meelde jÃ¤tta: <a href="https://xkcd.com/1168/">https://xkcd.com/1168/</a>
 
 <b>Teised utiliidid</b>
 
-Mida rohkem kasutada Linuxit, seda rohkem puutub kokku erinevate arhiveerimis- ja tihendustüüpidega, näitkes *bzip2*, *compress*, *zip*, *unzip* jne, kuid need on natuke vähem levinud. Tasub meelde jätta, et erinevad utuliidid kasutavad erinevaid käske.
+Mida rohkem kasutada Linuxit, seda rohkem puutub kokku erinevate arhiveerimis- ja tihendustÃ¼Ã¼pidega, nÃ¤itkes *bzip2*, *compress*, *zip*, *unzip* jne, kuid need on natuke vÃ¤hem levinud. Tasub meelde jÃ¤tta, et erinevad haldusvahendid kasutavad erinevaid kÃ¤ske.
 
 ## Harjutus
 
-Tutvuda *tar*i dokumentatsiooniga ja uurida *man*leheküljelt erinevate kasutusvõimaluste kohta.
+Tutvuda *tar*i dokumentatsiooniga ja uurida *man*lehekÃ¼ljelt erinevate kasutusvÃµimaluste kohta.
 
-## Küsimus
+## KÃ¼simus
 
-Millise võtmega luuakse arhiive?
+Millise vÃµtmega luuakse arhiive?
 
 ## Vastus
 
