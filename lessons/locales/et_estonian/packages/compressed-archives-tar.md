@@ -6,7 +6,7 @@ Enne kui rääida pakettide paigaldamisest ja erinevatest haldusprogrammidest, v
 
 Failid, mille laiend on .rar ja .zip on arhiivifailid. Nende sees on veel omakorda palju faile, kuid nad on kenasti üheks arhiivina tuntud failiks kokku pakitud.
 
-<b>Failide tihendamine *gzip*'i abil<b/>
+<b>Failide tihendamine *gzip*'i abil</b>
 
 *Gzip* on programm, mida kasutatakse failide tihendamiseks Linuxis, laiendiks on .gz.
 
