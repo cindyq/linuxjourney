@@ -1,4 +1,4 @@
-# lsusb, lspci, lsscsi, lsblk
+# lsusb, lspci, lsscsi
 
 ## Tunni sisu
 
