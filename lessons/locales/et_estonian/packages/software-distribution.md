@@ -1,18 +1,19 @@
-# Tarkvara distributsioon
+# Tarkvarakomplekt
+Tarkvarakomplekti ehk distributsiooni kohta saab lugeda tÃ¤psemalt https://viki.pingviin.org/Distributsioon
 
 ## Tunni sisu
 
-Arvuti süsteem koosneb paljudes pakettidest nagu Interneti lehitseja, tekstiredaktorid, meediapleierid jpm. Pakettide paigaldamise ja haldamisega tegeleb paketihaldustarkvara, kuid mitte kõiki pakette ei paigaldata läbi selle. Pakette võib paigaldada ka lihtsalt lähtekoodist (selleni jõuame peagi). Sellegi poolest, suurem sa ajast kasutatakse ikkagi paketihaldustarkvara. Levinumad paketitüübid on Debian (.deb) ja Red Hat (-rpm). Debiani tüüpi pakette kasutatakse distrbutsioonides nagu Debian, Ubuntu, LinuxMInt jt. Red Hat omi aga Red Hat Enterprise Linux, Fedora, CentOS jt.
+OperatsioonisÃ¼steem koosneb paljudes tarkvarapakettidest nagu veebilehitsejad, tekstiredaktorid, meediamÃ¤ngijad jpm. Pakettide paigaldamise ja haldamisega tegeleb paketihaldustarkvara, kuid mitte kÃµiki pakette ei paigaldata lÃ¤bi selle. Pakette vÃµib paigaldada ka lihtsalt lÃ¤htekoodist (selleni jÃµuame peagi). Sellegipoolest suurem osa ajast kasutatakse ikkagi paketihaldustarkvara. Levinumad paketitÃ¼Ã¼bid on Debian (.deb) ja Red Hat (.rpm). Debiani tÃ¼Ã¼pi pakette kasutatakse distrbutsioonides nagu Debian, Ubuntu, LinuxMint jt. Red Hat omi aga Red Hat Enterprise Linux, Fedora, CentOS jt.
 
-Mis üldse on paketid? Need on näiteks Chrome, Photoshop jt, aga tegelikkuses on need lihtsalt suurel hulgal kokku kompileeritud faile. Isikut või isikuid, kes sellist tarkvara kirjutavad kutsutakse <b>edasiarendsue pakkujateks</b>. Nemad kompileerivad oma koodi ja kirjutavad juhised, kuidas seda paigaldada. Need arendajad töötavad selle kallal, et luua uut ja uuendada juba esisteerivat tarkvata. Kui tarkvara on maailmale jagamiseks valmis, saadetakse see paketihooldajatele, kes hoolitsevad selle eest, et tarkvara jõuaks lõppkasutajateni. Paketihooldajad hindavad, haldavad ja jagavad tarkvara pakettide kujul.
+Mis Ã¼ldse on paketid? Need on nÃ¤iteks Chromium, GIMP jt aga tegelikkuses on need lihtsalt suur hulk kokku kompileeritud faile. Isikut vÃµi isikuid kes sellist tarkvara kirjutavad kutsutakse <b>tarkvaraarendajateks</b>. Nemad kompileerivad oma koodi ja kirjutavad juhised kuidas seda paigaldada. Need arendajad tÃ¶Ã¶tavad selle kallal, et luua uut ja uuendada juba eksisteerivat tarkvara. Kui tarkvara on maailmale jagamiseks valmis, saadetakse see paketihalduritele kes hoolitsevad selle eest, et tarkvara jÃµuaks lÃµppkasutajateni. Paketihaldurid hindavad, haldavad ja jagavad tarkvara pakettide kujul.
 
 ## Harjutus
 
-Selles peatükis harjutust ei ole.
+Selles peatÃ¼kis harjutust ei ole.
 
-## Küsimus
+## KÃ¼simus
 
-Küsimusi pole, liigu aga edasi.
+KÃ¼simusi pole, liigu aga edasi.
 
 ## Vastus
 
