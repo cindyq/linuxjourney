@@ -34,8 +34,8 @@ Protsessoriarhitektuuri info:
 PCMCIA seadmete info:
 <pre>$ lspcmcia</pre>
 
-Riistvara info:
-<pre>$ lshw</pre>
+Riistvara info (soovitav käivitada superkasutajana):
+<pre>$ sudo lshw</pre>
 
 ## Harjutus
 
