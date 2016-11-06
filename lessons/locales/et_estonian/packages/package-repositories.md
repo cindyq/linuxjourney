@@ -2,21 +2,21 @@
 
 ## Tunni sisu
 
-Kuidas saavad Internetti üleslaetud pakettid ühtäkki kasutajate arvutitesse? Kas peab minema igapaketti leheküljele ja laadima nad alla ja paigaldama? Tegelikult võib seda muidugi ka nii teha, kuid on olemas palju parem lahendus, mida nimetatakse paketihoidlateks. Need ongi lihtsalt kesksed hoidlad pakettide jaoks. On olemas palju hoidlad, mis hoiavad palju pakette ja mis kõige parem, need on kõik ka Internetist leitavad, mis tähendab, et tobedaid paigaldamiskettaid pole üldse tarvis. Küll aga ei oska arvutid ise ilma kasutaja abita neid hoidlaid otsida.
+Kuidas saavad Internetti Ã¼leslaetud pakettid Ã¼htÃ¤kki kasutajate arvutitesse? Kas peab minema iga paketi lehekÃ¼ljele, laadima nad alla ja paigaldama? Tegelikult vÃµib seda muidugi ka nii teha, kuid on olemas palju parem lahendus, mida nimetatakse paketivaramuteks. Need ongi lihtsalt kesksed hoidlad pakettide jaoks. On olemas palju varamuid, mis hoiavad palju pakette ja mis kÃµige parem, need on kÃµik ka Internetist leitavad, mis tÃ¤hendab, et tobedaid paigaldamiskettaid pole Ã¼ldse tarvis. KÃ¼ll aga ei oska arvutid ise ilma kasutaja abita neid hoidlaid otsida.
 
-Näiteks, ütleme, et kasutaja soovib oma arvutisse WackyWidgets tarkvara. WackyWidgets haldab ise enda pakettide hoidlaid. Hoidlates on 10 pakettid: CoolWidget, SuperWidget jne. WackyWidget hoiab oma hoidlat aadressil http://download.widgets/linux/deb/.
+NÃ¤iteks, Ã¼tleme, et kasutaja soovib oma arvutisse WackyWidgets tarkvara. WackyWidgets haldab ise enda pakettide varamuid. Varamutes on 10 pakettid: CoolWidget, SuperWidget jne. WackyWidget hoiab oma varamut aadressil http://download.widgets/linux/deb/.
 
-Selle asemel, et minna veebilehele pakette allalaadima, võib öelda arvutile, kust tarkvara leida.
+Selle asemel, et minna veebilehele pakette allalaadima, vÃµib Ã¶elda arvutile, kust tarkvara leida.
 
-Operatsioonisüsteemi distributsioonidiel on juba algselt mingisugesed heaks kiidetud allikad, kust süsteem saab peamised olulised pakettid. Debiani puhul on selleks failiks <b>/etc/apt/sources.list</b>. Arvuti oskab otsida sealt erinevaid allikaid, sealjuures neid, mida kasutajad võivad olla lisanud.
+OperatsioonisÃ¼steemi distributsioonidel on juba algselt mingisugesed heaks kiidetud allikad, kust sÃ¼steem saab peamised olulised paketid. Debiani puhul on selleks failiks <b>/etc/apt/sources.list</b>. Arvuti oskab otsida sealt erinevaid allikaid, sealjuures neid, mida kasutajad vÃµivad olla lisanud.
 
 ## Harjutus
 
-Selles peatükis harjutus ei ole.
+Selles peatÃ¼kis harjutus ei ole.
 
-## Küsimus
+## KÃ¼simus
 
-Kus asub Debiani süsteemis lähtefail?
+Kus asub Debiani sÃ¼steemis lÃ¤htefail?
 
 ## Vastus
 
