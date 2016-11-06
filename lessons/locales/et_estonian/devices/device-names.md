@@ -2,44 +2,44 @@
 
 ## Tunni sisu
 
-Mõned levinumad seadmete nimed:
+MÃµned levinumad seadmete nimed:
 
 <b>SCSI seadmed</b>
 
-Massmäluseadmed kasutavad kõige tõenäolisemalt SCSI (hääldatakse "skazzi") protokolli. SCSI tähendab *Small Computer System Interface", mis tõlkes oleks väikearvutisüsteemi liides. Tegu on protokolliga, mida kasutatakse välisseadmete, nagu kettad, printerid, skännerid ja muu, ühendamiseks arvutiga. Eksisteerivad SCSI seadmed, mida kaasajal tegelikult enam ei kasutata, Linux aga samastab SCSI kettad /dev'is kõvaketastega. Neid esindab *sd(SCSI disk):*
+MassmÃ¤luseadmed kasutavad kÃµige tÃµenÃ¤olisemalt SCSI (hÃ¤Ã¤ldatakse "skazi") protokolli. SCSI tÃ¤hendab *Small Computer System Interface*, mis tÃµlkes oleks vÃ¤ikearvutisÃ¼steemi liides. Tegu on protokolliga, mida kasutatakse vÃ¤lisseadmete, nagu kettad, printerid, skÃ¤nnerid ja muu, Ã¼hendamiseks arvutiga. Eksisteerivad SCSI seadmed, mida kaasajal tegelikult enam ei kasutata, Linux aga samastab SCSI kettad /dev'is kÃµvaketastega. Neid esindab prefiks *sd(SCSI disk):*
 
-Tavapärased SCSI seadme failid:
+TavapÃ¤rased SCSI seadme failid:
 
 <ul>
-<li>/dev/sda - Esimene kõvaketas</li>
-<li>/dev/sdb - Teine kõvaketas</li>
-<li>/dev/sda3 - Esimese kõvaketta kolmas kettajagu</li>
+<li>/dev/sda - Esimene kÃµvaketas</li>
+<li>/dev/sdb - Teine kÃµvaketas</li>
+<li>/dev/sda3 - Esimese kÃµvaketta kolmas kettajagu</li>
 </ul>
 
 <b>Pseudoseadmed</b>
 
-Kordame, et pseudoseadmed ei ole tegeleikult füüsiliselt arvutiga ühendatud ning endamik pseudoseadmeid on tähemärgi seadmed:
+Kordame, et pseudoseadmed ei ole tegeleikult fÃ¼Ã¼siliselt arvutiga Ã¼hendatud ning enamik pseudoseadmeid on tÃ¤hemÃ¤rgiseadmed:
 
 <ul>
-<li>/dev/zero - võtab vastu ja heidab kogu sisendi kõrvale, väljundiks on NULL (nullväärtus) baitide jada</li>
-<li>/dev/null - võtab vastu ja heidab kogu sisendi kõrvale  ning väljundit ei anna </li>
+<li>/dev/zero - vÃµtab vastu ja heidab kogu sisendi kÃµrvale, vÃ¤ljundiks on NULL (nullvÃ¤Ã¤rtus) baitide jada</li>
+<li>/dev/null - vÃµtab vastu ja heidab kogu sisendi kÃµrvale  ning vÃ¤ljundit ei anna </li>
 <li>/dev/random - toodab juhuslikke numbreid</li>
 </ul>
 
 <b>PATA seadmed</b>
 
-Mõnikord, just vanemates süstemides, võib näha, et kõvaketastele viidatakse hd prefiksiga:
+MÃµnikord, just vanemates sÃ¼stemides, vÃµib nÃ¤ha, et kÃµvaketastele viidatakse hd prefiksiga:
 
 <ul>
-<li>/dev/hda - Esimene kõvaketas</li>
-<li>/dev/hdd2 - Neljanda kõvaketta teine kettajagu</li>
+<li>/dev/hda - Esimene kÃµvaketas</li>
+<li>/dev/hdd2 - Neljanda kÃµvaketta teine kettajagu</li>
 </ul> 
 
 ## Harjutus
 
-Kirjutada pseudoseadmetele, ning uurida väljundit. Ettevaatust, et ei krijutaks nendele oma kettaid!
+Kirjutada pseudoseadmetele, ning uurida vÃ¤ljundit. Ettevaatust, et ei krijutaks nendele oma kettaid!
 
-## Küsimus
+## KÃ¼simus
 
 Milline oleks tavaliselt teise SCSI ketta esimese kettajao seadmenimi?
 
