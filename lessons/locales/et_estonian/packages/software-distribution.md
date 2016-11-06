@@ -2,17 +2,17 @@
 
 ## Tunni sisu
 
-Arvuti süsteem koosneb paljudes pakettidest nagu Interneti lehitseja, tekstiredaktorid, meediapleierid jpm. Pakettide paigaldamise ja haldamisega tegeleb paketihaldustarkvara, kuid mitte kõiki pakette ei paigaldata läbi selle. Pakette võib paigaldada ka lihtsalt lähtekoodist (selleni jõuame peagi). Sellegi poolest, suurem sa ajast kasutatakse ikkagi paketihaldustarkvara. Levinumad paketitüübid on Debian (.deb) ja Red Hat (-rpm). Debiani tüüpi pakette kasutatakse distrbutsioonides nagu Debian, Ubuntu, LinuxMInt jt. Red Hat omi aga Red Hat Enterprise Linux, Fedora, CentOS jt.
+Arvuti sÃ¼steem koosneb paljudest pakettidest nagu Interneti lehitseja, tekstiredaktorid, meediamÃ¤ngijad jpm. Pakettide paigaldamise ja haldamisega tegeleb paketihaldustarkvara, kuid mitte kÃµiki pakette ei paigaldata lÃ¤bi selle. Pakette vÃµib paigaldada ka lihtsalt lÃ¤htekoodist (selleni jÃµuame peagi). Sellegi poolest, enamasti kasutatakse ikkagi paketihaldustarkvara. Levinumad paketitÃ¼Ã¼bid on Debian (.deb) ja Red Hat (-rpm). Debiani tÃ¼Ã¼pi pakette kasutatakse distrbutsioonides nagu Debian, Ubuntu, LinuxMint jt. Red Hat omi aga Red Hat Enterprise Linux, Fedora, CentOS jt.
 
-Mis üldse on paketid? Need on näiteks Chrome, Photoshop jt, aga tegelikkuses on need lihtsalt suurel hulgal kokku kompileeritud faile. Isikut või isikuid, kes sellist tarkvara kirjutavad kutsutakse <b>edasiarendsue pakkujateks</b>. Nemad kompileerivad oma koodi ja kirjutavad juhised, kuidas seda paigaldada. Need arendajad töötavad selle kallal, et luua uut ja uuendada juba esisteerivat tarkvata. Kui tarkvara on maailmale jagamiseks valmis, saadetakse see paketihooldajatele, kes hoolitsevad selle eest, et tarkvara jõuaks lõppkasutajateni. Paketihooldajad hindavad, haldavad ja jagavad tarkvara pakettide kujul.
+Mis Ã¼ldse on paketid? Need on nÃ¤iteks Chrome, Photoshop jt, aga tegelikkuses on need lihtsalt suurel hulgal kokku kompileeritud faile. Isikut vÃµi isikuid, kes sellist tarkvara kirjutavad kutsutakse <b>edasiarendsue pakkujateks</b>. Nemad kompileerivad oma koodi ja kirjutavad juhised, kuidas seda paigaldada. Need arendajad tÃ¶Ã¶tavad selle kallal, et luua uut ja uuendada juba esisteerivat tarkvata. Kui tarkvara on maailmaga jagamiseks valmis, saadetakse see paketihooldajatele, kes hoolitsevad selle eest, et tarkvara jÃµuaks lÃµppkasutajateni. Paketihooldajad hindavad, haldavad ja jagavad tarkvara pakettide kujul.
 
 ## Harjutus
 
-Selles peatükis harjutust ei ole.
+Selles peatÃ¼kis harjutust ei ole.
 
-## Küsimus
+## KÃ¼simus
 
-Küsimusi pole, liigu aga edasi.
+KÃ¼simusi pole, liigu aga edasi.
 
 ## Vastus
 
