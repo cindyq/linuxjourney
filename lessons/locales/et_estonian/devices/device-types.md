@@ -22,22 +22,22 @@ Tulbad vasakult paremale:
 <li>Ajatempel</li>
 <li>Seadme nimi</li>
 
-Meenutame, et *ls* käsu väljundi iga rea esimene bit kajastab faili tüüpi. Seadme faile märgistatakse järgmiselt:
+Meenutame, et *ls* käsu väljundi iga rea esimene bitt kajastab faili tüüpi. Seadmefaile märgistatakse järgmiselt:
 
 <ul>
 <li>c - tähemärk</li>
-<li>b - blokk</li>
+<li>b - plokk</li>
 <li>p - toru</li>
 <li>s - sokkel</li>
 </ul>
 
 <b>Tähemärgiseadmed</b>
 
-Need seadmed töötlevad andmeid, kuid üks tähemärk korraga. Paljud pseudoseadmed (/dev/null) on sellised. Pseudoseadmed ei ole tegelikult füüsiliselt arvutiga ühendatud, kuid võimaldavad operatsioonisüsteemil paremini toimida.
+Need seadmed töötlevad andmeid, kuid üks tähemärk korraga. Paljud pseudoseadmed (nt */dev/null*) on sellised. Pseudoseadmed ei ole tegelikult füüsiliselt arvutiga ühendatud, kuid võimaldavad operatsioonisüsteemil paremini toimida.
 
-<b>Blokkseadmed</b>
+<b>Plokkseadmed</b>
 
-Need seadmed töötlevad andmeid suurte fikseeritud suurustega blokkidena. Tavapäraselt on sellised andmeblokke kasutavad seadmed näitkes kõvakettad ja failisüsteemid.
+Need seadmed töötlevad andmeid suurte fikseeritud suurustega plokkidena. Tavapäraselt on sellised andmeplokke kasutavad seadmed näiteks kõvakettad ja failisüsteemid.
 
 <b>Toruseadmed</b>
 
@@ -45,7 +45,7 @@ Nimega toruoperaatorid võimaldavad kahel või enamal protsessil omavahel suheld
 
 <b>Sokkelseadmed</b>
 
-Sokkelseadmed hõlbutavad protsesside vahelist suhtlust. Erinevalt toruseadmetest võivad need suhelda üheaegselt mitme protsesssiga.
+Sokkelseadmed hõlbustavad protsessidevahelist suhtlust. Erinevalt toruseadmetest võivad need suhelda üheaegselt mitme protsesssiga.
 
 <b>Seadmete iseloomustamine</b>
 

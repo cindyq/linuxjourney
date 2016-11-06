@@ -1,4 +1,4 @@
-# lsusb, lspci, lssci
+# lsusb, lspci, lsscsi
 
 ## Tunni sisu
 
@@ -15,6 +15,27 @@ Just nagu *ls* kuvab nimekirja failidest ja kataloogidest, on olemas sarnased t�
 <b>SCSI seadmete kuvamine</b>
 
 <pre>$ lsscsi </pre>
+
+Vajadusel paigaldamiseks:
+<pre>sudo apt update && sudo apt install lsscsi && sudo apt clean</pre>
+
+<b>Plokkseadmete kuvamine</b>
+
+<pre>$ lsblk</pre>
+
+Plokkseadmete failis체steeme n채eb v천tmega f:
+<pre>$ lsblk -f</pre>
+
+<b>Veel v천imalusi</b>
+
+Protsessoriarhitektuuri info:
+<pre>$ lscpu</pre>
+
+PCMCIA seadmete info:
+<pre>$ lspcmcia</pre>
+
+Riistvara info (soovitav k채ivitada superkasutajana):
+<pre>$ sudo lshw</pre>
 
 ## Harjutus
 
