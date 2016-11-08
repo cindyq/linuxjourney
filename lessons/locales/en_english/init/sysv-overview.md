@@ -2,13 +2,13 @@
 
 ## Lesson Content
 
-The main purpose of init is to start and stop essential processes on the system. There are three major implementations of init in Linux, System V, Upstart and systemd. In this lesson, we're going to go over the most traditional version of init, System V init or Sys V (pronounced as 'System Five'). 
+The main purpose of init is to start and stop essential processes on the system. There are three major implementations of init in Linux: System V, Upstart and systemd. In this lesson, we're going to go over the most traditional version of init, System V init or Sys V (pronounced as 'System Five'). 
 
 To find out if you are using the Sys V init implementation, if you have an /etc/inittab file you are most likely running Sys V. 
 
-Sys V starts and stops processes sequentially, so let's say if you wanted to start up a service named foo-a, well before foo-b can work, you have to make sure foo-a is already running. Sys V does that with scripts, these scripts start and stop services for us, we can write our own scripts or most of the time use the ones that are already built in the operating system and are used to load essential services. 
+Sys V starts and stops processes sequentially. So, let's say if you wanted to start up a service named foo-a well before foo-b can work. In order to do so, you have to make sure foo-a is already running. Sys V does that with scripts that start and stop services for us. We can write our own scripts or, most of the time, use the ones that are already built in the operating system to load essential services. 
 
-The pros of using this implementation of init, is that it's relatively easy to solve dependencies, since you know foo-a comes before foo-b, however performance isn't great because usually one thing is starting or stopping at a time. 
+The pros of using this implementation of init is that it's relatively easy to solve dependencies, since you know foo-a comes before foo-b. Performance, however, isn't great because usually one thing is starting or stopping at a time. 
 
 When using Sys V, the state of the machine is defined by runlevels which are set from 0 to 6. These different modes will vary depending on the distribution, but most of the time will look like the following: 
 
@@ -33,7 +33,7 @@ K10updates  K80openvpn
 
 We see when we switch to runlevel 0 or shutdown mode, our machine will try to run a script to kill the updates services and then openvpn. To find out what runlevel your machine is booting into, you can see the default runlevel in the /etc/inittab file. You can also change your default runlevel in this file as well. 
 
-One thing to note, System V is slowly getting replaced, maybe not today, or even years from now. However, you may see runlevels come up in other init implementations, this is primarily to support those services that are only started or stopped using System V init scripts. 
+One thing to note is that System V is slowly getting replaced. Maybe not today, or even years from now. However, you may see runlevels come up in other init implementations, and this is primarily to support those services that are only started or stopped using System V init scripts. 
 
 ## Exercise
 
