@@ -19,14 +19,14 @@ Iga rida esindab ühte failisüsteemi. Väljad on järgmised:
 <li>Failisüsteemi tüüp</li>
 <li>Valikud - teised ühendumise võimalused, vaata lisainfo jaoks *man* lehekülge</li>
 <li>*Dump* - *dump* haldusvahend kasutab seda, et otsustada millal on vaja luua varukoopiat, see võiks olla vaikimisi 0</li>
-<li>*Pass* - *fsck* kasutab seda, et ostusada, mis järjekorras failisüsteeme kontrollima peab. Kui väärtus on null siis failisüsteemi ei kotrollita</li>
+<li>*Pass* - *fsck* kasutab seda, et ostustada, mis järjekorras failisüsteeme kontrollima peab. Kui väärtus on null siis failisüsteemi ei kotrollita</li>
 </ul>
 
 Kirje lisamiseks tuleb lihtsalt muuta /etc/fstab faili sisu kasutades ülaltoodud korrektset süntaksit. Selle faili muutmisega tasub olla ettevaatlik, selle ära rikkumisega on täitsa võimalik muuta oma elu natuke raskemaks.
 
 ## Harjutus
 
-Lisada kõnealune USB pulk /etc/fstab'i. Kui arvut taaskäivitada peaks see olema endiselt ühendatud.
+Lisada kõnealune USB pulk /etc/fstab'i. Kui arvuti taaskäivitada peaks see olema endiselt ühendatud.
 
 ## Küsimus
 
