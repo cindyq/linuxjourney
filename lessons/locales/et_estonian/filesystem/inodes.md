@@ -6,7 +6,7 @@ Meenutame, et failisüsteem koosneb failidest ning andmebaasist mis neid haldab.
 
 <b>Mis on infosõlm?</b>
 
-Infosõlm on kirje infosõlmede tabelis ja neid on iga faili kohta üks. See kirjeldab daili kohta kõike, näiteks:
+Infosõlm on kirje infosõlmede tabelis ja neid on iga faili kohta üks. See kirjeldab faili kohta kõike, näiteks:
 
 <ul>
 <li>Faili tüüp - tavaline fail, kataloog, tähemärgi seade jne </li>
@@ -20,13 +20,13 @@ Infosõlm on kirje infosõlmede tabelis ja neid on iga faili kohta üks. See kir
 <li>Faili andmeblokkide viidad - kõige olulisem!</li>
 </ul>
 
-Kokkuvõtvalt hoitakse infosõlmedes kõike peale failinime ja faili enda.
+Kokkuvõtvalt hoitakse infosõlmedes kõike peale faili nime ja faili enda.
 
 <b>Millal infosõlmed luuakse?</b>
 
-Sel hetkel kui luuakse failisüsteem eraldatakse ka ruum infosõlmedele. Sõltuvalt ketta omadustest ja muudest näitajatest otsustavad algoritmid kui palju ruumi infosõlmedele vaja on. Tõenäoliselt on iga kasutaja mingil hetkel näinud veateateid otsalõppeva kettaruumi kohta. Sama võib juhtuda ka infosõlmede (kuigi vähem levinud). Kui infosõlmedel saab ruum otsa, ei saa rohkem faile luua. Jätame meelde, et andmete varundamismaht sõltub nii andmetest kui andmebaasist.
+Sel hetkel kui luuakse failisüsteem eraldatakse ka ruum infosõlmedele. Sõltuvalt ketta omadustest ja muudest näitajatest otsustavad algoritmid kui palju ruumi infosõlmedele vaja on. Tõenäoliselt on iga kasutaja mingil hetkel näinud veateateid otsalõppeva kettaruumi kohta. Sama võib juhtuda ka infosõlmedega (kuigi vähem levinud). Kui infosõlmedel saab ruum otsa, ei saa rohkem faile luua. Jätame meelde, et andmete varundamismaht sõltub nii andmetest kui andmebaasist.
 
-Et kuvada kui palju infosõlmi veel on võimalik kasutada, kasutame käsku <b>df -i</b>.
+Käsuga <b>df -i</b> kuvame kui palju infosõlmi veel on võimalik kasutada.
 
 <b>Informatsioon infosõlmede kohta</b>
 
@@ -56,7 +56,7 @@ Change: 2016-01-20 20:13:06.191675843 -0800
 
 <b>Kuidas leiavad infosõlmed faili asukoha?</b>
 
-Kasutaja teab, et tema failid on kusagil ketta peal. Kahjuks aga neid ilmselt ei salvestatud kenasti üksteisei järel ning siin on olulised infosõlmed, sest need osutavad tegelikele andmeblokkidele. Tüüpilises failisüsteemis (kuna need kõik ei tööta ühtemoodi) on igal infosõlmel 15 viita. Esimesed 12 ostuavad otseselt andmeblokkidele. 13. viitab blokile, kus on viidad veel rohkematele blokkidele, 14. ostuab veel ühele viitade alamblokile ja 15 viitab ka jälle blokile viitadele. Arusaadavalt on see veidi keeruline. Asjade nõndaviisi organiseerimise põhjus peitub soovis et kõik infosõlmed oleksid ühesuguse struktuuriga kuid oleksid võimelised viitama erineva suurusega failidele. Väiksema faili leiab kiiremini esimeste 12 viidaga, kuid suuremaid faile tuleb juba otsida alamviitadega. Mõlemal juhul on infosõlme struktuur ikkagi sama.
+Kasutaja teab, et tema failid on kusagil ketta peal. Kahjuks aga neid ilmselt ei salvestatud kenasti üksteisei järel ning siin on olulised infosõlmed, sest need osutavad tegelikele andmeblokkidele. Tüüpilises failisüsteemis (kuna need kõik ei tööta ühtemoodi) on igal infosõlmel 15 viita. Esimesed 12 ostuavad otseselt andmeblokkidele. 13. viitab blokile, kus on viidad veel rohkematele blokkidele, 14. ostuab veel ühele viitade alamblokile ja 15 viitab ka jälle blokile viitadele. Arusaadavalt on see veidi keeruline. Asjade nõndaviisi organiseerimise põhjus peitub soovis, et kõik infosõlmed oleksid ühesuguse struktuuriga, kuid oleksid samal ajal võimelised viitama erineva suurusega failidele. Väiksema faili leiab kiiremini esimese 12 viidaga, kuid suuremaid faile tuleb juba otsida alamviitadega. Mõlemal juhul on infosõlme struktuur ikkagi sama.
 
 ## Harjutus
 
