@@ -45,11 +45,11 @@ Number  Start   End     Size    Type      File system     Flags
 
 Kuvatakse seadme saadavalolevad partitsioonid. <b>*start*</b> ja <b>*end*</b> punktid tuvastavad, kus kettajagu täpselt asub. Neid tuleb hästi valida.
 
-<b>Kettajagude loomind</b>
+<b>Kettajagude loomine</b>
 
 <pre>mkpart primary 123 4567</pre>
 
-Nüüd tuleb valida *star* ja *end* ning luua kettajagu. Tuleb ka täpsustada, millist tüüp partitsioon luukase, vastavalt kasutatavale tabelile.
+Nüüd tuleb valida *start* ja *end* ning luua kettajagu. Tuleb ka täpsustada, millist tüüp partitsioon luukase, vastavalt kasutatavale tabelile.
 
 <b>Kettajao suuruse muutmine</b>
 
@@ -57,7 +57,7 @@ Kui ruumist jääb puudu võib kettajagude suurusi ka muuta.
 
 <pre>resize 2 1245 3456</pre>
 
-Tuleb valida partitsiooni number ja soovitavad *star* ja *end* punktid.
+Tuleb valida partitsiooni number ja soovitavad *start* ja *end* punktid.
 
 *Parted* on väga võimas tööriist ning kettajagude loomisel tasuks olla ettevaatlik.
 
