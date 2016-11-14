@@ -4,13 +4,13 @@
 
 Enne kui failisüsteemi sisu vaadata saab, peab selle külgeühendama. Selleks on aga vaja teada seadme otsiteekonda, failisüsteemi tüüpi ja haakepunkti. Haakepunkt on see kataloog, kuhu failisüsteem on ühendatud. Seega, seadmeid ühendatakse haakepunkti.
 
-Esiteks tuleb luua haakepunkt, meie näite puhul <b>mkdir /mydrive</b>.
+Esiteks tuleb luua haakepunkt, meie näite puhul <b>mkdir /minupulk</b>.
 
 <pre>$ sudo mount -t ext4 /dev/sdb2 /minupulk</pre>
 
-Täpselt nii lihtne! Kui nüüd minna /minupulk, võib näha failisüsteemi sisu. <b>-t</b> täpsustab failisüsteemi tüübi, seejäral on seadme asukoht ja lõpuks haakepunkt.
+Täpselt nii lihtne! Kui nüüd minna /minupulk, võib näha failisüsteemi sisu. <b>-t</b> täpsustab failisüsteemi tüübi, seejärel on seadme asukoht ja lõpuks haakepunkt.
 
-Seadme haakepunktist lahti ühendamiseks:
+Seadme haakepunktist lahtiühendamiseks:
 
 <pre>$ sudo umount /minupulk 
 või 
@@ -35,7 +35,7 @@ Enamjaolt ei ole tarvis kasutada UUID'd, seadme nime on plaju mugavam kasutada j
 
 ## Harjutus
 
-Vaadata *mount* ja *unmount* käskude man lehekülge ning tutvuda nende kasutamise võimalustega.
+Vaadata *mount* ja *unmount* käskude *man* lehekülge ning tutvuda nende kasutamise võimalustega.
 
 ## Küsimus
 
