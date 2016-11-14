@@ -10,11 +10,11 @@ pete@icebox:~$ ls -li
 141 drwxr-xr-x 2 pete pete 6 Jan 20 20:01 Documents
 </pre>
 
-*ls* käsu kolmandast väljas on siiamaani sujuvalt üle lipsatud, kuid see kuvabki viitade arvu. Viitade arv see tähendab püsiviitade arvu. See ilmselt ei seostu hetkel millegagi, kuid kohe räägitakse viitadest lähemalt.
+*ls* käsu kolmandast väljast on siiamaani sujuvalt üle lipsatud, kuid see kuvabki viitade arvu. Viitade arv see tähendab püsiviitade arvu. See ilmselt ei seostu hetkel millegagi, kuid kohe räägitakse viitadest lähemalt.
 
 <b>Nimeviidad</b>
 
-Windows operatsioonisüsteemis on olemas *shortcut*'id. Ned polegi muud kui failide aliased. Kui midagi teha originaaliga, võib *shortcut* potensiaalselt katki minna. Linuxis vastavad nendele nimeviidad, mis lubavad viidata failine selle nime põhjal. Teist tüüpi viidad Linuxis on püsiviidad, mis on ise mingid failid, millel on ühendus infosõlmega. Vaatame seda asja praktiliselt alustades nimeviitadega.
+Windows operatsioonisüsteemis on olemas *shortcut*'id. Ned polegi muud kui failide aliased. Kui midagi teha originaaliga, võib *shortcut* potensiaalselt katki minna. Linuxis vastavad nendele nimeviidad, mis lubavad viidata failile selle nime põhjal. Teist tüüpi viidad Linuxis on püsiviidad, mis on failid, millel on ühendus infosõlmega. Vaatame seda asja praktiliselt alustades nimeviitadega.
  
 <pre>
 pete@icebox:~/Desktop$ echo 'minufail' > minufail
@@ -30,7 +30,7 @@ total 12
 93403 lrwxrwxrwx 1 pete pete 6 Jan 21 21:39 minufailiviit -> minufail
 </pre>
 
-On loodud nimeviit nimega minufailiviit mis viitab minufailile. Märkame, et hoolimata sellest, et nimeviidad on kõigest failid, mis viitavad failinimedele, määratakse neile infosõlme number. Kui muuta nimeviita, muutub ka fail ise. Infosõlme numbrid on failisüsteemi piires unikaalsed, mis thendab, et kahte ühesugust numbrit olla ei saa ning samuti ei saa viidata failile mõnes teises failisüsteemis tema infosõlme numbriga. Nimeviit aga ei kasuta seda numbrit vaid faili nime, mistõttu neid saab kasutada läbi erinevate failisüsteemide.
+On loodud nimeviit nimega minufailiviit, mis viitab minufailile. Märkame, et hoolimata sellest, et nimeviidad on kõigest failid, mis viitavad failinimedele, määratakse neile infosõlme number. Kui muuta nimeviita, muutub ka fail ise. Infosõlme numbrid on failisüsteemi piires unikaalsed, mis tähendab, et kahte ühesugust numbrit olla ei saa ning samuti ei saa viidata failile mõnes teises failisüsteemis tema infosõlme numbriga. Nimeviit aga ei kasuta seda numbrit vaid faili nime, mistõttu neid saab kasutada läbi erinevate failisüsteemide.
 
 <b>Püsiviidad</b>
 
@@ -47,7 +47,7 @@ total 16
 93401 -rw-rw-r-- 2 pete pete 8 Jan 21 21:36 minupüsiviit
 </pre>
 
-Püsiviit loov uue faili, mis viitab samale infosõlmele, mistõttu kui ma muudan midagi minufail2's või minupüsiviidas, siis on muudatus nähtav mõlemas. Kui aga kustutada minufail2, on fail ikkagi minupüsiviida kaudu kättesaadav. Siin kohal tuleb mängu viitade arv. Viitade arv kajastab infosõlme püsiviitade arvu. Kui fail eemaldada, siis see number väheneb. Infosõlm ise kustutatakse siis kui kõik püsiviidad sellele on kustutatud. Värskelt loodud faili viitade arv on 1, kunainfosõlmele vastab ainult see fai. Erinevalt nimeviitades, püsiviidad ei  toimi läbi mitme failisüsteemi. Need on failisüsteemis unikaalsed.
+Püsiviit loov uue faili, mis viitab samale infosõlmele, mistõttu kui ma muudan midagi minufail2's või minupüsiviidas, siis on muudatus nähtav mõlemas. Kui aga kustutada minufail2, on fail ikkagi minupüsiviida kaudu kättesaadav. Siin kohal tuleb mängu viitade arv. Viitade arv kajastab infosõlme püsiviitade arvu. Kui fail eemaldada, siis see number väheneb. Infosõlm ise kustutatakse siis kui kõik püsiviidad sellele on kustutatud. Värskelt loodud faili viitade arv on 1, kuna infosõlmele vastab ainult see fail. Erinevalt nimeviitadest, püsiviidad ei toimi läbi mitme failisüsteemi. Need on failisüsteemis unikaalsed.
 
 <b>Nimeviida loomine</b>
 
@@ -61,7 +61,7 @@ Et luua nimeviita, kasutatakse *ln* käsku koos võtmega -s (nagu sümboolne) ni
 <pre>
 $ ln mingifail mingiviit</pre>
 
-Sarnaselt nimeviida loomisele kui -s jätakse seekord ära.
+Sarnaselt nimeviida loomisele kui -s jäetakse seekord ära.
 
 ## Harjutus
 
