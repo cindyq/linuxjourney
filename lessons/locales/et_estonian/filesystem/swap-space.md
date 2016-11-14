@@ -2,36 +2,36 @@
 
 ## Tunni sisu
 
-Eelmises näites tutvustati partitsioonitabelit. Vaatame seda uuesti, aga nüüd täpsemalt seda rida:
+Eelmises nÃ¤ites tutvustati partitsioonitabelit. Vaatame seda uuesti, aga nÃ¼Ã¼d tÃ¤psemalt seda rida:
 
 <pre>
 Number  Start   End     Size    Type      File system     Flags
  5      6861MB  7380MB  519MB   logical   linux-swap(v1)
 </pre>
 
-Mis on see *swap* ehk saaleala? Saaleala kasutatakse virtuaalmälule süsteemis ruumi eraldamiseks. Kui mälumahtu hakkab väheks jääma, kasutab süsteem seda kettajagu, et saalida sinna tegevusetute protsesside mälu "tükid". Nõnda ei saa mälu otsa.
+Mis on see *swap* ehk saaleala? Saaleala kasutatakse virtuaalmÃ¤lule sÃ¼steemis ruumi eraldamiseks. Kui mÃ¤lumahtu hakkab vÃ¤heks jÃ¤Ã¤ma, kasutab sÃ¼steem seda kettajagu, et saalida sinna tegevusetute protsesside mÃ¤lu "tÃ¼kid". NÃµnda ei saa mÃ¤lu otsa.
 
 <b>Kettajao kasutamine saalimiseks</b>
 
-Ütleme, et soovime seada oma /dev/sdb2 partitsiooni saalealaks.
+Ãœtleme, et soovime seada oma /dev/sdb2 partitsiooni saalealaks.
 
 <ol>
 <li>Esiteks tuleb teha kindlaks, et kettajaol ei asu midagi</li>
-<li>Käivitada: mkswap /dev/sdb2 et inistialiseerida saalealad</li>
-<li>Käivitada: swapon /dev/sdb2 mis lubab saaleseadme</li>
-<li>Kui on soovitud, et saalealad püsiksid käivitamisel, on vaja lisada ka kirje /etc/fstab faili. Kasutada tuleb sw failisüsteemi tüüpi.</li>
+<li>KÃ¤ivitada: mkswap /dev/sdb2 et inistialiseerida saalealad</li>
+<li>KÃ¤ivitada: swapon /dev/sdb2 mis lubab saaleseadme</li>
+<li>Kui on soovitud, et saalealad pÃ¼siksid kÃ¤ivitamisel, on vaja lisada ka kirje /etc/fstab faili. Kasutada tuleb sw failisÃ¼steemi tÃ¼Ã¼pi.</li>
 <li>Saaleala eemaldamiseks: swapoff /dev/sdb2</li>
 </ol>
 
-Tavaliselt peaks määrama kaks korda nii palju ruumi saalealale, kui on mälu, kuid tänapäeva süsteemid on juba piisavalt võimsad, et RAM'ist täitsa piisab.
+Tavaliselt peaks mÃ¤Ã¤rama kaks korda nii palju ruumi saalealale, kui on mÃ¤lu, kuid tÃ¤napÃ¤eva sÃ¼steemid on juba piisavalt vÃµimsad, et RAM'ist tÃ¤itsa piisab.
 
 # Harjutus
 
 Luua USB pulga vabale alale saaleala.
 
-## Küsimus
+## KÃ¼simus
 
-Millise käusga lubatakse seadmel saaleala?
+Millise kÃ¤suga lubatakse seadmel saaleala?
 
 ## Vastus
 
