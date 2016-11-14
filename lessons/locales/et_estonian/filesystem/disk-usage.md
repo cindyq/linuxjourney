@@ -16,9 +16,9 @@ df käsk kuvab kettakasutuse hetkel ühendatud failisüsteemide kohta. Parameete
 
 <pre>$ du -h</pre>
 
-Käsk kuvab hetke asukohta kataloogi kasutusinfo. Juurkataloogi piilumiseks võib kasutada <b>du -h /</b>, kuid see väljund võib osutuda natuke liiga mahukaks.
+Käsk kuvab hetke asukoha kataloogi kasutusinfo. Juurkataloogi piilumiseks võib kasutada <b>du -h /</b>, kuid see väljund võib osutuda natuke liiga mahukaks.
 
-Mõlema käsu süntaks on teineteisele nii sarnane, et võib osutuda raskeks pidada meeles, kumba kasutada. Inglisekeele oskajaid aitab pidada meeles, et vaba kettaruumi näitab *<b>disk</b> is <b>free</b>* ehk df ja kasutatud kettaruumi *<b>disk usage</b>* ehk du.  
+Mõlema käsu süntaks on teineteisele nii sarnane, et võib osutuda raskeks pidada meeles, kumba kasutada. Inglise keele oskajaid aitab pidada meeles, et vaba kettaruumi näitab *<b>disk</b> is <b>free</b>* ehk df ja kasutatud kettaruumi *<b>disk usage</b>* ehk du.  
 
 ## Harjutus
 
