@@ -12,7 +12,7 @@ Kui kettajaod on tekitatud GPT'ga, võib alglaaduri asukoht olla pisut teine.
 
 <b>UEFI</b>
 
-Peale BIOS'e on võimalik süsteemi alglaadida ka UEFI'ga (*Unified extensible firmware interface*). UEFI disainiti BIOS'e järglaseks ja enamus riistvara kasutab tänapäeval just seda. Machintoshi masinad on EFI alglaadimist kasutanud juba aastaid ja MS Windows on samuti suuremalt jaolt üle läinud UEFI peale. GPT formaat oli ette nähtud kasutamiseks koos EFI'ga. Sellegi poolest ei ole tingimata vaja EFI't kui alglaadida GPT ketas, sest GPT ketta esimene sektor on reserveeritud "kaitsvale MBR'ile", et võimaldada BIOS-põhise masina alglaadimist.
+Peale BIOS'e on võimalik süsteemi alglaadida ka UEFI'ga (*Unified extensible firmware interface*). UEFI disainiti BIOS'i järglaseks ja enamus riistvara kasutab tänapäeval just seda. Machintoshi masinad on EFI alglaadimist kasutanud juba aastaid ja MS Windows on samuti suuremalt jaolt üle läinud UEFI peale. GPT formaat oli ette nähtud kasutamiseks koos EFI'ga. Sellegi poolest ei ole tingimata vaja EFI't kui alglaadida GPT ketas, sest GPT ketta esimene sektor on reserveeritud "kaitsvale MBR'ile", et võimaldada BIOS-põhise masina alglaadimist.
 
 UEFI hoiab kogu käivitamisega seotud informatsiooni .efi failis, mida hoitakse spetsiaalsel kettajaol: EFI süsteemipartitsioonil riistvaras. Sellel kettajaol asub alglaadur. UEFI'l on palju parandusi ja edasiminekuid võrreldes BIOS'ega. Peatükid jätkuvad seda silmas pidades.
 
