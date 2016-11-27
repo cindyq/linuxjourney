@@ -25,7 +25,7 @@ Alglaaduri ülesanne on laadida tuum, kuid kust seda leida? Selleks peab vaatama
  
 ## Harjutus
 
-Minna 'e' klahviga käivitusmeüüsse ja tutvuda sealsete seadetega.
+Minna 'e' klahviga käivitusmenüüsse ja tutvuda sealsete seadetega.
 
 ## Küsimus
 
