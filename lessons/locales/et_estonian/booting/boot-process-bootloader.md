@@ -5,14 +5,14 @@
 Alglaaduri peamised kohustused on:
 
 <ul>
-<li>Operatsioonisüsteemi alglaadimine, võib kasutada ka mitte-Linux süsteemide korral</li>
+<li>Operatsioonisüsteemi alglaadimine, kasutatakse ka mitte-Linux süsteemide korral</li>
 <li>Valida kasutamiseks tuum</li>
 <li>Täpsustada tuuma parameetrid</li>
 </ul>
 
 Kõige tavalisem Linuxi alglaadur on GRUB, kuid on veel palju teisi nagu LILO, efilinux, coreboot, SYSLINUX jt. Sellel kursusel aga piirdutakse GRUB'iga.
 
-Alglaaduri ülesanne on laadida tuum, kuid kust seda leida? Selleks peab vaatama tuuma parameetreid. Parameetrid leiab GRUB'i menüüst, kui vajutada süsteemi käivitumisel 'e' klahvi. Kui kasutaja ei ole ka GRUB'i, pole tarvis muretseda, aglaadimise parameetrid käikse selles peatükis üle:
+Alglaaduri ülesanne on laadida tuum, kuid kust seda leida? Selleks peab vaatama tuuma parameetreid. Parameetrid leiab GRUB'i menüüst, kui hoida all süsteemi käivitumisel *SHIFT* klahvi GRUB'i menüü avamiseks (kui arvutis on vaid Linux) ja soovitud menüükirje muutmiseks 'e' klahvi. Kui kasutaja ei ole ka GRUB'i, pole tarvis muretseda, aglaadimise parameetrid käikse selles peatükis üle:
 
 <ul>
 <li>initrd - Täpsustab algse RAM ketta asukoha (täpsemalt järgises peatükis)</li>
@@ -25,7 +25,7 @@ Alglaaduri ülesanne on laadida tuum, kuid kust seda leida? Selleks peab vaatama
  
 ## Harjutus
 
-Minna 'e' klahviga käivitusmeüüsse ja tutvuda sealsete seadetega.
+Minna 'e' klahviga käivitusmenüü kirje muutmisesse ja tutvuda sealsete seadetega.
 
 ## Küsimus
 
