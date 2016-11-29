@@ -16,7 +16,7 @@ Ketta jagamiseks on saadaval palju tööriistu:
 <li>gdisk - sisuliselt fdisk kuid toetab ainult GPT'd ja mitte MBR'i (MBR teisendatakse koheselt GPT tabeliks, millega andmed kustuvad kuna kettajagude tabel kirjutatakse üle - kui kohe programmist väljuda q ja Enter abil ja mitte salvestada siis muudatused ei jõustu). Salvestab muudatused alles siis kui selleks vastav käsklus antakse.</li>
 </ul>
 
-Meie kasutame *parted*'i enda kettajagude loomiseks. Ütleme, et ühendatud USB seadme nimi on /dev/sdb2.
+Meie kasutame *parted*'i enda kettajagude loomiseks. Ütleme, et ühendatud USB seadme nimi on */dev/sdb2*.
 
 *Parted* on väga võimas tööriist ning kettajagude loomisel tasuks olla ettevaatlik. Erinevalt teistest kettajagude loomise programmidest salvestab *parted* **koheselt** (automaatselt, küsimata) loodud kettajaod. Seetõttu tasub olla ettevaatlik ja näiteks virtuaalarvutis esmalt järgi proovida kus ei ole riski andmete kogemata kustutamiseks.
 
@@ -60,7 +60,7 @@ Võimalus on kasutada nii detsimaal- kui binaarühikuid (lisainfo *parted'i* see
 <pre>mkpart primary 123 4567</pre>
 
 Nüüd tuleb valida *start* ja *end* ning luua kettajagu. Tuleb ka täpsustada, millist tüüp kettajagu luuakse, vastavalt kasutatavale kettajagude tabelile (tavaliselt MBR või GPT).<br>
-*start* ja *end* on asukohad kettal, nt 4GB või 10%. Negatiivsed väärtused tähendavad arvestamist ketta lõpust alates alguse poole. Kusjuures *end* tähistab kettajao lõppu ketta algusest, mitte *start* väärtusest nagu võiks arvata. Näiteks -1s tähistab täpselt viimast sektorit. *mkpart* tekitab kettajao ilma failisüsteemita.
+*start* ja *end* on asukohad kettal, nt 4GB või 10%. Negatiivsed väärtused tähendavad arvestamist ketta lõpust alates alguse poole. Kusjuures *end* tähistab kettajao lõppu ketta algusest, mitte *start* väärtusest nagu võiks arvata. Näiteks -1s tähistab täpselt viimast sektorit. *mkpart* tekitab kettajao ilma failisüsteemita. Lisainfo *help mkpart*.
 
 <b>Kettajao suuruse muutmine</b>
 
