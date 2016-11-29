@@ -4,11 +4,14 @@
 
 Järgnevalt harjutame failisüsteemi praktilist poolt USB pulga peal. Ei tasu muretseda kui endal ühte käepärast ei ole, võib ka lihtsalt kaasa mõelda.
 
-Esiteks on tarvis tekitada kettajaod. Selle jaoks on saadaval palju tööriistu:
+Esiteks on tarvis tekitada kettajaod. Kettajagude loomisega tasub olla *eriti ettevaatlik* kuna sellega võidakse kustutada kettajagu, mis sisaldab olulisi andmeid. Samuti uue kettajagude tabeli loomisega kustuvad kõik kettajaod ja seal olnud andmed. Mõned programmid salvestavad tehtud muudatused automaatselt, kinnitust küsimata. Ohutum on eelnevalt näiteks mõnes virtuaalarvutis järgi proovida ja kui ollakse juba kindlad siis tasub alles päris ketaste jagamise juurde minna. Virtuaalarvutisse (nt [VirtualBox](https://www.virtualbox.org/)) on lihtne lisada virtuaalseid kõvakettaid ja neid siis jagudeks jagada.
+
+Ketta jagamiseks on saadaval palju tööriistu:
 
 <ul>
 <li>fdisk - lihtne käsureapõhine tööriist, vaikimisi kasutab MBR'i kuid toetab ka GPT'd. Salvestab muudatused alles siis kui selleks vastav käsklus antakse.</li>
-<li>parted - käsureapõhine tööriist, mis toetab nii MBR'i kui GPT'd. NB! Salvestab koheselt (automaatselt, küsimata) tehtud muudatused! Olla ettevaatlik!</li>
+<li>cfdisk - lihtne ja osaliselt pseudograafiline programm kettajagude ja nende tabelite haldamiseks. Salvestab muudatused alles siis kui selleks vastav käsklus antakse.</li>
+<li>parted - käsureapõhine tööriist, mis toetab nii MBR'i kui GPT'd. NB! Salvestab koheselt (automaatselt, küsimata) tehtud muudatused! Olla eriti ettevaatlik!</li>
 <li>gparted - parted'i graafiline versioon</li>
 <li>gdisk - sisuliselt fdisk kuid toetab ainult GPT'd ja mitte MBR'i (MBR teisendatakse koheselt GPT tabeliks, millega andmed kustuvad kuna kettajagude tabel kirjutatakse üle - kui kohe programmist väljuda q ja Enter abil ja mitte salvestada siis muudatused ei jõustu). Salvestab muudatused alles siis kui selleks vastav käsklus antakse.</li>
 </ul>
