@@ -2,11 +2,11 @@
 
 ## Tunni sisu
 
-Kõvakettaid saab jagada kettajagudeks, luues nõnda blokkseadmeid. Meenutame seadmeid */dev/sda1* ja */dev/sda2*, */dev/sda* on üks terve ketas, kuid */dev/sda1* on selle ketta esimene jagu. Kettajaod on äärmiselt kasulikud andemete eraldamiseks. Kui on tarvis mingit konkreetset failisüsteemi kasutada, võib kerge vaevaga luua kettale jao, selle asemel, et kogu kettale seda ühte failisüsteemi rakendada.
+Kõvakettaid saab jagada kettajagudeks, luues nõnda blokkseadmeid. Meenutame seadmeid */dev/sda1* ja */dev/sda2*, */dev/sda* on üks terve ketas kuid */dev/sda1* on selle ketta esimene jagu. Kettajaod on äärmiselt kasulikud andmete eraldamiseks. Kui on tarvis mingit konkreetset failisüsteemi kasutada, võib kerge vaevaga luua kettale jao selle asemel, et kogu kettale seda ühte failisüsteemi rakendada.
 
 <b>Kettajagude tabel</b>
 
-Igal kettal on kettajagude tabel, mis edastab süsteemile infot ketta jaotamise kohta. Seal on info selle kohta, kus kettajagu algab ja lõppeb, millised jaod on alglaetavad, millised sektorid on millistele jagudele määratud jne. Kasutatakse kahte põhilist kettajagude tabelit: *Master Boot Record* (MBR) ja *GUID Partition Table* (GPT).
+Igal kettal on kettajagude tabel, mis edastab süsteemile infot ketta jaotamise kohta. Seal on info selle kohta, kus kettajagu algab ja lõppeb, millised jaod on alglaaditavad, millised sektorid on millistele jagudele määratud jne. Kasutatakse kahte põhilist kettajagude tabelit: *Master Boot Record* (MBR) ja *GUID Partition Table* (GPT).
 
 <b>Kettajagu ehk partitsioon</b>
 
@@ -17,8 +17,8 @@ Kettajagudest koosnevad kettad võimaldavad organiseerida andmeid. Kui kettas on
 <ul>
 <li>Traditsiooniline kettajagude tabel, kasutatud kui standardit</li>
 <li>Võimaldab primaarseid, laiendatud ja loogilisi kettajagusid</li>
-<li>MBR'i piiranguks on kuni neli primaarset kettajagu</li>
-<li>Täiendavaid kettajagusid saab luua muutes primaarne kettajagu laiendatuks (lubatud on ainult üks laiendatud kettajagu). Selle sisse saab omakorda luua loogilisi kettajagusid.</li> 
+<li>MBR'i piiranguks on kuni neli primaarset kettajagu, peavad asetsema järjest</li>
+<li>Täiendavaid kettajagusid saab luua muutes viimase primaarse kettajao laiendatuks (lubatud on ainult üks laiendatud kettajagu). Selle sisse saab omakorda luua kuni 128 loogilist kettajagu.</li> 
 <li>Toetatud on kuni 2 terabaidised kettad</li>
 </ul>
 
@@ -28,8 +28,8 @@ Kettajagudest koosnevad kettad võimaldavad organiseerida andmeid. Kui kettas on
 <li>GPT'st on saamas kettajagude vallas uus standard</li>
 <li>Koosseisu kuuluvad vaid ühte tüüpi kettajaod, mida võib luua hulgaliselt (teoreetiliselt piiramatult, praktikas tavaliselt kuni 128)</li>
 <li>Igal kettajaol on globaalselt unikaalne ID (GUID)</li>
-<li>Kasutatakse peamiselt koos UEFI põhise alglaadimisega (detailsemalt tuleb sellest juttu hilisemal kursusel)</li> 
-<li>maksimaalne ketta suurus 8 ZiB (9,4 ZB) (2^64 sektorit, 512B sektori kohta), tavaliselt kasutatav EXT4 failisüsteem toetab kuni 1 EiB, btrfs kuni 16 EiB, ZFS kuni 256 ZiB kettajagusid. Loogiliste kettagruppide haldussüsteem LVM2 toetab kuni 8 EiB kettajagusid</li>
+<li>Kasutatakse peamiselt koos UEFI-põhise alglaadimisega (detailsemalt tuleb sellest juttu hilisemal kursusel)</li> 
+<li>maksimaalne ketta suurus 8 ZiB (9,4 ZB) (2<sup>64</sup> sektorit, 512B sektori kohta), tavaliselt kasutatav EXT4 failisüsteem toetab kuni 1 EiB, btrfs kuni 16 EiB, ZFS kuni 256 ZiB kettajagusid. Loogiliste kettagruppide haldussüsteem LVM2 toetab kuni 8 EiB kettajagusid</li>
 </ul>
 
 Lisainfo:<br>
