@@ -2,7 +2,7 @@
 
 ## Tunni sisu
 
-Kui tahame alglaadimisel automaatselt failisüsteemi külgehaakida, tuleb see lisada faili nimega /etc/fstab (hääldatakse "eff ess täb"), mis on lühend "failisüsteemi tabelist". Selles failis hoitakse püsivalt ühendatud failisüsteeme.
+Kui tahame alglaadimisel automaatselt failisüsteemi külgehaakida, tuleb see lisada faili nimega */etc/fstab* (hääldatakse "eff ess täb"), mis on lühend "failisüsteemi tabelist". Selles failis hoitakse püsivalt ühendatud failisüsteeme.
 
 <pre>
 pete@icebox:~$ cat /etc/fstab
@@ -14,10 +14,10 @@ UUID=22c3d34b-467e-467c-b44d-f03803c2c526 none            swap    sw            
 Iga rida esindab ühte failisüsteemi. Väljad on järgmised:
 
 <ul>
-<li>UUID - Seade ID</li>
+<li>UUID - Seadme unikaalne tunnus (ID)</li>
 <li>Haakepunkt - Kataloog, kuhu seade on ühendatud</li>
 <li>Failisüsteemi tüüp</li>
-<li>Valikud - teised ühendumise võimalused, vaata lisainfo jaoks *man* lehekülge</li>
+<li>Valikud - teised ühendumise võimalused, vaata lisainfo jaoks *man fstab* lehekülge</li>
 <li>*Dump* - *dump* haldusvahend kasutab seda, et otsustada millal on vaja luua varukoopiat, see võiks olla vaikimisi 0</li>
 <li>*Pass* - *fsck* kasutab seda, et ostustada, mis järjekorras failisüsteeme kontrollima peab. Kui väärtus on null siis failisüsteemi ei kotrollita</li>
 </ul>
