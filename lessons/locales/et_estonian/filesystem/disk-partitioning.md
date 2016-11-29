@@ -55,7 +55,7 @@ Kuvatakse seadme saadavalolevad kettajaod. <b>*start*</b> ja <b>*end*</b> punkti
 <b>Kettajagude loomine</b>
 Esmalt tuleks valida ühikud, mida *start* ja *end* puhul (ja ka teiste käskude puhul) kasutada (saab igal ajal muuta), näiteks:
 <pre>unit GiB</pre>
-Võimalus on kasutada nii detsimaal- kui binaarühikuid (lisainfo *parted'i* sees: *help unit*). Teine võimalus on soovitud ühikud kohe *start* ja *end* väärtuste juures iga kord välja kirjutada.
+Võimalus on kasutada nii [detsimaal- kui binaarühikuid](https://en.wikipedia.org/wiki/Binary_prefix) (lisainfo *parted'i* sees: *help unit*). Teine võimalus on soovitud ühikud kohe *start* ja *end* väärtuste juures iga kord välja kirjutada.
 
 <pre>mkpart primary 123 4567</pre>
 
