@@ -12,7 +12,7 @@ Igal kettal on kettajagude tabel, mis edastab süsteemile infot ketta jaotamise 
 
 Kettajagudest koosnevad kettad võimaldavad organiseerida andmeid. Kui kettas on mitmeks osaks jaotatud, ei tohi need omavahel kattuda. Kui kettal on ala, mis ei kuulu kettajao alla, nimetatakse seda vabaks alaks. Kettajao tüüp sõltub kettajagude tabelist. Kettajaol võib olla failisüsteem või võib seda kasutada teisel otstarbel, näiteks  saalimiseks (sellest räägitakse ka varsti).
 
-<i>MBR</i>
+<i>MBR (Master Boot Record)</i>
 
 <ul>
 <li>Traditsiooniline kettajagude tabel, kasutatud kui standardit</li>
@@ -22,10 +22,10 @@ Kettajagudest koosnevad kettad võimaldavad organiseerida andmeid. Kui kettas on
 <li>Toetatud on kuni 2 terabaidised kettad</li>
 </ul>
 
-<i>GPT</i>
+<i>GPT (GUID Partition Table)</i>
 
 <ul>
-<li>_GUID Partition Table_ist (GPT) on saamas kettajagude vallas uus standard</li>
+<li>GPT'st on saamas kettajagude vallas uus standard</li>
 <li>Koosseisu kuuluvad vaid ühte tüüpi kettajaod, mida võib luua hulgaliselt (teoreetiliselt piiramatult, praktikas tavaliselt kuni 128)</li>
 <li>Igal kettajaol on globaalselt unikaalne ID (GUID)</li>
 <li>Kasutatakse peamiselt koos UEFI põhise alglaadimisega (detailsemalt tuleb sellest juttu hilisemal kursusel)</li> 
