@@ -84,7 +84,7 @@ Luua USB kettale kettajaod nõnda, et pool kettast oleks ext4 ja teine pool vaba
 
 ## Küsimus
 
-Millise käsuga luuakse *parted* tööriistas uus kettajagu?
+Millise käsuga luuakse *parted* programmis uus kettajagu?
 
 ## Vastus
 
