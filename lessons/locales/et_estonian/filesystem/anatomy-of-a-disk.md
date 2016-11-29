@@ -33,9 +33,9 @@ Kettajagudest koosnevad kettad võimaldavad organiseerida andmeid. Kui kettas on
 </ul>
 
 Lisainfo:<br>
-http://unix.stackexchange.com/questions/33555/what-is-the-max-partition-supported-in-linux
-http://en.wikipedia.org/wiki/Comparison_of_file_systems
-https://en.wikipedia.org/wiki/Binary_prefix
+http://unix.stackexchange.com/questions/33555/what-is-the-max-partition-supported-in-linux  
+http://en.wikipedia.org/wiki/Comparison_of_file_systems  
+https://en.wikipedia.org/wiki/Binary_prefix  
 
 <b> Failisüsteemi struktuur</b>
 
