@@ -17,7 +17,7 @@ Iga rida esindab ühte failisüsteemi. Väljad on järgmised:
 <li>UUID - seadme unikaalne tunnus (ID) ehk siis milline kettajagu ühendatakse</li>
 <li>Haakepunkt - kataloog, kuhu seade on ühendatud</li>
 <li>Failisüsteemi tüüp</li>
-<li>Valikud - ühendumise parameetrid, vaata lisainfo jaoks *man fstab* lehekülge</li>
+<li>Valikud - ühendumise parameetrid, vaata lisainfo jaoks man fstab lehekülge</li>
 <li>Dump - dump haldusvahend kasutab seda, et otsustada millal on vaja luua varukoopiat, see võiks olla vaikimisi 0</li>
 <li>Pass - fsck kasutab seda, et otsustada, mis järjekorras failisüsteeme kontrollima peab. Kui väärtus on null siis failisüsteemi ei kotrollita</li>
 </ul>
