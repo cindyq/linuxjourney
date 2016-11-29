@@ -25,7 +25,7 @@ Mis on see *swap* ehk saaleala? Saaleala kasutatakse virtuaalmälule süsteemis 
 <li>Saaleala lahtiühendamiseks: sudo swapoff /dev/sdb2</li>
 </ol>
 
-<b>Saaleala haakimine alglaadimisel</b>
+<b>Saaleala haakimine alglaadimisel</b><br>
 Teeme esmalt varukoopia */etc/fstab* failist juhuks kui midagi peaks valesti minema (hiljem saab sellest taastada):
 <pre>
 sudo cp /etc/fstab /etc/fstab-original
