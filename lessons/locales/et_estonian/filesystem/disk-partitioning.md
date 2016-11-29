@@ -10,10 +10,12 @@ Esiteks on tarvis tekitada kettajaod. Selle jaoks on saadaval palju tööriistu:
 <li>fdisk - lihtne käsureapõhine tööriist, vaikimisi kasutab MBR'i kuid toetab ka GPT'd</li>
 <li>parted - käsureapõhine tööriist, mis toetab nii MBR'i kui GPT'd</li>
 <li>gparted - parted'i graafiline versioon</li>
-<li>gdisk - fdisk, kuid toetab ainult GPT'd ja mitte MBR'i (MBR teisendatakse koheselt GPT tabeliks - kui kohe väljuda ja mitte salvestada siis muudatused ei jõustu)</li>
+<li>gdisk - sisuliselt fdisk kuid toetab ainult GPT'd ja mitte MBR'i (MBR teisendatakse koheselt GPT tabeliks, millega andmed kustuvad kuna kettajagude tabel kirjutatakse üle - kui kohe programmist väljuda q ja Enter abil ja mitte salvestada siis muudatused ei jõustu)</li>
 </ul>
 
 Meie kasutame *parted*'i enda kettajagude loomiseks. Ütleme, et ühendatud USB seadme nimi on /dev/sdb2.
+
+*Parted* on väga võimas tööriist ning kettajagude loomisel tasuks olla ettevaatlik. Erinevalt teistest kettajagude loomise programmidest salvestab *parted* **koheselt** (automaatselt, küsimata) loodud kettajaod. Seetõttu tasub olla ettevaatlik ja näiteks virtuaalarvutis esmalt järgi proovida kus ei ole riski andmete kogemata kustutamiseks.
 
 <b>Käivitame *parted*</b>
 
@@ -63,7 +65,7 @@ Kui ruumist jääb puudu võib kettajagude suurusi ka muuta. Seda ei võimalda m
 
 Tuleb valida kettajao number ja soovitavad *start* ja *end* punktid.
 
-*Parted* on väga võimas tööriist ning kettajagude loomisel tasuks olla ettevaatlik. Erinevalt teistest kettajagude loomise programmidest salvestab *parted* **koheselt** loodud kettajaod. Seetõttu tasub olla ettevaatlik ja näiteks virtuaalarvutis esmalt järgi proovida kus ei ole riski andmete kogemata kustutamiseks.
+*Parted* on väga võimas tööriist ning kettajagude loomisel tasuks olla ettevaatlik. Erinevalt teistest kettajagude loomise programmidest salvestab *parted* **koheselt** (automaatselt, küsimata) loodud kettajaod. Seetõttu tasub olla ettevaatlik ja näiteks virtuaalarvutis esmalt järgi proovida kus ei ole riski andmete kogemata kustutamiseks.
 
 ## Harjutus
 
