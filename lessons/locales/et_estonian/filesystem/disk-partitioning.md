@@ -34,7 +34,7 @@ Seadmega töötamiseks, tuleb see valida nime järgi.
 Kui käivitada *parted* kohe koos seadmevalikuga siis ei pea eraldi seadet valima:
 <pre>sudo parted /dev/sdb2</pre>
 
-<b>Jooksva kettajagude tabeli kuvamine</b>
+<b>Jooksva kettajagude tabeli kuvamine</b><br>
 Võib kirjutada välja *print* või kasutada lühikäsku *p*
 <pre>
 (parted) print                                                            
