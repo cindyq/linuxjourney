@@ -31,7 +31,7 @@ Teeme esmalt varukoopia */etc/fstab* failist juhuks kui midagi peaks valesti min
 sudo cp /etc/fstab /etc/fstab-original
 </pre>
 
-Vaatame esmalt UUID ja suuname selle faili */etc/fstab*
+Vaatame saaleala kettajao UUID ja suuname selle faili */etc/fstab*
 <pre>
 sudo blkid | grep swap | grep sdb2 >> /etc/fstab
 </pre>
@@ -40,6 +40,7 @@ Seejärel kustutame üleliigse ja lisame vajaliku, et jääks lõpuks selline ri
 <pre>
 UUID=xxxxxxxxxxx    none    swap    sw    0 0
 </pre>
+Jälgime, et UUID väärtus ei oleks jutumärkides ning muu ülearune info oleks kustutatud.
 
 Juhul kui on vaja eelnevalt tehtud varukoopiast taastada:
 <pre>
