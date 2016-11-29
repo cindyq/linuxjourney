@@ -9,7 +9,7 @@ Esiteks on tarvis tekitada kettajaod. Selle jaoks on saadaval palju tööriistu:
 <ul>
 <li>fdisk - lihtne käsureapõhine tööriist, vaikimisi kasutab MBR'i kuid toetab ka GPT'd</li>
 <li>parted - käsureapõhine tööriist, mis toetab nii MBR'i kui GPT'd</li>
-<li>gparted - *parted*'i graafiline versioon</li>
+<li>gparted - parted'i graafiline versioon</li>
 <li>gdisk - fdisk, kuid toetab ainult GPT'd ja mitte MBR'i (MBR teisendatakse koheselt GPT tabeliks - kui kohe väljuda ja mitte salvestada siis muudatused ei jõustu)</li>
 </ul>
 
