@@ -6,6 +6,8 @@ Järgnevalt harjutame failisüsteemi praktilist poolt USB pulga peal. Ei tasu mu
 
 Esiteks on tarvis tekitada kettajaod. Kettajagude loomisega tasub olla **eriti ettevaatlik** kuna sellega võidakse kustutada kettajagu, mis sisaldab olulisi andmeid. Samuti uue kettajagude tabeli loomisega kustuvad kõik kettajaod ja seal olnud andmed. **Seetõttu tasub enne kettajagudega tegelemist teha andmetest varukoopia**. Mõned programmid salvestavad tehtud muudatused automaatselt, kinnitust küsimata. Algajatel tasub valida selline programm, mis kohe tehtud muudatusi ei salvesta. Ohutum on eelnevalt näiteks mõnes virtuaalarvutis järgi proovida ja kui ollakse juba kindlad siis tasub alles päris ketaste jagamise juurde minna. Virtuaalarvutisse (nt [VirtualBox](https://www.virtualbox.org/)'i keskkonnas) on lihtne lisada virtuaalseid kõvakettaid ja neid siis harjutamise mõttes jagudeks jagada.
 
+Olemasolevate ja loodud kettajagude vaatamiseks sobib ka *lsblk*. Failisüsteeme näeb ka *lsblk -f* abil.
+
 Ketta jagamiseks on saadaval palju tööriistu:
 
 <ul>
