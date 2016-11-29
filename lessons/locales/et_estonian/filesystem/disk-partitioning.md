@@ -88,4 +88,4 @@ Millise käsuga luuakse *parted* programmis uus kettajagu?
 
 ## Vastus
 
-mkpart
+*mkpart*
