@@ -24,6 +24,8 @@ Iga rida esindab ühte failisüsteemi. Väljad on järgmised:
 
 Kirje lisamiseks tuleb lihtsalt muuta */etc/fstab* faili sisu kasutades ülaltoodud korrektset süntaksit. Selle faili muutmisega tasub olla ettevaatlik, selle rikkumisega on võimalik muuta oma elu natuke raskemaks.
 
+Võimalike vigade vältimiseks tasub käsuga *sudo mount -a* abil lisatud kuid veel haakimata kettajaod külge haakida. Kui need juba olid haagitud siis eelnevalt lahti haakida (*sudo umount /dev/sdb2* vms). Kui vigu ei olnud siis haagiti lisatud kettajaod külge. Vastasel korral teavitatakse vigadest ja need on võimalik enne arvuti taaskäivitamist, sulgemist ära parandada. Käsuga *mount* või siis *mount | column -t* abil näeb külgehaagitud kettaid. Võib *grep* abil filtreerida: *mount | grep sdb*, *mount | column -t | grep sdb* vms.
+
 ## Harjutus
 
 Lisada kõnealune USB pulk */etc/fstab*'i. Kui arvuti taaskäivitada peaks see olema endiselt ühendatud.
