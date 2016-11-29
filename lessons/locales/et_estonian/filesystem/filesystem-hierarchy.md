@@ -2,7 +2,7 @@
 
 ## Tunni sisu
 
-Praeguseks võiks juba kataloogisüsteem üsna tuttav olla, kui see aga nii ei ole, siis peagi saab kõik selgeks. Kuigi failisüsteemid erinevad üksteisest struktuuri poolest, peaksid nad suuremal määral siiski alluma failisüsteemi hierarhia standardile.
+Praeguseks võiks juba kataloogisüsteem üsna tuttav olla. Kui see aga nii ei ole siis peagi saab kõik selgeks. Kuigi failisüsteemid erinevad üksteisest struktuuri poolest, peaksid nad suuremal määral siiski alluma [failisüsteemi hierarhia standardile](http://refspecs.linuxfoundation.org/fhs.shtml).
 
 Vaatame käsuga <b>ls -l /</b> juurkataloogi sisu. Kuigi võib esineda väikeseid erandeid, peaks see välja nägema enamasti selline:
 
@@ -29,7 +29,7 @@ Vaatame käsuga <b>ls -l /</b> juurkataloogi sisu. Kuigi võib esineda väikesei
 
 ## Harjutus
 
-Vaadata /usr kataloogi sisse ja tutvuda seal hoitava informatsiooniga.
+Vaadata */usr* kataloogi sisse ja tutvuda seal hoitava informatsiooniga.
 
 ## Küsimus
 
@@ -37,4 +37,4 @@ Millises kataloogis hoitakse logifaile?
 
 ## Vastus
 
-/var
+*/var*
