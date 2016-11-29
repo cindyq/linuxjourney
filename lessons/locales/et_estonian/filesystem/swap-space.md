@@ -13,7 +13,7 @@ Mis on see *swap* ehk saaleala? Saaleala kasutatakse virtuaalmälule süsteemis 
 
 <b>Kettajao kasutamine saalimiseks</b>
 
-Ütleme, et soovime seada oma /dev/sdb2 kettajao saalealaks.
+Ütleme, et soovime seada */dev/sdb2* kettajao saalealaks.
 
 <ol>
 <li>Esiteks tuleb teha kindlaks, et kettajaol ei asu midagi</li>
