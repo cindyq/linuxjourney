@@ -2,7 +2,7 @@
 
 ## Tunni sisu
 
-Meenutame, et failisüsteem koosneb failidest ning andmebaasist mis neid haldab. Seda andmebaasti nimetatakse infosõlmede tabeliks.
+Meenutame, et failisüsteem koosneb failidest ning andmebaasist mis neid haldab. Seda andmebaasi nimetatakse infosõlmede tabeliks.
 
 <b>Mis on infosõlm?</b>
 
@@ -12,12 +12,12 @@ Infosõlm on kirje infosõlmede tabelis ja neid on iga faili kohta üks. See kir
 <li>Faili tüüp - tavaline fail, kataloog, tähemärgi seade jne </li>
 <li>Omanik</li>
 <li>Grupp</li>
-<li>Ligipääsu õigused</li>
-<li>Ajatemplid - mtime (viimase muutmise aeg), ctime (viimane atribuudi muutmise aeg), atime (viimatise ligipäsu aeg)</li>
+<li>Ligipääsuõigused</li>
+<li>Ajatemplid - mtime (viimase muutmise aeg), ctime (viimane atribuudi muutmise aeg), atime (viimatise ligipääsu aeg)</li>
 <li>Püsiviitade arv</li>
 <li>Faili maht</li>
-<li>Failile eraldatud blokkide arv</li>
-<li>Faili andmeblokkide viidad - kõige olulisem!</li>
+<li>Failile eraldatud plokkide arv</li>
+<li>Faili andmeplokkide viidad - kõige olulisem!</li>
 </ul>
 
 Kokkuvõtvalt hoitakse infosõlmedes kõike peale faili nime ja faili enda.
@@ -56,7 +56,7 @@ Change: 2016-01-20 20:13:06.191675843 -0800
 
 <b>Kuidas leiavad infosõlmed faili asukoha?</b>
 
-Kasutaja teab, et tema failid on kusagil ketta peal. Kahjuks aga neid ilmselt ei salvestatud kenasti üksteisei järel ning siin on olulised infosõlmed, sest need osutavad tegelikele andmeblokkidele. Tüüpilises failisüsteemis (kuna need kõik ei tööta ühtemoodi) on igal infosõlmel 15 viita. Esimesed 12 ostuavad otseselt andmeblokkidele. 13. viitab blokile, kus on viidad veel rohkematele blokkidele, 14. ostuab veel ühele viitade alamblokile ja 15 viitab ka jälle blokile viitadele. Arusaadavalt on see veidi keeruline. Asjade nõndaviisi organiseerimise põhjus peitub soovis, et kõik infosõlmed oleksid ühesuguse struktuuriga, kuid oleksid samal ajal võimelised viitama erineva suurusega failidele. Väiksema faili leiab kiiremini esimese 12 viidaga, kuid suuremaid faile tuleb juba otsida alamviitadega. Mõlemal juhul on infosõlme struktuur ikkagi sama.
+Kasutaja teab, et tema failid on kusagil ketta peal. Kahjuks aga neid ilmselt ei salvestatud kenasti üksteisei järel ning siin on olulised infosõlmed, sest need osutavad tegelikele andmeplokkidele. Tüüpilises failisüsteemis (kuna need kõik ei tööta ühtemoodi) on igal infosõlmel 15 viita. Esimesed 12 osutavad otseselt andmeplokkidele. 13. viitab plokile, kus on viidad veel rohkematele plokkidele, 14. osutab veel ühele viitade alamplokile ja 15 viitab ka jälle plokile viitadele. Arusaadavalt on see veidi keeruline. Asjade nõndaviisi organiseerimise põhjus peitub soovis, et kõik infosõlmed oleksid ühesuguse struktuuriga, kuid oleksid samal ajal võimelised viitama erineva suurusega failidele. Väiksema faili leiab kiiremini esimese 12 viidaga, kuid suuremaid faile tuleb juba otsida alamviitadega. Mõlemal juhul on infosõlme struktuur ikkagi sama.
 
 ## Harjutus
 
@@ -68,4 +68,4 @@ Kuidas kuvada, mitu infosõlme veel süsteemis järgi on?
 
 ## Vastus
 
-df -i
+*df -i*
