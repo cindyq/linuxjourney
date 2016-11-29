@@ -10,7 +10,7 @@ Filesystem     1K-blocks    Used Available Use% Mounted on
 /dev/sda1       6.2G  2.3G  3.6G  40% /
 </pre>
 
-*df* käsk kuvab kettakasutuse hetkel ühendatud failisüsteemide kohta. Parameeter *-h* muudab väljundi inimloetavaks ehk siis näidatakse ühikuid tuntud detsimaaleesliidetega (mega-, giga-, tera-). Kuvatakse seade, kasutatud ja kasutamata maht, haakepunkt.
+*df* käsk kuvab kettakasutuse hetkel ühendatud failisüsteemide kohta. Parameeter *-h* muudab väljundi inimloetavaks ehk siis näidatakse ühikuid tuntud detsimaaleesliidetega (mega-, giga-, tera-). Kuvatakse seade, kogumaht, kasutatud ja kasutamata maht, kasutuse protsent, kettajao haakepunkt.
 
 Ütleme, et ketas hakkab täis saama ning tahetakse teada, millised failid või kataloogid võtavad palju ruumi. Selleks on käsk <b>du</b> (*disk usage*).
 
