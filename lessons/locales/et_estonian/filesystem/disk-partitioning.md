@@ -2,15 +2,15 @@
 
 ## Tunni sisu
 
-Järgnevalt harjutame failisüsteemi praktilist poolt USB pulga peal. Ei tasu muretseda, kui endal ühte käepärast ei ole, võib ka lihtsalt kaasa mõelda.
+Järgnevalt harjutame failisüsteemi praktilist poolt USB pulga peal. Ei tasu muretseda kui endal ühte käepärast ei ole, võib ka lihtsalt kaasa mõelda.
 
 Esiteks on tarvis tekitada kettajaod. Selle jaoks on saadaval palju tööriistu:
 
 <ul>
-<li>fdisk - lihtne käsureapõhine tööriist, ei toeta GPT'd</li>
-<li>parted - see käsureapõhine tööriist toetab nii MBR'i kui GPT'd</li>
+<li>fdisk - lihtne käsureapõhine tööriist, vaikimisi kasutab MBR'i kuid toetab ka GPT'd</li>
+<li>parted - käsureapõhine tööriist, mis toetab nii MBR'i kui GPT'd</li>
 <li>gparted - *parted*'i graafiline versioon</li>
-<li>gdisk - fdisk, kuid toetab ainult GPT'd ja mitte MBR'i</li>
+<li>gdisk - fdisk, kuid toetab ainult GPT'd ja mitte MBR'i (MBR teisendatakse koheselt GPT tabeliks - kui kohe väljuda ja mitte salvestada siis muudatused ei jõustu)</li>
 </ul>
 
 Meie kasutame *parted*'i enda kettajagude loomiseks. Ütleme, et ühendatud USB seadme nimi on /dev/sdb2.
@@ -19,7 +19,7 @@ Meie kasutame *parted*'i enda kettajagude loomiseks. Ütleme, et ühendatud USB 
 
 <pre>$ sudo parted</pre>
 
-Sisenenud *parted* tööriista, võib sisestada käske seadme partitsioonide loomiseks.
+Sisenenud *parted* tööriista, võib sisestada käske seadme kettajagude loomiseks. Abiinfot saab tippides *help* ja vajutades *Enter*.
 
 <b>Seadme valimine</b>
 
@@ -27,7 +27,7 @@ Sisenenud *parted* tööriista, võib sisestada käske seadme partitsioonide loo
 
 Seadmega töötamiseks, tuleb see valida nime järgi.
 
-<b>Jooksva partitsioonitabeli kuvamine</b>
+<b>Jooksva kettajagude tabeli kuvamine</b>
 
 <pre>
 (parted) print                                                            
@@ -43,23 +43,27 @@ Number  Start   End     Size    Type      File system     Flags
  6      7381MB  21.5GB  14.1GB  logical   xfs
 </pre>
 
-Kuvatakse seadme saadavalolevad partitsioonid. <b>*start*</b> ja <b>*end*</b> punktid tuvastavad, kus kettajagu täpselt asub. Neid tuleb hästi valida.
+Kuvatakse seadme saadavalolevad kettajaod. <b>*start*</b> ja <b>*end*</b> punktid tuvastavad, kus kettajagu asub. Neid tuleb täpselt valida. *end* tähistab kettajao lõppu ketta algusest, mitte *start* väärtusest nagu võiks arvata.
 
 <b>Kettajagude loomine</b>
+Esmalt tuleks valida ühikud, mida *start* ja *end* puhul (ja ka teiste käskude puhul) kasutada (saab igal ajal muuta), näiteks:
+<pre>unit GiB</pre>
+Võimalus on kasutada nii detsimaal- kui binaarühikuid (lisainfo *parted'i* sees: *help unit*).
 
 <pre>mkpart primary 123 4567</pre>
 
-Nüüd tuleb valida *start* ja *end* ning luua kettajagu. Tuleb ka täpsustada, millist tüüp partitsioon luukase, vastavalt kasutatavale tabelile.
+Nüüd tuleb valida *start* ja *end* ning luua kettajagu. Tuleb ka täpsustada, millist tüüp kettajagu luuakse, vastavalt kasutatavale kettajagude tabelile (tavaliselt MBR või GPT).<br>
+*start* ja *end* on asukohad kettal, nt 4GB või 10%. Negatiivsed väärtused tähendavad arvestamist ketta lõpust alates alguse poole. Kusjuures *end* tähistab kettajao lõppu ketta algusest, mitte *start* väärtusest nagu võiks arvata. Näiteks -1s tähistab täpselt viimast sektorit. *mkpart* tekitab kettajao ilma failisüsteemita.
 
 <b>Kettajao suuruse muutmine</b>
 
-Kui ruumist jääb puudu võib kettajagude suurusi ka muuta.
+Kui ruumist jääb puudu võib kettajagude suurusi ka muuta. Seda ei võimalda mitte iga kettajagude loomise programm kuid *parted* võimaldab.
 
 <pre>resize 2 1245 3456</pre>
 
-Tuleb valida partitsiooni number ja soovitavad *start* ja *end* punktid.
+Tuleb valida kettajao number ja soovitavad *start* ja *end* punktid.
 
-*Parted* on väga võimas tööriist ning kettajagude loomisel tasuks olla ettevaatlik.
+*Parted* on väga võimas tööriist ning kettajagude loomisel tasuks olla ettevaatlik. Erinevalt teistest kettajagude loomise programmidest salvestab *parted* **koheselt** loodud kettajaod. Seetõttu tasub olla ettevaatlik ja näiteks virtuaalarvutis esmalt järgi proovida kus ei ole riski andmete kogemata kustutamiseks.
 
 ## Harjutus
 
