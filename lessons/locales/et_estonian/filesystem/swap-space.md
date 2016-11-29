@@ -17,8 +17,8 @@ Mis on see *swap* ehk saaleala? Saaleala kasutatakse virtuaalmälule süsteemis 
 
 <ol>
 <li>Esiteks tuleb teha kindlaks, et kettajaol ei asu midagi</li>
-<li>Käivitada: swapon -s et tuvastada kasutuses olevad saalealad</li>
-<li>Käivitada: lsblk -f | grep swap et tuvastada ka kasutuses mitteolevad saalealad - neil puudub lõpus haakepunkt [SWAP]</li>
+<li>Tuvasta kasutuses olevad saalealad: swapon -s</li>
+<li>Tuvastamaks ka kasutuses mitteolevad saalealad - neil puudub lõpus haakepunkt [SWAP]: lsblk -f | grep swap</li>
 <li>Saaleala loomine: sudo mkswap /dev/sdb2</li>
 <li>Saaleala haakimine: sudo swapon /dev/sdb2</li>
 <li>Kui on soovitud, et saalealad püsiksid käivitamisel, on vaja lisada ka kirje /etc/fstab faili. Kasutada tuleb sw failisüsteemi tüüpi.</li>
