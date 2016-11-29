@@ -7,10 +7,10 @@ Järgnevalt harjutame failisüsteemi praktilist poolt USB pulga peal. Ei tasu mu
 Esiteks on tarvis tekitada kettajaod. Selle jaoks on saadaval palju tööriistu:
 
 <ul>
-<li>fdisk - lihtne käsureapõhine tööriist, vaikimisi kasutab MBR'i kuid toetab ka GPT'd</li>
-<li>parted - käsureapõhine tööriist, mis toetab nii MBR'i kui GPT'd</li>
+<li>fdisk - lihtne käsureapõhine tööriist, vaikimisi kasutab MBR'i kuid toetab ka GPT'd. Salvestab muudatused alles siis kui selleks vastav käsklus antakse.</li>
+<li>parted - käsureapõhine tööriist, mis toetab nii MBR'i kui GPT'd. NB! Salvestab koheselt (automaatselt, küsimata) tehtud muudatused! Olla ettevaatlik!</li>
 <li>gparted - parted'i graafiline versioon</li>
-<li>gdisk - sisuliselt fdisk kuid toetab ainult GPT'd ja mitte MBR'i (MBR teisendatakse koheselt GPT tabeliks, millega andmed kustuvad kuna kettajagude tabel kirjutatakse üle - kui kohe programmist väljuda q ja Enter abil ja mitte salvestada siis muudatused ei jõustu)</li>
+<li>gdisk - sisuliselt fdisk kuid toetab ainult GPT'd ja mitte MBR'i (MBR teisendatakse koheselt GPT tabeliks, millega andmed kustuvad kuna kettajagude tabel kirjutatakse üle - kui kohe programmist väljuda q ja Enter abil ja mitte salvestada siis muudatused ei jõustu). Salvestab muudatused alles siis kui selleks vastav käsklus antakse.</li>
 </ul>
 
 Meie kasutame *parted*'i enda kettajagude loomiseks. Ütleme, et ühendatud USB seadme nimi on /dev/sdb2.
