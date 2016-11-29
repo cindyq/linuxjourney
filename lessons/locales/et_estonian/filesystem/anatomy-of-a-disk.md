@@ -65,7 +65,7 @@ Number  Start   End     Size    Type      File system     Flags
 
 GPT kasutab kettajagudel ainult unikaalseid ID'sid.
 
-pre>
+<pre>
 Model: Thumb Drive (scsi)
 Disk /dev/sdb: 4041MB
 Sector size (logical/physical): 512B/512B
