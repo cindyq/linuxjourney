@@ -46,7 +46,7 @@ total 16
 93401 -rw-rw-r-- 2 pete pete 8 Jan 21 21:36 minupüsiviit
 </pre>
 
-Püsiviit loob uue faili, mis viitab samale infosõlmele, mistõttu kui ma muudan midagi minufail2's või minupüsiviidas, siis on muudatus nähtav mõlemas. Kui aga kustutada minufail2, on fail ikkagi minupüsiviida kaudu kättesaadav. Siin kohal tuleb mängu viitade arv. Viitade arv kajastab infosõlme püsiviitade arvu. Kui fail eemaldada, siis see number väheneb. Infosõlm ise kustutatakse siis kui kõik püsiviidad sellele on kustutatud. Värskelt loodud faili viitade arv on 1, kuna infosõlmele vastab ainult see fail. Erinevalt sümbolviitadest, püsiviidad ei toimi läbi mitme failisüsteemi. Need on failisüsteemis unikaalsed.
+Püsiviit loob uue faili, mis viitab samale infosõlmele, mistõttu kui midagi muuta minufail2's või minupüsiviidas, siis on muudatus nähtav mõlemas. Kui aga kustutada minufail2, on fail ikkagi minupüsiviida kaudu kättesaadav. Siin kohal tuleb mängu viitade arv, mis kajastab infosõlme püsiviitade arvu. Kui fail eemaldada siis see number väheneb. Infosõlm ise kustutatakse siis kui kõik püsiviidad sellele on kustutatud. Värskelt loodud faili viitade arv on 1, kuna infosõlmele vastab ainult see fail. Erinevalt sümbolviitadest, püsiviidad ei toimi läbi mitme failisüsteemi. Need on failisüsteemis unikaalsed.
 
 <b>Sümbolviida loomine</b>
 
