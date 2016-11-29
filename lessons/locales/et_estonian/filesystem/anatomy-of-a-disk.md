@@ -4,21 +4,21 @@
 
 Kõvakettaid saab jagada kettajagudeks, luues nõnda blokkseadmeid. Meenutame seadmeid /dev/sda1 ja /dev/sda2, /dev/sda on üks terve ketas, kuid /dev/sda1 on selle ketta esimene jagu. Kettajaod on äärmiselt kasulikud andemete eraldamiseks. Kui on tarvis mingit konkreetset failisüsteemi kasutada, võib kerge vaevaga luua kettale jao, selle asemel, et kogu kettale seda ühte failisüsteemi rakendada.
 
-<b>Partitsioonitabel</b>
+<b>Kettajagude tabel</b>
 
-Igal kettal on partitsioonitabel, mis edastab süsteemile infot ketta jaotamise kohta. Seal on info selle kohta, kus kettajagu algab ja lõppeb, millised jaod on alglaetavad, millised sektorid on millistele jagudele määratud jne. Kasutatakse kahte põhilist partitsioonitabelit: *Master Boot Record* (MBR) ja *GUID Partition Table* (GPT).
+Igal kettal on kettajagude tabel, mis edastab süsteemile infot ketta jaotamise kohta. Seal on info selle kohta, kus kettajagu algab ja lõppeb, millised jaod on alglaetavad, millised sektorid on millistele jagudele määratud jne. Kasutatakse kahte põhilist kettajagude tabelit: *Master Boot Record* (MBR) ja *GUID Partition Table* (GPT).
 
 <b>Kettajagu ehk partitsioon</b>
 
-Kettajagudest koosnevad kettad võimaldavad organiseerida andmeid. Kui kettal on mitmeid partitsioone, ei tohi need omavahel kattuda. Kui kettal on ala, mis ei kuulu kettajao alla, nimetatakse seda vabaks alaks. Partitsiooni tüüp sõltub partitsioonitabelist. Kettajaol võib olla failisüsteem, või võib seda kasutada muul otstarbel, näiteks  saalimiseks (sellest räägitakse ka varsti).
+Kettajagudest koosnevad kettad võimaldavad organiseerida andmeid. Kui kettas on mitmeks osaks jaotatud, ei tohi need omavahel kattuda. Kui kettal on ala, mis ei kuulu kettajao alla, nimetatakse seda vabaks alaks. Kettajao tüüp sõltub kettajagude tabelist. Kettajaol võib olla failisüsteem või võib seda kasutada teisel otstarbel, näiteks  saalimiseks (sellest räägitakse ka varsti).
 
 <i>MBR</i>
 
 <ul>
-<li>Traditsiooniline partitsioonitabel, kasutatud kui standardit</li>
+<li>Traditsiooniline kettajagude tabel, kasutatud kui standardit</li>
 <li>Võimaldab primaarseid, laiendatud ja loogilisi kettajagusid</li>
-<li>MBR piiranguks on kuni neli primaarset kettajagu</li>
-<li>Täiendavaid partitioone saab luua muutes primaarne kettajagu laiendatuks (lubatud on ainult üks laiendatud kettajagu). Selle sisse saab omakorda luua loogilisi partitsioone.</li> 
+<li>MBR'i piiranguks on kuni neli primaarset kettajagu</li>
+<li>Täiendavaid kettajagusid saab luua muutes primaarne kettajagu laiendatuks (lubatud on ainult üks laiendatud kettajagu). Selle sisse saab omakorda luua loogilisi kettajagusid.</li> 
 <li>Toetatud on kuni 2 terabaidised kettad</li>
 </ul>
 
@@ -26,23 +26,28 @@ Kettajagudest koosnevad kettad võimaldavad organiseerida andmeid. Kui kettal on
 
 <ul>
 <li>*GUID Partition Table*ist (GPT) on saamas kettajagude vallas uus standard</li>
-<li>Koosseisu kuuluvad vaid ühte tüüpi kettajaod, mida võib luua hulgaliselt</li>
+<li>Koosseisu kuuluvad vaid ühte tüüpi kettajaod, mida võib luua hulgaliselt (teoreetiliselt piiramatult, praktikas tavaliselt kuni 128)</li>
 <li>Igal kettajaol on globaalselt unikaalne ID (GUID)</li>
 <li>Kasutatakse peamiselt koos UEFI põhise alglaadimisega (detailsemalt tuleb sellest juttu hilisemal kursusel)</li> 
+<li>maksimaalne ketta suurus 8 ZiB (9,4 ZB) (2^64 sektorit, 512B sektori kohta), tavaliselt kasutatav EXT4 failisüsteem toetab kuni 1 EiB, btrfs kuni 16 EiB, ZFS kuni 256 ZiB kettajagusid. Loogiliste kettagruppide haldussüsteem LVM2 toetab kuni 8 EiB kettajagusid</li>
 </ul>
+
+Lisainfo:
+http://unix.stackexchange.com/questions/33555/what-is-the-max-partition-supported-in-linux
+http://en.wikipedia.org/wiki/Comparison_of_file_systems
 
 <b> Failisüsteemi struktuur</b>
 
 Eelmisest peatükist on teada, et failisüsteem on failide ja kataloogide organiseeritud kogum. Kõige lihtsamalt võib seda vaadelda kui kooslust andmebaasist, mis haldab faile ja andmed ise. Kuid nüüd süveneme sellesse väheke detailsemalt.
 
 <ul>
-<li>Alglaadimise blokk - See asub failisüsteemi esimestes sektorites. Seda otseselt ei kasutata, vaid hoiab informatsiooni operatsiooni alglaadimise jaoks. Selliseid blokke on operatsiooni süsteemil tarvis vaid ühte. Kui partitsioone on rohke, leidub ka neil algalaadimise blokk, kuid paljusid ei kasutata.</li>
-<li>Superblokk - Üksik blokk, mis järgneb kohe alglaadimisblokile. Sisaldab infot failisüsteemi kohta: infosõlmetabel, loogiliste jagude ja failisüsteemi suurus. </li>
-<li>Infosõlmede tabel - Sellest võib mõelda kui andmebaasist, mis haldab andmeid (ei tasu muretsed, sellest tuleb terve peatükk). Iga faili või kataloogi kohta on selles tabelis unikaalne kirje. Failide kohta hoitakse erinevat informatsiooni. </li>
-<li>Andmeblokid - Failide ja kataloogide tegelikud andmed </li>
+<li>Alglaadimise plokk - See asub failisüsteemi esimestes sektorites. Seda otseselt ei kasutata, vaid hoiab informatsiooni operatsiooni alglaadimise jaoks. Selliseid plokke on operatsioonisüsteemil tarvis vaid ühte. Kui partitsioone on rohkem, leidub ka neil alglaadimise plokk kuid paljusid ei kasutata.</li>
+<li>Superplokk - üksik plokk, mis järgneb kohe alglaadimisplokile. Sisaldab infot failisüsteemi kohta: infosõlmetabel, loogiliste jagude ja failisüsteemi suurus. </li>
+<li>Infosõlmede tabel - sellest võib mõelda kui andmebaasist, mis haldab andmeid (ei tasu muretseda, sellest tuleb terve peatükk). Iga faili või kataloogi kohta on selles tabelis unikaalne kirje. Failide kohta hoitakse erinevat informatsiooni. </li>
+<li>Andmeplokid - failide ja kataloogide tegelikud andmed </li>
 </ul>
 
-Tutvume erinevate partitsioonitabelitega. All on näide kettajaost, mis kasutab MBR partitsioonitabelit (msdos). Kergesti on eristatavad primaarne, laiendatud ja loogilised kettajaod.
+Tutvume erinevate kettajagude tabelitega. All on näide kettajaost, mis kasutab MBR kettajagude tabelit (msdos). Kergesti on eristatavad primaarne, laiendatud ja loogilised kettajaod.
 
 <pre>
 pete@icebox:~$ sudo parted -l
