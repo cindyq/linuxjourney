@@ -16,7 +16,7 @@ Kui aga kasutada päevikuga failisüsteemi, kirjutatakse veel enne kui üldse mi
  
 <ul>
 <li>ext4 - Linuxile omaste failisüsteemide käesolev versioon, mis on ühilduv oma eelkäijate ext2 ja ext3 versioonidega. See toetab kettamahtusid kuni 1 eksabait ja failisuurusi kuni 16 terabaiti jpm. </li>
-<li>Btrfs - "*Better* või *Butter FS*" on Linuxis uus failisüsteem, millega tulevad kaasa hetktõmmised, varundamine, paranenud jõudlus jpm. See on laialdaselt kättesaadav kuid mitte veel lõpuni stabiilne või ühilduv. </li>
+<li>Btrfs - "Better või Butter FS" on Linuxis uus failisüsteem, millega tulevad kaasa hetktõmmised, varundamine, paranenud jõudlus jpm. See on laialdaselt kättesaadav kuid mitte veel lõpuni stabiilne või ühilduv. </li>
 <li>XFS - Kõrge jõudlusega päevikuga failisüsteem. Hea suurte failidega süsteemidele, näiteks meediaserverid.</li>
 <li>NTFS ja FAT - Windows'i failisüsteemid</li>
 <li>HFS+ - Macintosh'i failisüsteem</li>
