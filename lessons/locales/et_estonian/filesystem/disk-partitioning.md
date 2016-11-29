@@ -32,7 +32,7 @@ Sisenenud *parted* tööriista, võib sisestada käske seadme kettajagude loomis
 
 Seadmega töötamiseks, tuleb see valida nime järgi.
 Kui käivitada *parted* kohe koos seadmevalikuga siis ei pea eraldi seadet valima:
-<pre>parted /dev/sdb2</pre>
+<pre>sudo parted /dev/sdb2</pre>
 
 <b>Jooksva kettajagude tabeli kuvamine</b>
 Võib kirjutada välja *print* või kasutada lühikäsku *p*
