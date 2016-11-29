@@ -8,7 +8,7 @@ Esiteks tuleb luua haakepunkt, meie näite puhul <b>mkdir /minupulk</b>.
 
 <pre>$ sudo mount -t ext4 /dev/sdb2 /minupulk</pre>
 
-Täpselt nii lihtne! Kui nüüd minna /minupulk, võib näha failisüsteemi sisu. <b>-t</b> täpsustab failisüsteemi tüübi, seejärel on seadme asukoht ja lõpuks haakepunkt.
+Täpselt nii lihtne! Kui nüüd minna /minupulk, võib näha failisüsteemi sisu. <b>-t</b> täpsustab failisüsteemi tüübi, seejärel on haagitava seadme asukoht ja lõpuks haakepunkt.
 
 Seadme haakepunktist lahtiühendamiseks:
 
@@ -16,7 +16,7 @@ Seadme haakepunktist lahtiühendamiseks:
 või 
 $ sudo umount /dev/sdb2</pre>
 
-Meenutame, et tuum nimetab seadmeid nende tuvastamise järjekorras. Mis saab siis kui mingil põhjusel seamde nimi muutub pärast selle külgehaakimist? Õnneks võib kasutada ka seadme universaalselt unikaalset ID'd (UUID) nime asemel.
+Meenutame, et tuum nimetab seadmeid nende tuvastamise järjekorras. Mis saab siis kui mingil põhjusel seadme nimi muutub pärast selle külgehaakimist? Õnneks võib kasutada ka seadme universaalselt unikaalset ID'd (UUID) nime asemel.
 
 Blokkseadmete UUID'de kuvamiseks:
 
@@ -27,11 +27,11 @@ pete@icebox:~$ sudo blkid
 /dev/sda6: UUID="78d203a0-7c18-49bd-9e07-54f44cdb5726" TYPE="xfs" 
 </pre>
 
-Kuvatakse seadme nimi, vastav failisüsteemi tüüp ja UUID. Nüüd võib sadme lahtiühendamiseks kasutada:
+Kuvatakse seadme nimi, vastav failisüsteemi tüüp ja UUID. Nüüd võib seadme ühendamiseks kasutada:
 
 <pre>$ sudo mount UUID=130b882f-7d79-436d-a096-1e594c92bb76 /minupulk</pre>
 
-Enamjaolt ei ole tarvis kasutada UUID'd, seadme nime on plaju mugavam kasutada ja operatsiooni süsteem pigem ikkagi oskab tavalisemaid seadmeid nagu USB pulgad, lahtiühendada. Kui osutub vajalikuks mingit failisüsteemi alglaadimisel automaatselt külge haakida, justnagu näiteks teine kõva ketas, on vaja kasutada UUID'd. Sellest räägime järgmises peatükis.
+Enamjaolt ei ole tarvis kasutada UUID'd, seadme nime on palju mugavam kasutada ja operatsioonisüsteem pigem ikkagi oskab tavalisemaid seadmeid nagu USB pulgad, lahti ühendada. Kui osutub vajalikuks mingit failisüsteemi alglaadimisel automaatselt külge haakida, näiteks teine kõva ketas, on vaja kasutada UUID'd. Sellest räägime järgmises peatükis.
 
 ## Harjutus
 
@@ -43,4 +43,4 @@ Millise käsuga ühendatakse failisüsteem külge?
 
 ## Vastus
 
-mount
+*mount*
