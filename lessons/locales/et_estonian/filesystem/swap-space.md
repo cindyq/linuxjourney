@@ -46,7 +46,7 @@ Juhul kui on vaja eelnevalt tehtud varukoopiast taastada:
 sudo cp /etc/fstab-original /etc/fstab
 </pre>
 
-Tavaliselt peaks määrama kaks korda nii palju ruumi saalealale, kui on mälu, kuid tänapäeva süsteemid on juba piisavalt võimsad, et piisab ka sama suurest alast kui muutmälu (RAM) maht on.
+Tavaliselt peaks määrama kaks korda nii palju ruumi saalealale, kui on mälu, kuid tänapäeva süsteemid on juba piisavalt võimsad, et piisab ka sama suurest alast kui muutmälu (RAM) maht on. Näiteks 4 GB või suurema muutmälu korral võib rakendada valemit *saaleala = muutmälu maht*.
 
 # Harjutus
 
