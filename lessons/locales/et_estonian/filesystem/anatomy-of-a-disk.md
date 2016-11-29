@@ -47,7 +47,7 @@ Eelmisest peatükist on teada, et failisüsteem on failide ja kataloogide organi
 <li>Andmeplokid - failide ja kataloogide tegelikud andmed </li>
 </ul>
 
-Tutvume erinevate kettajagude tabelitega. All on näide kettajaost, mis kasutab MBR kettajagude tabelit (msdos). Kergesti on eristatavad primaarne, laiendatud ja loogilised kettajaod.
+Tutvume erinevate kettajagude tabelitega. All on näide kettajaost, mis kasutab MBR kettajagude tabelit (*msdos*). Kergesti on eristatavad primaarne, laiendatud ja loogilised kettajaod.
 
 <pre>
 pete@icebox:~$ sudo parted -l
