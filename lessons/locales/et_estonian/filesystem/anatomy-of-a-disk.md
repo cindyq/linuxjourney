@@ -2,7 +2,7 @@
 
 ## Tunni sisu
 
-Kõvakettaid saab jagada kettajagudeks, luues nõnda blokkseadmeid. Meenutame seadmeid /dev/sda1 ja /dev/sda2, /dev/sda on üks terve ketas, kuid /dev/sda1 on selle ketta esimene jagu. Kettajaod on äärmiselt kasulikud andemete eraldamiseks. Kui on tarvis mingit konkreetset failisüsteemi kasutada, võib kerge vaevaga luua kettale jao, selle asemel, et kogu kettale seda ühte failisüsteemi rakendada.
+Kõvakettaid saab jagada kettajagudeks, luues nõnda blokkseadmeid. Meenutame seadmeid */dev/sda1* ja */dev/sda2*, */dev/sda* on üks terve ketas, kuid */dev/sda1* on selle ketta esimene jagu. Kettajaod on äärmiselt kasulikud andemete eraldamiseks. Kui on tarvis mingit konkreetset failisüsteemi kasutada, võib kerge vaevaga luua kettale jao, selle asemel, et kogu kettale seda ühte failisüsteemi rakendada.
 
 <b>Kettajagude tabel</b>
 
@@ -25,15 +25,14 @@ Kettajagudest koosnevad kettad võimaldavad organiseerida andmeid. Kui kettas on
 <i>GPT</i>
 
 <ul>
-<li>*GUID Partition Table*ist (GPT) on saamas kettajagude vallas uus standard</li>
+<li>_GUID Partition Table_ist (GPT) on saamas kettajagude vallas uus standard</li>
 <li>Koosseisu kuuluvad vaid ühte tüüpi kettajaod, mida võib luua hulgaliselt (teoreetiliselt piiramatult, praktikas tavaliselt kuni 128)</li>
 <li>Igal kettajaol on globaalselt unikaalne ID (GUID)</li>
 <li>Kasutatakse peamiselt koos UEFI põhise alglaadimisega (detailsemalt tuleb sellest juttu hilisemal kursusel)</li> 
 <li>maksimaalne ketta suurus 8 ZiB (9,4 ZB) (2^64 sektorit, 512B sektori kohta), tavaliselt kasutatav EXT4 failisüsteem toetab kuni 1 EiB, btrfs kuni 16 EiB, ZFS kuni 256 ZiB kettajagusid. Loogiliste kettagruppide haldussüsteem LVM2 toetab kuni 8 EiB kettajagusid</li>
 </ul>
 
-Lisainfo:
-
+Lisainfo:<br>
 http://unix.stackexchange.com/questions/33555/what-is-the-max-partition-supported-in-linux
 http://en.wikipedia.org/wiki/Comparison_of_file_systems
 
