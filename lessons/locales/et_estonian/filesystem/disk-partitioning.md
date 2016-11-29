@@ -28,9 +28,11 @@ Sisenenud *parted* tööriista, võib sisestada käske seadme kettajagude loomis
 <pre>select /dev/sdb2</pre>
 
 Seadmega töötamiseks, tuleb see valida nime järgi.
+Kui käivitada *parted* kohe koos seadmevalikuga siis ei pea eraldi seadet valima:
+<pre>parted /dev/sdb2</pre>
 
 <b>Jooksva kettajagude tabeli kuvamine</b>
-
+Võib kirjutada välja *print* või kasutada lühikäsku *p*
 <pre>
 (parted) print                                                            
 Model: Seagate (scsi)
@@ -50,7 +52,7 @@ Kuvatakse seadme saadavalolevad kettajaod. <b>*start*</b> ja <b>*end*</b> punkti
 <b>Kettajagude loomine</b>
 Esmalt tuleks valida ühikud, mida *start* ja *end* puhul (ja ka teiste käskude puhul) kasutada (saab igal ajal muuta), näiteks:
 <pre>unit GiB</pre>
-Võimalus on kasutada nii detsimaal- kui binaarühikuid (lisainfo *parted'i* sees: *help unit*).
+Võimalus on kasutada nii detsimaal- kui binaarühikuid (lisainfo *parted'i* sees: *help unit*). Teine võimalus on soovitud ühikud kohe *start* ja *end* väärtuste juures iga kord välja kirjutada.
 
 <pre>mkpart primary 123 4567</pre>
 
@@ -66,6 +68,12 @@ Kui ruumist jääb puudu võib kettajagude suurusi ka muuta. Seda ei võimalda m
 Tuleb valida kettajao number ja soovitavad *start* ja *end* punktid.
 
 *Parted* on väga võimas tööriist ning kettajagude loomisel tasuks olla ettevaatlik. Erinevalt teistest kettajagude loomise programmidest salvestab *parted* **koheselt** (automaatselt, küsimata) loodud kettajaod. Seetõttu tasub olla ettevaatlik ja näiteks virtuaalarvutis esmalt järgi proovida kus ei ole riski andmete kogemata kustutamiseks.
+
+*Parted* programmi on võimalik kasutada ka ilma sinna sisenemata, sisestades käsud järjest.
+
+Lisainfo<br>
+https://www.gnu.org/software/parted/manual/
+https://wiki.archlinux.org/index.php/GNU_Parted
 
 ## Harjutus
 
