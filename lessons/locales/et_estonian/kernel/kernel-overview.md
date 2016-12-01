@@ -6,12 +6,11 @@ Nüüdseks peaks olema juba päris selge, et tuum ongi operatsioonisüsteemi kõ
 
 Kõige algsem tase on riistvara. Sinna kuulub protsessor (ehk CPU), mälu, kõvaketas, võrguliidesed jne. See on füüsiline kiht, mis tegeleb arvutis toimuva teostamisega.
 
-Järgmine tase ongi tuum, mis haldab protsesse ja mälu, seadmete vahelist kommunikatsiooni, tegeleb süstemikutsetega, seab üles failisüsteemi jne. Tuuma töö on suhelda riistvaraga ja hoolitseda selle eest, et see teeks, mida kasutaja tahab, et protsessid teeksid.
+Järgmine tase ongi tuum, mis haldab protsesse ja mälu, seadmete vahelist kommunikatsiooni, tegeleb süsteemikutsetega, seab üles failisüsteemi jne. Tuuma töö on suhelda riistvaraga ja hoolitseda selle eest, et see teeks, mida kasutaja tahab, et protsessid teeksid.
 
 Kasutajale kõige tuttavam kiht ongi kasutaja ruum. Sinna kuulub kestaprogramm, kasutaja programmid, graafika jne.
 
 Sellel kursusel keskendutakse tuumale ja õpitakse tundma selle iseärasusi.
-
 
 ## Harjutus
 
