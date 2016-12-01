@@ -27,6 +27,11 @@ Go ahead and do an <b>ls -l /</b> to see the directories listed under the root d
 <li>/var - Variable directory, it's used for system logging, user tracking, caches, etc. Basically anything that is subject to change all the time.</li>
 </ul>
 
+For brief explanation of Linux Filesystem Hierarchy you can run following:
+man hier
+
+This man page will tell you all the directories which a typical linux system has. It can acts as a quick reference.
+
 ## Exercise
 
 Look inside your /usr directory, what kind of information is located there?
