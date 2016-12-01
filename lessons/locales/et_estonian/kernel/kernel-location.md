@@ -13,7 +13,7 @@ Erinevate versioonide jaoks on mitmeid faile:
 <li>config - tuuma sätted, tuuma ise kompileerides, võib sätestada, milliseid mooduleid laetakse</li>
 </ul>
 
-Kui /boot kataloogis saab ruum otsa, võib alati nende failide vanu versioone kustutada või lihtsalt kasutada selleks paketihaldurit. Selles kasutas hooldustööde tegemisega tasub olla ettevaatlik, et ei kustatakse kogemata kasutusel olevat tuuma.
+Kui /boot kataloogis saab ruum otsa, võib alati nende failide vanu versioone kustutada või lihtsalt kasutada selleks paketihaldurit. Selles kasutas hooldustööde tegemisega tasub olla ettevaatlik, et ei kustataks kogemata kasutusel olevat tuuma.
 
 ## Harjutus
 
