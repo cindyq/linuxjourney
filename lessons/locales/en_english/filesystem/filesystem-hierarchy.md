@@ -28,7 +28,9 @@ Go ahead and do an <b>ls -l /</b> to see the directories listed under the root d
 </ul>
 
 For brief explanation of Linux Filesystem Hierarchy you can run following:
+<pre>
 man hier
+</pre>
 
 This man page will tell you all the directories which a typical linux system has. It can acts as a quick reference.
 
