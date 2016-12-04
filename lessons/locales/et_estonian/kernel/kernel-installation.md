@@ -9,7 +9,7 @@ Et tuvastada süsteemi tuuma versioon, kasuta käsku:
 <pre>$ uname -r
 3.19.0-43-generic</pre>
 
-*Uname* käsk kuvab süsteemi informatsiooni, -r kuvab tuuma väljalaskeversiooni.
+*Uname* käsk kuvab süsteemi informatsiooni, *-r* kuvab tuuma väljalaskeversiooni.
 
 Linuxi tuuma võib paigaldada mitut moodi. Võib laadida alla lähtepaketi ja kompileerida, aga seda võib teha ka kasutades paketihaldusvahendeid ja paigaldades alati uusimast tuuma versioonist sõltuvad metapaketid - need uuenevad automaatselt ehk siis kogu süsteemi uuendades (*sudo apt update && sudo apt dist-upgrade && sudo apt clean*) uueneb ka tuum koos päistega uusima versiooni peale.
 
