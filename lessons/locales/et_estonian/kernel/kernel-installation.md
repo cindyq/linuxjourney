@@ -9,11 +9,11 @@ Et tuvastada süsteemi tuuma versioon, kasuta käsku:
 <pre>$ uname -r
 3.19.0-43-generic</pre>
 
-*Uname* käsk kuvab süsteemi informatsiooni, *-r* kuvab tuuma väljalaskeversiooni.
+Uname käsk kuvab süsteemi informatsiooni, -r kuvab tuuma väljalaskeversiooni.
 
 Linuxi tuuma võib paigaldada mitut moodi. Võib laadida alla lähtepaketi ja kompileerida, aga seda võib teha ka kasutades paketihaldusvahendeid ja paigaldades alati uusimast tuuma versioonist sõltuvad metapaketid - need uuenevad automaatselt ehk siis kogu süsteemi uuendades (*sudo apt update && sudo apt dist-upgrade && sudo apt clean*) uueneb ka tuum koos päistega uusima versiooni peale.
 
-**NB! Peale tuuma uuendamist tuleb alati ka käivitada alglaaduri uuendamise käsku _sudo update-grub_, et teavitada uuema tuuma paigaldamisest - siis teab alglaadur GRUB ka uusimat tuuma kasutusele võtta järgmise taaskäivitamise ajal.** Kuigi üldjuhul tarkvara täielik uuendamine (*dist-upgrade*) käivitab ka alglaaduri uuendamise siis praktikas on märgata endiselt vana tuuma versiooni pealt käivitumist - seega ei ole see reegel ja kindluse mõttes tasub alati peale uue versiooni tuuma paigaldamist uuendada ka alglaadur. Isegi kui alglaadurit uuendada korduvalt siis ei mõju see kuidagi halvasti süsteemile.
+**NB! Peale tuuma uuendamist tuleb alati ka käivitada alglaaduri uuendamise käsku sudo update-grub, et teavitada uuema tuuma paigaldamisest - siis teab alglaadur GRUB ka uusimat tuuma kasutusele võtta järgmise taaskäivitamise ajal.** Kuigi üldjuhul tarkvara täielik uuendamine (*dist-upgrade*) käivitab ka alglaaduri uuendamise siis praktikas on märgata endiselt vana tuuma versiooni pealt käivitumist - seega ei ole see reegel ja kindluse mõttes tasub alati peale uue versiooni tuuma paigaldamist uuendada ka alglaadur. Isegi kui alglaadurit uuendada korduvalt siis ei mõju see kuidagi halvasti süsteemile.
 
 Linuxi tuuma ja päise metapakettide paigaldamine:<br>
 <pre>$ sudo apt install linux-image-generic-lts-xenial linux-headers-generic-lts-xenial linux-image-generic linux-headers-generic && sudo apt clean && sudo update-grub</pre>
