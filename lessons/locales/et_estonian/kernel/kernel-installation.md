@@ -25,7 +25,7 @@ Alternatiivina, kui huvi on uuendatud versiooni järgi, võib kasutada *dist-upg
 Kui metapaketid paigaldatud siis edaspidi toimub uusimate tuumade ja päiste paigaldus automaatselt kogu süsteemi uuendades:<br>
 <pre>$ sudo apt update && sudo apt dist-upgrade && sudo apt clean</pre>
 
-On olemas palju erinevaid tuuma versioone, näiteks LTS (*long term support* ehk pikaajalise toega) ja on ka muidugi veel uuemaid ning vingemaid. Versioonide vahel võib olla väga palju erinevusi ja võib juhtuda, et kasutaja tahab proovida erinevaid tuumasid. Üldiselt võib alati ka uusimaid versioone proovida - ka need töötavad ja lisavad üldjuhul uusima riistvara tuge ja parandatud saavad ka turvavead. Eriti just turvalisuse seisukohast lähtuvalt võiks süsteemis kasutada alati uusimat tuuma ja eemaldada vanad tuumad.
+On olemas palju erinevaid tuuma versioone, näiteks LTS (long term support ehk pikaajalise toega) ja on ka muidugi veel uuemaid ning vingemaid. Versioonide vahel võib olla väga palju erinevusi ja võib juhtuda, et kasutaja tahab proovida erinevaid tuumasid. Üldiselt võib alati ka uusimaid versioone proovida - ka need töötavad ja lisavad üldjuhul uusima riistvara tuge ja parandatud saavad ka turvavead. Eriti just turvalisuse seisukohast lähtuvalt võiks süsteemis kasutada alati uusimat tuuma ja eemaldada vanad tuumad.
 
 Mõistlik on otsida uusimad LTS-versiooni metapaketid ja paigaldada need - siis süsteemi uuendamise (*dist-upgrade*) käigus uuendatakse alati uusima versiooni pikaajalise toega (LTS) tuuma peale:
 
