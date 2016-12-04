@@ -13,7 +13,7 @@ Et tuvastada süsteemi tuuma versioon, kasuta käsku:
 
 Linuxi tuuma võib paigaldada mitut moodi. Võib laadida alla lähtepaketi ja kompileerida, aga seda võib teha ka kasutades paketihaldusvahendeid ja paigaldades alati uusimast tuuma versioonist sõltuvad metapaketid - need uuenevad automaatselt ehk siis kogu süsteemi uuendades (*sudo apt update && sudo apt dist-upgrade && sudo apt clean*) uueneb ka tuum koos päistega uusima versiooni peale.
 
-**NB! Peale tuuma uuendamist tuleb alati ka käivitada alglaaduri uuendamise käsku _sudo update-grub_, et teavitada uuema tuuma paigaldamisest - siis teab alglaadur GRUB ka uusimat tuuma kasutusele võtta järgmise taaskäivitamise ajal.**
+**NB! Peale tuuma uuendamist tuleb alati ka käivitada alglaaduri uuendamise käsku _sudo update-grub_, et teavitada uuema tuuma paigaldamisest - siis teab alglaadur GRUB ka uusimat tuuma kasutusele võtta järgmise taaskäivitamise ajal.** Kuigi üldjuhul tarkvara täielik uuendamine (*dist-upgrade*) käivitab ka alglaaduri uuendamise siis praktikas on märgata endiselt vana tuuma versiooni pealt käivitumist - seega ei ole see reegel ja kindluse mõttes tasub alati peale uue versiooni tuuma paigaldamist uuendada ka alglaadur. Isegi kui alglaadurit uuendada korduvalt siis ei mõju see kuidagi halvasti süsteemile.
 
 Linuxi tuuma ja päise metapakettide paigaldamine:<br>
 <pre>$ sudo apt install linux-image-generic-lts-xenial linux-headers-generic-lts-xenial linux-image-generic linux-headers-generic && sudo apt clean && sudo update-grub</pre>
@@ -48,11 +48,11 @@ Kui uusim LTS-versiooni tuum paigaldatud, alglaadur uuendatud, süsteem taaskäi
 Vaatame esmalt, millised tuumad on paigaldatud:
 <pre>
 $ dpkg --get-selections | grep linux-image
-<pre>
+</pre>
 või ka
 <pre>
 $ dpkg -l | grep linux-image
-<pre>
+</pre>
 Paigaldatud tuumi, päiseid näeb ka kui vaadata kataloogi *ls -l /boot* - tuum on nimega *vmlinuz* ja teised sama versiooninumbriga moodustavadki tuuma komplekti koos päise ja kõige muu juurdekuuluvaga.
 
 RPM-põhistes Linuxites näeb paigaldatud tuumi käsuga *rpm -q kernel*
@@ -144,12 +144,12 @@ linux-image-VERSIOONINUMBER-generic_VERSIOONINUMBER.LOOMISE-AEG_amd64.deb
 
 Enne paigaldamist tuleb ka veenduda, et kataloogis */home/kasutaja/Allalaadimised/tuum/* ei ole muid mittevajalikke *.deb* faile ega ka vanu, juba paigaldatud tuumade ja päiste faile - kui on siis need tuleks enne järgmise paigalduskäsu käivitamist sealt kataloogist kustutada.
 
-Allalaaditud tuuma ja päise paigaldamiseks:
+Allalaaditud tuuma- ja päisefailide paigaldamiseks, alglaaduri uuendamiseks ja süsteemi taaskäivitamiseks:
 <pre>
-cd /home/kasutaja/Allalaadimised/tuum/ && sudo dpkg -i && sudo update-grub *
+cd /home/kasutaja/Allalaadimised/tuum/ && sudo dpkg -i * && sudo update-grub && sudo reboot
 </pre>
 
-Peale uusima tuuma paigaldamist ja GRUB'i uuendamist tuleb süsteem taaskäivitada ja eemaldada vanad tuumad, millest eespool ka juttu oli. Kui vanade tuumade eemaldamisel sõltuvusena eemaldatakse ka pakett *linux-generic* siis selles ei ole midagi halba ja selle võib eemaldada.
+Seejärel tuleks eemaldada vanad tuumad, millest eespool ka juttu oli. Kui vanade tuumade eemaldamisel sõltuvusena eemaldatakse ka pakett *linux-generic* siis selles ei ole midagi halba ja selle võib eemaldada, isegi enne eemaldamist märkida täielikuks eemaldamiseks (käsurealt *sudo apt purge linux-generic*).
 
 ## Harjutus
 
