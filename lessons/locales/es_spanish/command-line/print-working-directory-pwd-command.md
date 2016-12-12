@@ -2,7 +2,8 @@
 
 ## Lesson Content
 
-Everything in Linux is a file, as you journey deeper into Linux you’ll understand this, but for now just keep that in mind. Every file is organized in a hierarchical directory tree. The first directory in the filesystem is aptly named the root directory. The root directory has many folders and files which you can store more folders and files, etc. Here is an example of what the directory tree looks like: 
+En Linux todo es un archivo, mientras mas dentro de Linux nos metamos en este viaje mas vas a entender esto, pero por ahora solo tené la idea presente. 
+Todos los archivos están organizados en un árbol de carpetas jerárquico. El primer directorio en el archivo de sistemas es llamado simplemente raíz (o root). El directorio root tiene varias carpetas y archivos dentro de las cuales podes guardar mas archivos o subcarpetas, etc. Acá hay un ejemplo de cómo se ve el árbol de carpetas:
 
 <pre>/
 |-- bin
@@ -17,21 +18,21 @@ Everything in Linux is a file, as you journey deeper into Linux you’ll underst
 |-- var
 </pre>
 
-The location of these files and directories are referred to as paths. If you had a folder named home with a folder inside of it named pete and another folder in that folder called Movies, that path would look like this: /home/pete/Movies, pretty simple huh?
+Nos referimos a La ubicación de esos archivos y directorios como rutas (paths). Si tenes una carpeta llamada home con una carpeta adentro llamada pete y otra llamada Movies dentro de esta última, ese path se va a ver así: /home/pete/Movies, ¿simple no?
 
-Navigation of the filesystem, much like real life is helpful if you know where you are and where you are going. To see where you are, you can use the pwd command, this command means “print working directory” and it just shows you which directory you are in, note the path stems from the root directory.
+La navegación del sistema, similar a la vida real, te ayuda si sabes dónde estas y hacia dónde estas yendo. Para ver dónde estas, podes usar el comando pwd, el nombre de este comando es una sigla referida a "print working directory" (imprimi el directorio actual) y solo te muestra la carpeta en la que estas ubciado, contando siempre desde la carpeta root.
 
 <pre>$ pwd</pre>
 
-Where are you? Where am I? Give it a try.
+¿Dónde estás? ¿Dónde estoy? Probalo...
 
 ## Exercise
 
-No exercises for this lesson.
+Npo hay ejercicios para esta lección.
 
 ## Quiz Question
 
-How do I find what directory you are currently in?
+¿Cómo encuentro en qué carpeta estoy ubicado ahora?
 
 ## Quiz Answer
 

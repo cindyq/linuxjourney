@@ -2,39 +2,39 @@
 
 ## Lesson Content
 
-Used for moving files and also renaming them. Quite similar to the cp command in terms of flags and functionality. 
+Utilizado para mover archivos y también renombrarlos. Bastante similar al comando cp en términos de sus opciones y funcionalidad.
 
-You can rename files like this:
+Podes renombrar archivos así:
 
 <pre>$ mv oldfile newfile</pre>
 
-Or you can actually move a file to a different directory: 
+O podes mover un archivo a una carpeta diferente:
 
 <pre>$ mv file2 /home/pete/Documents</pre>
 
-And move more than one file:
+Y mover mas de una rchivo a la vez:
 
 <pre>$ mv file_1 file_2 /somedirectory</pre>
 
-You can rename directories as well:
+Podes renombrar carpetas también:
 
 <pre>$ mv directory1 directory2</pre>
 
-Like cp, if you mv a file or directory it will overwrite anything in the same directory. So you can use the -i flag to prompt you before overwriting anything.
+Como cp, si mv un archivo o directorio va a sobreescribir cualquier cosa que esté en ese directorio. Entonces podes usar la opción -i para preguntarte antes de que sobreescriba algo.
 
 <pre>mv -i directory1 directory2</pre>
 
-Let’s say you did want to mv a file to overwrite the previous one. You can also make a backup of that file and it will just rename the old version with a ~. 
+Digamos que querías mover un archivo para sobreecribir el previo. Podes también hacer un backup de ese archivo y va a renombrar la versión vieja con un ~. 
 
 <pre>$ mv -b directory1 directory2</pre>
 
 ## Exercise
 
-Rename a file, then move that file to a different directory.
+Renombrá un archivo, y mové ese archivo a una carpeta diferente.
 
 ## Quiz Question
 
-How do you rename a file called cat to dog?
+¿Cómo renombrás un archivo llamado cat a dog?
 
 ## Quiz Answer
 

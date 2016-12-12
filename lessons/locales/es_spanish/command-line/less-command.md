@@ -31,7 +31,7 @@ comienzo o final del archivo.
 
 ## Quiz Question
 
-¿?Cómo salís del comando less
+¿Cómo salís del comando less?
 
 ## Quiz Answer
 

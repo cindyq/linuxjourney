@@ -2,21 +2,21 @@
 
 ## Lesson Content
 
-Gee I wish some of these programs had a manual so we can see some more information about them. Well luckily they do! Aptly named man pages, you can see the manuals for a command with the man command. 
+Uff ojalá algunos de estos programas tuvieran un manual para poder ver mas información al respecto. Espera, lo tienen! Se llaman man pages, podes ver el manual de un comando con el comando man.
 
 <pre>$ man ls</pre>
 
-Man pages are manuals that are by default built into most Linux operating systems. They provide documentation about commands and other aspects of the system. 
+Las páginas man son manuales que están construídos dentro de la mayoría de los sitemas Linux por defecto. Proveen documantación acerca de los comandos y otros aspectos del sistema.
 
-Try it out on a few commands to get more information about them.
+Probalo an algunos comandos para conseguir mas información sobre ellos.
 
 ## Exercise
 
-Run the man command on the ls command.
+Ejectua el comando man para ls.
 
 ## Quiz Question
 
-How do you see the manuals for a command?
+¿Cómo accedes a los manuales de un comando?
 
 ## Quiz Answer
 

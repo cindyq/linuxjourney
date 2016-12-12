@@ -2,21 +2,21 @@
 
 ## Lesson Content
 
-We’re gonna need some directories to store all these files we’ve been working on. The mkdir command (Make Directory) is useful for that, it will create a directory if it doesn’t already exist. You can even make multiple directories at the same time.
+Vamos a necesitar algunas carpetas para guardar todos los archivos en los que estuvimos trabajando. El comando mkdir ("make directory" o hacer directorio) es útil para eso, crea una carpeta si es que no existe previamente. También podes hacer múltiples carpetas al mismo tiempo.
 
 <pre>$ mkdir books paintings</pre>
 
-You can also create subdirectories at the same time with the -p (parent flag).
+Podes crear subcarpetas al mismo tiempo con la opción -p (opción "parent").
 
 <pre>$ mkdir -p books/hemmingway/favorites</pre>
 
 ## Exercise
 
-Make a couple of directories and move some files into that directory.
+Hace un par de carpetas y mové algunos archivos adentro.
 
 ## Quiz Question
 
-What command is use to make a directory?
+¿Qué ocmando se usa ara hacer una carpeta?
 
 ## Quiz Answer
 

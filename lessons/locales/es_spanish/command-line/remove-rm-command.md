@@ -2,41 +2,45 @@
 
 ## Lesson Content
 
-Now I think we have too many files, let’s remove some files. To remove files you can use the rm command. The rm (remove) command is used to delete files and directories. 
+Creo que tenemos muchos archivos, borremos algunos. Para borrar archivos podes usar el comando rm. El comando rm (de remover) se usa para borrar tanto archivos como direcotrios.
 
 <pre>$ rm file1</pre>
 
-Take caution when using rm, there is no magical trash can that you can fish out removed files. Once they are gone, they are gone for good, so be careful. 
+Precaución con rm, no hay un basurero mágico del cual pescar archivos borrados. Una vez que se fueron, se fueron para siempre, así que tené cuidado.
 
-Fortunately there are some safety measures put into place, so the average joe can’t just remove a bunch of important files. Write-protected files will prompt you for confirmation before deleting them. If a directory is write-protected it will also not be easily removed. 
+Afortunadamente hay algunas medidas de seguridad puestas de tal forma que nadie pueda remover muchos archivos importantes. Archivos protegidos contra escritura van a pedirte una confirmación antes de ser borrados. Si una carpeta está protegida contra escritura no va ser borrada fácilmente.
 
-Now if you don’t care about any of that, you can absolutely remove a bunch of files. 
+Ahora si no te importa nada de eso, podes absolutamente borrar muchos archivos.
 
 <pre>$ rm -f file1</pre>
 
--f or force option tells rm to remove all files, whether they are write protected or not, without prompting the user (as long as you have the appropriate permissions).
+-f o la opción "forzar" le dice a rm que borre todos los archivos, con o sin protección de escritura, sin preguntarle al usuario (siempre y cuando tengas el permiso apropiado).
 
 <pre>$ rm -i file</pre>
 
-Adding the -i flag like many of the other commands, will give you a prompt on whether you want to actually remove the files or directories. 
+Agregando la opción -i como en otros comandos, va a preguntarte si de hecho queres borrar ese archivo o carpeta.
 
 <pre>$ rm -r directory</pre>
 
-You can’t just rm a directory by default, you’ll need to add the -r flag (recursive) to remove all the files and any subdirectories it may have.
+No podes rm una carpeta por defecto, vas a tener que agregar la opción -r (recursivo) para borrar todos los archivos y subcarpetas que haya.
 
-You can remove a directory with the rmdir command.
+Podes borrar una carpeta con el comando rmdir.
 
 <pre>$ rmdir directory</pre>
 
 ## Exercise
 
 <ol>
-<li>Create a file called -file (don't forget the dash!).</li>
-<li>Remove that file.</li>
+<li>Crea un archivo llamado -file (no te olvides el guión del medio!.</li>
+<li>Borrá ese archivo.</li>
 </ol>
 
 ## Quiz Question
 
-How do you remove a file called myfile?
+¿Cómo eliminas un archivo que se llama miArchivo?
 
 ## Quiz Answer
+
+rm miArchivo
+
+

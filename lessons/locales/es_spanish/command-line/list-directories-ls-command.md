@@ -2,18 +2,18 @@
 
 ## Lesson Content
 
-Now that we know how to move around the system, how do we figure out what is available to us? Right now it’s like we are moving around in the dark. Well, we can use the wonderful ls command to list directory contents. The ls command will list directories and files in the current directory by default, however you can specify which path you want to list the directories of.
+Ahora que sabemos como movernos en el sistema, ¿cómo sabemos lo está disponible a nuestro alrededor? Hasta ahora es como si nos moviéramos en la oscuridad. Podemos usar este genial comando para listar el contenido de una carpeta. El comando ls va a listar los archivos y carpetas presentes en el directorio actual por defecto, aunque podemos especificar que path queremos listar.
 
 <pre>$ ls
 $ ls /home/pete</pre>
 
-ls is a quite useful tool, it also shows you detailed information about the files and directories you are looking at.
+ls es una herramienta bastante importante, que tambien muestra información sobre los archivos y carpetas que estas viendo.
 
-Also note that not all files in a directory will be visible. Filenames that start with . are hidden, you can view them however with the ls command and pass the -a flag to it (a for all). 
+También fijate que no todos los archivos dentro de la carpeta van a ser visibles. Los archivos cuyos nombres comiencen con . están ocultos, podes verlos sin embargo con la opción -a (ver "all" o todo).
 
 <pre>$ ls -a</pre>
 
-There is also one more useful ls flag, -l for long, this shows a detailed list of files in a long format. This will show you detailed information, starting from the left: file permissions, number of links, owner name, owner group, file size, timestamp of last modification, and file/directory name. 
+Hay también una opción mas útil, -l para ver la salida larga, que muestra una lista detallada. Esta lista contiene informacion detallada para cada archivo, comenzando de la izaquierda: permisos del archivo, número de links, nombre del dueño, grupo del dueño, tamaño del archivo, fecha y hora de la última modificación y nombre del archivo/carpeta.
 
 <pre>$ ls -l</pre>
 
@@ -28,17 +28,17 @@ drwxr-x--- 2 pete penguingroup   4096 Jul 27 12:41   Public
 drwxr-x--- 2 pete penguingroup   4096 Jul 27 12:41   Templates
 drwxr-x--- 2 pete penguingroup   4096 Jul 27 12:41   Videos</pre>
 
-Commands have things called flags (or arguments or options, whatever you want to call it) to add more functionality. See how we added -a and -l, well you can add them both together with -la. The order of the flags determines which order it goes in, most of the time this doesn’t really matter so you can also do ls -al and it would still work.
+Los comandos tienen opciones llamadas flags o argumentos, como quieras llamarlos, que le agregan o cambian su funcionalidad. Fijate como agregamos -a y -l, uniéndolos en -la. El orden de estas opciones determina en qué orden van, la mayor parte del tiempo esto no importa demasiado así que podrías usar -al y todavía va a funcionar.
 
 <pre>$ ls -la</pre>
 
 ## Exercise
 
-Run ls with different flags and see the output you receive.
+Ejecuta ls con distantas opciones y fijate la salida que recibís.
 
 ## Quiz Question
 
-What command would you use to see hidden files?
+¿Qué comando usarías para ver archivos ocultos?
 
 ## Quiz Answer
 
