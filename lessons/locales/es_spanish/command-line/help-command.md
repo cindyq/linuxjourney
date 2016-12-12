@@ -2,23 +2,23 @@
 
 ## Lesson Content
 
-Linux has some great built-in tools to help you how to use a command or check what flags are available for a command. One tool, help, is a built-in bash command that provides help for other bash commands (echo, logout, pwd, etc).
+Linux tiene maravillosas herramientas construidas en el para ayudarte a usar un comando o chequear que opciones están disponibles para algún comando. Una herramiente, help, es un comando construido dentro de bash que provee ayuda para otros comandos de bash (echo, logout, pwd, etc).
 
 <pre>$ help echo</pre>
 
-This will give you a description and the options you can use when you want to run echo. For other executable programs, it’s convention to have an option called --help or something similar. 
+Esto va a brindarte una descripción y las opciones que podes utilizar cuando querés ejecutar echo, Para otros programas ejecutables, es convención que tengan una opción llamada --help o parecido.
 
 <pre>$ echo --help</pre>
 
-Not all developers who ship out executables will conform to this standard, but it’s probably your best shot to find some help on a program.
+No todos los prpogramadores que distribuyen ejecutables van a asumir este estándar, pero es probable que sea tu mejor recurso para obtener ayuda en un programa.
 
 ## Exercise
 
-Run help on the echo command, logout command and pwd command.
+Ejecuta help para el comando echo, logout y pwd.
 
 ## Quiz Question
 
-How do you get quick command line help for built-in bash commands?
+¿Cómo conseguís ayuda rápida en la línea de comandos acerca de los comando construídos en bash?
 
 ## Quiz Answer
 

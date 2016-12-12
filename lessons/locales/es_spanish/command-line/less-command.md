@@ -2,30 +2,36 @@
 
 ## Lesson Content
 
-If you are viewing text files larger than a simple output, less is more. (There is actually a command called more that does something similar, so this is ironic.) The text is displayed in a paged manner, so you can navigate through a text file page by page. 
+Si vos estas viendo archivos de texto grandes en la consola, menos es más -less is more-. (Hay
+un comando llamado less y otra llamado more que hacen cosas similares, es una
+ironía.) El texto se muestra compaginado, para que puedas navegarlo página por
+página.
 
-Go ahead and look at the contents of a file with less. Once you’re in the less command, you can actually use other keyboard commands to navigate in the file. 
+Fijate el contenido de algún archivo con el comando less. Una vez que lo
+ejecutes, podes usar otros comandos en el teclado para navegar el archivo.
 
 <pre>$ less /home/pete/Documents/text1</pre>
 
-Use the following command to navigate through less: 
+Utilizá los siguientes comandos para recorrer el archivo:
 
 <ul>
-<li>q - Used to quit out of less and go back to your shell.</li>
-<li>Page up, Page down, Up and Down - Navigate using the arrow keys and page keys.</li>
-<li>g - Moves to beginning of the text file.</li>
-<li>G - Moves to the end of the text file.</li>
-<li>/search - You can search for specific text inside the text document. Prefacing the words you want to search with /</li>
-<li>h - If you need a little help about how to use less while you’re in less, use help.</li>
+<li>q - Usado para quitar o salir y volver al shell.</li>
+<li>Page up, Page down, Up and Down - Navegar usando las flechas direccionales o las teclas de página.</li>
+<li>g - Se mueve al comienzo del archivo.</li>
+<li>G - Se mueve al final del archivo.</li>
+<li>/buscar - Podes buscar algún texto específico dentro del documento de texto, prefaciando las palabras a buscar con /</li>
+<li>h - Este comando muestra la ayuda de less, una vez dentro de less.</li>
 </ul>
 
 ## Exercise
 
-Run less on a file, then page up and around the file. Try searching for a specific word. Quickly navigate to the beginning or the end of the file.
+Ejecutá less en algún archivo y movete páginas arriba y abajo recorriendo el
+archivo. Intentá buscar alguna palabra específica. Rápidamente navega al
+comienzo o final del archivo.
 
 ## Quiz Question
 
-How do you quit out of a less command?
+¿?Cómo salís del comando less
 
 ## Quiz Answer
 

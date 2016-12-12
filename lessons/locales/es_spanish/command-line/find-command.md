@@ -2,29 +2,32 @@
 
 ## Lesson Content
 
-With all these files we have on the system it can get a little hectic trying to find a specific one. Well there’s a command we can use for that, find! 
+Con todos estos archivos que tenemos en el sistema se puede volver ajetreado encontrar alguno específico. Hay un comando que podemos usar para esta tarea,
+find!
 
 <pre>$ find /home -name puppies.jpg</pre>
 
-With find you’ll have to specify the directory you’ll be searching it, what you’re searching for, in this case we are trying to find a file by the name of puppies.jpg. 
+Con find vas a tener que especificar la carpeta en la que vas a buscar, qué estas buscando y bajo qué criterio. En este caso, estamos intentando encontrar
+un archivo con el nombre de puppies.jpg.
 
-You can specify what type of file you are trying to find. 
+Podes especificar qué tipo de archivo estas intentando buscar.
 
 <pre>$ find /home -type d -name MyFolder</pre>
 
-You can see that I set the type of file I’m trying to find as (d) for directory and I’m still searching by the name of MyFolder. 
+En este último ejemplo, podes ver que estoy buscando bajo el tipo (d) para directorios y estoy usando el mismo criterio de búsqueda por el nombre MyFolder.
 
-One cool thing to note is that find doesn’t stop at the directory you are searching, it will look inside any subdirectories that directory may have as well.
+Una cosa cool para notar es que find no frena en la carpeta que estas buscando, sino que va a ir a ver dentro de cualquier subcarpeta que la carpeta principal
+contenga.
 
 ## Exercise
 
 <ol>
-<li>Find a file from the root directory that has the word net in it.</li>
+<li>Encontrá un archivo desde la carpeta raíz que tenga la palabra net en el.</li>
 </ol>
 
 ## Quiz Question
 
-What option should I specify for find if I want to search by name?
+¿Qué opción debiese especificar para que find busque por nombre?
 
 ## Quiz Answer
 
