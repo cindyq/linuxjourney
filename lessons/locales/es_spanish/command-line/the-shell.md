@@ -2,23 +2,24 @@
 
 ## Lesson Content
 
-The world is your oyster, or really the shell is your oyster. What is the shell? The shell is basically a program that takes your commands from the keyboard and sends them to the operating system to perform. If you’ve ever used a GUI, you’ve probably seen programs such as “Terminal” or “Console” these are just programs that launch a shell for you. Throughout this entire course we will be learning about the wonders of the shell. 
+El mundo es tu entorno, o en realidad el shell es tu entorno en este caso. ¿Qué es el shell? El shell es básicamente el programa que acepta los comandos que escribís y los envía al sistema operativo para que los ejecute. Sia lguna vez usante una GUI, probablemente visto programas como "Terminal" o "Consola" que ejecutan un shell por vos. A lo largo de todo este curso vamos a conocer las maravillas del shell.
 
-In this course we will use the shell program bash (Bourne Again shell), almost all Linux distributions will default to the bash shell. There are other shells available such as ksh, zsh, tsch, but we won’t get into any of those. 
+En este curso vamos a usar el shell bash (Bourne Again Shell), casi todas las distribuciones Linux vienen con el shell bash por defecto. Hay otros shells disponibles, como sh, ksh, zsh, tsch pero no vamos a estudiar ninguno de esos.
 
-Let’s jump right in! Depending on the distribution your shell prompt might change, but for the most part it should adhere to the following format:
+Comencemos! Dependiendo de la distribución tu shell prompt puede variar, pero en general se ve más o menos con este formato:
+
 <pre>username@hostname:current_directory
 pete@icebox:/home/pete $</pre>
 
-Notice the $ at the end of the prompt? Different shells will have different prompts, in our case the $ is for a normal user using Bash, Bourne or Korn shell, you don't add the prompt symbol when you type the command, just know that it's there.
+Observaste $ al final del prompt? Shells diferentes van a tener prompts diferente, en nuestro caso el $ representa un usuario normal logueado en Bash, Bourne o Korn shell. No hay que agregar el símbolo en el prompt cuando escribimos un comando, por ahora nos alcanza con saber que está ahí.
 
-Let’s start with a simple command, echo. The echo command just prints out the text arguments to the display.
+Comencemos con un comando simple, echo. El comando echo simplemente imprime en la salida los argumentos.
 
 <pre>$ echo Hello World</pre>
 
 ## Exercise
 
-Try some other Linux commands and see what they output:
+Proba algunos otros comando Linux y fijate la salida:
 
 <ol>
 <li>$ date</li>
@@ -27,7 +28,7 @@ Try some other Linux commands and see what they output:
 
 ## Quiz Question
 
-What should be outputted to the display when you type echo Hello World?
+¿Cuál tendría que ser la salida cuando ejectuas echo Hello World?
 
 ## Quiz Answer
 
