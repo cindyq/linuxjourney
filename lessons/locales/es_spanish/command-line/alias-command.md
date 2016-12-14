@@ -2,12 +2,11 @@
 
 ## Lesson Content
 
-A veces tipear comandos se torna muy repetitivo o es necesario reutilizar un comando largo; en esos caso es mejor tenerlo bajo un alias. Para crear un alias, simplemente hay que especificar el nombre del alias y asignarlo al comando.
+A veces tipear comandos se vuelve repetitivo o es necesario reutilizar un comando largo; en esos caso es mejor tenerlo guardado bajo un alias. Para crear un alias, simplemente hay que especificar el nombre del alias y asignarlo al comando.
 
 <pre>$ alias foobar='ls -la'</pre>
 
-Ahora en lugar de tipear ls -la, directamente podes tipear foobar y se va a ejecutar ese comando, lo cual es muy bueno. Sin embargo este comando no va a guardar tu alias después de reiniciar; entonces vas a necesitar un alias
-permanente en:
+Ahora en lugar de tipear ls -la, directamente podes tipear foobar y se va a ejecutar ese comando, lo cual es muy bueno. Sin embargo este comando no va a guardar tu alias después de reiniciar; entonces vas a necesitar un alias permanente en:
 
 <pre>~/.bashrc</pre>
 
@@ -23,7 +22,7 @@ Crear un par de alias y después borrarlos.
 
 ## Quiz Question
 
-¿Qué comando es usado para hacer un alias?
+¿Qué comando se utiliza para crear un alias?
 
 ## Quiz Answer
 

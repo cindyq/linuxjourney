@@ -12,7 +12,7 @@ O el logout:
 
 <pre>$ logout</pre>
 
-O si estas trabajando en una terminal con GUI, podes simplemente cerrarla. Te veo en el próximo curso!.
+O si estas trabajando en una terminal con GUI (interfaz gráfica), podes simplemente cerrarla. Te veo en el próximo curso!.
 
 ## Exercise
 

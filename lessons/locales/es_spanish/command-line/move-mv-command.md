@@ -2,40 +2,40 @@
 
 ## Lesson Content
 
-Utilizado para mover archivos y también renombrarlos. Bastante similar al comando cp en términos de sus opciones y funcionalidad.
+El comando mv (por move, "mover" en inglés) es utilizado para mover archivos y también renombrarlos. Bastante similar al comando cp en términos de sus opciones y funcionalidad.
 
 Podes renombrar archivos así:
 
-<pre>$ mv oldfile newfile</pre>
+<pre>$ mv archivoViejo archivoNuevo</pre>
 
 O podes mover un archivo a una carpeta diferente:
 
-<pre>$ mv file2 /home/pete/Documents</pre>
+<pre>$ mv archivo2 /home/pepe/Documentos</pre>
 
-Y mover mas de una rchivo a la vez:
+Y mover mas de un archivo a la vez:
 
-<pre>$ mv file_1 file_2 /somedirectory</pre>
+<pre>$ mv archivo_1 archivo_2 /Carpeta</pre>
 
 Podes renombrar carpetas también:
 
-<pre>$ mv directory1 directory2</pre>
+<pre>$ mv carpeta1 carpeta2</pre>
 
-Como cp, si mv un archivo o directorio va a sobreescribir cualquier cosa que esté en ese directorio. Entonces podes usar la opción -i para preguntarte antes de que sobreescriba algo.
+Como cp, si moves con mv un archivo o directorio, el comando va a sobreescribir cualquier cosa que esté en ese directorio. Entonces podes usar la opción -i para preguntarte antes de que sobreescriba algo.
 
-<pre>mv -i directory1 directory2</pre>
+<pre>mv -i carpeta1 carpeta2</pre>
 
-Digamos que querías mover un archivo para sobreecribir el previo. Podes también hacer un backup de ese archivo y va a renombrar la versión vieja con un ~. 
+Digamos que querés mover un archivo para sobreecribir el previo. Podes también hacer un backup de ese archivo y va a renombrar la versión vieja con un ~. 
 
-<pre>$ mv -b directory1 directory2</pre>
+<pre>$ mv -b carpeta1 carpeta2</pre>
 
 ## Exercise
 
-Renombrá un archivo, y mové ese archivo a una carpeta diferente.
+Renombrá un archivo y mové ese archivo a una carpeta diferente.
 
 ## Quiz Question
 
-¿Cómo renombrás un archivo llamado cat a dog?
+¿Cómo renombrás un archivo llamado gato a perro?
 
 ## Quiz Answer
 
-mv cat dog
+mv gato perro

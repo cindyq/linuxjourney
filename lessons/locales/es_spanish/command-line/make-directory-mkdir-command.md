@@ -16,7 +16,7 @@ Hace un par de carpetas y mové algunos archivos adentro.
 
 ## Quiz Question
 
-¿Qué ocmando se usa ara hacer una carpeta?
+¿Qué comando se usa para hacer una carpeta?
 
 ## Quiz Answer
 

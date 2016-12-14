@@ -2,13 +2,11 @@
 
 ## Lesson Content
 
-Casi terminamos con la navegación de archivos, pero antes vamos a aprender cómo
-leer un archivo. Un comando simple para utilizar es cat, cuyo nombre iviene de concatenar, no solo muestra el contenido del archivo sino que puede combinar mútlpiles archivos y mostrarlos todos juntos en la salida.
+Casi terminamos con la navegación de archivos, pero antes vamos a aprender cómo leer un archivo. Un comando simple para utilizar es cat, cuyo nombre viene de concatenar: no solo muestra el contenido del archivo sino que puede combinar mútlpiles archivos y mostrarlos todos juntos en la salida.
 
 <pre>$ cat dogfile birdfile</pre>
 
-No es maravilloso para visualizar archivos largos y es solo usado para
-contenidos cortos.
+No es la mejor opción para visualizar archivos largos y es solo recomendable para contenido corto.
 
 ## Exercise
 

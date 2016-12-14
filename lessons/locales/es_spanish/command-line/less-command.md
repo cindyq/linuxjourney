@@ -2,15 +2,11 @@
 
 ## Lesson Content
 
-Si vos estas viendo archivos de texto grandes en la consola, menos es más -less is more-. (Hay
-un comando llamado less y otra llamado more que hacen cosas similares, es una
-ironía.) El texto se muestra compaginado, para que puedas navegarlo página por
-página.
+Si estas viendo archivos de texto grandes en la consola, menos es más -less is more-. (Hay un comando llamado less y otro llamado more que hacen cosas similares, es una ironía.) El texto se muestra compaginado, para que puedas navegarlo página por página.
 
-Fijate el contenido de algún archivo con el comando less. Una vez que lo
-ejecutes, podes usar otros comandos en el teclado para navegar el archivo.
+Fijate el contenido de algún archivo con el comando less. Una vez que lo ejecutes, podes usar otros comandos en el teclado para navegar el archivo.
 
-<pre>$ less /home/pete/Documents/text1</pre>
+<pre>$ less /home/pepe/Documentos/texto1</pre>
 
 Utilizá los siguientes comandos para recorrer el archivo:
 
@@ -25,9 +21,7 @@ Utilizá los siguientes comandos para recorrer el archivo:
 
 ## Exercise
 
-Ejecutá less en algún archivo y movete páginas arriba y abajo recorriendo el
-archivo. Intentá buscar alguna palabra específica. Rápidamente navega al
-comienzo o final del archivo.
+Ejecutá less en algún archivo y movete páginas arriba y abajo recorriendo el archivo. Intentá buscar alguna palabra específica. Rápidamente navega al comienzo o final del archivo.
 
 ## Quiz Question
 
