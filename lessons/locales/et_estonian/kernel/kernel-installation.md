@@ -59,11 +59,13 @@ Kui uusim LTS-versiooni tuum paigaldatud, alglaadur uuendatud, süsteem taaskäi
 
 Vaatame esmalt, millised tuumad on paigaldatud:
 <pre>
-$ dpkg --get-selections | grep linux-image
+$ dpkg --get-selections | grep linux-image<br>
+$ dpkg --get-selections | grep linux-headers
 </pre>
 või ka
 <pre>
-$ dpkg -l | grep linux-image
+$ dpkg -l | grep linux-image<br>
+$ dpkg -l | grep linux-headers
 </pre>
 Paigaldatud tuumi, päiseid näeb ka kui vaadata kataloogi *ls -l /boot* - tuum on nimega *vmlinuz* ja teised sama versiooninumbriga failid moodustavadki tuuma komplekti koos päise ja kõige muu juurdekuuluvaga.
 
