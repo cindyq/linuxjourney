@@ -2,7 +2,7 @@
 
 ## Tunni sisu
 
-Mis juhtub kui paigaldada uus tuum? See lisab su süsteemi mõned failid, mis tavaliselt paiknevad /boot kataloogis.
+Mis juhtub kui paigaldada uus tuum? See lisab süsteemi mõned failid, mis tavaliselt paiknevad /boot kataloogis.
 
 Erinevate versioonide jaoks on mitmeid faile:
 
@@ -13,11 +13,11 @@ Erinevate versioonide jaoks on mitmeid faile:
 <li>config - tuuma sätted, tuuma ise kompileerides, võib sätestada, milliseid mooduleid laetakse</li>
 </ul>
 
-Kui /boot kataloogis saab ruum otsa, võib alati nende failide vanu versioone kustutada või lihtsalt kasutada selleks paketihaldurit. Selles kasutas hooldustööde tegemisega tasub olla ettevaatlik, et ei kustataks kogemata kasutusel olevat tuuma.
+Kui /boot kataloogis saab ruum otsa, võib alati nende failide vanu versioone eemaldada kasutades selleks paketihaldurit. Selles kaustas hooldustööde tegemisega tasub olla ettevaatlik, et ei kustataks kogemata kasutusel olevat tuuma.
 
 ## Harjutus
 
-Minna boot kataloogi ja uurida seal olevaid faile.
+Minna /boot kataloogi ja uurida sealolevaid faile.
 
 ## Küsimus
 
