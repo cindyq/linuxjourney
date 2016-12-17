@@ -2,7 +2,7 @@
 
 ## Tunni sisu
 
-Nüüd kui kogu see igav värk on selja taga, räägime parem tuuma paigaldamisest ja muutmisest. Süsteemi võib paigaldada mitu tuuma. On veel meeles peatükk alglaadimisest? Alglaaduri GRUB menüüst saab valida, millise tuumaga süsteem käivitada.
+Nüüd kui kogu see igav värk on selja taga, räägime parem tuuma paigaldamisest ja muutmisest. Süsteemi võib paigaldada mitu tuuma. On veel meeles peatükk alglaadimisest? Alglaaduri GRUB menüüst saab valida, millise tuumaga süsteem käivitada. Vaikimisi käivitatakse kõige uuem kui peale tuuma paigaldamist on ka alglaadur uuendatud.
 
 Et tuvastada süsteemi tuuma versioon, kasuta käsku:
 
@@ -11,21 +11,11 @@ Et tuvastada süsteemi tuuma versioon, kasuta käsku:
 
 Uname käsk kuvab süsteemi informatsiooni, -r kuvab tuuma väljalaskeversiooni.
 
-Linuxi tuuma võib paigaldada mitut moodi. Võib laadida alla lähtepaketi ja kompileerida, aga seda võib teha ka kasutades paketihaldusvahendeid ja paigaldades alati uusimast tuuma versioonist sõltuvad metapaketid - need uuenevad automaatselt ehk siis kogu süsteemi uuendades (sudo apt update && sudo apt dist-upgrade && sudo apt clean) uueneb ka tuum koos päistega uusima versiooni peale.
+Linuxi tuuma võib paigaldada mitut moodi. Võib laadida alla lähtepaketi ja kompileerida (seda väga ei soovita teha) kuid soovitav on seda teha kasutades paketihaldusvahendeid ja paigaldades alati uusimast tuuma versioonist sõltuvad metapaketid - need uuenevad automaatselt ehk siis kogu süsteemi uuendades (sudo apt update && sudo apt dist-upgrade && sudo apt clean) uueneb ka tuum koos päistega uusima versiooni peale.
 
 NB! Peale tuuma uuendamist tuleb alati ka käivitada alglaaduri uuendamise käsku sudo update-grub, et teavitada uuema tuuma paigaldamisest - siis teab alglaadur GRUB ka uusimat tuuma kasutusele võtta järgmise taaskäivitamise ajal. Kuigi üldjuhul tarkvara täielik uuendamine (dist-upgrade) käivitab ka alglaaduri uuendamise siis praktikas on märgata endiselt vana tuuma versiooni pealt käivitumist - seega ei ole see reegel ja kindluse mõttes tasub alati peale uue versiooni tuuma paigaldamist uuendada ka alglaadur. Isegi kui alglaadurit uuendada korduvalt siis ei mõju see kuidagi halvasti süsteemile.
 
-Linuxi tuuma ja päise metapakettide paigaldamine:<br>
-<pre>$ sudo apt install linux-image-generic-lts-xenial linux-headers-generic-lts-xenial linux-image-generic linux-headers-generic && sudo apt clean && sudo update-grub</pre>
-
-Seejärel arvuti taaskäivitada värskelt paigaldatud tuumaga. On ju lihtne? Täpsustada saab ka versiooninumbrit, ülemine käsk võib välja näha ka nii kuigi see ei ole kõige parem mõte kuna sõltub konkreetsest tuuma ja selle päise versioonist, mis ei uuene (kavalam on paigaldada eespool kirjeldatud automaatselt uuenevad metapaketid): <b>sudo apt install linux-image-4.4.0-51-generic linux-image-extra-4.4.0-51-generic linux-image-generic linux-headers-4.4.0-51 linux-headers-4.4.0-51-generic linux-headers-generic</b>.
-
-Alternatiivina, kui huvi on uuendatud versiooni järgi, võib kasutada *dist-upgrade*'i. See teostab uuendused kõikidele pakettidele. Ei tohi unustada ka eespool kirjeldatud alglaaduri uuendamist uusima tuuma kasutuselevõtmiseks. Linuxi tuum uueneb pidevalt ja sellega kaasneb parem riistvara tugi, vigade parandused ja seeläbi ka parem turvalisus, kogu süsteemi parem töötamine. Seetõttu on oluline kasutada võimalikult uut tuuma ja vanad eemaldada.
-
-Kui metapaketid paigaldatud siis edaspidi toimub uusimate tuumade ja päiste paigaldus automaatselt kogu süsteemi uuendades:<br>
-<pre>$ sudo apt update && sudo apt dist-upgrade && sudo apt clean</pre>
-
-On olemas palju erinevaid tuuma versioone, näiteks LTS (long term support ehk pikaajalise toega) ja on ka muidugi veel uuemaid ning vingemaid. Versioonide vahel võib olla väga palju erinevusi ja võib juhtuda, et kasutaja tahab proovida erinevaid tuumasid. Üldiselt võib alati ka uusimaid versioone proovida - ka need töötavad ja lisavad üldjuhul uusima riistvara tuge ja parandatud saavad ka turvavead. Eriti just turvalisuse seisukohast lähtuvalt võiks süsteemis kasutada alati uusimat tuuma ja eemaldada vanad tuumad.
+On olemas palju erinevaid tuuma versioone, näiteks LTS (long term support ehk pikaajalise toega) ja on ka muidugi veel uuemaid ning vingemaid, millest tuleb juttu allpool. Versioonide vahel võib olla väga palju erinevusi ja võib juhtuda, et kasutaja tahab proovida erinevaid tuumasid. Üldiselt võib alati ka uusimaid versioone proovida - ka need töötavad ja lisavad üldjuhul uusima riistvara tuge ja parandatud saavad ka turvavead. Eriti just turvalisuse seisukohast lähtuvalt võiks süsteemis kasutada alati uusimat tuuma ja peale uusima paigaldatud tuuma pealt töötamises veendumist eemaldada vanad tuumad.
 
 Mõistlik on otsida uusimad LTS-versiooni metapaketid ja paigaldada need - siis süsteemi uuendamise (*dist-upgrade*) käigus uuendatakse alati uusima versiooni pikaajalise toega (LTS) tuuma peale:
 
@@ -34,15 +24,34 @@ $ sudo apt search linux-image-generic-lts
 $ sudo apt search linux-headers-generic-lts
 </pre>
 
-Leitud tulemustest tuleks paigaldada viimane ehk siis uusim ja olla nõus ka sõltuvustena uusimate tuuma ja selle päiste versioonide paigaldamisega. Uusima versiooni saab teha kindlaks kasutatava Linuxi koodnime järgi, siin toodud näide on Ubuntu Linuxi kohta ja see peaks kehtima ka teiste Debiani ja Ubuntu baasil tehtud Linuxite kohta. Ei tohi unustada ka eespool kirjeldatud alglaaduri uuendamist uusima tuuma kasutuselevõtmiseks.
+LTS-versioonid tulevad välja 2 aasta tagant aprillikuu lõpus. Need on rohkem testitud ja sobivad ka missioonikriitilistes kohtades kasutamiseks.
 
-Ubuntu koodnimed on toodud siin tabelis. Oma Ubuntu koodnime vaatamiseks:
+Leitud tulemustest tuleks paigaldada viimane ehk siis uusim ja olla nõus ka sõltuvustena uusimate tuuma ja selle päiste versioonide paigaldamisega. Uusima versiooni saab teha kindlaks kasutatava Linuxi koodnime järgi, siin toodud näide on Ubuntu Linuxi kohta ja see peaks kehtima ka teiste Debiani ja Ubuntu baasil tehtud Linuxite kohta. Ei tohi unustada ka eespool kirjeldatud alglaaduri uuendamist uusima tuuma kasutuselevõtmiseks. Ei maksa karta, et tuuma ja päisefailid on mõeldud uuemale Ubuntu LTS-versioonile - need töötavad ka vanemate LTS-versioonidega.
+
+Ubuntu koodnimed on toodud siin tabelis:
+* https://wiki.ubuntu.com/Releases
+* https://wiki.ubuntu.com/DevelopmentCodeNames
+
+Oma Ubuntu koodnime vaatamiseks:
 <pre>
 lsb_release -cd
 </pre>
 
 Seda näeb veel ka näiteks *cat /etc/lsb-release* abil.
 
+Linuxi tuuma ja päise metapakettide paigaldamine, siin näiteks Ubuntu 16.04 LTS Xenial Xerus:<br>
+<pre>$ sudo apt install linux-image-generic-lts-xenial linux-headers-generic-lts-xenial linux-image-generic linux-headers-generic && sudo apt clean && sudo update-grub</pre>
+
+Seejärel arvuti taaskäivitada värskelt paigaldatud tuumaga (sudo reboot). On ju lihtne? Täpsustada saab ka versiooninumbrit, metapakettide asemel võib paigaldada ka konkreetsed versioonid kuigi see ei ole kõige parem mõte kuna sõltub konkreetsest tuuma ja selle päise versioonist, mis ei uuene (kavalam on paigaldada eespool kirjeldatud automaatselt uuenevad metapaketid): <b>sudo apt install linux-image-4.4.0-51-generic linux-image-extra-4.4.0-51-generic linux-image-generic linux-headers-4.4.0-51 linux-headers-4.4.0-51-generic linux-headers-generic</b>.
+
+Linuxi tuum uueneb pidevalt ja sellega kaasneb parem riistvara tugi, vigade parandused ja seeläbi ka parem turvalisus, kogu süsteemi parem töötamine. Seetõttu on oluline kasutada võimalikult uusimat tuuma ja vanad eemaldada.
+
+Kui metapaketid paigaldatud siis edaspidi toimub uusimate tuumade ja päiste paigaldus automaatselt kogu süsteemi uuendades:<br>
+<pre>$ sudo apt update && sudo apt dist-upgrade && sudo apt clean</pre>
+
+Tuleb vaid ise jälgida kui uuema LTS-versiooni tuum muutub kättesaadavaks ka vanematele versioonidele ja siis on soovitav see kasutusele võtta.
+
+<p>Vanade tuumade eemaldamine</p>
 Kui uusim LTS-versiooni tuum paigaldatud, alglaadur uuendatud, süsteem taaskäivitatud ja veendutud *uname -r* abil, et töötatakse uusima tuuma pealt siis tuleks vanad ja kasutuses mitteolevad tuumad turvalisuse kaalutlustel ka eemaldada.
 
 Vaatame esmalt, millised tuumad on paigaldatud:
@@ -53,7 +62,7 @@ või ka
 <pre>
 $ dpkg -l | grep linux-image
 </pre>
-Paigaldatud tuumi, päiseid näeb ka kui vaadata kataloogi *ls -l /boot* - tuum on nimega *vmlinuz* ja teised sama versiooninumbriga moodustavadki tuuma komplekti koos päise ja kõige muu juurdekuuluvaga.
+Paigaldatud tuumi, päiseid näeb ka kui vaadata kataloogi *ls -l /boot* - tuum on nimega *vmlinuz* ja teised sama versiooninumbriga failid moodustavadki tuuma komplekti koos päise ja kõige muu juurdekuuluvaga.
 
 RPM-põhistes Linuxites näeb paigaldatud tuumi käsuga *rpm -q kernel*
 
@@ -109,7 +118,7 @@ Võib kasutada ka mõnda teist paketihaldustarkvara, soovi korral saab Synaptic'
 sudo apt update && sudo apt-get -y install synaptic && sudo apt clean
 </pre>
 
-2.variant otsimiseks
+2.variant paigaldatud tuumade ja päiste otsimiseks
 <pre>
 sudo dpkg --get-selections | grep linux-image<br>
 sudo dpkg --get-selections | grep linux-header
@@ -150,6 +159,14 @@ cd /home/kasutaja/Allalaadimised/tuum/ && sudo dpkg -i * && sudo update-grub && 
 </pre>
 
 Seejärel tuleks eemaldada vanad tuumad, millest eespool ka juttu oli. Kui vanade tuumade eemaldamisel sõltuvusena eemaldatakse ka pakett *linux-generic* siis selles ei ole midagi halba ja selle võib eemaldada, isegi enne eemaldamist märkida täielikuks eemaldamiseks (käsurealt *sudo apt purge linux-generic*).
+
+<p>Uudiseid Linuxi tuumaga seoses</p>
+* https://www.kernel.org/
+* https://lwn.net/Kernel/
+* https://lkml.org/ - postiloend
+* http://www.phoronix.com/scan.php?page=news_topic&q=Linux+Kernel
+* https://www.reddit.com/r/kernel/
+* https://kernelnewbies.org/
 
 ## Harjutus
 
