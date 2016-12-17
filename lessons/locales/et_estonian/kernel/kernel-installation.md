@@ -13,9 +13,12 @@ Uname käsk kuvab süsteemi informatsiooni, -r kuvab tuuma väljalaskeversiooni.
 
 Linuxi tuuma võib paigaldada mitut moodi. Võib laadida alla lähtepaketi ja kompileerida (seda väga ei soovita teha) kuid soovitav on seda teha kasutades paketihaldusvahendeid ja paigaldades alati uusimast tuuma versioonist sõltuvad metapaketid - need uuenevad automaatselt ehk siis kogu süsteemi uuendades (sudo apt update && sudo apt dist-upgrade && sudo apt clean) uueneb ka tuum koos päistega uusima versiooni peale.
 
+
 NB! Peale tuuma uuendamist tuleb alati ka käivitada alglaaduri uuendamise käsku sudo update-grub, et teavitada uuema tuuma paigaldamisest - siis teab alglaadur GRUB ka uusimat tuuma kasutusele võtta järgmise taaskäivitamise ajal. Kuigi üldjuhul tarkvara täielik uuendamine (dist-upgrade) käivitab ka alglaaduri uuendamise siis praktikas on märgata endiselt vana tuuma versiooni pealt käivitumist - seega ei ole see reegel ja kindluse mõttes tasub alati peale uue versiooni tuuma paigaldamist uuendada ka alglaadur. Isegi kui alglaadurit uuendada korduvalt siis ei mõju see kuidagi halvasti süsteemile.
 
+
 On olemas palju erinevaid tuuma versioone, näiteks LTS (long term support ehk pikaajalise toega) ja on ka muidugi veel uuemaid ning vingemaid, millest tuleb juttu allpool. Versioonide vahel võib olla väga palju erinevusi ja võib juhtuda, et kasutaja tahab proovida erinevaid tuumasid. Üldiselt võib alati ka uusimaid versioone proovida - ka need töötavad ja lisavad üldjuhul uusima riistvara tuge ja parandatud saavad ka turvavead. Eriti just turvalisuse seisukohast lähtuvalt võiks süsteemis kasutada alati uusimat tuuma ja peale uusima paigaldatud tuuma pealt töötamises veendumist eemaldada vanad tuumad.
+
 
 Mõistlik on otsida uusimad LTS-versiooni metapaketid ja paigaldada need - siis süsteemi uuendamise (*dist-upgrade*) käigus uuendatakse alati uusima versiooni pikaajalise toega (LTS) tuuma peale:
 
