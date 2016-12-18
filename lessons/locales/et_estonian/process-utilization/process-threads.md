@@ -2,9 +2,9 @@
 
 ## Tunni sisu
 
-Vahest on kuuldud väljendeid ühelõimeline ja mitmelõimeline protsess? Lõimed on protsessidele väga sarnased selle poolest, et neid kasutatakse sama programmi käivitamiseks. Neid nimetatakse vahel lihtsustatud protsessideks. Kui prtosessil on ainult üks lõim on ta ühelõimeline ja kui lõimi on rohkem kui üks on see mitmelõimeline. Kõikidel protsessidel on vähemalt üks lõim.
+Vahest on kuuldud väljendeid ühelõimeline ja mitmelõimeline protsess? Lõimed on protsessidele väga sarnased selle poolest, et neid kasutatakse sama programmi käivitamiseks. Neid nimetatakse vahel lihtsustatud protsessideks. Kui protsessil on ainult üks lõim on ta ühelõimeline ja kui lõimi on rohkem kui üks on see mitmelõimeline. Kõikidel protsessidel on vähemalt üks lõim.
 
-Protsessid opereerivad isiklike isoleeritud süsteemi ressurssidega, kuid lõimed võivad neid ressursse omavahel jagada kerge vaevaga. See teeb omavahelise suhtlemise lihtsamaks. Samuti on mitmelõimeline rakendus mõnikord otstarbekam ja tõhusam kui mitmeprotsessiline rakendus.
+Protsessid opereerivad isiklike isoleeritud süsteemi ressurssidega kuid lõimed võivad neid ressursse omavahel jagada kerge vaevaga. See teeb omavahelise suhtlemise lihtsamaks. Samuti on mitmelõimeline rakendus mõnikord otstarbekam ja tõhusam kui mitmeprotsessiline rakendus.
 
 Kui avada LibreOffice Writer ja Chrome, on need mõlemad eraldi protsessid. Kui aga kasutada Writerit ja hakata teksti töötlema, salvestatakse muudatused automaatselt. Need kaks paralleelset salvestamise ja muudatuste "lihtustatud protsessi" ongi lõimed.
 
