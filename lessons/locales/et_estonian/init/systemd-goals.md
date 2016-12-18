@@ -22,11 +22,11 @@ Tegu on lihtsa teenuse sihtkohaga. Faili alguses näeme sektsiooni [Unit], mis l
 
 Mõned käsud, mida saab kasutada *systemd* üskustega:
 
-<b>Kuva üksused</b>
+<b>Kuva teenused</b>
 
 <pre>$ systemctl list-units</pre>
 
-<b>Kuva üksuse olek</b>
+<b>Kuva teenuse olek</b>
 
 <pre>$ systemctl status networking.service</pre>
 
@@ -42,11 +42,11 @@ Mõned käsud, mida saab kasutada *systemd* üskustega:
 
 <pre>$ sudo systemctl restart networking.service</pre>
 
-<b>Luba üksus</b>
+<b>Luba teenus</b>
 
 <pre>$ sudo systemctl enable networking.service</pre>
 
-<b>Keela üksus</b>
+<b>Keela teenus</b>
 
 <pre>$ sudo systemctl disable networking.service</pre>
 
@@ -54,7 +54,7 @@ Kordame, et *systemd* sügavused on alles paljastamata, mistõttu tuleb õpilase
 
 ## Harjutus
 
-Kuvada üksuste olekuid, käivitada ja peatada teenuseid. Mida võib märgata?
+Kuvada teenuste olekuid, käivitada ja peatada teenuseid. Mida võib märgata?
 
 ## Küsimus
 
