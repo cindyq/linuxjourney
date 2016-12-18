@@ -19,6 +19,12 @@ Väljad vasakult paremale on järgmised:
 
 Tärn mingis väljas tähendab, et see vastab kõikidele väärtustele. Seega selle näite järgi, tahetakse, et skript käivituks iga päev igal kuul kell 8.30 hommikul.
 
+CRON'i tööde ajastamiseks on tehtud ka mitmeid veebipõhiseid vahendeid:
+* http://crontab-generator.org/
+* https://crontab.guru/
+* http://cron.nmonitoring.com/cron-generator.html
+* http://www.corntab.com/
+
 Kasutaja CRON'i töö loomiseks tuleb vaid muuta *crontab* faili: <pre>crontab -e</pre>
 
 Kogu süsteemi CRON seadistatakse failis */etc/crontab* kuid seda ei ole soovitav muuta enne kui on täielikult aru saadud selle muutmise eripäradest. Kui seal tehakse viga siis ei käivitata ka teisi seal failis olevaid töid, mis aga on süsteemi jätkusuutlikuks toimimiseks vajalikud. Superkasutaja õigustes on soovitav oma CRON'i tööd panna kirja kataloogi */etc/cron.d/* - seal võib näiteks endanimelise faili tekitada ja siis on ka teistele masina haldajatele teada kelle CRON'i tööd need on. Lisainfot leiab aadressilt https://help.ubuntu.com/community/CronHowto
