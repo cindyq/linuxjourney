@@ -13,9 +13,9 @@ Tööajast sai juba räägitud kursuse esimeses peatükis, kuid siis ei peatutud
 
 Ütleme, et kasutajal on ühetuumaline protsessor. Sellest tuumast võib mõelda kui ühest sõidureast liikluses. Tipptunnil on seal väga tihe sagimine ja liiklus on 100% juures, ehk siis koormus on 1. Kui aga liiklus läheb veel tihedamaks, täituvad ka sellele teele suubuvad teised teed ja autode hulk kahekordistub. Võib öelda, et liikluse koormus on 200% või siis 2. Kui aga liiklus natuke hajub ja autosid on ainult poole jagu, võib öelda, et raja koormus on 0,5. Kui ummikud on pea olematud ja inimesed saavad koju kiiremini, peaks koormus olema väga väike, nagu kell 2 öösel. Selles metafooris on autod protsessid ja protsessid ootavad, et saada sõiduteelt minema ja koju.
 
-Kui kasutaja koormuse määr on 1 ei tähenda see kohe, et aurvuti on lõpmata aeglane. Enamusel moodsatel masinatel on tänapäeval mitu tuuma. Neljatuumalisel masinal tähendaks keskmine koormus 1, et mõjutatud on ainult 25% protsessorist. Võib mõelda, et iga tuum on liikluses eraldi sõidurida. Protsessori tuumade arvu saab kuvada käsuga: <b>cat /proc/cpuinfo</b>.
+Kui kasutaja koormuse määr on 1 ei tähenda see kohe, et arvuti on lõpmata aeglane. Enamusel moodsatel masinatel on tänapäeval mitu tuuma. Neljatuumalisel masinal tähendaks keskmine koormus 1, et mõjutatud on ainult 25% protsessorist. Võib mõelda, et iga tuum on liikluses eraldi sõidurida. Protsessori tuumade arvu saab kuvada käsuga: <b>cat /proc/cpuinfo</b>.
 
-Tundes huvi keskmise koormuse vastu, tuleb alati võtta arvesse ka tuumade arv. Kui serie tulemusel selgub, et arvutis on koormus pidevalt üle keskmise taseme, võib midagi olla korrast ära.
+Tundes huvi keskmise koormuse vastu, tuleb alati võtta arvesse ka tuumade arv. Kui seire tulemusel selgub, et arvutis on koormus pidevalt üle keskmise taseme, võib midagi olla korrast ära.
 
 ## Harjutus
 

@@ -2,11 +2,11 @@
 
 ## Tunni sisu
 
-Ütleme, et kasutaja ühendab aruvisse USB pulga ja alustab tööd sealsete failidega. Kui aga töö on tehtud ja hakatakse pulka lahti ühendama ilmub veateade "Seade või ressurss on hõivatud". Kuidas saada teada, millised failid USB pulgal on endisel kasutuses? Selle jaoks on isegi kaks tööriista:
+Ütleme, et kasutaja ühendab aruvisse USB pulga ja alustab tööd sealsete failidega. Kui aga töö on tehtud ja hakatakse pulka lahti ühendama ilmub veateade "Seade või ressurss on hõivatud". Kuidas saada teada, millised failid USB pulgal on endiselt kasutuses? Selle jaoks on isegi kaks tööriista:
 
 <b>lsof</b>
 
-Meenutame, et failid ei ole ainult tekstifailid, pildid ja muu selline, vaid kõik, mis süsteemis asub: kettad, torud, võrgusoklid, seadmed jne. Et kuvada, mida protsessid parasjagu kasutavad, võib kasutada *lsof* (*list open files*) käsku. Kuvatakse nimekiri avatud failidest ja seotud protsessidest.
+Meenutame, et failid ei ole ainult tekstifailid, pildid ja muu selline vaid kõik, mis süsteemis asub: kettad, torud, võrgusoklid, seadmed jne. Et kuvada, mida protsessid parasjagu kasutavad, võib kasutada *lsof* (*list open files*) käsku. Kuvatakse nimekiri avatud failidest ja seotud protsessidest.
 
 <pre>
 pete@icebox:~$ lsof .
@@ -21,7 +21,7 @@ lsof      5914 pete  cwd    DIR    8,6     4096  131 .
 lsof      5915 pete  cwd    DIR    8,6     4096  131 .
 </pre>
 
-Sedasi saab teada, mis protsessid hoiavad device/file'i avatuna.  Meie USB näite kohaselt võib need protsessid pulga eemaldamiseks peatada.
+Selliselt saab teada, mis protsessid hoiavad seadet, faili avatuna.  Meie USB näite kohaselt võib need protsessid pulga eemaldamiseks peatada.
 
 <b>fuser</b>
 
@@ -38,11 +38,11 @@ pete@icebox:~$ fuser -v .
                      pete  2207 ..c.. bash
 </pre>
 
-Võime näiteks kuvada, millised protsessid kasutavad hetkel meie kodukataloogi. *lsof* ja *fuser* tööriistad on väga sarnased. Kasutaja võiks nendega tuttavaks saada ja proovida neid kasutada järgmine kord, kui on tarvis mõnda faili või protsessi jälgida.
+Võime näiteks kuvada, millised protsessid kasutavad hetkel meie kodukataloogi. *lsof* ja *fuser* tööriistad on väga sarnased. Kasutaja võiks nendega tuttavaks saada ja proovida neid kasutada järgmine kord kui on tarvis mõnda faili või protsessi jälgida.
 
 ## Harjutus
 
-Lugeda *lsof* ja *fuser* manlehekülgi. Sealt võib leida hulgaliselt informatsiooni, mida selles peatükis ei avaldatud, kuid võimaldavad nende tööriistade kasutamisel suuremat paindlikust.
+Lugeda *lsof* ja *fuser* man-lehekülgi. Sealt võib leida hulgaliselt informatsiooni, mida selles peatükis ei avaldatud kuid võimaldavad nende tööriistade kasutamisel suuremat paindlikust.
 
 ## Küsimus
 
