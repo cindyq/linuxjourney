@@ -2,7 +2,9 @@
 
 ## Tunni sisu
 
-Nii hästi, kui saab uurida protsessi koormust, saab teostada ka ketta kasutamise seiret. Selleks on käepärane tööriist <b>iostat</b>.
+Sarnaselt protsessori koormusele saab uurida ka ketta kasutamist käepärase tööriistaga <b>iostat</b>.
+
+See programm ei ole vaikimisi kaasas, paigaldamiseks <b>sudo apt update && sudo apt install sysstat && sudo apt clean    </b>
 
 <pre>
 pete@icebox:~$ iostat
@@ -21,7 +23,7 @@ Esimene osa on protsessori informatsioon:
 <li>%user - protsessori kasutamise protsent kasutaja tasemel (rakendused) </li>
 <li>%nice - protsessori kasutamise protsent kasutaja tasemel ja kenaduse prioriteetidega</li>
 <li>%system - protsessori kasutamise protsent süsteemi (tuuma) tasemel </li>
-<li>%iowait - protsent, mille jooksul protsessor oli tegevusetu, kuid eksisteerisid sisned/väljund päringud </li>
+<li>%iowait - protsent, mille jooksul protsessor oli tegevusetu kuid eksisteerisid sisend/väljund päringud </li>
 <li>%steal - aeg, mis kulus virtuaalsel protsessoril mittevabatahtlikule ootamisele, kuni teenindati teisi virtuaalseid protsessoreid. </li>
 <li>%idle - aeg, kui protsessor oli tegevusetu ja puudusid sisend/väljund päringud</li>
 </ul>
