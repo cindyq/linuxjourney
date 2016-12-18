@@ -2,7 +2,7 @@
 
 ## Tunni sisu
 
-Lisaks protsessori ja sisendi/väljundi seirele saab teostada ka mälu kasutuse seiret, seda käsuga <b>vmstat</b>.
+Lisaks protsessori ja sisendi/väljundi seirele saab teostada ka mälukasutuse seiret, seda käsuga <b>vmstat</b>.
 
 <pre>
 pete@icebox:~$ vmstat
@@ -11,7 +11,7 @@ procs -----------memory---------- ---swap-- -----io---- -system-- ------cpu-----
  1  0      0 396528  38816 384036    0    0     4     2   38   79  0  0 99  0  0
 </pre>
 
-Väljas on järgmised:
+Väljad on järgmised:
 
 <b>procs</b>
 <ul>
@@ -44,6 +44,8 @@ Väljas on järgmised:
 <li>in - katkestuste kogus sekundi kohta</li>
 <li>cs - kontekstkommutatsioonide kogus sekundi kohta</li>
 </ul>
+Sõnaseletus<br>
+**kontekstkommutatsiooon** Arvuti keskprotsessori olekut (konteksti) salvestav ja taastav protsess, mis võimaldab mitmel protsessil ühiselt kasutada üht ja sama protsessorit. Kontekstkommutatsioon täidab olulist rolli multitegumtöötluses. Kuna see protsess nõuab suhteliselt palju arvutusressurssi, siis opsüsteemide projekteerimisel pööratakse selle optimeerimisel suurt tähelepanu.
 
 <b>cpu</b>
 <ul>
