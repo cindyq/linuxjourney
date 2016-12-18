@@ -2,7 +2,7 @@
 
 ## Tunni sisu
 
-*Systemd* on tasapisi kerkimas esile *init*'i standardina. Kui kasutajal on arvutis olemas kataloog /usr/lib/systemd, siis kasutatakse kõige tõenäolisemalt just *systemd*'d.
+*Systemd* on tasapisi kerkimas esile *init*'i standardina. Kui kasutajal on arvutis olemas kataloog */usr/lib/systemd* siis kasutatakse kõige tõenäolisemalt just *systemd*'d.
 
 *Systemd* kasutab süsteemi töökorras hoidmiseks eesmärke. Põhimõtteliselt on nii, et on olemas eesmärk, mida tahetakse saavutada aga sellel eesmärgil on ka sõltuvused, mis tuleb samuti täita. *Systemd* on väga paindlik ja robustne, see ei järgi protsesside käivitamisel ranget järjekorda. Tüüpilise *systemd* alglaadimise ajal toimub tavaliselt järgnev:
 
@@ -32,7 +32,7 @@ Peamised objektid, millega *systemd* opereerib on üksused. *Systemd* mitte ainu
 <li>Sihtmärgi üksused  - grupeerivad kokku teisi üksusi, faili lõpp on .target</li>
 </ul>
 
-Ütleme näiteks, et me alglaeme default.target. Sinna on kokku grupeeritud networking.service, crond.service ja teised üksused. Seega kui see üksus aktiveerida aktiveeruvad ka kõik talle alluvad üksused.
+Ütleme näiteks, et me alglaadime default.target. Sinna on kokku grupeeritud networking.service, crond.service ja teised üksused. Seega kui see üksus aktiveerida aktiveeruvad ka kõik talle alluvad üksused.
 
 ## Harjutus
 
