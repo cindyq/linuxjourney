@@ -45,7 +45,7 @@ Väljad on järgmised:
 <li>cs - kontekstkommutatsioonide kogus sekundi kohta</li>
 </ul>
 Sõnaseletus<br>
-**kontekstkommutatsiooon** Arvuti keskprotsessori olekut (konteksti) salvestav ja taastav protsess, mis võimaldab mitmel protsessil ühiselt kasutada üht ja sama protsessorit. Kontekstkommutatsioon täidab olulist rolli multitegumtöötluses. Kuna see protsess nõuab suhteliselt palju arvutusressurssi, siis opsüsteemide projekteerimisel pööratakse selle optimeerimisel suurt tähelepanu.
+**kontekstkommutatsioon** Arvuti keskprotsessori olekut (konteksti) salvestav ja taastav protsess, mis võimaldab mitmel protsessil ühiselt kasutada üht ja sama protsessorit. Kontekstkommutatsioon täidab olulist rolli multitegumtöötluses. Kuna see protsess nõuab suhteliselt palju arvutusressurssi, siis operatsioonisüsteemide projekteerimisel pööratakse selle optimeerimisele suurt tähelepanu.
 
 <b>cpu</b>
 <ul>
