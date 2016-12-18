@@ -2,11 +2,15 @@
 
 ## Tunni sisu
 
-Natuke raske uskuda, et veel ei ole arutatud süsteemi oleku käsurea kaudu konktrollimise viise. Kuid rääkides *init*ist räägime lisaks süteemi käiviamise režiimidest, kuid ka nendest, millega süsteemi peatada.
+Natuke raske uskuda, et veel ei ole arutatud süsteemi oleku käsurea kaudu konktrollimise viise. Kuid rääkides *init*ist räägime lisaks süsteemi käivitamise režiimidest kuid ka nendest, millega süsteemi peatada.
 
 Süsteemi peatamiseks:
 
 <pre>$ sudo shutdown -h now</pre>
+
+Kuid võib kasutada ka sulgemise käsku:
+
+<pre>$ sudo poweroff</pre>
 
 See lülitab süsteemi välja, täpsustama peab, millal see peab aset leidma. Lisada võib aja minutites, mille möödudes süsteem lõpetab töö.
 
