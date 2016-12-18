@@ -2,7 +2,7 @@
 
 ## Tunni sisu
 
-Sellel kursusel tutvustatakse, kuidas lugeda ja analüüsida süsteemi ressursside kasutust. Selles peatükis näidatakse häid tööriistu, millega on hea tostada protsesside seiret.
+Sellel kursusel tutvustatakse, kuidas lugeda ja analüüsida süsteemi ressursside kasutust. Selles peatükis näidatakse häid tööriistu, millega on hea teostada protsesside seiret.
 
 <b>top</b>
 
@@ -32,19 +32,23 @@ Väljad vasakult paremale:
 <li>Süsteemi keskmine koormus (hiljem rohkem)</li>
 </ol>
 
-<b>2. rida: tegumid, mis töötavad, magavad, on peatatud ja, zombid</b>
+<b>2. rida: tegumid, mis töötavad, magavad, on peatatud ja zombid</b><br>
+Lisainfo *zombie* protsesside kohta:
+* http://askubuntu.com/questions/48624/what-are-zombie-processes
+* http://stackoverflow.com/questions/16944886/how-to-kill-zombie-process
+* https://www.cyberciti.biz/tips/killing-zombie-process.html
 
 <b>3. rida: protsessori informatsioon</b>
 
 <ol>
 <li>us: kasutaja protsessori aeg  - Protsent protsessori kasutamise ajast, mis on kulunud mittekenadele protsessidele.</li>
-<li>sy: süsteemi protsessori aeg - Protsent protsessori kasutamise ajast, mis on kulunud tuumale ja tuuma protsessidele.</li>
+<li>sy: süsteemi protsessori aeg - Protsent protsessori kasutamise ajast, mis on kulunud tuumale ja selle protsessidele.</li>
 <li>ni: kena protsessori aeg - Protsent protsessori kasutamise ajast, mis on kulunud kenadele protsessidele.</li>
 <li>id: protsessori tegevusetu aeg - Protsent, mille jooksul protsessor on olnud tegevusetu.</li>
 <li>wa: sisend/väljund ooteaeg - Protsent protsessori kasutamise ajast, mis on kulunud sisendi/väljundi järgi ootamiseks. Kui see väärtus on väike, ei ole probleem ilmselt kettas või võrgu sisendis/väljundis</li>
 <li>hi: riistvara katkestused - Protsent protsessori kasutamise ajast, mis on kulunud riistvara poolt saadetud katkestuste teenindamisele.</li>
 <li>si: tarkvara katkestused - Protsent protsessori kasutamise ajast, mis on kulunud tarkvara poolt saadetud katkestuste teenindamisele.</li>
-<li>st: varastatud aeg - Kui arvutis töötavad virtuaalmasinad, on see protsent protsessori ajast, mis on varasatud teiste tegumite jaoks</li>
+<li>st: varastatud aeg - Kui arvutis töötavad virtuaalmasinad, on see protsent protsessori ajast, mis on varastatud teiste tegumite jaoks</li>
 </ol>
 
 <b>4. ja 5. rida: Mälu ja saaleala kasutus</b>
@@ -61,12 +65,12 @@ Väljad vasakult paremale:
 <li>SHR: protsessi jagatud mälu</li>
 <li>S: Protsessi oleku indikaator: S=magab, R=töötab, Z=zombi,D=ei saa katkestada,T=peatatud</li>
 <li>%CPU - protsessori kasutamise protsent </li>
-<li>%MEM - RAMi kasutamise protsent</li>
+<li>%MEM - muutmälu (RAM) kasutamise protsent</li>
 <li>TIME+ - protsessi summaarne tööaeg</li>
 <li>COMMAND - protsessi nimi</li>
 </ol>
 
-Võib ka täpsustada protsessi ID, kui on huvi mingi kindla protsessi vastu:
+Võib ka täpsustada protsessi ID kui on huvi mingi kindla protsessi vastu:
 
 <pre>$ top -p 1</pre>
 
