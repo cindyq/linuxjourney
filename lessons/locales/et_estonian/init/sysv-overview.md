@@ -22,7 +22,7 @@ Kasutades *Sys V*'d, määravad masina oleku teenusetasemed, mis võivad olla 0 
 <li>6: Taaskäivitamine</li>
 </ul>
 
-Kui süsteem käivitub, vaadatakse, milline on aktiivne teenusetase ja käivitatakse skriptid selle taseme seadete alt. Need skriptid paikenevad kataloogis <b>/etc/rc.d/rc[taseme number].d/</b> või <b>/etc/init.d</b>. Skriptid, mis algavad S(start) või K(*kill*) käivituvad vastavalt alglaadimisel ja väljalülitamisel. Numbrid nende tähtede juures esindavad käivitumise järjekorda.
+Kui süsteem käivitub siis vaadatakse, milline on aktiivne teenusetase ja käivitatakse skriptid selle taseme seadete alt. Need skriptid paikenevad kataloogis <b>/etc/rc.d/rc[taseme number].d/</b> või <b>/etc/init.d</b>. Skriptid, mis algavad S(start) või K(*kill*) käivituvad vastavalt alglaadimisel ja väljalülitamisel. Numbrid nende tähtede juures esindavad käivitumise järjekorda.
 
 Näiteks:
 
@@ -33,7 +33,7 @@ K10updates  K80openvpn
 
 Pöördudes 0 teenustasemele või siis sulgemise režiimi, märkame, et arvuti proovib käivitada skripti, et peatada uuendusteenused ja seejärel *openvpn*. Vaikimisi alglaadimise teenustaseme kuvamiseks võib vaadata faili /etc/inittab. Samas kohas saab ka väikimisi seadet muuta.
 
-Tasuks täheldada, et *System V*'d vahetatakse vaikselt välja, kuid see ei pruug ka veel lähemat aastate jooksul juhtuda. Teenustasemeid võib kohata ka teiste *init*i teostuste juures. Seda põhiliselt, et toetada neid teenuseid, mida käivitatakse või peatatakse ainule *System V init*'i skriptidega.
+Tasuks täheldada, et *System V*'d vahetatakse vaikselt välja, kuid see ei pruug ka veel lähemat aastate jooksul juhtuda. Teenustasemeid võib kohata ka teiste *init*i teostuste juures. Seda põhiliselt, et toetada neid teenuseid, mida käivitatakse või peatatakse ainult *System V init*'i skriptidega.
 
 ## Harjutus
 
