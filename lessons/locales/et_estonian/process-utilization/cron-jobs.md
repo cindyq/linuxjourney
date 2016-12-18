@@ -23,6 +23,8 @@ Kasutaja CRON'i töö loomiseks tuleb vaid muuta *crontab* faili: <pre>crontab -
 
 Kogu süsteemi CRON seadistatakse failis */etc/crontab* kuid seda ei ole soovitav muuta enne kui on täielikult aru saadud selle muutmise eripäradest. Kui seal tehakse viga siis ei käivitata ka teisi seal failis olevaid töid, mis aga on süsteemi jätkusuutlikuks toimimiseks vajalikud. Superkasutaja õigustes on soovitav oma CRON'i tööd panna kirja kataloogi */etc/cron.d/* - seal võib näiteks endanimelise faili tekitada ja siis on ka teistele masina haldajatele teada kelle CRON'i tööd need on. Lisainfot leiab aadressilt https://help.ubuntu.com/community/CronHowto
 
+Kui CRON'i töö ei tööta siis tasub analüüsida võimalikke vigu. Ideid leiab näiteks siit - http://askubuntu.com/questions/23009/reasons-why-crontab-does-not-work
+
 ## Harjutus
 
 Luua mingi graafiku järgi aktiveeruv CRON'i töö.
