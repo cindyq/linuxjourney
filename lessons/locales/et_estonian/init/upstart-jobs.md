@@ -2,7 +2,7 @@
 
 ## Tunni sisu
 
-*Upstart* võib algatada palju sündmusi ja tegumeid, paraku aga ei ole kerge tuvastada, kust midagi neist pärineb. Selleks tuleb natuke sobrada kataloogis /etc/init. Suurema tõenäosusega pole kasutajal aga kunagi vaja *Upstart*'i sätete faile vaadata, kuid need võimaldavad soovi korral mingeid spetsiifilisi tegumeid paremini kontrollida. *Upstart* süsteemis on võimalik kasutada hulgaliselt kasulikke käske.
+*Upstart* võib algatada palju sündmusi ja tegumeid, paraku aga ei ole kerge tuvastada, kust midagi neist pärineb. Selleks tuleb natuke sobrada kataloogis */etc/init*. Suurema tõenäosusega pole kasutajal aga kunagi vaja *Upstart*'i sätete faile vaadata, kuid need võimaldavad soovi korral mingeid spetsiifilisi tegumeid paremini kontrollida. *Upstart* süsteemis on võimalik kasutada hulgaliselt kasulikke käske.
 
 <b>Tegumite kuvamine</b>
 
@@ -13,7 +13,7 @@ console stop/waiting
 ...
 </pre>
 
-Kuvatakse nimekiri *Upstart*'i tegumitest neile rakendatud erinevate olekutega. Igal real on tegumi nimi esimene väärtus, teine väli (enne /) on tegumi sihtkoht. Kolmas väärtus (/ järel) on hetke olek. Kasutaja võib näha, et süsteemi sulgemise tegum tahab mingil hetkel lõpetada, kuid on hetkel ootavas olekus. Tegumi olek ja sihtkoht muutuvas tegumeid käivitades ja sulgedes.
+Kuvatakse nimekiri *Upstart*'i tegumitest neile rakendatud erinevate olekutega. Igal real on tegumi nimi esimene väärtus, teine väli (enne /) on tegumi sihtkoht. Kolmas väärtus (/ järel) on hetke olek. Kasutaja võib näha, et süsteemi sulgemise tegum tahab mingil hetkel lõpetada kuid on hetkel ootavas olekus. Tegumi olek ja sihtkoht muutuvas tegumeid käivitades ja sulgedes.
 
 <b>Kuva konkreetne tegum</b>
 
@@ -21,7 +21,7 @@ Kuvatakse nimekiri *Upstart*'i tegumitest neile rakendatud erinevate olekutega. 
 networking start/running
 </pre>
 
-Siin kursusel ei minda *Upstart*'i tegumite seadete kirjutamise oskuse osas detailidesse, kuid juba on tutvustatud, et nende seadete kaudu tegumeid alustatakse, peatatakse ja taaskäivitatakse. Tegumitest võivad käivituda ka teised tegumid. Olulisemad *Upstart*'i manuaalsed käsud käiakse siinkohal üle, kuid kui huvi on suurem peaks uurima lähemalt  .conf faile.
+Siin kursusel ei minda *Upstart*'i tegumite seadete kirjutamise oskuse osas detailidesse kuid juba on tutvustatud, et nende seadete kaudu tegumeid alustatakse, peatatakse ja taaskäivitatakse. Tegumitest võivad käivituda ka teised tegumid. Olulisemad *Upstart*'i manuaalsed käsud käiakse siinkohal üle kuid kui huvi on suurem peaks uurima lähemalt  .conf faile.
 
 <b>Käivita tegum käsitsi</b>
 
@@ -35,7 +35,7 @@ Siin kursusel ei minda *Upstart*'i tegumite seadete kirjutamise oskuse osas deta
 
 <pre>$ sudo initctl restart networking</pre>
 
-<b>Emiteeri tegum käsitsi</b>
+<b>Võta kasutusele (emiteeri) tegum käsitsi</b>
 
 <pre>$ sudo initctl emit some_event</pre>
 
