@@ -2,9 +2,9 @@
 
 ## Tunni sisu
 
-Kuna *Upstart* on Canonical'i välja töötatud, oli see mõnda aega Ubuntu*init*'i teostus. Kaasaegsematel Ubuntudel kasutatakse aga *systemd*'d. *Upstart* loodi selleks, et parandada mõnigaid probleeme *Sys V*'ga, näiteks range alglaadimise protsess, tegumite blokeerimine jne. *Upstart*'i sündmustele ja tegumitele oritenteeritud mudel lubab reageerida sündmustele jooksvalt.
+Kuna *Upstart* on Canonical'i välja töötatud, oli see mõnda aega Ubuntu*init*'i teostus. Kaasaegsematel Ubuntudel kasutatakse aga *systemd*'d. *Upstart* loodi selleks, et parandada mõningaid probleeme *Sys V*'ga, näiteks range alglaadimise protsess, tegumite blokeerimine jne. *Upstart*'i sündmustele ja tegumitele orienteeritud mudel lubab reageerida sündmustele jooksvalt.
 
-Kui kasutajal on süsteemis kataloog  /usr/share/upstart on see päris hea vihje, et kasutusel on *Upstart*.
+Kui kasutajal on süsteemis kataloog */usr/share/upstart* on see päris hea vihje, et kasutusel on *Upstart*.
 
 Tegumid on tegevused, mida *Upstart* teostab ja sündmused on teated, mida töödeldakse tegumite aktiveerimiseks. Tegumite ja nende seadete nimekirja kuvamiseks:
 
@@ -19,7 +19,7 @@ anacron.conf                 network-interface-container.conf
 
 Nendes seadete failides on informatsioon selle kohta kuidas ja millal tegumeid käivitada.
 
-Näitkes networking.conf failist võiks leida järgmise:
+Näiteks networking.conf failist võiks leida järgmise:
 <pre>
 start on runlevel [235]
 stop on runlevel [0]
@@ -30,19 +30,19 @@ See tähendab, et võrgundust seatakse üles teenustasemel 2, 3 või 5 ja peatat
 *Upstart* töötab järgmiselt:
 
 <ol>
-<li>Esiteks laetakse tegumi seadete fail kataloogist /ets/init</li>
+<li>Esiteks laetakse tegumi seadete fail kataloogist */etc/init*</li>
 <li>Kui toimub alglaadimise sündmus, käivitatakse selle poolt aktiveeritud tegum</li>
 <li>Need tegumid loovad uusi sündmusi, mis omakorda akviteerivad rohkem tegumeid</li>
-<li>*Upstart* toimib sedasi kuni kõik valaikud tegumid on teostatud</li>
+<li>*Upstart* toimib kuni kõik valitud tegumid on teostatud</li>
 </ol>
 
 ## Harjutus
 
-Kui arvutis on *Upstart*, uurida /etci/init sisu. Kas seaded on arusaadavad?
+Kui arvutis on *Upstart*, uurida */etc/init* sisu. Kas seaded on arusaadavad?
 
 ## Küsimus
 
-Millist *init*'i teostus Ubuntus kasutatakse?
+Millist *init*'i teostust Ubuntus kasutati?
 
 ## Vastus
 
