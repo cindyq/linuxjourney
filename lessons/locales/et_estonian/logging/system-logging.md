@@ -21,7 +21,7 @@ Võib näha, et 27. jaanuaril kell 07.41.32 käivitas CRON'i teenus töö cron.w
 
 ## Harjutus
 
-Vaadata faili /var/log/syslog. Mis veel kasutaja arvutis toimub?
+Vaadata faili */var/log/syslog*. Mis veel kasutaja arvutis toimub?
 
 ## Küsimus
 
