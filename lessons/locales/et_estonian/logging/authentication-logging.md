@@ -1,12 +1,12 @@
-﻿# Autentimise logimine
+﻿# Isikutuvastuse logimine
 
 ## Tunni sisu
 
-Autentimise logimine osutub väga kasulikusk kui tekivad probleemid kasutaja sisselogimisega.
+Isikutuvastuse logimine osutub väga kasulikuks kui tekivad probleemid kasutaja sisselogimisega.
 
 <b>/var/log/auth.log</b>
 
-Seal asuvad süsteemi autentimise logid, näiteks kasutaja sisselogimise ja autentimise meetod.
+Seal asuvad süsteemi isikutuvastuse logid, näiteks kasutaja sisselogimise ja isikutuvastuse meetod.
 
 Väike katke näiteks:
 
@@ -20,7 +20,7 @@ Tekitada mõned ebaõnnestunud sisselogimiskatsed ja ka üks edukas. Seejärel v
 
 ## Küsimus
 
-Millist logi kasutatakse kasutajate autentimist puudutava informatsiooni jaoks?
+Millist logi kasutatakse kasutajate isikutuvastust puudutava informatsiooni jaoks?
 
 ## Vastus
 
