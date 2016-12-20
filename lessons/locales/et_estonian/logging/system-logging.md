@@ -6,7 +6,7 @@ Teenused, tuum, deemonid jms kasutaja süsteemis on pidevalt tegevuses. Sellekoh
 
 Kuidas selliseid sõnumeid süsteemis üldse vastu võetakse? On olemas teenus nimega syslog, mis saadab informatsiooni süsteemi logijale.
 
-Syslog koosneb tegelikult mitmest komponendist. Üks olulisematest on deemon nimega syslogf (uuemates tarkvaraväljalasetes kasutatakse rsyslogd'i), mis ootab sündmuste teateid ja nende ilmnemisel filtreerib välja enda jaoks olulised. Sõtluvalt sellest, mis sõnumiga peab peale hakkama, see saadetakse kas faili, konsooli või siis ei tehta sellega midagi.
+Syslog koosneb tegelikult mitmest komponendist. Üks olulisematest on deemon nimega syslogd (uuemates Linuxites kasutatakse rsyslogd), mis ootab sündmuste teateid ja nende ilmnemisel filtreerib välja enda jaoks olulised. Sõltuvalt sellest, mis sõnumiga peab peale hakkama - see saadetakse kas faili, konsooli või siis ei tehta sellega midagi.
 
 Võiks ju arvata, et see süsteemi logija ongi keskne logide haldamise koht. Kuid kahjuks see ei ole nii. Leidub palju rakendusi, mis kirjutavad isiklikud reeglid ja toodavad erinevaid logifaile. Sellest hoolimata, tavapärane logi formaat näeb ette ajatempli ja sündmuse detailid.
 
@@ -17,11 +17,11 @@ pete@icebox:~$ less /var/log/syslog
 Jan 27 07:41:32 icebox anacron[4650]: Job `cron.weekly' started
 </pre>
 
-Võib näha, et 27. jaanuaril 07:41:32 käivitas cron'i teenus töö cron.weekly.job. Kõikide sündmuste teateid, mida syslog kogub võib näha failis /var/log/syslog.
+Võib näha, et 27. jaanuaril kell 07.41.32 käivitas CRON'i teenus töö cron.weekly.job. Kõikide sündmuste teateid, mida syslog kogub võib näha failis /var/log/syslog.
 
 ## Harjutus
 
-Vaadata faili /var/log/syslog. Mis veel kasutaja arvutis toimub?
+Vaadata faili */var/log/syslog*. Mis veel kasutaja arvutis toimub?
 
 ## Küsimus
 
