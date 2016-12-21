@@ -6,7 +6,7 @@ Tavaliselt ei ole kasutaja oma arvutiga võrgus üksi ja seda kindlasti mitte si
 
 Sellel kursusel tutvustatakse mõnda  andmete kopeerimise meetodit, mida saab rakendada samas võrgus paiknevate arvutite peal. Arutlusele tulevad mõned lihtsamad failide kopeerimise meetodid, seejärel aga kuidas haakida terveid katalooge, et nad käituksid kui eraldiseisvad kettad.
 
-<b>Secure Copy</b>
+<b>Secure Copy</b><br>
 Üks lihtne failide jagamise tööriist on  <b>scp</b> käsk. Inglise keelest tõlgituna tähendab see käsk turvalist kopeerimist (*secure copy*). See töötab just nagu cp käsk, kuid võimaldab kopeerida erinevate lõppkasutajate vahel. Kuna see töötab läbi SSH, kasutavad kõik tegevused sama isikutuvastust ja turvalisust kui SSH. Linuxis on kasutusel avatud lähtekoodiga OpenSSH server.
 
 <b>OpenSSH serveri paigaldamine</b><br>
