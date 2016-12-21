@@ -78,7 +78,7 @@ Kui servereid on mitu siis on võimalik *-f* võtme abil luua igale serverile er
 ssh-keygen -t rsa -b 4096 -C "Eesnimi Perenimi e-posti@aadress.ee" -f ~/.ssh/id_rsa_s1
 </pre>
 
-ssh-keygen võimaldab Linuxis luua kuni 16384-bit võtmeid kuid tulevikus võib see number ka muutuda. Väike paranoia on turvalisuse valdkonnas alati kasulik ja kui tegemist kriitiliste andmetega siis on kõrgendatud turvalisuse kasutamine omal kohal. Seoses kvantarvutite tulekuga muutub ka olukord krüptograafias ja täna turvalisena toimivad algoritmid murtakse üha kiiremini vastavalt kvantarvutite arenguga. Seni tuntud krüptograafia asemele peab tulema kvantkrüptograafia, mis tagab turvalisuse ka uuenenud olukorras.
+ssh-keygen võimaldab Linuxis luua RSA puhul kuni 16384-bit võtmeid kuid tulevikus võib see number ka muutuda. Väike paranoia on turvalisuse valdkonnas alati kasulik ja kui tegemist kriitiliste andmetega siis on kõrgendatud turvalisuse kasutamine omal kohal. Seoses kvantarvutite tulekuga muutub ka olukord krüptograafias ja täna turvalisena toimivad algoritmid murtakse üha kiiremini vastavalt kvantarvutite arenguga. Seni tuntud krüptograafia asemele peab tulema kvantkrüptograafia, mis tagab turvalisuse ka uuenenud olukorras.
 
 <b>Uue põlvkonna turvalisus võtmefailiga sisselogimisel</b><br>
 Lisaks on olemas ka teisi algoritme, mida võimalik võtmepaari loomisel kasutada ja viimasel ajal on soovitav kasutada elliptilist krüptograafiat võimaldavat algoritmi Ed25519. Lisainfot leiab näiteks [Arch Linuxi wiki artiklist](https://wiki.archlinux.org/index.php/SSH_keys#Choosing_the_type_of_encryption) ja [Ed25519 kodulehelt](http://ed25519.cr.yp.to).
