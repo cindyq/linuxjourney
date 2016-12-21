@@ -16,7 +16,7 @@ Serverarvutis peab olema paigaldatud OpenSSH server, teiste arvutitega ühendumi
 sudo apt update && sudo apt-get -y install ssh openssh-blacklist* && sudo ldconfig && sudo dpkg --configure -a && sudo apt-get clean
 </pre>
 
-Siin paigaldatakse metapakett *ssh*, mis Debiani/Ubuntu-põhistes distrotes sisaldab nii serveri- kui klienditarkvara. Soovi korral saab ka eraldi vaid serveri paigaldada paketiga *openssh-server*.
+Siin paigaldatakse metapakett *ssh*, mis Debiani/Ubuntu-põhistes distrotes sisaldab nii serveri- kui klienditarkvara. Soovi korral saab ka eraldi vaid serveri, paigaldades paketi *openssh-server*.
 
 Soovi korral eraldi klienditarkvara paigaldamiseks on olemas eraldi pakett kuid tavaliselt ei ole paigaldatud musta nimekirja (*blacklist*) kantud krüptovõtmete pakette:
 
