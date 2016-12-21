@@ -13,7 +13,7 @@ Sellel kursusel tutvustatakse mõnda  andmete kopeerimise meetodit, mida saab ra
 Serverarvutis peab olema paigaldatud OpenSSH server, teiste arvutitega ühendumiseks ka klienditarkvara ja soovitav on paigaldada ka musta nimekirja (*blacklist*) kantud krüptovõtmete paketid:
 
 <pre>
-sudo apt update && sudo apt-get -y install ssh openssh-blacklist openssh-blacklist-extra && sudo ldconfig && sudo dpkg --configure -a && sudo apt-get clean
+sudo apt update && sudo apt-get -y install ssh openssh-blacklist* && sudo ldconfig && sudo dpkg --configure -a && sudo apt-get clean
 </pre>
 
 Siin paigaldatakse metapakett *ssh*, mis Debiani/Ubuntu-põhistes distrotes sisaldab nii serveri- kui klienditarkvara. Soovi korral saab ka eraldi vaid serveri paigaldada paketiga *openssh-server*.
@@ -21,7 +21,7 @@ Siin paigaldatakse metapakett *ssh*, mis Debiani/Ubuntu-põhistes distrotes sisa
 Soovi korral eraldi klienditarkvara paigaldamiseks on olemas eraldi pakett kuid tavaliselt ei ole paigaldatud musta nimekirja (*blacklist*) kantud krüptovõtmete pakette:
 
 <pre>
-sudo apt update && sudo apt-get -y install openssh-client openssh-blacklist openssh-blacklist-extra && sudo ldconfig && sudo dpkg --configure -a && sudo apt-get clean
+sudo apt update && sudo apt-get -y install openssh-client openssh-blacklist* && sudo ldconfig && sudo dpkg --configure -a && sudo apt-get clean
 </pre>
 
 Seadistamiseks leiab failid kataloogist */etc/ssh/*, serveri seaded asuvad failis */etc/ssh/sshd_config* ning süsteemilaiune klienditarkvara seadistus */etc/ssh/ssh_config* ning iga kasutaja võib veel omada eraldi *~/.ssh/config* faili, mis on kõrgema prioriteediga kui süsteemilaiune seadistusefail.
