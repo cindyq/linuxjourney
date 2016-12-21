@@ -6,7 +6,11 @@ Tavaliselt ei ole kasutaja oma arvutiga võrgus üksi ja seda kindlasti mitte si
 
 Sellel kursusel tutvustatakse mõnda  andmete kopeerimise meetodit, mida saab rakendada samas võrgus paiknevate arvutite peal. Arutlusele tulevad mõned lihtsamad failide kopeerimise meetodid, seejärel aga kuidas haakida terveid katalooge, et nad käituksid kui eraldiseisvad kettad.
 
-Üks lihtne failide jagamise tööriist on  <b>scp</b> käsk. Inglise keelest tõlgituna tähendab see käsk turvalist kopeerimist (*secure copy*). See töötab just nagu cp käsk, kuid võimaldab kopeerida erinevate lõppkasutajate vahel. Kuna see töötab läbi SSH, kasutavad kõik tegevused sama isikutuvastust ja turvalisust kui SSH. Serverarvutis peab olema paigaldatud OpenSSH server, teiste arvutitega ühendumiseks ka klienditarkvara ja soovitav on paigaldada ka musta nimekirja (*blacklist*) kantud krüptovõtmete paketid:
+<b>Secure Copy</b>
+Üks lihtne failide jagamise tööriist on  <b>scp</b> käsk. Inglise keelest tõlgituna tähendab see käsk turvalist kopeerimist (*secure copy*). See töötab just nagu cp käsk, kuid võimaldab kopeerida erinevate lõppkasutajate vahel. Kuna see töötab läbi SSH, kasutavad kõik tegevused sama isikutuvastust ja turvalisust kui SSH. Linuxis on kasutusel avatud lähtekoodiga OpenSSH server.
+
+<b>OpenSSH serveri paigaldamine</b><br>
+Serverarvutis peab olema paigaldatud OpenSSH server, teiste arvutitega ühendumiseks ka klienditarkvara ja soovitav on paigaldada ka musta nimekirja (*blacklist*) kantud krüptovõtmete paketid:
 
 <pre>
 sudo apt update && sudo apt-get -y install ssh openssh-blacklist openssh-blacklist-extra && sudo ldconfig && sudo dpkg --configure -a && sudo apt-get clean
@@ -22,6 +26,7 @@ sudo apt update && sudo apt-get -y install openssh-client openssh-blacklist open
 
 Seadistamiseks leiab failid kataloogist */etc/ssh/*, serveri seaded asuvad failis */etc/ssh/sshd_config* ning süsteemilaiune klienditarkvara seadistus */etc/ssh/ssh_config* ning iga kasutaja võib veel omada eraldi *~/.ssh/config* faili, mis on kõrgema prioriteediga kui süsteemilaiune seadistusefail.
 
+<b>Esmakordne sisselogimine OpenSSH serverarvutisse</b><br>
 Esmakordsel sisselogimisel kirjutatakse klientarvutisse faili *~/.ssh/known_hosts* serverarvuti avalik võti, mida kontrollitakse edaspidi igal sisenemisel. Kui serverarvuti võtmepaar (salajane ja koos sellega ka avalik võti) muutub siis kuvatakse vastav teade:<br>
 <pre>
 The authenticity of host '12.34.56.78 (12.34.56.78)' can't be established.
@@ -38,22 +43,19 @@ to make sure we haven't added extra keys that you weren't expecting.
 
 Võtmete haldusest on juttu allpool.
 
-<b>Selleks, et kopeerida fail kohalikust (klient)arvutist eemalasuvasse (server)arvutisse</b>
-
+<b>Selleks, et kopeerida fail kohalikust (klient)arvutist eemalasuvasse (server)arvutisse</b><br>
 <pre>$ scp minufail.txt kasutajanimi@kaugarvuti.com:/eemalasuv/kataloog/</pre>
 
-<b>Selleks, et kopeerida fail eemalasuvast (server)arvutist enda omasse</b>
-
+<b>Selleks, et kopeerida fail eemalasuvast (server)arvutist enda omasse</b><br>
 <pre>$ scp kasutajanimi@kaugarvuti.com:/eemalasuv/kataloog/minufail.txt /kohalik/kataloog/</pre>
 
-<b>Selleks, et kopeerida kataloog enda arvutist eemalasuvasse arvutisse</b>
-
+<b>Selleks, et kopeerida kataloog enda arvutist eemalasuvasse arvutisse</b><br>
 <pre>$ scp -r /kohalik/kataloog/ kasutajanimi@kaugarvuti.com:/eemalasuv/kataloog/</pre>
 
+<b>Mugav sisselogimine OpenSSH serverarvutisse</b><br>
 Mugavaks sisselogimiseks võib tekitada võtmefaili - siis ei pea iga kord salasõna sisestama. Siiski esimesel korral sisestatakse salasõna kuid kogu seansi vältel (kuni väljalogimiseni) ei ole vaja uuesti sisestada. Võimalik on ka erinevate agentide abil salasõna meeldejätmist sessiooni jooksul hallata. Sellest täpsemalt näiteks [Arch wiki artiklis vastavas peatükis](https://wiki.archlinux.org/index.php/SSH_keys#SSH_agents).
 
-Võtmepaari (salajane ja avalik võti) loomiseks:
-
+<b>Võtmepaari (salajane ja avalik võti) loomiseks:</b><br>
 <pre>
 ssh-keygen -t rsa -b 4096 -C "Eesnimi Perenimi e-posti@aadress.ee"
 </pre>
@@ -64,11 +66,13 @@ Selle tulemusena luuakse hetkel sisseloginud kasutaja kodukataloogi kaks faili (
 
 Võti *-t* määrab krüptoalgoritmiks RSA ja *-b* selle tugevuseks 4096 bitti. Tulevikus võib olla vajalik seda tugevust veelgi suurendada. Kommentaar võtmega *-C* võib sisaldada vajalikku infot jutumärkide vahel - see lisatakse avaliku võtmefaili lõppu ja nii on serverarvuti haldajal lihtsam kindlaks teha kellele antud avalik võti kuulub - seda eriti olukorras kui serverarvutisse on mitmeid võtmefailiga sisselogijaid.
 
+<b>Võtme salasõna muutmine</b><br>
 Võtmepaari loomisel on soovitav ka salasõna määrata - oluline on just selle pikkus ja mitte niivõrd keerukus. Salasõna saab hiljem muuta (nurksulud tähendavad siin mittekohustuslikku osa kuid neid ei kirjutata):<br>
 <pre>
 ssh-keygen -p [-P vana salasõna] [-N uus salasõna] [-f võtmefail]
 </pre>
 
+<b>Mitme serveri tugi võtmefailiga sisselogimiseks</b><br>
 Kui servereid on mitu siis on võimalik *-f* võtme abil luua igale serverile eraldi, siin näites tähistab *s1* esimest serverarvutit - mõistlik on valida selline nimi (ilma täpitähtede- ja tühikuteta), mis kõige paremini meelde jääb ja serverarvutit iseloomustab:<br>
 <pre>
 ssh-keygen -t rsa -b 4096 -C "Eesnimi Perenimi e-posti@aadress.ee" -f ~/.ssh/id_rsa_s1
@@ -76,8 +80,10 @@ ssh-keygen -t rsa -b 4096 -C "Eesnimi Perenimi e-posti@aadress.ee" -f ~/.ssh/id_
 
 ssh-keygen võimaldab Linuxis luua kuni 16384-bit võtmeid kuid tulevikus võib see number ka muutuda. Väike paranoia on turvalisuse valdkonnas alati kasulik ja kui tegemist kriitiliste andmetega siis on kõrgendatud turvalisuse kasutamine omal kohal. Seoses kvantarvutite tulekuga muutub ka olukord krüptograafias ja täna turvalisena toimivad algoritmid murtakse üha kiiremini vastavalt kvantarvutite arenguga. Seni tuntud krüptograafia asemele peab tulema kvantkrüptograafia, mis tagab turvalisuse ka uuenenud olukorras.
 
+<b>Uue põlvkonna turvalisus võtmefailiga sisselogimisel</b><br>
 Lisaks on olemas ka teisi algoritme, mida võimalik võtmepaari loomisel kasutada ja viimasel ajal on soovitav kasutada elliptilist krüptograafiat võimaldavat algoritmi Ed25519. Lisainfot leiab näiteks [Arch Linuxi wiki artiklist](https://wiki.archlinux.org/index.php/SSH_keys#Choosing_the_type_of_encryption) ja [Ed25519 kodulehelt](http://ed25519.cr.yp.to).
 
+<b>OpenSSH seadistuste kataloogi turvalisus</b><br>
 Kindlasti peavad olema tagatud vajalikud õigused: *~/.ssh/* kataloogi ning selle sisu saab ainult omanik vaadata-muuta, grupil ja teistel kasutajatel ei tohi mingeid õigusi olla:<br>
 <pre>
 chmod 700 ~/.ssh/ && chmod 600 ~/.ssh/*
@@ -94,6 +100,7 @@ This private key will be ignored.
 bad permissions: ignore key: /home/user/.ssh/id_rsa
 </pre>
 
+<b>Avaliku võtme kopeerimine klientarvutist serverarvutisse</b><br>
 Avaliku võtme (*~/.ssh/id_rsa.pub*) kopeerimiseks kliendiarvutist serverarvutisse:<br>
 <pre>
 ssh-copy-id kasutaja@server
@@ -101,7 +108,7 @@ ssh-copy-id kasutaja@server
 
 ... kus "kasutaja" asemele kirjutada serverarvuti kasutajanimi ja "server" asemele serverarvuti IP-aadress või internetiaadress.
 
-Võtmefaili kopeerimiseks kliendiarvutist serverarvutisse:<br>
+Võtmefaili kopeerimiseks kliendiarvutist serverarvutisse kui võtmefail on teise nimega:<br>
 <pre>
 ssh-copy-id -i ~/.ssh/id_rsa_s1.pub kasutaja@server
 </pre>
@@ -111,6 +118,7 @@ Käsk *ssh-copy-id* kopeerib avaliku võtme serverarvutis sisselogimisel kasutat
 chmod 700 ~/.ssh/ && chmod 600 ~/.ssh/*
 </pre>
 
+<b>Mitme võtme haldamine</b><br>
 Mitme võtme haldamiseks on võimalik kasutaja kodukataloogi luua vastav seadistustefail *~/.ssh/config*:<br>
 <pre>
 Host SERVER1
@@ -124,6 +132,7 @@ Host SERVER2
 
 Selliselt on võimalik seadistusefaili *~/.ssh/config* abil siduda avalik võti vastava serveri aadressiga.
 
+<b>Serverarvuti võtme kordus</b><br>
 Kui on probleeme võtmete kordumisega konkreetse serverarvutiga ühendumisel, näiteks tuleb klientarvutis teade:<br>
 <pre>
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
