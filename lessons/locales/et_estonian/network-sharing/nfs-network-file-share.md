@@ -2,27 +2,36 @@
 
 ## Tunni sisu
 
-Kõite standartsem failide jagamise viis Linuxis on NFS (*Network File System* ehk võrgu failisüsteem). NFS võimaldab serveril jagada katalooge ja faile üle võrgu rohkem kui ühe kasutajaga.
+KÃµite standardsem failide jagamise viis Linuxis on NFS (*Network File System* ehk vÃµrgufailisÃ¼steem). NFS vÃµimaldab serveril jagada katalooge ja faile Ã¼le vÃµrgu rohkem kui Ã¼he kasutajaga.
 
-NFS serveri loomise üksikasjadesse sellel kursusel ei süübita kuna see võib veidi keeruliseks minna, küll aga räägime NFS kliendi üles seadmisest.
+NFS serveri loomise Ã¼ksikasjadesse sellel kursusel ei sÃ¼Ã¼bita kuna see vÃµib veidi keeruliseks minna, kÃ¼ll aga rÃ¤Ã¤gime NFS kliendi Ã¼les seadmisest. Siin toodud nÃ¤ited Ubuntu Linuxi baasil
 
-<b>NFS kliendi üles seadmine</b>
+<b>NFS Ã¼henduse Ã¼lesseadmine</b><br>
+<pre>$ sudo apt update && sudo apt-get -y install nfs-common && sudo ldconfig && sudo dpkg --configure -a && sudo apt-get clean
+$ sudo mount server:/serveri/kataloog /kohaliku/arvuti/kataloog</pre>
 
-<pre>$ sudo service nfsclient start
-$ sudo mount server:/kataloog /haagitav_kataloog</pre>
+... kus "server" asemele kirjutada serverarvuti IP- vÃµi internernetiaadress.<br>
 
-<b>Automaatne haakimine</b>
+Vajadusel vÃµib mÃ¤rkida ka failisÃ¼steemi ja pordinumbri (asendada siin nÃ¤ites toodud number reaalselt kasutusesolevaga):<br>
+<pre>$ sudo mount -t nfs -o port=1122 server:/serveri/kataloog /kohaliku/arvuti/kataloog</pre>
 
-Ütleme, et NFS server on üsna tihti kasutuses ning kasutaja soovib, et see oleks jäädavalt külge haagitud. Tavaliselt võiks mõelda, et tuleb muuda /etv/fstab faili, kuid alati ei pruugi õnnestuda saada serveriga ühendust ja see võib tekitada alglaadimisel probleeme. Selle asemel tasuks üles seada automaatne haakimine. Seda tehakse <b>automount</b> tööriistaga, uuemates Linuxi versioonides <b>amd</b>. Kui mõnele täpsustatud kataloogile püütakse ligi pääseda otib automount üles vastava serveri ja haagib selle automaatselt külge.
+
+<b>Automaatne haakimine</b><br>
+Ãœtleme, et NFS server on Ã¼sna tihti kasutuses ning kasutaja soovib, et see oleks jÃ¤Ã¤davalt kÃ¼lge haagitud. Tavaliselt vÃµiks mÃµelda, et tuleb muuda /etc/fstab faili, kuid alati ei pruugi Ãµnnestuda saada serveriga Ã¼hendust ja see vÃµib tekitada alglaadimisel probleeme. Selle asemel tasuks Ã¼les seada automaatne haakimine. Seda tehakse <b>automount</b> tÃ¶Ã¶riistaga, uuemates Linuxi versioonides <b>amd</b>. Kui mÃµnele tÃ¤psustatud kataloogile pÃ¼Ã¼takse ligi pÃ¤Ã¤seda otsib <b>automount</b> Ã¼les vastava serveri ja haagib selle automaatselt kÃ¼lge.
+
+Paigaldamiseks:<br>
+<pre>
+sudo apt update && sudo apt-get -y install am-utils && sudo ldconfig && sudo dpkg --configure -a && sudo apt-get clean
+</pre>
 
 ## Harjutus
 
-Lugeda NFS'i man-lehekülge, et selle kohta rohkem teada saada.
+Lugeda [*amd* man-lehekÃ¼lge](https://linux.die.net/man/8/amd), et selle kohta rohkem teada saada. Lisalugemist TLDP (The Linux Documentation Project) [automount'i juhendist](http://www.tldp.org/HOWTO/Automount.html).
 
-## Küsimus
+## KÃ¼simus
 
-Millise tööriistaga hallatakse automaatseid haakepunkte?
+Millise tÃ¶Ã¶riistaga hallatakse automaatseid haakepunkte?
 
 ## Vastus
 
-automount
+*automount*
