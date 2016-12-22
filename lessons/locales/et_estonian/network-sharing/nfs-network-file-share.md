@@ -6,7 +6,7 @@ Kõite standardsem failide jagamise viis Linuxis on NFS (*Network File System* e
 
 NFS serveri loomise üksikasjadesse sellel kursusel ei süübita kuna see võib veidi keeruliseks minna, küll aga räägime NFS kliendi üles seadmisest. Siin toodud näited Ubuntu Linuxi baasil
 
-<b>NFS kliendi üles seadmine</b><br>
+<b>NFS ühenduse ülesseadmine</b><br>
 <pre>$ sudo apt update && sudo apt-get -y install nfs-common
 $ sudo mount server:/serveri/kataloog /kohaliku/arvuti/kataloog</pre>
 
