@@ -12,13 +12,12 @@ $ sudo mount server:/serveri/kataloog /kohaliku/arvuti/kataloog</pre>
 
 ... kus "server" asemele kirjutada serverarvuti IP- või internernetiaadress.<br>
 
-Vajadusel võib märkida ka failisüsteemi ja pordinumbri:<br>
+Vajadusel võib märkida ka failisüsteemi ja pordinumbri (asendada siin näites toodud number reaalselt kasutusesolevaga):<br>
 <pre>$ sudo mount -t nfs -o port=1122 server:/serveri/kataloog /kohaliku/arvuti/kataloog</pre>
 
 
-<b>Automaatne haakimine</b>
-
-Ütleme, et NFS server on üsna tihti kasutuses ning kasutaja soovib, et see oleks jäädavalt külge haagitud. Tavaliselt võiks mõelda, et tuleb muuda /etc/fstab faili, kuid alati ei pruugi õnnestuda saada serveriga ühendust ja see võib tekitada alglaadimisel probleeme. Selle asemel tasuks üles seada automaatne haakimine. Seda tehakse <b>automount</b> tööriistaga, uuemates Linuxi versioonides <b>amd</b>. Kui mõnele täpsustatud kataloogile püütakse ligi pääseda otsib *automount* üles vastava serveri ja haagib selle automaatselt külge.
+<b>Automaatne haakimine</b><br>
+Ütleme, et NFS server on üsna tihti kasutuses ning kasutaja soovib, et see oleks jäädavalt külge haagitud. Tavaliselt võiks mõelda, et tuleb muuda /etc/fstab faili, kuid alati ei pruugi õnnestuda saada serveriga ühendust ja see võib tekitada alglaadimisel probleeme. Selle asemel tasuks üles seada automaatne haakimine. Seda tehakse <b>automount</b> tööriistaga, uuemates Linuxi versioonides <b>amd</b>. Kui mõnele täpsustatud kataloogile püütakse ligi pääseda otsib <b>automount</b> üles vastava serveri ja haagib selle automaatselt külge.
 
 Paigaldamiseks:<br>
 <pre>
@@ -35,4 +34,4 @@ Millise tööriistaga hallatakse automaatseid haakepunkte?
 
 ## Vastus
 
-automount
+*automount*
