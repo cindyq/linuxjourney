@@ -10,7 +10,7 @@ NFS serveri loomise üksikasjadesse sellel kursusel ei süübita kuna see võib 
 <pre>$ sudo apt update && sudo apt-get -y install nfs-common && sudo ldconfig && sudo dpkg --configure -a && sudo apt-get clean
 $ sudo mount server:/serveri/kataloog /kohaliku/arvuti/kataloog</pre>
 
-... kus "server" asemele kirjutada serverarvuti IP- või internernetiaadress
+... kus "server" asemele kirjutada serverarvuti IP- või internernetiaadress.<br>
 
 Vajadusel võib märkida ka failisüsteemi ja pordinumbri:<br>
 <pre>$ sudo mount -t nfs -o port=1122 server:/serveri/kataloog /kohaliku/arvuti/kataloog</pre>
