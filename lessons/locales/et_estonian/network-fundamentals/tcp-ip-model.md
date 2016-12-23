@@ -10,7 +10,7 @@ See on kõnealuse mudeli kõige ülemine kiht.  Kirjeldatakse, kuidas programmid
 
 See kiht kasutab protokolle:
 <ul>
-<li>HTTP (_Hypertext Transfer Protocol_) - kasutavad interneti veebilehed.</li>
+<li>HTTP (<i>Hypertext Transfer Protocol</i>) - kasutavad interneti veebilehed.</li>
 <li>SMTP (*Simple Mail Transfer Protocol*) - elektrooniliste kirjade edastamine. </li>
 </ul>
 
