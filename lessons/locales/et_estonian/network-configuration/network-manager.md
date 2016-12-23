@@ -2,9 +2,9 @@
 
 ## Tunni sisu
 
-Kui käsitsi seadistamine ei ole kasutajale meelepärane, on olemas ka midagi selle jaoks, et võrk saaks üles ja töökorda automaatselt. Enamustes Linuxites on olemas deemon nimega NetworkManager, mis teeb just seda.
+Kui käsitsi seadistamine ei ole kasutajale meelepärane siis on olemas ka midagi selle jaoks, et võrk saaks üles ja töökorda automaatselt. Enamustes Linuxites on olemas deemon nimega NetworkManager, mis teeb just seda.
 
-Kasutades graafilist kasutajaliidest võib NetworkManageri näha rakendusena töölaual. See haldab võrguga seotud riistvara ja ühendust puudutavat informatsiooni. Aglaadimisel kogub NetworkManager muuhulgas informatsiooni riistvara kohta, otsib juhtmega ja juhutmevabasid ühendusi ning aktiveerib ühenduse.
+Kasutades graafilist kasutajaliidest võib NetworkManageri näha rakendusena töölaual. See haldab võrguga seotud riistvara ja ühendust puudutavat informatsiooni. Alglaadimisel kogub NetworkManager muuhulgas informatsiooni riistvara kohta, otsib juhtmega ja juhutmevabasid ühendusi ning aktiveerib ühenduse.
 
 NetworkManageri kasutamiseks on olemas ka käsurea vahendid:
 
@@ -41,7 +41,7 @@ State: connected (global)
 
 <b>nmcli</b>
 
-nmcli käsk võimaldab kontrollida ja muuta NetworkManageri. Detailide kuvamiseks tasub vaadata man-lehekülgi.
+nmcli käsk võimaldab kontrollida ja muuta NetworkManageri. Detailide kuvamiseks tasub vaadata man-lehekülgi (*man nmcli*).
 
 ## Harjutus
 
@@ -53,4 +53,4 @@ Millise käsuga kuvatakse NetworkManageri informatsioon?
 
 ## Vastus
 
-nm-tool
+*nmcli*
