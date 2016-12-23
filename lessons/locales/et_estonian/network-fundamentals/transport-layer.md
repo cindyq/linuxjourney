@@ -2,37 +2,48 @@
 
 ## Tunni sisu
 
-Transpordikiht võimaldab edastada andmeid võrgule loetavas keeles. See jagab kasutaja andmed tükkideks, mida seejärel edastatakse ja pannakse hiljem jälle õiges järjekorras kokku. Neid tükke nimetatakse segmentideks. Segmendid teevad andete edastamise lihtsamaks.
+Transpordikiht vÃµimaldab edastada andmeid vÃµrku loetavas keeles. See jagab kasutaja andmed tÃ¼kkideks, mida seejÃ¤rel edastatakse ja pannakse hiljem jÃ¤lle Ãµiges jÃ¤rjekorras kokku. Neid tÃ¼kke nimetatakse segmentideks. Segmendid teevad andete edastamise lihtsamaks.
 
 <b>Pordid</b>
 
-Kuigi me teame IP aadressi järgi kuhu me saadame admed, ei piisa sellest, et saata andmed kindlale protsessile või teenusele. Teenused nagu HTTP kasutavad kommunikatsioonikanaleid portide näol. Kui tahame saata andmeid veebilehele, saadame me andmed üle HTTP pordi (port 80). Lisaks segmentide moodustamisele, lisab transpordikiht sellele ka lähte- ja sihtkoha pordi. Tänu sellele teab vastuvõttev pool, millist porti kasutada.
+Kuigi me teame IP aadressi jÃ¤rgi kuhu me saadame admed siis ei piisa sellest, et saata andmed kindlale protsessile vÃµi teenusele. Teenused nagu HTTP kasutavad suhtluskanaleid portide nÃ¤ol. Kui tahame saata andmeid veebilehele, saadame me andmed Ã¼le HTTP pordi (port 80). Lisaks segmentide moodustamisele, lisab transpordikiht sellele ka lÃ¤hte- ja sihtkoha pordi. TÃ¤nu sellele teab vastuvÃµttev pool, millist porti kasutada.
+
+Porte saame Linuxis vaadata:<br>
+<pre>cat /etc/services</pre>
+vÃµi ka:<br>
+<pre>less /etc/services</pre>
+...less'ist vÃ¤ljumiseks vajutada q
+
+NÃ¤iteks HTTP'ga seotud portide vaatamiseks:
+<pre>cat /etc/services | grep -i http</pre>
+
+Sama kehtib ka UDP portide vaatamise kohta.
 
 <b>UDP</b>
 
-Kaks populaarset transpordiprotokolli on UDP ja TCP. Tutvustame UDP'd ainult kergelt ja veedame suurema aja TCP'ga, kuna seda kasutatakse tüüpilisemalt.
+Kaks populaarset transpordiprotokolli on UDP ja TCP. Tutvustame UDP'd ainult kergelt ja veedame suurema aja TCP'ga, kuna seda kasutatakse tÃ¼Ã¼pilisemalt.
 
-UDP ei ole usaldusväärne meetod andmete edastamiseks, tegelikult seda isegi ei huvita, kas kasutaja saab kõik andmed kätte või mitte. See võib kõlada halvasti, kuid ka UDP'l on oma koht, näiteks meedia voogesituses. Ei ole ju hullu kui mõned raamid ei jõua kohale, kuid selle eest edastatakse andmeid kiiremini.
+UDP ei ole usaldusvÃ¤Ã¤rne meetod andmete edastamiseks, tegelikult seda isegi ei huvita kas kasutaja saab kÃµik andmed kÃ¤tte vÃµi mitte. See vÃµib kÃµlada halvasti kuid ka UDP'l on oma koht, nÃ¤iteks meedia voogesituses. Ei ole ju hullu kui mÃµned raamid ei jÃµua kohale kuid selle eest edastatakse andmeid kiiremini.
 
 <b>TCP</b>
 
-TCP pakub usaldusväärset ühendusele orienteeritud andete edastamist. TCP kasutab porte saatmaks andmeid hostide vahel. Rakendus avab ühenduse mõlema hosti juures. Et luua ühendus, kasutatakse TCP käepigistust.
+TCP pakub usaldusvÃ¤Ã¤rset Ã¼hendusele orienteeritud andete edastamist. TCP kasutab porte saatmaks andmeid hostide vahel. Rakendus avab Ã¼henduse mÃµlema hosti juures. Et luua Ã¼hendus, kasutatakse TCP kÃ¤epigistust.
 
 <ul>
-<li>Klient saadab serverile ühenduse palvega SYN segmendi.</li>
-<li>Server saadab kliendile SYN-ACK segmendi, et kinnitada kliendi ühenduse palvet</li>
-<li>Klient saadab serverile ACK segmendi, et kinnitada serveri ühenduse palvet</li>
+<li>Klient saadab serverile Ã¼henduse palvega SYN segmendi.</li>
+<li>Server saadab kliendile SYN-ACK segmendi, et kinnitada kliendi Ã¼henduse palvet</li>
+<li>Klient saadab serverile ACK segmendi, et kinnitada serveri Ã¼henduse palvet</li>
 </ul>
 
-Kui see ühendus on saavutatud, võib üle selle admeid vahetada. Andmeid saadetakse segmentidena ja neil on järjekorra numbrid, et nad pärast kohale toimetamist jälle õigesti kokku panna. Meie e-kirja näites, kinnitab traspordikiht pordi (25) sihtpunkti sihtpordina.
+Kui see Ã¼hendus on saavutatud, vÃµib Ã¼le selle admeid vahetada. Andmeid saadetakse segmentidena ja neil on jÃ¤rjekorranumbrid, et nad pÃ¤rast kohale toimetamist jÃ¤lle Ãµigesti kokku panna. Meie e-kirja nÃ¤ites kinnitab transpordikiht pordi (25) sihtpunkti sihtpordina.
 
 ## Harjutus
 
 Harjutust pole.
 
-## Küsimus
+## KÃ¼simus
 
-Milline on usaldusväärne transpordiprotokoll?
+Milline on usaldusvÃ¤Ã¤rne transpordiprotokoll?
 
 ## Vastus
 
