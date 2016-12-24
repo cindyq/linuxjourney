@@ -28,7 +28,7 @@ Sisevõrgu IPv4 aadressid:<br>
 
 Seade ise (*loopback*):
 * vaatamiseks: <i>ifconfig lo</i>
-* IPv4 127.0.0.1
+* IPv4 aadress: 127.0.0.1
 
 ## Harjutus
 
