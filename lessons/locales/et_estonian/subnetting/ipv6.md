@@ -15,7 +15,7 @@ ifconfig -a
 ifconfig -a | grep inet6
 </pre>
 
-IPv4 aadressruum 32-bit: 2<sup>32</sup> (~4,3 miljardit)<br>
+IPv4 aadressruum on 32-bit: 2<sup>32</sup> (~4,3 miljardit)<br>
 IPv6 aadressruum on 128-bit: 2<sup>128</sup> (~3,4*10<sup>38</sup>)<br>
 Suurte arvude nimede osas ei ole maailmas üksmeelt <a target="_blank" href="https://en.wikipedia.org/wiki/Names_of_large_numbers">https://en.wikipedia.org/wiki/Names_of_large_numbers</a>
 
