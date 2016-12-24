@@ -1,8 +1,8 @@
-﻿# ICMP
+# ICMP
 
 ## Tunni sisu
 
-Interneti kontrollsõnumite protokoll ICMP on osa TCP/IP protokollistikust. Sellega saadetakse veateateid ja see on äärmiselt kasulik võrguga seotud probleemide silumiseks, näiteks pakettide ebaõnnestunud kohaletoimetamise korral.
+Interneti kontrollsõnumite protokoll ICMP (*Internet Control Message Protocol*) on osa TCP/IP protokollistikust. Sellega saadetakse veateateid ja see on äärmiselt kasulik võrguga seotud probleemide silumiseks, näiteks pakettide ebaõnnestunud kohaletoimetamise korral.
 
 Igas ICMP teates on tüübi, koodi ja kontrollsumma väljad. Tüübi väljas on ICMP sõnumi tüüp, kood on alamtüüp ja see annab täiendavat informatsiooni sõnumi kohta ning kontrollsummat kasutatakse sõnumi terviklikkuse probleemide tuvastamiseks.
 
@@ -15,7 +15,7 @@ Tavalisemad ICMP tüübid:
 <li>Type 11 - *Time Exceeded* ehk aeg on ületatud</li>
 </ul>
 
-Kui pakett ei ole võimeline sihtkohta jõudma, gerereeritakse kolmandat tüüpi ICMP sõnum. Selle tüübi piires on 16 koodi, mis kirjeldavad täpsemalt, miks pakett sihkohta ei jõuda ei saa:
+Kui pakett ei ole võimeline sihtkohta jõudma, gerereeritakse kolmandat tüüpi ICMP sõnum. Selle tüübi piires on 16 koodi, mis kirjeldavad täpsemalt, miks pakett sihkohta ei saa jõuda:
 
 <ul>
 <li>Code 0 - *Network Unreachable* ehk võrk on kättesaamatu</li>
@@ -23,7 +23,7 @@ Kui pakett ei ole võimeline sihtkohta jõudma, gerereeritakse kolmandat tüüpi
 jne...jne...
 </ul>
 
-Need sõnumid muutuvad arusaadavamaks, kui tutvuda võrgu tõrkeotsingu tööriistadega.
+Need sõnumid muutuvad arusaadavamaks kui tutvuda võrgu tõrkeotsingu tööriistadega.
 
 ## Harjutus
 
