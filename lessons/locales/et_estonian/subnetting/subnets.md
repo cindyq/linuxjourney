@@ -16,7 +16,7 @@ Tavaline mask võib välja näha selline:
 
 255 osa on mask. Teeme selle kergemini mõistetavaks. Meenutame, et iga oktett on 8 bitti. Arvutiteaduses võib bitt olla binaaresituses kas 0 või 1. Binaarnumbrite puhul tähendab 1 signaali ja 0 selle puudumist. Millega võrdub kaheksa nulli või ühte?
 
-Kirjutame otsingumootorisse "binary to decimal calculator" ja teisendame 11111111 detsimaalkujule. Mis on tulemuseks? 255! Seega on ühe okteti piires numbrid 0 kuni 255. Seega, kui meil on alamvõrgu mask 255.255.255.0 ja IP aadres 192.168.1.0, siis mitu kasutajat sellesse võrku mahub? Vastuse sellele küsimusele saab alamvõrgu matemaatika peatükist.
+Kirjutame otsingumootorisse "binary to decimal calculator" ja teisendame 11111111 detsimaalkujule. Mis on tulemuseks? 255! Seega on ühe okteti piires numbrid 0 kuni 255. Seega, kui meil on alamvõrgu mask 255.255.255.0 ja IP aadress 192.168.1.0, siis mitu kasutajat sellesse võrku mahub? Vastuse sellele küsimusele saab alamvõrgu matemaatika peatükist.
 
 Kui räägitakse alamvõrkudest, kirjutatakse võrguprefiksile alamvõrgu mask kohe järele:
 
