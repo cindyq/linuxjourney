@@ -1,4 +1,4 @@
-﻿﻿# Alamvõrgud
+# Alamvõrgud
 
 ## Tunni sisu
 
