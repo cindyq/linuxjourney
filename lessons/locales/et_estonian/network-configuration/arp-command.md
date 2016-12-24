@@ -1,4 +1,4 @@
-﻿# arp
+# arp
 
 ## Tunni sisu
 
@@ -14,9 +14,9 @@ Address                  HWtype  HWaddress           Flags Mask            Iface
 ARP tabel on arvuti käivitumisel tühi, seda täidetakse kui pakette hakatakse välja saatma. Kui pakett saadetakse sihtkohta, mida ARP tabelis ei ole, toimub järgnev:
 
 <ol>
-<li>Saatja süsteem koostab Etherneti raami ARP päringu pakettiga.</li>
-<li>See raam saadetakse leviedastuse sõnumina tervesse kohtvõrku.</li>
-<li>Kui mõni host, teab õiget MAC aadressi, saadab ta seda sisaldava vastuse.</li>
+<li>Saatja süsteem koostab Etherneti raami ARP päringu paketiga.</li>
+<li>See raam saadetakse leviedastuse sõnumina (<i>broadcast</i>) tervesse kohtvõrku.</li>
+<li>Kui mõni host teab õiget MAC aadressi, saadab ta seda sisaldava vastuse.</li>
 <li>Esialgne saatja lisab IP aadressile vastava MAC aadressi ARP tabelisse ning seejärel saadab soovitud paketi.</li>
 </ol>
 
@@ -28,7 +28,7 @@ $ ip neighbour show
 
 ## Harjutus
 
-Vaadelda, mis toimub ARP tabelis pärast arvuti käivitamist, kui hakata võrgus millegagi tegelema.
+Vaadelda, mis toimub ARP tabelis pärast arvuti käivitamist kui hakata võrgus millegagi tegelema.
 
 ## Küsimus
 
@@ -36,4 +36,4 @@ Millise käsuga saab kuvada ARP tabeli?
 
 ## Vastus
 
-arp
+*arp*
