@@ -1,4 +1,4 @@
-﻿# Pakettide analüüsimine
+# Pakettide analüüsimine
 
 ## Tunni sisu
 
@@ -7,7 +7,7 @@ Pakettide analüüsimisest võiks teha täiesti omaette kursuse ning ainult sell
 <b>tcpdump'i paigaldamine</b>
 
 <pre>
-$ sudo apt install tcpdump
+$ sudo apt update && sudo apt-get -y install tcpdump && sudo ldconfig && sudo dpkg --configure -a && sudo apt-get clean
 </pre>
 
 <b>Paketi andmete püüdmine võrguliidesel</b>
@@ -28,7 +28,7 @@ listening on wlan0, link-type EN10MB (Ethernet), capture size 65535 bytes
 11:28:31.190665 IP ThePickleParty.lan.51056 > 192.168.86.255.rfe: UDP, length 306
 </pre>
 
-Kui pakettide püüdmine käivitada, võib märgata,et toimub väga palju asju. See on ootuspärane, kuna taustal toimub pidevalt üsna palju võrguliiklust. Näites on toodud väike väljavõte, täpsemalt sellest hetkest kui teostati ping veebilehele www.google.com
+Kui pakettide püüdmine käivitada siis võib märgata, et toimub väga palju asju. See on ootuspärane kuna taustal toimub pidevalt üsna palju võrguliiklust. Näites on toodud väike väljavõte, täpsemalt sellest hetkest kui teostati ping veebilehele www.google.com
 
 <b>Väljundi tõlgendamine</b>
 
@@ -44,7 +44,7 @@ Kui pakettide püüdmine käivitada, võib märgata,et toimub väga palju asju. 
 <li>seq on TCP paketi esimene ja viimane järjekorra number.</li>
 <li>Pikkus baitides.</li>
 
-Nagu tcpdump'i väljundist näha võib, saadetakse ww.google.com aadressile ICMP kajapäring ning saadakse ka vastus.  Märgime ära, et erinevat paketid annavad erineva informatsiooniga väljundi. Man-leheküljelt saab teada, millised need on.
+Nagu tcpdump'i väljundist näha võib, saadetakse www.google.com aadressile ICMP kajapäring ning saadakse ka vastus.  Märgime ära, et erinevat paketid annavad erineva informatsiooniga väljundi. *man tcpdump* leheküljelt saab teada, millised need on.
 
 <b>tcpdump'i väljundi suunamine faili</b>
 
@@ -60,9 +60,8 @@ Laadida alla ja paigaldada Wireshark ning mängida natuke võrguliidesega.
 
 ## Küsimus
 
-Kasutades tspdump'i, millise võtme kasutamisel saab püüda võrguliiklust konkreetselt liideselt?
+Kasutades tcpdump'i, millise võtme kasutamisel saab püüda võrguliiklust konkreetselt liideselt?
 
 ## Vastus
 
 -i
-
