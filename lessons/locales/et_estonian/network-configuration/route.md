@@ -2,15 +2,15 @@
 
 ## Tunni sisu
 
-Korra juba sai mainitud, et marsruutimistabelit saab kuvada route käsuga. Marsruute saab soovi korral aga ka käsitsi lisada või eemaldada.
+Korra juba sai mainitud, et marsruutimistabelit saab kuvada *route* käsuga. Marsruute saab soovi korral aga ka käsitsi lisada või eemaldada.
 
-<b>Uue marsruudi lisamine</b>
+<b>Uue marsruudi ajutine lisamine</b>
 
 <pre>
 $ sudo route add -net 192.168.2.1/23 gw 10.11.12.3
 </pre>
 
-<b>Marsruudi eemaldamine</b>
+<b>Ajutise marsruudi eemaldamine</b>
 
 <pre>
 $ sudo route del -net 192.168.2.1/23 
