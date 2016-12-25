@@ -1,21 +1,21 @@
-# Managing Log Files
+# مدیریت فایل‌های لاگ
 
-## Lesson Content
+## محتویات درس
 
-Log files generate lots of data and they store this data on your hard disks, however there are lots of issues with this, for the most part we just want to be able to see newer logs, we also want to manage our disk space efficiently, so how do we do all of this? The answer is with logrotate. 
+‫فایل‌های لاگ، داده‌های زیادی را می‌سازند و آن‌ها را در هارددیسک شما ذخیره می‌کنند. این موضوع  خود می‌تواند مسبب مشکلاتی شود. به عنوان مثال ما اغلب نیاز به مشاهده‌ی لاگ‌های جدید داریم؛ و لاگ‌های قدیمی نه تنها تقریبا بی‌استفاده می‌شوند بلکه فضایی را از هارددیسک نیز اشغال می‌کنند. آیا ابزاری برای مدیریت این مشکلات در لینوکس وجود دارد؟ بله، برای این کار ابزاری به اسم logrotate در اختیار داریم.
 
-The logrotate utility does log management for us. It has a configuration file that allows us to specify how many and what logs to keep, how to compress our logs to save space and more. The logrotate tool is usually run out of cron once a day and the configuration files can be found in /etc/logrotate.d. 
+‫ابزار logrotate مدیریت لاگ‌ها را بر عهده می‌گیرد. این برنامه شامل یک فایل پیکربندی که به ما اجازه می‌دهد تا این ابزار را مطابق نیاز خود آماده کنیم . مثلا به شما امکان مشخص کردن تعداد لاگ‌ها برای نگه‌داشتن، فشرده‌سازی لاگ‌ها برای صرفه‌جویی در مصرف فضای هارددیسک و غیره. logrotate به وسیله‌ی ابزار cron معمولا یک بار در روز، به انجام وظیفه می‌پردازد. فایل‌های پیکربندی در مسیر ‎/etc/logrotate.d قابل دسترسی‌ست.
 
-There are other logrotating tools you can use to manage your logs, but logrotate is the most common one. 
+‫ابزارهای دیگری برای کار با لاگ‌ها نیز وجود دارد ولی logrotate محبوب‌ترین آن‌هاست.
 
-## Exercise
+## تمرین
 
-Look at your logrotate configuration file and see how it manages some of your logs. 
+به فایل پیکربندی logorotate نگاهی بیندازید و ببینید که چطور می‌توانید لاگ‌های خود رو مدیریت کنید.
 
-## Quiz Question
+## سوال آزمون
 
-What utility is used to manage logs?
+چه ابزاری برای مدیریت لاگ‌ها استفاده می‌شود؟
 
-## Quiz Answer
+## پاسخ آزمون
 
 logrotate
