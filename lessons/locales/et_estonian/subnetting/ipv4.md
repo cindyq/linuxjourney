@@ -8,9 +8,9 @@
 
 Selline aadress koosneb tegelikult kahest osast. Võrgu osa tuvastab asukoha võrgu ja hosti osa ütleb, millise kasutajaga selles võrgus tegu on. Sellel kursusel keskendutakse rohkem IPv4 aadressidele, mida peetakse suurema tõenäosusega silmas kui räägitakse IP aadressidest.
 
-IP aadress jagatakse punktidega oktettideks. IPv4 aadressis on neli oktetti. Kui arvutiteadust natuke tunda, siis oktett on 8 bitti, 8 bitti on aga 1 bait. Seega räägitakse, et IPv4 aadress on 4 baidine. Bittidest tuleb aga tihedamalt juttu kui teemaks on alamvõrgud.
+IP aadress jagatakse punktidega oktettideks. IPv4 aadressis on neli oktetti. Kui arvutiteadust natuke tunda siis oktett on 8 bitti, 8 bitti on aga 1 bait. Seega räägitakse, et IPv4 aadress on 4 baidine. Bittidest tuleb aga tihedamalt juttu kui teemaks on alamvõrgud.
 
-IP aadressi saab kuvada *ifconfig -a* käsuga:
+IP aadressi saab kuvada *ifconfig -a* käsuga (näitab ka neid võrguliideseid, mis hetkel ei tööta või on seadistamata):
 
 <pre>
 pete@icebox:~$ ifconfig -a
@@ -21,9 +21,18 @@ eth0      Link encap:Ethernet  HWaddr 1d:3a:32:24:4d:ce
 
 Nagu näha on selle arvuti IPv4 aadress 192.168.1.129.
 
+Sisevõrgu IPv4 aadressid:<br>
+* 10.0.0.0 – 10.255.255.255
+* 172.16.0.0 – 172.31.255.255
+* 192.168.0.0 – 192.168.255.255
+
+Seade ise (*loopback*):
+* vaatamiseks: <i>ifconfig lo</i>
+* IPv4 aadress: 127.0.0.1
+
 ## Harjutus
 
-Tuvastada enda arvuti IP aadress käsuga ifconfig.
+Tuvastada enda arvuti võrguliideste IP aadressid käsuga ifconfig.
 
 ## Küsimus
 

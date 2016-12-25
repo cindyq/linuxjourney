@@ -2,11 +2,11 @@
 
 ## Tunni sisu
 
-NATi (*network address translation) ehk võrguaadresside teisendamist on juba varem ka mainitud. Kui tegutseme enda võrgus, kas IP aadress on siis Internetist näha? Mitte päris.
+NAT'i (*network address translation) ehk võrguaadresside teisendamist on juba varem ka mainitud. Kui tegutseme enda võrgus kas IP aadress on siis Internetist näha? Mitte päris.
 
 NAT muudab seadme nagu marsruuter justkui vahemeheks Interneti ja kohtvõrgu vahel. Seega on vaja ainult ühte IP aadressi, et esindada kõiki marsruuteri taha jäävaid arvuteid.
 
-NAT on justkui suure kontorihoone retseptsioon. Kui keegi tahab mingi konkreetse kasutajaga ühendust võtta, on tal vaid kogu kontori number. Inimesed retseptsioonis peavad otsima üles suunava numbri ja edastama kõne sihtkohta.
+NAT on justkui suure kontorihoone vastuvõtt. Kui keegi tahab mingi konkreetse kasutajaga ühendust võtta, on tal vaid kogu kontori number. Inimesed retseptsioonis peavad otsima üles suunava numbri ja edastama kõne sihtkohta.
 
 <b>Kuidas see töötab?</b>
 
@@ -18,7 +18,7 @@ Lihtsam juhtum näeks välja nii:
 <li>Marsruuter vahendab Peetri ja www.google.com vahelist ühendust. Google ei tea Peetrist midagi, tema näeb ainult marsruuterit.</li>
 </ol>
 
-NAT ja marsruutimine üldisemalt võivad üsna keeruliseks minna, kuid me ei süvene liialt pisiasjadesse.
+NAT ja marsruutimine üldisemalt võivad üsna keeruliseks minna kuid me ei süvene liialt pisiasjadesse.
 
 ## Harjutus
 

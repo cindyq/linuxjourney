@@ -6,7 +6,7 @@ Oleks tõeline piin käsitsi seadistada kõik marsruudid kõikidel võrguseadmet
 
 <b>Lõimumine</b>
 
-Enne kui rääkida protokollidest, tuleks tutvustada terminit, mida marsruutimises tuntakse lõimumisena. Kasutades marsruutimisprotokolle, suhtlevad marsruuterid üksteisega, et koguda ja jagada võrgu kohta informatsiooni. Kui nad lõpuks jõuavad ühisele arusaamale sellest kuidas võrk välja näeb, kaardistavad marsruutimistabelid kogu topoloogia, saavutades nõnda lõimumise. Kui võrgu topoloogiasse ilmub mingi takistus või muutus, katkeb lõimunud olek kuniks kõik marsruuterid on muutusest teadlikuks saanud.
+Enne kui rääkida protokollidest tuleks tutvustada terminit, mida marsruutimises tuntakse lõimumisena. Kasutades marsruutimisprotokolle, suhtlevad marsruuterid üksteisega, et koguda ja jagada võrgu kohta informatsiooni. Kui nad lõpuks jõuavad ühisele arusaamale sellest kuidas võrk välja näeb, kaardistavad marsruutimistabelid kogu topoloogia, saavutades nõnda lõimumise. Kui võrgu topoloogiasse ilmub mingi takistus või muutus, katkeb lõimunud olek kuniks kõik marsruuterid on muutusest teadlikuks saanud.
 
 ## Harjutus
 
@@ -14,7 +14,7 @@ Harjutust pole.
 
 ## Küsimus
 
-Millises seisundis on võrk, kus kõik marsruuterid on teadlikud võrgu topoloogiast?
+Millises seisundis on võrk kus kõik marsruuterid on teadlikud võrgu topoloogiast?
 
 ## Vastus
 

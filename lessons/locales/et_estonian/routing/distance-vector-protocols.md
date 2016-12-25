@@ -2,19 +2,19 @@
 
 ## Tunni sisu
 
-Kaugusvektori protokollid määravad paketi teekonna välistesse võrkudesse kasutades hüpete kogust. Kui võrk A  on kolme hüppe kaugusel ja võrk B on kohe võrgu A kõrval, siis eeldame, et võrk B on nelja hüppe kaugusel. Kaugusvektori protokollide puhul valitakse marsruudiks vähemate hüpetega marsruut.
+Kaugusvektori protokollid mÃ¤Ã¤ravad paketi teekonna vÃ¤listesse vÃµrkudesse kasutades hÃ¼pete kogust. Kui vÃµrk A on kolme hÃ¼ppe kaugusel ja vÃµrk B on kohe vÃµrgu A kÃµrval siis eeldame, et vÃµrk B on nelja hÃ¼ppe kaugusel. Kaugusvektori protokollide puhul valitakse marsruudiks vÃ¤hemate hÃ¼petega marsruut.
 
-Kaugusvektori protokollid sobivad paremini väikestele võrkudele, kui võrgud muutuvad suuremaks, võtab lõimumine rohkem aega, kuna perioodiliselt saadetakse marsruutimistabel välja kõikidele marsruuteritele. Kaugusvektori protokollid on ka ebaefektiivsemad, kuna valivad marsruudi, mis on hüpete poolest lähemal hoolimata sellest kas see on ka tegelikult kiireim tee.
+Kaugusvektori protokollid sobivad paremini vÃ¤ikestele vÃµrkudele kui vÃµrgud muutuvad suuremaks, vÃµtab lÃµimumine rohkem aega kuna perioodiliselt saadetakse marsruutimistabel vÃ¤lja kÃµikidele marsruuteritele. Kaugusvektori protokollid on ka ebaefektiivsemad kuna valivad marsruudi, mis on hÃ¼pete poolest lÃ¤hemal hoolimata sellest kas see on ka tegelikult kiireim tee.
 
-Kõige tavalisem kaugusvektori protokoll on RIP (*Routing Information Protocol*) ehk marsruutimisinformatsiooni protokoll. See saadab marsruutimistabeli kohta leviedastuse sõnumeid  kõikidele marsruuteriltee iga 30 sekundi tagant. Suuremates võrkudes hakkab see nõudma rohkelt ressurssi. RIP on piiratud maksimaalselt 15 hüppega.
+KÃµige tavalisem kaugusvektori protokoll on RIP (*Routing Information Protocol*) ehk marsruutimisinformatsiooni protokoll. See saadab marsruutimistabeli kohta leviedastuse sÃµnumeid kÃµikidele marsruuteritele iga 30 sekundi tagant. Suuremates vÃµrkudes hakkab see nÃµudma rohkelt ressurssi. RIP on piiratud maksimaalselt 15 hÃ¼ppega.
 
 ## Harjutus
 
 Harjutust pole.
 
-## Küsimus
+## KÃ¼simus
 
-Õige või vale? Kaugusvektorprotokollide marsruutimisotsuses põhinevad ribalaiusel?
+Ã•ige vÃµi vale? Kaugusvektorprotokollide marsruutimisotsused pÃµhinevad ribalaiusel?
 
 ## Vastus
 

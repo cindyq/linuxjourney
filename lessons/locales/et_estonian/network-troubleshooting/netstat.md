@@ -22,7 +22,7 @@ Esimeses väljas on teenuse nimi, sellele järgneb pordi number ja kasutatava tr
 
 <b>netstat</b>
 
-See on üks väga kasulik tööriist saamaks detailset võrguga seotud informatsiooni. *Netsat* kuvab väga erinevat informatsiooni, näiteks võrguühendused, marsruutimistabelid, info võrguliideste kohta ja veel muudki. See on justkui võrgu tööriistade šveitsi armee nuga. Selles peatükis keskendume ühele omadusele, selleks on võrguühenduse olek. Enne näitega tutvumist, räägime natuke soklitest ja portidest. Sokkel on liides, mis võimaldab programmidel andmeid vahetada, port aga tuvastab rakenduse, mis peaks andmete edastamist teostama. Sokli moodustavad IP aadress ja port. Iga üksik ühendus vajab unikaalset soklit. Toome näiteks HTTP. See on teenus, mis kasutab porti nr 80. Meil võib ju olla mitu HTTP ühendust (mitu samaaegselt avatud veebilehte). Selleks, et iga ühendust alal hoida luuakse iga ühenduse kohta unikaalne sokkel.
+See on üks väga kasulik tööriist saamaks detailset võrguga seotud informatsiooni. *Netsat* kuvab väga erinevat informatsiooni, näiteks võrguühendused, marsruutimistabelid, info võrguliideste kohta ja veel muudki. See on justkui võrgu tööriistade šveitsi armee nuga. Selles peatükis keskendume ühele omadusele, selleks on võrguühenduse olek. Enne näitega tutvumist räägime natuke soklitest ja portidest. Sokkel on liides, mis võimaldab programmidel andmeid vahetada, port aga tuvastab rakenduse, mis peaks andmete edastamist teostama. Sokli moodustavad IP aadress ja port. Iga üksik ühendus vajab unikaalset soklit. Toome näiteks HTTP. See on teenus, mis kasutab porti nr 80. Meil võib ju olla mitu HTTP ühendust (mitu samaaegselt avatud veebilehte). Selleks, et iga ühendust alal hoida luuakse iga ühenduse kohta unikaalne sokkel.
 
 <pre>
 pete@icebox:~$ netstat -at
@@ -38,12 +38,12 @@ tcp6       1      0 ip6-localhost:35094     ip6-localhost:ipp       CLOSE_WAIT
 tcp6       0      0 ip6-localhost:ipp       ip6-localhost:35094     FIN_WAIT2
 </pre>
 
-Netstat -a käsk kuvab kuulavad ja mittekuulavad võrguühenduste soklid. Võti -t kuvab ainult tcp ühendused.
+*Netstat -a* käsk kuvab kuulavad ja mittekuulavad võrguühenduste soklid. Võti *-t* kuvab ainult tcp ühendused.
 
 Väljad vasakult paremale on järgmised:
 
 <ul>
-<li>Proto: Kasutatav protokoll, TCP või UDP.</li>
+<li>Proto: Kasutatav protokoll, TCP või UDP (IPv4). Kui on IPv6 siis number 6 protokolli nimetuse järel.</li>
 <li>Recv-Q: Vastuvõtmise järjekorras ootavad andmed</li>
 <li>Send-Q: Saatmise järjekorras ootavad andmed</li>
 <li>Local Address: Kohalikult ühendatud host</li>
@@ -51,19 +51,19 @@ Väljad vasakult paremale on järgmised:
 <li>State: Sokli olek</li>
 </ul>
 
-Man-lehekülgedelt leiab sokli olekute nimekirja, kuid siin on mõned näiteks:
+Lehelt *man netstat* leiab sokli olekute nimekirja kuid siin on mõned näiteks:
 
 <ul>
-<li>LISTENING: Sokkel kuulab sissetulevaid ühendusi. Meenutame, et kui luua TCP ühendus, siis peab sihtkoht kuulama, et tabada meie ühendumise soov.</li>
+<li>LISTENING: Sokkel kuulab sissetulevaid ühendusi. Meenutame, et kui luua TCP ühendus siis peab sihtkoht kuulama, et tabada meie ühendumise soov.</li>
 <li>SYN_SENT: Sokkel püüab aktiivselt ühendust luua.</li>
 <li>ESTABLISHED: Soklil on loodud ühendus.</li>
-<li>CLOSE_WAIT: Sihtkoht on ühenduse katksetanud ja oodatakse sokli sulgumist.</li>
+<li>CLOSE_WAIT: Sihtkoht on ühenduse katkestanud ja oodatakse sokli sulgumist.</li>
 <li>TIME_WAIT: Sokkel on pärast sulgumist ootavas seisundis, et tegeleda pakettidega, mis on endiselt võrgus.</li>
  </ul>
 
 ## Harjutus
 
-Tutvuda man-lehekülgedel kõikide netstat'i kasutamise võimalustega.
+Tutvuda *man netstat* leheküljel kõikide netstat'i kasutamise võimalustega.
 
 ## Küsimus
 
