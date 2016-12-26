@@ -19,7 +19,7 @@ Lahe asi mida silmas pidada on see, et *find* ei piirdu otsimisega täpsustatud 
 ## Harjutus
 
 <ol>
-<li>Leia juurkataloogist fail, mille nimes on sõna *net*.</li>
+<li>Leia juurkataloogist fail, mille nimes on sõna <i>net</i>.</li>
 </ol>
 
 ## Küsimus
