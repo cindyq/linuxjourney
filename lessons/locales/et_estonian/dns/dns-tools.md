@@ -1,10 +1,10 @@
-﻿# DNS tööriistad
+# DNS tööriistad
 
 ## Tunni sisu
 
 <b>nslookup</b>
 
-Nimeserveri otsimise tööriista kasutatakse selleks, et pärida nimeserverite kohta, et siis omakorda leida infot ressursikirjete kohta. Uurime välja, kus asuvad google.com'i nimeserverid:
+Nimeserveri otsimise tööriista kasutatakse selleks, et pärida nimeserverite kohta ja omakorda leida infot ressursikirjete kohta. Uurime välja kus asuvad google.com'i nimeserverid:
 
 <pre>
 pete@icebox:~$ nslookup www.google.com
@@ -18,7 +18,7 @@ Address: 216.58.192.4
 
 <b>dig</b>
 
-Dig (*domain information groper* ehk domeeni informatsiooni kobaja) on DNS nimeserverite kohta informatsiooni saamise jaoks võimas tööriist. See on paindlikum kui nslookup ja suurepärane DNS probleemide silumiseks.
+Dig (*domain information groper* ehk *domeeni informatsiooni kobaja*) on DNS nimeserverite kohta informatsiooni saamise jaoks võimas tööriist. See on paindlikum kui nslookup ja suurepärane DNS probleemide silumiseks.
 
 <pre>
 pete@icebox:~$ dig www.google.com
