@@ -37,7 +37,7 @@ Mõnikord, just vanemates süsteemides, võib näha, et kõvaketastele viidataks
 
 ## Harjutus
 
-Kirjutada pseudoseadmetele ning uurida väljundit. Ettevaatust, et ei kirjutaks nendele oma kettaid!
+Kirjutada pseudoseadmetele ning uurida väljundit. Ettevaatust, et ei kirjutaks nendele oma kettaid! Ohutuse mõttes on soovitav harjutusi sooritada virtuaalarvutis, näiteks [VirtualBox](https://www.virtualbox.org/)'i keskkonda paigaldatud Linuxis.
 
 ## Küsimus
 
