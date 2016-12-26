@@ -6,7 +6,7 @@ Interneti DNS andmebaas põhineb saitide ja organisatsioonide poolt jagatud andm
 
 <b>Nimeserver</b>
 
-DNS seatakse üles nimeserverina kuhu on laetud DNS sätted ja seadistused ning vastused klientide küsimustele nagu "Kes on www.google.com?". Kui nimeserver sellele küsimusele vastata ei oska, edastatakse see mõnele teisele serverile. Nimeserverid võivad olla autoriteetsed mis tähendab, et seal hoitakse DNS kirjeid või siis rekursiivsed mis tähendab, et küsimust edastatakse aina järgmistele serveritele kuni leitakse autoriteetne server, milles asub päritav DNS kirje. Kuid rekursiivsetes serverites võib ka olla salvestatud otsitav informatsioon, mis juhul ei pea autoriteetset serverit otsima hakkama.
+DNS seatakse üles nimeserverina kuhu on laetud DNS sätted ja seadistused ning vastused klientide küsimustele nagu "Kes on www.google.com ?". Kui nimeserver sellele küsimusele vastata ei oska, edastatakse see mõnele teisele serverile. Nimeserverid võivad olla autoriteetsed mis tähendab, et seal hoitakse DNS kirjeid või siis rekursiivsed mis tähendab, et küsimust edastatakse aina järgmistele serveritele kuni leitakse autoriteetne server, milles asub päritav DNS kirje. Kuid rekursiivsetes serverites võib ka olla salvestatud otsitav informatsioon, mis juhul ei pea autoriteetset serverit otsima hakkama.
 
 <b>Tsooni fail</b>
 
