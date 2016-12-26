@@ -13,7 +13,7 @@ pete@icebox:~$ ls -li
 
 <b>Sümbolviidad</b>
 
-Windows operatsioonisüsteemis on olemas *shortcut*'id. Need polegi muud kui failide aliased. Kui midagi teha originaaliga, võib *shortcut* potensiaalselt katki minna. Linuxis vastavad nendele sümbolviidad, mis lubavad viidata failile selle nime põhjal. Teist tüüpi viidad Linuxis on püsiviidad, mis on failid, millel on ühendus infosõlmega. Vaatame seda asja praktiliselt alustades sümbolviitadega.
+MS Windows operatsioonisüsteemis on olemas *shortcut*'id. Need polegi muud kui failide aliased. Kui midagi teha originaaliga, võib *shortcut* potensiaalselt katki minna. Linuxis vastavad nendele sümbolviidad, mis lubavad viidata failile selle nime põhjal. Teist tüüpi viidad Linuxis on püsiviidad, mis on failid, millel on ühendus infosõlmega. Vaatame seda asja praktiliselt alustades sümbolviitadega.
  
 <pre>
 pete@icebox:~/Desktop$ echo 'minufail' > minufail
