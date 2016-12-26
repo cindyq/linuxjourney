@@ -33,8 +33,8 @@ Kokkuvõttes *umask*'i kaheksandväärtused ja neile vastavad (allesjäävad) õ
 * 7 : õigused puuduvad
 
 Kui *umask* käsk sisestada, antakse vaikimisi õigused kõikidele uutele failidele, mis luuakse. Kui aga on soov, et sätted oleksid püsivad, tuleb muuta faili:
-* globaalne: <i>/etc/profile</i>
-* kasutaja: <i>~/.bashrc</i><br>
+* globaalne (kõik kasutajad): <i>/etc/profile</i>
+* hetkel vaikimisi sisseloginud kasutaja: <i>~/.bashrc</i><br>
 ... ja lisada väärtus, näiteks:
 * <i>umask 021</i>
 
