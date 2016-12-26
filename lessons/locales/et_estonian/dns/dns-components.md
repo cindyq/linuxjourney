@@ -28,6 +28,12 @@ Tsoonifail koosneb ressursikirjetest. Iga rida on kirje, milles hoitakse informa
 patty    IN  A      192.168.0.4 
 </pre>
 
+MX-kirjete kontrollimiseks on loodud mitmeid vahendeid:
+* http://mxtoolbox.com/
+* https://toolbox.googleapps.com/apps/checkmx/
+* http://checkmx.com/
+* http://www.dnsqueries.com/en/mx-lookup.php
+
 ## Harjutus
 
 Harjutust pole.
