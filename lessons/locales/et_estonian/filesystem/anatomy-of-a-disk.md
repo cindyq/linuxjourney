@@ -18,7 +18,7 @@ Kettajagudest koosnevad kettad võimaldavad organiseerida andmeid. Kui kettas on
 <li>Traditsiooniline kettajagude tabel, kasutatud kui standardit</li>
 <li>Võimaldab primaarseid, laiendatud ja loogilisi kettajagusid</li>
 <li>MBR'i piiranguks on kuni neli primaarset kettajagu, peavad asetsema järjest</li>
-<li>Täiendavaid kettajagusid saab luua muutes viimase primaarse kettajao laiendatuks (lubatud on ainult üks laiendatud kettajagu). Selle sisse saab omakorda luua kuni 128 loogilist kettajagu.</li> 
+<li>Täiendavaid kettajagusid saab luua muutes viimase primaarse kettajao laiendatuks (lubatud on ainult üks laiendatud kettajagu). Selle sisse saab omakorda luua kuni 128 loogilist kettajagu (peavad asetsema järjest).</li> 
 <li>Toetatud on kuni 2 terabaidised kettad</li>
 </ul>
 
