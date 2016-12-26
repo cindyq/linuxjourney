@@ -20,14 +20,14 @@ Tsoonifail koosneb ressursikirjetest. Iga rida on kirje, milles hoitakse informa
 <li>Kirje nimi.</li>
 <li><i>TTL</i> - Aeg, mille möödudes kirje eemaldatakse ja hangitakse uus. DNS'i puhul on TTL ajaline väärtus, kirjete eluiga võiks olla näiteks üks tund. Sellist mehhanismi on vaja Interneti pideva muutumise tõttu. Üks ja sama host võib ühel hetkel omada IP aadressi X ja juba järgmisel IP aadressi Y.</li>
 <li><i>Class</i> - Kirje informatsiooni nimeruum, tavaliselt kasutatakse Interneti kohta IN.</li>
-<li><i>Type</i> - Kirjes salvestatava informatsiooni tüüp. Kõige levinumad on A aadressi kohta ja MX kirjade vahendamise kohta jne. Sellel kursusel kirje tüüpidele ei keskenduta.</li>
+<li><i>Type</i> - Kirjes salvestatava informatsiooni tüüp. Kõige levinumad on A aadressi kohta, CNAME alamdomeenide (ka aliaste) kohta ja MX kirjade vahendamise kohta jne. Sellel kursusel kirje tüüpidele ei keskenduta.</li>
 <li><i>Data</i> - Selles väljas võib olla IP aadress kui kirje tüüp on A või midagi muud sõltuvalt tüübist.</li>
 </ul>
 
 <pre>
 patty    IN  A      192.168.0.4 
 </pre>
-
+ 
 MX-kirjete kontrollimiseks on loodud mitmeid vahendeid:
 * http://mxtoolbox.com/
 * https://toolbox.googleapps.com/apps/checkmx/
