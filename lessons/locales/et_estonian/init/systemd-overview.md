@@ -16,7 +16,7 @@ Modifitseerimine: 2016-12-22 15:13:05.902106278 +0200
 Muutmine: 2016-12-22 15:13:05.902106278 +0200
  Sünd: -
 </pre>
-* <i>sudo stat /sbin/init</i
+* <i>sudo stat /sbin/init</i>
 <pre>
   Fail: '/sbin/init' -> '/lib/<b>systemd</b>/systemd'
   Suurus: 20            Blokke: 0          IO Blokke: 4096   nimeviide
