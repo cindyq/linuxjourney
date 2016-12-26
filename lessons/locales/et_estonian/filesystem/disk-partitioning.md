@@ -4,21 +4,21 @@
 
 Järgnevalt harjutame failisüsteemi praktilist poolt USB pulga peal. Ei tasu muretseda kui endal ühte käepärast ei ole, võib ka lihtsalt kaasa mõelda.
 
-Esiteks on tarvis tekitada kettajaod. Kettajagude loomisega tasub olla **eriti ettevaatlik** kuna sellega võidakse kustutada kettajagu, mis sisaldab olulisi andmeid. Samuti uue kettajagude tabeli loomisega kustuvad kõik kettajaod ja seal olnud andmed. **Seetõttu tasub enne kettajagudega tegelemist teha andmetest varukoopia**. Mõned programmid salvestavad tehtud muudatused automaatselt, kinnitust küsimata. Algajatel tasub valida selline programm, mis kohe tehtud muudatusi ei salvesta. Ohutum on eelnevalt näiteks mõnes virtuaalarvutis järgi proovida ja kui ollakse juba kindlad siis tasub alles päris ketaste jagamise juurde minna. Virtuaalarvutisse (nt [VirtualBox](https://www.virtualbox.org/)'i keskkonnas) on lihtne lisada virtuaalseid kõvakettaid ja neid siis harjutamise mõttes jagudeks jagada.
+Esiteks on tarvis tekitada kettajaod. Kettajagude loomisega tasub olla **eriti ettevaatlik** kuna sellega võidakse kustutada kettajagu, mis sisaldab olulisi andmeid. Samuti uue kettajagude tabeli loomisega kustuvad kõik kettajaod ja seal olnud andmed. **Seetõttu tasub enne kettajagudega tegelemist teha andmetest varukoopia**. Mõned programmid salvestavad tehtud muudatused automaatselt, kinnitust küsimata. Algajatel tasub valida selline programm, mis kohe tehtud muudatusi ei salvesta. Ohutum on eelnevalt näiteks mõnes virtuaalarvutis järgi proovida ja kui ollakse juba kindlad siis tasub alles päris arvutis ketaste jagamise juurde minna. Virtuaalarvutisse (nt [VirtualBox](https://www.virtualbox.org/)'i keskkonnas) on lihtne lisada virtuaalseid kõvakettaid ja neid siis harjutamise mõttes jagudeks jagada.
 
 Olemasolevate ja loodud kettajagude vaatamiseks sobib ka *lsblk*. Failisüsteeme näeb ka *lsblk -f* abil.
 
 Ketta jagamiseks on saadaval palju tööriistu:
 
 <ul>
-<li>fdisk - lihtne käsureapõhine tööriist, vaikimisi kasutab MBR'i kuid toetab ka GPT'd. Salvestab muudatused alles siis kui selleks vastav käsklus antakse.</li>
-<li>cfdisk - lihtne ja osaliselt pseudograafiline programm kettajagude ja nende tabelite haldamiseks. Salvestab muudatused alles siis kui selleks vastav käsklus antakse.</li>
-<li>parted - käsureapõhine tööriist, mis toetab nii MBR'i kui GPT'd. NB! Salvestab koheselt (automaatselt, küsimata) tehtud muudatused! Olla eriti ettevaatlik!</li>
-<li>gparted - parted'i graafiline versioon</li>
-<li>gdisk - sisuliselt fdisk kuid toetab ainult GPT'd ja mitte MBR'i (MBR teisendatakse koheselt GPT tabeliks, millega andmed kustuvad kuna kettajagude tabel kirjutatakse üle - kui kohe programmist väljuda q ja Enter abil ja mitte salvestada siis muudatused ei jõustu). Salvestab muudatused alles siis kui selleks vastav käsklus antakse.</li>
+<li><i>fdisk</i> - lihtne käsureapõhine tööriist, vaikimisi kasutab MBR'i kuid toetab ka GPT'd. Salvestab muudatused alles siis kui selleks vastav käsklus antakse.</li>
+<li><i>cfdisk</i> - lihtne ja osaliselt pseudograafiline programm kettajagude ja nende tabelite haldamiseks. Salvestab muudatused alles siis kui selleks vastav käsklus antakse.</li>
+<li><i>parted</i> - käsureapõhine tööriist, mis toetab nii MBR'i kui GPT'd. NB! Salvestab koheselt (automaatselt, küsimata) tehtud muudatused! Olla eriti ettevaatlik!</li>
+<li><i>gparted</i> - parted'i graafiline versioon</li>
+<li><i>gdisk</i> - sisuliselt fdisk kuid toetab ainult GPT'd ja mitte MBR'i (MBR teisendatakse koheselt GPT tabeliks, millega andmed kustuvad kuna kettajagude tabel kirjutatakse üle - kui kohe programmist väljuda q ja Enter abil ja mitte salvestada siis muudatused ei jõustu). Salvestab muudatused alles siis kui selleks vastav käsklus antakse.</li>
 </ul>
 
-Meie kasutame *parted*'i enda kettajagude loomiseks. Ütleme, et ühendatud USB seadme nimi on */dev/sdb2*.
+Meie kasutame *parted*'it enda kettajagude loomiseks. Ütleme, et ühendatud USB seadme nimi on */dev/sdb*.
 
 *Parted* on väga võimas tööriist ning kettajagude loomisel tasuks olla ettevaatlik. Erinevalt teistest kettajagude loomise programmidest salvestab *parted* **koheselt** (automaatselt, küsimata) loodud kettajaod. Seetõttu tasub olla ettevaatlik ja näiteks virtuaalarvutis esmalt järgi proovida kus ei ole riski andmete kogemata kustutamiseks.
 
@@ -77,8 +77,8 @@ Tuleb valida kettajao number ja soovitavad *start* ja *end* punktid.
 *Parted* programmi on võimalik kasutada ka ilma sinna sisenemata, sisestades käsud järjest.
 
 Lisainfo<br>
-https://www.gnu.org/software/parted/manual/
-https://wiki.archlinux.org/index.php/GNU_Parted
+* https://www.gnu.org/software/parted/manual/
+* https://wiki.archlinux.org/index.php/GNU_Parted
 
 ## Harjutus
 
