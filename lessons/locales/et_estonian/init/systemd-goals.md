@@ -58,8 +58,8 @@ Kuvada teenuste olekuid, käivitada ja peatada teenuseid. Mida võib märgata?
 
 ## Küsimus
 
-Millise käsuga saab käivitada teenuse nimega moos.service?
+Millise käsuga saab käivitada teenuse nimega *moos.service*?
 
 ## Vastus
 
-sudo systemctl start moos.service
+*sudo systemctl start moos.service*
