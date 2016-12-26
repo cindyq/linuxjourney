@@ -5,7 +5,7 @@
 *Systemd* on tasapisi kerkimas esile *init*'i standardina. Kui kasutajal on arvutis olemas kataloog */usr/lib/systemd* siis kasutatakse kõige tõenäolisemalt just *systemd*'d.
 
 <b>init'i kindlakstegemise võimalusi:</b>
-* sudo stat /proc/1/exe
+* <i>sudo stat /proc/1/exe</i>
 <pre>
   Fail: '/proc/1/exe' -> '/lib/<b>systemd</b>/systemd'
   Suurus: 0             Blokke: 0          IO Blokke: 1024   nimeviide
@@ -16,7 +16,7 @@ Modifitseerimine: 2016-12-22 15:13:05.902106278 +0200
 Muutmine: 2016-12-22 15:13:05.902106278 +0200
  Sünd: -
 </pre>
-* sudo stat /sbin/init
+* <i>sudo stat /sbin/init</i
 <pre>
   Fail: '/sbin/init' -> '/lib/<b>systemd</b>/systemd'
   Suurus: 20            Blokke: 0          IO Blokke: 4096   nimeviide
@@ -27,9 +27,9 @@ Modifitseerimine: 2016-11-25 14:57:20.000000000 +0200
 Muutmine: 2016-12-15 15:13:56.984403977 +0200
  Sünd: -
 </pre>
-* dpkg -S /sbin/init
+* <i>dpkg -S /sbin/init</i>
 <pre><b>systemd</b>-sysv: /sbin/init</pre>
-* ps -p1
+* <i>ps -p1</i>
 <pre>
   PID TTY          TIME CMD
     1 ?        00:00:10 <b>systemd</b>
