@@ -27,9 +27,9 @@ Enamasti on tegelik ja kehtiv UID samad kuid juhtudel nagu *passwd* see muutub.
 Protsessidest ei ole küll veel räägitud kuid siiski võib vaadelda järgnevat muutust reaalajas:
 
 <ol>
-<li>Avada üks terminali aken ja sisestada käsk <b>watch -n 1 "ps aux | grep passwd"</b>. See hakkab jälgima *passwd*protsessi.</li>
+<li>Avada üks terminali aken ja sisestada käsk <b>watch -n 1 "ps aux | grep passwd"</b>. See hakkab jälgima <b>passwd</b> protsessi.</li>
 <li>Avada teine terminali aken ja sisestada <b>passwd</b></li>
-<li>Kui vaadata esimest terminali akent võib näha *passwd* protsessi. Tabeli esimene veerg on kehtiv UID. Vaata aga! See on juurkasutaja.</li>
+<li>Kui vaadata esimest terminali akent võib näha <b>passwd</b> protsessi. Tabeli esimene veerg on kehtiv UID. Vaata aga! See on juurkasutaja.</li>
 </ol>
 
 ## Küsimus
