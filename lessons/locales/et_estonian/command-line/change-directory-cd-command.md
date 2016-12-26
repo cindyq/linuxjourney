@@ -5,7 +5,7 @@
 Vaatame kas meil õnnestub failisüsteemis pisut ringi liikuda teadmistega, mis käesolevaks hetkeks kogutud. Tuleb meeles pidada, et liikumiseks peame kasutama asukohtade otsiteekondi. Asukoha määramiseks on kaks võimalust: absoluutne ja suhteline otsiteekond.
 
 <ul>
-<li>Absoluutne otsiteekond: See on asukoht alates juurkataloogist. Juur on meil see kõige olulisem tegelane. Juurkataloogi kuvatakse tavaliselt kaldkriipsuga. Kui asukoha alguses on /, siis tähendab, et alustatakse juurkataloogist. Näiteks /home/pete/Töölaud.</li>
+<li>Absoluutne otsiteekond: See on asukoht alates juurkataloogist. Juur on meil see kõige olulisem tegelane. Juurkataloogi kuvatakse tavaliselt kaldkriipsuga. Kui asukoha alguses on /, siis tähendab, et alustatakse juurkataloogist. Näiteks <i>/home/pete/Töölaud</i>.</li>
 
 <li>Suhteline otsiteekond: See on asukoht alates praegusest asukohast failisüsteemis. Kui hetkel asutakse /home/pete/Dokumendid ja tahetakse liikuda kataloogis Dokumendid asuvasse arved alamkataloogi, siis ei ole vaja täpsustada kogu asukohta alates juurkataloogist vaid võib otse minna alamkataloogi arved/ .</li>
 </ul>
