@@ -6,6 +6,12 @@ Kuna *Upstart* on Canonical'i välja töötatud, oli see mõnda aega Ubuntu*init
 
 Kui kasutajal on süsteemis kataloog */usr/share/upstart* on see päris hea vihje, et kasutusel on *Upstart*.
 
+<b>init'i kindlakstegemise võimalusi:</b>
+* <i>sudo stat /proc/1/exe</i>
+* <i>sudo stat /sbin/init</i>
+* <i>dpkg -S /sbin/init</i>
+* <i>ps -p1</i>
+
 Tööd on tegevused, mida *Upstart* teostab ja sündmused on teated, mida töödeldakse tööde aktiveerimiseks. Tööde ja nende seadete nimekirja kuvamiseks:
 
 <pre>
