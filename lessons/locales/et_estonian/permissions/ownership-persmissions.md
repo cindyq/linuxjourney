@@ -17,6 +17,10 @@ See muudab faili omanikuks Peetri.
 <pre>
 $ sudo chgrp vaalad minufail
 </pre>
+või ka
+<pre>
+$ sudo chown :vaalad minufail
+</pre>
 
 See muudab faili grupiks vaalad.
 
