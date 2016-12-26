@@ -1,10 +1,10 @@
-﻿# Omandiõigused
+# Omandiõigused
 
 ## Tunni sisu
 
-Lisaks ligipääsuõigustele, saab muuta ka faili omanikku: kasutajat ja gruppi.
+Lisaks ligipääsuõigustele saab muuta ka faili omanikku: kasutajat ja gruppi.
 
-<b>Omanik-kasutaja muutmine</b>
+<b>Omaniku muutmine</b>
 
 <pre>
 $ sudo chown peeter minufail
@@ -12,7 +12,7 @@ $ sudo chown peeter minufail
 
 See muudab faili omanikuks Peetri.
 
-<b>Omanik-grupi muutmine</b>
+<b>Grupi muutmine</b>
 
 <pre>
 $ sudo chgrp vaalad minufail
@@ -22,7 +22,7 @@ See muudab faili grupiks vaalad.
 
 <b>Kasutaja ja grupi üheaegne muutmine</b>
 
-Kui lisada kasutaja järgi koolon ning grupinimi, saab neid üheaegselt muuta.
+Kui lisada kasutaja järele koolon ning grupinimi, saab neid üheaegselt muuta.
 
 <pre>
 $ sudo chown peeter:vaalad minufail
@@ -38,4 +38,4 @@ Millise käsuga saab muuta faili omanikku?
 
 ## Vastus
 
-chown
+*chown*
