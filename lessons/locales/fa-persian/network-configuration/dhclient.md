@@ -1,22 +1,32 @@
 # dhclient
 
-## Lesson Content
+## محتوای درس
 
-We've discussed DHCP before and most often you will never need to statically set your IP addresses, subnet masks, etc. Instead you'll be using DHCP! The dhclient starts up on boot and gets a list of network interfaces from the dhclient.conf file. For each interface listed it tries to configure the interface using the DHCP protocol.
+قبلا در مورد DHCP صحبت کردیم و گفتیم که اکثر اوقات‌، شما نیازی به تنظیم دستی
+آدرس‌های IP و subnet mask‌های مورد نظرتان ندارید و تنها کافیست از DHCP استفاده
+کنید. `dhclient` در زمان بارگذاری سیستم شروع به کار می‌کند و لیستی از
+اینترفیس‌های شبکهٔ شما را از `dhclient.conf` دریافت می‌کند. در ادامه برای هر
+اینترفیس لیست شده‌، سعی می‌کند با استفاده از پروتکل DHCP اقدام به تنظیم آن کند. 
 
-In the dhclient.leases file, dhclient keeps track of a list of leases across system reboots, after reading dhclient.conf, the dhclient.leases file is read to let it know what leases it's already assigned. 
+در فایل `dhclient.leases` نیز لیستی از lease‌ها (هر زمانی که دستگاهی روی شبکه
+درخواست IP می‌کند و آن را دریافت می‌کند به آن یک lease می‌گویند) توسط dhclient
+نگهداری می‌شود که در بین راه‌اندازی‌های مجدد سیستم دست نخورده باقی می‌ماند و اجازه
+می‌دهد که پس از بررسی فایل `dhclient.conf` این برنامه بداند که کدام lease‌ها در
+حال حاضر اختصاص یافته شده‌اند.
 
-<b>To obtain a fresh IP</b>
+### دریافت یک IP جدید
 
-<pre>$ sudo dhclient</pre>
+```
+$ sudo dhclient
+```
 
-## Exercise
+## تمرین
 
-No exercises for this lesson.
+تمرینی برای این درس وجود ندارد
 
-## Quiz Question
+## سوال آزمون
 
-What tries to assign IP addresses with the DHCP protocol?
+کدام دستور امکان اختصاص یک شناسهٔ IP جدید از طریق پروتکل DHCP را فراهم می‌کند؟
 
 ## Quiz Answer
 
