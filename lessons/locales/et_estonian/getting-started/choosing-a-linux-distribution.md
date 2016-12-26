@@ -20,6 +20,10 @@ Linuxi valimisel on abiks ka järgmised veebilehed:
 * http://www.tuxradar.com/content/how-choose-best-linux-distro
 * http://lifehacker.com/5889950/how-to-find-the-perfect-linux-distribution-for-you
 
+Lisaks võib internetist otsida:
+* <i>linux distros</i>: [startpage](https://www.startpage.com/do/dsearch?query=linux+distros) | duckduckgo | google
+* <i>best linux distros</i>: startpage | duckduckgo | google
+
 ## Harjutus
 
 Selles peatükis harjutust pole.
