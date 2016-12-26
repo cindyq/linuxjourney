@@ -17,7 +17,7 @@ NB! Peale tuuma uuendamist tuleb alati ka käivitada alglaaduri uuendamise käsk
 
 On olemas palju erinevaid tuuma versioone, näiteks LTS (<i>Long Term Support</i> ehk pikaajalise toega) ja on ka muidugi veel uuemaid ning vingemaid, millest tuleb juttu allpool. Versioonide vahel võib olla väga palju erinevusi ja võib juhtuda, et kasutaja tahab proovida erinevaid tuumasid. Üldiselt võib alati ka uusimaid versioone proovida - ka need töötavad ja lisavad üldjuhul uusima riistvara tuge ja parandatud saavad ka turvavead. Eriti just turvalisuse seisukohast lähtuvalt võiks süsteemis kasutada alati uusimat tuuma ja peale uusima paigaldatud tuuma pealt töötamises veendumist eemaldada vanad tuumad.<br><br>
 
-Mõistlik on otsida uusimad LTS-versiooni metapaketid ja paigaldada need - siis süsteemi uuendamise (dist-upgrade) käigus uuendatakse alati uusima versiooni pikaajalise toega (LTS) tuuma peale:
+Mõistlik on otsida uusimad LTS-versiooni metapaketid ja paigaldada need - siis süsteemi uuendamise (<i>dist-upgrade</i>) käigus uuendatakse alati uusima versiooni pikaajalise toega (LTS) tuuma peale:
 <pre>
 $ sudo apt search linux-image-generic-lts
 $ sudo apt search linux-headers-generic-lts
