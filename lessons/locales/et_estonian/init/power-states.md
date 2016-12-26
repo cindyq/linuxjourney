@@ -34,4 +34,4 @@ Millise käsuga lülitatakse süsteem välja 4 minuti möödumisel?
 
 ## Vastus
 
-sudo shutdown -h +4
+*sudo shutdown -h +4*
