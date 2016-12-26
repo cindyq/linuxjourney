@@ -45,8 +45,8 @@ Kuvada *Upstart* tööde nimekiri. Muuta mõne tegumi olekut äsja õpitud käsk
 
 ## Küsimus
 
-Kuidas käsitsi taaskäivitada töö nimega moos?
+Kuidas käsitsi taaskäivitada töö nimega *moos*?
 
 ## Vastus
 
-sudo initctl restart moos
+*sudo initctl restart moos*
