@@ -4,6 +4,37 @@
 
 *Systemd* on tasapisi kerkimas esile *init*'i standardina. Kui kasutajal on arvutis olemas kataloog */usr/lib/systemd* siis kasutatakse kõige tõenäolisemalt just *systemd*'d.
 
+<b>init'i kindlakstegemise võimalusi:</b>
+* sudo stat /proc/1/exe
+<pre>
+  Fail: '/proc/1/exe' -> '/lib/<b>systemd</b>/systemd'
+  Suurus: 0             Blokke: 0          IO Blokke: 1024   nimeviide
+Seade: 4h/4d    Inode: 17905       Linke: 1
+Juurdepääs: (0777/lrwxrwxrwx)  Uid: (    0/    root)   Gid: (    0/    root)
+Kasutamine: 2016-12-26 15:18:07.536484054 +0200
+Modifitseerimine: 2016-12-22 15:13:05.902106278 +0200
+Muutmine: 2016-12-22 15:13:05.902106278 +0200
+ Sünd: -
+</pre>
+* sudo stat /sbin/init
+<pre>
+  Fail: '/sbin/init' -> '/lib/<b>systemd</b>/systemd'
+  Suurus: 20            Blokke: 0          IO Blokke: 4096   nimeviide
+Seade: 805h/2053d       Inode: 2097404     Linke: 1
+Juurdepääs: (0777/lrwxrwxrwx)  Uid: (    0/    root)   Gid: (    0/    root)
+Kasutamine: 2016-12-15 15:13:56.000000000 +0200
+Modifitseerimine: 2016-11-25 14:57:20.000000000 +0200
+Muutmine: 2016-12-15 15:13:56.984403977 +0200
+ Sünd: -
+</pre>
+* dpkg -S /sbin/init
+<pre><b>systemd</b>-sysv: /sbin/init</pre>
+* ps -p1
+<pre>
+  PID TTY          TIME CMD
+    1 ?        00:00:10 <b>systemd</b>
+</pre>
+
 *Systemd* kasutab süsteemi töökorras hoidmiseks eesmärke. Põhimõtteliselt on nii, et on olemas eesmärk, mida tahetakse saavutada aga sellel eesmärgil on ka sõltuvused, mis tuleb samuti täita. *Systemd* on väga paindlik ja robustne, see ei järgi protsesside käivitamisel ranget järjekorda. Tüüpilise *systemd* alglaadimise ajal toimub tavaliselt järgnev:
 
 <ol>
