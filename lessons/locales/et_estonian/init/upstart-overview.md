@@ -19,7 +19,7 @@ anacron.conf                 network-interface-container.conf
 
 Nendes seadete failides on informatsioon selle kohta kuidas ja millal töid käivitada.
 
-Näiteks networking.conf failist võiks leida järgmise:
+Näiteks *networking.conf* failist võiks leida järgmise:
 <pre>
 start on runlevel [235]
 stop on runlevel [0]
