@@ -17,12 +17,12 @@ Mis on see *swap* ehk saaleala? Saaleala kasutatakse virtuaalmälule süsteemis 
 
 <ol>
 <li>Esiteks tuleb teha kindlaks, et kettajaol ei asu midagi</li>
-<li>Tuvasta kasutuses olevad saalealad: swapon -s</li>
-<li>Tuvastamaks ka kasutuses mitteolevad saalealad - neil puudub lõpus haakepunkt [SWAP]: lsblk -f | grep swap</li>
-<li>Saaleala loomine: sudo mkswap /dev/sdb2</li>
-<li>Saaleala haakimine: sudo swapon /dev/sdb2</li>
-<li>Kui on soovitud, et saalealad püsiksid käivitamisel, on vaja lisada ka kirje /etc/fstab faili. Kasutada tuleb sw failisüsteemi tüüpi.</li>
-<li>Saaleala lahtiühendamiseks: sudo swapoff /dev/sdb2</li>
+<li>Tuvasta kasutuses olevad saalealad: <i>swapon -s</i></li>
+<li>Tuvastamaks ka kasutuses mitteolevad saalealad - neil puudub lõpus haakepunkt <i>[SWAP]</i>: <i>lsblk -f | grep swap</i></li>
+<li>Saaleala loomine: <i>sudo mkswap /dev/sdb2</i></li>
+<li>Saaleala haakimine: <i>sudo swapon /dev/sdb2</i></li>
+<li>Kui on soovitud, et saalealad püsiksid käivitamisel, on vaja lisada ka kirje <i>/etc/fstab</i> faili. Kasutada tuleb sw failisüsteemi tüüpi.</li>
+<li>Saaleala lahtiühendamiseks: <i>sudo swapoff /dev/sdb2</i></li>
 </ol>
 
 <b>Saaleala haakimine alglaadimisel</b><br>
@@ -47,7 +47,7 @@ Juhul kui on vaja eelnevalt tehtud varukoopiast taastada:
 sudo cp /etc/fstab-original /etc/fstab
 </pre>
 
-Tavaliselt peaks määrama kaks korda nii palju ruumi saalealale, kui on mälu, kuid tänapäeva süsteemid on juba piisavalt võimsad, et piisab ka sama suurest alast kui muutmälu (RAM) maht on. Näiteks 4 GB või suurema muutmälu korral võib rakendada valemit *saaleala = muutmälu maht*.
+Tavaliselt peaks määrama kaks korda nii palju ruumi saalealale kui on mälu, kuid tänapäeva süsteemid on juba piisavalt võimsad, et piisab ka sama suurest alast kui muutmälu (RAM) maht on. Näiteks 4 GB või suurema muutmälu korral võib rakendada valemit *saaleala = muutmälu maht*.
 
 # Harjutus
 
