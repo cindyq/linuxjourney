@@ -17,7 +17,7 @@ Failide loomiseks on palju võimalusi, mis kaasavad muid asju nagu ümbersuunami
 <ol>
 <li>Luua uus fail</li>
 <li>Vaadata, milline ajatempel sellel on</li>
-<li>Rakendada sellel failil *touch* käsku ja vaadata uuesti ajatemplit</li>
+<li>Rakendada sellel failil <i>touch</i> käsku ja vaadata uuesti ajatemplit</li>
 </ol>
 
 # Küsimus
