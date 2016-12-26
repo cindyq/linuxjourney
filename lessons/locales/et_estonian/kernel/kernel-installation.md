@@ -98,20 +98,19 @@ sudo apt update && sudo apt install byobu && sudo apt clean
 </pre>
 Lisaks vanade tuumade eemaldamisele võimaldab byobu palju muudki, lisainfot leiab [programmi kodulehelt](http://byobu.co/).
 
-<b>Käsitsi vanade tuumade eemaldamine.</b>
+<b>Käsitsi vanade tuumade eemaldamine.</b><br>
 Kui ei ole võimalik rakenduse byobu'ga kaasatulevat mugavat võimalust vanade tuumade kasutamiseks rakendada siis saab ka käsitsi neid eemaldada.<br><br>
 Paketihaldusest otsime paigaldatud tuumi ja nende päiseid:<br>
 1.variant (paigaldatud pakettide tuvastamine):
 <pre>
-dpkg-query -l 'linux-image*' | grep '^ii'<br>
+dpkg-query -l 'linux-image*' | grep '^ii'
 dpkg-query -l 'linux-header*' | grep '^ii'
-</pre><br>
-
+</pre>
 Graafiliselt tööjaamas sama otsing:
-otsida (CTRL+F) Synaptic'uga pakette:
-* <i>linux-image</i><br>
-* <i>linux-header</i><br>
-.. ja eemaldada siis need, mis on vanemad ja millelt masin ei tööta. Synaptic'us saab pakette märkida CTRL-klahvi all hoides. Täielikuks pakettide eemaldamiseks Synaptic'us klahvikombinatsioon SHIFT+Delete või menüüs Paketid->Märgi täielikuks eemaldamiseks
+otsida (CTRL+F) Synaptic'uga pakette:<br>
+<li> <i>linux-image</i></li>
+<li> <i>linux-header</i></li>
+.. ja täielikult eemaldada (<i>SHIFT+Delete</i>) siis need, mis on vanemad ja millelt masin ei tööta. Synaptic'us saab pakette märkida CTRL-klahvi all hoides. Täielikuks pakettide eemaldamiseks Synaptic'us klahvikombinatsioon <i>SHIFT+Delete</i> või menüüs <i>Paketid->Märgi täielikuks eemaldamiseks</i>.
 
 Käsureal eraldada tühikutega paketid järgmiselt (asendada näites toodud nimed tegelikega):
 <pre>
