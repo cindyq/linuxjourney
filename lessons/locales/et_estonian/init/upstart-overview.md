@@ -33,7 +33,7 @@ See tähendab, et võrgundust seatakse üles teenustasemel 2, 3 või 5 ja peatat
 <li>Esiteks laetakse töö seadete fail kataloogist <i>/etc/init</i></li>
 <li>Kui toimub alglaadimise sündmus, käivitatakse selle poolt aktiveeritud töö</li>
 <li>Need tööd loovad uusi sündmusi, mis omakorda akviteerivad rohkem töid</li>
-<li>*Upstart* toimib kuni kõik valitud tööd on teostatud</li>
+<li><i>Upstart</i> toimib kuni kõik valitud tööd on teostatud</li>
 </ol>
 
 ## Harjutus
