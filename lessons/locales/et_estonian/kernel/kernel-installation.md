@@ -1,4 +1,4 @@
-﻿# Tuuma paigaldamine
+# Tuuma paigaldamine
 
 ## Tunni sisu
 
@@ -109,8 +109,8 @@ dpkg-query -l 'linux-header*' | grep '^ii'
 
 Graafiliselt tööjaamas sama otsing:
 otsida (CTRL+F) Synaptic'uga pakette:
-*linux-image*<br>
-*linux-header*
+* <i>linux-image</i><br>
+* <i>linux-header</i><br>
 .. ja eemaldada siis need, mis on vanemad ja millelt masin ei tööta. Synaptic'us saab pakette märkida CTRL-klahvi all hoides. Täielikuks pakettide eemaldamiseks Synaptic'us klahvikombinatsioon SHIFT+Delete või menüüs Paketid->Märgi täielikuks eemaldamiseks
 
 Käsureal eraldada tühikutega paketid järgmiselt (asendada näites toodud nimed tegelikega):
