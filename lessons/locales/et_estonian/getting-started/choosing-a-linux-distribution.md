@@ -19,7 +19,7 @@ Linuxi valimisel on abiks ka järgmised veebilehed:
 * http://www.tuxradar.com/content/distro-picker-0
 * http://www.tuxradar.com/content/how-choose-best-linux-distro
 * http://lifehacker.com/5889950/how-to-find-the-perfect-linux-distribution-for-you
-* http://distrowatch.com/
+* http://distrowatch.com/?language=EE
 
 Lisaks võib internetist otsida:
 * <i>linux distros</i>: <a target="_blank" href="https://www.startpage.com/do/dsearch?query=linux+distros">startpage</a> | <a target="_blank" href="https://duckduckgo.com/?q=linux+distros">duckduckgo</a> | <a target="_blank" href="https://www.google.ee/search?q=linux+distros">google</a>
