@@ -2,7 +2,7 @@
 
 ## Tunni sisu
 
-*Init*'i peamine ülesanne on käivitada ja peatada süsteemile esmatähtsaid protsesse. Linuxis on *init*'il kolm peamist teostust: *System V*, *Upstart* ja *systemd*. Selles peatükis räägime kõige tradistioonilisemast, *System V init* või siis *Sys V* (öeldakse *'System Five'*).
+*Init*'i peamine ülesanne on käivitada ja peatada süsteemile esmatähtsaid protsesse. Linuxis on *init*'il kolm peamist teostust: *System V*, *Upstart* ja *systemd*. Selles peatükis räägime kõige tradistioonilisemast, *System V init* või siis *Sys V* (öeldakse *System Five*).
 
 Kõige lihtsam viis tuvastada, kas kasutatakse *Sys V*'d on kontrollida kas eskisteerib fail /etc/inittab. Kui selline fail on olemas siis väga tõenäoliselt just see ongi kasutusel. 
 
