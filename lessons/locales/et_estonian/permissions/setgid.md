@@ -2,7 +2,7 @@
 
 ## Tunni sisu
 
-Sarnaselt kasutaja ID õiguste seadistamise bitile on olemas ka grupi õiguste ID seadistamise bitt (SGID). See bitt võimaldab programmi käivitada justkui oleks kasutaja vastava grupi liige.
+Sarnaselt kasutaja ID õiguste seadistamise bitile on olemas ka grupi õiguste ID seadistamise bitt (SGID - *Set Group ID*). See bitt võimaldab programmi käivitada justkui oleks kasutaja vastava grupi liige.
 
 Vaatame näidet:
 
