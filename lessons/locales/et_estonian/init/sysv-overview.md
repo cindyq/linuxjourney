@@ -6,6 +6,12 @@
 
 Kõige lihtsam viis tuvastada, kas kasutatakse *Sys V*'d on kontrollida kas eskisteerib fail */etc/inittab*. Kui selline fail on olemas siis väga tõenäoliselt just see ongi kasutusel. 
 
+<b>init'i kindlakstegemise võimalusi:</b>
+* <i>sudo stat /proc/1/exe</i>
+* <i>sudo stat /sbin/init</i>
+* <i>dpkg -S /sbin/init</i>
+* <i>ps -p1</i>
+
 *Sys V* käivitab ja peatab protsesse järjekorras, näiteks, kui kui on soov käivitada protsess foo-b, peab enne kindlustama, et foo-a töötab. Seda tehakse skriptidega, mis käivitavad ja peatavad kasutaja jaoks protsesse. Neid võib ka ise krjutada kuid suuremal määral kasutatakse siiski opreatsioonisüsteemi sisseehitatud skripte, mida kasutatakse esmatähtsate teenuste laadimiseks.
 
 Selle teostuse kasutamise eelisteks on suhteliselt lihtne sõltuvuste lahendamine, kuna foo-a tuleb alati enne foo-b'd. Kannatab aga töökiirus, kuna ainult üks asi käivitub või peatub korraga.
