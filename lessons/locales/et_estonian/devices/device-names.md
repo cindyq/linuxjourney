@@ -11,9 +11,9 @@ Massmäluseadmed kasutavad kõige tõenäolisemalt SCSI (hääldatakse "skazi") 
 Tavapärased SCSI seadmefailid:
 
 <ul>
-<li>/dev/sda - Esimene kõvaketas</li>
-<li>/dev/sdb - Teine kõvaketas</li>
-<li>/dev/sda3 - Esimese kõvaketta kolmas kettajagu</li>
+<li><i>/dev/sda</i> - esimene kõvaketas</li>
+<li><i>/dev/sdb</i> - teine kõvaketas</li>
+<li><i>/dev/sda3</i> - esimese kõvaketta kolmas kettajagu</li>
 </ul>
 
 <b>Pseudoseadmed</b>
@@ -21,9 +21,9 @@ Tavapärased SCSI seadmefailid:
 Kordame, et pseudoseadmed ei ole tegelikult füüsiliselt arvutiga ühendatud ning enamik pseudoseadmeid on tähemärgiseadmed:
 
 <ul>
-<li>/dev/zero - võtab vastu ja heidab kogu sisendi kõrvale, väljundiks on NULL (nullväärtus) baitide jada</li>
-<li>/dev/null - võtab vastu ja heidab kogu sisendi kõrvale  ning väljundit ei anna </li>
-<li>/dev/random - toodab juhuslikke numbreid</li>
+<li><i>/dev/zero</i> - võtab vastu ja heidab kogu sisendi kõrvale, väljundiks on NULL (nullväärtus) baitide jada</li>
+<li><i>/dev/null</i> - võtab vastu ja heidab kogu sisendi kõrvale  ning väljundit ei anna </li>
+<li><i>/dev/random</i> - toodab juhuslikke numbreid</li>
 </ul>
 
 <b>PATA seadmed</b>
@@ -31,8 +31,8 @@ Kordame, et pseudoseadmed ei ole tegelikult füüsiliselt arvutiga ühendatud ni
 Mõnikord, just vanemates süsteemides, võib näha, et kõvaketastele viidatakse hd prefiksiga:
 
 <ul>
-<li>/dev/hda - Esimene kõvaketas</li>
-<li>/dev/hdd2 - Neljanda kõvaketta teine kettajagu</li>
+<li><i>/dev/hda</i> - Esimene kõvaketas</li>
+<li><i>/dev/hdd2</i> - Neljanda kõvaketta teine kettajagu</li>
 </ul> 
 
 ## Harjutus
@@ -45,4 +45,4 @@ Milline oleks tavaliselt teise SCSI ketta esimese kettajao seadmenimi?
 
 ## Vastus
 
-sdb1
+*sdb1*
