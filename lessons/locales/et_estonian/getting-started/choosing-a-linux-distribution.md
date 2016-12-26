@@ -21,8 +21,8 @@ Linuxi valimisel on abiks ka järgmised veebilehed:
 * http://lifehacker.com/5889950/how-to-find-the-perfect-linux-distribution-for-you
 
 Lisaks võib internetist otsida:
-* <i>linux distros</i>: [startpage](https://www.startpage.com/do/dsearch?query=linux+distros) | duckduckgo | google
-* <i>best linux distros</i>: startpage | duckduckgo | google
+* <i>linux distros</i>: <a target="_blank" href="https://www.startpage.com/do/dsearch?query=linux+distros">startpage</a> | <a target="_blank" href="https://duckduckgo.com/?q=linux+distros">duckduckgo</a> | <a target="_blank" href="https://www.google.ee/search?q=linux+distros">google</a>
+* <i>best linux distros</i>: <a target="_blank" href="https://www.startpage.com/do/dsearch?query=best+linux+distros">startpage</a> | <a target="_blank" href="https://duckduckgo.com/?q=best+linux+distros">duckduckgo</a> | <a target="_blank" href="https://www.google.ee/search?q=best+linux+distros">google</a>
 
 ## Harjutus
 
