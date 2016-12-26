@@ -14,7 +14,7 @@ Kui vanasti taheti lisada süsteemi seadmeid, võis lihtsalt lisada faili /dev k
 
 ## Harjutus
 
-Uurida /dev kasuta sisu. Kas on märgata tuttavaid seadmeid?
+Uurida */dev* kausta sisu. Kas on märgata tuttavaid seadmeid?
 
 ## Küsimus
 
@@ -22,4 +22,4 @@ Kus hoitakse süsteemi seadmefaile?
 
 ## Vastus
 
-/dev
+*/dev*
