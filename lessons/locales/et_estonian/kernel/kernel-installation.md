@@ -54,7 +54,7 @@ Kui metapaketid paigaldatud siis edaspidi toimub uusimate tuumade ja päiste pai
 
 Tuleb vaid ise jälgida kui uuema LTS-versiooni tuum muutub kättesaadavaks ka vanematele versioonidele ja siis on soovitav see kasutusele võtta.
 
-<p>Vanade tuumade eemaldamine</p>
+<b>Vanade tuumade eemaldamine</b><br>
 Kui uusim LTS-versiooni tuum paigaldatud, alglaadur uuendatud, süsteem taaskäivitatud ja veendutud *uname -r* abil, et töötatakse uusima tuuma pealt siis tuleks vanad ja kasutuses mitteolevad tuumad turvalisuse kaalutlustel ka eemaldada.
 
 Vaatame esmalt, millised tuumad on paigaldatud:
@@ -130,7 +130,7 @@ sudo dpkg --get-selections | grep linux-image<br>
 sudo dpkg --get-selections | grep linux-header
 </pre>
 
-<b>Uusim tuum ja päised Ubuntule</b>
+<b>Uusim tuum ja päised Ubuntule</b><br>
 On võimalik paigaldada ka päris uusi versioone kuid neid ei saa automaatselt uuendada ja selle lahenduse valimisel tuleb ka edaspidi käsitsi uuendada ja ise regulaarselt jälgida kui uus versioon välja tuleb. Kui minna ametlikule Linuxi tuuma kodulehele https://www.kernel.org/ siis näeb, mis on hetkel uusim tuuma versioon (*stable*). Sealt näeb ka teisi tuumade versioone, mida veel toetatakse (*longterm*) ja mis on uusim arenduses olev versioon (*mainline*).
 
 Uusimad Ubuntu jaoks pakendatud tuumad ja päised leiab aadressilt http://kernel.ubuntu.com/~kernel-ppa/mainline/ - tuleb minna lehekülje lõppu (nt klahviga *End*) ja võtta suurima numbriga kataloog. Vältida tuleks katalooge, mille nime lõpus on *rc1*, *rc2* jne - need on veel arendusjärgus olevad väljalaskekandidaadid (*rc - release candidate*).
