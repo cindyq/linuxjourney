@@ -1,4 +1,4 @@
-﻿# DNS'i komponendid
+# DNS'i komponendid
 
 ## Tunni sisu
 
@@ -18,10 +18,10 @@ Tsoonifail koosneb ressursikirjetest. Iga rida on kirje, milles hoitakse informa
 
 <ul>
 <li>Kirje nimi.</li>
-<li>TTL - Aeg, mille möödudes kirje eemaldatakse ja hangitakse uus. DNS'i puhul on TTL ajaline väärtus, kirjete eluiga võiks olla näiteks üks tund. Sellist mehhanismi on vaja Interneti pideva muutumise tõttu. Üks ja sama host võib ühel hetkel omada IP aadressi X ja juba järgmisel IP aadressi Y.</li>
-<li>Class - Kirje informatsiooni nimeruum, tavaliselt kasutatakse Interneti kohta IN.</li>
-<li>Type - Kirjes salvestatava informatsiooni tüüp. Kõige levinumad on A aadressi kohta ja MX kirjade vahendamise kohta jne. Sellel kursusel kirje tüüpidele ei keskenduta.</li>
-<li>Data - Selles väljas võib olla IP aadress kui kirje tüüp on A või midagi muud sõltuvalt tüübist.</li>
+<li><i>TTL</i> - Aeg, mille möödudes kirje eemaldatakse ja hangitakse uus. DNS'i puhul on TTL ajaline väärtus, kirjete eluiga võiks olla näiteks üks tund. Sellist mehhanismi on vaja Interneti pideva muutumise tõttu. Üks ja sama host võib ühel hetkel omada IP aadressi X ja juba järgmisel IP aadressi Y.</li>
+<li><i>Class</i> - Kirje informatsiooni nimeruum, tavaliselt kasutatakse Interneti kohta IN.</li>
+<li><i>Type</i> - Kirjes salvestatava informatsiooni tüüp. Kõige levinumad on A aadressi kohta ja MX kirjade vahendamise kohta jne. Sellel kursusel kirje tüüpidele ei keskenduta.</li>
+<li><i>Data</i> - Selles väljas võib olla IP aadress kui kirje tüüp on A või midagi muud sõltuvalt tüübist.</li>
 </ul>
 
 <pre>
@@ -38,4 +38,4 @@ Millist kirjetüüpi kasutatakse e-posti vahendajate kohta?
 
 ## Vastus
 
-MX
+*MX*
