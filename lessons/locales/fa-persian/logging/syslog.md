@@ -1,13 +1,13 @@
-# syslog
+# syslog / سیس‌لاگ
 
-## Lesson Content
+## محتویات درس
 
-The syslog service manages and sends logs to the system logger. Rsyslog is an advanced version of syslog, most Linux distributions should be using this new version. The output of all the logs the syslog service collects can be found at /var/log/syslog (every message except auth messages).
+سرویس syslog مدیریت و فرستادن لاگ‌ها به سیستم لاگر را بر عهده دارد. Rsyslog یک نسخه‌ی پیشرفته از سیس‌لاگ به حساب می‌آید و اکثر توزیع‌های لینوکسی بایستی از این نسخه استفاده کنند. خروجی تمام لاگ‌هایی که سیس‌لاگ جمع‌آوری می‌کند در ‎/var/log/syslog نگه‌داری می‌شود (تمام پیام‌ها به غیر از پیام‌های auth یا اصالت‌سنجی).
 
-To find out what files are maintained by our system logger, look at the configuration files in /etc/rsyslog.d:
+‫برای اینکه بفهمید چه فایل‌هایی توسط سیستم لاگر نگه‌داری و مراقبت می‌شوند به فایل‌های پیکربندی در ‎/etc/rsyslog.d مراجعه کنید.
 
-<pre>
-pete@icebox:~$ less /etc/rsyslog.d/50-default.conf 
+```
+pete@icebox:~$ less /etc/rsyslog.d/50-default.conf
 # First some standard log files.  Log by facility.
 #
 auth,authpriv.*                 /var/log/auth.log
@@ -18,26 +18,26 @@ kern.*                          -/var/log/kern.log
 #lpr.*                          -/var/log/lpr.log
 mail.*                          -/var/log/mail.log
 #user.*                         -/var/log/user.log
-</pre>
+```
 
-These rules to log files are denoted by the selector on the left column and the action on the right column. The action tells us where to send the log information, in a file, console, etc. Remember not every application and service uses rsyslog to manage their logs, so if you want to know specifically what is logged you'll have to look inside this directory.
+‫در سمت چپ ستون مقرراتی که برای فایل‌های لاگ برقرار است، مشخص شده و کاری که بایستی انجام شود در ستون سمت راست. عملی که بایستی انجام شود در ستون سمت راست به ما می‌گوید که اطلاعات لاگ را به کجا بفرستیم، به یک فایل، به یک کنسول و یا غیره. یادتان باشد که تمام برنامه‌ها یا سرویس‌ها از rsyslog برای مدیریت لاگ‌هایشان استفاده نمی‌کنند، بنابراین اگر شما می‌خواهید بدانید چه چیزهایی لاگ می‌شوند بایستی داخل این دایرکتوری را یک نگاهی بیندازید.
 
-Let's actually see logging in action, you can manually send a log with the logger command:
+‫بیایید لاگ کردن در عمل را ببینیم. شما می‌توانید با دستور logger یک لاگ را ارسال کنید.
 
-<pre>
+```
 logger -s Hello
-</pre>
+```
 
-Now look inside your /var/log/syslog and you should see this entry in your logs!
+‫حالا به ‎/var/log/syslog نگاهی بیندازید. بایستی که مدخل مورد نظر را در فایل بالا ببینید.
 
-## Exercise
+## تمرین
 
-Look at your /etc/rsyslog.d configuration file and see what else is being logged via the system logger.
+به فایل پیکربندی موجود در ‎/etc/rsyslog.d نگاهی بیندازید و ببینید که چه چیزهای دیگری توسط سیستم لاگر، ثبت می‌شود.
 
-## Quiz Question
+## سوال آزمون
 
-What command can you use to manually log a message?
+با چه دستوری می‌توانید به صورت دستی یک پیام را لاگ کنید؟
 
-## Quiz Answer
+## پاسخ آزمون
 
 logger
