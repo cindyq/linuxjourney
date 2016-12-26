@@ -26,4 +26,4 @@ Millega saab dünaamiliselt lisada ja eemaldada seadmeid?
 
 ## Vastus
 
-udev
+*udev*
