@@ -61,8 +61,8 @@ ssh-keygen -t rsa -b 4096 -C "Eesnimi Perenimi e-posti@aadress.ee"
 </pre>
 
 Selle tulemusena luuakse hetkel sisseloginud kasutaja kodukataloogi kaks faili (võtmepaar):
-* ~/.ssh/id_rsa - see on salajane võti (ei tohi kellelegi anda)
-* ~/.ssh/id_rsa.pub - see on avalik võti (võib avalikult kõigiga jagada)
+* <i>~/.ssh/id_rsa</i> - see on salajane võti (ei tohi kellelegi anda)
+* <i>~/.ssh/id_rsa.pub</i> - see on avalik võti (võib avalikult kõigiga jagada)
 
 Võti *-t* määrab krüptoalgoritmiks RSA ja *-b* selle tugevuseks 4096 bitti. Tulevikus võib olla vajalik seda tugevust veelgi suurendada. Kommentaar võtmega *-C* võib sisaldada vajalikku infot jutumärkide vahel - see lisatakse avaliku võtmefaili lõppu ja nii on serverarvuti haldajal lihtsam kindlaks teha kellele antud avalik võti kuulub - seda eriti olukorras kui serverarvutisse on mitmeid võtmefailiga sisselogijaid.
 
