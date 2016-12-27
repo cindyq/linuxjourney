@@ -63,11 +63,11 @@ või ka
 $ dpkg -l | grep linux-image<br>
 $ dpkg -l | grep linux-headers
 </pre><br>
-Paigaldatud tuumi, päiseid näeb ka kui vaadata kataloogi *ls -l /boot* - tuum on nimega *vmlinuz* ja teised sama versiooninumbriga failid moodustavadki tuuma komplekti koos päise ja kõige muu juurdekuuluvaga.<br><br>
+Paigaldatud tuumi, päiseid näeb ka kui vaadata kataloogi <i>ls -l /boot</i> - tuum on nimega <i>vmlinuz</i> ja teised sama versiooninumbriga failid moodustavadki tuuma komplekti koos päise ja kõige muu juurdekuuluvaga.<br><br>
 
-RPM-põhistes Linuxites näeb paigaldatud tuumi käsuga *rpm -q kernel*<br><br>
+RPM-põhistes Linuxites näeb paigaldatud tuumi käsuga <i>rpm -q kernel</i><br><br>
 
-Seejärel veendume, millise tuuma versiooni pealt arvuti hetkel töötab: *uname -r*. Kui töötab uusima pealt siis võib kohe asuda vanu eemaldama, vastasel korral tuleb uuendada alglaadurit ja arvuti taaskäivitada: *sudo update-grub && sudo reboot*<br><br>
+Seejärel veendume, millise tuuma versiooni pealt arvuti hetkel töötab: <i>uname -r</i>. Kui töötab uusima pealt siis võib kohe asuda vanu eemaldama, vastasel korral tuleb uuendada alglaadurit ja arvuti taaskäivitada: <i>sudo update-grub && sudo reboot</i><br><br>
 
 Vanade tuumade eemaldamiseks on uuematel Ubuntu versioonidel olemas võimalus:<br>
 <pre>
