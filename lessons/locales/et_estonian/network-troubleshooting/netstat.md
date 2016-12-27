@@ -43,22 +43,22 @@ tcp6       0      0 ip6-localhost:ipp       ip6-localhost:35094     FIN_WAIT2
 Väljad vasakult paremale on järgmised:
 
 <ul>
-<li>Proto: Kasutatav protokoll, TCP või UDP (IPv4). Kui on IPv6 siis number 6 protokolli nimetuse järel.</li>
-<li>Recv-Q: Vastuvõtmise järjekorras ootavad andmed</li>
-<li>Send-Q: Saatmise järjekorras ootavad andmed</li>
-<li>Local Address: Kohalikult ühendatud host</li>
-<li>Foreign Address: Kaugpöördushost</li>
-<li>State: Sokli olek</li>
+<li><i>Proto</i>: Kasutatav protokoll, TCP või UDP (IPv4). Kui on IPv6 siis number 6 protokolli nimetuse järel.</li>
+<li><i>Recv-Q</i>: Vastuvõtmise järjekorras ootavad andmed</li>
+<li><i>Send-Q</i>: Saatmise järjekorras ootavad andmed</li>
+<li><i>Local Address</i>: Kohalikult ühendatud host</li>
+<li><i>Foreign Address</i>: Kaugpöördushost</li>
+<li><i>State</i>: Sokli olek</li>
 </ul>
 
 Lehelt *man netstat* leiab sokli olekute nimekirja kuid siin on mõned näiteks:
 
 <ul>
-<li>LISTENING: Sokkel kuulab sissetulevaid ühendusi. Meenutame, et kui luua TCP ühendus siis peab sihtkoht kuulama, et tabada meie ühendumise soov.</li>
-<li>SYN_SENT: Sokkel püüab aktiivselt ühendust luua.</li>
-<li>ESTABLISHED: Soklil on loodud ühendus.</li>
-<li>CLOSE_WAIT: Sihtkoht on ühenduse katkestanud ja oodatakse sokli sulgumist.</li>
-<li>TIME_WAIT: Sokkel on pärast sulgumist ootavas seisundis, et tegeleda pakettidega, mis on endiselt võrgus.</li>
+<li><i>LISTENING</i>: Sokkel kuulab sissetulevaid ühendusi. Meenutame, et kui luua TCP ühendus siis peab sihtkoht kuulama, et tabada meie ühendumise soov.</li>
+<li><i>SYN_SENT</i>: Sokkel püüab aktiivselt ühendust luua.</li>
+<li><i>ESTABLISHED</i>: Soklil on loodud ühendus.</li>
+<li><i>CLOSE_WAIT</i>: Sihtkoht on ühenduse katkestanud ja oodatakse sokli sulgumist.</li>
+<li><i>TIME_WAIT</i>: Sokkel on pärast sulgumist ootavas seisundis, et tegeleda pakettidega, mis on endiselt võrgus.</li>
  </ul>
 
 ## Harjutus
