@@ -1,4 +1,4 @@
-﻿# IPv4
+# IPv4
 
 ## Tunni sisu
 
@@ -22,9 +22,9 @@ eth0      Link encap:Ethernet  HWaddr 1d:3a:32:24:4d:ce
 Nagu näha on selle arvuti IPv4 aadress 192.168.1.129.
 
 Sisevõrgu IPv4 aadressid:<br>
-* 10.0.0.0 – 10.255.255.255
-* 172.16.0.0 – 172.31.255.255
-* 192.168.0.0 – 192.168.255.255
+* 10.0.0.0 – 10.255.255.255, masinate arv: 16 777 216 (24 bit = 2<sup>24</sup> )
+* 172.16.0.0 – 172.31.255.255, masinate arv: 1 048 576 ( 20 bit = 2<sup>20</sup> )
+* 192.168.0.0 – 192.168.255.255, masinate arv: 65 536 (16 bit = 2<sup>16</sup> )
 
 Seade ise (*loopback*):
 * vaatamiseks: <i>ifconfig lo</i>
