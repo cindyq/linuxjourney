@@ -34,8 +34,8 @@ Paigaldada sar ja alustada süsteemi ressursside kasutamist puudutava info kogum
 
 ## Küsimus
 
-Milline on hea töörist süsteemi ressursside seire teostamiseks?
+Milline on hea tööriist süsteemi ressursside seire teostamiseks?
 
 ## Vastus
 
-sar
+*sar*
