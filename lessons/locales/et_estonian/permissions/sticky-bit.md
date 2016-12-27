@@ -12,7 +12,7 @@ $ ls -ld /tmp
 drwxrwxrwxt 6 root root 4096 Dec 15 11:45 /tmp
 </pre>
 
-Õiguste lõpus võib näha erilist bitti <b>t</t>. See tähendab, et kõik võivad faile /tmp kataloogis lisada, neisse kirjutada ja neid muuta kuid ainult juurkasutaja tohib seda kataloogi kustutada.
+Õiguste lõpus võib näha erilist bitti <b>t</b>. See tähendab, et kõik võivad faile /tmp kataloogis lisada, neisse kirjutada ja neid muuta kuid ainult juurkasutaja tohib seda kataloogi kustutada.
 
 <b>Kleepuva biti muutmine</b>
 
