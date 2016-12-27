@@ -23,7 +23,7 @@ $ sudo apt search linux-image-generic-lts
 $ sudo apt search linux-headers-generic-lts
 </pre>
 
-LTS-versioonid tulevad välja 2 aasta tagant aprillikuu lõpus. Need on rohkem testitud ja sobivad ka missioonikriitilistes kohtades kasutamiseks.<br><br>
+LTS-versioonid tulevad välja 2 aasta tagant aprillikuu lõpus. Need on rohkem testitud ja sobivad paremini ka missioonikriitilistes kohtades kasutamiseks.<br><br>
 
 Leitud tulemustest tuleks paigaldada viimane ehk siis uusim ja olla nõus ka sõltuvustena uusimate tuuma ja selle päiste versioonide paigaldamisega. Uusima versiooni saab teha kindlaks kasutatava Linuxi koodnime järgi, siin toodud näide on Ubuntu Linuxi kohta ja see peaks kehtima ka teiste Debiani ja Ubuntu baasil tehtud Linuxite kohta. Ei tohi unustada ka eespool kirjeldatud alglaaduri uuendamist uusima tuuma kasutuselevõtmiseks. Ei maksa karta, et tuuma ja päisefailid on mõeldud uuemale Ubuntu LTS-versioonile - need töötavad ka vanemate LTS-versioonidega.<br><br>
 
@@ -42,7 +42,6 @@ Linuxi tuuma ja päise metapakettide paigaldamine, siin näiteks Ubuntu 16.04 LT
 <pre>$ sudo apt install linux-image-generic-lts-xenial linux-headers-generic-lts-xenial linux-image-generic linux-headers-generic && sudo apt clean && sudo update-grub</pre>
 
 Seejärel arvuti taaskäivitada värskelt paigaldatud tuumaga (sudo reboot). On ju lihtne? Täpsustada saab ka versiooninumbrit, metapakettide asemel võib paigaldada ka konkreetsed versioonid kuigi see ei ole kõige parem mõte kuna sõltub konkreetsest tuuma ja selle päise versioonist, mis ei uuene ja seetõttu on kavalam on paigaldada eespool kirjeldatud automaatselt uuenevad metapaketid.<br><br>
-
 Linuxi tuum uueneb pidevalt ja sellega kaasneb parem riistvara tugi, vigade parandused ja seeläbi ka parem turvalisus, kogu süsteemi parem töötamine. Seetõttu on oluline kasutada võimalikult uusimat tuuma ja vanad eemaldada.<br><br>
 
 Kui metapaketid paigaldatud siis edaspidi toimub uusimate tuumade ja päiste paigaldus automaatselt kogu süsteemi uuendades:<br>
@@ -64,17 +63,13 @@ $ dpkg -l | grep linux-image<br>
 $ dpkg -l | grep linux-headers
 </pre><br>
 Paigaldatud tuumi, päiseid näeb ka kui vaadata kataloogi <i>ls -l /boot</i> - tuum on nimega <i>vmlinuz</i> ja teised sama versiooninumbriga failid moodustavadki tuuma komplekti koos päise ja kõige muu juurdekuuluvaga.<br><br>
-
 RPM-põhistes Linuxites näeb paigaldatud tuumi käsuga <i>rpm -q kernel</i><br><br>
-
 Seejärel veendume, millise tuuma versiooni pealt arvuti hetkel töötab: <i>uname -r</i>. Kui töötab uusima pealt siis võib kohe asuda vanu eemaldama, vastasel korral tuleb uuendada alglaadurit ja arvuti taaskäivitada: <i>sudo update-grub && sudo reboot</i><br><br>
-
 Vanade tuumade eemaldamiseks on uuematel Ubuntu versioonidel olemas võimalus:<br>
 <pre>
 $ sudo purge-old-kernels
 </pre>
 ... see eemaldab kõik vanad tuumad ja jätab alles kaks viimast.<br><br>
-
 Kui soovitakse alles jätta vaid viimane siis:
 <pre>
 $ sudo purge-old-kernels --keep 1 -qy
@@ -93,7 +88,6 @@ sudo add-apt-repository ppa:byobu/ppa && sudo apt-get update
 sudo apt update && sudo apt install byobu && sudo apt clean
 </pre>
 Lisaks vanade tuumade eemaldamisele võimaldab byobu palju muudki, lisainfot leiab [programmi kodulehelt](http://byobu.co/).<br><br>
-
 <b>Käsitsi vanade tuumade eemaldamine.</b><br>
 Kui ei ole võimalik rakenduse byobu'ga kaasatulevat mugavat võimalust vanade tuumade kasutamiseks rakendada siis saab ka käsitsi neid eemaldada.<br><br>
 Paketihaldusest otsime paigaldatud tuumi ja nende päiseid:<br>
@@ -135,22 +129,20 @@ Paigaldamiseks tuleb teada ka oma süsteemi arhitektuuri, üldiselt kas 32-bit v
 
 Soovitav on alla laadida eraldi kataloogi, näiteks */home/kasutaja/Allalaadimised/tuum/* kataloogi.<br><br>
 
-32-bit süsteemi korral tuleb alla laadida:<br>
+<b>32-bit</b> süsteemi korral tuleb alla laadida:<br>
 <pre>
-linux-headers-VERSIOONINUMBER_VERSIOONINUMBER.LOOMISE-AEG_all.deb
-linux-headers-VERSIOONINUMBER-generic_VERSIOONINUMBER.LOOMISE-AEG_i386.deb
-linux-image-VERSIOONINUMBER-generic_VERSIOONINUMBER.LOOMISE-AEG_i386.deb
+<b>linux-headers</b>-VERSIOONINUMBER_VERSIOONINUMBER.LOOMISE-AEG_<b>all</b>.deb
+<b>linux-headers</b>-VERSIOONINUMBER-generic_VERSIOONINUMBER.LOOMISE-AEG_<b>i386</b>.deb
+<b>linux-image</b>-VERSIOONINUMBER-generic_VERSIOONINUMBER.LOOMISE-AEG_<b>i386</b>.deb
 </pre>
 
-Kui on saadaval siis võib võtta ka *linux-image-extra-VERSIOONINUMBER_amd64.deb*<br><br>
-
+Kui on saadaval siis võib võtta ka *<b>linux-image-extra</b>-VERSIOONINUMBER_<b>amd64</b>.deb*<br><br>
 Tuumad, mille nimes on *lowlatency* on reaalaja tuumad ja mõeldud teistsugustele süsteemidele kus vaja väga kiiret reageerimist, mida kasutatakse näiteks helitöötluses, arvutijuhitavate tööpinkide juhtimiseks jne. Seal on saadaval veel ka teistele riistvara arhitektuuridele tuumi (*arm*, *ppc* jne).<br><br>
-
-64-bit süsteemi korral tuleb alla laadida:<br>
+<b>64-bit</b> süsteemi korral tuleb alla laadida:<br>
 <pre>
-linux-headers-VERSIOONINUMBER_VERSIOONINUMBER.LOOMISE-AEG_all.deb
-linux-headers-VERSIOONINUMBER-generic_VERSIOONINUMBER.LOOMISE-AEG_amd64.deb
-linux-image-VERSIOONINUMBER-generic_VERSIOONINUMBER.LOOMISE-AEG_amd64.deb
+<b>linux-headers</b>-VERSIOONINUMBER_VERSIOONINUMBER.LOOMISE-AEG_<b>all</b>.deb
+<b>linux-headers</b>-VERSIOONINUMBER-generic_VERSIOONINUMBER.LOOMISE-AEG_<b>amd64</b>.deb
+<b>linux-image</b>-VERSIOONINUMBER-generic_VERSIOONINUMBER.LOOMISE-AEG_<b>amd64</b>.deb
 </pre>
 
 Enne paigaldamist tuleb ka veenduda, et kataloogis */home/kasutaja/Allalaadimised/tuum/* ei ole muid mittevajalikke *.deb* faile ega ka vanu, juba paigaldatud tuumade ja päiste faile - kui on siis need tuleks enne järgmise paigalduskäsu käivitamist sealt kataloogist kustutada.<br><br>
