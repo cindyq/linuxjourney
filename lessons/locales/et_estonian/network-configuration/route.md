@@ -40,8 +40,8 @@ Harjutust selles peatükis ei ole kuid soovitatav on selle peatüki käskude man
 
 ## Küsimus
 
-Millise võtme lisamisel ifconfig käsule on tulemuseks marsruudi kustutamine?
+Millise võtme lisamisel *ifconfig* käsule on tulemuseks marsruudi kustutamine?
 
 ## Vastus
 
-del
+*del*
