@@ -2,15 +2,15 @@
 
 ## Tunni sisu
 
-Kui käsitsi seadistamine ei ole kasutajale meelepärane siis on olemas ka midagi selle jaoks, et võrk saaks üles ja töökorda automaatselt. Enamustes Linuxites on olemas deemon nimega NetworkManager, mis teeb just seda.
+Kui käsitsi seadistamine ei ole kasutajale meelepärane siis on olemas ka midagi selle jaoks, et võrk saaks üles ja töökorda automaatselt. Enamustes Linuxites on olemas deemon nimega *NetworkManager*, mis teeb just seda.
 
-Kasutades graafilist kasutajaliidest võib NetworkManageri näha rakendusena töölaual. See haldab võrguga seotud riistvara ja ühendust puudutavat informatsiooni. Alglaadimisel kogub NetworkManager muuhulgas informatsiooni riistvara kohta, otsib juhtmega ja juhutmevabasid ühendusi ning aktiveerib ühenduse.
+Kasutades graafilist kasutajaliidest võib *NetworkManageri* näha rakendusena töölaual. See haldab võrguga seotud riistvara ja ühendust puudutavat informatsiooni. Alglaadimisel kogub *NetworkManager* muuhulgas informatsiooni riistvara kohta, otsib juhtmega ja juhtmevabasid ühendusi ning aktiveerib ühenduse.
 
-NetworkManageri kasutamiseks on olemas ka käsurea vahendid:
+*NetworkManageri* kasutamiseks on olemas ka käsurea vahendid:
 
 <b>nm-tool</b>
 
-nm-tools raporteerib NetworkManageri oleku ja seadmed.
+*nm-tools* raporteerib *NetworkManageri* oleku ja seadmed.
 
 <pre>
 pete@icebox:/$ nm-tool
@@ -41,7 +41,7 @@ State: connected (global)
 
 <b>nmcli</b>
 
-nmcli käsk võimaldab kontrollida ja muuta NetworkManageri. Detailide kuvamiseks tasub vaadata man-lehekülgi (*man nmcli*).
+*nmcli* käsk võimaldab kontrollida ja muuta *NetworkManageri*. Detailide kuvamiseks tasub vaadata man-lehekülgi (*man nmcli*).
 
 ## Harjutus
 
@@ -49,7 +49,7 @@ Harjutust pole.
 
 ## Küsimus
 
-Millise käsuga kuvatakse NetworkManageri informatsioon?
+Millise käsuga kuvatakse *NetworkManageri* informatsioon?
 
 ## Vastus
 
