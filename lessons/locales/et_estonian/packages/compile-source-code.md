@@ -26,7 +26,7 @@ Paketis asub konfiguratsiooniskript, mis kontrollib süsteemis sõltuvusi. Kui m
 
 <pre>$ make</pre>
 
-Paketis asub ka fail nimega Makefile, mis sisaldab reegleid tarkvara ehitamiseks. Kui sisestada *make* käsk, vaadatakse just selle faili sisse.
+Paketis asub ka fail nimega *Makefile*, mis sisaldab reegleid tarkvara ehitamiseks. Kui sisestada *make* käsk, vaadatakse just selle faili sisse.
 
 <pre>$ sudo make install</pre>
 
@@ -34,7 +34,7 @@ See käsk paigaldab kompileeritud tarkvara, õige fail kopeeritakse arvutis õig
 
 <pre>$ sudo make uninstall</pre>
 
-*make install* käsku kasutades tasuks olla ettevaatlik, võib olla üllatav kui palju tegelikult taustal toimub. Kui hakata seda paketti hiljem eemaldama, ei pruugi kõik oluline eemaldatud saada, kuna kasutaja ei ole teadlik täpselt kui palju midagi süsteemi lisati. Kui nüüd järgi mõelda, siis ehk tasuks kogu jutt *make install*i kohta ära unustada ja kasutada hoopis käsku  <b>*checkinstall*</b>. Nõnda luuakse .deb fail, mida on kerge paigaldada ja eemaldada.
+*make install* käsku kasutades tasuks olla ettevaatlik, võib olla üllatav kui palju tegelikult taustal toimub. Kui hakata seda paketti hiljem eemaldama, ei pruugi kõik oluline eemaldatud saada kuna kasutaja ei ole teadlik täpselt kui palju midagi süsteemi lisati. Kui nüüd järgi mõelda, siis ehk tasuks kogu jutt *make install*i kohta ära unustada ja kasutada hoopis käsku  <b>*checkinstall*</b>. Nõnda luuakse .deb fail, mida on kerge paigaldada ja eemaldada.
 
 <pre>$ sudo checkinstall</pre> 
 
@@ -42,7 +42,7 @@ Selle käsuga sisuliselt *make install*itakse ja ehitatakse .deb pakett ning ka 
 
 ## Harjutus
 
-Leida usaldusväärselt veebilehelt lähtekoodiga programm ning paigaldada see allikast.
+Leida usaldusväärselt veebilehelt lähtekoodiga programm ning paigaldada see allikast. Ohutuse mõttes võib seda kõike esmalt teha virtuaalarvutis, näiteks [VirtualBox](https://www.virtualbox.org/)'i paigaldatud Linuxis.
 
 ## Küsimus
 
@@ -50,5 +50,5 @@ Mida peaks ALATI kasutama *make install* asemel?
 
 ## Vastus
 
-checkinstall
+*checkinstall*
 
