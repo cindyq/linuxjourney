@@ -124,8 +124,9 @@ sudo dpkg --get-selections | grep linux-header
 On võimalik paigaldada ka päris uusi versioone kuid neid ei saa automaatselt uuendada ja selle lahenduse valimisel tuleb ka edaspidi käsitsi uuendada ja ise regulaarselt jälgida kui uus versioon välja tuleb. Kui minna ametlikule Linuxi tuuma kodulehele https://www.kernel.org/ siis näeb, mis on hetkel uusim tuuma versioon (*stable*). Sealt näeb ka teisi tuumade versioone, mida veel toetatakse (*longterm*) ja mis on uusim arenduses olev versioon (*mainline*).<br><br>
 Uusimad Ubuntu jaoks pakendatud tuumad ja päised leiab aadressilt http://kernel.ubuntu.com/~kernel-ppa/mainline/ - tuleb minna lehekülje lõppu (nt klahviga *End*) ja võtta suurima numbriga kataloog. Vältida tuleks katalooge, mille nime lõpus on *rc1*, *rc2* jne - need on veel arendusjärgus olevad väljalaskekandidaadid (*rc - release candidate*).<br><br>
 Paigaldamiseks tuleb teada ka oma süsteemi arhitektuuri, üldiselt kas 32-bit või 64-bit: *uname -m*. Kui vastuseks on *i686* (või ka *i386*) siis 32-bit ja kui *x86_64* siis on 64-bit süsteemiga tegemist.<br><br>
-Soovitav on alla laadida eraldi kataloogi, näiteks tekitame kataloogi *mkdir -p /home/kasutaja/Allalaadimised/tuum/*.
-Enne uue versiooni allalaadimist kustutada vanad versioonid: <i>rm -fr /home/kasutaja/Allalaadimised/tuum/*</i><br><br>
+Soovitav on alla laadida eraldi kataloogi, näiteks tekitame kataloogi *mkdir -p /home/kasutaja/Allalaadimised/tuum/*.<br>
+Enne uue versiooni allalaadimist kustutada vanad versioonid: <i>rm -fr /home/kasutaja/Allalaadimised/tuum/*</i><br>
+Alla saab laadida näiteks esmalt soovitud kausta sisenedes <i>cd /home/kasutaja/Allalaadimised/tuum/</i> ja seejärel <i>wget http://kernel.ubuntu.com/~kernel-ppa/mainline/vx.x/failinimi.deb</i> abil alla laadides.<br><br>
 <b>32-bit</b> süsteemi korral tuleb alla laadida:<br>
 <pre>
 <b>linux-headers</b>-VERSIOONINUMBER_VERSIOONINUMBER.LOOMISE-AEG_<b>all</b>.deb
