@@ -1,8 +1,8 @@
-﻿# NAT
+# NAT
 
 ## Tunni sisu
 
-NAT'i (*network address translation) ehk võrguaadresside teisendamist on juba varem ka mainitud. Kui tegutseme enda võrgus kas IP aadress on siis Internetist näha? Mitte päris.
+NAT'i (*<b>N</b>etwork <b>A</b>ddress <b>T</b>ranslation*) ehk võrguaadresside teisendamist on juba varem ka mainitud. Kui tegutseme enda võrgus kas IP aadress on siis Internetist näha? Mitte päris.
 
 NAT muudab seadme nagu marsruuter justkui vahemeheks Interneti ja kohtvõrgu vahel. Seega on vaja ainult ühte IP aadressi, et esindada kõiki marsruuteri taha jäävaid arvuteid.
 
