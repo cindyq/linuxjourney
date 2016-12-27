@@ -40,8 +40,8 @@ Kui pakettide püüdmine käivitada siis võib märgata, et toimub väga palju a
 <ul>
 <li>Esimene väli on võrgu sündmuse ajatempel.</li>
 <li>IP on protokolli informatsioon.</li>
-<li>Järgnevad saaja ja saatja aadressid: icebox.lan > nuq04s29-in-f4.1e100.net</li>
-<li>seq on TCP paketi esimene ja viimane järjekorra number.</li>
+<li>Järgnevad saaja ja saatja aadressid: <i>icebox.lan > nuq04s29-in-f4.1e100.net</i></li>
+<li><i>seq</i> on TCP paketi esimene ja viimane järjekorra number.</li>
 <li>Pikkus baitides.</li>
 
 Nagu tcpdump'i väljundist näha võib, saadetakse www.google.com aadressile ICMP kajapäring ning saadakse ka vastus.  Märgime ära, et erinevat paketid annavad erineva informatsiooniga väljundi. *man tcpdump* leheküljelt saab teada, millised need on.
@@ -56,12 +56,12 @@ Mõned mõtted lõpetuseks: Pakettide analüüsi teema sai siinkohal küll ainul
 
 ## Harjutus
 
-Laadida alla ja paigaldada Wireshark ning mängida natuke võrguliidesega.
+Laadida alla ja paigaldada *Wireshark* ning mängida natuke võrguliidesega.
 
 ## Küsimus
 
-Kasutades tcpdump'i, millise võtme kasutamisel saab püüda võrguliiklust konkreetselt liideselt?
+Kasutades *tcpdump*'i, millise võtme kasutamisel saab püüda võrguliiklust konkreetselt liideselt?
 
 ## Vastus
 
--i
+*-i*
