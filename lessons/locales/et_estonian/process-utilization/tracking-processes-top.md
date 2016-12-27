@@ -41,14 +41,14 @@ Lisainfo *zombie* protsesside kohta:
 <b>3. rida: protsessori informatsioon</b>
 
 <ol>
-<li>us: kasutaja protsessori aeg  - Protsent protsessori kasutamise ajast, mis on kulunud mittekenadele protsessidele.</li>
-<li>sy: süsteemi protsessori aeg - Protsent protsessori kasutamise ajast, mis on kulunud tuumale ja selle protsessidele.</li>
-<li>ni: kena protsessori aeg - Protsent protsessori kasutamise ajast, mis on kulunud kenadele protsessidele.</li>
-<li>id: protsessori tegevusetu aeg - Protsent, mille jooksul protsessor on olnud tegevusetu.</li>
-<li>wa: sisend/väljund ooteaeg - Protsent protsessori kasutamise ajast, mis on kulunud sisendi/väljundi järgi ootamiseks. Kui see väärtus on väike, ei ole probleem ilmselt kettas või võrgu sisendis/väljundis</li>
-<li>hi: riistvara katkestused - Protsent protsessori kasutamise ajast, mis on kulunud riistvara poolt saadetud katkestuste teenindamisele.</li>
-<li>si: tarkvara katkestused - Protsent protsessori kasutamise ajast, mis on kulunud tarkvara poolt saadetud katkestuste teenindamisele.</li>
-<li>st: varastatud aeg - Kui arvutis töötavad virtuaalmasinad, on see protsent protsessori ajast, mis on varastatud teiste tegumite jaoks</li>
+<li><i>us</i>: kasutaja protsessori aeg  - Protsent protsessori kasutamise ajast, mis on kulunud mittekenadele protsessidele.</li>
+<li><i>sy</i>: süsteemi protsessori aeg - Protsent protsessori kasutamise ajast, mis on kulunud tuumale ja selle protsessidele.</li>
+<li><i>ni</i>: kena protsessori aeg - Protsent protsessori kasutamise ajast, mis on kulunud kenadele protsessidele.</li>
+<li><i>id</i>: protsessori tegevusetu aeg - Protsent, mille jooksul protsessor on olnud tegevusetu.</li>
+<li><i>wa</i>: sisend/väljund ooteaeg - Protsent protsessori kasutamise ajast, mis on kulunud sisendi/väljundi järgi ootamiseks. Kui see väärtus on väike, ei ole probleem ilmselt kettas või võrgu sisendis/väljundis</li>
+<li><i>hi</i>: riistvara katkestused - Protsent protsessori kasutamise ajast, mis on kulunud riistvara poolt saadetud katkestuste teenindamisele.</li>
+<li><i>si</i>: tarkvara katkestused - Protsent protsessori kasutamise ajast, mis on kulunud tarkvara poolt saadetud katkestuste teenindamisele.</li>
+<li><i>st</i>: varastatud aeg - Kui arvutis töötavad virtuaalmasinad, on see protsent protsessori ajast, mis on varastatud teiste tegumite jaoks</li>
 </ol>
 
 <b>4. ja 5. rida: Mälu ja saaleala kasutus</b>
@@ -56,18 +56,18 @@ Lisainfo *zombie* protsesside kohta:
 <b>Hetkel töötavate protsesside nimekiri</b>
 
 <ol>
-<li>PID: protsessi id</li>
-<li>USER: kasutaja, kes on protsessi omanik</li>
-<li>PR: protsessi prioriteet</li>
-<li>NI: kenaduse väärtus</li>
-<li>VIRT: protsessori poolt kasutatav virtuaalmälu</li>
-<li>RES: protsessi kasutatav füüsiline mälu</li>
-<li>SHR: protsessi jagatud mälu</li>
-<li>S: Protsessi oleku indikaator: S=magab, R=töötab, Z=zombi,D=ei saa katkestada,T=peatatud</li>
-<li>%CPU - protsessori kasutamise protsent </li>
-<li>%MEM - muutmälu (RAM) kasutamise protsent</li>
-<li>TIME+ - protsessi summaarne tööaeg</li>
-<li>COMMAND - protsessi nimi</li>
+<li><i>PID</i>: protsessi id</li>
+<li><i>USER</i>: kasutaja, kes on protsessi omanik</li>
+<li><i>PR</i>: protsessi prioriteet</li>
+<li><i>NI</i>: kenaduse väärtus</li>
+<li><i>VIRT</i>: protsessori poolt kasutatav virtuaalmälu</li>
+<li><i>RES</i>: protsessi kasutatav füüsiline mälu</li>
+<li><i>SHR</i>: protsessi jagatud mälu</li>
+<li><i>S</i>: Protsessi oleku indikaator: S=magab, R=töötab, Z=zombi,D=ei saa katkestada,T=peatatud</li>
+<li><i>%CPU</i> - protsessori kasutamise protsent </li>
+<li><i>%MEM</i> - muutmälu (RAM) kasutamise protsent</li>
+<li><i>TIME+</i> - protsessi summaarne tööaeg</li>
+<li><i>COMMAND</i> - protsessi nimi</li>
 </ol>
 
 Võib ka täpsustada protsessi ID kui on huvi mingi kindla protsessi vastu:
@@ -84,4 +84,4 @@ Milline käsk kuvab sama väljundi, kui on *top*'i esimene rida?
 
 ## Vastus
 
-uptime
+*uptime*
