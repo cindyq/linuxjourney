@@ -7,7 +7,10 @@ Kuidas saavad internetti üleslaetud paketid ühtäkki kasutajate arvutitesse? K
 
 Näiteks kasutaja soovib oma arvutisse paigaldada *WackyWidgets* tarkvara. *WackyWidgets* haldab ise enda pakettide hoidlaid. Hoidlates on 10 paketti: *CoolWidget, SuperWidget* jne. *WackyWidget* hoiab oma hoidlat aadressil http://download.widgets/linux/deb/.
 
-Selle asemel, et minna veebilehele pakette allalaadima, võib öelda arvutile kust tarkvara leida. Seejuures on see oluliselt turvalisem kuna paketihaldustarkvara kontrollib paigaldamise käigus ka paigaldatavate tarkvarapakettide usaldusväärsust digiallkirjade (GPG-võtmed) abil. Kui GPG-võti ei klapi siis antakse veateade ja paigaldamine katkestatakse. Siis tuleb uurida, miks digiallkirjad ei klapi. Selline lähenemine väldib muuhulgas ka [APT-tüüpi pahavara](http://www.arvutikaitse.ee/apt-jouliselt-ebamaarane-kuber-oht/) leviku.
+Selle asemel, et minna veebilehele pakette allalaadima, võib öelda arvutile kust tarkvara leida. Seejuures on see oluliselt turvalisem kuna paketihaldustarkvara kontrollib paigaldamise käigus ka paigaldatavate tarkvarapakettide usaldusväärsust digiallkirjade (GPG-võtmed) abil. Kui GPG-võti ei klapi siis antakse veateade ja paigaldamine katkestatakse. Siis tuleb uurida, miks digiallkirjad ei klapi. Selline lähenemine väldib muuhulgas ka [APT-tüüpi pahavara](http://www.arvutikaitse.ee/apt-jouliselt-ebamaarane-kuber-oht/) leviku.<br>
+Lisainfot tarkvarapakettide digiallkirjastamise kohta leiab:<br>
+* https://help.ubuntu.com/community/SecureApt
+* https://wiki.debian.org/SecureApt
 
 Linuxil on kaasas eelnevalt heaks kiidetud varamud, kust süsteem saab peamised olulised paketid. Debiani puhul on selleks failiks <b>/etc/apt/sources.list</b>. Arvuti oskab otsida sealt erinevaid allikaid, sealjuures neid, mida kasutajad võivad olla lisanud. Kasutajate poolt lisatavad varamud on oodatud kataloogi */etc/apt/sources.list.d/* ja seda *.list* tüüpi failidena. Kasutajad saavad varamuid lisada käsuga *add-apt-repository* või käsitsi *.list* faili kirjutades ja digiallkirju ehk GPG-võtmeid importides.
 
