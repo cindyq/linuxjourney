@@ -25,7 +25,7 @@ CRON'i tööde ajastamiseks on tehtud ka mitmeid veebipõhiseid vahendeid:
 * http://cron.nmonitoring.com/cron-generator.html
 * http://www.corntab.com/
 
-Kasutaja CRON'i töö loomiseks tuleb vaid muuta *crontab* faili: <pre>crontab -e</pre> - see CRON'i töö toimib konkreetse kasutaja keskkonnas.
+Kasutaja CRON'i töö loomiseks tuleb vaid muuta *crontab* faili: <pre>crontab -e</pre> - see CRON'i töö toimib konkreetse (antud hetkel vaikimisi sisseloginud) kasutaja keskkonnas.
 
 Kogu süsteemi CRON seadistatakse failis */etc/crontab* kuid seda ei ole soovitav muuta enne kui on täielikult aru saadud selle muutmise eripäradest. Seda faili võib küll muuta tekstiredaktoriga (soovitavalt [vim](https://help.ubuntu.com/community/VimHowto)) kuid peab arvestama, et see mõjutab kogu süsteemi tööd otseselt. Selles failis on üks väli juures: kasutajanimi kelle õigustes vastav CRON'i töö käivitatakse. Kui seal tehakse viga siis ei käivitata ka teisi selles failis olevaid töid, mis aga on süsteemi jätkusuutlikuks toimimiseks vajalikud. Superkasutaja õigustes on soovitav oma CRON'i tööd panna kirja kataloogi */etc/cron.d/* - seal võib näiteks endanimelise faili tekitada ja siis on ka teistele masina haldajatele teada kelle CRON'i tööd need on. Ka seal kataloogis tuleb määrata kasutajanimi kelle õigustes konkreetset CRON'i tööd käivitatakse. Lisainfot leiab aadressilt https://help.ubuntu.com/community/CronHowto
 
@@ -41,4 +41,4 @@ Millise käsuga muudetakse kasutajapõhiseid CRON'i töid?
 
 ## Vastus
 
-crontab -e
+*crontab -e*
