@@ -25,6 +25,8 @@ Lisaks võib internetist otsida:
 * <i>linux distros</i>: <a target="_blank" href="https://www.startpage.com/do/dsearch?query=linux+distros">startpage</a> | <a target="_blank" href="https://duckduckgo.com/?q=linux+distros">duckduckgo</a> | <a target="_blank" href="https://www.google.ee/search?q=linux+distros">google</a>
 * <i>best linux distros</i>: <a target="_blank" href="https://www.startpage.com/do/dsearch?query=best+linux+distros">startpage</a> | <a target="_blank" href="https://duckduckgo.com/?q=best+linux+distros">duckduckgo</a> | <a target="_blank" href="https://www.google.ee/search?q=best+linux+distros">google</a>
 
+Ettevõtetele mõeldud Linuxi distrosid ja nende eluiga saab vaadata ka aadressilt https://linuxlifecycle.com/
+
 ## Harjutus
 
 Selles peatükis harjutust pole.
