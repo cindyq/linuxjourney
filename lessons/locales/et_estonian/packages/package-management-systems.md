@@ -45,4 +45,4 @@ Millise käsuga kuvatakse Debianis informatsiooni paketi kohta?
 
 ## Vastus
 
-apt show
+*apt show*
