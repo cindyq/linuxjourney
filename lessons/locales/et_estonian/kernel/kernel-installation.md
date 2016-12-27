@@ -134,7 +134,7 @@ Alla saab laadida näiteks esmalt soovitud kausta sisenedes <i>cd /home/kasutaja
 <b>linux-image</b>-VERSIOONINUMBER-generic_VERSIOONINUMBER.LOOMISE-AEG_<b>i386</b>.deb
 </pre>
 
-Kui on saadaval siis võib võtta ka *<b>linux-image-extra</b>-VERSIOONINUMBER_<b>amd64</b>.deb*<br><br>
+Kui on saadaval siis võib võtta ka *<b>linux-image-extra</b>-VERSIOONINUMBER_<b>i386 või amd64</b>.deb*<br><br>
 Tuumad, mille nimes on *lowlatency* on reaalaja tuumad ja mõeldud teistsugustele süsteemidele kus vaja väga kiiret reageerimist, mida kasutatakse näiteks helitöötluses, arvutijuhitavate tööpinkide juhtimiseks jne. Seal on saadaval veel ka teistele riistvara arhitektuuridele tuumi (*arm*, *ppc* jne).<br><br>
 <b>64-bit</b> süsteemi korral tuleb alla laadida:<br>
 <pre>
