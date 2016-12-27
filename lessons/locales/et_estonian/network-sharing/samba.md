@@ -32,7 +32,7 @@ Samba sätted asuvad failis /etc/samba/smb.conf. See fail peaks ütlema süsteem
 
 <b>Jagatud materjalidele ligipääsemine läbi Windowsi</b>
 
-Windowsis tuleb lihtsalt sisestada võrgu ühendus *run* (kiirklahv: *Super+r*) käsuviibale: *\\HOST\jagamisenimi*
+Windowsis tuleb lihtsalt sisestada võrgu ühendus *run* (kiirklahv: *[Super](https://en.wikipedia.org/wiki/Super_key_(keyboard_button))+R*) käsuviibale: *\\HOST\jagamisenimi*
 
 <b>Samba/MS Windowsi jagatud materjalidele ligipääsemine läbi GNU/Linuxi</b>
 
