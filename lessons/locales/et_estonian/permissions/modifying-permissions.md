@@ -7,14 +7,14 @@ Ligipääsuõgusi saab kergesti muuta <b>chmod</b> käsuga.
 Esmalt tuleb valida õigused, mida soovitakse muuta kasutaja, grupi ja teiste jaoks. Õigusi saab lisada või eemaldada <b>+</b> ja <b>-</b> märkidega, kehtestada <b>=</b> abil.
 
 Õigused tähtedega:
-* r(ead) - lugeda
-* w(rite) - kirjutada
-* e(x)ecute - käivitada
+* <i>r(ead)</i> - lugeda
+* <i>w(rite)</i> - kirjutada
+* <i>e(x)ecute</i> - käivitada
 
 Isikud tähtedega:
-* u(ser) - omanik
-* g(roup) - gruppi kuuluv kasutaja
-* o(ther) - mingi muu kasutaja süsteemis, kuulub omanikust erinevasse gruppi
+* <i>u(ser)</i> - omanik
+* <i>g(roup)</i> - gruppi kuuluv kasutaja
+* <i>o(ther)</i> - mingi muu kasutaja süsteemis, kuulub omanikust erinevasse gruppi
 
 Vaatame näiteid.
 
