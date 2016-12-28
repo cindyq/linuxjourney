@@ -46,7 +46,7 @@ $ join -1 2 -2 1 fail1.txt fail2.txt
 3 Mary Sue
 </pre>
 
--1 viitab fail1.txt'le ja -2 viitab fail2.txt'le. Päris uhke. Ühte faili on aga võimalik ka jagada mitme faili vahel, kui kasutad split käsku:
+*-1* viitab *fail1.txt*'le ja *-2* viitab *fail2.txt*'le. Päris uhke. Ühte faili on aga võimalik ka jagada mitme faili vahel, kui kasutad *split* käsku:
 
 <pre>$ split mingifail</pre>
 
@@ -58,8 +58,8 @@ Liida kokku kaks faili, milles on erinev arv ridu. Mis juhtub?
 
 ## Küsimus
 
-Millise käsuga liita kokku failid kass, koer ja lehm?
+Millise käsuga liita kokku failid *kass, koer* ja *lehm*?
 
 ## Vastus
 
-join kass koer lehm
+*join kass koer lehm*
