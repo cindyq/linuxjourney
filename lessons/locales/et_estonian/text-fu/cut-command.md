@@ -40,4 +40,4 @@ Millist käsku sa kasutaksid, et saada iga rea esimene tähemärk?
 
 ## Vastus
 
-cut -c 1
+*cut -c 1*
