@@ -10,12 +10,12 @@ wc (word count ehk sõnade loendus) käsk kuvab faili täieliku sõnade hulga.
 
 Vastavalt väljundile on kuvatud ridade, sõnade ja baitide arv.
 
-Selleks, et ainult ühte välja kuvataks, kasuta vastavalt -l, -w või -c.
+Selleks, et ainult ühte välja kuvataks, kasuta vastavalt *-l, -w* või *-c*.
 
 <pre>$ wc -l /etc/passwd
 96</pre>
 
-Veel üks käsk, millega saab faili ridade arvu teada, on nl (number lines ehk ridade number).
+Veel üks käsk, millega saab faili ridade arvu teada, on *nl* (*number lines* ehk ridade number).
 
 <pre>
 fail1.txt
@@ -40,4 +40,4 @@ Millist käsku kasutaksid, et saada failist ainult lõplik sõnade arv.
 
 ## Vastus
 
-wc -w
+*wc -w*
