@@ -50,5 +50,4 @@ Kuidas näha keskkonna muutujaid?
 
 ## Vastus
 
-env
-
+*env*
