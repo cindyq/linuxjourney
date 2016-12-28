@@ -16,7 +16,7 @@ Tekstis liikudes, töötavad tavapärased tekstiklahvid: home, end, page up, pag
 
 <b>Lõikamine ja kleepimine</b>
 
-Et lõigata (kill) või kleepida (yank) Emacs'is, on sul vaja esiteks valida tekst. Teksti valimiseks liigu kursoriga, kus sa soovid lõigata või kleepida ja siis vajuta <pre>C-tühik</pre>. Seejärel saad kasutada navigeerimise klahve ja valida vajaliku tekstilõigu. Siis saad aga lõigata ja kleepida nõnda:
+Et lõigata (*kill*) või kleepida (*yank*) Emacs'is, on sul vaja esiteks valida tekst. Teksti valimiseks liigu kursoriga, kus sa soovid lõigata või kleepida ja siis vajuta <pre>C-tühik</pre>. Seejärel saad kasutada navigeerimise klahve ja valida vajaliku tekstilõigu. Siis saad aga lõigata ja kleepida nõnda:
 
 <pre>
 C-w : lõika
