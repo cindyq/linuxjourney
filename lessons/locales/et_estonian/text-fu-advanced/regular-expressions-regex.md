@@ -25,7 +25,7 @@ seashore<b>$</b>
 saaks vasteks "by the seashore"
 </pre>
 
-b>3. Ühe märgi sidumine sümboliga .</b>
+<b>3. Ühe märgi sidumine sümboliga .</b>
 
 <pre>
 b<b>.</b>
