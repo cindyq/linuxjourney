@@ -2,7 +2,7 @@
 
 ## Tunni sisu
 
-Uniq (unikaalne) käsk on veel üks kasulik tööriist teksti töötlemiseks.
+*Uniq* (unikaalne) käsk on veel üks kasulik tööriist teksti töötlemiseks.
 
 Näiteks on ühest failist mitu koopiat:
 
@@ -84,7 +84,7 @@ ajaleht</pre>
 
 ## Harjutus
 
-Milline oleks väljund kui proovida sisestada uniq -uc?
+Milline oleks väljund kui proovida sisestada *uniq -uc*?
 
 ## Küsimus
 
@@ -92,4 +92,4 @@ Millist käsku kasutada, et vabaneda kordustest failis?
 
 ## Vastus
 
-uniq
+*uniq*
