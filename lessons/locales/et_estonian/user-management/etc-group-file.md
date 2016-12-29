@@ -13,7 +13,7 @@ Sarnaselt */etc/shadow* failile, on */etc/group* väljad järgmised:
 
 <ol>
 <li>Grupi nimi</li>
-<li>Grupi salasõna - tegelikult pole vajadust seada grupile salasõna, pigem on tavapärane tõstetud õiguste kasutamine, nagu näiteks *sudo* puhul. Vaikimis väärtus on "*".</li>
+<li>Grupi salasõna - tegelikult pole vajadust seada grupile salasõna, pigem on tavapärane tõstetud õiguste kasutamine, nagu näiteks <i>sudo</i> puhul. Vaikimis väärtus on "*".</li>
 <li>Grupi ID (GID)</li>
 <li>Nimekiri kasutajatest - kasutajate gruppi kuuluvust saab käsitsi määrata</li>
 </ol> 
