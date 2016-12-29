@@ -2,7 +2,7 @@
 
 ## Tunni sisu
 
-Proovime nüüd midagi natuke teistsugust. Proovime saada sisu loetelu mingist kataloogist, mida ei eksisteeri ja suuname selle info taaskord pähklid.txt faili.
+Proovime nüüd midagi natuke teistsugust. Proovime saada sisu loetelu mingist kataloogist, mida ei eksisteeri ja suuname selle info taaskord *pähklid.txt* faili.
 
 <pre>$ ls /olematu/kataloog > pähklid.txt </pre>
 
@@ -30,7 +30,7 @@ Selline on lühem viis kuidas suunata faili mõlemad *stdout* ja *stderr*:
 
 <pre>$ ls /olematu/kataloog &> pähklid.txt</pre>
 
-Aga mis siis, kui ei olegi vaja seda üleliia risustavat infot ja soovitakse stderr teatest täielikult vabaneda? Siis võib suunata väljundi spetsiaalsesse faili */dev/null* ja igasugune sisendinfo lihtsalt heidetakse kõrvale.
+Aga mis siis, kui ei olegi vaja seda üleliia risustavat infot ja soovitakse *stderr* teatest täielikult vabaneda? Siis võib suunata väljundi spetsiaalsesse faili */dev/null* ja igasugune sisendinfo lihtsalt heidetakse kõrvale.
 
 <pre>$ ls /olematu/kataloog 2> /dev/null</pre>
 
