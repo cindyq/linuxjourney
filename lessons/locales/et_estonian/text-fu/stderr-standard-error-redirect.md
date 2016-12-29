@@ -12,7 +12,12 @@ Vastuseks on midagi sellist:
 
 Võib mõelda, et kas see teade ei oleks pidanud saadetama hoopis faili? Tegelikult on olemas veel üks sisend-väljundvoog, standardvea väljund (*stderr*). Vaikimisi saadab *stderr* oma väljundi ka muuhulgas ekraanile, see on *stdout* voost täiesti erinev ning ka selle väljundit tuleb teisiti suunata.
 
-Kahjuks ei ole see ümbersuunamise operaator sama kena, kui <b>&lt;</b> või <b>&gt;</b>, kuid see on üsna sarnane. Tuleb kasutada failikirjeldajat.  Failikirjeldaja on mittenegatiivne number, mida kasutatake faili voole ligipääsemiseks. Me süveneme sellesse hiljem, kuid praegu peab vaid teadma, et failikirjeldaja *stdin, stdout* ja *stderr* jaoks on vastavalt 0, 1 ja 2.
+Kahjuks ei ole see ümbersuunamise operaator sama kena, kui <b>&lt;</b> või <b>&gt;</b>, kuid see on üsna sarnane. Tuleb kasutada failikirjeldajat.  Failikirjeldaja on mittenegatiivne number, mida kasutatake faili voole ligipääsemiseks. Me süveneme sellesse hiljem, kuid praegu peab vaid teadma, et failikirjeldaja *stdin, stdout* ja *stderr* jaoks on vastavalt 0, 1 ja 2:
+<pre>
+0 <i>stdin</i>
+1 <i>stdout</i>
+2 <i>stderr</i>
+</pre>
 
 Seega, kui soovitakse suunata *stderr* ümber faili, saab toimida järgnevalt:
 
