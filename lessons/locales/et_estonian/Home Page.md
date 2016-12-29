@@ -1,52 +1,51 @@
 # Koduleht
 
-## Õpipoiss
+## Ã•pipoiss
 
 * Algus - Mis on Linux? Alustame tarkvarakomplekti valimisest ja paigaldamisest.
 
-* Käsurida - Käsurea algtõed, failide ja kataloogide vahel liikumine ja muudki.
+* KÃ¤surida - KÃ¤surea algtÃµed, failide ja kataloogide vahel liikumine ja muudki.
 
-* Text-fu - Algtasemel tekstitöötlus.
+* Text-fu - Algtasemel tekstitÃ¶Ã¶tlus.
 
-* Text-fu edasijõudnutele - Kuidas hallata teksti nagu tõeline spetsialist kasutades programme <i>vim</i> ja <i>emacs</i>.
+* Text-fu edasijÃµudnutele - Kuidas hallata teksti nagu tÃµeline spetsialist kasutades programme <i>vim</i> ja <i>emacs</i>.
 
 * Kasutajate haldamine - Kasutajate rollid ja nende haldamine.
 
-* Õigused - Ligipääsuõiguste tasemed ja õiguste muutmine.
+* Ã•igused - LigipÃ¤Ã¤suÃµiguste tasemed ja Ãµiguste muutmine.
 
-* Protsessid - Vaatame lähemalt süsteemis töötavaid protsesse.
+* Protsessid - Vaatame lÃ¤hemalt sÃ¼steemis tÃ¶Ã¶tavaid protsesse.
 
-* Paketid - Tutvustatakse <i>dpkg</i>, <i>apt-get</i>, <i>rpm</i> ja <i>yum</i> paketihalduse tööriistu.
+* Paketid - Tutvustatakse <i>dpkg</i>, <i>apt-get</i>, <i>rpm</i> ja <i>yum</i> paketihalduse tÃ¶Ã¶riistu.
 
 ## Sell
 
-* Seadmed - Linuxi seadmed ja kuidas need suhtlevad tuuma ning kasutaja ruumiga.
+* Seadmed - Linuxi seadmed ja kuidas need suhtlevad tuuma ning kasutajaruumiga.
 
-* Failisüsteem - Erinevad Linuxi failisüsteemi tüübid, kettajaod ja muud.
+* FailisÃ¼steem - Erinevad Linuxi failisÃ¼steemi tÃ¼Ã¼bid, kettajaod ja muud.
 
-* Süsteemi alglaadimine - Linuxi alglaadimise protsessi etapid.
+* SÃ¼steemi alglaadimine - Linuxi alglaadimise protsessi etapid.
 
-* Tuum - Kõige olulisem osa Linuxi süsteemist, selle tööpõhimõte ja seadistamine.
+* Tuum - KÃµige olulisem osa Linuxi sÃ¼steemist, selle tÃ¶Ã¶pÃµhimÃµte ja seadistamine.
 
-* Init - Erinevad <i>init</i> süsteemid <i>SysV</i>, <i>Upstart</i> ja <i>systemd</i>.
+* Init - Erinevad <i>init</i>'i sÃ¼steemid <i>SysV</i>, <i>Upstart</i> ja <i>systemd</i>.
 
-* Protsesside haldamine - Ressursside jälgimine tööriistaga <i>top</i>, keskmine koormus, <i>iostat</i> ja palju muud!
+* Protsesside haldamine - Ressursside jÃ¤lgimine tÃ¶Ã¶riistaga <i>top</i>, keskmine koormus, <i>iostat</i> ja palju muud!
 
-* Logimine - Süsteemi logid ja /var/log kataloog.
+* Logimine - SÃ¼steemi logid ja <i>/var/log</i> kataloog.
 
-## Võrgumeister
+## VÃµrgumeister
 
-* Failide jagamine - Failide jagamine võrgus tööriistadega <i>rsynx</i>, <i>scp</i>, <i>nfs</i> ja teised.
+* Failide jagamine - Failide jagamine vÃµrgus tÃ¶Ã¶riistadega <i>rsync</i>, <i>scp</i>, <i>nfs</i> ja teised.
 
-* Võrgunduse baasteadmised - Baasteadmised võrgust ja TCP/IP mudelist.
+* VÃµrgunduse algteadmised - Algteadmised vÃµrgust ja TCP/IP mudelist.
 
-* Alamvõrgud - Mis on alamvõrgud ja kuidas neid arvutada.
+* AlamvÃµrgud - Mis on alamvÃµrgud ja kuidas neid arvutada.
 
-* Marstuutimine - Õpime, kuidas paketid võrgus liiguvad.
+* Marsruutimine - Ã•pime, kuidas paketid vÃµrgus liiguvad.
 
-* Võrguseaded - Võrgu seadistamine Linuxi tööriistadega.
+* VÃµrguseaded - VÃµrgu seadistamine Linuxi tÃ¶Ã¶riistadega.
 
-* Tõrkeotsing - Tavalisemad võrgu tööriistad, mille abil otsida ja diagnoosida võrguga seotud probleeme.
+* TÃµrkeotsing - Tavalisemad vÃµrgu tÃ¶Ã¶riistad, mille abil otsida ja diagnoosida vÃµrguga seotud probleeme.
 
-* DNS - Kõik oluline, mida teada DNS'i kohta ja rohkemgi.
-
+* DNS - KÃµik oluline, mida teada nimeserveri teenuse (DNS) kohta ja rohkemgi.
