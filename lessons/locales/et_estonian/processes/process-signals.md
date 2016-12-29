@@ -9,7 +9,7 @@ Signaal on teade protsessile, et midagi on juhtunud.
 Signaalid on tarkvaralised katkestused ja neil on palju eesmärke:
 
 <ul>
-<li> Kasutaja saab kasutada spetsiaalseid terminali klahvikombinatsioone, et protsesse peatada (<i>q, CTRL+Q</i>), katkestada (<i>CTRL+C</i>) või ajutiselt peatada (<i>CTRL+Z</i>). </li>
+<li> Kasutaja saab kasutada spetsiaalseid terminali klahvikombinatsioone, et protsesse peatada (<i>q, CTRL+Q</i> jne - erinevatel protsessidel võivad erinevad olla), katkestada (<i>CTRL+C</i>) või ajutiselt peatada (<i>CTRL+Z</i>). </li>
 <li>Ilmneb riistvaraline probleem ja tuum tahab protsessi sellest teavitada.</li>
 <li>Ilmneb tarkvaraline probleem ja tuum tahab protsessi sellest teavitada.</li>
 <li>Põhimõtteliselt on need protsesside suhtlemise viisid.</li>
