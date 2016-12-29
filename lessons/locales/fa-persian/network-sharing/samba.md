@@ -1,62 +1,90 @@
-# Samba
+# سامبا
 
-## Lesson Content
+## محتوای درس
 
-In the early days of computing, it became necessary for Windows machines to share files with Linux machines, thus the Server Message Block (SMB) protocol was born. SMB was used for sharing files between Windows operating systems (Mac also has file sharing with SMB) and then it was later cleaned up and optimized in the form of the Common Internet File System (CIFS) protocol. 
+مدت‌ها ییش در نتیجهٔ رفع نیاز اشتراک فایل بین ماشین‌های لینوکسی و ویندوزی‌، پروتکل
+SMB یا Server Message Block زاده شد. SMB برای اشتراک فایل سیستم‌های ویندوزی (مک
+نیز از SMB برای اشتراک فایل بهره می‌گیرد) استفاده می‌شد و بعد‌ها پاک‌سازی و بهینه‌تر
+شد تا به صورت پروتکلی به نام CIFS (Common Internet File System) در آمد. 
 
-Samba is what we call the Linux utilities to work with CIFS on Linux. In addition to file sharing, you can also share resources like printers. 
+‏Samba ابزاری لینوکسی برای کار با CIFS است. همچنین علاوه بر اشتراک فایل‌، قابلیت
+اشتراک‌گذاری منابع دیگری چون پرینتر‌ها را نیز داراست. 
 
-<b>Create a network share with Samba</b>
+### ساخت یک اشتراک شبکه‌ای توسط سامبا
 
-Let's go through the basic steps to create a network share that a Windows machine can access:
+بیایید مراحل ساخت یک اشتراک شبکه‌ای که قابلیت دسترسی توسط ماشین‌های ویندوزی را
+داراست بررسی کنیم:
 
-<b>Install Samba</b>
+#### نصب سامبا
 
-<pre>$ sudo apt update
-$ sudo apt install samba</pre>
+```
+$ sudo apt update
+$ sudo apt install samba
+```
 
-<b>Setup smb.conf</b>
+#### تنظیم smb.conf
 
-The configuration file for Samba is found at /etc/samba/smb.conf, this file should tell the system what directories should be shared, their access permissions, and more options. The default smb.conf comes with lots of commented code already and you can use those as an example to write your own configurations.
+فایل تنظیم سامبا در مسیر `‎/etc/samba/smb.conf` قرار دارد، که وظیفهٔ تعریف
+دایرکتوری‌های به اشتراک گذارده شده، اجازه‌های دسترسی و برخی تنظیمات دیگر را بر
+عهده دارد. این فایل به صورت پیش‌فرض شامل بسیاری از مثال‌ها به صورت کامنت شده است
+که می‌توانید از آن‌ها برای آشنایی بیشتر با تنظیمات و تنظیم سیستم اشتراک خود بهره بگیرید. 
 
-<pre>$ sudo vi /etc/samba/smb.conf</pre>
+```
+$ sudo vi /etc/samba/smb.conf
+```
 
-<b>Setup up a password for Samba</b>
+#### تنظیم رمز عبور برای سامبا
 
-<pre>$ sudo smbpasswd -a [username]</pre>
+```
+$ sudo smbpasswd -a [username]
+```
 
-<b>Create a shared directory</b>
+#### ساخت یک دایرکتوری مشترک
 
-<pre>$ mkdir /my/directory/to/share</pre>
+```
+$ mkdir /my/directory/to/share
+```
 
-<b>Restart the Samba service</b>
+#### راه‌اندازی مجدد سامبا
 
-<pre>$ sudo service smbd restart</pre>
+```
+$ sudo service smbd restart
+```
 
-<b>Accessing a Samba share via Windows</b>
+#### دسترسی به یک اشتراک سامبا از طریق ویندوز
 
-In Windows, just type in the network connection in the run prompt: \\HOST\sharename.
+در ویندوز فقط آدرس اشتراک سامبا را در run اجرا کنید:
 
-<b>Accessing a Samba/Windows share via Linux</b>
+```
+\\HOST\sharename
+```
 
-<pre>$ smbclient //HOST/directory -U user</pre>
+#### دسترسی به یک اشتراک سامبا/ویندوز از طریق لینوکس
 
-The Samba package includes a command line tool called <b>smbclient</b> that you can use to access any Windows or Samba server. Once you're connected to the share you can navigate and transfer files.
+```
+$ smbclient //HOST/directory -U user
+```
 
-<b>Attach a Samba share to your system</b>
+بستهٔ سامبا شامل یک ابزار خط فرمان به نام `smbclient` می‌شود که می‌توانید از آن
+برای دسترسی به هر سرور سامبا (چه ویندوز و چه لینوکس) بهره بگیرید. پس از اتصال
+می‌توانید دایرکتوری‌ها را جستجو کرده و یا انتقال فایل‌های مورد نظر را انجام دهید. 
 
-Instead of transferring files one by one, you can just mount the network share on your system.
+#### متصل کردن یک اشتراک سامبا به سیستم
 
-<pre>$ sudo mount -t cifs servername:directory mountpount -o user=username,pass=password</pre>
+به جای انتقال تک به تک فایل‌ها‌، می‌توانید اشتراک سامبا را روی سیستم خود سوار (mount) کنید:
 
-## Exercise
+```
+$ sudo mount -t cifs servername:directory mountpount -o user=username,pass=password
+```
 
-Setup a Samba share, if you don't have one, open up smb.conf and familiarize yourself with the options in the config file.
+## تمرین
 
-## Quiz Question
+یک اشتراک سامبا ایجاد کنید و با ویرایش فایل `smb.conf` با تنظیمات آن آشنا شوید. 
 
-What is the latest protocol used for file transfer between Windows and Linux?
+## سوال آزمون
 
-## Quiz Answer
+از کدام پروتکل می‌توان برای اشتراک فایل بین ویندوز و لینوکس بهره گرفت؟
+
+## پاسخ آزمون
 
 CIFS
