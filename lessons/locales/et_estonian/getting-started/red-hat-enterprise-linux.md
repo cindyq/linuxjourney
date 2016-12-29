@@ -14,9 +14,11 @@ RHEL-põhised operatsioonisüsteemid erinevad kergelt Debian-põhistest. Kõige 
 <b>Kasutusalad</b>
 Nagu ka nime järgi võib arvata, kasutatakse seda põhiliselt ettevõtetes. Seega kui vajad kindlat operatsioonisüsteemi serverisse siis RHEL sobib väga hästi.
 
+<a target="_blank" href="https://www.redhat.com/rhel/">RHEL</a> on tasuline kuid jäädavalt tasuta on kogukonna versioon <a target="_blank" href="https://www.centos.org/">CentOS</a>.
+
 ## Harjutus
 
-Kui sul on huvi kasutada RHELi enda operatsioonisüsteemina, mine vaata paigaldusjuhist ja proovi ära: <a href='https://www.redhat.com/rhel/'>https://www.redhat.com/rhel/</a>
+Kui sul on huvi kasutada RHELi enda operatsioonisüsteemina, mine vaata paigaldusjuhist ja proovi ära: <a target="_blank" href='https://www.redhat.com/rhel/'>https://www.redhat.com/rhel/</a>
 
 ## Küsimus
 

@@ -22,4 +22,4 @@ Millise käsuga luuakse failisüsteem?
 
 ## Vastus
 
-mkfs
+*mkfs*

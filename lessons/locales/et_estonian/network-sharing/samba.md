@@ -32,13 +32,13 @@ Samba sätted asuvad failis /etc/samba/smb.conf. See fail peaks ütlema süsteem
 
 <b>Jagatud materjalidele ligipääsemine läbi Windowsi</b>
 
-Windowsis tuleb lihtsalt sisestada võrgu ühendus run käsuviibale: \\HOST\jagamisenimi
+Windowsis tuleb lihtsalt sisestada võrgu ühendus *run* (kiirklahv: *[Super](https://en.wikipedia.org/wiki/Super_key_(keyboard_button))+R*) käsuviibale: *\\HOST\jagamisenimi*
 
 <b>Samba/MS Windowsi jagatud materjalidele ligipääsemine läbi GNU/Linuxi</b>
 
 <pre>$ smbclient //HOST/kataloog -U kasutaja</pre>
 
-Graafilistes failihaldurites:<br>
+Linuxi graafilistes failihaldurites:<br>
 <pre>smb://kasutaja@server/</pre>
 
 Samba paketis on olemas ka tööriist nimega <b>smbclient</b>, mida saab kasutada igasuguste MS Windowsi või Samba jagatud materjalidele ligipääsemiseks. Kui ühendus on saavutatud saab ringi liikuda ja faile üle kanda.
@@ -51,7 +51,7 @@ Selle asemel, et faile üks haaval üle kanda, võib jagatud kataloogi lihtsalt 
 
 ## Harjutus
 
-Seada üles jagamine Sambaga, kui seda veel pole. Avada smb.conf ja saada tuttavaks võimalike valikutega sätete failis.
+Seada üles jagamine Sambaga, kui seda veel pole. Avada *smb.conf* ja saada tuttavaks võimalike valikutega sätete failis.
 
 ## Küsimus
 

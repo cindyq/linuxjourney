@@ -25,7 +25,7 @@ Kahjuks ei saa *gzip* lisada arhiivi mitut faili. Õnneks saab seda teha *tar*'i
 <ul>
 <li>c - loomine</li>
 <li>v - ütleme programmile, et see kannaks ette, mida ta teeb</li>
-<li>f - selle võtme järel peab tulema *tar* faili nimi, kui luua uus fail tuleb nimi välja mõelda/li>
+<li>f - selle võtme järel peab tulema <i>tar</i> faili nimi, kui luua uus fail tuleb nimi välja mõelda/li>
 </ul>
 
 <b>Arhiivide lahtipakkimine *tar*'i abil</b>

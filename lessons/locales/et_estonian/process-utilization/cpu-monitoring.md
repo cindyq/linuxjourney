@@ -27,4 +27,4 @@ Millise käsuga saab kuvada keskmist koormust?
 
 ## Vastus
 
-uptime
+*uptime*

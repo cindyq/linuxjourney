@@ -16,7 +16,7 @@ rebane
 
 <pre>$ paste -s näide2.txt</pre>
 
-Vaikimisi on paste'i eraldaja tabulaator, seega nüüd on siis tulemuseks üks rida, kus sõnu eraldab tabulaator.
+Vaikimisi on *paste*'i eraldaja tabulaator, seega nüüd on siis tulemuseks üks rida, kus sõnu eraldab tabulaator.
 
 Muudame selle eraldaja (-d) millegi loetavama vastu:
 
@@ -27,7 +27,7 @@ Nüüd peaks kõik sõnad olema ühes reas tühikutega eraldatud.
 
 ## Harjutus
 
-Proovida paste käsku mitme faili peal. Mis juhtub?
+Proovida *paste* käsku mitme faili peal. Mis juhtub?
 
 ## Küsimus
 
@@ -35,4 +35,4 @@ Millist lippu kasutada, et saada kogu sisu ühele reale?
 
 ## Vastus
 
--s
+*-s*

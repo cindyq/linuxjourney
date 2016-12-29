@@ -11,11 +11,11 @@ Lase käia, proovi vaadata faili sisu käsuga *less*. Kui käsk on käivitatud, 
 Kasutada järgmisi käske *less*'is navigeerumiseks:
 
 <ul>
-<li>q - Kasuta selleks, et väljuda *less*'ist ja pöörduda tagasi käsureale.</li>
+<li>q - Kasuta selleks, et väljuda <i>less</i>'ist ja pöörduda tagasi käsureale.</li>
 <li>Page up, Page down, üles ja alla nooleklahvid - Liigu kasutades Page- ja nooleklahve.</li>
 <li>g - Liigu tekstifaili algusesse.</li>
 <li>G - Liigu tekstifaili lõppu.</li>
-<li>/search - Sa võid otsida dokumendist konkreetset teksti. Alusta otsitavat sõna sümboliga /</li>
+<li><i>/search</i> - Sa võid otsida dokumendist konkreetset teksti. Alusta otsitavat sõna sümboliga /</li>
 <li>h - Kui sul on vaja abi lessi kasutamise osas, kui see on juba avatud.</li>
 </ul>
 

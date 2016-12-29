@@ -1,4 +1,4 @@
-﻿# Sytem V teenus
+# System V teenus
 
 ## Tunni sisu
 
@@ -36,5 +36,5 @@ Millise *Sys V* käsuga saab peatada teenuse moos?
 
 ## Vastus
 
-sudo service moos stop
+*sudo service moos stop*
 

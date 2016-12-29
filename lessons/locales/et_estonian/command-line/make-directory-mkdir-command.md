@@ -8,7 +8,7 @@ Meil läheb vaja kataloogi kõikide nende failide jaoks, millega tegelenud oleme
 
 Samal ajal saab luua ka alamkatalooge. Kasuta selleks -p (inglise keeles *parent* ehk vanem) lippu.
  
-<pre>$ mkdir -p raamatud/hemmingway/lemmikud</pre>
+<pre>$ mkdir -p raamatud/hemingway/lemmikud</pre>
 
 ## Harjutus
 

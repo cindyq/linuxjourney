@@ -16,7 +16,7 @@ Filesystem     1K-blocks    Used Available Use% Mounted on
 
 <pre>$ du -h</pre>
 
-Käsk kuvab hetke asukoha kataloogi kasutusinfo. Juurkataloogi piilumiseks võib kasutada <b>du -h /</b>, kuid see väljund võib osutuda natuke liiga mahukaks kuna juurkataloog sisaldab kogu kõvaketta sisu. Pigem tasub vaadata mõne konkreetse juurkataloogi alamkataloogi mahtu.
+Käsk kuvab hetke asukoha kataloogi kasutusinfo. Juurkataloogi piilumiseks võib kasutada *<b>du -h /</b>*, kuid see väljund võib osutuda natuke liiga mahukaks kuna juurkataloog sisaldab kogu kõvaketta sisu. Pigem tasub vaadata mõne konkreetse juurkataloogi alamkataloogi mahtu.
 
 Mõlema käsu lausekuju ehk süntaks on teineteisele nii sarnane, et võib osutuda raskeks pidada meeles, kumba kasutada. Inglise keele oskajaid aitab pidada meeles, et vaba kettaruumi näitab *<b>disk</b> is <b>free</b>* ehk *df* ja kasutatud kettaruumi *<b>disk usage</b>* ehk *du*.  
 

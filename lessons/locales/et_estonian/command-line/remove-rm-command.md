@@ -31,7 +31,7 @@ Kataloogi saab eemaldada *rmdir* käsuga.
 ## Harjutus
 
 <ol>
-<li>Luua fail nimega *-fail* (ära unusta sidekriipsu!).</li>
+<li>Luua fail nimega <i>-fail</i> (ära unusta sidekriipsu!).</li>
 <li>Eemalda see fail.</li>
 </ol>
 
@@ -41,4 +41,4 @@ Kuidas eemaldada fail nimega *minufail*?
 
 ## Vastus
 
-rm minufail
+*rm minufail*

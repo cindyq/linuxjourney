@@ -10,7 +10,7 @@ Tuum iseenesest on üks monoliitne tükk tarkvara. Kui me tahame lisada tuge uut
 
 <pre>$ lsmod</pre>
 
-<b>Lae moodul>/b>
+<b>Lae moodul></b>
 
 <pre>$ sudo modprobe bluetooth</pre>
 
@@ -50,6 +50,6 @@ Millise käsuga eemaldatakse moodul?
 
 ## Vastus
 
-modprobe -r
+*modprobe -r*
 
 

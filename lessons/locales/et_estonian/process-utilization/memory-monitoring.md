@@ -15,49 +15,49 @@ Väljad on järgmised:
 
 <b>procs</b>
 <ul>
-<li>r - protsesside arv töötamise jooksul</li>
-<li>b - protsesside arv katkematus unes</li>
+<li><i>r</i> - protsesside arv töötamise jooksul</li>
+<li><i>b</i> - protsesside arv katkematus unes</li>
 </ul>
 
 <b>memory</b>
 <ul>
-<li>swpd - virtuaalmälu kasutamise kogus</li>
-<li>free - vaba mälu kogus</li>
-<li>buff - puhvrina kasutatava mälu kogus</li>
-<li>cache - vahemäluna kasutatava mälu kogus</li>
+<li><i>swpd</i> - virtuaalmälu kasutamise kogus</li>
+<li><i>free</i> - vaba mälu kogus</li>
+<li><i>buff</i> - puhvrina kasutatava mälu kogus</li>
+<li><i>cache</i> - vahemäluna kasutatava mälu kogus</li>
 </ul>
 
 <b>swap</b>
 <ul>
-<li>si - sisse saalitud mälu kogus</li>
-<li>so - välja saalitud mälu kogus</li>
+<li><i>si</i> - sisse saalitud mälu kogus</li>
+<li><i>so</i> - välja saalitud mälu kogus</li>
 </ul>
 
 <b>io</b>
 <ul>
-<li>bi - plokkseadmelt vastu võetud plokkide kogus</li>
-<li>bo - plokkseadmele saadetud plokkide kogus</li>
+<li><i>bi</i> - plokkseadmelt vastu võetud plokkide kogus</li>
+<li><i>bo</i> - plokkseadmele saadetud plokkide kogus</li>
 </ul>
 
 <b>system</b>
 <ul>
-<li>in - katkestuste kogus sekundi kohta</li>
-<li>cs - kontekstkommutatsioonide kogus sekundi kohta</li>
+<li><i>in</i> - katkestuste kogus sekundi kohta</li>
+<li><i>cs</i> - kontekstkommutatsioonide kogus sekundi kohta</li>
 </ul>
 Sõnaseletus<br>
 **kontekstkommutatsioon** Arvuti keskprotsessori olekut (konteksti) salvestav ja taastav protsess, mis võimaldab mitmel protsessil ühiselt kasutada üht ja sama protsessorit. Kontekstkommutatsioon täidab olulist rolli multitegumtöötluses. Kuna see protsess nõuab suhteliselt palju arvutusressurssi, siis operatsioonisüsteemide projekteerimisel pööratakse selle optimeerimisele suurt tähelepanu.
 
 <b>cpu</b>
 <ul>
-<li>us - kasutaja ajas veedetud aeg</li>
-<li>sy - tuuma ajas veedetud aeg</li>
-<li>id - Kasutamata veedetud aeg</li>
-<li>wa - sisendi/väljundi järgi ootamise aeg</li>
+<li><i>us</i> - kasutaja ajas veedetud aeg</li>
+<li><i>sy</i> - tuuma ajas veedetud aeg</li>
+<li><i>id</i> - Kasutamata veedetud aeg</li>
+<li><i>wa</i> - sisendi/väljundi järgi ootamise aeg</li>
 </ul>
 
 ## Harjutus
 
-Uurida mälukasutust vmstat'iga.
+Uurida mälukasutust *vmstat*'iga.
 
 ## Küsimus
 
@@ -65,4 +65,4 @@ Millise tööriistaga kuvatakse mälu kasutust puudutav info?
 
 ## Vastus
 
-vmstat
+*vmstat*

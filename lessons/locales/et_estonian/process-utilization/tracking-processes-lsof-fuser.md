@@ -50,4 +50,4 @@ Millise käsuga kuvatakse avatud failid ja nende protsessi informatsioon?
 
 ## Vastus
 
-lsof
+*lsof*

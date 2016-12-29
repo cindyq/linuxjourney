@@ -16,11 +16,11 @@ PID        TTY     STAT   TIME          CMD
 Kiire ülesvőte protsesside kohta annab järgmist infot:
 
 <ul>
-<li>PID: Protsessi ID</li>
-<li>TTY: Protsessiga seotud terminal (sellest pikemalt veidi hiljem)</li>
-<li>STAT: Protsessioleku kood</li>
-<li>TIME: Summaarne protsessori kasutamise aeg</li>
-<li>CMD: Käsu/käivitatud rakenduse nimi</li>
+<li><i>PID</i>: Protsessi ID</li>
+<li><i>TTY</i>: Protsessiga seotud terminal (sellest pikemalt veidi hiljem)</li>
+<li><i>STAT</i>: Protsessioleku kood</li>
+<li><i>TIME</i>: Summaarne protsessori kasutamise aeg</li>
+<li><i>CMD</i>: Käsu/käivitatud rakenduse nimi</li>
 </ul>
 
 *Ps*i *man* lehet vőib leida palju erinevaid vőimalusi selle käsu sisestamiseks. Need erinevad veidi sőltuvalt millist variant soovitatakse kasutada - BSD, GNU vői Unix. Tőenäoliselt on BSD stiil teistest natuke populaarsem, seega kasutatakse sellel kursusel seda. Uudishimu rahuldamiseks vőib öelda, et erinevus seisneb selles, mitut kriipsu kasutatakse ja lippudes.
@@ -32,17 +32,17 @@ Kiire ülesvőte protsesside kohta annab järgmist infot:
 Selle käsuga on näha oluliselt rohkem välju. Neid pole vaja kőiki meelde jätta kuna järgmises, protsesside peatükis räägitakse neist täpsemalt:
 
 <ul>
-<li>USER: Kehtiv kasutaja (see kelle ligipääsuőigusi kasutatakse)</li>
-<li>PID: Protsessi ID</li>
-<li>%CPU: Kasutatud protsessoriaja suhe aega, mille jooksul protsess on töötanud</li>
-<li>%MEM: Protsessi püsimahuosa kogu füüsilise mälu suhtes</li>
-<li>VSZ: Protsessi virtuaalmälu kasutus</li>
-<li>RSS: Tegumi püsimahuosa saalimata füüsilisest mälust</li>
-<li>TTY: Protsessiga seostatud terminal</li>
-<li>STAT: Protsessioleku kood</li>
-<li>START: Protsessi käivitumise aeg</li>
-<li>TIME: Summaarne protsessori kasutamise aeg</li>
-<li>COMMAND: Käsu/käivitatud rakenduse nimi</li>
+<li><i>USER</i>: Kehtiv kasutaja (see kelle ligipääsuőigusi kasutatakse)</li>
+<li><i>PID</i>: Protsessi ID</li>
+<li><i>%CPU</i>: Kasutatud protsessoriaja suhe aega, mille jooksul protsess on töötanud</li>
+<li><i>%MEM</i>: Protsessi püsimahuosa kogu füüsilise mälu suhtes</li>
+<li><i>VSZ</i>: Protsessi virtuaalmälu kasutus</li>
+<li><i>RSS</i>: Tegumi püsimahuosa saalimata füüsilisest mälust</li>
+<li><i>TTY</i>: Protsessiga seostatud terminal</li>
+<li><i>STAT</i>: Protsessioleku kood</li>
+<li><i>START</i>: Protsessi käivitumise aeg</li>
+<li><i>TIME</i>: Summaarne protsessori kasutamise aeg</li>
+<li><i>COMMAND</i>: Käsu/käivitatud rakenduse nimi</li>
 </ul> 
 
 *ps* käsu kogu väljundi vaatamine vőib muutuda tülikaks, kőige rohkem tasub vaadata PID, STAT ja COMMAND veerge.
@@ -61,4 +61,4 @@ Millise *ps*'i lipuga kuvatakse protsesside kohta detailset infot?
 
 ## Vastus
 
-u
+*u*

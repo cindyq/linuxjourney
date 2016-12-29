@@ -11,13 +11,13 @@ See käsk trükib väljundi, kus kõik tabulaatorid on muudetud grupiks tühikut
 
 <pre>$ expand näide.txt > tulemus.txt</pre>
 
-Vastandina expand käsule, saame muuta ka grupi tühikuid tabulaatoriks. Kasutame selleks käsku unexpand:
+Vastandina *expand* käsule, saame muuta ka grupi tühikuid tabulaatoriks. Kasutame selleks käsku *unexpand*:
 
 <pre>$ unexpand -a tulemus.txt</pre>
 
 ## Harjutus
 
-Mis juhtub kui sisestad lihtsalt expand ilma failisisendita?
+Mis juhtub kui sisestad lihtsalt *expand* ilma failisisendita?
 
 ## Küsimus
 
@@ -25,4 +25,4 @@ Millise käsuga muudetakse tabulaatorid tühikuteks?
 
 ## Vastus
 
-expand
+*expand*

@@ -2,7 +2,7 @@
 
 ## Tunni sisu
 
-Sort käsk on kasulik ridade sorteerimiseks.
+*Sort* käsk on kasulik ridade sorteerimiseks.
 
 <pre>
 fail1.txt
@@ -42,7 +42,7 @@ lind
 
 ## Harjutus
 
-Sort käsu tõeline jõud tuleneb võimalusest kasutada seda koos teiste käskudega. Proovida järgmist käsku ja vaadata, mis juhtub?
+*Sort* käsu tõeline jõud tuleneb võimalusest kasutada seda koos teiste käskudega. Proovida järgmist käsku ja vaadata, mis juhtub?
 
 <pre>$ ls /etc | sort -rn</pre>
 
@@ -52,4 +52,4 @@ Millise lipuga saab teha tagurpidi sorteerimist?
 
 ## Vastus
 
--r
+*-r*

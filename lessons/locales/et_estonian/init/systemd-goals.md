@@ -18,7 +18,7 @@ ExecStart=/usr/bin/foobar
 WantedBy=multi-user.target
 </pre>
 
-Tegu on lihtsa teenuse sihtkohaga. Faili alguses näeme sektsiooni [Unit], mis lubab kasutajal määrata üksuse failile kirjelduse ja ka kontrollida üksuse käivitumise korraldusi. Järgmine on [Service] osa, mille all saab teenust käivitada, peatada või taaslaadida.  [Install] osa kasutatakse sõltuvuste jaoks. Ja see on alles *systemd* failide kirjutamise jäämäe tipp, mistõttu võib teadmisjanulisem õpilane teema kohta juurde lugeda.
+Tegu on lihtsa teenuse sihtkohaga. Faili alguses näeme sektsiooni *[Unit]*, mis lubab kasutajal määrata üksuse failile kirjelduse ja ka kontrollida üksuse käivitumise korraldusi. Järgmine on *[Service]* osa, mille all saab teenust käivitada, peatada või taaslaadida. *[Install]* osa kasutatakse sõltuvuste jaoks. Ja see on alles *systemd* failide kirjutamise jäämäe tipp, mistõttu võib teadmisjanulisem õpilane teema kohta juurde lugeda.
 
 Mõned käsud, mida saab kasutada *systemd* üskustega:
 
@@ -58,8 +58,8 @@ Kuvada teenuste olekuid, käivitada ja peatada teenuseid. Mida võib märgata?
 
 ## Küsimus
 
-Millise käsuga saab käivitada teenuse nimega moos.service?
+Millise käsuga saab käivitada teenuse nimega *moos.service*?
 
 ## Vastus
 
-sudo systemctl start moos.service
+*sudo systemctl start moos.service*

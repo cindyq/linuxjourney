@@ -10,13 +10,13 @@ Peaks nägema väga pikka nimekirja, mida on isegi natuke raske lugeda. Selle as
 
 <pre>$ ls -la /etc | less </pre>
 
-Toru operaator |, mida esindab püstkriips, lubab meil saada mõne käsu stdout (standardväljund või kõnekeeles ka väljund) ja teha sellest teisele protsessile stdin (standardsisend või kõnekeeles ka sisend). Meie näite puhul võtsime ls -la /etc väljundi ja siis suunasime <i>toruga</i> less käsu sisendisse. Toru operaator on äärmiselt kasulik ja me jätkame selle kasutamist aegade lõpuni.
+Toru operaator |, mida esindab püstkriips, lubab meil saada mõne käsu *stdout* (standardväljund või kõnekeeles ka väljund) ja teha sellest teisele protsessile *stdin* (standardsisend või kõnekeeles ka sisend). Meie näite puhul võtsime *ls -la /etc* väljundi ja siis suunasime <i>toruga</i> *less* käsu sisendisse. Toru operaator on äärmiselt kasulik ja me jätkame selle kasutamist aegade lõpuni.
 
 Aga kui on vaja kirjutada käsu väljund kahele erinevale voole? See on võimalik järgmise käsuga:
 
 <pre>$ ls | tee pähklid.txt</pre>
 
-ls väljund on näha ekraanil ja kui avada pähklid.txt fail, näeb seal täpselt sama sisu!
+*ls* väljund on näha ekraanil ja kui avada *pähklid.txt* fail, näeb seal täpselt sama sisu!
  
 
 ## Harjutus

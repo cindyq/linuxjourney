@@ -23,7 +23,7 @@ IPv6 tutvustav video <a target="_blank" href="https://www.youtube.com/watch?v=2w
 
 ## Harjutus
 
-Kontrollida ifconfig käsuga, kas arvutile on määratud IPv6 aadress.
+Kontrollida *ifconfig* käsuga, kas arvutile on määratud IPv6 aadress.
 
 ## Küsimus
 

@@ -47,4 +47,4 @@ Millise käsuga saab kuvada usb seadmed?
 
 ## Vastus
 
-lsusb
+*lsusb*

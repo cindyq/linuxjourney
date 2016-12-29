@@ -6,6 +6,12 @@ Kuna *Upstart* on Canonical'i välja töötatud, oli see mõnda aega Ubuntu*init
 
 Kui kasutajal on süsteemis kataloog */usr/share/upstart* on see päris hea vihje, et kasutusel on *Upstart*.
 
+<b>init'i kindlakstegemise võimalusi:</b>
+* <i>sudo stat /proc/1/exe</i>
+* <i>sudo stat /sbin/init</i>
+* <i>dpkg -S /sbin/init</i>
+* <i>ps -p1</i>
+
 Tööd on tegevused, mida *Upstart* teostab ja sündmused on teated, mida töödeldakse tööde aktiveerimiseks. Tööde ja nende seadete nimekirja kuvamiseks:
 
 <pre>
@@ -19,7 +25,7 @@ anacron.conf                 network-interface-container.conf
 
 Nendes seadete failides on informatsioon selle kohta kuidas ja millal töid käivitada.
 
-Näiteks networking.conf failist võiks leida järgmise:
+Näiteks *networking.conf* failist võiks leida järgmise:
 <pre>
 start on runlevel [235]
 stop on runlevel [0]
@@ -30,10 +36,10 @@ See tähendab, et võrgundust seatakse üles teenustasemel 2, 3 või 5 ja peatat
 *Upstart* töötab järgmiselt:
 
 <ol>
-<li>Esiteks laetakse töö seadete fail kataloogist */etc/init*</li>
+<li>Esiteks laetakse töö seadete fail kataloogist <i>/etc/init</i></li>
 <li>Kui toimub alglaadimise sündmus, käivitatakse selle poolt aktiveeritud töö</li>
 <li>Need tööd loovad uusi sündmusi, mis omakorda akviteerivad rohkem töid</li>
-<li>*Upstart* toimib kuni kõik valitud tööd on teostatud</li>
+<li><i>Upstart</i> toimib kuni kõik valitud tööd on teostatud</li>
 </ol>
 
 ## Harjutus
