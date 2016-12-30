@@ -1,20 +1,26 @@
 # Network Manager
 
-## Lesson Content
+## محتوای درس
 
-Of course if you wanted to have your system's networking up and running automatically there is something already in place for that. Most distributions utilize the NetworkManager daemon to configure their networks automatically. 
+البته اگر می‌خواهید شبکهٔ سیستم‌تان به صورت خودکار تنظیم شده باشد‌، این امکان
+برای‌تان وجود دارد. اکثر توزیع‌های لینوکس از دیمون `NetworkManager` برای تنظیم
+خودکار شبکه بهره می‌گیرند.
 
-You'll notice NetworkManager in the form of an applet somewhere on your desktop taskbar if you are using a GUI. As you can see it manages your network's hardware and connection information. For instance on startup, NetworkManager will gather network hardware information, search for connections to wireless, wired, etc. and then activates it.
+احتمالا آیکن مربوط به آن را روی taskbar سیستم‌تان مشاهده خواهید کرد (البته اگر از
+GUI استفاده می‌کنید.). همانطور که می‌بینید این ابزار سخت‌افزار شبکه و ارتباطاتش را
+مدیریت می‌کند. برای مثال در هنگام بارگذاری سیستم‌، `NetworkManager` اطلاعات سخت‌افزار
+شبکه را جمع آوری می‌کند و به دنبال تنظیمات ارتباط بیسیم یا با سیسم مربوط به آن‌ها
+می‌گردد تا آن‌ها را فعال کند.
 
-There are also command-line tools to interact with NetworkManager:
+همچنین یک دستور خط فرمان نیز باری مدیریت `NetworkManager` موجود است.
 
-<b>nm-tool</b>
+## nm-tool
 
-nm-tools reports NetworkManager's state and it's devices
+این دستور وضعیت `NetworkManager` و سخت‌افزار‌های تحت مدیریتش را نشان می‌دهد.
 
-<pre>
+```
 pete@icebox:/$ nm-tool
-NetworkManager Tool
+`NetworkManager` Tool
 
 State: connected (global)
 
@@ -37,19 +43,20 @@ State: connected (global)
     Gateway:         192.168.22.2
 
     DNS:             192.168.22.2
-</pre>
+```
 
-<b>nmcli</b>
+### nmcli
 
-The nmcli command allows you to control and modify NetworkManager, see the manpage for more details.
+این دستور امکان کنترل و تنظیم `NetworkManager` را برای شما فراهم می‌کند. برای کسب
+اطلاعات بیشتر در مورد آن می‌توانید صفحات man مربوط به آن را مطالعه کنید.
 
-## Exercise
+## تمرین
 
-No exercises for this lesson.
+تمرینی برای این درس در نظر گرفته نشده است. 
 
-## Quiz Question
+## سوال آزمون
 
-What is the command to view NetworkManager information?
+از کدام دستور می‌توانید برای دیدن اطلاعات `NetworkManager` استفاده کنید؟
 
 ## Quiz Answer
 

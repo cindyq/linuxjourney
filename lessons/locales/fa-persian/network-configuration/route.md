@@ -1,48 +1,51 @@
 # route
 
-## Lesson Content
+## محتوای درست
 
-We've already discussed viewing our routing tables with the route command, if you wanted to add or remove routes you can do so manually.
+در رابطه با بررسی جدول routing سیستم با دستور route صحبت کرده‌ایم. اگر می‌خواهید
+route جدیدی را به این جدول اضافه یا از آن حذف کنید‌، می‌توانید به صورت دستی آن را
+انجام دهید.
 
-<b>Add a new route</b>
 
-<pre>
+### Add a new route
+
+```
 $ sudo route add -net 192.168.2.1/23 gw 10.11.12.3
-</pre>
+```
 
-<b>Delete a route</b>
+### Delete a route
 
-<pre>
+```
 $ sudo route del -net 192.168.2.1/23 
-</pre>
+```
 
-You can also perform these changes with the <b>ip</b> command:
+شما همچنین می‌توانید این تغییرات را به کمک دستور `ip` نیز انجام دهید:
 
-<b>To add a route</b>
-<pre>
+### To add a route
+```
 $ ip route add 192.168.2.1/23 via 10.11.12.3
-</pre>
+```
 
-<b>To delete a route</b>
-<pre>
+### To delete a route
+```
 $ ip route delete 192.168.2.1/23 via 10.11.12.3
 or
 $ ip route delete 192.168.2.1/23
-</pre>
+```
 
 
 
-## Exercise
+## تمرین
 
-There are no exercises for this lesson but you can read more information on commands discussed here in the man pages
+تمرینی برای این بخش در نظر گرفته نشده است. ولی شما می‌توانید صفحات man مربوط به این دستورات را مطالعه کنید. 
 
-<pre>$ man route</pre>
+```$ man route```
 
-<pre>$ man ip-route</pre>
+```$ man ip-route```
 
 ## Quiz Question
 
-What is the command flag to delete a route?
+از کدام آرگومان برای پاک کردن یک route استفاده می‌کنید؟
 
 ## Quiz Answer
 
