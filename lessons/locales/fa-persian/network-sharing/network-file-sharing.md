@@ -1,33 +1,49 @@
-# File Sharing Overview
+# اشتراک فایل
 
-## Lesson Content
+## محتوای درس
 
-You usually are not the only computer on your network, this is especially the case if you're working in a commercial environment. When we want to transfer data from one machine to another, sometimes it maybe easier to connect a USB drive and manually copy them. But for the most part, if you're working with machines on the same network, the way to transfer data is through network file sharing. 
+معمولا شما تنها کامپیوتر روی شبکه نیستید‌، خصوصا زمانی که در یک محیط تجاری مشغول
+کارید. وقتی می‌خواهیم داده‌ای را از یک ماشین به ماشین دیگر منتقل کنیم‌، گاها ممکن
+است استفاده از یک درایو USB و کپی دستی راه‌کار معقولی به نظر برسد. ولی اکثرا، اگر
+می‌خواهید فایل را بین ماشین‌هایی که روی یک شبکه قرار دارند منتقل کنید‌، استفاده از
+روش اشتراک فایل روی شبکه راه‌حل بهتری است. 
 
-In this course we'll go over a couple of different methods to copy data to and from different machines on your network. We'll discuss some simple file copies, then we'll talk about mounting entire directories on your machine that act as a separate drive. 
+در این درس به بررسی چند روش مختلف کپی فایل بین ماشین‌های روی یک شبکه خواهیم
+پرداخت. در مورد روش‌های سادهٔ کپی فایل صحبت می‌کنیم و در ادامه به چگونگی سوار کردن
+یک دایرکتوری روی ماشین‌های شبکه که به صورت یک درایو جدا عمل می‌کند می‌پردازیم. 
 
-One simple file sharing tool is the <b>scp</b> command. The scp command stands for secure copy, it works exactly the way the cp command does, but allows you to copy from one host over to another host on the same network. It works via ssh so all your actions are use the same authentication and security as ssh. 
+یک ابزار اشتراک فایل ساده‌، دستور `scp` است. معنی نام این دستور، کپی امن یا
+secure copy است. روش کار آن نیز دقیقا مشابه دستور `cp` است‌، با این تفاوت که به
+شما امکان کپی فایل از روی ماشین‌های مختلف روی شبکه را می‌دهد. بستر اصلی کار کرد
+این دستور با استفاده از `ssh` است، در نتیجه روش شناسایی و امنیت آن نیز دقیقا
+مطابق با همین بستر است.
 
-<b>To copy a file over from local host to a remote host</b>
+### کپی فایل از یک ماشین به ماشین دیگری روی شبکه
 
-<pre>$ scp myfile.txt username@remotehost.com:/remote/directory</pre>
+```
+$ scp myfile.txt username@remotehost.com:/remote/directory
+```
 
-<b>To copy a file from a remote host to your local host</b>
+### کپی فایل از یک ماشین روی شبکه به ماشین فعلی
 
-<pre>$ scp username@remotehost.com:/remote/directory/myfile.txt /local/directory</pre>
+```
+$ scp username@remotehost.com:/remote/directory/myfile.txt /local/directory
+```
 
-<b>To copy over a directory from your local host to a remote host</b>
+### کپی یک دایرکتوری از ماشین حاضر به ماشین دیگری روی شبکه
 
-<pre>$ scp -r mydir username@remotehost.com:/remote/directory</pre>
+```
+$ scp -r mydir username@remotehost.com:/remote/directory
+```
 
-## Exercise
+## تمرین
 
-Try to copy a file over with scp from one machine to another.
+سعی کنید با استفاده از دستور `scp` فایل‌هایی را بین چند ماشین روی شبکه منتقل کنید. 
 
-## Quiz Question
+## سوال آزمون
 
-What command can you use to securely copy files from one host to another?
+از چه دستوری می‌توانید برای کپی امن فایل‌ها روی یک شبکه استفاده کنید؟
 
-## Quiz Answer
+## پاسخ آزمون
 
 scp

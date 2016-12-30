@@ -1,23 +1,36 @@
-# Simple HTTP Server
+# یک سرور HTTP ساده
 
-## Lesson Content
+## محتوای درس
 
-Python has a super useful tool for serving files over HTTP. This is great if you just want to create a quick network share that other machines on your network can access. To do that just go to the directory you want to share and run:
+پایتون یک ابزار کاربردی اشتراک فایل از روی HTTP را فراهم می‌کند که ابزاری مناسب
+برای اشتراک سریع فایل بین ماشین‌های روی یک شبکه است. برای استفاده از آن اگر از
+پایتون ۲ استفاده می‌کنید‌، دستور زیر را در دایرکتوری مورد نظر اجرا کنید:
 
-<pre>$ python -m SimpleHTTPServer</pre>
+```
+$ python2 -m SimpleHTTPServer
+```
 
-This sets up a basic webserver that you can access via the localhost address. So grab the IP address of the machine you ran this on and then on another machine access it in the browser with: http://IP_ADDRESS:8000. On your own machine, you can view the files available by typing: http://localhost:8000 in your web browser.
+و اگر از پایتون ۳ استفاده می‌کنید‌، از دستور زیر بهره بگیرید:
 
-You can also do this with node or if you are running Python 3, the syntax will be a little bit different.
+```
+$ python3 -m http.server
+```
 
-## Exercise
+این دستور یک webserver ساده است که می‌توان از آن برای اشتراک فایل استفاده کرد. پس
+شناسه IP ماشین خود را پیدا کنید و در یک مرورگر وب آن را به صورت
+http://IP_ADDRESS:8000 تایپ کنید. همین‌طور اگر می‌خواهید به این سرور از ماشین
+خودتان دسترسی داشته باشید می‌توانید از http://localhost:8000 بهره بگیرید. 
 
-Try setting up a SimpleHTTPServer!
+## تمرین
 
-## Quiz Question
+سعی کنید یک webserver سادهٔ پایتونی ایجاد کنید. 
 
-What tool can you use to create a simple http server with python?
+## سوال آزمون
 
-## Quiz Answer
+از کدام ابزار پایتون می‌توان برای برپا سازی یک سرور http ساده بهره گرفت؟
+
+## پاسخ آزمون
 
 SimpleHTTPServer
+یا
+http.server

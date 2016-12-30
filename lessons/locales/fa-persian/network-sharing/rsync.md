@@ -1,40 +1,57 @@
 # rsync
 
-## Lesson Content
+## محتوای درس
 
-Another tool used to copy data from different hosts is rsync (short for remote synchronization). Rsync is very similar to scp, but it does have a major difference. Rsync uses a special algorithm that checks in advanced if there is already data that you are copying to and will only copy over the differences. For example, let's say that you were copying over a file and your network got interrupted, therefore your copy stopped midway. Instead of re-copying everything from the beginning, rsync will only copy over the parts that didn't get copied. 
+ابزار دیگری که می‌توان برای کپی داده بین ماشین‌های مختلف استفاده کرد rsync (کوتاه
+شده remote synchronization) نام دارد. Rsync بسیار شبیه به scp عمل می‌کند ولی یک
+تفاوت عمده را شامل می‌شود. Rsync از یک الگوریتم ویژه برای بررسی دیتای در حال کپی
+استفاده می‌کند که نهایتا منجر به انتقال تنها تفاوت‌های داده در مبدا و مقصد می‌شود.
+برای مثال فرض کنید در حال انتقال فایل‌ها از روی شبکه‌، مشکلی روی ارتباط شبکهٔ شما
+رخ داد و در نتیجه آن کپی فایل‌ها در میانه راه متوقف شد. به جای کپی همهٔ فایل‌ها از
+اول‌، rsync این امکان را فراهم می‌کند که تنها بخش‌هایی که به درستی کپی نشده‌اند کپی
+شود.
 
-It also verifies the integrity of a file you are copying over with checksums. These small optimizations allow greater file transfer flexibility and makes rsync ideal for directory synchronization remotely and locally, data backups, large data transfers and more.
+همچنین rsync یک پارچگی فایل‌های کپی شده را با استفاده از checksum بررسی می‌کند و
+شما می‌توانید از سلامت فایل‌های کپی شده اطمینان داشته باشید. این تغییر به ظاهر
+کوچک‌، انعطاف‌پذیری بیشتری را در فرآیند انتقال فایل فراهم می‌کند و rsync را به یک
+ابزار مناسب جهت همگام‌سازی فایل‌های روی ماشین‌های شبکه‌، پشتیبان‌گیری و انتقال
+فایل‌های بزرگ تبدیل می‌کند.
 
-Some commonly-used rsync options:
+بعضی از آپشن‌های پرکاربرد rsync به شرح زیر هستند: 
 
-<ul>
-<li>v - verbose output</li>
-<li>r - recursive into directories</li>
-<li>h - human readable output</li>
-<li>z - compressed for easier transfer, great for slow connections</li>
-</ul>
+- ‏v: خروجی بیشتر لاگ‌ها 
+- r: کپی فایل‌های داخل یک دایرکتوری و زیرشاخه‌های آن‌ها
+- h: نمایش سایز فایل‌ها مناسب برای کاربر
+- z: فشرده سازی فایل‌ها جهت آسان‌تر کردن انتقال فایل‌ها که روش بسیار مناسبی برای
+  انتقال فایل روی شبکه‌های با سرعت پایین‌تر است.
+  
+### کپی/همگام‌سازی فایل‌های روی یک ماشین
 
-<b>Copy/sync files on the same host</b>
+```
+$ rsync -zvr /my/local/directory/one /my/local/directory/two
+```
 
-<pre>$ rsync -zvr /my/local/directory/one /my/local/directory/two</pre>
+### کپی/همگام‌سازی فایل‌ها از ماشین حاضر به یک ماشین دیگر روی شبکه
 
-<b>Copy/sync files to local host from a remote host</b>
+```
+$ rsync /local/directory username@remotehost.com:/remote/directory
+```
 
-<pre>$ rsync /local/directory username@remotehost.com:/remote/directory</pre>
+### کپی/همگام‌سازی فایل‌ها از یک ماشین دیگر به ماشین حاضر
 
-<b>Copy/sync files to a remote host from a local host</b>
+```
+$ rsync username@remotehost.com:/remote/directory /local/directory
+```
 
-<pre>$ rsync username@remotehost.com:/remote/directory /local/directory</pre>
+## تمرینات
 
-## Exercise
+از rsync برای کپی یک دایرکتوری به دایرکتوری‌ای دیگر بهره بگیرید. توجه داشته باشید
+که اشتباها یک دایرکتوری مهم را بازنویسی نکنید!
 
-Use rsync to sync a directory to another directory, be sure not to overwrite an important directory!
+## سوال آزمون
 
-## Quiz Question
+از چه دستوری می‌توان برای پشتیبان‌گیری امن فایل‌ها استفاده کرد؟
 
-What command would be useful for data backups?
-
-## Quiz Answer
+## پاسخ آزمون
 
 rsync

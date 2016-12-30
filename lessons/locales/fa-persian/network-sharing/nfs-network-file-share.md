@@ -1,28 +1,41 @@
 # NFS
 
-## Lesson Content
+## محتوای درس
 
-The most standard network file share for Linux is NFS (Network File System), NFS allows a server to share directories and files with one or more clients over the network. 
+روش استاندارد اشتراک فایل در لینوکس NFS (سیستم فایل شبکه) نام دارد. NFS امکان
+اشتراک فایل و دایرکتوری را بین ماشین‌های مختلف یک شبکه برای سرور فراهم می‌کند. 
 
-We won't get into the details of how to create an NFS server as it can get complex, however we will discuss setting up NFS clients.
+ما به جزئیات ساخت یک سرور NFS نخواهیم پرداخت چرا که مبحث پیچیده‌ای پیش رو خواهیم
+داشت. اما به هر حال چگونگی ساخت کلاینت‌های NFS را بررسی می‌کنیم. 
 
-<b>Setting up NFS client</b>
+### برپاسازی کلاینت NFS
 
-<pre>$ sudo service nfsclient start
-$ sudo mount server:/directory /mount_directory</pre>
 
-<b>Automounting</b>
+```
+$ sudo service nfsclient start
+$ sudo mount server:/directory /mount_directory
+```
 
-Let's say you use the NFS server quite often and you want to keep it permanently mounted, normally you think you'd edit the /etc/fstab file, but you may not always get a connection to the server and that can cause issues on bootup. Instead what you want to do is setup automounting so that you can connect to the NFS server when you need to. This is done with the <b>automount</b> tool or in recent versions of Linux <b>amd</b>. When a file is accessed in a specified directory, automount will look up the remote server and automatically mount it. 
+### سوار کردن خودکار (Automounting)
 
-## Exercise
+بیایید فرض کنیم که شما به صورت مرتب از سرور NFS استفاده می‌کنید و می‌خواهید که
+همیشه به صورت خودکار روی سیستم‌تان سوار شده باشد. ممکن است استفاده از فایل
+`‎/etc/fstab` راه حل معقولی به نظر برسد. اما ممکن است که همیشه موفق به اتصال به
+سرور از طریق شبکه نشوید که نهایتا می‌تواند منجر به ایجاد مشکلاتی در زمان بارگذاری
+سیستم شود. راه حل بهتر استفاده از `automount` برای خودکار سازی فرایند اتصال به
+سرور NFS است. برای این کار باید از دستور `automount` بهره بگیرید که در نسخه‌های
+جدید لینوکس به `amd` تغییر پیدا کرده است. وقتی در خواست دسترسی به یک فایل خاص از
+یک دایرکتوری ارسال می‌شود‌، automount به صورت خودکار آن سرور مربوطه را پیدا کرده و
+به سیستم حاضر متصل می‌کند. 
 
-Read the manpage for NFS to learn more.
+## تمرین
 
-## Quiz Question
+با مراجعه به صفحهٔ man ابزار NFS در مورد آن بیشتر یاد بگیرید. 
 
-What tool is used to manage mount points automatically?
+## سوال آزمون
 
-## Quiz Answer
+از چه ابزاری می‌توان برای مدیریت خودکار درایو‌های سرور NFS استفاده کرد؟
+
+## پاسخ آزمون
 
 automount
