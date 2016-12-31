@@ -1,55 +1,89 @@
-# Compile Source Code
+# کامپایل سورس کد
 
-## Lesson Content
+## محتوای درس
 
-Often times you will encounter an obscure package that only comes in the form of pure source code. You'll need to use a few commands to get that source code package compiled and installed on your system. 
+گاها پیش می‌آید که نیاز به نصب بسته‌ای داریم که تنها به صورت سورس کد منتشر می‌شود‌.
+برای استفاده از آن سورس کد نیاز به استفاده از چند دستور جهت کامپایل و نصب آن روی
+سیستم خود دارید.
 
-First thing is first, you'll need to have software to install the tools that will allow you to compile source code. 
+اولین کار مورد نیاز ما نصب بسته‌ها و دستوراتی است که اجازهٔ کامپایل سورس کد را به
+ما می‌دهند:
 
-<pre>$ sudo apt install build-essential</pre>
+```
+$ sudo apt install build-essential
+```
 
-Once you do that, extract the contents of the package file, most likely a .tar.gz file. 
+وقتی این کار را انجام دادید‌، محتوای بستهٔ مورد نظر‌تان را از حالت فشرده که معمولا
+به صورت `‎.tar.gz` ارائه می‌شود خارج کنید.
 
-<pre>$ tar -xzvf package.tar.gz</pre>
+```
+$ tar -xzvf package.tar.gz
+```
 
-Before you do anything, take a look at the README or INSTALL file inside the package. Sometimes there will be specific installation instructions. 
+قبل از انجام هر کاری‌، نگاهی به فایل‌های `README` یا `INSTALL` که عموما همراه
+فایل‌های داخل بسته هستند بیاندازید.
 
-Depending on what compile method that the developer used, you'll have to use different commands, such as cmake or something else.
+بسته به متد کامپایل مورد استفاده توسط توسعه دهنده‌، ممکن است که نیاز باشد از
+دستور متفاوتی برای کامپایل بسته استفاده کنید.
 
-However, most commonly you'll see basic make compilation, so we'll discuss that:
+به هر حال‌، عمدهٔ بسته‌هایی که نیاز به کامپایل دارند از یک روش مرسوم استفاده می‌کنند
+که ما در ادامه به شرح آن خواهیم پرداخت:
 
-Inside the package contents will be a configure script, this script checks for dependencies on your system and if you are missing anything, you'll see an error and you'll need to fix those dependencies. 
+درون محتوای بستهٔ استخراج شده یک اسکریپت کانفیگ وجود دارد‌، این اسکریپت برای بررسی
+نیازمندی‌های بسته روی سیستم و این که چیز مورد نیازی از قلم نیافته باشد استفاده
+می‌شود. در صورت وجود چنین مشکلی این اسکریپت اخطار مناسبی بر می‌گرداند تا مشکلات آن
+نیازمندی‌ها را رفع کنید.
 
-<pre>$ ./configure</pre>
+```
+$ ./configure
+```
 
-The <b>./</b> allows you to execute a script in the current directory. 
+توجه داشته باشید که مقدار `/.` اجازهٔ اجرای اسکریپت از دایرکتوری حاضر را می‌دهند. 
 
-<pre>$ make</pre>
+```
+$ make
+```
 
-Inside of the package contents, there is a file called Makefile that contains rules to building the software. When you run the make command, it looks at this file to build the software.
+همچنین فایل دیگری به اسم `Makefile` درون محتوای بسته قرار داده می‌شود که شامل
+دستورات مورد نیاز برای کامپایل نرم‌افزار است. وقتی شما دستور `make` را اجرا
+می‌کنید‌، این دستور فایل ذکر شده را پیدا کرده و برای کامپایل بسته از آن کمک می‌گیرد. 
 
-<pre>$ sudo make install</pre>
+```
+$ sudo make install
+```
 
-This command actually installs the package, it will copy the correct files to the correct locations on your computer.
+نهایتا این دستوری است که وظیفهٔ نصب بستهٔ ذکر شده را بر عهده دارد. فایل‌های مناسب
+را در محل دقیقشان روی سیستم کپی می‌کند.
 
-If you want to uninstall the package, use:
+همچنین برای حذف نرم‌افزار از روی سیستم‌تان می‌توانید از دستور زیر کمک بگیرید:
 
-<pre>$ sudo make uninstall</pre>
+```
+$ sudo make uninstall
+```
 
-Be wary when using make install, you may not realize how much is actually going on in the background. If you decide to remove this package, you may not actually remove everything because you didn't realize what was added to your system. Instead forget everything about make install that I just explained to you and use the <b>checkinstall</b> command. This command will make a .deb file for you that you can easily install and uninstall. 
+توجه داشته باشید که وقتی از `make install` استفاده می‌کنید‌، ممکن است متوجه تمامی
+روند اجرا شده روی سیستم خود نشوید. در زمان پاک کردن یک بسته، ممکن است همه چیزی
+که در پس زمینه روی سیستم شما نصب شده‌اند پاک نشود چون شما ندیدید که در واقع چه
+چیز‌هایی روی سیستم اضافه شده‌اند. بهتر است به جای استفاده از `make install` از
+دستور `checkinstall` استفاده کنید. این دستور یک فایل `‎.deb` از بستهٔ حاضر ایجاد
+می‌کند که می‌توانید به راحتی روی سیستم نصب یا حذف‌اش کنید.
 
-<pre>$ sudo checkinstall</pre> 
+```
+$ sudo checkinstall
+``` 
 
-This command will essentially "make install" and build a .deb package and install it. This makes it easier to remove the package later on.
+این دستور در واقع یک `make install` اجرا کرده و با استفاده از خروجی آن یک بسته
+`‎.deb` ایجاد می‌کند و سپس اقدام به نصب آن می‌کند. این کار حذف بسته در آینده را
+راحت‌تر می‌کند.
 
-## Exercise
+## تمرین
 
-Find a source code program (from a trusted site) and install from source.
+یک سورس کد نرم‌افزار (از یک منبع معتبر) پیدا کرده و اقدام به نصب‌اش کنید. 
 
-## Quiz Question
+## سوال آزمون
 
-What should you use instead of make install ALWAYS? 
+از چه دستوری باید به جای `make install` استفاده شود؟
 
-## Quiz Answer
+## پاسخ آزمون
 
 checkinstall
