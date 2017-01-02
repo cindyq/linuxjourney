@@ -1,19 +1,32 @@
-# Package Dependencies
+# نیازمندی‌های بسته‌ها
 
-## Lesson Content
+## محتوای درس
 
-Packages very rarely work by themselves, they are most often accompanied by dependencies to help them run. For example, let's say we have a group of restaurants, these restaurants all make different cuisine, however they all get their ingredients from the same farm. Their food is dependent on the farm's supplies, if the farm were to suddenly stop supplying food, well then the restaurants would be in a pretty bad state. 
+بسته‌های نرم‌افزاری خیلی کم پیش می‌‌آید که به تنهایی قادر به کار کردن باشند و معمولا
+نیاز به بسته‌های دیگری دارند که به آن‌ها در زمان اجرا کمک کنند. برای مثال فرض کنید
+ما گروهی از رستوران‌ها را داریم که انواع غذا‌ها را ارائه می‌دهند، اما تمامی مواد
+مورد نیاز خود را از یک محل تهیه می‌کنند. غذا‌های ارائه شده به این مواد اولیه نیاز
+دارند و اگر محل ارائه کننده از ارائهٔ این مواد خودداری کند‌، طبیعتا رستوران‌های
+مورد نظر ما در موقعیت بدی قرار می‌گیرند.
 
-In Linux, these dependencies are often other packages or shared libraries. Shared libraries are libraries of code that other programs want to use and don't want to have to rewrite for themselves. Think of the restaurant again, how much work would it be if every restaurant also farmed their own food? Too much.
+در لینوکس‌، این نیازمندی‌ها معمولا بسته‌ها و کتابخانه‌های مشترک هستند. کتابخانه‌های
+مشترک‌، کتابخانه‌هایی از کد هستند که برنامه‌های دیگر نیاز به استفاده از این کد‌ها
+دارند ولی خودشان آن‌ها را به همراه ندارند. دوباره به رستوران‌ها فکر کنید، چقدر کار
+اضافه نیاز بود اگر رستوران‌ها می‌خواستند مواد اولیه مورد نیازشان را خودشان تامین
+کنند؟ خیلی!
 
-We will dig more into shared libraries in the filesystem course, so for now just remember that packages have dependencies to help them run, whether those dependencies are other packages or libraries, if the dependencies aren't there the package will end up in a broken state and most of the time not even install.
+در بخش سیستم‌فایل‌ها به طور کامل در خصوص کتابخانه‌های مشترک توضیح خواهیم داد، پس
+فعلا فقط به یاد داشته باشید که بسته‌ها معمولا به پیش‌نیاز‌هایی جهت اجرا نیازمندند
+که این پیش‌نیاز‌ها می‌توانند بسته‌های نرم‌افزاری دیگر یا کتاب‌خانه‌های مشترک باشند.
+غیبت این نیازمندی‌ها‌، معمولا باعث خراب شدن نرم‌افزار مورد نظر ما می‌شود و در اکثر
+مواقع حتی قادر به نصب بسته‌ها نخواهیم بود.
 
-## Exercise
+## تمرین
 
-No exercises for this lesson.
+هیچ تمرینی برای این بخش وجود دارد
 
-## Quiz Question
+## سوال آزمون
 
-No questions, move along!
+هیچ سوالی برای این بخش وجود ندارد
 
-## Quiz Answer
+## پاسخ آزمون
