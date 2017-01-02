@@ -1,52 +1,70 @@
-# rpm and dpkg
+# rpm و dpkg
 
-## Lesson Content
+## محتوای درس
 
-Although most of this course is about package management systems (the Batmans of package management), we mustn't forget about the Robins. Although very useful and reliable, they don't come with that sweet batmobile and utility belt.
+با وجود این که اکثر محتوای این بخش مربوط به سیستم‌های مدیریت بسته‌هاست (بت‌من مدیر
+بسته‌ها)، نباید رابین را فراموش کنیم. این ابزار‌ها هرچند خیلی کاربردی و قابل
+اعتماد هستند ولی بسیاری از لوازم خوب مانند کمربند بت‌من و بتموبیل را همراه
+ندارند!
 
-Just like .exe is a single executable file, so is .deb and .rpm. You normally wouldn't see these if you use package repositories, but if you directly download packages, you will most likely get them in these popular format. Obviously, they are exclusive to their distributions, .deb for Debian based and .rpm for Red Hat based.
+دقیقا مانند فایل‌های `‎.exe` که یک فایل یکتای قابل اجرا هستند‌، فایل‌های با پسوند
+`‎.deb` و `‎.rpm` نیز چنین‌اند. اگرچه شما عموما این فایل‌ها را در زمان استفاده از
+مدیر بسته‌ها نخواهید دید، اما اگر بسته‌ها را مستقیما دانلود کنید‌، احتمالا آن‌ها را
+با چنین فرمت‌های محبوبی خواهید دید. طبیعتا هر کدام از این فرمت‌ها در توزیع‌های
+مربوط به خود یافت می‌شوند. بسته‌های `‎.deb` در توزیع‌های بر مبنای دبیان و `‎.rpm` در
+توزیع‌های بر مبنای ردهت.
 
-To install these direct packages, you can use the package management commands: rpm and dpkg. These tools are used to install package files, however they will not install the package dependencies, so if your package had 10 dependencies, you would have to install those packages separately and then their dependencies and so on and so forth. As you can see, that was one of the reasons that brought forth the full blown management systems that we will discuss this later.
+برای نصب مستقیم این بسته‌ها شما از دستور‌هایی نظیر `rpm` و `dpkg` استفاده خواهید
+کرد که برای نصب فایل‌های بستهٔ نرم‌افزاری در نظر گرفته شده‌اند، با این وجود آن‌ها
+قادر به نصب نیازمندی‌های بسته‌های نرم‌افزاری نیستند. اگر برای مثال بستهٔ مورد نظر
+شما ۱۰ نیازمندی داشته باشد‌، شما باید آن‌ها را به صورت جداگانه نصب کنید. همانطور
+که می‌بینید چنین نیازی باعث به وجود آمدن سیستم‌های مدیریت بسته شد که بعدا در
+موردشان صحبت خواهیم کرد.
 
-Keep in mind that there will be countless times when you need to install, query or verify a package with one of these tools, so remember these commands. 
+به خاطر داشته باشید که موقعیت‌های فراوانی وجود خواهد داشت که برای نصب‌، جستجو و
+تایید یک بستهٔ نرم‌افزاری شما نیاز به استفاده از این دستور‌ها خواهید داشت. پس بهتر
+است با آن‌ها آشنا شوید.
 
-<b>Install a package</b>
+### نصب یک بسته
 
-<pre>
+```
 Debian: $ dpkg -i some_deb_package.deb
 RPM: $ rpm -i some_rpm_package.rpm
-</pre>
+```
 
-The <b>i</b> stands for install. You can also use the longer format of --install. 
+آرگومان `i` به معنای نصب است. همچنین شما می‌توانید از آرگومان طولانی‌تر
+`‎--install` نیز به همین منظور بهره بگیرید.
 
-<b>Remove a package</b>
+### حذف یک بسته
 
-<pre>
+```
 Debian: $ dpkg -r some_deb_package.deb
 RPM: $ rpm -e some_rpm_package.rpm
-</pre>
+```
 
-Debian: <b>r</b> for remove
-RPM: <b>e</b> for erase
+دبیان: `r` به معنای حذف (remove) بسته است.
+ردهت: `e` به معنای پاک کردن (erase) بسته است.
 
-<b>List installed packages</b>
+### لیست بسته‌های نصب شده
 
-<pre>
+```
 Debian: $ dpkg -l
 RPM: $ rpm -qa
-</pre>
+```
 
-Debian: <b>l</b> for list
-RPM: <b>q</b> for query and <b>a</b> for all
+دبیان: `l` به معنای لیست است.
+ردهت:‌ `q` به معنای جستجو و `a` به معنای همه است. 
 
-## Exercise
 
-Find a program that you want to install on your system like Google Chrome and install it using one of these commands.
+## تمرین
 
-## Quiz Question
+یک برنامه مانند Google Chrome پیدا کنید که نیاز به نصب آن دارید و با استفاده از
+این دستور‌ها سعی در نصب‌شان کنید.
 
-What is the package management tool for .deb files?
+## سوال آزمون
 
-## Quiz Answer
+از کدام ابزار مدیریت بسته برای نصب فایل‌های `‎.deb` بهره گرفته می‌شود؟
+
+## پاسخ آزمون
 
 dpkg

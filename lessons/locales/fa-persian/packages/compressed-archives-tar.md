@@ -1,69 +1,92 @@
-# tar and gzip
+# tar و gzip
 
-## Lesson Content
+## محتوای درس
 
-Before we get into package installation and the different managers, we need to discuss archiving and compressing files, because you will most likely encounter these when you hunt for software on the internet. 
+قبل از بررسی چگونگی نصب بسته‌ها و انواع مدیر بسته‌ها‌، نیاز است که به راه حل‌های
+آرشیو و فشرده‌سازی فایل‌ها بپردازیم‌، چرا که عمدتا وقتی نرم‌افزار جدیدی روی اینترنت
+می‌یابید‌، با این فشرده‌ساز‌ها روبرو می‌شوید.
 
-You probably already know what a file archive is, you've most likely encountered file types such as .rar and .zip. These are an archive of files, they contain many files inside of them, but they come in this very neat single file known as an archive.
+احتمالا می‌دانید که یک فایل آرشیو چیست و انواعی همچون ‎.rar و ‎.zip را دیده‌اید.
+این‌ها فایل‌های آرشیو هستند و تعدادی فایل را در خود نگهداری می‌کنند ولی به قالب یک
+فایل موسوم به آرشیو منتشر می‌شوند.
 
-<b>Compressing files with gzip</b>
+### فشرده‌سازی فایل‌ها با استفاده از gzip
 
-gzip is program used to compress files in Linux, they end in a .gz extension. 
+‏gzip برنامه‌ای است که برای فشرده‌سازی فایل روی لینوکس استفاده می‌شود و فایل‌های
+نهایی تولید شده توسط آن با پسوند ‎.gz شناخته می‌شوند.
 
-To compress a file down:
-<pre>$ gzip mycoolfile</pre>
+برای فشرده‌سازی یک فایل می‌توانید از دستور زیر استفاده کنید:
 
-To decompress the file:
-<pre>$ gunzip mycoolfile.gz</pre>
+```
+$ gzip mycoolfile
+```
 
-<b>Creating archives with tar</b>
-Unfortunately, gzip can't add multiple files into one archive for us. Luckily we have the tar program which does. When you create an archive using tar, it will have a .tar extension. 
+و برای خارج کردن یک فایل از حالت فشرده نیز از دستور زیر بهره بگیرید:
 
-<pre>$ tar cvf mytarfile.tar mycoolfile1 mycoolfile 2</pre>
+```
+$ gunzip mycoolfile.gz
+```
 
-<ul>
-<li>c - create</li>
-<li>v - tell the program to be verbose and let us see what it's doing</li>
-<li>f - the filename of the tar file has to come after this option, if you are creating a tar file you'll have to come up with a name</li>
-</ul>
+### ساخت فایل‌های آرشیو tar
 
-<b>Unpacking archives with tar</b>
+متاسفانه دستور gzip قادر به اضافه کردن چند فایل در یک آرشیو نیست. به همین منظور
+باید از برنامهٔ tar که چنین قابلیتی را فراهم می‌کند استفاده کنیم. وقتی توسط tar یک
+فایل آرشیو می‌سازید‌، نتیجهٔ نهایی با پسوند ‎.tar شناخته می‌شود.
 
-To extract the contents of a tar file, use: 
 
-<pre>$ tar xvf mytarfile.tar</pre>
+```
+$ tar cvf mytarfile.tar mycoolfile1 mycoolfile 2
+```
 
-<ul>
-<li>x - extract</li>
-<li>v - tell the program to be verbose and let us see what it's doing</li>
-<li>f - the file you want to extract</li>
-</ul>
+در این دستور آرگومان‌های استفاده شده به شرح زیر هستند:
 
-<b>Compressing/uncompressing archives with tar and gzip</b>
+- ‏c: بساز
+- v: به برنامه بگو که تمام روند ساخت فایل آرشیو را گزارش کند.
+- f: نام فایل نتیجهٔ نهایی که بعد از این آرگومان مشخص شده. توجه داشته باشید که
+  لازم است این نام را در هنگام ساخت یک tar جدید شما انتخاب کنید.
+  
+### خارج کردن فایل‌ها از یک آرشیو tar
 
-Many times you'll see a tar file that has been compressed such as: mycompressedarchive.tar.gz, all you need to do is work outside in, so first remove the compression with gunzip and then you can unpack the tar file. Or you can alternatively use the <b>z</b> option with tar, which just tells it to use the gzip or gunzip utility.
+برای خارج کردن فایل‌ها می‌توانید از دستور زیر بهره بگیرید: 
 
-Create a compressed tar file:
-<pre>$ tar czf myfile.tar.gz</pre>
+```
+$ tar xvf mytarfile.tar
+```
 
-Uncompress and unpack: 
-<pre>$ tar xzf file.tar</pre>
+آرگومان‌های به کار رفته شده در این دستور به شرح زیر هستند:
 
-If you need help remember this: e<b>X</b>tract all <b>Z</b>ee <b>F</b>iles!
+- ‏x: خارج کن
+- v: به برنامه بگو که تمام روند خارج کردن فایل‌ها از آرشیو را گزارش کند. 
+- f: نام فایلی آرشیوی که قصد خارج کردن محتوایش را داریم. 
 
-tar is one of those commands that is so important and yet you never really remember it, relevant xkcd: <a href="https://xkcd.com/1168/">https://xkcd.com/1168/</a>
+### فشرده‌سازی و خارج کردن محتوای فایل‌های فشرده شده با استفاده از tar و gzip
 
-<b>Other Utilities</b>
+زمان‌هایی پیش می‌آید که با فایل‌هایی مواجه می‌شوید که با tar آرشیو شده و با gzip
+فشرده شده‌اند که فرمی به صورت `mycompressedarchive.tar.gz` دارند. تمام چیزی که
+برای خارج کردن این فایل‌ها نیاز است، به ترتیب حذف فشرده‌سازی و سپس خارج کردن
+فایل‌ها از آرشیو نتیجه است. خوشبختانه با پیشرفت‌های اخیر دستور tar، همان دستور
+خارج کردن فایل‌ها از یک آرشیو که در مرحلهٔ قبل توضیح‌اش دادیم‌، قادر به انجام این کار است:
 
-Throughout your journey of Linux, you'll encounter other archive and compression types such as: bzip2, compress, zip, unzip, etc. They are a little less common, but just keep in mind that different utilities will call for different commands.
+```
+tar xvf mycompressedarchive.tar.gz
+```
 
-## Exercise
+دستور tar ابزار قدرتمندی است که احتمالا در بسیاری مواقع ممکن است آن را فراموش کنید. [این کارتون xkcd به خوبی از وضعیت را شرح می‌دهد.](https://xkcd.com/1168)
 
-Familiarize yourself with the tar documentation and look at the other options available in the manpage.
+### دیگر ابزار‌ها
 
-## Quiz Question
+در طول مراحل سفرتان در لینوکس، احتمالا با انواع دیگر روش‌های فشرده‌سازی نظیر
+bzip2, compress, zip و… آشنا می‌شوید. این ابزار‌ها کمی غیر مرسوم‌تر هستند‌، ولی توجه
+داشته باشید که هر کدام از این انواع ابزار‌های مربوط به خود را جهت فشرده‌سازی و
+خارج کردن فایل‌ها از حالت فشرده دارند.
 
-What tar flag is used to create archives?
+## تمرین
+
+خود را از طریق مستندات دستور tar با این ابزار آشنا کنید و با دیگر آرگومان‌های موجود آشنا شوید. 
+
+## سوال آزمون
+
+از کدام آرگومان tar برای ساخت یک فایل آرشیو جدید استفاده می‌شود؟
 
 ## Quiz Answer
 
