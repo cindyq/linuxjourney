@@ -1,47 +1,50 @@
-# yum and apt
+# yum و apt
 
-## Lesson Content
+## محتوای درس
 
-Ah, the Batmans of package management, these systems come with all the fixins to make package installation, removal and changes easier, including installing package dependencies. Two of the most popular management systems is <b>yum</b> and <b>apt</b>. Yum is exclusive to the Red Hat family and apt is exclusively to the Debian family.
+بت‌من‌های مدیریت بسته… این دو سیستم‌، شامل تمامی ابزار‌های لازم برای نصب‌، حذف و
+تغییر سادهٔ یک بسته هستند که قابلیت نصب نیازمندی‌های بسته را نیز به همراه دارند.
+دو نمونه از معروف‌ترین این مدیر بسته‌ها `apt` و `yum` هستند که `yum` به طور عمده
+در توزیع‌های خانوادهٔ ردهت و `apt` در توزیع‌های خانوادهٔ دبیان استفاده می‌شود. 
 
-<b>Install a package from a repository</b>
+### نصب یک بسته از مخزن
 
-<pre>
+```
 Debian: $ apt install package_name
 RPM: $ yum install package_name
-</pre>
+```
 
-<b>Remove a package</b>
+### حذف یک بسته
 
-<pre>
+```
 Debian: $ apt remove package_name
 RPM: $ yum erase package_name
-</pre>
+```
 
-<b>Updating packages for a repository</b>
+### به روزرسانی بسته‌های یک مخزن
 
-It's always best practice to update your package repositories so they are up to date before you install and update a package. 
+به روزرسانی مخزن مدیر بسته‌ها کاری است که عموما قبل از نصب بسته‌های جدید پیشنهاد می‌شود. 
 
-<pre>
+```
 Debian: apt update; apt upgrade
 RPM: yum update
-</pre>
+```
 
-<b>Get information about an installed package</b>
+### دریافت اطلاعات بسته‌های نصب شده
 
-<pre>
+```
 Debian: apt show package_name
 RPM: yum info package_name
-</pre>
+```
 
-## Exercise
+## تمرین
 
-Run through each of these package commands and see the output you receive.
+دستور‌های معرفی شده در این درس را اجرا کرده و خروجی آن‌ها را مشاهده کنید.
 
-## Quiz Question
+## سوال آزمون
 
-What command is used to show package information on a Debian system?
+از کدام دستور برای مشاهدهٔ اطلاعات بسته‌های نصب شده در سیستم‌های بر مبنای دبیان استفاده می‌شود؟
 
-## Quiz Answer
+## پاسخ آزمون
 
 apt show
