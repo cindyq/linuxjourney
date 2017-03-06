@@ -1,23 +1,39 @@
-# Package Repositories
+# مخزن‌های نرم‌افزار
 
-## Lesson Content
+## محتوای درس
 
-How do packages that get uploaded to the internet somehow end up on our computers? Do you go to the download page of each package you want and click download and install? Well, actually you can do that, but there is something better called package repositories. Repositories are just a central storage location for packages. There are tons of repositories that hold lots of packages and best of all they are all found on the internet, no silly installation disks. Your machine doesn't know where to look for these repositories unless you explicitly tell it where to look.
+بسته‌های نرم‌افزاری‌ای که روی اینترنت بارگذاری می‌شوند چطور به سیستم شما می‌رسند؟ به
+یک صفحهٔ دانلود می‌روید رو برای دانلود بسته کلیک می‌کنید و پس از دانلود نصب‌شان
+می‌کنید؟ خوب البته این کار را هم می‌توانید بکنید‌، اما راه بهتری به عنوان مخزن
+نرم‌افزار نیز وجود دارد. مخزن‌ها در واقع چیزی جز یک فضای ذخیره‌سازی برای بسته‌های
+نرم‌افزاری نیستند. هزاران مخزن نرم‌افزاری شامل بسیاری از بسته‌ها هستند که بهترین
+قسمت قضیه در دسترس بودن آن‌ها روی اینترنت است، که ما را از دیسک‌های نرم‌افزار
+بی‌نیاز می‌کند. البته ماشین شما تا زمانی که به طور درست تنظیم نشود، نمی‌داند که کجا
+باید این مخزن‌ها را پیدا کند.
 
-For example, let's say I want WackyWidgets Software on my machine. Well WackyWidgets manages their own repositories for their widget packages, inside this repository are 10 packages, the CoolWidget package, the SuperWidget package, etc. WackyWidgets hosts this repository at a source link called: http://download.widgets/linux/deb/
+برای مثال فرض کنید که من به نرم‌افزار `WackyWidgets` روی ماشین خودم نیازمندم. خوب
+تیم `WackyWidgets` مخازن مربوط به بسته‌های ابزارک خود را ارائه می‌کنند. درون این
+مخازن ۱۰ بستهٔ نرم‌افزاری شامل `SuperWidget`، `CoolWidget` و … یافت می‌شود که در
+آدرس http://download.widgets/linux/deb در دسترس است. 
 
-Now instead of going to their website to download the package directly, you can tell your machine to find WackyWidgets software from the source link. 
+حالا به جای رفتن مستقیم به وب‌سایت این تیم و دانلود این بسته‌ها‌، شما می‌توانید
+ماشین خود را برای دریافت نرم‌افزار از لینک منبع تنظیم کنید.
 
-Your distribution already comes with pre-approved sources to get packages from and this is how it installs all the base packages you see on your system. On a Debian system, this sources file is the <b>/etc/apt/sources.list</b> file. Your machine will know to look there and check for any source repositories you added. 
+توزیع مورد استفاده‌تان با لیستی از مخزن‌های تایید شده ارائه می‌شود و این مخزن‌ها
+مسئول نصب بسته‌های سیستم‌تان تا این لحظه بوده‌اند. روی یک سیستم بر مبنای دبیان این
+فایل تنظیمات در آدرس `‎/etc/apt/sources.list` قرار دارد که ماشین شما مخازن
+نرم‌افزاری مورد نیازش را از روی آن می‌خواند.
 
-## Exercise
 
-No exercises for this lesson.
+## تمرین
 
-## Quiz Question
+تمرینی برای این بخش وجود ندارد. 
 
-Where is the sources file in a Debian system?
+## سوال آزمون
 
-## Quiz Answer
+فایل تنظیم لیست مخازن مورد استفاده در سیستم‌های بر مبنای دبیان در کدام مسیر قرار
+دارد؟
+
+## پاسخ آزمون
 
 /etc/apt/sources.list
