@@ -13,7 +13,7 @@ Man kann mehrere Dateien und Ordner auf einmal kopieren, oder Platzhalter verwen
 <ul>
 <li>* Dieser Platzhalter seht für jede Anzahl an beliebigen Zeichen.</li>
 <li>? Steht für genau ein Zeichen (Buchstaben oder Zahlen)</li>
-<li>[] Dieser Platzhalter kann für alle Zeichen die in den Klammer angegeben werden stehen.</li>
+<li>[] Dieser Platzhalter kann für alle Zeichen die in der Klammer angegeben werden stehen.</li>
 </ul>
 
 <pre>$ cp *.jpg /home/pete/Bilder</pre>
@@ -36,7 +36,7 @@ Kopiere einige Dateien hin- und her. Sei vorsichtig, dass du nichts wichtiges ü
 
 ## Quizfrage
 
-Welchen Parameter brauchst du um einen Ordner zu kopieren?
+Welchen Parameter brauchst du, um einen Ordner zu kopieren?
 
 ## Quiz Antwort
 

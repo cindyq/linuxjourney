@@ -2,7 +2,7 @@
 
 ## Inhalt der Lektion
 
-Nachdem wir jetzt wissen wie wir uns im Verzeichnisbaum bewegen, stellt sich die Frage wie wir herausfinden welche Verzeichnisse und Dateien es überhaupt gibt. Bis jetzt bewegten wir uns völlig im dunkeln. Aber es gibt Abhilfe, mit dem ls Kommando zum auflisten von Verzeichnisinhalten. Das ls Kommando listet standardmäßig Ordner und Dateien auf die sich im aktuellen Verzeichnis befinden, man kann aber auch einen Pfad angeben für den man eine Liste haben möchte.
+Nachdem wir jetzt wissen, wie wir uns im Verzeichnisbaum bewegen, stellt sich die Frage wie wir herausfinden, welche Verzeichnisse und Dateien es überhaupt gibt. Bis jetzt bewegten wir uns völlig im Dunkeln. Aber es gibt Abhilfe, mit dem ls Kommando zum Auflisten von Verzeichnisinhalten. Das ls Kommando listet standardmäßig Ordner und Dateien auf, die sich im aktuellen Verzeichnis befinden. Man kann aber auch einen Pfad angeben für den man eine Liste haben möchte.
 
 <pre>$ ls
 $ ls /home/pete</pre>
@@ -28,7 +28,7 @@ drwxr-x--- 2 pete penguingroup   4096 Jul 27 12:41 Public
 drwxr-x--- 2 pete penguingroup   4096 Jul 27 12:41 Templates
 drwxr-x--- 2 pete penguingroup   4096 Jul 27 12:41 Videos</pre>
 
-Shell-Kommandos haben meist Optionen (auch Argumente oder Flags genannt) für mehr Funktionen. In unserem Beispiel haben wir -a und -l kennengelern, man kann diese Optionen aber auch kombinieren z.B. -la. Die Reihenfolge der Optionen spielt meistens keine Rolle, ls -al funtkioniert genauso wie ls -la.
+Shell-Kommandos haben meist Optionen (auch Argumente oder Flags genannt) um mehr Funktionen zur Verfügung zu stellen. In unserem Beispiel haben wir -a und -l kennengelernt, man kann diese Optionen aber auch kombinieren: -la. Die Reihenfolge der Optionen spielt meistens keine Rolle, ls -al funtkioniert genauso wie ls -la.
 
 <pre>$ ls -la</pre>
 
@@ -36,11 +36,11 @@ Shell-Kommandos haben meist Optionen (auch Argumente oder Flags genannt) für me
 
 Führe ls mit unterschiedlichen Optionen aus und vergleiche die Ausgabe.
 
-Tipp: `ls --help` zeigt dir weitere optionen an.
+Tipp: `ls --help` zeigt dir weitere Optionen an.
 
 ## Quizfrage
 
-Mit welchem Befehl zeigt man versteckte dateien an?
+Mit welchem Befehl zeigt man versteckte Dateien an?
 
 ## Quiz Antwort
 

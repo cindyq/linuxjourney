@@ -2,8 +2,8 @@
 
 ## Inhalt der Lektion
 
-Wenn du längere Textdateien betrachten möchtest ist less (weniger) of besser als more (mehr). Der Witz in der Namensgebung des less Kommandos, rührt daher dass es tatsächlich auch ein more Kommando gibt (ähnlich zu less). Im Gegensatz zu cat lässt sich der Text mit less scrollen und wird seitenweiße dargestellt. Somit lässt sich bequem durch den Text navigieren. Auch eine Suche ist z.B. möglich.
-
+Wenn du längere Textdateien betrachten möchtest ist less (weniger) of besser als more (mehr). Der Witz in der Namensgebung des less Kommandos rührt daher dass es tatsächlich auch ein more Kommando gibt (ähnlich zu less). Im Gegensatz zu cat lässt sich der Text mit less scrollen und wird seitenweiße dargestellt. Somit lässt sich bequem durch den Text navigieren.
+ 
 Probiere es einfach aus indem du eine Textdatei mit less öffnest. Wenn du dich in less befindest kannst du die Tastatur benutzen um durch die Datei zu navigieren.
 
 <pre>$ less /home/pete/Documents/text1</pre>
