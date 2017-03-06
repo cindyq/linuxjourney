@@ -26,13 +26,13 @@ de:
       flag: "flags/Germany.png"
   home:
     tagline:
-      title: "Lerne die Art von Linux kennen, kostenlos"
+      title: "Lerne die Art von Linux kennen, kostenlos."
     subscribe:
-      title: "Abonieren"
+      title: "Abonnieren"
       body: "Erhalte Neuigkeiten zu neuen Kursen und Lektionen!"
     about:
       title: "Über uns"
-      body: "Das hier zusammengetragene Wissen entstand durch die Unterstützung der open-source Gemeinde."
+      body: "Das hier zusammengetragene Wissen entstand durch die Unterstützung der Open-Source Gemeinde."
       url_name: "Trage zu diesem Projekt bei"
       url: "https://github.com/cindyq/linuxjourney"
     contact:
