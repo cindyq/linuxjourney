@@ -16,7 +16,7 @@
 
 * Processi - Impara come eseguire processi sul sistema.
 
-* Packages - Impara tutto riguardo a tools di gestione dei pacchetti dpkg, apt-get, rpm e yum.
+* Packages - Impara tutto riguardo a tools di gestione dei pacchetti dpkg, apt-get, rpm e dnf.
 
 
 

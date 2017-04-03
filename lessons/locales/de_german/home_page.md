@@ -16,7 +16,7 @@
 
 * Prozesse - Lerne etwas über die laufenden Prozesse auf deinem System.
 
-* Pakete - Lerne alles über die dpkg, apt-get, rpm and yum Paketverwaltungswerkzeuge.
+* Pakete - Lerne alles über die dpkg, apt-get, rpm and dnf Paketverwaltungswerkzeuge.
 
 ## Wandergeselle
 

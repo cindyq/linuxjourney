@@ -16,7 +16,7 @@
 
 * Processes - Learn about the running processes on the system.
 
-* Packages - Learn all about the dpkg, apt-get, rpm and yum package management tools.
+* Packages - Learn all about the dpkg, apt-get, rpm and dnf package management tools.
 
 ## Journeyman
 
