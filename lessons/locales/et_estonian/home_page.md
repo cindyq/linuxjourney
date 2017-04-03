@@ -16,7 +16,7 @@
 
 * Protsessid - Vaatame lähemalt süsteemis töötavaid protsesse.
 
-* Paketid - Tutvustatakse <i>dpkg</i>, <i>apt-get</i>, <i>rpm</i> ja <i>yum</i> paketihalduse tööriistu.
+* Paketid - Tutvustatakse <i>dpkg</i>, <i>apt-get</i>, <i>rpm</i> ja <i>dnf</i> paketihalduse tööriistu.
 
 ## Sell
 

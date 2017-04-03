@@ -16,7 +16,7 @@
 
 * Processus - Apprenez les processus en cours d'exécution sur le système.
 
-* Paquets - Apprenez tout sur gestionnaire de paquets dpkg, apt-get, rpm et yum.  
+* Paquets - Apprenez tout sur gestionnaire de paquets dpkg, apt-get, rpm et dnf.  
 
 ## Compagnons
 

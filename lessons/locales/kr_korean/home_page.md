@@ -16,7 +16,7 @@
 
 * Processes - 시스템에서 실행중인 프로세스에 대해 자세히 알아보자 
 
-* Packages - dpkg, apt-get, rpm , yum 등이 패키지 관리 툴에 대해 배워보자 
+* Packages - dpkg, apt-get, rpm , dnf 등이 패키지 관리 툴에 대해 배워보자 
 
 ## Journeyman
 
