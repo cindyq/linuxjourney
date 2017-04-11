@@ -1,4 +1,4 @@
-# symlinks
+# links
 
 ## Lesson Content
 
