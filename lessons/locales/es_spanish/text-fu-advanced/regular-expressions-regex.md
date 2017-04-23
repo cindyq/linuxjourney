@@ -2,54 +2,51 @@
 
 ## Lesson Content
 
-Regular expressions are a powerful tool to do pattern based selection. It uses special notations similar to those we've encountered already such as the * wildcard. 
+Las expresiones regulares son una poderosa herramienta para seleccionar en base a patrones. Usan una notación especial similar a la ya vista como los wildcards.
 
-We'll go through a couple of the most common regular expressions, these are almost universal with any programming language.
+Veremos un par de las más comunes expresiones regulares, aquellas que son casi universales en casi cualquier lenguaje de programación.
 
-Well use this phrase as our test string:
+Usaremos esta frase como nuestra cadena de prueba:
 <pre>
-sally sells seashells 
+sally sells seashells
 by the seashore
 </pre>
 
-<b>1. Beginning of a line with ^</b>
+<b>1. Principio de una línea con ^</b> nos dará como resultado "by the seashore"
 
 <pre>
-<b>^</b>by
-would match the line "by the seashore"
+<b>^</b>
 </pre>
 
-<b>2. End of a line with $</b>
+<b>2. Final de una línea con $</b> nos dará como resultado "by the seashore"
 
 <pre>
 seashore<b>$</b>
-would match the line "by the seashore"
 </pre>
 
-<b>3. Matching any single character with .</b>
+<b>3. Coincidencia con cualquier caracter con .</b> nos dará como resultado
 
 <pre>
 b<b>.</b>
-would match by
 </pre>
 
 <b>4. Bracket notation with [] and ()</b>
 
-This can be a little tricky, brackets allow us to specify characters found within the bracket. 
+This can be a little tricky, brackets allow us to specify characters found within the bracket.
 
 <pre>
 d<b>[iou]</b>g
 would match: dig, dog, dug
 </pre>
 
-The previous anchor tag ^ when used in a bracket means anything except the characters within the bracket. 
+The previous anchor tag ^ when used in a bracket means anything except the characters within the bracket.
 
 <pre>
 d<b>[^i]</b>g
 would match: dog and dug but not dig
 </pre>
 
-Brackets can also use ranges to increase the amount of characters you want to use. 
+Brackets can also use ranges to increase the amount of characters you want to use.
 
 <pre>
 d<b>[a-c]</b>g
@@ -67,14 +64,14 @@ And those are some basic regular expressions.
 
 ## Exercise
 
-Try to combine regular expressions with grep and search through some files.
+Intenta combinar las expresiones regulares con grep y busca algo en algunos archivos.
 
 <pre>
-grep [regular expression here] [file]
+grep [expresión regular] [archivo]
 
 ## Quiz Question
 
-What regular expression would you use to match a single character?
+¿Qué expresión regular usarías si quisieras buscar un caracter individual?
 
 ## Quiz Answer
 

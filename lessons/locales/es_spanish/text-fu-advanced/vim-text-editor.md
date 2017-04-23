@@ -2,18 +2,18 @@
 
 ## Lesson Content
 
-Vim stands for vi (Improved) just like its name it stands for an improved version of the vi text editor command.
+Vim signigica vi (mejorado - improved, en inglés) que como su nombre indica se trata de una versión mejorada del editor de texto vi.
 
-It's super lightweight, opening and editing a file with vim is quick and easy. It's also almost always available, if you booted up a random Linux distribution, chances are vim is installed by default. 
+Es super ligero, abrir y editar un archivo con vim es rápido y fácil. Está disponible en casi todas las distribuciones, con lo que si ejecutas una distro aleatorio, es casi seguro que tenga vim instalado por defecto.
 
-To fire up vim just type: <pre>vim</pre>
+Para lanzar vim, escribe: <pre>vim</pre>
 
 ## Exercise
 
-No exercises for this lesson.
+No hay ejercicios para esta lección.
 
 ## Quiz Question
 
-No questions move along!
+No hay preguntas tampoco.
 
 ## Quiz Answer

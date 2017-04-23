@@ -2,22 +2,22 @@
 
 ## Lesson Content
 
-Now you may notice, the mouse is nowhere is use here. To navigate a text document in vim, use the following keys: 
+Como puedes comprobar, el ratón no tiene cabida aquí. Para navegar en un documento de texto en vim, usa las siguientes teclas:
 
 <ul>
-<li>h or the left arrow - will move you left one character</li>
-<li>j or the up arrow - will move you up one line</li>
-<li>k or the down arrow - will move you down one line</li>
-<li>l or the right arrow - will move you right one character</li>
+<li>h o flecha izquieda - se moverá a la izquierda un caracter</li>
+<li>j o flecha arriba - se moverá arriba una línea</li>
+<li>k o flecha abajo - se moverá abajo una línea</li>
+<li>l o flecha derecha - se moverá a la derecha un caracter</li>
 </ul>
 
 ## Exercise
 
-No exercises for this lesson.
+No hay ejercicios para esta lección.
 
 ## Quiz Question
 
-What letter is used to move down?
+¿Qué letra se usa para mover hacia abajo?
 
 ## Quiz Answer
 

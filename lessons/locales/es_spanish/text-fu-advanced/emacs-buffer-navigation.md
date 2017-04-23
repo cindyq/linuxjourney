@@ -2,39 +2,39 @@
 
 ## Lesson Content
 
-To move around buffers (or files you're visiting) use the following commands:
+Para cambiar de buffers (o de archivos que estés mirando) usa los siguiente comandos:
 
-<b>Switch buffers</b>
+<b>Cambiar buffers</b>
 
 <pre>
-C-x b - switch buffer
-C-x right arrow - right-cycle through buffer
-C-x left arrow - left-cycle through buffer
+C-x b - cambiar buffer
+C-x flecha derecha - buffer hacia la derecha
+C-x flecha izquierda - buffer hacia la izquierda
 </pre>
 
-<b>Close the buffer</b>
+<b>Cerrar el buffer</b>
 
 <pre>C-x k</pre>
 
-<b>Split the current buffer</b>
+<b>Dividir el buffer actual</b>
 
 <pre>C-x 2</pre>
 
-This allows you see multiple buffers on one screen. To move between these buffers use: C-x o
+Esto te permite ver varios buffers en una pantalla. Para moverte entre estos buffers usa C-x o
 
-<b>Set a single buffer as the current screen</b>
+<b>Seleciona un buffer como pantalla actual</b>
 
 <pre>C-x 1</pre>
 
-If you ever used a terminal multiplexer like screen and tmux, the buffer commands will feel very familiar.
+Si alguna vez usaste un terminal multiplexer como pantalla y tmux, los comandos de buffer te serán muy familiares.
 
 ## Exercise
 
-Play around with buffers.
+Experimenta con los buffers.
 
 ## Quiz Question
 
-How do you kill a buffer?
+¿Cómo cierras un buffer?
 
 ## Quiz Answer
 

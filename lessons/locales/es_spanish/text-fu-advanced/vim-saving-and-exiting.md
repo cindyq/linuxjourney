@@ -2,30 +2,29 @@
 
 ## Lesson Content
 
-Now that you've done your editing it's time to actually save and quit out of vim: 
+Ahora que ya has editado algo, es hora de que lo guardes y salgas de vim:
 
 <ul>
-<li>:w - writes or saves the file</li>
-<li>:q - quit out of vim</li>
-<li>:wq - write and then quit</li>
-<li>:q! - quit out of vim without saving the file</li>
-<li>ZZ - equivalent of :wq, but one character faster</li>
-
-<li>u - undo your last action</li>
-<li>Ctrl-r - redo your last action</li>
+<li>:w - edita o guarda el archivo</li>
+<li>:q - sale de vim</li>
+<li>:wq - edita y luego sale</li>
+<li>:q! - sale de vim sin salvar el archivo</li>
+<li>ZZ - equivalente a :wq, pero más rápido de teclear</li>
+<li>u - deshacer tu última acción</li>
+<li>Ctrl-r - rehacer tu última acción</li>
 </ul>
 
-You may not think ZZ is necessary, but you'll eventually see that your fingers may tend to lean towards this rather than :wq.
+Puedes pensar que ZZ no es necesario, pero veras que tus dedos tienden a irse hacia allí en vez de hacia :wq.
 
-Whew that was a lot of information to take about Vim. Now that you know some basic commands and navigation, you can start editing some text files. There are many more options you can use in vim to increase your ability to master this text editor, head on to Vim's online guide to take a look.
+Ok, esto ha sido un buen repaso sobre Vim. Ahora que sabes algunos comandos básicos, puedes empezar a editar algunos archivos de texto. Hay muchísimas más opciones que puedes usar en vim para incrementar tu productividad con este editor de texto. Échale un ojo a la guía online de Vim para aprender más.
 
 ## Exercise
 
-No exercises for this lesson.
+No hay ejercicios para esta lección.
 
 ## Quiz Question
 
-How do you quit out of vim without saving?
+¿Cómo sales de vim sin guardar?
 
 ## Quiz Answer
 
