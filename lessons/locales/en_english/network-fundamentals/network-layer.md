@@ -2,18 +2,19 @@
 
 ## Lesson Content
 
-The Network layer determines the routing of our packets from our source host to a destination host. Fortunately in our example, our packet is only traveling within the same network, but the Internet is made up of many networks. These smaller networks that make up the Internet are known as subnets. All subnets connect to each other in some way, which is why we are able to get to www.google.com even though it's on its own network. I won't go into detail as we have a whole course dedicated to subnets, but for now in regards to our Network layer, know that the IP addresses define the rules to travel to different subnets. 
+La capa de red determina la ruta de nuestros paquetes desde nuestro host hacia el host de destino. Por suerte en nuestro ejemplo, nuestro paquete solo viaja por la misma red, pero Internet está formado por muchas redes. Estas redes más pequeñas que componen Internet son conocidas como subredes. Todas las subredes se conectan entre sí de algún modo, motivo por el cual podemos conectarnos a www.google.com incluso estando este en su propia red. No entraré en los detalles ya que hay un curso entero dedicado a las subredes, pero por ahora, con respecto a nuestra capa de de red, saber que las direciones IP definen las reglas para acceder a las distintas subredes.
 
-In the network layer, it receives the segment coming from the transport layer and encapsulates this segment in an IP packet then attaches the IP address of the source host and the IP address of the destination host to the packet header. So at this point, our packet has information about where it is going and where it came from. Now it sends our packet to the physical hardware layer.
+En la capa de red, se recibe el segmento que viene de la capa de transporte, encapsulándose este en un paquete IP para ser adjuntado a la dirección IP del host principal y la dirección IP del host de destino a la cabecera del paquete. Por lo que en este punto, nuestro paquete tiene información sobre a donde va y de donde viene. Ahora nuestro paquete puede enviarse a la capa del hardware. 
+
 
 ## Exercise
 
-No exercises for this lesson.
+No hay ejercicios para esta lección.
 
 ## Quiz Question
 
-What are smaller networks that make up the Internet called?
+¿Cómo se llaman las redes más pequeñas que componen Internet?
 
 ## Quiz Answer
 
-subnets
+subredes
