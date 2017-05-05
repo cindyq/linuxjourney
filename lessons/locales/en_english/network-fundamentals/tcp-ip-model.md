@@ -26,9 +26,9 @@ This layer uses:
 
 <b>Network Layer</b>
 
-This layers specifies how to move packets between hosts and across networks.
+This layer specifies how to move packets between hosts and across networks.
 
-This layer uses:
+Network layer uses:
 <ul>
 <li>IP (Internet Protocol) - Helps route packets from one machine to another.</li>
 <li>ICMP (Internet Control Message Protocol) - Helps tell us what is going on, such as error messages and debugging information.</li>
