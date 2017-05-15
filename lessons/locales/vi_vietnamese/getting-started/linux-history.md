@@ -4,11 +4,9 @@
 
 Chào tân binh! Bạn đã quyết định chu du vào thế giới tuyệt vời mang tên Linux chưa? Hãy thắt chặt dây đai, bởi vì đây sẽ là một hành trình dài và gian nan đấy. Tôi là Penguin Pete và tôi ở đây để hướng dẫn bạn vượt qua cuộc hành trình này. Nào, ta cùng bắt đầu với một ít nền tảng về Linux.
 
-Để hiểu Linux đã xuất hiện như thế nào, hãy cùng quay lại thời điểm bắt đầu năm 1969, Ken Thompson và Dennis Ritchie từ phòng thí nghiệm Bell đã phát triển nên hệ điều hành UNIX. Hệ điều hành này sau đó được viết lại bằng C để giúp nó thuận tiện hơn và cuối cùng trở thành hệ điều hành rất được phổ biế.
+Để hiểu Linux đã xuất hiện như thế nào, hãy cùng quay lại thời điểm bắt đầu năm 1969, Ken Thompson và Dennis Ritchie từ phòng thí nghiệm Bell đã phát triển nên hệ điều hành UNIX. Hệ điều hành này sau đó được viết lại bằng C để giúp nó thuận tiện hơn và cuối cùng trở thành hệ điều hành rất được phổ biến.
 
-A decade or so later, Richard Stallman started working on the GNU (GNU is Not UNIX) project, the GNU kernel called Hurd, which unfortunately never came to completion. The GNU General Public License (GPL), a free software license, was also created as a result of this.
-
-Hơn một thế kỉ sau, Richard Stallman khởi động dự án GNU (GNU không phải là UNIX), nhân GNU được gọi là Hurd, đáng tiếc đã không bao giờ được hoàn thành.  Giấy phép GNU (GNU General Public License - GPL), một giấy phép phần mềm miễn phí, chính là kết quả của dự án này.
+Hơn một thế kỷ sau, Richard Stallman khởi động dự án GNU (GNU không phải là UNIX), nhân (kernel) GNU được gọi là Hurd, đáng tiếc đã không bao giờ được hoàn thành. Giấy phép GNU (GNU General Public License - GPL), một giấy phép phần mềm miễn phí, chính là kết quả của dự án này.
 
 Nhân là phần quan trong nhất trong hệ điều hành. Nó cho phép phần cứng giao tiếp với phần mềm. Nó cũng thực hiện nhiều công việc quan trọng khác, nhưng ta sẽ thảo luận về chúng sâu hơn trong một bài học khác. Bây giờ, tạm hiểu rằng nhân là thành phần kiểm soát và điều khiển mọi thứ xảy ra trong hệ điều hành của bạn.
 
