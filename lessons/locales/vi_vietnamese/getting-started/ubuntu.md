@@ -16,8 +16,7 @@ Phù hợp với mọi nhu cầu từ hệ thống, máy bàn, máy tính xách 
 
 ## Exercise
 
-<a href='http://www.ubuntu.com/'>http://www.ubuntu.com/</a>
-Nếu bạn quan tâm và mong muốn trải nghiệm hệ điều hành Debian, bạn có thể tìm được hướng dẫn cài đặt và sử dụng ở đây: <a href='http://www.ubuntu.com/'>http://www.ubuntu.com/</a>
+Nếu bạn quan tâm và mong muốn trải nghiệm hệ điều hành Ubuntu, bạn có thể tìm được hướng dẫn cài đặt và sử dụng ở đây: <a href='http://www.ubuntu.com/'>http://www.ubuntu.com/</a>
 
 ## Quiz Questions
 

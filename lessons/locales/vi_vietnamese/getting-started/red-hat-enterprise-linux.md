@@ -17,7 +17,7 @@ Ngay cái tên đã nói lên tầm vực sử dụng của RHEL, đó chính l�
 
 ## Exercise
 
-Nếu bạn quan tâm và mong muốn trải nghiệm hệ điều hành Debian, bạn có thể tìm được hướng dẫn cài đặt và sử dụng ở đây: href='http://www.redhat.com/en/technologies/linux-platforms/enterprise-linux/'>https://www.redhat.com/rhel/</a>
+Nếu bạn quan tâm và mong muốn trải nghiệm hệ điều hành RHEL, bạn có thể tìm được hướng dẫn cài đặt và sử dụng ở đây: <a href='http://www.redhat.com/en/technologies/linux-platforms/enterprise-linux/'>https://www.redhat.com/rhel/</a>
 
 ## Quiz Questions
 
