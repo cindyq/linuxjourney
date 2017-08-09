@@ -17,7 +17,7 @@ Adından da anlaşılacağı üzere çoğunlukla kurumsal ortamlarda kullanımı
 
 ## Alıştırma
 
-Eğer işletim sistemi olarak RHEL'u' düşünüyorsanız, kurulum bölümüne göz atın ve bir şans verin: <a href='https://www.redhat.com/rhel/'>https://www.redhat.com/rhel/</a>
+Eğer işletim sistemi olarak RHEL'i düşünüyorsanız, kurulum bölümüne göz atın ve bir şans verin: <a href='https://www.redhat.com/rhel/'>https://www.redhat.com/rhel/</a>
 
 ## Quiz
 
