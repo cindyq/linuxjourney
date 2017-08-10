@@ -16,7 +16,7 @@ Masaüstü ve dizüstü bilgisayarlar için idealdir.
 
 ## Alıştırma
 
-Eğer işletim sistemi olarak Linux Gentoo'yu düşünüyorsanız, kurulum bölümüne göz atın ve bir şans verin: <a href='https://www.gentoo.org/'>https://www.gentoo.org/</a>
+Eğer işletim sistemi olarak Gentoo'yu düşünüyorsanız, kurulum bölümüne göz atın ve bir şans verin: <a href='https://www.gentoo.org/'>https://www.gentoo.org/</a>
 
 ## Quiz
 
