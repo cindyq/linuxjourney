@@ -3,7 +3,7 @@
 ## Ders İçeriği
 
 <b>Genel Bakış</b>
-openSUSE, openSUSE Project tarafından üretilmiştir. openSUSE Project, her yerde Linux kullanımını teşvik eden, dünya çapındaki Özgür ve Açık Kaynak Yazılım topluluğunun bir parçası olarak açık, şeffaf ve samimi bir şekilde birlikte çalışan bir topluluktur. openSUSE halen çalışan ikinci en eski Linux dağıtımlarındandır ve temel sistemini SUSE’nin ödüllü SUSE Linux Enterprise ürünleriyle paylaşır.
+openSUSE, openSUSE Project tarafından üretilmiştir. openSUSE Project, her yerde Linux kullanımını teşvik eden, dünya çapındaki Özgür ve Açık Kaynak Yazılım topluluğunun bir parçası olarak açık, şeffaf ve samimi bir şekilde birlikte çalışan bir topluluktur. openSUSE halen çalışan ikinci en eski Linux dağıtımıdır ve temel sistemini SUSE’nin ödüllü SUSE Linux Enterprise ürünleriyle paylaşır.
 
 <b>Paket Yönetimi</b>
 RPM paket yöneticisini kullanır.
