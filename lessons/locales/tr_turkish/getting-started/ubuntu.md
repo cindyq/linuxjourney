@@ -14,7 +14,6 @@ Ubuntu Linux’a yeni başlayanlar için mükemmel bir seçimdir.  Ubuntu, kulla
 <b>Kullanım</b>
 Masaüstü, dizüstü bilgisayarlar veya sunucular için mükemmel bir seçimdir.
 
-
 ## Alıştırma
 
 Eğer işletim sistemi olarak Ubuntu'yu düşünüyorsanız, kurulum bölümüne göz atın ve bir şans verin: <a href='https://www.ubuntu.com/'>https://www.ubuntu.com/</a>
