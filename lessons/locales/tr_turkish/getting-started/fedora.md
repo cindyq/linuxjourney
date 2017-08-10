@@ -16,6 +16,8 @@ Red Hat tabanlı bir işletim sistemi kullanmak istiyorsanız, Fedora kullanıc�
 
 <b>Kullanım</b>
 
+Fedora, ücretsiz Red Hat tabanlı bir işletim sistemi kullanmak isterseniz uygun bir seçim olacaktır. Masaüstü ve dizüstü bilgisayarlar için idealdir.
+
 
 ## Alıştırma
 
