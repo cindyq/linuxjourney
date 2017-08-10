@@ -14,7 +14,6 @@ RHEL tabanlı işletim sistemleri, paket yönetiminde Debian tabanlı işletim s
 <b>Kullanım</b>
 Adından da anlaşılacağı üzere çoğunlukla kurumsal ortamlarda kullanımı yaygındır. Bu yüzden sağlam bir sunucu işletim sistemine ihtiyaç duyarsanız, sizin için iyi bir seçenek olacaktır.
 
-
 ## Alıştırma
 
 Eğer işletim sistemi olarak RHEL'i düşünüyorsanız, kurulum bölümüne göz atın ve bir şans verin: <a href='https://www.redhat.com/rhel/'>https://www.redhat.com/rhel/</a>
