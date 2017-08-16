@@ -16,18 +16,18 @@ Ayrıca ls komutunun, dosyaların detaylı listesini uzun bir düzende gösteren
 
 <pre>$ ls -l</pre>
 
-<pre>pete@icebox:~$ ls -l
+<pre>sinan@ayasofya:~$ ls -l
 total 80
-drwxr-x--- 7 pete penguingroup   4096 Nov 20 16:37 Desktop
-drwxr-x--- 2 pete penguingroup   4096 Oct 19 10:46  Documents
-drwxr-x--- 4 pete penguingroup   4096 Nov 20 09:30 Downloads
-drwxr-x--- 2 pete penguingroup   4096 Oct  7 13:13   Music
-drwxr-x--- 2 pete penguingroup   4096 Sep 21 14:02 Pictures
-drwxr-x--- 2 pete penguingroup   4096 Jul 27 12:41   Public
-drwxr-x--- 2 pete penguingroup   4096 Jul 27 12:41   Templates
-drwxr-x--- 2 pete penguingroup   4096 Jul 27 12:41   Videos</pre>
+drwxr-x--- 7 sinan penguingroup   4096 Kas 20 16:37 Masaüstü
+drwxr-x--- 2 sinan penguingroup   4096 Eki 19 10:46 Dokümanlar
+drwxr-x--- 4 sinan penguingroup   4096 Kas 20 09:30 İndirilenler
+drwxr-x--- 2 sinan penguingroup   4096 Eki  7 13:13 Müzik
+drwxr-x--- 2 sinan penguingroup   4096 Eyl 21 14:02 Resimler
+drwxr-x--- 2 sinan penguingroup   4096 Tem 27 12:41 Ortak
+drwxr-x--- 2 sinan penguingroup   4096 Tem 27 12:41 Şablonlar
+drwxr-x--- 2 sinan penguingroup   4096 Tem 27 12:41 Videolar</pre>
 
-Commands have things called flags (or arguments or options, whatever you want to call it) to add more functionality. See how we added -a and -l, well you can add them both together with -la. The order of the flags determines which order it goes in, most of the time this doesn’t really matter so you can also do ls -al and it would still work.
+Komutlar parametre adı verilen argümanlarla (veya seçeneklerle) daha fazla işlevsellik kazanırlar. -a ve -l parametrelerini nasıl eklediğimizi inceleyin, parametreleri -la şeklinde bitişik de yazabilirsiniz. Parametrelerin yazılış sırası, işletilme sırasını belirler ama genelllikle bu sıranın önemi yoktur, ls -al komutu da aynı sonucu verecektir.
 
 <pre>$ ls -la</pre>
 
