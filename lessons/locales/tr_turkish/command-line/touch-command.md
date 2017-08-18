@@ -2,7 +2,7 @@
 
 ## Lesson Content
 
-Let’s learn how to make some files. A very simple way is to use the touch command. Touch allows you to the create new empty files.
+Şimdi nasıl dosya oluşturulacağını öğrenelim. Let’s learn how to make some files. Bunun için en basit yol touch komutunu kullanmaktır. A very simple way is to use the touch command. Touch allows you to the create new empty files.
 
 <pre>$ touch mysuperduperfile</pre>
 
