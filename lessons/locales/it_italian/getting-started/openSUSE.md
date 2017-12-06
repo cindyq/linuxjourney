@@ -9,7 +9,7 @@ openSUSE Linux is created by the openSUSE Project. A community that promotes the
 Utilizzi RPM package manager.
 
 <b>Personalizzazione</b>
-openSUSE is a great choice for a new Linux user. It offers an easy to use graphical installer/administration application (<a href="http://yast.github.io/">YaST</a>) and a tiday base system, easy to tinker with. openSUSE includes everything you need to enjoy the Internet worry free of viruses/spy-ware and to live out your creativity, be it with your photos, videos, music or code.
+openSUSE is a great choice for a new Linux user. It offers an easy to use graphical installer/administration application (<a href="http://yast.github.io/">YaST</a>) and a tidy base system, easy to tinker with. openSUSE includes everything you need to enjoy the Internet worry free of viruses/spy-ware and to live out your creativity, be it with your photos, videos, music or code.
 
 <b>Utilizzi</b>
 openSUSE Leap is fully capable of being used on a desktop PC and laptop.
