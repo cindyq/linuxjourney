@@ -4,10 +4,10 @@
 
 <b>Genel Bakış</b>
 Genellikle RHEL olarak anılan Red Hat Enterprise Linux,  Red Hat tarafından geliştirilmiştir. 
-RHEL, kaynak kodunu ücretsiz sağlamasına rağmen, ücretsiz yeniden dağıtımını kısıtlayan katı kurallara sahiptir.
+RHEL, kaynak kodunun ücretsiz sağlamasına rağmen, ücretsiz yeniden dağıtımını kısıtlayan katı kurallara sahiptir.
 
 <b>Paket Yönetimi</b>
-RHEL, Debian' dan farklı olarak yakında öğreneceğimiz RPM paket yöneticisini kullanıyor.
+RHEL, Debian' dan farklı olarak yakında öğreneceğimiz RPM paket yöneticisini kullanmaktadır.
 
 <b> Ayarlanabilirlik</b>
 RHEL tabanlı işletim sistemleri, Debian tabanlı işletim sistemlerinden ufak farklılıklarla ayrılır.
@@ -16,7 +16,7 @@ Eğer RHEL ile devam etmeyi düşünüyorsanız paket yönetimiyle nasıl çalı
 
 <b>Kullanım</b>
 İsminden de anlaşılacağı gibi çoğunlukla kurumlarda kullanılır. Yani sağlam server işletim sistemine
-ihtiyacınız varsa kullanabilirsiniz.
+ihtiyacınız varsa sizin için iyi bir seçim olacaktır..
 
 ## Alıştırma
 
