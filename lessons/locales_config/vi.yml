@@ -1,0 +1,55 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+en:
+  menu:
+    languages:
+      lang: "Ngôn ngữ"
+      flag: "flags/Vietnam.png"
+  home:
+    tagline:
+      title: "Tìm hiểu miễn phí Linux-Fu"
+    subscribe:
+      title: "Theo dõi"
+      body: "Lấy bản mới nhất về những khóa học và bài học!"
+    about:
+      title: "Về chúng tôi"
+      body: "Kiến thức có được ở đây ngày hôm nay được cung cấp bởi công đồng mã nguồn mở."
+      url_name: "Đóng góp và Hợp tác"
+      url: "https://github.com/cindyq/linuxjourney"
+    contact:
+      title: "Liên hệ"
+      body: "Bạn thấy bug? Bạn có phàn nàn nào? Hay chỉ muốn gửi một ghi chú?"
+      url_name: "Hãy cho chúng tôi biết"
+      url: "contact@linuxjourney.com"
+  courses:
+    titles:
+      exercises: "Những bài tập"
+      quiz: "Câu hỏi"
+  forms:
+    buttons:
+      check_answer: "Kiểm tra câu trả lời"
+      continue: "Tiếp tục"
+      return: "Trở lại trang chủ"
+      home: "Trang chủ"
+    messages:
+      answer_correct: "Câu trả lời đúng!"
+      answer_incorrect: "Chưa đúng, hãy thử lại!"
