@@ -17,7 +17,7 @@ As packets move across networks, they travel in hops, a hop is how we roughly me
 <b>Understanding the basic difference between Switching, Routing & Flooding?</b>
 Packet SWITCHING is basically receiving, processing and forwarding data to the destination device.
 ROUTING is a process of creating the routing table, so that we can do SWITCHING better.
-Before routing, FLOODING was used. If a router don't know which way to send a packet than every incoming packet is sent through every outgoing link except the one it arrived on.
+Before routing, FLOODING was used. If a router doesn't know which way to send a packet, then every incoming packet is sent through every outgoing link except the one it arrived on.
 
 ## Exercise
 
