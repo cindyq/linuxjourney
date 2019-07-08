@@ -22,7 +22,7 @@ Each line displays user information for one user, most commonly you'll see the r
 <li>User's shell - you'll probably see a lot of user's defaulting to bash for their shell</li>
 </ol>
 
-Normally in a user's setting page, you would expect you see just human users. However, you'll notice /etc/passwd contains other users. Remember that users are really only on the system to run processes with different permissions. Sometimes we want to run processes with pre-determined permissions. For example, the daemon user is used for daemon processes.
+Normally in a user's setting page, you would expect to see just human users. However, you'll notice /etc/passwd contains other users. Remember that users are really only on the system to run processes with different permissions. Sometimes we want to run processes with pre-determined permissions. For example, the daemon user is used for daemon processes.
 
 Also should note that you can edit the /etc/passwd file by hand if you want to add users and modify information with the <b>vipw</b> tool, however things like these are best left to the tools we will discuss in a later lesson such as useradd and userdel.
 
