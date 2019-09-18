@@ -12,7 +12,7 @@ Der Kernel ist der wichtigste Teil eines Betriebssystems. Er übernimmt die Komm
 
 Während dieser Zeit gab es auch andere Projekte um UNIX ähnliche Systeme zu entwickeln. Wie z.B. BSD, MINIX, etc. Alle diese Systeme hatten ihren eigenen Kernel.
 
-Schließlich begann 1991 ein junger Kerl namens Linux Torwalds mit der Entwicklung eines Kernels, der heute unter namen Linux Kernel bekannt ist. Dieser Kernel wurde schließlich der Kernel für das GNU Projekt dem bisher noc ein Kernel fehlte. Das GNU/Linux Betriebssystem war geboren!
+Schließlich begann 1991 ein junger Kerl namens Linus Torvalds mit der Entwicklung eines Kernels, der heute unter namen Linux Kernel bekannt ist. Dieser Kernel wurde schließlich der Kernel für das GNU Projekt dem bisher noch ein Kernel fehlte. Das GNU/Linux Betriebssystem war geboren!
 
 ## Übung
 
