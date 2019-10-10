@@ -28,16 +28,16 @@ ja:
     tagline: 
       title: "Linuxの技を、無料で学ぼう。"
     subscribe:
-      title: "購読"
+      title: "登録"
       body: "コースやレッスンの更新情報を受け取ろう！"
     about:
       title: "わたしたちについて"
-      body: "今日ここで得た知識は、オープンソースコミュニティに支えられています。"
+      body: "こちらの情報は、オープンソースコミュニティにより支えられています。"
       url_name: "貢献する"
       url: "https://github.com/cindyq/linuxjourney"
     contact:
       title: "お問い合わせ"
-      body: "バグを見つけた？ひとこと言いたい？ちょっとお便りしたい？"
+      body: "バグを見つけたり、ひとこと言いたい場合は"
       url_name: "お知らせください"
       url: "contact@linuxjourney.com"
   courses:
