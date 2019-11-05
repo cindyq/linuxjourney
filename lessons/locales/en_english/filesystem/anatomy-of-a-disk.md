@@ -36,7 +36,7 @@ Disks are comprised of partitions that help us organize our data. You can have m
 We know from our previous lesson that a filesystem is an organized collection of files and directories. In its simplest form, it is comprised of a database to manage files and the actual files themselves, however we're going to go into a little more detail. 
 
 <ul>
-<li>Boot block - This is located in the first few sectors of the filesystem, and it's not really used the by the filesystem. Rather, it contains information used to boot the operating system. Only one boot block is needed by the operating system. If you have multiple partitions, they will have boot blocks, but many of them are unused.</li>
+<li>Boot block - This is located in the first few sectors of the filesystem, and it's not really used by the filesystem. Rather, it contains information used to boot the operating system. Only one boot block is needed by the operating system. If you have multiple partitions, they will have boot blocks, but many of them are unused.</li>
 <li>Super block - This is a single block that comes after the boot block, and it contains information about the filesystem, such as the size of the inode table, size of the logical blocks and the size of the filesystem.</li>
 <li>Inode table - Think of this as the database that manages our files (we have a whole lesson on inodes, so don't worry). Each file or directory has a unique entry in the inode table and it has various information about the file.</li>
 <li>Data blocks - This is the actual data for the files and directories.</li>
