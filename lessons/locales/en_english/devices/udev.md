@@ -18,7 +18,7 @@ You can also view the udev database and sysfs using the <b>udevadm</b> command. 
 
 ## Exercise
 
-Run the udevadm command given and check out the input.
+Run the udevadm command given and check out the output.
 
 ## Quiz Question
 
