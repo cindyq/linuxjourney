@@ -2,11 +2,11 @@
 
 ## Inhalt der Lektion
 
-Lass und lernen wie wir ein paar Dateien anlegen. Eine einfache Möglichkeit das zu tun bietet das touch Kommando. Touch erlaubt es einem leere Dateien anzulegen.
+Lass uns lernen wie wir ein paar Dateien anlegen. Eine einfache Möglichkeit das zu tun bietet das touch Kommando. Touch erlaubt es einem leere Dateien anzulegen.
 
 <pre>$ touch mysuperduperfile</pre>
 
-Tada, wir haben eine neue Date!
+Tada, wir haben eine neue Datei!
 
 Touch wird auch benutzt um den Zeitpunkt der letzten Änderung (Zeitstempel) für Dateien und Ordner zu ändern. Probiere es selbst aus, benutzte zunächst ein ls -l für eine Datei und achte auf die Zeitangabe, dann "berühre" diese Datei mit touch und du wirst sehen dass das den Zeitstempel aktualisiert.
 
