@@ -3,7 +3,7 @@
 ## Inhalt der Lektion
 
 <b>Übersicht</b>
-openSUSE Linux wird vom openSUSE Projekt gepflegt, einer Gemeinschaft die versucht die Linuxbenutztung voranzutreiben und in transparenter und offener Atmosphäre zusammenarbeitet. OpenSUSE ist die zweitälteste Linux Distribution die noch heute weiterentwickelt und gepflegt wird. OpenSUSE teilt sich das Basissystem mit dem SUSE Enterprise Linux von SUSE.
+openSUSE Linux wird vom openSUSE Projekt gepflegt, einer Gemeinschaft die versucht die Linuxbenutzung voranzutreiben und in transparenter und offener Atmosphäre zusammenarbeitet. OpenSUSE ist die zweitälteste Linux Distribution die noch heute weiterentwickelt und gepflegt wird. OpenSUSE teilt sich das Basissystem mit dem SUSE Enterprise Linux von SUSE.
 
 <b>Paketverwaltung</b>
 Benutzt die RPM Paketverwaltung.
@@ -14,7 +14,7 @@ openSUSE ist eine gute Wahl für einen Linux Neuling. Es verfügt über einen ei
 
 <b>Einsatz</b>
 
-openSUSE lässt sich einfach auf einem Laptop oder Dekstop PC einsetzen.
+openSUSE lässt sich einfach auf einem Laptop oder Desktop PC einsetzen.
 
 ## Übung
 
