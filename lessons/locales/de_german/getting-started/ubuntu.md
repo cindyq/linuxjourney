@@ -9,7 +9,7 @@ Eine der am weitest verbreiteten Linux Distributionen für persönliche Computer
 Ubuntu ist ein Debian basiertes Linux das von Canonical entwickelt wird. Das heißt, dass es auch die Debian Paketverwaltung verwendet.
 
 <b>Eigenschaften</b>
-Ubuntu ist eine gute Wahl für Linux Einsteiger, die Linux erst einmal kennenlernen wollen. Ubuntu bietet eine einfache Benutzung und eine intuitive Benutzeroberfläche was zu seiner Verbreitung führte. Es ist weit verbreitet und man bekommt gute Untersützung sowohl aus einer großen Community als auch (gegen Bezahlung) von Canonical. Die Benutzbarkeit ist in ihrere Einfachheit vergleichbar mit MacOS oder Windows.
+Ubuntu ist eine gute Wahl für Linux Einsteiger, die Linux erst einmal kennenlernen wollen. Ubuntu bietet eine einfache Benutzung und eine intuitive Benutzeroberfläche was zu seiner Verbreitung führte. Es ist weit verbreitet und man bekommt gute Unterstützung sowohl aus einer großen Community als auch (gegen Bezahlung) von Canonical. Die Benutzbarkeit ist in ihrer Einfachheit vergleichbar mit MacOS oder Windows.
 
 <b>Einsatz</b>
 Gut für alle Platformen, Desktop, Laptop und Server.
