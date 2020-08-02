@@ -6,7 +6,7 @@ Here are the most common device names that you will encounter:
 
 <b>SCSI Devices</b>
 
-If you have any sort of mass storage on your machine, chances are it is using the SCSI (pronounced "scuzzy") protocol. SCSI stands for Small Computer System Interface, it is a protocol used for allow communication between disks, printers, scanners and other peripherals to your system. You may have heard of SCSI devices which aren't actually in use in modern systems, however our Linux systems correspond SCSI disks with hard disk drives in /dev. They are represented by a prefix of sd (SCSI disk):
+If you have any sort of mass storage on your machine, chances are it is using the SCSI (pronounced "scuzzy") protocol. SCSI stands for Small Computer System Interface. It is a protocol used for communication between disks, printers, scanners and other peripherals with your system. You may have heard of SCSI devices which aren't actually in use in modern systems, however our Linux systems correspond SCSI disks with hard disk drives in /dev. They are represented by a prefix of sd (SCSI disk):
 
 Common SCSI device files:
 
@@ -37,7 +37,7 @@ Sometimes in older systems you may see hard drives being referred to with an hd 
 
 ## Exercise
 
-Write to the pseudo devices and see what happens, be careful not to write your disks to those devices!
+Write to the pseudo devices and see what happens. Be careful not to write your disks to those devices!
 
 ## Quiz Question
 
