@@ -12,7 +12,7 @@ Go ahead and enter one of the processes and look at that file:
 
 <pre>$ cat /proc/12345/status</pre>
 
-You should see process state information and well as more detailed information. The /proc directory is how the kernel is views the system, so there is a lot more information here than what you would see in ps.
+You should see process state information and well as more detailed information. The /proc directory is how the kernel views the system, so there is a lot more information here than what you would see in ps.
 
 ## Exercise
 
