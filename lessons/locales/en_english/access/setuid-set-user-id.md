@@ -44,7 +44,7 @@ As you can see the SUID is denoted by a 4 and pre-pended to the permission set. 
 
 ## Exercise
 
-Look at the permission for /etc/passwd in detail, do you notice anything else? Files with SUID enabled are also easily distinguishable.
+Look at the permission for /usr/bin/passwd in detail, do you notice anything else? Files with SUID enabled are also easily distinguishable.
 
 ## Quiz Question
 
