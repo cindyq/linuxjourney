@@ -1,4 +1,4 @@
-# lsusb, lspci, lssci
+# lsusb, lspci, lsscsi
 
 ## Lesson Content
 
