@@ -26,7 +26,7 @@ This layer uses:
 
 <b>Network Layer</b>
 
-This layers specifies how to move packets between hosts and across networks.
+This layer specifies how to move packets between hosts and across networks.
 
 This layer uses:
 <ul>
