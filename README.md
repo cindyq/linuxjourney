@@ -4,7 +4,13 @@
 
 ## Project Hiatus
 
-Due to the overwhelming support for translations, Linux Journey is in the middle of a site overhaul to make it more scalable for translations. Unfortunately, I am a full time professional and full time student so it has taken longer to do the migration than I had hoped. For now, any additional translations/edits/additions will not be added to the site. I'll try my best to finish adding everything that was already committed and will re-visit the project when I have more cycles. Thank you for understanding.
+> Due to the overwhelming support for translations, Linux Journey is in the middle of a site overhaul to make it more scalable for translations. Unfortunately, I am a full time professional and full time student so it has taken longer to do the migration than I had hoped. For now, any additional translations/edits/additions will not be added to the site. I'll try my best to finish adding everything that was already committed and will re-visit the project when I have more cycles. Thank you for understanding.
+> 
+> - [@cindyq](https://github.com/cindyq)
+
+I've created this fork for maintenance of the project. You guys can make contributions to that, and, if [@cindyq](https://github.com/cindyq) ever back, we can just merge. Otherwise, we can keep continuing this awesome project
+
+If you have any translation, any dead pull request here, any suggestion, etc. Just open an issue in a PR in the fork.
 
 ## Language Support
 
