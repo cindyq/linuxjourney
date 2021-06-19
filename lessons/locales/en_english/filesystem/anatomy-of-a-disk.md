@@ -18,7 +18,7 @@ Disks are comprised of partitions that help us organize our data. You can have m
 <li>Traditional partition table, was used as the standard</li>
 <li>Can have primary, extended, and logical partitions</li>
 <li>MBR has a limit of four primary partitions</li>
-<li>Additional partitions can be made by making a primary partition into an extended partition (there can only be one extended partition on a disk). Then inside the extended partition you add logical partitions. The logical partitions are used just like any other partition. Silly I know.</li> 
+<li>Additional partitions can be made by making a primary partition into an extended partition (there can only be one extended partition on a disk). Then inside the extended partition you add logical partitions. The logical partitions are used just like any other partition. Silly I know.</li>
 <li>Supports disks up to 2 terabytes</li>
 </ul>
 
@@ -28,20 +28,20 @@ Disks are comprised of partitions that help us organize our data. You can have m
 <li>GUID Partition Table (GPT) is becoming the new standard for disk partitioning</li>
 <li>Has only one type of partition and you can make many of them</li>
 <li>Each partition has a globally unique ID (GUID)</li>
-<li>Used mostly in conjunction with UEFI based booting (we'll get into details in another course)</li> 
+<li>Used mostly in conjunction with UEFI based booting (we'll get into details in another course)</li>
 </ul>
 
 <b>Filesystem Structure</b>
 
-We know from our previous lesson that a filesystem is an organized collection of files and directories. In its simplest form, it is comprised of a database to manage files and the actual files themselves, however we're going to go into a little more detail. 
+We know from our previous lesson that a filesystem is an organized collection of files and directories. In its simplest form, it is comprised of a database to manage files and the actual files themselves, however we're going to go into a little more detail.
 
 <ul>
-<li>Boot block - This is located in the first few sectors of the filesystem, and it's not really used the by the filesystem. Rather, it contains information used to boot the operating system. Only one boot block is needed by the operating system. If you have multiple partitions, they will have boot blocks, but many of them are unused.</li>
+<li>Boot block - This is located in the first few sectors of the filesystem, and it's not really used by the filesystem. Rather, it contains information used to boot the operating system. Only one boot block is needed by the operating system. If you have multiple partitions, they will have boot blocks, but many of them are unused.</li>
 <li>Super block - This is a single block that comes after the boot block, and it contains information about the filesystem, such as the size of the inode table, size of the logical blocks and the size of the filesystem.</li>
 <li>Inode table - Think of this as the database that manages our files (we have a whole lesson on inodes, so don't worry). Each file or directory has a unique entry in the inode table and it has various information about the file.</li>
 <li>Data blocks - This is the actual data for the files and directories.</li>
 </ul>
- 
+
 Let's take a look at the different partition tables. Below is an example of a partition using the MBR partitioning table (msdos). You can see the primary, extended and logical partitions on the machine.
 
 <pre>
