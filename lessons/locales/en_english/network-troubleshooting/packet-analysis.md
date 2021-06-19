@@ -28,7 +28,7 @@ listening on wlan0, link-type EN10MB (Ethernet), capture size 65535 bytes
 11:28:31.190665 IP ThePickleParty.lan.51056 > 192.168.86.255.rfe: UDP, length 306
 </pre>
 
-You'll notice a lot of stuff happening when you run a packet capture, well that's to be expected there's a lot of network activity happening in the background. In my above example, I've taken only a snippet of my capture specifically the time when I decided to ping www.google.com. 
+You'll notice a lot of stuff happening when you run a packet capture, well that's to be expected there's a lot of network activity happening in the background. In my above example, I've taken only a snippet of my capture specifically the time when I decided to ping www.google.com.
 
 <b>Understanding the output</b>
 
@@ -41,7 +41,7 @@ You'll notice a lot of stuff happening when you run a packet capture, well that'
 <li>The first field is a timestamp of the network activity</li>
 <li>IP, this contains the protocol information</li>
 <li>Next, you'll see the source and destination address: icebox.lan > nuq04s29-in-f4.1e100.net</li>
-<li>seq, this is the TCP packets's starting and ending sequence number</li>
+<li>seq, this is the TCP packet's starting and ending sequence number</li>
 <li>length, length in bytes</li>
 </ul>
 
