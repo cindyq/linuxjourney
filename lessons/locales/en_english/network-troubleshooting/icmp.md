@@ -2,7 +2,7 @@
 
 ## Lesson Content
 
-The Internet Control Message Protocol (ICMP) is part of the TCP/IP protocol suite, it used to send updates and error messages and is an extremely useful protocol used for debugging network issues such as a failed packet delivery.
+The Internet Control Message Protocol (ICMP) is part of the TCP/IP protocol suite, it is used to send updates and error messages and is an extremely useful protocol used for debugging network issues such as a failed packet delivery.
 
 Each ICMP message contains a type, code and checksum field. The type field is the type of ICMP message, the code is a sub-type and describes more information about the message and the checksum is used to detect any issues with the integrity of the message.
 
@@ -15,7 +15,7 @@ Let's look at some common ICMP Types:
 <li>Type 11 - Time Exceeded</li>
 </ul>
 
-When a packet can't get to a destination, Type 3 ICMP message is generated, within Type 3 there are 16 code values that will further describe why it can't get to the destination: 
+When a packet can't get to a destination, Type 3 ICMP message is generated, within Type 3 there are 16 code values that will further describe why it can't get to the destination:
 
 <ul>
 <li>Code 0 - Network Unreachable</li>

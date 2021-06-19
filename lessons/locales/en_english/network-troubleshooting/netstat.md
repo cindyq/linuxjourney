@@ -6,12 +6,12 @@
 
 We've discussed data transmission through ports on our machine, let's look at some well known ports.
 
-You can get a list of well-known ports by looking at the file <b>/etc/services</b>: 
+You can get a list of well-known ports by looking at the file <b>/etc/services</b>:
 
 <pre>
 ftp             21/tcp
 ssh             22/tcp
-smtp            25/tcp 
+smtp            25/tcp
 domain          53/tcp  # DNS
 http            80/tcp
 https           443/tcp
@@ -22,23 +22,23 @@ The first column is the name of the service, then the port number and the transp
 
 <b>netstat</b>
 
-An extremely useful tool to get detailed information about your network is <b>netstat</b>. Netstat displays various network related information such network connections, routing tables, information about network interfaces and more, it's the swiss army knife of networking tools. We will focus mostly on one feature netstat has and that's the status of network connections. Before we look at an example, let's talk about sockets and ports first. A socket is an interface that allows programs to send and receive data while a port is used to identify which application should send or receive data. The socket address is the combination of the IP address and port. Every connection between a host and destination requires a unique socket. For example, HTTP is a service that runs on port 80, however we can have many HTTP connections and to maintain each connection a socket gets created per connection.
+An extremely useful tool to get detailed information about your network is <b>netstat</b>. Netstat displays various network related information such as network connections, routing tables, information about network interfaces and more, it's the swiss army knife of networking tools. We will focus mostly on one feature netstat has and that's the status of network connections. Before we look at an example, let's talk about sockets and ports first. A socket is an interface that allows programs to send and receive data while a port is used to identify which application should send or receive data. The socket address is the combination of the IP address and port. Every connection between a host and destination requires a unique socket. For example, HTTP is a service that runs on port 80, however we can have many HTTP connections and to maintain each connection a socket gets created per connection.
 
 <pre>
 pete@icebox:~$ netstat -at
 Active Internet connections (servers and established)
-Proto Recv-Q Send-Q Local Address           Foreign Address         State      
-tcp        0      0 icebox:domain           *:*                     LISTEN     
-tcp        0      0 localhost:ipp           *:*                     LISTEN     
-tcp        0      0 icebox.lan:44468        124.28.28.50:http       TIME_WAIT  
-tcp        0      0 icebox.lan:34751        124.28.29.50:http       TIME_WAIT  
-tcp        0      0 icebox.lan:34604        economy.canonical.:http TIME_WAIT  
-tcp6       0      0 ip6-localhost:ipp       [::]:*                  LISTEN     
-tcp6       1      0 ip6-localhost:35094     ip6-localhost:ipp       CLOSE_WAIT 
+Proto Recv-Q Send-Q Local Address           Foreign Address         State
+tcp        0      0 icebox:domain           *:*                     LISTEN
+tcp        0      0 localhost:ipp           *:*                     LISTEN
+tcp        0      0 icebox.lan:44468        124.28.28.50:http       TIME_WAIT
+tcp        0      0 icebox.lan:34751        124.28.29.50:http       TIME_WAIT
+tcp        0      0 icebox.lan:34604        economy.canonical.:http TIME_WAIT
+tcp6       0      0 ip6-localhost:ipp       [::]:*                  LISTEN
+tcp6       1      0 ip6-localhost:35094     ip6-localhost:ipp       CLOSE_WAIT
 tcp6       0      0 ip6-localhost:ipp       ip6-localhost:35094     FIN_WAIT2
 </pre>
 
-The netstat -a command shows the listening and non-listening sockets for network connections, the -t flag shows only tcp connections. 
+The netstat -a command shows the listening and non-listening sockets for network connections, the -t flag shows only tcp connections.
 
 The columns are as follows from left to right:
 
