@@ -2,7 +2,7 @@
 
 ## Lesson Content
 
-Linux has some great built-in tools to help you how to use a command or check what flags are available for a command. One tool, help, is a built-in bash command that provides help for other bash commands (echo, logout, pwd, etc).
+Linux has some great built-in tools to help learn you how to use a command or check what flags are available for a command. One tool, help, is a built-in bash command that provides help for other bash commands (echo, logout, pwd, etc).
 
 <pre>$ help echo</pre>
 
