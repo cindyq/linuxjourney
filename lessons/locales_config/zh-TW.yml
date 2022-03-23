@@ -1,0 +1,55 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+zh-TW:
+  menu:
+    languages:
+      lang: "語言"
+      flag: "flags/Taiwan.png"
+  home:
+    tagline: 
+      title: "學習Linux之道，費用全免。"
+    subscribe:
+      title: "訂閱"
+      body: "取得有關新課程與教學的最新資訊！"
+    about:
+      title: "關於我們"
+      body: "匯聚於此的知識有賴於開源社群的貢獻。"
+      url_name: "貢獻與合作"
+      url: "https://github.com/cindyq/linuxjourney"
+    contact:
+      title: "聯繫我們"
+      body: "發現臭蟲？有意見？只是想跟我們閒聊？"
+      url_name: "請讓我們知道"
+      url: "contact@linuxjourney.com"
+  courses:
+    titles:
+      exercises: "練習"
+      quiz: "小測"
+  forms:
+    buttons:
+      check_answer: "檢查答案"
+      continue: "繼續"
+      return: "返回主目錄"
+      home: "主頁"
+    messages:
+      answer_correct: "正確答案！"
+      answer_incorrect: "好像不太對，再試一遍。"
