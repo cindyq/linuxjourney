@@ -26,6 +26,6 @@
 
 誰是Linux內核的作者？ 
 
-## 小測問題
+## 小測答案
 
 Linus Torvalds
