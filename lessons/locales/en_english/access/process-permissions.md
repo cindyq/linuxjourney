@@ -8,7 +8,7 @@ This is because of the many UIDs that Linux implements. There are three UIDS ass
 
 When you launch a process, it runs with the same permissions as the user or group that ran it, this is known as an <b>effective user ID</b>. This UID is used to grant access rights to a process. So naturally if Bob ran the touch command, the process would run as him and any files he created would be under his ownership.
 
-There is another UID, called the <b>real user ID</b> this is the ID of the user that launched the process. These are used to track down who the user who launched the process is.
+There is another UID, called the <b>real user ID</b> this is the ID of the user that launched the process. These are used to track down the user who launched the process.
 
 One last UID is the <b>saved user ID</b>, this allows a process to switch between the effective UID and real UID, vice versa. This is useful because we don't want our process to run with elevated privileges all the time, it's just good practice to use special privileges at specific times. 
 
