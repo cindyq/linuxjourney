@@ -9,7 +9,7 @@ Another file that is used in user management is the /etc/group file. This file a
 root:*:0:pete
 </pre>
 
-Very similar to the /etc/password field, the /etc/group fields are as follows:
+Very similar to the /etc/passwd field, the /etc/group fields are as follows:
 
 <ol>
 <li>Group name</li>
