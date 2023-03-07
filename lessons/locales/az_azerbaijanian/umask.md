@@ -4,7 +4,7 @@
 
 Yaradılan hər fayl, standart icazələr ilə yaradılır. Əgər ki bu standart icazələri dəyişdirmək istəyirsiniz isə bu umask təlimatı ilə mümkündür.
 Bu təlimatda da rəqəmsal icazələrdə olunduğu kimi 3 bit dəyər qəbul edir.
-Lakin bu icazələri əlavə eləmək yerinə, umask bu icazələri götürür.
+Lakin bu icazələri əlavə eləmək yerinə, umask bu icazələri silir.
 
 <pre>$ umask 021</pre>
 
