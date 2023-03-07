@@ -2,7 +2,7 @@
 
 ## Dərs Məzmunu
 
-Yaradılan hər fayl, standart icazələr ilə yaradılır. Əgər bu standart icazələri dəyişdirmək istəyirsinizsə, umask təlimatından istifadə edə bilərsiniz.
+Yaradılan hər fayl, standart icazələr ilə yaradılır. Standart icazələri dəyişdirmək üçün, umask təlimatın istifadə olunur.
 Bu təlimat digər rəqəmsal icazələrdə olunduğu kimi 3 bit dəyər qəbul edir.
 Lakin umask verilən 3 bit dəyəri icazəyə əlavə etmir, tam tərsinə verilən dəyər qədər icazəni azladır. 
 
