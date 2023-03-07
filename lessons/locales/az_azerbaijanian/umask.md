@@ -2,20 +2,19 @@
 
 ## Dərs Məzmunu
 
-Yaradılan hər fayl, standart icazələr ilə yaradılır. Əgər ki bu standart icazələri dəyişdirmək istəyirsiniz isə bu umask təlimatı ilə mümkündür.
-Bu təlimatda da rəqəmsal icazələrdə olunduğu kimi 3 bit dəyər qəbul edir.
-Lakin bu icazələri əlavə eləmək yerinə, umask bu icazələri silir.
+Yaradılan hər fayl, standart icazələr ilə yaradılır. Əgər bu standart icazələri dəyişdirmək istəyirsinizsə, umask təlimatından istifadə edə bilərsiniz.
+Bu təlimat digər rəqəmsal icazələrdə olunduğu kimi 3 bit dəyər qəbul edir.
+Lakin umask verilən 3 bit dəyəri icazəyə əlavə etmir, tam tərsinə verilən dəyər qədər icazəni azladır. 
 
 <pre>$ umask 021</pre>
 
-Verilən numunədə, biz yeni yaradılacaq olan fayllda artıq istifadəçilərə tam izin, 
-gruplar üçün yazmaq icazəsini ləğv edirik digərləri üçün isə icra etmək icazəsini ləğv edirik.
+Verilən nümunədə, biz artıq yeni yaradılacaq olan faylda istifadəçiyə tam icazəni qoruyuruq, qruplar üçün yazma icazəsini, digərləri üçün isə icra etmə icazəsini ləğv edirik.
 
-Distrubutionların çoxunda standart olaraq umask 022 dəyəri istifadə olunur, 
-bu deməkdir ki istifadəçi üçün tam izin, lakin gruppalara və digər istifadəçilərə yazmaq icazəsi verilmir.
+Paylama dəstlərinin (Distribution) çoxunda standart olaraq umask 022 dəyəri istifadə olunur, 
+bu o deməkdir ki, istifadəçiyə tam icazə verilir, qruplara və digər istifadəçilərə isə yazma icazəsi verilmir.
 
-Umask təlimatını daxil elədiyimizdə yeni yaradılacaq fayllar üçün yeni icazələri bizə göstərəcək.
-Lakin, bu icazə dəyərlərini qeyd eləmək üçün başlanğıç fayl da (.profile) dəyişdirməmiz lazımdır, ancaq bu basga bir dərsin mövzusudur.  
+Umask təlimatını daxil etdiyimizdə yeni yaradılacaq fayllar üçün yeni icazələri bizə göstəriləcək.
+Bu icazə dəyərlərini qeyd etmək üçün başlanğıç faylı da (.profile) dəyişdirməyimiz lazımdır, lakin bu başqa dərsin mövzusudur.  
 
 
 ## Çalışma
@@ -23,13 +22,12 @@ Lakin, bu icazə dəyərlərini qeyd eləmək üçün başlanğıç fayl da (.pr
 <ol>
 <li>Yeni bir fayl yaradın və onun icazələrini qeyd edin</li>
 <li>Umask təlimatı ilə icazələri dəyişdirin</li>
-<li>Createm a new file, then note it's permissions.</li>
 <li>Yaradılan fayl üçün icazələri yenidən yoxlayın, nə dəyişdi?</li>
 <ol>
 
 ## Quiz Question
 
-Faylların standart icazələrini deyişdirmək üçün hansı təlimat istifadə olunur?
+Faylların standart icazələrini dəyişdirmək üçün hansı təlimat istifadə olunur?
 
 ## Quiz Answer
 
