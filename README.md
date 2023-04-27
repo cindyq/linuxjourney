@@ -1,5 +1,12 @@
 # Linux Journey
 
+Hazirki Repo'nun meqsedi Linux Journey kitabinin Azerbaycan diline tercume olunmasi ve daha sonra esas repo'ya contribute olunmagi.
+Azerbaycan dilinde sade ve qisa bir Linux kitabinin olmagi, ve buna elave olaraq en cox istifade olunan Linux Journey saytinda digerleri ile beraber bizim de bayragimizin olmasidir.
+
+
+
+
+
 [Linux Journey](https://linuxjourney.com) is a site dedicated to making learning Linux fun and easy.
 
 ## Project Hiatus
