@@ -2,7 +2,7 @@
 
 ## Lesson Content
 
-Maintenant, nous sommes devenu familier avec beaucoup de commandes et leur résultat.
+Maintenant, nous sommes devenus familier avec beaucoup de commandes et leur résultat.
 Cela nous amènes au prochain sujet le flux d'entrée/sortie (input/output). Commençons par lancer quelques commandes et nous 
 verrons comment cela fonctionne.
 
@@ -15,11 +15,11 @@ Premièrement, analysons la première partie:
 
 <pre>$ echo Hello World</pre>
 
-Nous savons que cela imprime "Hello World" to the screen, mais comment ?Les processus utilisent les flux d'entrées et de sorties
+Nous savons que cela imprime "Hello World" à l'écran, mais comment ? Les processus utilisent les flux d'entrées et de sorties
 pour recevoir des informations. Par défaut, la commande echo prend une entrée (entrée standard ou standard input/stdin en anglais)
 depuis le clavier et le retourne en une sortie (sortie standard ou standard output/stdout en anglais) à l'écran. C'est grâce à tout cela
 que quand vous écrivez "Hello World" dans la console, cela s'affiche sur votre écran. Cependant, les redirections des flux entrée/sortie
-nous permet de changer la redirection afin d'apporter une fléxibilité au niveau des fichiers.
+nous permettent de changer la redirection afin d'apporter une fléxibilité au niveau des fichiers.
 
 Analysons maintenant la deuxième partie:
 
