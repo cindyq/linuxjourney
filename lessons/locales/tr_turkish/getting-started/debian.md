@@ -10,10 +10,10 @@ Kararlı olan, Debianı kullanmak için idealdir. Test ve Kararsız olanlar ise 
 **Paket Yönetimi**<br>
 Debian ayrıca Debian paket yönetim araçlarını kullanır. Tüm Linux dağıtımları paketleri farklı şekilde yükler, günceller ve yönetir. Bunun için de farklı paket yönetim araçları kullanır. Bu konuya ileride daha ayrıntılı değineceğiz. 
 
-**Ayarlanabilirlik**<br>
+**Yapılandırılabilirlik**<br>
 Debian, son güncellemeleri almasanız bile son derece kararlıdır. Eğer iyi bir "çekirdek" işletim sistemi istiyorsanız, Debian tam size göre.
 
-**Kullanım**<br>
+**Kullanımlar**<br>
 Debian, herhangi bir platform için genel olarak harika bir işletim sistemidir.
 
 ## Alıştırma
