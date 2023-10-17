@@ -16,7 +16,7 @@
 
 * Süreçler - Sistem üzerinde çalışan süreçler hakkında bilgi edinin.
 
-* Paketler - Dpkg, apt-get, rpm ve yum paket yönetim araçları hakkında bilgi edinin.
+* Paketler - dpkg, apt-get, rpm ve yum paket yönetim araçları hakkında bilgi edinin.
 
 ## Usta
 
