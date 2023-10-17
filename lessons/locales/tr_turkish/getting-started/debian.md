@@ -2,20 +2,19 @@
 
 ## Ders İçeriği
 
-<b>Genel Bakış</b>
-Debian baştan sona özgür ve açık kaynak koddan oluşan, yaygın bilinen bir işletim sistemidir. 20 yılı aşkın süredir geliştirilmektedir. Kullanabileceğiniz üç versiyonu vardır; Kararlı, Test ve Kararsız.
+**Genel Bakış**<br>
+Debian baştan sona özgür ve açık kaynaklı yazılımlardan oluşan, yaygın olarak bilinen bir işletim sistemidir. 20 yılı aşkın süredir geliştirilmektedir. Kullanabileceğiniz üç kırılımı vardır; Kararlı (Stable), Test (Testing) ve Kararsız (Unstable).
 
-Kararlı versiyonu, Debianı kullanmak için idealdir. Test ve Kararsız versiyonları sallanan versiyonlardır. Bunun anlamı bu versiyonlarda artan değişiklikler sonunda kararlı hale geleceğidir. Örnek vermek gerekirse, eğer Windows 8 den Windows 10 a geçmek istiyorsanız, Tamamiyle Windows 10 kurulumu yapmalısınız. Ancak Test versiyonunda, yeni sürümün tam kurulumunu yapmadan, mevcut sürüm yeni sürüme evrilene kadar güncellemeleri almaya devam edersiniz. 
+Kararlı olan, Debianı kullanmak için idealdir. Test ve Kararsız olanlar ise yuvarlanan (Rolling)  sürümlerdir. Bunun anlamı bu sürümlerde artımlı değişikliklerin en sonunda kararlı hale geleceğidir. Örnek vermek gerekirse, eğer Windows XP'den Windows 10'a bir sonraki güncellemeyi almak istiyorsanız, tam bir Windows 10 kurulumu yapmalısınız. Ancak Test sürümünde, yeni sürümün tam kurulumunu yapmadan, mevcut sürüm yeni kararlı sürüme evrilene kadar güncellemeleri otomatik olarak almaya devam edersiniz.
 
-<b>Paket Yönetimi</b>
-Debian ayrıca Debian paket yönetim araçlarını kullanır. Tüm Linux dağıtımları paketleri farklı şekilde yükler, yönetir ve farklı paket yönetim araçları kullanır.Bu konuya ileride daha ayrıntılı değineceğiz. 
+**Paket Yönetimi**<br>
+Debian ayrıca Debian paket yönetim araçlarını kullanır. Tüm Linux dağıtımları paketleri farklı şekilde yükler, günceller ve yönetir. Bunun için de farklı paket yönetim araçları kullanır. Bu konuya ileride daha ayrıntılı değineceğiz. 
 
-<b>Ayarlanabilirlik</b>
+**Yapılandırılabilirlik**<br>
 Debian, son güncellemeleri almasanız bile son derece kararlıdır. Eğer iyi bir "çekirdek" işletim sistemi istiyorsanız, Debian tam size göre.
 
-<b>Kullanım</b>
-Debian herhangi bir platform için müthiş bir işletim sistemidir.
-
+**Kullanımlar**<br>
+Debian, herhangi bir platform için genel olarak harika bir işletim sistemidir.
 
 ## Alıştırma
 
@@ -23,8 +22,8 @@ Eğer işletim sistemi olarak Debianı düşünüyorsanız, kurulum bölümüne 
 
 ## Quiz
 
-Test ve Kararsız versiyonlar ne tür versiyonlardır?
+Test ve Kararsız kırılımlar ne tür sürümlerdir?
 
 ## Quiz Cevabı
 
-Sallanan
+Yuvarlanan
