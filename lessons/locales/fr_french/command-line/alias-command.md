@@ -1,8 +1,8 @@
 # alias
 
-## Lesson Content
+## Le contenu de la leçon
 
-Des fois taper des commandes peut devenir répétitif, or si vous devez taper une longue commande à plusieurs reprises, il est mieux d'avoir un alias que vous pouvez utiliser pour. Pour créer un alias pour une commande, vous donnez simplement le nom de l'alias et y affectez la commande. 
+Des fois taper des commandes peut devenir répétitif, or si vous devez taper une longue commande à plusieurs reprises, il est mieux d'avoir un alias que vous pouvez utiliser pour ne pas retaper toute la commande. Pour créer un alias pour une commande, vous donnez simplement le nom de l'alias et y affectez la commande. 
 
 <pre>$ alias foobar='ls -la'</pre>
 
@@ -16,14 +16,14 @@ Vous pouvez supprimer les alias avec la commande unalias:
 
 <pre>$ unalias foobar</pre>
 
-## Exercise
+## Exercice
 
 Créez quelques alias puis supprimez-les.
 
-## Quiz Question
+## Question du Quiz
 
 Quelle commande utilise-t-on peut créer un alias?
 
-## Quiz Answer
+## Réponse du Quiz
 
 alias
